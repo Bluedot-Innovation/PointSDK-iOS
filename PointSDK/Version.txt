@@ -1,1 +1,1 @@
-1.10-release-1-10-periodic-polling-fix-6fbe46e6-1767
+1.11.2.1917
