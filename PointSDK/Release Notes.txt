@@ -1,5 +1,7 @@
-Bluedot Point SDK iOS v1.11.2 Release Notes
+Bluedot Point SDK iOS v1.11.3 Release Notes
 ----------------------------------------
+
+Support for Xcode 9.3, Swift 4.1 and 3.3
 
 Defect fixes:
 General bug fixes and performance improvements.
