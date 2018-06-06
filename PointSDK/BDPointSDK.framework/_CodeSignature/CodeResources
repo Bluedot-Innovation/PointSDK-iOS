@@ -66,7 +66,7 @@
 		</data>
 		<key>Headers/BDLocationManager+BDPointSDK.h</key>
 		<data>
-		ptAqWr+d3Mu+j0fIHyHCi3ybw7E=
+		Fv4p2U3SC3P+7Muu55hRY9XZY/8=
 		</data>
 		<key>Headers/BDLocationManager.h</key>
 		<data>
@@ -162,7 +162,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		sE7yNaU4VwthfSl3WnXOtQbFDvk=
+		UEVRhhr/Zcy7ekRp6745Nrt3MDQ=
 		</data>
 		<key>Modules/BDPointSDK.swiftmodule/arm.swiftdoc</key>
 		<data>
@@ -170,7 +170,7 @@
 		</data>
 		<key>Modules/BDPointSDK.swiftmodule/arm.swiftmodule</key>
 		<data>
-		jJ1oApuiwz0ACiWcW1AbM3DDu1k=
+		UjV337lDwPFM9eTroMHYjuF00/E=
 		</data>
 		<key>Modules/BDPointSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -356,11 +356,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ptAqWr+d3Mu+j0fIHyHCi3ybw7E=
+			Fv4p2U3SC3P+7Muu55hRY9XZY/8=
 			</data>
 			<key>hash2</key>
 			<data>
-			fRpzOdGbH0ROHfK7IPY6jNmAqDiW5+mLrxZKBG7KAKQ=
+			oAsGWDJcZzTKKBpCjPzA9JJ6k9j6rLQsylWNOi9GelY=
 			</data>
 		</dict>
 		<key>Headers/BDLocationManager.h</key>
@@ -631,11 +631,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jJ1oApuiwz0ACiWcW1AbM3DDu1k=
+			UjV337lDwPFM9eTroMHYjuF00/E=
 			</data>
 			<key>hash2</key>
 			<data>
-			Y0LkfhQTbcxTcYW2cYnVwHWNz/+3tXr8lIkwjWfDYRs=
+			X1OHhu4MSw7XyicQRVc6v3sQse/lt5Cc9rhDfqJsWis=
 			</data>
 		</dict>
 		<key>Modules/BDPointSDK.swiftmodule/arm64.swiftdoc</key>
