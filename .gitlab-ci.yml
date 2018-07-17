@@ -22,6 +22,3 @@ updatePodSpec:
     - git push -f -ff origin master & git push origin ${VERSION}
     - git push -f -ff origin github & git push github ${VERSION}
     - pod trunk push BluedotPointSDK.podspec
-    - git checkout develop
-    - git merge master --squash
-    - git push origin develop
