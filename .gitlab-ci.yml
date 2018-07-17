@@ -22,5 +22,6 @@ updatePodSpec:
     - git commit -m "update version to ${VERSION}"
     - git tag ${VERSION}
     - git push -f -ff origin master & git push origin ${VERSION}
+    - if git remote -v | grep -q github; then git remote add github git@github.com:Bluedot-Innovation/PointSDK-iOS.git
     - git push -f -ff origin github & git push github ${VERSION}
     - pod trunk push BluedotPointSDK.podspec
