@@ -10,6 +10,8 @@ before_script:
    
 updatePodSpec:
   stage: deploy
+  only:
+      - pipelines
   script:
     - git checkout master
     - curl --header -F "job-token=$CI_JOB_TOKEN" "http://gitlab.bluedot.io/api/v4/projects/1/jobs/artifacts/master/download?job=build-release-framework-xcode-default" >> artifacts.zip
