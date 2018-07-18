@@ -16,12 +16,13 @@ updatePodSpec:
     - git checkout master
     - curl --header -F "job-token=$CI_JOB_TOKEN" "http://gitlab.bluedot.io/api/v4/projects/1/jobs/artifacts/master/download?job=build-release-framework-xcode-default" >> artifacts.zip
     - unzip artifacts.zip
-    - cp -rf build/artifacts/framework-Release/Xcode9.3/BDPointSDK.framework PointSDK/BDPointSDK.framework
+    - rm -rf PointSDK/BDPointSDK.framework
+    - cp -r build/artifacts/framework-Release/Xcode9.3/BDPointSDK.framework PointSDK/BDPointSDK.framework
     - sed -i '' -E "s/(s.version = \").*(\")/\1${VERSION}\2/" BluedotPointSDK.podspec
     - git add BluedotPointSDK.podspec PointSDK/BDPointSDK.framework
     - git commit -m "update version to ${VERSION}"
     - git tag ${VERSION}
     - git push -f -ff origin master & git push origin ${VERSION}
-    - if git remote -v | grep -q github; then git remote add github git@github.com:Bluedot-Innovation/PointSDK-iOS.git
+    - git remote -v | grep -q github && echo "github remote is configured" || git remote add github git@github.com:Bluedot-Innovation/PointSDK-iOS.git
     - git push -f -ff origin github & git push github ${VERSION}
     - pod trunk push BluedotPointSDK.podspec
