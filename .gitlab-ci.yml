@@ -7,6 +7,10 @@ before_script:
   - ruby -v
   - which ruby
   - bundle install --path vendor/bundle
+
+stages:
+  - deploy
+  - notify
    
 updatePodSpec:
   stage: deploy
@@ -14,7 +18,7 @@ updatePodSpec:
       - pipelines
   script:
     - git checkout master
-    - curl --header -F "job-token=$CI_JOB_TOKEN" "http://gitlab.bluedot.io/api/v4/projects/1/jobs/artifacts/master/download?job=build-release-framework-xcode-default" >> artifacts.zip
+    - curl --header -F "job-token=$CI_JOB_TOKEN" "http://gitlab.bluedot.io/api/v4/projects/1/jobs/artifacts/${REF_NAME}/download?job=build-release-framework-xcode-default" >> artifacts.zip
     - unzip artifacts.zip
     - rm -rf PointSDK/BDPointSDK.framework
     - cp -r build/artifacts/framework-Release/Xcode9.3/BDPointSDK.framework PointSDK/BDPointSDK.framework
@@ -26,3 +30,27 @@ updatePodSpec:
     - git remote -v | grep -q github && echo "github remote is configured" || git remote add github git@github.com:Bluedot-Innovation/PointSDK-iOS.git
     - git push -f -ff origin github & git push github ${VERSION}
     - pod trunk push BluedotPointSDK.podspec
+
+.notification_template: &notification_job
+  stage: notify
+  only:
+    - pipelines
+  script:
+    - curl -X POST --data-urlencode "payload={\"channel\": \"#mobile\", \"username\": \"Gitlab podspec deplyment\", \"text\": \${SLACK_MESSAGE}, \"icon_emoji\": \"${SLACK_EMOJI}\"}" https://hooks.slack.com/services/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
+
+
+notifySuccess:
+  variables:
+    SLACK_MESSAGE: "BluedotPointSDK v.${VERSION}(${BUILD_NUMBER}) has been deployed to cocoapods. https://cocoapods.org/pods/BluedotPointSDK"
+    SLACK_EMOJI: ":green_apple:"
+  when: on_success
+  <<: *notification_job
+  
+notifyFailure:
+  variables:
+    SLACK_MESSAGE: "Cocoapods deployment failed. ${CI_PROJECT_URL}"
+    SLACK_EMOJI: ":apple:"
+  when: on_failure
+  <<: *notification_job
+
+    
