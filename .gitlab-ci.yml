@@ -30,9 +30,9 @@ updatePodSpec:
     - git add BluedotPointSDK.podspec PointSDK/BDPointSDK.framework
     - git commit -m "update version to ${VERSION}"
     - git tag ${VERSION}
-    - git push -f -ff origin master & git push origin ${VERSION}
+    - git push -f origin master & git push origin ${VERSION}
     - git remote -v | grep -q github && echo "github remote is configured" || git remote add github git@github.com:Bluedot-Innovation/PointSDK-iOS.git
-    - git push -f -ff origin github & git push github ${VERSION}
+    - git push -f github master & git push github ${VERSION}
     - pod trunk push BluedotPointSDK.podspec
 
 .notification_template: &notification_job
