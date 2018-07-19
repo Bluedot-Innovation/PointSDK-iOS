@@ -2,25 +2,70 @@
 # see https://docs.gitlab.com/ce/ci/yaml/README.html for all available options
 
 variables:
-  PAYLOAD: "payload={\"channel\": \"#mobile\", \"username\": \"Gitlab podspec deplyment\", \"text\": \"$SLACK_MESSAGE\", \"icon_emoji\": \"$SLACK_EMOJI\"}"
+  SUCCESS: "BluedotPointSDK v.$VERSION($BUILD_NUMBER) has been deployed to cocoapods. https://cocoapods.org/pods/BluedotPointSDK"
+  FAULURE: "Cocoapods deployment failed. http://gitlab.bluedot.io/apple/PointSDK-podspec"
+  SUCCESS_PAYLOAD: "payload={\"channel\": \"#mobile\", \"username\": \"Gitlab podspec deplyment\", \"text\": \"$SUCCESS\", \"icon_emoji\": \":green_apple:\"}"
+  FAILURE_PAYLOAD: "payload={\"channel\": \"#mobile\", \"username\": \"Gitlab podspec deplyment\", \"text\": \"$FAULURE\", \"icon_emoji\": \":apple:\"}"
   HOOK: https://hooks.slack.com/services/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
-
-before_script:
-  - rbenv install --skip-existing
-  - gem install bundler --force
-  - ruby -v
-  - which ruby
-  - bundle install --path vendor/bundle
 
 stages:
   - deploy
   - notify
    
 updatePodSpec:
+  tags:
+    - xcode9
   stage: deploy
   only:
-      - pipelines
+    - pipelines
+    - triggers
+  before_script:
+    - rbenv install --skip-existing
+    - gem install bundler --force
+    - ruby -v
+    - which ruby
+    - bundle install --path vendor/bundle
+
+    ##
+    ## Install ssh-agent if not already installed, it is required by Docker.
+    ## (change apt-get to yum if you use an RPM-based image)
+    ##
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+    
+    ##
+    ## Run ssh-agent (inside the build environment)
+    ##
+    - eval $(ssh-agent -s)
+    
+    ##
+    ## Add the SSH key stored in SSH_PRIVATE_KEY variable to the agent store
+    ## We're using tr to fix line endings which makes ed25519 keys work
+    ## without extra base64 encoding.
+    ## https://gitlab.com/gitlab-examples/ssh-private-key/issues/1#note_48526556
+    ##
+    - echo "$ID_SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
+    - echo "$GITLAB_SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
+    
+    ##
+    ## Create the SSH directory and give it the right permissions
+    ##
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    
+    ##
+    ## Optionally, if you will be using any Git commands, set the user name and
+    ## and email.
+    ##
+    - git config --global user.email 'devops@bluedot.io'
+    - git config --global user.name 'Bluedot'
+    
+    - git reset --hard
+    - git clean -fd
+    
+    - git remote set-url origin git@gitlab.bluedot.io:apple/PointSDK-podspec.git
+    - git remote -v | grep -q github && echo "github remote is configured" || git remote add github git@github.com:Bluedot-Innovation/PointSDK-iOS.git
   script:
+    - export
     - git checkout master
     - curl --header -F "job-token=$CI_JOB_TOKEN" "http://gitlab.bluedot.io/api/v4/projects/1/jobs/artifacts/${REF_NAME}/download?job=build-release-framework-xcode-default" >> artifacts.zip
     - unzip artifacts.zip
@@ -31,30 +76,26 @@ updatePodSpec:
     - git commit -m "update version to ${VERSION}"
     - git tag ${VERSION}
     - git push -f origin master & git push origin ${VERSION}
-    - git remote -v | grep -q github && echo "github remote is configured" || git remote add github git@github.com:Bluedot-Innovation/PointSDK-iOS.git
     - git push -f github master & git push github ${VERSION}
     - pod trunk push BluedotPointSDK.podspec
 
 .notification_template: &notification_job
+  tags:
+    - xcode9
   stage: notify
   only:
     - pipelines
-  script:
-    - curl -X POST --data-urlencode "$PAYLOAD" "$HOOK"
-
+    - triggers
 
 notifySuccess:
-  variables:
-    SLACK_MESSAGE: "BluedotPointSDK v.${VERSION}(${BUILD_NUMBER}) has been deployed to cocoapods. https://cocoapods.org/pods/BluedotPointSDK"
-    SLACK_EMOJI: ":green_apple:"
   when: on_success
   <<: *notification_job
+  script:
+    - curl -X POST --data-urlencode "$SUCCESS_PAYLOAD" "$HOOK"
   
 notifyFailure:
-  variables:
-    SLACK_MESSAGE: "Cocoapods deployment failed. ${CI_PROJECT_URL}"
-    SLACK_EMOJI: ":apple:"
   when: on_failure
   <<: *notification_job
+  script:
+    - curl -X POST --data-urlencode "$FAILURE_PAYLOAD" "$HOOK"
 
-    
