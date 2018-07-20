@@ -62,20 +62,45 @@ updatePodSpec:
     - git reset --hard
     - git clean -fd
     
+    #
+    # Set origin remote to gitlab ssh endpoint
+    # Set github remote to github ssh endpoint
+    #
     - git remote set-url origin git@gitlab.bluedot.io:apple/PointSDK-podspec.git
     - git remote -v | grep -q github && echo "github remote is configured" || git remote add github git@github.com:Bluedot-Innovation/PointSDK-iOS.git
   script:
+    #
+    # Aa we want to make a public release, make all changes on master branch, as it will be pushed to Github remote
+    #
     - git checkout master
+    #
+    # Download the latest artifact from the merged branch' pipeline.
+    # Replace current framework with the latest build.
+    #
     - curl --header -F "job-token=$CI_JOB_TOKEN" "http://gitlab.bluedot.io/api/v4/projects/1/jobs/artifacts/${REF_NAME}/download?job=build-release-framework-xcode-default" >> artifacts.zip
     - unzip artifacts.zip
     - rm -rf PointSDK/BDPointSDK.framework
     - cp -r build/artifacts/framework-Release/Xcode9.3/BDPointSDK.framework PointSDK/BDPointSDK.framework
+    #
+    # Update version number in podspec.
+    #
     - sed -i '' -E "s/(s.version = \").*(\")/\1${VERSION}\2/" BluedotPointSDK.podspec
+    #
+    # Stage new framewrk and updated podspec.
+    # Create a version tag
+    #
     - git add BluedotPointSDK.podspec PointSDK/BDPointSDK.framework
     - git commit -m "update version to ${VERSION}"
     - git tag ${VERSION}
+    #
+    # Push changes to origin and github remotes.
+    # Thus cocopods will be able to get the latest build and two remotes will be in sync.
+    #
     - git push -f origin master & git push origin ${VERSION}
     - git push -f github master & git push github ${VERSION}
+    #
+    # Update cocoapods trunk.
+    #
     - pod trunk push BluedotPointSDK.podspec
 
 .notification_template: &notification_job
