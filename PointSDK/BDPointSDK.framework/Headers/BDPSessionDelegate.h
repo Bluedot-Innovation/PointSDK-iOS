@@ -25,9 +25,7 @@
 /**
  *  This method is called when an authentication request has been made to initiate a Point session.
  */
-- (void)willAuthenticateWithUsername: (NSString *)username
-                              apiKey: (NSString *)apiKey
-                         packageName: (NSString *)packageName;
+- (void)willAuthenticateWithApiKey: (NSString *)apiKey;
 
 /**
  *  This method indicates that authentication was successful and a Point session has started.

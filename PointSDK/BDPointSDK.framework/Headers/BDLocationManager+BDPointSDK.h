@@ -34,18 +34,7 @@
  *
  * @exception BDPointSessionException Calling this method while in an invalid state will result in a @ref BDPointSessionException being thrown.
  */
-- (void)authenticateWithApiKey: (NSString *)apiKey
-                   packageName: (NSString *)packageName
-                      username: (NSString *)username;
-
-/**
- * <p>Like authenticateWithApiKey:packageName:username: but allows the URL of <b>Point Access</b> to be overridden to a non-default value.
- * This should not normally be used; but may become necessary in certain support scenarios.</p>
- */
-- (void)authenticateWithApiKey: (NSString *)apiKey
-                   packageName: (NSString *)packageName
-                      username: (NSString *)username
-                   endpointURL: (NSURL *)endpointURL;
+- (void)authenticateWithApiKey: (NSString *)apiKey;
 
 /**
   <p>Immediately ends a currently active session with <b>Point Access</b>.
@@ -66,7 +55,7 @@
 /**
   <p>Applications using <b>Point SDK</b> must authenticate before using its features.</p>
   <p>Which classes and methods require authentication is set out clearly in the API documentation. Authentication is performed simply
-  by calling BDLocationManager::authenticateWithApiKey:packageName:username: with the API credentials provided in your
+  by calling BDLocationManager::authenticateWithApiKey: with the API credentials provided in your
   <a href="https://www.pointaccess.bluedot.com.au/pointaccess-v1/login.html"><b>Point Access</b> management portal</a>.</p>
   <p>Implement the callbacks in your own implementation of @ref BDPSessionDelegate, and assign it to this property to
   receive feedback on the outcome of authentication, and to tell your application when it can start
