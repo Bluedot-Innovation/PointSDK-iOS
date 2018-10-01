@@ -6,11 +6,9 @@
 # iOS PointSDK
 Bluedot Innovation's cutting edge location services solution - the Bluedot Point SDK - is powering the most innovative location-based apps for iOS and Android. Deliver creative content and collect valuable analytics using Bluedot Innovation's powerful, precise and easy-to-use location services technology.
 
-The Bluedot Point SDK enables mobile apps to trigger any action (like opening websites, sending messages and playing video) when users walk or drive through precise locations set anywhere in the world using 
+The Bluedot Point SDK enables mobile apps to trigger any action (like opening websites, sending messages and playing video) when users walk or drive through precise locations set anywhere in the world using Bluedot's advanced Geofences, Geolines™ or Beacon capability.
 
 ## Cocoapods
-
-Bluedot's advanced Geofences, Geolines™ or Beacon capability.
 
 Just reference this repository in your `Podfile`:
 
