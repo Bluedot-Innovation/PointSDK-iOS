@@ -162,7 +162,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		qZ2S3wSB+hi4DiC2s4IfD/Z/CJw=
+		QywoMMIqJcCnbdcCn9xPT+ouQrQ=
 		</data>
 		<key>Modules/BDPointSDK.swiftmodule/arm.swiftdoc</key>
 		<data>
@@ -170,7 +170,7 @@
 		</data>
 		<key>Modules/BDPointSDK.swiftmodule/arm.swiftmodule</key>
 		<data>
-		+DreR21KQGTh7BIPZUljD5vHJi8=
+		5NedM1nkmRf2Tb+f4LNr2Wkh6zc=
 		</data>
 		<key>Modules/BDPointSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -178,7 +178,7 @@
 		</data>
 		<key>Modules/BDPointSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		gifn8kxJ3bASl0/KbYum/fcrjR4=
+		0ChxvHMNj6o0hWsi29XTGEmuTnI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -631,11 +631,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+DreR21KQGTh7BIPZUljD5vHJi8=
+			5NedM1nkmRf2Tb+f4LNr2Wkh6zc=
 			</data>
 			<key>hash2</key>
 			<data>
-			1WlWG8TQFUNIa0qOP/OTAWaZZRObtulryQZrIZLwy1c=
+			SqskwZgRJiyBFexpYB3xpOAisrKnmJEJ+YAvSWTaDlc=
 			</data>
 		</dict>
 		<key>Modules/BDPointSDK.swiftmodule/arm64.swiftdoc</key>
@@ -653,11 +653,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gifn8kxJ3bASl0/KbYum/fcrjR4=
+			0ChxvHMNj6o0hWsi29XTGEmuTnI=
 			</data>
 			<key>hash2</key>
 			<data>
-			DOCOOXECGGjisFSDojD50BPZqBzF2/kbtfk5N2LA7Bc=
+			laWevmkgdwjfRo3xja984EsjPcTnNDTQjhoH5cTF/AM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

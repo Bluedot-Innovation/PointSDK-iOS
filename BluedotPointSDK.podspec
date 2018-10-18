@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "BluedotPointSDK"
-  s.version = "1.12.2"
+  s.version = "1.12.3"
   s.summary = "The Bluedot Point SDK is powering the most innovative location-based apps for iOS and Android."
   s.description = "Bluedot Innovation's cutting edge location services solution - the Bluedot Point SDK - is powering the most innovative location-based apps for iOS and Android.
   Deliver creative content and collect valuable analytics using Bluedot Innovation's powerful, precise and easy-to-use location services technology."
