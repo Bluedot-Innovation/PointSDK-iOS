@@ -19,6 +19,6 @@
 /**
  * @returns the <a href="https://developer.apple.com/library/ios/documentation/MapKit/Reference/MKShape_class/">MKShape</a> inherent to this object.
  */
--(MKShape*)shape;
+-(MKShape*)shape DEPRECATED_MSG_ATTRIBUTE("First deprecation in PointSDK v1.13. Please consider to implement map overlays renderrer in your project.");
 
 @end
