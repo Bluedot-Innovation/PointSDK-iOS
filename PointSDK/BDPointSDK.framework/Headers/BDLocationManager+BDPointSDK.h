@@ -86,7 +86,20 @@
  */
 - (void)setZone: (NSString *)zoneId disableByApplication: (BOOL)disable;
 
-- (BOOL)isZoneDisabledByApplication: (NSString *)zoneId;
+/*
+ *  Blocking method to determine if a user zone is in an enabled state.
+ *  @param zoneId zone UUID.
+ *  @return Returns whenever zone is disabled or not
+ */
+- (BOOL)isZoneDisabledByApplication: (NSString *)zoneId
+__attribute__((deprecated("First deprecated in 1.13 - use method applicationContainsDisabledZone:completion: instead")));
+
+/*
+ *  Non-blocking method to determine if a user zone is in an enabled state.
+ *  @param zoneId zone UUID
+ *  @param completion closure returns whenever zone is disabled or not
+ */
+- (void)applicationContainsDisabledZone:(NSString *)zoneId completion:(void (^)(BOOL))completion;
 
 /**
  * Returns the installation reference of this Point SDK enabled App.
