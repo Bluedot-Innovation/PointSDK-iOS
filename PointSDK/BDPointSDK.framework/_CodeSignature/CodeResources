@@ -4,6 +4,14 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>BDDataModel.momd/BDDataModel_1.13.mom</key>
+		<data>
+		eG62kdqVKUnL9sqM8hiWuzxy9X4=
+		</data>
+		<key>BDDataModel.momd/BDDataModel_1.13.omo</key>
+		<data>
+		IBLhI2XFoZBH9I6TvYILfY4mLrg=
+		</data>
 		<key>BDDataModel.momd/BDDataModel_1.8.1.mom</key>
 		<data>
 		BACUBwaGKJpwCLtO/6wxOmEV8mM=
@@ -12,13 +20,9 @@
 		<data>
 		1MuGvzieYDlY9VvqSmTb0dv5Bb8=
 		</data>
-		<key>BDDataModel.momd/BDDataModel_1.9.omo</key>
-		<data>
-		0C2cmlf0ljzKTkaiYdboWRQJR4Q=
-		</data>
 		<key>BDDataModel.momd/VersionInfo.plist</key>
 		<data>
-		knpiUvAGE5P9FCKkOPCMubb81R4=
+		1DC7kfoZe3MkmCFSEdyEG9sMcF8=
 		</data>
 		<key>BDPoint-DefaultConfiguration.plist</key>
 		<data>
@@ -66,7 +70,7 @@
 		</data>
 		<key>Headers/BDLocationManager+BDPointSDK.h</key>
 		<data>
-		GJJXTqLV3axUGbJez6K7GvPRA/8=
+		qg1uUsaNG6iEmDrDKQG7Fm1yW4g=
 		</data>
 		<key>Headers/BDLocationManager.h</key>
 		<data>
@@ -90,7 +94,7 @@
 		</data>
 		<key>Headers/BDPMKShape.h</key>
 		<data>
-		ggf1VDGlTfAo3PnrnEiJmcYp04U=
+		sDhLnD1XGn6G+6ispqfoS1itPHo=
 		</data>
 		<key>Headers/BDPNamedDescribed.h</key>
 		<data>
@@ -130,7 +134,7 @@
 		</data>
 		<key>Headers/BDPointSDK-Swift.h</key>
 		<data>
-		RTrq/xSl77sRpaNg2N74bwk8vPA=
+		gF9y/qTrHugk3caklBicPEZnLF8=
 		</data>
 		<key>Headers/BDPointSDK.h</key>
 		<data>
@@ -154,7 +158,7 @@
 		</data>
 		<key>Headers/MKMapView+BDPointSDK.h</key>
 		<data>
-		6Z1XUCCAv7Td4I1C+N+badOLb88=
+		T5s3jv9OnVi0VGGtPyui3AIZswU=
 		</data>
 		<key>Headers/NSString+BDURLEncoding.h</key>
 		<data>
@@ -162,7 +166,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		QywoMMIqJcCnbdcCn9xPT+ouQrQ=
+		6GZADXXlcSBlz7byUA5Lbq/bV8M=
 		</data>
 		<key>Modules/BDPointSDK.swiftmodule/arm.swiftdoc</key>
 		<data>
@@ -170,7 +174,7 @@
 		</data>
 		<key>Modules/BDPointSDK.swiftmodule/arm.swiftmodule</key>
 		<data>
-		5NedM1nkmRf2Tb+f4LNr2Wkh6zc=
+		MCyo/QGlpP4E5O93UBXhUBURLsA=
 		</data>
 		<key>Modules/BDPointSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -178,7 +182,7 @@
 		</data>
 		<key>Modules/BDPointSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		0ChxvHMNj6o0hWsi29XTGEmuTnI=
+		xJee7NaPh8NlHxX/ybzrffe7RiY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -187,6 +191,28 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>BDDataModel.momd/BDDataModel_1.13.mom</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			eG62kdqVKUnL9sqM8hiWuzxy9X4=
+			</data>
+			<key>hash2</key>
+			<data>
+			q/okkF/hBM/0AnUhar74JAcMjz1BETRO2gePFzh0+2o=
+			</data>
+		</dict>
+		<key>BDDataModel.momd/BDDataModel_1.13.omo</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IBLhI2XFoZBH9I6TvYILfY4mLrg=
+			</data>
+			<key>hash2</key>
+			<data>
+			aTNFFbDZH9ZbGnT1LUcW3e2vvuEWbG+b37HF3HonKRM=
+			</data>
+		</dict>
 		<key>BDDataModel.momd/BDDataModel_1.8.1.mom</key>
 		<dict>
 			<key>hash</key>
@@ -209,26 +235,15 @@
 			OjqyRiQAafQ1PClpbQsIPbovH3IQZqwgLqWX7QQWk2k=
 			</data>
 		</dict>
-		<key>BDDataModel.momd/BDDataModel_1.9.omo</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			0C2cmlf0ljzKTkaiYdboWRQJR4Q=
-			</data>
-			<key>hash2</key>
-			<data>
-			kVkwMuELgY8k/1JM327gjpeTpOwE8DZPKxZr7XFT4hg=
-			</data>
-		</dict>
 		<key>BDDataModel.momd/VersionInfo.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			knpiUvAGE5P9FCKkOPCMubb81R4=
+			1DC7kfoZe3MkmCFSEdyEG9sMcF8=
 			</data>
 			<key>hash2</key>
 			<data>
-			RUC4nNsMBzzdCJMnl9Wlphb0cF6ovBeC3UTbc6/N0qM=
+			lbDivgwIOeFHlXskEDVYJ0BAp4gw0S8EnA5Y8RdPZZ0=
 			</data>
 		</dict>
 		<key>BDPoint-DefaultConfiguration.plist</key>
@@ -356,11 +371,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GJJXTqLV3axUGbJez6K7GvPRA/8=
+			qg1uUsaNG6iEmDrDKQG7Fm1yW4g=
 			</data>
 			<key>hash2</key>
 			<data>
-			mAKhkqSXrgqPw5M+5VTYLACYuaHxneWKO09++eVpoQ0=
+			NpnsmtIS2ke/5b7YA9cjXo8kDYj4WUYUGgiHZFT7TcE=
 			</data>
 		</dict>
 		<key>Headers/BDLocationManager.h</key>
@@ -422,11 +437,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ggf1VDGlTfAo3PnrnEiJmcYp04U=
+			sDhLnD1XGn6G+6ispqfoS1itPHo=
 			</data>
 			<key>hash2</key>
 			<data>
-			5qmtv43VUKeIIxadld2tZ+R9Sjb/Ja/Hj/t8PcWxgIA=
+			JkQ+0sAUanUTsdr5M88gGtWbsTDDX5np0AkVG+ygijE=
 			</data>
 		</dict>
 		<key>Headers/BDPNamedDescribed.h</key>
@@ -532,11 +547,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RTrq/xSl77sRpaNg2N74bwk8vPA=
+			gF9y/qTrHugk3caklBicPEZnLF8=
 			</data>
 			<key>hash2</key>
 			<data>
-			+JNn9WDh5gqVcQYL0HMgNDbACOu1MBBMW2bN9ECSJKs=
+			RYyrthhp9de81XFGjhBqC2Eo7SM88IL3Euog6Cn6SCw=
 			</data>
 		</dict>
 		<key>Headers/BDPointSDK.h</key>
@@ -598,11 +613,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6Z1XUCCAv7Td4I1C+N+badOLb88=
+			T5s3jv9OnVi0VGGtPyui3AIZswU=
 			</data>
 			<key>hash2</key>
 			<data>
-			ubNYFlFGpXUhhWqSCl5FnJ+j/kf0jv5g3ocqIS2aAkA=
+			6Qms5okV36mw3rDNto7Ywkkm02QlbD5ROSeG+x6qy3Q=
 			</data>
 		</dict>
 		<key>Headers/NSString+BDURLEncoding.h</key>
@@ -631,11 +646,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5NedM1nkmRf2Tb+f4LNr2Wkh6zc=
+			MCyo/QGlpP4E5O93UBXhUBURLsA=
 			</data>
 			<key>hash2</key>
 			<data>
-			SqskwZgRJiyBFexpYB3xpOAisrKnmJEJ+YAvSWTaDlc=
+			7q9EZ6MyIN4ZBXB91ef86RQlkDllm8dAqmR5967K7qw=
 			</data>
 		</dict>
 		<key>Modules/BDPointSDK.swiftmodule/arm64.swiftdoc</key>
@@ -653,11 +668,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0ChxvHMNj6o0hWsi29XTGEmuTnI=
+			xJee7NaPh8NlHxX/ybzrffe7RiY=
 			</data>
 			<key>hash2</key>
 			<data>
-			laWevmkgdwjfRo3xja984EsjPcTnNDTQjhoH5cTF/AM=
+			aCNXJO92O/h9aQP4ObmCwCDAaMkjEOSIzTvr1TzJ+yg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
