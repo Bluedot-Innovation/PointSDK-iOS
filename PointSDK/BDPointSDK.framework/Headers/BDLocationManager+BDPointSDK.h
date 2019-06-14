@@ -13,6 +13,11 @@
 #import "BDPAuthenticationStateProvider.h"
 
 @protocol BDPAuthenticationDelegate;
+typedef NS_ENUM(NSInteger, BDAuthorizationLevel)
+{
+    authorizedAlways,
+    authorizedWhenInUse
+};
 
 /**
   @brief Provides <b>Point SDK</b> specific authentication methods and delegate properties to @ref BDLocationManager.
@@ -34,7 +39,26 @@
  *
  * @exception BDPointSessionException Calling this method while in an invalid state will result in a @ref BDPointSessionException being thrown.
  */
-- (void)authenticateWithApiKey: (NSString *)apiKey;
+- (void)authenticateWithApiKey: (NSString *)apiKey
+__attribute__((deprecated("First deprecated in 1.14.0 - use method authenticateWithApiKey:requestAuthorization: instead")));
+
+/**
+ * <p>Authenticate, and start a session with <b>Point Access</b>.
+ * This behaviour is asynchronous and this method will return immediately. Progress of the authentication process can be
+ * monitored by callbacks provided via the <b>sessionDelegate</b> property, or the KVO-enabled <b>authenticationState</b> property.</p>
+ *
+ * Location Services are required immediately after successful authentication.
+ *
+ * <p>It is the responsibility of the Application to respect the authentication life-cycle and ensure that @ref BDLocationManager
+ * is not already Authenticated, or in the process of Authenticating, while calling this method.</p>
+ *
+ * @param apiKey API Key
+ * @param authorizationLevel It is mandatory to request authorization level during SDK authentication. Requesting with
+ * "authorizedAlways" option will show iOS location permission prompt with three options, "Always", "When in use" and "Never".
+ * Requesting with "authorizedWhenInUse" option will show iOS location permission prompt with two options, "When in use" and "Never".
+ * @exception BDPointSessionException Calling this method while in an invalid state will result in a @ref BDPointSessionException being thrown.
+ */
+- (void)authenticateWithApiKey: (NSString *)apiKey requestAuthorization: (BDAuthorizationLevel) authorizationLevel;
 
 /**
   <p>Immediately ends a currently active session with <b>Point Access</b>.
