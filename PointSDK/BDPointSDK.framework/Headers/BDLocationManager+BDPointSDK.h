@@ -27,17 +27,9 @@ typedef NS_ENUM(NSInteger, BDAuthorizationLevel)
 @interface BDLocationManager (BDPointSDK) <BDPAuthenticationStateProvider>
 
 /**
- * <p>Authenticate, and start a session with <b>Point Access</b>.
- * This behaviour is asynchronous and this method will return immediately. Progress of the authentication process can be
- * monitored by callbacks provided via the <b>sessionDelegate</b> property, or the KVO-enabled <b>authenticationState</b> property.</p>
+ * This method has been deprecated as of version 1.14.0; it will be removed in a future version.
  *
- * Location Services are required immediately after a successful authentication.  If your App has not already called
- * [CLLocationManager auth]
- *
- * <p>It is the responsibility of the Application to respect the authentication life-cycle and ensure that @ref BDLocationManager
- * is not already Authenticated, or in the process of Authenticating, while calling this method.</p>
- *
- * @exception BDPointSessionException Calling this method while in an invalid state will result in a @ref BDPointSessionException being thrown.
+ * @deprecated Use @ref authenticateWithApiKey:requestAuthorization:
  */
 - (void)authenticateWithApiKey: (NSString *)apiKey
 __attribute__((deprecated("First deprecated in 1.14.0 - use method authenticateWithApiKey:requestAuthorization: instead")));
@@ -88,7 +80,10 @@ __attribute__((deprecated("First deprecated in 1.14.0 - use method authenticateW
  */
 @property id<BDPSessionDelegate> sessionDelegate;
 
-@property id<BDPAuthenticationDelegate> authenticationDelegate DEPRECATED_MSG_ATTRIBUTE("This has been superceded by BDPSessionDelegate and will be removed in a future release.");
+/**
+ * @deprecated This has been superceded by BDPSessionDelegate and will be removed in a future release.
+ */
+@property id<BDPAuthenticationDelegate> authenticationDelegate __attribute__((deprecated("This has been superceded by BDPSessionDelegate and will be removed in a future release.")));
 
 
 /**
@@ -110,15 +105,17 @@ __attribute__((deprecated("First deprecated in 1.14.0 - use method authenticateW
  */
 - (void)setZone: (NSString *)zoneId disableByApplication: (BOOL)disable;
 
-/*
+/**
  *  Blocking method to determine if a user zone is in an enabled state.
+ *
  *  @param zoneId zone UUID.
  *  @return Returns whenever zone is disabled or not
+ *  @deprecated Use @ref applicationContainsDisabledZone:completion:
  */
 - (BOOL)isZoneDisabledByApplication: (NSString *)zoneId
 __attribute__((deprecated("First deprecated in 1.13 - use method applicationContainsDisabledZone:completion: instead")));
 
-/*
+/**
  *  Non-blocking method to determine if a user zone is in an enabled state.
  *  @param zoneId zone UUID
  *  @param completion closure returns whenever zone is disabled or not

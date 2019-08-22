@@ -27,14 +27,14 @@ github "Bluedot-Innovation/PointSDK-iOS"
 
 ## Documentation
 
-You can find [documentation](http://docs.bluedotinnovation.com/display/DEVDOC10/iOS+SDK) for the SDK and [release notes](http://docs.bluedotinnovation.com/display/DEVDOC10/Version+Release+Notes) on http://docs.bluedotinnovation.com.
+You can find [documentation](https://docs.bluedot.io/ios-sdk/) for the SDK and [release notes](https://docs.bluedot.io/version-release-notes/) on https://docs.bluedot.io/.
 
 ## Copyright and license
 
 Created by Bluedot Innovation in 2018.
 Copyright © 2018 Bluedot Innovation. All rights reserved.
 
-By dowloading or using the Bluedot Point SDK for iOS, You agree to the Bluedot [Terms and Conditions](http://www.bluedotinnovation.com/html/downloads/pdfs/terms-and-conditions-bluedot-070814.pdf)
-and [Privacy Policy](http://www.bluedotinnovation.com/html/downloads/pdfs/privacy-policy-bluedot-170815.pdf)
-and [Billing Policy](http://www.bluedotinnovation.com/html/downloads/pdfs/privacy-policy-bluedot-170815.pdf)
+By dowloading or using the Bluedot Point SDK for iOS, You agree to the Bluedot [Terms and Conditions](https://bluedot.io/agreements/#terms)
+and [Privacy Policy](https://bluedot.io/agreements/#privacy)
+and [Billing Policy](https://bluedot.io/agreements/#billing)
 and acknowledge that such terms govern Your use of and access to the iOS SDK.

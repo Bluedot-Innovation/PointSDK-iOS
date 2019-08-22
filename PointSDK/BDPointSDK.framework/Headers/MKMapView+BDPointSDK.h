@@ -10,55 +10,71 @@
 @class BDFenceInfo;
 @class BDZoneInfo;
 
+
 @protocol BDPSpatialObjectInfo;
 
 @interface MKMapView (BDPointSDK)
 
-
-// Adding Point features to the map
-//__attribute__((deprecated("MKMapView (BDPointSDK) has beein deprecated since version 1.13. Please implement map overlays in your project.")))
+/**
+ * @deprecated This method has been deprecated since version 1.13. Please implement map overlays in your project.
+ */
 - (void)addOverlaysForBeacon:(BDBeaconInfo *)beaconInfo
                    iconImage:(UIImage *)icon
                    iconScale:(CGFloat)scale
-     DEPRECATED_MSG_ATTRIBUTE("First deprecation in PointSDK v1.13. Please consider to implement map overlays renderrer in your project.");
+    __attribute__((deprecated("MKMapView (BDPointSDK) has been deprecated since version 1.13. Please implement map overlays in your project.")));
 
-- (void)addOverlaysForFence:(BDFenceInfo *)fenceInfo;
+/**
+ * @deprecated This method has been deprecated since version 1.13. Please implement map overlays in your project.
+ */
+- (void)addOverlaysForFence:(BDFenceInfo *)fenceInfo __attribute__((deprecated("MKMapView (BDPointSDK) has been deprecated since version 1.13. Please implement map overlays in your project.")));
 
+/**
+ * @deprecated This method has been deprecated since version 1.13. Please implement map overlays in your project.
+ */
 - (void)addOverlaysForZone:(BDZoneInfo *)zoneInfo
        withBeaconIconImage:(UIImage *)beaconIconImage
            beaconIconScale:(CGFloat)beaconIconScale
-   DEPRECATED_MSG_ATTRIBUTE("First deprecation in PointSDK v1.13. Please consider to implement map overlays renderrer in your project.");
+   __attribute__((deprecated("MKMapView (BDPointSDK) has been deprecated since version 1.13. Please implement map overlays in your project.")));
 
+/**
+ * @deprecated This method has been deprecated since version 1.13. Please implement map overlays in your project.
+ */
 - (void)addOverlaysForZones:(NSSet *)zoneInfos
         withBeaconIconImage:(UIImage *)beaconIconImage
             beaconIconScale:(CGFloat)beaconIconScale
-    DEPRECATED_MSG_ATTRIBUTE("First deprecation in PointSDK v1.13. Please consider to implement map overlays renderrer in your project.");
+    __attribute__((deprecated("MKMapView (BDPointSDK) has been deprecated since version 1.13. Please implement map overlays in your project.")));
 
 
-// Removing Point features from the map
+/**
+ * @deprecated This method has been deprecated since version 1.13. Please implement map overlays in your project.
+ */
+- (void)removeAllSpatialObjectOverlays __attribute__((deprecated("MKMapView (BDPointSDK) has been deprecated since version 1.13. Please implement map overlays in your project.")));
 
-- (void)removeAllSpatialObjectOverlays DEPRECATED_MSG_ATTRIBUTE("First deprecation in PointSDK v1.13. Please consider to implement map overlays renderrer in your project.");
+/**
+ * @deprecated This method has been deprecated since version 1.13. Please implement map overlays in your project.
+ */
+- (void)removeOverlaysForSpatialObjectInfo:(id <BDPSpatialObjectInfo>)spatialObject __attribute__((deprecated("MKMapView (BDPointSDK) has been deprecated since version 1.13. Please implement map overlays in your project.")));
 
-- (void)removeOverlaysForSpatialObjectInfo:(id <BDPSpatialObjectInfo>)spatialObject
-                   DEPRECATED_MSG_ATTRIBUTE("First deprecation in PointSDK v1.13. Please consider to implement map overlays renderrer in your project.");
-
-
-// Setting the tint colour for Beacons and Fences
-
+/**
+ * @deprecated This method has been deprecated since version 1.13. Please implement map overlays in your project.
+ */
 - (void)setTintColor:(UIColor *)tintColor
-    forSpatialObject:(id<BDPSpatialObjectInfo>)spatialObjectInfo
-DEPRECATED_MSG_ATTRIBUTE("First deprecation in PointSDK v1.13. Please consider to implement map overlays renderrer in your project.");
+    forSpatialObject:(id<BDPSpatialObjectInfo>)spatialObjectInfo __attribute__((deprecated("MKMapView (BDPointSDK) has been deprecated since version 1.13. Please implement map overlays in your project.")));
 
 
-// Getting map regions for Point features
+/**
+ * @deprecated This method has been deprecated since version 1.13. Please implement map overlays in your project.
+ */
+- (MKMapRect)mapRectForSpatialObject:(id<BDPSpatialObjectInfo>)spatialObjectInfo __attribute__((deprecated("MKMapView (BDPointSDK) has been deprecated since version 1.13. Please implement map overlays in your project.")));
 
-- (MKMapRect)mapRectForSpatialObject:(id<BDPSpatialObjectInfo>)spatialObjectInfo
-             DEPRECATED_MSG_ATTRIBUTE("First deprecation in PointSDK v1.13. Please consider to implement map overlays renderrer in your project.");
+/**
+ * @deprecated This method has been deprecated since version 1.13. Please implement map overlays in your project.
+ */
+- (MKMapRect)mapRectForZone:(BDZoneInfo *)zone __attribute__((deprecated("MKMapView (BDPointSDK) has been deprecated since version 1.13. Please implement map overlays in your project.")));
 
-- (MKMapRect)mapRectForZone:(BDZoneInfo *)zone
-    DEPRECATED_MSG_ATTRIBUTE("First deprecation in PointSDK v1.13. Please consider to implement map overlays renderrer in your project.");
-
-- (MKMapRect)mapRectForZones:(NSSet *)zones
-     DEPRECATED_MSG_ATTRIBUTE("First deprecation in PointSDK v1.13. Please consider to implement map overlays renderrer in your project.");
+/**
+ * @deprecated This method has been deprecated since version 1.13. Please implement map overlays in your project.
+ */
+- (MKMapRect)mapRectForZones:(NSSet *)zones __attribute__((deprecated("MKMapView (BDPointSDK) has been deprecated since version 1.13. Please implement map overlays in your project.")));
 
 @end

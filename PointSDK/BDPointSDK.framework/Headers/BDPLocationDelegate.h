@@ -154,13 +154,16 @@ __attribute__((deprecated("Use method didCheckIntoBeacon:inZone:atLocation:withP
  * <p>These methods can be implemented to monitor whether the Bluetooth
  * capabilities of the device are in a valid state when utilising the SDK's beacon functionality.</p>
  *
- * <p>If the configured location of a beacon is near the device and Bluetooth has not been enabled, then didStartRequiringUserInterventionForBluetooth will be called.</p>
- * <p>Thereafter, if the device leaves proximity of the beacon, then didStopRequiringUserInterventionForBluetooth is called.</p>
- * <p>If Bluetooth is both required and enabled, then these callbacks will not be invoked.</p>
+ * <p>If the configured location of a beacon is near the device, then `didStartRequiringUserInterventionForBluetooth` will be called.</p>
+ * <p>From the version 15.0.0 the SDK does not maintain Bluetooth enablement state. The boolean `isBluetoothEnabled` is removed from the SDK.</p>
+ * <p>Since then, it is an app responsibility to check the Bluetooth state and require user interraction in the most appropriate way.</p>
+ * <p>Thereafter, if the device leaves proximity of the beacon, then @ref didStopRequiringUserInterventionForBluetooth is called.</p>
  */
 - (void)didStartRequiringUserInterventionForBluetooth;
 
 /**
+ * <p>To preserve the energy and minimise the battery impact, it is recommended to turn off Bluetooth if the application is not using it.</p>
+ * <p>However, there might be other apps or peripheral using the Bluetooth. Thus the user  decides whenever to keep it enabled or disabled.</p>
  * <p>Please refer to @ref didStartRequiringUserInterventionForBluetooth.</p>
  */
 - (void)didStopRequiringUserInterventionForBluetooth;

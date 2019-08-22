@@ -17,8 +17,8 @@
 @protocol BDPMKShape <NSObject>
 
 /**
- * @returns the <a href="https://developer.apple.com/library/ios/documentation/MapKit/Reference/MKShape_class/">MKShape</a> inherent to this object.
+ * @deprecated First deprecation in PointSDK v1.13. Please consider to implement map overlays renderrer in your project.
  */
--(MKShape*)shape DEPRECATED_MSG_ATTRIBUTE("First deprecation in PointSDK v1.13. Please consider to implement map overlays renderrer in your project.");
+-(MKShape*)shape __attribute__((deprecated("First deprecated in 1.13 - use method applicationContainsDisabledZone:completion: instead")));
 
 @end

@@ -58,11 +58,6 @@ Any <b>Custom Action</b>s defined in the <b>Point Access</b> are triggered, in r
 + (BDLocationManager *)instance;
 
 /**
- *  A flag to determine of Bluetooth is available on the device.
- */
-@property (nonatomic, readonly) BOOL  isBluetoothAvailable;
-
-/**
  *  Key-Value Observable representation of the current, underlying CoreLocation authorization status for this Application.
  */
 @property (nonatomic, readonly) CLAuthorizationStatus authorizationStatus;
