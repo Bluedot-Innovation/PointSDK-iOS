@@ -15,8 +15,8 @@ Pod::Spec.new do |s|
     Copyright © 2019 Bluedot Innovation. All rights reserved.
 
     By downloading or using the Bluedot Point SDK for iOS, You agree to the Bluedot Terms and Conditions
-    https://www.bluedot.io/html/downloads/pdfs/terms-and-conditions-bluedot-070814.pdf and Privacy Policy https://www.bluedot.io/html/downloads/pdfs/privacy-policy-bluedot-170815.pdf
-    and Billing Policy https://www.bluedot.io/html/downloads/pdfs/privacy-policy-bluedot-170815.pdf
+    https://bluedot.io/agreements/#terms and Privacy Policy https://bluedot.io/agreements/#privacy
+    and Billing Policy https://bluedot.io/agreements/#billing
     and acknowledge that such terms govern Your use of and access to the iOS SDK.
 
     LICENSE
