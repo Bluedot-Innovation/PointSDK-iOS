@@ -10,8 +10,6 @@
 #import "BDLocationManager+BDPointSDK.h"
 #endif
 
-#import "NSString+BDURLEncoding.h"
-
 #import "BDGeospatialUnits.h"
 
 // Bluedot classes
