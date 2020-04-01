@@ -13,7 +13,7 @@
 
 @copyright Bluedot Innovation
 */
-@interface BDBeaconInfo : NSObject <BDPSpatialObjectInfo>
+@interface BDBeaconInfo : NSObject <BDPSpatialObjectInfo, NSCoding>
 
 /**
  * The name of this Beacon that was entered into Point Access

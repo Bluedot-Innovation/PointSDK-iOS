@@ -23,7 +23,7 @@
 
 @copyright Bluedot Innovation
 */
-@interface BDBoundingBox : BDGeometry <NSCopying, BDPValidatable>
+@interface BDBoundingBox : BDGeometry <NSCopying, BDPValidatable, NSCoding>
 
 /**
  * Initializes a BDBoundingBox with individual values for the four bounding edges, in degrees.
@@ -34,7 +34,7 @@
                          east: (BDLocationDegrees)east;
 
 /**
- * Initializes a BDBoundingBox with @ref BDPointSDK point values for two of the bounding corners.
+ * Initializes a BDBoundingBox with @ref BDPoint values for two of the bounding corners.
  */
 - (instancetype)initWithNorthEast: (BDPoint *)northEast
                         southWest: (BDPoint*)southWest;

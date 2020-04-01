@@ -3,6 +3,8 @@
 //  Copyright © 2016 Bluedot Innovation. All rights reserved.
 //
 
+@import Foundation;
+
 @class BDGeometry;
 
 /**

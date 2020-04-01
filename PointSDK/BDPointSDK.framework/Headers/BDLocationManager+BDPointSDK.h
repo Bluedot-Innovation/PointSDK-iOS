@@ -144,7 +144,7 @@ __attribute__((deprecated("First deprecated in 1.13 - use method applicationCont
 /**
  * Sets custom metadata for Notification events.
  * The custom metadata set through this API will be available on the backend in checkin activity log and via webhooks.
- * Only up to 5 custom meta data fields are allowed. Throws BDCustomEventMetadataCountException exception if the number of custom fields exceeded.
+ * Only up to 20 custom meta data fields are allowed. Throws BDCustomEventMetadataCountException exception if the number of custom fields exceeded.
  * Only String Type is allowed. Throws BDCustomEventMetadataDataFormatException exception if data contains non-String type.
  */
 - (void) setCustomEventMetaData: (NSDictionary *)data;

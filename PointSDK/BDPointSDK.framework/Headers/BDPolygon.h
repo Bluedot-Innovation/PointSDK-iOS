@@ -15,10 +15,10 @@
 
   @copyright Bluedot Innovation
 */
-@interface BDPolygon : BDPolygonal
+@interface BDPolygon : BDPolygonal<NSCoding>
 
 /**
-  Convenience method to create a BDPolygon with an array of @ref BDPointSDK vertices.
+  Convenience method to create a BDPolygon with an array of @ref BDPoint  vertices.
 
   Vertices is an array containing 1 or more BDPointSDK objects describing the intended polygon.
   If the array is empty, or if the array contains any non-BDPointSDK elements, an <b>NSInvalidArgumentException</b> will be thrown.

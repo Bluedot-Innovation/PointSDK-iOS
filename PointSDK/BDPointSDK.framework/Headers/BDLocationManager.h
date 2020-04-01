@@ -11,7 +11,7 @@
 
 <p><b>Point SDK</b> carries out location specific, conditional actions that you define in the <b>Point Access</b> web-interface.
 To start these behaviours with your Application, it is necessary only to call the authentication method
-on the @ref BDLocationManager#sharedLocationManager "shared singleton instance" of @ref BDLocationManager.</p>
+on the @ref BDLocationManager#instance "shared singleton instance" of @ref BDLocationManager.</p>
 
 <p>Calling the authentication method will start a session with <b>Point Access</b>.
 Upon success, @ref BDZoneInfo "Zones" will be downloaded and associated actions will be executed by the library,

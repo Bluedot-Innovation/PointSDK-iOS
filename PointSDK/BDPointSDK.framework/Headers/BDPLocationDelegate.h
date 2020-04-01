@@ -181,7 +181,7 @@ __attribute__((deprecated("Use method didCheckIntoBeacon:inZone:atLocation:withP
 - (void)didStartRequiringUserInterventionForLocationServicesAuthorizationStatus: (CLAuthorizationStatus)authorizationStatus;
 
 /**
- * <p>Please refer to @ref didStartRequiringUserInterventionForLocationServices.</p>
+ * <p>Please refer to @ref didStartRequiringUserInterventionForLocationServicesAuthorizationStatus:.</p>
  */
 - (void)didStopRequiringUserInterventionForLocationServicesAuthorizationStatus: (CLAuthorizationStatus)authorizationStatus;
 

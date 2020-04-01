@@ -29,7 +29,7 @@
 - (void)addVertex: (BDPoint *)vertex;
 
 /**
-  An ordered series of @ref BDPointSDK "point" vertices which, when joined by straight-line segments, describe this polygonal geometry.
+  An ordered series of @ref BDPoint "point" vertices which, when joined by straight-line segments, describe this polygonal geometry.
 */
 @property (nonatomic) NSMutableArray  *vertices;
 

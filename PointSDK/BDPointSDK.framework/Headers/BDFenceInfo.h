@@ -15,7 +15,7 @@
 
 @copyright Bluedot Innovation
 */
-@interface BDFenceInfo : NSObject <BDPSpatialObjectInfo>
+@interface BDFenceInfo : NSObject <BDPSpatialObjectInfo, NSCoding>
 
 /** The name of this Fence that was entered into Point Access */
 @property (copy,readonly) NSString  *name;
