@@ -1,0 +1,89 @@
+# This is a basic workflow to help you get started with Actions
+
+name: release PointSDK
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  push:
+    branches: [ master ]
+    tags-ignore: 
+      - '**'
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  release:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    name: GitHub release
+    timeout-minutes: 10
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - uses: actions/checkout@v2
+      with:
+        lfs: true
+    
+    # Install plistutil
+    - name: Install plistutil
+      run: sudo apt-get install libplist-utils
+    
+    # get version number from the SDK
+    - name: Extract version number
+      id: semver
+      working-directory: PointSDK
+      run: |
+        SEMVER=$(plistutil -i ./BDPointSDK.framework/Info.plist \
+        | grep -C 1 CFBundleShortVersionString \
+        | grep -o '[0-9]*\.[0-9]*\.[0-9]*')      
+        
+        echo "::set-output name=semver::$SEMVER"
+        
+    # prepare release notes
+    - name: prepare release notes
+      working-directory: PointSDK
+      id: notes
+      run: |
+        RELEASE_NAME=$(sed -n -e "s/^# //p" ReleaseNotes.md)
+        sed "1,/$RELEASE_NAME/ d" ReleaseNotes.md >! ReleaseNotes.md
+        
+        echo "::set-output name=name::$RELEASE_NAME"
+        
+    # prepare release assets
+    - name: prepare release assets
+      run: |
+        zip -r BDPointSDK.framework.zip PointSDK/BDPointSDK.framework
+        zip -r BDPointSDK.framework.dSYM.zip PointSDK/BDPointSDK.framework.dSYM
+    
+    # make new GitHub release
+    - name: create a release
+      uses: softprops/action-gh-release@v1
+      with:
+        body_path: PointSDK/ReleaseNotes.md
+        draft: true
+        name: ${{ steps.notes.outputs.name }}
+        tag_name: ${{ steps.semver.outputs.semver }}
+        files: |
+          BDPointSDK.framework.zip
+          BDPointSDK.framework.dSYM.zip
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        
+  pod:
+    name: update pod
+    runs-on: [macos-latest]
+    timeout-minutes: 10
+    needs: [release]
+    
+    steps:
+      # checkout current repository
+      - uses: actions/checkout@v2
+      
+      # update pod
+      - name: upload pod to cocoapods
+        env: 
+          COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
+        run: |
+          pod trunk push --allow-warnings BluedotPointSDK.podspec
