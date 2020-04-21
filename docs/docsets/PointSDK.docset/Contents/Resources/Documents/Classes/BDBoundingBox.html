@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BDBoundingBox Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/BDBoundingBox" class="dashAnchor"></a>
+    <a title="BDBoundingBox Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">PointSDK v15.2.1 Docs</a></p>
+        <p class="header-right"><a href="https://github.com/Bluedot-Innovation/PointSDK-iOS"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">PointSDK Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        BDBoundingBox Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Guides.html">Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../integrating-the-sdk.html">Integrating the SDK</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Categories.html">Categories</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Categories/MKMapView%28BDPointSDK%29.html">MKMapView(BDPointSDK)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/BDBeaconInfo.html">BDBeaconInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDBoundingBox.html">BDBoundingBox</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDCircle.html">BDCircle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDFenceInfo.html">BDFenceInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)BDGeometry">BDGeometry</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDLineString.html">BDLineString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDLocation.html">BDLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDLocationInfo.html">BDLocationInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDLocationManager.html">BDLocationManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDPoint.html">BDPoint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDPointOverlayRendererFactory.html">BDPointOverlayRendererFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDPointSessionException.html">BDPointSessionException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDPolygon.html">BDPolygon</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDPolygonal.html">BDPolygonal</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDZoneInfo.html">BDZoneInfo</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@BDPointSDKVersionNumber">BDPointSDKVersionNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@BDPointSDKVersionString">BDPointSDKVersionString</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/BDAuthenticationState.html">BDAuthenticationState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BDAuthorizationLevel.html">BDAuthorizationLevel</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPAuthenticationStateProvider.html">BDPAuthenticationStateProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPDeepCopy.html">BDPDeepCopy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPGeometry.html">BDPGeometry</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPLocationDelegate.html">BDPLocationDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPMKShape.html">BDPMKShape</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPNamedDescribed.html">BDPNamedDescribed</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPRestartAlertDelegate.html">BDPRestartAlertDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPSessionDelegate.html">BDPSessionDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPSpatialObject.html">BDPSpatialObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPSpatialObjectInfo.html">BDPSpatialObjectInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPValidatable.html">BDPValidatable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:objc(pl)BDPointDelegate">BDPointDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Type%20Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationAccuracy">BDLocationAccuracy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationCoordinate2D">BDLocationCoordinate2D</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDegrees">BDLocationDegrees</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDirection">BDLocationDirection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDistance">BDLocationDistance</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationSpeed">BDLocationSpeed</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@BDStringFromAuthenticationState">BDStringFromAuthenticationState</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>BDBoundingBox</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BDBoundingBox</span> <span class="p">:</span> <span class="nc"><a href="../Classes.html#/c:objc(cs)BDGeometry">BDGeometry</a></span> <span class="o">&lt;</span><span class="n">NSCopying</span><span class="p">,</span> <span class="n"><a href="../Protocols/BDPValidatable.html">BDPValidatable</a></span><span class="p">,</span> <span class="n">NSCoding</span><span class="o">&gt;</span></code></pre>
+
+                </div>
+              </div>
+            <p>@brief A rectangular coordinate region on the Earth&rsquo;s surface, defined by two latitude / longitude corner @ref BDPoint &ldquo;points&rdquo;.</p>
+
+<p>\image html boundingBox.gif</p>
+
+<p>@copyright Bluedot Innovation</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDBoundingBox(im)initWithNorth:west:south:east:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithNorth:west:south:east:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDBoundingBox(im)initWithNorth:west:south:east:">-initWithNorth:<wbr>west:<wbr>south:<wbr>east:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes a BDBoundingBox with individual values for the four bounding edges, in degrees.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithNorth</span><span class="p">:(</span><span class="n"><a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDegrees">BDLocationDegrees</a></span><span class="p">)</span><span class="nv">north</span>
+                         <span class="nf">west</span><span class="p">:(</span><span class="n"><a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDegrees">BDLocationDegrees</a></span><span class="p">)</span><span class="nv">west</span>
+                        <span class="nf">south</span><span class="p">:(</span><span class="n"><a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDegrees">BDLocationDegrees</a></span><span class="p">)</span><span class="nv">south</span>
+                         <span class="nf">east</span><span class="p">:(</span><span class="n"><a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDegrees">BDLocationDegrees</a></span><span class="p">)</span><span class="nv">east</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="o">!</span><span class="p">(</span><span class="nv">north</span><span class="p">:</span> <span class="kt"><a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDegrees">BDLocationDegrees</a></span><span class="p">,</span> <span class="nv">west</span><span class="p">:</span> <span class="kt"><a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDegrees">BDLocationDegrees</a></span><span class="p">,</span> <span class="nv">south</span><span class="p">:</span> <span class="kt"><a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDegrees">BDLocationDegrees</a></span><span class="p">,</span> <span class="nv">east</span><span class="p">:</span> <span class="kt"><a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDegrees">BDLocationDegrees</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDBoundingBox(im)initWithNorthEast:southWest:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithNorthEast:southWest:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDBoundingBox(im)initWithNorthEast:southWest:">-initWithNorthEast:<wbr>southWest:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes a BDBoundingBox with @ref BDPoint values for two of the bounding corners.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithNorthEast</span><span class="p">:(</span><span class="n"><a href="../Classes/BDPoint.html">BDPoint</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">northEast</span>
+                        <span class="nf">southWest</span><span class="p">:(</span><span class="n"><a href="../Classes/BDPoint.html">BDPoint</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">southWest</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="o">!</span><span class="p">(</span><span class="nv">northEast</span><span class="p">:</span> <span class="kt"><a href="../Classes/BDPoint.html">BDPoint</a></span><span class="o">!</span><span class="p">,</span> <span class="nv">southWest</span><span class="p">:</span> <span class="kt"><a href="../Classes/BDPoint.html">BDPoint</a></span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDBoundingBox(im)setWest:"></a>
+                    <a name="//apple_ref/objc/Method/-setWest:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDBoundingBox(im)setWest:">-setWest:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setWest</span><span class="p">:(</span><span class="n"><a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDegrees">BDLocationDegrees</a></span><span class="p">)</span><span class="nv">west</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setWest</span><span class="p">(</span><span class="n">_</span> <span class="nv">west</span><span class="p">:</span> <span class="kt"><a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDegrees">BDLocationDegrees</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>west</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the longitudinal component of the South-West corner point of this rectangular region</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDBoundingBox(im)west"></a>
+                    <a name="//apple_ref/objc/Method/-west" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDBoundingBox(im)west">-west</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>@returns the longitudinal component of the South-West corner point of this rectangular region</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n"><a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDegrees">BDLocationDegrees</a></span><span class="p">)</span><span class="n">west</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">west</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDegrees">BDLocationDegrees</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDBoundingBox(im)setNorth:"></a>
+                    <a name="//apple_ref/objc/Method/-setNorth:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDBoundingBox(im)setNorth:">-setNorth:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setNorth</span><span class="p">:(</span><span class="n"><a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDegrees">BDLocationDegrees</a></span><span class="p">)</span><span class="nv">north</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setNorth</span><span class="p">(</span><span class="n">_</span> <span class="nv">north</span><span class="p">:</span> <span class="kt"><a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDegrees">BDLocationDegrees</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>north</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the latitudinal component of the North-East corner point of this rectangular region</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDBoundingBox(im)north"></a>
+                    <a name="//apple_ref/objc/Method/-north" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDBoundingBox(im)north">-north</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the latitudinal component of the North-East corner point of this rectangular region</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n"><a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDegrees">BDLocationDegrees</a></span><span class="p">)</span><span class="n">north</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">north</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDegrees">BDLocationDegrees</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDBoundingBox(im)setEast:"></a>
+                    <a name="//apple_ref/objc/Method/-setEast:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDBoundingBox(im)setEast:">-setEast:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setEast</span><span class="p">:(</span><span class="n"><a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDegrees">BDLocationDegrees</a></span><span class="p">)</span><span class="nv">east</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setEast</span><span class="p">(</span><span class="n">_</span> <span class="nv">east</span><span class="p">:</span> <span class="kt"><a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDegrees">BDLocationDegrees</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>east</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the longitudinal component of the North-East corner point of this rectangular region</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDBoundingBox(im)east"></a>
+                    <a name="//apple_ref/objc/Method/-east" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDBoundingBox(im)east">-east</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>@returns the longitudinal component of the North-East corner point of this rectangular region</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n"><a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDegrees">BDLocationDegrees</a></span><span class="p">)</span><span class="n">east</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">east</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDegrees">BDLocationDegrees</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDBoundingBox(im)setSouth:"></a>
+                    <a name="//apple_ref/objc/Method/-setSouth:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDBoundingBox(im)setSouth:">-setSouth:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the latitudinal component of the South-West corner point of this rectangular region</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setSouth</span><span class="p">:(</span><span class="n"><a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDegrees">BDLocationDegrees</a></span><span class="p">)</span><span class="nv">south</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setSouth</span><span class="p">(</span><span class="n">_</span> <span class="nv">south</span><span class="p">:</span> <span class="kt"><a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDegrees">BDLocationDegrees</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDBoundingBox(im)south"></a>
+                    <a name="//apple_ref/objc/Method/-south" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDBoundingBox(im)south">-south</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>@returns the latitudinal component of the South-West corner point of this rectangular region</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n"><a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDegrees">BDLocationDegrees</a></span><span class="p">)</span><span class="n">south</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">south</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDegrees">BDLocationDegrees</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDBoundingBox(im)longitudeSpan"></a>
+                    <a name="//apple_ref/objc/Method/-longitudeSpan" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDBoundingBox(im)longitudeSpan">-longitudeSpan</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>@returns the absolute difference between the East and West longitudes, in degrees.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n"><a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDegrees">BDLocationDegrees</a></span><span class="p">)</span><span class="n">longitudeSpan</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">longitudeSpan</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDegrees">BDLocationDegrees</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDBoundingBox(im)latitudeSpan"></a>
+                    <a name="//apple_ref/objc/Method/-latitudeSpan" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDBoundingBox(im)latitudeSpan">-latitudeSpan</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>@returns the absolute difference between the North and South latitudes, in degrees.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n"><a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDegrees">BDLocationDegrees</a></span><span class="p">)</span><span class="n">latitudeSpan</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">latitudeSpan</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDegrees">BDLocationDegrees</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDBoundingBox(py)northEast"></a>
+                    <a name="//apple_ref/objc/Property/northEast" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDBoundingBox(py)northEast">northEast</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The North-East corner of this rectangular region</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Classes/BDPoint.html">BDPoint</a></span> <span class="o">*</span><span class="n">northEast</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">northEast</span><span class="p">:</span> <span class="kt"><a href="../Classes/BDPoint.html">BDPoint</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDBoundingBox(py)southWest"></a>
+                    <a name="//apple_ref/objc/Property/southWest" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDBoundingBox(py)southWest">southWest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The South-West corner of this rectangular region</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Classes/BDPoint.html">BDPoint</a></span> <span class="o">*</span><span class="n">southWest</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">southWest</span><span class="p">:</span> <span class="kt"><a href="../Classes/BDPoint.html">BDPoint</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDBoundingBox(im)vertices"></a>
+                    <a name="//apple_ref/objc/Method/-vertices" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDBoundingBox(im)vertices">-vertices</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>@returns An array of the corner @ref BDPoint &ldquo;points&rdquo; of this @ref BDBoundingBox, ordered: North, East, South, West.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSArray</span> <span class="o">*</span><span class="p">)</span><span class="n">vertices</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">vertices</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="https://bluedot.io" target="_blank" rel="external">Bluedot</a>. All rights reserved. (Last updated: 2020-04-17)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

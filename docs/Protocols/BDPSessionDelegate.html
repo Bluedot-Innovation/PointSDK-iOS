@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BDPSessionDelegate Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Protocol/BDPSessionDelegate" class="dashAnchor"></a>
+    <a title="BDPSessionDelegate Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">PointSDK v15.2.1 Docs</a></p>
+        <p class="header-right"><a href="https://github.com/Bluedot-Innovation/PointSDK-iOS"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">PointSDK Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        BDPSessionDelegate Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Guides.html">Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../integrating-the-sdk.html">Integrating the SDK</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Categories.html">Categories</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Categories/MKMapView%28BDPointSDK%29.html">MKMapView(BDPointSDK)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/BDBeaconInfo.html">BDBeaconInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDBoundingBox.html">BDBoundingBox</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDCircle.html">BDCircle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDFenceInfo.html">BDFenceInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)BDGeometry">BDGeometry</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDLineString.html">BDLineString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDLocation.html">BDLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDLocationInfo.html">BDLocationInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDLocationManager.html">BDLocationManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDPoint.html">BDPoint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDPointOverlayRendererFactory.html">BDPointOverlayRendererFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDPointSessionException.html">BDPointSessionException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDPolygon.html">BDPolygon</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDPolygonal.html">BDPolygonal</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDZoneInfo.html">BDZoneInfo</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@BDPointSDKVersionNumber">BDPointSDKVersionNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@BDPointSDKVersionString">BDPointSDKVersionString</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/BDAuthenticationState.html">BDAuthenticationState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BDAuthorizationLevel.html">BDAuthorizationLevel</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPAuthenticationStateProvider.html">BDPAuthenticationStateProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPDeepCopy.html">BDPDeepCopy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPGeometry.html">BDPGeometry</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPLocationDelegate.html">BDPLocationDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPMKShape.html">BDPMKShape</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPNamedDescribed.html">BDPNamedDescribed</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPRestartAlertDelegate.html">BDPRestartAlertDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPSessionDelegate.html">BDPSessionDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPSpatialObject.html">BDPSpatialObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPSpatialObjectInfo.html">BDPSpatialObjectInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPValidatable.html">BDPValidatable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:objc(pl)BDPointDelegate">BDPointDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Type%20Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationAccuracy">BDLocationAccuracy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationCoordinate2D">BDLocationCoordinate2D</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDegrees">BDLocationDegrees</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDirection">BDLocationDirection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDistance">BDLocationDistance</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationSpeed">BDLocationSpeed</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@BDStringFromAuthenticationState">BDStringFromAuthenticationState</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>BDPSessionDelegate</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">BDPSessionDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                </div>
+              </div>
+            <p>@brief Defines a delegate for handling <b>Point SDK</b>&lsquo;s session related callbacks</p>
+
+<p><b>Point SDK</b> needs to authenticate with <b>Point Access</b> to function.
+Applications must observe the correct authentication lifecycle when using <b>Point SDK</b> features, as documented.</p>
+
+<p>Authentication state changes are most simply observed via the
+<a href="https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/KeyValueObserving/Articles/KVOCompliance.html">KVO-compliant</a>
+BDLocationManager.sessionDelegate.authenticationState property.</p>
+
+<p>For richer information about the authentication lifecycle, applications may optionally assign an implementation of this
+protocol to the sessionDelegate property of the shared BDLocationManager instance.</p>
+
+<p>@copyright Bluedot Innovation</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)BDPSessionDelegate(im)willAuthenticateWithApiKey:"></a>
+                    <a name="//apple_ref/objc/Method/-willAuthenticateWithApiKey:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)BDPSessionDelegate(im)willAuthenticateWithApiKey:">-willAuthenticateWithApiKey:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method is called when an authentication request has been made to initiate a Point session.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">willAuthenticateWithApiKey</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">apiKey</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">willAuthenticate</span><span class="p">(</span><span class="n">withApiKey</span> <span class="nv">apiKey</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)BDPSessionDelegate(im)authenticationWasSuccessful"></a>
+                    <a name="//apple_ref/objc/Method/-authenticationWasSuccessful" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)BDPSessionDelegate(im)authenticationWasSuccessful">-authenticationWasSuccessful</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method indicates that authentication was successful and a Point session has started.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">authenticationWasSuccessful</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">authenticationWasSuccessful</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)BDPSessionDelegate(im)authenticationWasDeniedWithReason:"></a>
+                    <a name="//apple_ref/objc/Method/-authenticationWasDeniedWithReason:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)BDPSessionDelegate(im)authenticationWasDeniedWithReason:">-authenticationWasDeniedWithReason:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Indicates that connection was successful with the server but the session was denied for the reason provided.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">authenticationWasDeniedWithReason</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">reason</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">authenticationWasDenied</span><span class="p">(</span><span class="n">withReason</span> <span class="nv">reason</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)BDPSessionDelegate(im)authenticationFailedWithError:"></a>
+                    <a name="//apple_ref/objc/Method/-authenticationFailedWithError:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)BDPSessionDelegate(im)authenticationFailedWithError:">-authenticationFailedWithError:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Indicates a communication error with the server.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">authenticationFailedWithError</span><span class="p">:(</span><span class="n">NSError</span> <span class="o">*</span><span class="p">)</span><span class="nv">error</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">authenticationFailedWithError</span><span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)BDPSessionDelegate(im)didEndSession"></a>
+                    <a name="//apple_ref/objc/Method/-didEndSession" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)BDPSessionDelegate(im)didEndSession">-didEndSession</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method is called after an authenticated Point session has ended.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">didEndSession</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">didEndSession</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)BDPSessionDelegate(im)didEndSessionWithError:"></a>
+                    <a name="//apple_ref/objc/Method/-didEndSessionWithError:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)BDPSessionDelegate(im)didEndSessionWithError:">-didEndSessionWithError:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method is called if an authenticated Point session ends unexpectedly.
+Details from NSError objects delivered here are intended for development logging purposes
+and are not intended to be seen by your application&rsquo;s users.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">didEndSessionWithError</span><span class="p">:(</span><span class="n">NSError</span> <span class="o">*</span><span class="p">)</span><span class="nv">error</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">didEndSessionWithError</span><span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="https://bluedot.io" target="_blank" rel="external">Bluedot</a>. All rights reserved. (Last updated: 2020-04-17)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

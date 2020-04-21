@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BDZoneInfo Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/BDZoneInfo" class="dashAnchor"></a>
+    <a title="BDZoneInfo Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">PointSDK v15.2.1 Docs</a></p>
+        <p class="header-right"><a href="https://github.com/Bluedot-Innovation/PointSDK-iOS"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">PointSDK Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        BDZoneInfo Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Guides.html">Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../integrating-the-sdk.html">Integrating the SDK</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Categories.html">Categories</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Categories/MKMapView%28BDPointSDK%29.html">MKMapView(BDPointSDK)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/BDBeaconInfo.html">BDBeaconInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDBoundingBox.html">BDBoundingBox</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDCircle.html">BDCircle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDFenceInfo.html">BDFenceInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)BDGeometry">BDGeometry</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDLineString.html">BDLineString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDLocation.html">BDLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDLocationInfo.html">BDLocationInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDLocationManager.html">BDLocationManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDPoint.html">BDPoint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDPointOverlayRendererFactory.html">BDPointOverlayRendererFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDPointSessionException.html">BDPointSessionException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDPolygon.html">BDPolygon</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDPolygonal.html">BDPolygonal</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDZoneInfo.html">BDZoneInfo</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@BDPointSDKVersionNumber">BDPointSDKVersionNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@BDPointSDKVersionString">BDPointSDKVersionString</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/BDAuthenticationState.html">BDAuthenticationState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BDAuthorizationLevel.html">BDAuthorizationLevel</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPAuthenticationStateProvider.html">BDPAuthenticationStateProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPDeepCopy.html">BDPDeepCopy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPGeometry.html">BDPGeometry</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPLocationDelegate.html">BDPLocationDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPMKShape.html">BDPMKShape</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPNamedDescribed.html">BDPNamedDescribed</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPRestartAlertDelegate.html">BDPRestartAlertDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPSessionDelegate.html">BDPSessionDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPSpatialObject.html">BDPSpatialObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPSpatialObjectInfo.html">BDPSpatialObjectInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPValidatable.html">BDPValidatable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:objc(pl)BDPointDelegate">BDPointDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Type%20Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationAccuracy">BDLocationAccuracy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationCoordinate2D">BDLocationCoordinate2D</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDegrees">BDLocationDegrees</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDirection">BDLocationDirection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDistance">BDLocationDistance</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationSpeed">BDLocationSpeed</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@BDStringFromAuthenticationState">BDStringFromAuthenticationState</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>BDZoneInfo</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BDZoneInfo</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>@brief Contains information about a Zone, including the set of @ref BDFenceInfo &ldquo;fences&rdquo; that comprise it.</p>
+
+<p>A set of @ref BDZoneInfo objects will be delivered to your application&rsquo;s BDPLocationDelegate#locationDelegate at
+the time of their download from the Bluedot Point web-service.</p>
+
+<p>This usually occurs immediately after the authentication process is complete.</p>
+
+<p>@copyright Bluedot Innovation</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDZoneInfo(py)name"></a>
+                    <a name="//apple_ref/objc/Property/name" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDZoneInfo(py)name">name</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The name of this Zone that was entered into Point Access</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">name</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDZoneInfo(py)description"></a>
+                    <a name="//apple_ref/objc/Property/description" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDZoneInfo(py)description">description</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The description of this Zone that was entered into Point Access</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">description</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDZoneInfo(py)ID"></a>
+                    <a name="//apple_ref/objc/Property/ID" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDZoneInfo(py)ID">ID</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A unique <a href="http://en.wikipedia.org/wiki/Globally_unique_identifier">GUID</a> to identify this Zone by.
+This is permanent and may be used to identify specific Zones created in the Point Access web-interface,
+from your client application.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">ID</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDZoneInfo(py)fences"></a>
+                    <a name="//apple_ref/objc/Property/fences" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDZoneInfo(py)fences">fences</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The set of BDFenceInfo fences included in this Zone.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n">NSSet</span><span class="o">&lt;</span><span class="n"><a href="../Classes/BDFenceInfo.html">BDFenceInfo</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">fences</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">fences</span><span class="p">:</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt">AnyHashable</span><span class="o">&gt;!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDZoneInfo(py)beacons"></a>
+                    <a name="//apple_ref/objc/Property/beacons" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDZoneInfo(py)beacons">beacons</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The set of BDBeaconInfo beacons included in this Zone.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n">NSSet</span><span class="o">&lt;</span><span class="n"><a href="../Classes/BDBeaconInfo.html">BDBeaconInfo</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">beacons</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">beacons</span><span class="p">:</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt">AnyHashable</span><span class="o">&gt;!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDZoneInfo(py)checkOut"></a>
+                    <a name="//apple_ref/objc/Property/checkOut" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDZoneInfo(py)checkOut">checkOut</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether CheckOuts should be generated for any CheckIns to this Zone.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">checkOut</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">checkOut</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDZoneInfo(im)isEqual:"></a>
+                    <a name="//apple_ref/objc/Method/-isEqual:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDZoneInfo(im)isEqual:">-isEqual:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">isEqual</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">other</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">isEqual</span><span class="p">(</span><span class="n">_</span> <span class="nv">other</span><span class="p">:</span> <span class="kt">Any</span><span class="o">!</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDZoneInfo(im)isEqualToInfo:"></a>
+                    <a name="//apple_ref/objc/Method/-isEqualToInfo:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDZoneInfo(im)isEqualToInfo:">-isEqualToInfo:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">isEqualToInfo</span><span class="p">:(</span><span class="n">BDZoneInfo</span> <span class="o">*</span><span class="p">)</span><span class="nv">info</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">isEqual</span><span class="p">(</span><span class="n">to</span> <span class="nv">info</span><span class="p">:</span> <span class="kt">BDZoneInfo</span><span class="o">!</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDZoneInfo(im)hash"></a>
+                    <a name="//apple_ref/objc/Method/-hash" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDZoneInfo(im)hash">-hash</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSUInteger</span><span class="p">)</span><span class="n">hash</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">hash</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">UInt</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="https://bluedot.io" target="_blank" rel="external">Bluedot</a>. All rights reserved. (Last updated: 2020-04-17)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

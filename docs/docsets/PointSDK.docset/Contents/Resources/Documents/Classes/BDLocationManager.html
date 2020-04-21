@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BDLocationManager Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/BDLocationManager" class="dashAnchor"></a>
+    <a title="BDLocationManager Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">PointSDK v15.2.1 Docs</a></p>
+        <p class="header-right"><a href="https://github.com/Bluedot-Innovation/PointSDK-iOS"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">PointSDK Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        BDLocationManager Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Guides.html">Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../integrating-the-sdk.html">Integrating the SDK</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Categories.html">Categories</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Categories/MKMapView%28BDPointSDK%29.html">MKMapView(BDPointSDK)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/BDBeaconInfo.html">BDBeaconInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDBoundingBox.html">BDBoundingBox</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDCircle.html">BDCircle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDFenceInfo.html">BDFenceInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)BDGeometry">BDGeometry</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDLineString.html">BDLineString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDLocation.html">BDLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDLocationInfo.html">BDLocationInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDLocationManager.html">BDLocationManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDPoint.html">BDPoint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDPointOverlayRendererFactory.html">BDPointOverlayRendererFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDPointSessionException.html">BDPointSessionException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDPolygon.html">BDPolygon</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDPolygonal.html">BDPolygonal</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDZoneInfo.html">BDZoneInfo</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@BDPointSDKVersionNumber">BDPointSDKVersionNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@BDPointSDKVersionString">BDPointSDKVersionString</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/BDAuthenticationState.html">BDAuthenticationState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BDAuthorizationLevel.html">BDAuthorizationLevel</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPAuthenticationStateProvider.html">BDPAuthenticationStateProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPDeepCopy.html">BDPDeepCopy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPGeometry.html">BDPGeometry</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPLocationDelegate.html">BDPLocationDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPMKShape.html">BDPMKShape</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPNamedDescribed.html">BDPNamedDescribed</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPRestartAlertDelegate.html">BDPRestartAlertDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPSessionDelegate.html">BDPSessionDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPSpatialObject.html">BDPSpatialObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPSpatialObjectInfo.html">BDPSpatialObjectInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPValidatable.html">BDPValidatable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:objc(pl)BDPointDelegate">BDPointDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Type%20Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationAccuracy">BDLocationAccuracy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationCoordinate2D">BDLocationCoordinate2D</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDegrees">BDLocationDegrees</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDirection">BDLocationDirection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDistance">BDLocationDistance</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationSpeed">BDLocationSpeed</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@BDStringFromAuthenticationState">BDStringFromAuthenticationState</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>BDLocationManager</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BDLocationManager</span> <span class="p">:</span> <span class="nc">CLLocationManager</span></code></pre>
+
+                </div>
+              </div>
+            <p>@brief Entry-point for your Application&rsquo;s interaction with <b>Point SDK</b>.</p>
+
+<p><b>Point SDK</b> carries out location specific, conditional actions that you define in the <b>Point Access</b> web-interface.
+To start these behaviours with your Application, it is necessary only to call the authentication method
+on the @ref BDLocationManager#instance &ldquo;shared singleton instance&rdquo; of @ref BDLocationManager.</p>
+
+<p>Calling the authentication method will start a session with <b>Point Access</b>.
+Upon success, @ref BDZoneInfo &ldquo;Zones&rdquo; will be downloaded and associated actions will be executed by the library,
+without any further intervention.</p>
+
+<p>In general, the @ref BDLocationManager#instance &ldquo;shared, singleton instance&rdquo; of @ref BDLocationManager should be used wherever the standard Core Location
+<a hef="https://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CLLocationManager_Class/">CLLocationManager</a>
+class would have been used.</p>
+
+<p>@ref BDLocationManager is a subclass of <a hef="https://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CLLocationManager_Class/">CLLocationManager</a>
+and is intended as a drop-in replacement while providing additional features.</p>
+
+<p>@ref BDLocationManager exposes <b>two new delegate properties</b>, in addition to the usual <a href="https://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CLLocationManager_Class/#//apple_ref/occ/instp/CLLocationManager/delegate"><b>delegate</b></a> property
+inherited from <a href="https://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CLLocationManager_Class/">CLLocationManager</a>:</p>
+
+<ul>
+<li><b>sessionDelegate</b> to which you should assign your own implementation of the @ref BDPSessionDelegate protocol.</li>
+<li><b>locationDelegate</b> to which you should assign your own implementation of the @ref BDPLocationDelegate protocol.</li>
+</ul>
+
+<p>More fully, these features are:</p>
+
+<h3>Session Delegate</h3>
+
+<p>The @ref BDPSessionDelegate protocol provides callbacks that inform the application
+of <b>Point SDK</b>&lsquo;s authentication state with it&rsquo;s supporting web-service. The rules defined in <b>Point Access</b> will only be
+observed while authenticated.</p>
+
+<p>In addition, some methods of <b>Point SDK</b> classes may only be called while authenticated
+and will otherwise cause an exception to be thrown. Individual restrictions are documented clearly in this API
+reference. It is only necessary to authenticate once during the runtime of the application.</p>
+
+<h3>Location Delegate</h3>
+
+<p>Following the delegate pattern familiar throughout Apple&rsquo;s CocoaTouch frameworks, the
+@ref locationDelegate property of BDLocationManager provides callbacks to notify your application when:
+Zone information is received. This typically occurs immediately after the authentication process completes.
+Any <b>Custom Action</b>s defined in the <b>Point Access</b> are triggered, in real-time.</p>
+
+<p>@copyright Bluedot Innovation</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDLocationManager(cm)instance"></a>
+                    <a name="//apple_ref/objc/Method/+instance" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDLocationManager(cm)instance">+instance</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">BDLocationManager</span> <span class="o">*</span><span class="p">)</span><span class="n">instance</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">instance</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">BDLocationManager</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The singleton instance of @ref BDLocationManager</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDLocationManager(py)authorizationStatus"></a>
+                    <a name="//apple_ref/objc/Property/authorizationStatus" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDLocationManager(py)authorizationStatus">authorizationStatus</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Key-Value Observable representation of the current, underlying CoreLocation authorization status for this Application.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">CLAuthorizationStatus</span> <span class="n">authorizationStatus</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">authorizationStatus</span><span class="p">:</span> <span class="kt">CLAuthorizationStatus</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/BDPointSDK"></a>
+                <a name="//apple_ref/objc/Section/BDPointSDK" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/BDPointSDK"></a>
+                  <h3 class="section-name"><p>BDPointSDK</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDLocationManager(im)authenticateWithApiKey:"></a>
+                    <a name="//apple_ref/objc/Method/-authenticateWithApiKey:" class="dashAnchor"></a>
+                    <a class="token discouraged" href="#/c:objc(cs)BDLocationManager(im)authenticateWithApiKey:">-authenticateWithApiKey:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>First deprecated in 1.14.0 - use method authenticateWithApiKey:requestAuthorization: instead</p>
+
+                      </div>
+                      <div class="abstract">
+                        <p>This method has been deprecated as of version 1.14.0; it will be removed in a future version.</p>
+
+<p>@deprecated Use @ref authenticateWithApiKey:requestAuthorization:</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">authenticateWithApiKey</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">apiKey</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">authenticate</span><span class="p">(</span><span class="n">withApiKey</span> <span class="nv">apiKey</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDLocationManager(im)authenticateWithApiKey:requestAuthorization:"></a>
+                    <a name="//apple_ref/objc/Method/-authenticateWithApiKey:requestAuthorization:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDLocationManager(im)authenticateWithApiKey:requestAuthorization:">-authenticateWithApiKey:<wbr>requestAuthorization:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><p>Authenticate, and start a session with <b>Point Access</b>.
+ This behaviour is asynchronous and this method will return immediately. Progress of the authentication process can be
+ monitored by callbacks provided via the <b>sessionDelegate</b> property, or the KVO-enabled <b>authenticationState</b> property.</p></p>
+
+<p>Location Services are required immediately after successful authentication.</p>
+
+<p><p>It is the responsibility of the Application to respect the authentication life-cycle and ensure that @ref BDLocationManager
+ is not already Authenticated, or in the process of Authenticating, while calling this method.</p></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">authenticateWithApiKey</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">apiKey</span>
+          <span class="nf">requestAuthorization</span><span class="p">:(</span><span class="n"><a href="../Enums/BDAuthorizationLevel.html">BDAuthorizationLevel</a></span><span class="p">)</span><span class="nv">authorizationLevel</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">authenticate</span><span class="p">(</span><span class="n">withApiKey</span> <span class="nv">apiKey</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">,</span> <span class="n">requestAuthorization</span> <span class="nv">authorizationLevel</span><span class="p">:</span> <span class="kt"><a href="../Enums/BDAuthorizationLevel.html">BDAuthorizationLevel</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>apiKey</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>API Key</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>authorizationLevel</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>It is mandatory to request authorization level during SDK authentication. Requesting with
+&ldquo;authorizedAlways&rdquo; option will show iOS location permission prompt with three options, &ldquo;Always&rdquo;, &ldquo;When in use&rdquo; and &ldquo;Never&rdquo;.
+Requesting with &ldquo;authorizedWhenInUse&rdquo; option will show iOS location permission prompt with two options, &ldquo;When in use&rdquo; and &ldquo;Never&rdquo;.
+@exception BDPointSessionException Calling this method while in an invalid state will result in a @ref BDPointSessionException being thrown.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDLocationManager(im)logOut"></a>
+                    <a name="//apple_ref/objc/Method/-logOut" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDLocationManager(im)logOut">-logOut</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Immediately ends a currently active session with <b>Point Access</b>.
+According to the authentication lifecycle, this method should only be called when <b>authenticationState</b> is
+BDAuthenticationStateAuthenticated. Otherwise, a BDPointSessionException will be thrown.</p>
+
+<p>@exception BDPointSessionException Thrown if @ref BDLocationManager is already logged out.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">logOut</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">logOut</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDLocationManager(im)setPointDelegate:"></a>
+                    <a name="//apple_ref/objc/Method/-setPointDelegate:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDLocationManager(im)setPointDelegate:">-setPointDelegate:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><p>Equivalent to setting <b>locationDelegate</b> and <b>sessionDelegate</b></p>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setPointDelegate</span><span class="p">:(</span><span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols.html#/c:objc(pl)BDPointDelegate">BDPointDelegate</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nv">pointDelegate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setPointDelegate</span><span class="p">(</span><span class="n">_</span> <span class="nv">pointDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/c:objc(pl)BDPointDelegate">BDPointDelegate</a></span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pointDelegate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Object implementing @ref BDPointDelegate, equivalent to both @ref BDPSessionDelegate and @ref BDPLocationDelegate</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDLocationManager(py)locationDelegate"></a>
+                    <a name="//apple_ref/objc/Property/locationDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDLocationManager(py)locationDelegate">locationDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/BDPLocationDelegate.html">BDPLocationDelegate</a></span><span class="o">&gt;</span> <span class="n">locationDelegate</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">locationDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/BDPLocationDelegate.html">BDPLocationDelegate</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDLocationManager(py)sessionDelegate"></a>
+                    <a name="//apple_ref/objc/Property/sessionDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDLocationManager(py)sessionDelegate">sessionDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Applications using <b>Point SDK</b> must authenticate before using its features.</p>
+
+<p>Which classes and methods require authentication is set out clearly in the API documentation. Authentication is performed simply
+by calling BDLocationManager::authenticateWithApiKey: with the API credentials provided in your
+<a href="https://www.pointaccess.bluedot.com.au/pointaccess-v1/login.html"><b>Point Access</b> management portal</a>.</p>
+
+<p>Implement the callbacks in your own implementation of @ref BDPSessionDelegate, and assign it to this property to
+receive feedback on the outcome of authentication, and to tell your application when it can start
+fully using <b>Point SDK</b>.  Attempting to call protected features when not authenticated will case a
+@ref BDPointSessionException to be thrown.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/BDPSessionDelegate.html">BDPSessionDelegate</a></span><span class="o">&gt;</span> <span class="n">sessionDelegate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">sessionDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/BDPSessionDelegate.html">BDPSessionDelegate</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDLocationManager(py)authenticationDelegate"></a>
+                    <a name="//apple_ref/objc/Property/authenticationDelegate" class="dashAnchor"></a>
+                    <a class="token discouraged" href="#/c:objc(cs)BDLocationManager(py)authenticationDelegate">authenticationDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>This has been superceded by BDPSessionDelegate and will be removed in a future release.</p>
+
+                      </div>
+                      <div class="abstract">
+                        <p>@deprecated This has been superceded by BDPSessionDelegate and will be removed in a future release.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">id</span><span class="o">&lt;</span><span class="n">BDPAuthenticationDelegate</span><span class="o">&gt;</span> <span class="n">authenticationDelegate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDLocationManager(py)authenticationState"></a>
+                    <a name="//apple_ref/objc/Property/authenticationState" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDLocationManager(py)authenticationState">authenticationState</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Read-only property, providing the current authentication authenticationState.
+This property is <a href="https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/KeyValueObserving/Articles/KVOCompliance.html#//apple_ref/doc/uid/20002178-BAJEAIEE">KVO compliant</a>,
+meaning that it can be observed for changes with <a href="https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/KeyValueObserving/KeyValueObserving.html">Key-Value Observing</a>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Enums/BDAuthenticationState.html">BDAuthenticationState</a></span> <span class="n">authenticationState</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">authenticationState</span><span class="p">:</span> <span class="kt"><a href="../Enums/BDAuthenticationState.html">BDAuthenticationState</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDLocationManager(py)zoneInfos"></a>
+                    <a name="//apple_ref/objc/Property/zoneInfos" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDLocationManager(py)zoneInfos">zoneInfos</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A collection of @ref BDZoneInfo objects, corresponding to the Zones you created for this application, in the
+<b>Point Access</b> web-interface.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSSet</span> <span class="o">*</span><span class="n">zoneInfos</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">zoneInfos</span><span class="p">:</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt">AnyHashable</span><span class="o">&gt;!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDLocationManager(im)setZone:disableByApplication:"></a>
+                    <a name="//apple_ref/objc/Method/-setZone:disableByApplication:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDLocationManager(im)setZone:disableByApplication:">-setZone:<wbr>disableByApplication:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Disabled or re-enable a specific @ref BDZoneInfo &ldquo;zone&rdquo;.  Information about valid @ref BDZoneInfo &ldquo;zones&rdquo;, including
+their respective <i>zoneId</i>&lsquo;s for use in this method, is delivered to BDPLocationDelegate::didUpdateZoneInfo:.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setZone</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">zoneId</span> <span class="nf">disableByApplication</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">disable</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setZone</span><span class="p">(</span><span class="n">_</span> <span class="nv">zoneId</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">,</span> <span class="n">disableByApplication</span> <span class="nv">disable</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDLocationManager(im)isZoneDisabledByApplication:"></a>
+                    <a name="//apple_ref/objc/Method/-isZoneDisabledByApplication:" class="dashAnchor"></a>
+                    <a class="token discouraged" href="#/c:objc(cs)BDLocationManager(im)isZoneDisabledByApplication:">-isZoneDisabledByApplication:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>First deprecated in 1.13 - use method applicationContainsDisabledZone:completion: instead</p>
+
+                      </div>
+                      <div class="abstract">
+                        <p>Blocking method to determine if a user zone is in an enabled state.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">isZoneDisabledByApplication</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">zoneId</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">isZoneDisabled</span><span class="p">(</span><span class="n">byApplication</span> <span class="nv">zoneId</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>zoneId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>zone UUID.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Returns whenever zone is disabled or not
+@deprecated Use @ref applicationContainsDisabledZone:completion:</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDLocationManager(im)applicationContainsDisabledZone:completion:"></a>
+                    <a name="//apple_ref/objc/Method/-applicationContainsDisabledZone:completion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDLocationManager(im)applicationContainsDisabledZone:completion:">-applicationContainsDisabledZone:<wbr>completion:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Non-blocking method to determine if a user zone is in an enabled state.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">applicationContainsDisabledZone</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">zoneId</span>
+                             <span class="nf">completion</span><span class="p">:(</span><span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n">BOOL</span><span class="p">))</span><span class="nv">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">applicationContainsDisabledZone</span><span class="p">(</span><span class="n">_</span> <span class="nv">zoneId</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="p">((</span><span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>zoneId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>zone UUID</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>closure returns whenever zone is disabled or not</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDLocationManager(im)installRef"></a>
+                    <a name="//apple_ref/objc/Method/-installRef" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDLocationManager(im)installRef">-installRef</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the installation reference of this Point SDK enabled App.
+This is the same as the Install Ref that appears in a Zone&rsquo;s Activity Log in Point Access, or queried via Open API.
+This reference is randomly generated at the first run-time of the App and remains fixed for the duration of the App
+installation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">installRef</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">installRef</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDLocationManager(im)notifyPushUpdateWithData:"></a>
+                    <a name="//apple_ref/objc/Method/-notifyPushUpdateWithData:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDLocationManager(im)notifyPushUpdateWithData:">-notifyPushUpdateWithData:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Notifies <b>Point SDK</b> that the push notification has been received with given data.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">notifyPushUpdateWithData</span><span class="p">:(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="p">)</span><span class="nv">data</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">notifyPushUpdate</span><span class="p">(</span><span class="n">withData</span> <span class="nv">data</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>data</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Push data passed through AppDelegate callback methods.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDLocationManager(im)sdkVersion"></a>
+                    <a name="//apple_ref/objc/Method/-sdkVersion" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDLocationManager(im)sdkVersion">-sdkVersion</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the version of the Point SDK as a NSString.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">sdkVersion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">sdkVersion</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDLocationManager(im)setCustomEventMetaData:"></a>
+                    <a name="//apple_ref/objc/Method/-setCustomEventMetaData:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDLocationManager(im)setCustomEventMetaData:">-setCustomEventMetaData:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets custom metadata for Notification events.
+The custom metadata set through this API will be available on the backend in checkin activity log and via webhooks.
+Only up to 20 custom meta data fields are allowed. Throws BDCustomEventMetadataCountException exception if the number of custom fields exceeded.
+Only String Type is allowed. Throws BDCustomEventMetadataDataFormatException exception if data contains non-String type.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setCustomEventMetaData</span><span class="p">:(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="p">)</span><span class="nv">data</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setCustomEventMetaData</span><span class="p">(</span><span class="n">_</span> <span class="nv">data</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDLocationManager(im)customEventMetaData"></a>
+                    <a name="//apple_ref/objc/Method/-customEventMetaData" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDLocationManager(im)customEventMetaData">-customEventMetaData</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the custom metadata set by calling setCustomEventMetaData.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="p">)</span><span class="n">customEventMetaData</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">customEventMetaData</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="https://bluedot.io" target="_blank" rel="external">Bluedot</a>. All rights reserved. (Last updated: 2020-04-17)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
