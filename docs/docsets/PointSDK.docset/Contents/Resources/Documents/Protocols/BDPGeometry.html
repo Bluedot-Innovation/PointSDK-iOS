@@ -7,7 +7,8 @@
     <meta charset='utf-8'>
     <script src="../js/jquery.min.js" defer></script>
     <script src="../js/jazzy.js" defer></script>
-    
+    <link rel="shortcut icon" type="image/png" href="./img/icon.png"/>
+
   </head>
   <body>
     <a name="//apple_ref/objc/Protocol/BDPGeometry" class="dashAnchor"></a>
@@ -16,6 +17,7 @@
       <div class="content-wrapper">
         <p><a href="../index.html">PointSDK v15.2.1 Docs</a></p>
         <p class="header-right"><a href="https://github.com/Bluedot-Innovation/PointSDK-iOS"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="dash-feed://https%3A%2F%2Fios%2Ddocs%2Ebluedot%2Eio%2Fdocsets%2FPointSDK%2Exml"><img src="../img/dash.png"/>Install in Dash</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -233,11 +235,6 @@ this method determines whether the given @ref BDPoint &ldquo;point&rdquo; falls 
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">intersects</span><span class="p">:(</span><span class="n"><a href="../Classes.html#/c:objc(cs)BDGeometry">BDGeometry</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">geometry</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">intersects</span><span class="p">(</span><span class="n">_</span> <span class="nv">geometry</span><span class="p">:</span> <span class="kt"><a href="../Classes.html#/c:objc(cs)BDGeometry">BDGeometry</a></span><span class="o">!</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
-
-                        </div>
                       </div>
                     </section>
                   </div>
@@ -264,11 +261,6 @@ this method determines whether the given @ref BDPoint &ldquo;point&rdquo; falls 
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">isEnclosedBy</span><span class="p">:(</span><span class="n"><a href="../Classes.html#/c:objc(cs)BDGeometry">BDGeometry</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">geometry</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">isEnclosed</span><span class="p">(</span><span class="n">by</span> <span class="nv">geometry</span><span class="p">:</span> <span class="kt"><a href="../Classes.html#/c:objc(cs)BDGeometry">BDGeometry</a></span><span class="o">!</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>
@@ -304,11 +296,6 @@ this method determines whether the given @ref BDPoint &ldquo;point&rdquo; falls 
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n"><a href="../Classes/BDBoundingBox.html">BDBoundingBox</a></span> <span class="o">*</span><span class="p">)</span><span class="n">boundingBox</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">boundingBox</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/BDBoundingBox.html">BDBoundingBox</a></span><span class="o">!</span></code></pre>
-
-                        </div>
                       </div>
                     </section>
                   </div>
@@ -334,11 +321,6 @@ this method determines whether the given @ref BDPoint &ldquo;point&rdquo; falls 
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n"><a href="../Classes/BDPoint.html">BDPoint</a></span> <span class="o">*</span><span class="p">)</span><span class="n">centroid</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">centroid</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/BDPoint.html">BDPoint</a></span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -368,11 +350,6 @@ this method determines whether the given @ref BDPoint &ldquo;point&rdquo; falls 
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n"><a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDistance">BDLocationDistance</a></span><span class="p">)</span><span class="nf">distanceTo</span><span class="p">:(</span><span class="n"><a href="../Classes.html#/c:objc(cs)BDGeometry">BDGeometry</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">geometry</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">distance</span><span class="p">(</span><span class="n">to</span> <span class="nv">geometry</span><span class="p">:</span> <span class="kt"><a href="../Classes.html#/c:objc(cs)BDGeometry">BDGeometry</a></span><span class="o">!</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDistance">BDLocationDistance</a></span></code></pre>
-
-                        </div>
                       </div>
                     </section>
                   </div>
@@ -382,7 +359,7 @@ this method determines whether the given @ref BDPoint &ldquo;point&rdquo; falls 
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="https://bluedot.io" target="_blank" rel="external">Bluedot</a>. All rights reserved. (Last updated: 2020-04-17)</p>
+          <p>&copy; 2020 <a class="link" href="https://bluedot.io" target="_blank" rel="external">Bluedot</a>. All rights reserved. (Last updated: 2020-04-23)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

@@ -7,7 +7,8 @@
     <meta charset='utf-8'>
     <script src="../js/jquery.min.js" defer></script>
     <script src="../js/jazzy.js" defer></script>
-    
+    <link rel="shortcut icon" type="image/png" href="./img/icon.png"/>
+
   </head>
   <body>
     <a name="//apple_ref/objc/Protocol/BDPLocationDelegate" class="dashAnchor"></a>
@@ -16,6 +17,7 @@
       <div class="content-wrapper">
         <p><a href="../index.html">PointSDK v15.2.1 Docs</a></p>
         <p class="header-right"><a href="https://github.com/Bluedot-Innovation/PointSDK-iOS"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="dash-feed://https%3A%2F%2Fios%2Ddocs%2Ebluedot%2Eio%2Fdocsets%2FPointSDK%2Exml"><img src="../img/dash.png"/>Install in Dash</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -243,11 +245,6 @@ shared @ref BDLocationManager instance, to handle location related callbacks.</p
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">didUpdateZoneInfo</span><span class="p">:(</span><span class="n">NSSet</span> <span class="o">*</span><span class="p">)</span><span class="nv">zoneInfos</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didUpdateZoneInfo</span><span class="p">(</span><span class="n">_</span> <span class="nv">zoneInfos</span><span class="p">:</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt">AnyHashable</span><span class="o">&gt;!</span><span class="p">)</span></code></pre>
-
-                        </div>
                       </div>
                       <div>
                         <h4>Parameters</h4>
@@ -304,11 +301,6 @@ shared @ref BDLocationManager instance, to handle location related callbacks.</p
                <span class="nf">atLocation</span><span class="p">:(</span><span class="n"><a href="../Classes/BDLocationInfo.html">BDLocationInfo</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">location</span>
              <span class="nf">willCheckOut</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">willCheckOut</span>
            <span class="nf">withCustomData</span><span class="p">:(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="p">)</span><span class="nv">customData</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didCheck</span><span class="p">(</span><span class="n">intoFence</span> <span class="nv">fence</span><span class="p">:</span> <span class="kt"><a href="../Classes/BDFenceInfo.html">BDFenceInfo</a></span><span class="o">!</span><span class="p">,</span> <span class="n">inZone</span> <span class="nv">zoneInfo</span><span class="p">:</span> <span class="kt"><a href="../Classes/BDZoneInfo.html">BDZoneInfo</a></span><span class="o">!</span><span class="p">,</span> <span class="n">atLocation</span> <span class="nv">location</span><span class="p">:</span> <span class="kt"><a href="../Classes/BDLocationInfo.html">BDLocationInfo</a></span><span class="o">!</span><span class="p">,</span> <span class="nv">willCheckOut</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="n">withCustomData</span> <span class="nv">customData</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]</span><span class="o">!</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -417,11 +409,6 @@ shared @ref BDLocationManager instance, to handle location related callbacks.</p
            <span class="nf">withCustomData</span><span class="p">:(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="p">)</span><span class="nv">customData</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didCheck</span><span class="p">(</span><span class="n">intoFence</span> <span class="nv">fence</span><span class="p">:</span> <span class="kt"><a href="../Classes/BDFenceInfo.html">BDFenceInfo</a></span><span class="o">!</span><span class="p">,</span> <span class="n">inZone</span> <span class="nv">zoneInfo</span><span class="p">:</span> <span class="kt"><a href="../Classes/BDZoneInfo.html">BDZoneInfo</a></span><span class="o">!</span><span class="p">,</span> <span class="n">at</span> <span class="nv">coordinate</span><span class="p">:</span> <span class="kt"><a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationCoordinate2D">BDLocationCoordinate2D</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">date</span><span class="p">:</span> <span class="kt">Date</span><span class="o">!</span><span class="p">,</span> <span class="nv">willCheckOut</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="n">withCustomData</span> <span class="nv">customData</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]</span><span class="o">!</span><span class="p">)</span></code></pre>
-
-                        </div>
                       </div>
                     </section>
                   </div>
@@ -454,11 +441,6 @@ shared @ref BDLocationManager instance, to handle location related callbacks.</p
                       <span class="nf">onDate</span><span class="p">:(</span><span class="n">NSDate</span> <span class="o">*</span><span class="p">)</span><span class="nv">date</span>
                 <span class="nf">withDuration</span><span class="p">:(</span><span class="n">NSUInteger</span><span class="p">)</span><span class="nv">checkedInDuration</span>
               <span class="nf">withCustomData</span><span class="p">:(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="p">)</span><span class="nv">customData</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didCheckOut</span><span class="p">(</span><span class="n">fromFence</span> <span class="nv">fence</span><span class="p">:</span> <span class="kt"><a href="../Classes/BDFenceInfo.html">BDFenceInfo</a></span><span class="o">!</span><span class="p">,</span> <span class="n">inZone</span> <span class="nv">zoneInfo</span><span class="p">:</span> <span class="kt"><a href="../Classes/BDZoneInfo.html">BDZoneInfo</a></span><span class="o">!</span><span class="p">,</span> <span class="n">on</span> <span class="nv">date</span><span class="p">:</span> <span class="kt">Date</span><span class="o">!</span><span class="p">,</span> <span class="n">withDuration</span> <span class="nv">checkedInDuration</span><span class="p">:</span> <span class="kt">UInt</span><span class="p">,</span> <span class="n">withCustomData</span> <span class="nv">customData</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]</span><span class="o">!</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -566,11 +548,6 @@ shared @ref BDLocationManager instance, to handle location related callbacks.</p
              <span class="nf">withProximity</span><span class="p">:(</span><span class="n">CLProximity</span><span class="p">)</span><span class="nv">proximity</span>
               <span class="nf">willCheckOut</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">willCheckOut</span>
             <span class="nf">withCustomData</span><span class="p">:(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="p">)</span><span class="nv">customData</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didCheck</span><span class="p">(</span><span class="n">intoBeacon</span> <span class="nv">beacon</span><span class="p">:</span> <span class="kt"><a href="../Classes/BDBeaconInfo.html">BDBeaconInfo</a></span><span class="o">!</span><span class="p">,</span> <span class="n">inZone</span> <span class="nv">zoneInfo</span><span class="p">:</span> <span class="kt"><a href="../Classes/BDZoneInfo.html">BDZoneInfo</a></span><span class="o">!</span><span class="p">,</span> <span class="n">atLocation</span> <span class="nv">locationInfo</span><span class="p">:</span> <span class="kt"><a href="../Classes/BDLocationInfo.html">BDLocationInfo</a></span><span class="o">!</span><span class="p">,</span> <span class="n">with</span> <span class="nv">proximity</span><span class="p">:</span> <span class="kt">CLProximity</span><span class="p">,</span> <span class="nv">willCheckOut</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="n">withCustomData</span> <span class="nv">customData</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]</span><span class="o">!</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -691,11 +668,6 @@ shared @ref BDLocationManager instance, to handle location related callbacks.</p
             <span class="nf">withCustomData</span><span class="p">:(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="p">)</span><span class="nv">customData</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didCheck</span><span class="p">(</span><span class="n">intoBeacon</span> <span class="nv">beacon</span><span class="p">:</span> <span class="kt"><a href="../Classes/BDBeaconInfo.html">BDBeaconInfo</a></span><span class="o">!</span><span class="p">,</span> <span class="n">inZone</span> <span class="nv">zoneInfo</span><span class="p">:</span> <span class="kt"><a href="../Classes/BDZoneInfo.html">BDZoneInfo</a></span><span class="o">!</span><span class="p">,</span> <span class="n">with</span> <span class="nv">proximity</span><span class="p">:</span> <span class="kt">CLProximity</span><span class="p">,</span> <span class="n">on</span> <span class="nv">date</span><span class="p">:</span> <span class="kt">Date</span><span class="o">!</span><span class="p">,</span> <span class="nv">willCheckOut</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="n">withCustomData</span> <span class="nv">customData</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]</span><span class="o">!</span><span class="p">)</span></code></pre>
-
-                        </div>
                       </div>
                     </section>
                   </div>
@@ -729,11 +701,6 @@ shared @ref BDLocationManager instance, to handle location related callbacks.</p
                        <span class="nf">onDate</span><span class="p">:(</span><span class="n">NSDate</span> <span class="o">*</span><span class="p">)</span><span class="nv">date</span>
                  <span class="nf">withDuration</span><span class="p">:(</span><span class="n">NSUInteger</span><span class="p">)</span><span class="nv">checkedInDuration</span>
                <span class="nf">withCustomData</span><span class="p">:(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="p">)</span><span class="nv">customData</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didCheckOut</span><span class="p">(</span><span class="n">fromBeacon</span> <span class="nv">beacon</span><span class="p">:</span> <span class="kt"><a href="../Classes/BDBeaconInfo.html">BDBeaconInfo</a></span><span class="o">!</span><span class="p">,</span> <span class="n">inZone</span> <span class="nv">zoneInfo</span><span class="p">:</span> <span class="kt"><a href="../Classes/BDZoneInfo.html">BDZoneInfo</a></span><span class="o">!</span><span class="p">,</span> <span class="n">with</span> <span class="nv">proximity</span><span class="p">:</span> <span class="kt">CLProximity</span><span class="p">,</span> <span class="n">on</span> <span class="nv">date</span><span class="p">:</span> <span class="kt">Date</span><span class="o">!</span><span class="p">,</span> <span class="n">withDuration</span> <span class="nv">checkedInDuration</span><span class="p">:</span> <span class="kt">UInt</span><span class="p">,</span> <span class="n">withCustomData</span> <span class="nv">customData</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]</span><span class="o">!</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -848,11 +815,6 @@ shared @ref BDLocationManager instance, to handle location related callbacks.</p
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">didStartRequiringUserInterventionForBluetooth</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didStartRequiringUserInterventionForBluetooth</span><span class="p">()</span></code></pre>
-
-                        </div>
                       </div>
                     </section>
                   </div>
@@ -882,11 +844,6 @@ shared @ref BDLocationManager instance, to handle location related callbacks.</p
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">didStopRequiringUserInterventionForBluetooth</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didStopRequiringUserInterventionForBluetooth</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>
@@ -920,11 +877,6 @@ shared @ref BDLocationManager instance, to handle location related callbacks.</p
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">didStartRequiringUserInterventionForLocationServicesAuthorizationStatus</span><span class="p">:</span>
     <span class="p">(</span><span class="n">CLAuthorizationStatus</span><span class="p">)</span><span class="nv">authorizationStatus</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didStartRequiringUserIntervention</span><span class="p">(</span><span class="n">forLocationServicesAuthorizationStatus</span> <span class="nv">authorizationStatus</span><span class="p">:</span> <span class="kt">CLAuthorizationStatus</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -974,11 +926,6 @@ shared @ref BDLocationManager instance, to handle location related callbacks.</p
     <span class="p">(</span><span class="n">CLAuthorizationStatus</span><span class="p">)</span><span class="nv">authorizationStatus</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didStopRequiringUserIntervention</span><span class="p">(</span><span class="n">forLocationServicesAuthorizationStatus</span> <span class="nv">authorizationStatus</span><span class="p">:</span> <span class="kt">CLAuthorizationStatus</span><span class="p">)</span></code></pre>
-
-                        </div>
                       </div>
                     </section>
                   </div>
@@ -1010,11 +957,6 @@ shared @ref BDLocationManager instance, to handle location related callbacks.</p
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">didStartRequiringUserInterventionForPowerMode</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didStartRequiringUserInterventionForPowerMode</span><span class="p">()</span></code></pre>
-
-                        </div>
                       </div>
                     </section>
                   </div>
@@ -1042,11 +984,6 @@ shared @ref BDLocationManager instance, to handle location related callbacks.</p
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">didStopRequiringUserInterventionForPowerMode</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didStopRequiringUserInterventionForPowerMode</span><span class="p">()</span></code></pre>
-
-                        </div>
                       </div>
                     </section>
                   </div>
@@ -1056,7 +993,7 @@ shared @ref BDLocationManager instance, to handle location related callbacks.</p
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="https://bluedot.io" target="_blank" rel="external">Bluedot</a>. All rights reserved. (Last updated: 2020-04-17)</p>
+          <p>&copy; 2020 <a class="link" href="https://bluedot.io" target="_blank" rel="external">Bluedot</a>. All rights reserved. (Last updated: 2020-04-23)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
