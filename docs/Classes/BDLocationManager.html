@@ -15,7 +15,7 @@
     <a title="BDLocationManager Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">PointSDK v15.2.1 Docs</a></p>
+        <p><a href="../index.html">PointSDK v15.3.0 Docs</a></p>
         <p class="header-right"><a href="https://github.com/Bluedot-Innovation/PointSDK-iOS"><img src="../img/gh.png"/>View on GitHub</a></p>
         <p class="header-right"><a href="dash-feed://https%3A%2F%2Fios%2Ddocs%2Ebluedot%2Eio%2Fdocsets%2FPointSDK%2Exml"><img src="../img/dash.png"/>Install in Dash</a></p>
       </div>
@@ -152,6 +152,9 @@
                 <a href="../Protocols/BDPSpatialObjectInfo.html">BDPSpatialObjectInfo</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Protocols/BDPTempoTrackingDelegate.html">BDPTempoTrackingDelegate</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Protocols/BDPValidatable.html">BDPValidatable</a>
               </li>
               <li class="nav-group-task">
@@ -202,49 +205,33 @@
 
                 </div>
               </div>
-            <p>@brief Entry-point for your Application&rsquo;s interaction with <b>Point SDK</b>.</p>
+            <p>Entry-point for your Application&rsquo;s interaction with <b>Point SDK</b>. This is a subclass of <a hef="https://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CLLocationManager_Class/">CLLocationManager</a> and is intended as a drop-in replacement while providing additional features.</p>
 
 <p><b>Point SDK</b> carries out location specific, conditional actions that you define in the <b>Point Access</b> web-interface.
 To start these behaviours with your Application, it is necessary only to call the authentication method
-on the @ref BDLocationManager#instance &ldquo;shared singleton instance&rdquo; of @ref BDLocationManager.</p>
+on the shared singleton instance <code><a href="../Classes/BDLocationManager.html#/c:objc(cs)BDLocationManager(cm)instance">BDLocationManager.+instance</a></code></p>
 
 <p>Calling the authentication method will start a session with <b>Point Access</b>.
-Upon success, @ref BDZoneInfo &ldquo;Zones&rdquo; will be downloaded and associated actions will be executed by the library,
+Upon success, <code><a href="../Classes/BDZoneInfo.html">BDZoneInfo</a></code> &ldquo;Zones&rdquo; will be downloaded and associated actions will be executed by the library,
 without any further intervention.</p>
 
-<p>In general, the @ref BDLocationManager#instance &ldquo;shared, singleton instance&rdquo; of @ref BDLocationManager should be used wherever the standard Core Location
+<p>In general, the <code><a href="../Classes/BDLocationManager.html#/c:objc(cs)BDLocationManager(cm)instance">BDLocationManager.+instance</a></code> shared, singleton instance  should be used wherever the standard Core Location
 <a hef="https://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CLLocationManager_Class/">CLLocationManager</a>
-class would have been used.</p>
+class would have been used.</p></p>
 
-<p>@ref BDLocationManager is a subclass of <a hef="https://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CLLocationManager_Class/">CLLocationManager</a>
-and is intended as a drop-in replacement while providing additional features.</p>
-
-<p>@ref BDLocationManager exposes <b>two new delegate properties</b>, in addition to the usual <a href="https://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CLLocationManager_Class/#//apple_ref/occ/instp/CLLocationManager/delegate"><b>delegate</b></a> property
+<p>This class exposes <b>three new delegate properties</b>, in addition to the usual <a href="https://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CLLocationManager_Class/#//apple_ref/occ/instp/CLLocationManager/delegate"><b>delegate</b></a> property
 inherited from <a href="https://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CLLocationManager_Class/">CLLocationManager</a>:</p>
 
 <ul>
-<li><b>sessionDelegate</b> to which you should assign your own implementation of the @ref BDPSessionDelegate protocol.</li>
-<li><b>locationDelegate</b> to which you should assign your own implementation of the @ref BDPLocationDelegate protocol.</li>
+<li><code><a href="../Classes/BDLocationManager.html#/c:objc(cs)BDLocationManager(py)sessionDelegate">BDLocationManager.sessionDelegate</a></code> - to which you should assign your own implementation of the <code><a href="../Protocols/BDPSessionDelegate.html">BDPSessionDelegate</a></code> protocol. The  property provides callbacks that inform the application of <b>Point SDK</b>&lsquo;s authentication state with it&rsquo;s supporting web-service. The rules defined in <b>Point Access</b> will only be observed while authenticated.</li>
+<li><code><a href="../Classes/BDLocationManager.html#/c:objc(cs)BDLocationManager(py)locationDelegate">BDLocationManager.locationDelegate</a></code> - to which you should assign your own implementation of the <code><a href="../Protocols/BDPLocationDelegate.html">BDPLocationDelegate</a></code> protocol. The property provides callbacks to notify your application when Zone information is received. This typically occurs immediately after the authentication process completes. Any <b>Custom Action</b>s defined in the <b>Point Access</b> are also triggered, in real-time.</li>
+<li><code><a href="../Classes/BDLocationManager.html#/c:objc(cs)BDLocationManager(py)tempoTrackingDelegate">BDLocationManager.tempoTrackingDelegate</a></code> - to which you should assign your own implementation of the <code><a href="../Protocols/BDPTempoTrackingDelegate.html">BDPTempoTrackingDelegate</a></code> protocol. This  property provides callbacks to notify your application
+of Tempo related events.</li>
 </ul>
-
-<p>More fully, these features are:</p>
-
-<h3>Session Delegate</h3>
-
-<p>The @ref BDPSessionDelegate protocol provides callbacks that inform the application
-of <b>Point SDK</b>&lsquo;s authentication state with it&rsquo;s supporting web-service. The rules defined in <b>Point Access</b> will only be
-observed while authenticated.</p>
 
 <p>In addition, some methods of <b>Point SDK</b> classes may only be called while authenticated
 and will otherwise cause an exception to be thrown. Individual restrictions are documented clearly in this API
 reference. It is only necessary to authenticate once during the runtime of the application.</p>
-
-<h3>Location Delegate</h3>
-
-<p>Following the delegate pattern familiar throughout Apple&rsquo;s CocoaTouch frameworks, the
-@ref locationDelegate property of BDLocationManager provides callbacks to notify your application when:
-Zone information is received. This typically occurs immediately after the authentication process completes.
-Any <b>Custom Action</b>s defined in the <b>Point Access</b> are triggered, in real-time.</p>
 
 <p>@copyright Bluedot Innovation</p>
 
@@ -559,6 +546,33 @@ fully using <b>Point SDK</b>.  Attempting to call protected features when not au
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/BDPSessionDelegate.html">BDPSessionDelegate</a></span><span class="o">&gt;</span> <span class="n">sessionDelegate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDLocationManager(py)tempoTrackingDelegate"></a>
+                    <a name="//apple_ref/objc/Property/tempoTrackingDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDLocationManager(py)tempoTrackingDelegate">tempoTrackingDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Applications using Point SDK must authenticate before using its features. Attempting to call protected features when not authenticated will case a <code><a href="../Classes/BDPointSessionException.html">BDPointSessionException</a></code> to be thrown.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/BDPTempoTrackingDelegate.html">BDPTempoTrackingDelegate</a></span><span class="o">&gt;</span> <span class="n">tempoTrackingDelegate</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
@@ -957,12 +971,103 @@ Only String Type is allowed. Throws BDCustomEventMetadataDataFormatException exc
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDLocationManager(im)startTempoTracking:"></a>
+                    <a name="//apple_ref/objc/Method/-startTempoTracking:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDLocationManager(im)startTempoTracking:">-startTempoTracking:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Start Tempo Tracking for destination id provided</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <code><a href="../Classes/BDPointSessionException.html">BDPointSessionException</a></code> thrown if PointSDK is not logged in.
+
+</div><div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    NSException with the name &ldquo;BDTempoTrackingAlreadyStartedException&rdquo; thrown if Tempo Tracking is currently already in progress
+
+</div><div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    NSException with the name &ldquo;BDTempoDestinationIdEmptyException&rdquo; thrown if destinationId is empty
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">startTempoTracking</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">destinationId</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>destinationId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The destinationId to be tracked</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDLocationManager(im)stopTempoTracking"></a>
+                    <a name="//apple_ref/objc/Method/-stopTempoTracking" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDLocationManager(im)stopTempoTracking">-stopTempoTracking</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Stop Tempo Tracking</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <code><a href="../Classes/BDPointSessionException.html">BDPointSessionException</a></code> thrown if PointSDK is not logged in.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">stopTempoTracking</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="https://bluedot.io" target="_blank" rel="external">Bluedot</a>. All rights reserved. (Last updated: 2020-04-23)</p>
+          <p>&copy; 2020 <a class="link" href="https://bluedot.io" target="_blank" rel="external">Bluedot</a>. All rights reserved. (Last updated: 2020-06-14)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

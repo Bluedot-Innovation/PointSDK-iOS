@@ -53,9 +53,11 @@ jobs:
         
     # prepare release assets
     - name: prepare release assets
+      working-directory: PointSDK
       run: |
-        zip -r BDPointSDK.framework.zip PointSDK/BDPointSDK.framework
-        zip -r BDPointSDK.framework.dSYM.zip PointSDK/BDPointSDK.framework.dSYM
+        mkdir -p ./Carthage/Build/iOS
+        cp -R *.bcsymbolmap *.dSYM *.framework Carthage/Build/iOS
+        zip -r BDPointSDK.framework.zip Carthage
     
     # make new GitHub release
     - name: create a release
@@ -65,8 +67,7 @@ jobs:
         name: ${{ steps.notes.outputs.name }}
         tag_name: ${{ steps.semver.outputs.semver }}
         files: |
-          BDPointSDK.framework.zip
-          BDPointSDK.framework.dSYM.zip
+          PointSDK/BDPointSDK.framework.zip
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         

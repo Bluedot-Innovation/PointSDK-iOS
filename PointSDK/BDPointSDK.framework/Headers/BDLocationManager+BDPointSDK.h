@@ -10,6 +10,7 @@
 #import "BDPointDelegate.h"
 #import "BDPLocationDelegate.h"
 #import "BDPSessionDelegate.h"
+#import "BDPTempoTrackingDelegate.h"
 #import "BDPAuthenticationStateProvider.h"
 
 @protocol BDPAuthenticationDelegate;
@@ -79,6 +80,11 @@ __attribute__((deprecated("First deprecated in 1.14.0 - use method authenticateW
   @ref BDPointSessionException to be thrown.</p>
  */
 @property id<BDPSessionDelegate> sessionDelegate;
+
+/**
+  Applications using Point SDK must authenticate before using its features. Attempting to call protected features when not authenticated will case a `BDPointSessionException` to be thrown.
+ */
+@property id<BDPTempoTrackingDelegate> tempoTrackingDelegate;
 
 /**
  * @deprecated This has been superceded by BDPSessionDelegate and will be removed in a future release.
@@ -153,5 +159,20 @@ __attribute__((deprecated("First deprecated in 1.13 - use method applicationCont
  * Returns the custom metadata set by calling setCustomEventMetaData.
  */
 - (NSDictionary *)customEventMetaData;
+
+/**
+ * Start Tempo Tracking for destination id provided
+ * @param destinationId The destinationId to be tracked
+ * @note `BDPointSessionException` thrown if PointSDK is not logged in.
+ * @note NSException with the name "BDTempoTrackingAlreadyStartedException" thrown if Tempo Tracking is currently already in progress
+ * @note NSException with the name "BDTempoDestinationIdEmptyException" thrown if destinationId is empty
+ */
+- (void)startTempoTracking: (nonnull NSString *)destinationId;
+
+/**
+ * Stop Tempo Tracking
+ * @note `BDPointSessionException` thrown if PointSDK is not logged in.
+ */
+- (void)stopTempoTracking;
 
 @end
