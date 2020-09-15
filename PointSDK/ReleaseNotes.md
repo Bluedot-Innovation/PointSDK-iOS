@@ -1,5 +1,5 @@
-PointSDK v15.3.0 (22)
-# Bluedot Tempo
+PointSDK v15.3.1 (29)
+# Reliable events
 
-## New Features
-- Bluedot Tempo - new feature . Given a destination ID, SDK will be able to track the estimated time of arrival of the mobile device
+## Bug fixes
+- Fixed a crash on the fence entry

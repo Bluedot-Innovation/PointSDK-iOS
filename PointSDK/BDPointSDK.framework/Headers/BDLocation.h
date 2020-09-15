@@ -70,6 +70,11 @@
 @property (nonatomic, readonly) NSString *provider;
 
 /**
+ * GPS time of the location
+ */
+@property (nonatomic) NSDate *timestamp;
+
+/**
  * Publicly available methods for evaluating locations.
  */
 - (BOOL)isEqual: (id)other;
