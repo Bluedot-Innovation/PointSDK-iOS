@@ -1,5 +1,5 @@
-PointSDK v15.3.1 (29)
-# Reliable events
+PointSDK v15.3.2 (37)
+# Reliable exit events
 
 ## Bug fixes
-- Fixed a crash on the fence entry
+- Fixed a crash when registering Zone exits (aka Check-out).
