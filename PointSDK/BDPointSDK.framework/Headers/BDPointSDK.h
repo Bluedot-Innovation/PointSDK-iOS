@@ -29,6 +29,8 @@
 #import "BDPointSessionException.h"
 #import "BDPointOverlayRendererFactory.h"
 #import "MKMapView+BDPointSDK.h"
+#import "BDZoneEntryEvent.h"
+#import "BDZoneExitEvent.h"
 
 // Bluedot protocols
 #import "BDPointDelegate.h"
@@ -43,9 +45,15 @@
 #import "BDPNamedDescribed.h"
 #import "BDPAuthenticationStateProvider.h"
 #import "BDPMKShape.h"
+#import "BDPTempoTrackingDelegate.h"
+#import "BDPBluedotServiceDelegate.h"
+#import "BDPGeoTriggeringEventDelegate.h"
 
 //! Project version number for BDPointSDK.
-FOUNDATION_EXPORT double BDPointSDKVersionNumber;
+
+FOUNDATION_EXPORT double BDPointSDKVersionNumber
+__attribute__((deprecated("First deprecated in 15.4.0 - use method `-[BDLocationManager sdkVersion]` instead")));
 
 //! Project version string for BDPointSDK.
-FOUNDATION_EXPORT const unsigned char BDPointSDKVersionString[];
+FOUNDATION_EXPORT const unsigned char BDPointSDKVersionString[]
+__attribute__((deprecated("First deprecated in 15.4.0 - use method `-[BDLocationManager sdkVersion]` instead")));

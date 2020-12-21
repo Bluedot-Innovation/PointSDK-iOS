@@ -9,11 +9,13 @@
 /**
 @brief Describes an object which can provide an authentication state.  Currently @ref BDLocationManager(BDPointSDK).
 */
+__attribute__((deprecated("First deprecated in 15.4.0 - This will be removed in future version")))
 @protocol BDPAuthenticationStateProvider <NSObject>
 
 /**
 * This property must have a KVO-compliant implementation.
 */
-@property (readonly) BDAuthenticationState authenticationState;
+@property (readonly) BDAuthenticationState authenticationState
+__attribute__((deprecated("First deprecated in 15.4.0 - This will be removed in future version")));
 
 @end

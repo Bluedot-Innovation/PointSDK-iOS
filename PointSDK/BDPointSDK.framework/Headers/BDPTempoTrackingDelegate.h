@@ -16,15 +16,25 @@
 */
 @protocol BDPTempoTrackingDelegate <NSObject>
 
+@optional
+/**
+*   This method indicates that Tempo Tracking has expired
+*/
+- (void)tempoTrackingDidExpire;
+
 /**
 *  This method indicates that Tempo Tracking has started
 */
-- (void)didStartTracking;
+- (void)didStartTracking
+__attribute__((deprecated("First deprecated in 15.4.0 - This is now deprecated in favor of completion callback. Please refer to `BDLocationManager.-startTempoTrackingWithDestinationId:completion:`")));
 
 /**
 *   This method indicates that Tempo Tracking has stopped
 */
-- (void)didStopTracking;
+- (void)didStopTracking
+__attribute__((deprecated("First deprecated in 15.4.0 - This is now deprecated in favor of completion callback. Please refer to `BDLocationManager.-stopTempoTrackingWithCompletion:`. However, if tempo tracking expires, `tempoTrackingdidExpire` will be called instead")));
+
+@required
 
 /**
 *  This method is called if Tempo Tracking is stopped due to an error (for e.g. invalid destination Id)

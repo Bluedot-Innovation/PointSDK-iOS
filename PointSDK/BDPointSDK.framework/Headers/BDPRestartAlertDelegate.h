@@ -18,19 +18,22 @@
  * The text on the action button can be set by the application implementing this protocol.
  * </p>
  */
+__attribute__((deprecated("First deprecated in 15.4.0 - Features migrated to `BDLocationManager.-startGeoTriggeringWithAppRestartNotificationTitle:notificationButtonText:completion:`")))
 @protocol BDPRestartAlertDelegate <NSObject>
 
 /**
  *  When implementing app restart alert, this method is mandatory.
  *  @return the string to be used in the title of the banner or alert to be used in the local notification to restart the app.
  */
-- (NSString *)restartAlertTitle;
+- (NSString *)restartAlertTitle
+__attribute__((deprecated("First deprecated in 15.4.0 - Feature migrated to `BDLocationManager.-startGeoTriggeringWithAppRestartNotificationTitle:notificationButtonText:completion:`")));
 
 @optional
 /**
  *  When implementing app restart alert, this method is optional.
  *  @return the string to be used in the text of the action button to be used in the local notification to restart the app.
  */
-- (NSString *)restartButtonText;
+- (NSString *)restartButtonText
+__attribute__((deprecated("First deprecated in 15.4.0 - Feature migrated to `BDLocationManager.-startGeoTriggeringWithAppRestartNotificationTitle:notificationButtonText:completion:`")));
 
 @end

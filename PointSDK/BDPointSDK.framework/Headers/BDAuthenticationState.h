@@ -11,9 +11,10 @@ typedef NS_ENUM(NSInteger, BDAuthenticationState)
     BDAuthenticationStateNotAuthenticated,
     BDAuthenticationStateAuthenticating,
     BDAuthenticationStateAuthenticated
-};
+} __attribute__((deprecated("First deprecated in 15.4.0 - This will be removed in future version")));
 
 /**
 * Returns a human-readable string form of the given BDAuthenticationState.
 */
-NSString *BDStringFromAuthenticationState(BDAuthenticationState state);
+NSString *BDStringFromAuthenticationState(BDAuthenticationState state)
+__attribute__((deprecated("First deprecated in 15.4.0 - This will be removed in future version")));
