@@ -15,7 +15,7 @@
     <a title="BDBeaconInfo Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">PointSDK v15.3.2 Docs</a></p>
+        <p><a href="../index.html">PointSDK v15.4.0 Docs</a></p>
         <p class="header-right"><a href="https://github.com/Bluedot-Innovation/PointSDK-iOS"><img src="../img/gh.png"/>View on GitHub</a></p>
         <p class="header-right"><a href="dash-feed://https%3A%2F%2Fios%2Ddocs%2Ebluedot%2Eio%2Fdocsets%2FPointSDK%2Exml"><img src="../img/dash.png"/>Install in Dash</a></p>
       </div>
@@ -92,6 +92,12 @@
                 <a href="../Classes/BDPolygonal.html">BDPolygonal</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Classes/BDZoneEntryEvent.html">BDZoneEntryEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDZoneExitEvent.html">BDZoneExitEvent</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Classes/BDZoneInfo.html">BDZoneInfo</a>
               </li>
             </ul>
@@ -100,10 +106,19 @@
             <a href="../Constants.html">Constants</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="../Constants.html#/c:BDLocationManager+BDPointSDK.h@BDGeoTriggeringErrorDomain">BDGeoTriggeringErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Constants.html#/c:@BDPointSDKVersionNumber">BDPointSDKVersionNumber</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Constants.html#/c:@BDPointSDKVersionString">BDPointSDKVersionString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:BDLocationManager+BDPointSDK.h@BDServiceErrorDomain">BDServiceErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:BDLocationManager+BDPointSDK.h@BDTempoErrorDomain">BDTempoErrorDomain</a>
               </li>
             </ul>
           </li>
@@ -116,6 +131,15 @@
               <li class="nav-group-task">
                 <a href="../Enums/BDAuthorizationLevel.html">BDAuthorizationLevel</a>
               </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BDGeoTriggeringError.html">BDGeoTriggeringError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BDServiceError.html">BDServiceError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BDTempoError.html">BDTempoError</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -125,7 +149,13 @@
                 <a href="../Protocols/BDPAuthenticationStateProvider.html">BDPAuthenticationStateProvider</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Protocols/BDPBluedotServiceDelegate.html">BDPBluedotServiceDelegate</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Protocols/BDPDeepCopy.html">BDPDeepCopy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPGeoTriggeringEventDelegate.html">BDPGeoTriggeringEventDelegate</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/BDPGeometry.html">BDPGeometry</a>
@@ -199,15 +229,19 @@
         <section>
           <section class="section">
             <h1>BDBeaconInfo</h1>
+            <div class="aside aside-deprecated">
+              <p class="aside-title">Deprecated</p>
+              <p>First deprecated in 15.4.0 - It will be removed in a future version</p>
+
+            </div>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BDBeaconInfo</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n"><a href="../Protocols/BDPSpatialObjectInfo.html">BDPSpatialObjectInfo</a></span><span class="p">,</span> <span class="n">NSCoding</span><span class="o">&gt;</span></code></pre>
+                  <pre class="highlight objective_c"><code>
+<span class="k">@interface</span> <span class="nc">BDBeaconInfo</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n"><a href="../Protocols/BDPSpatialObjectInfo.html">BDPSpatialObjectInfo</a></span><span class="p">,</span> <span class="n">NSCoding</span><span class="o">&gt;</span></code></pre>
 
                 </div>
               </div>
-            <p>@brief Information about a BLE Beacon, as defined in Point Access.</p>
-
-<p>@copyright Bluedot Innovation</p>
+            <p>Information about a BLE Beacon, as defined in Canvas.</p>
 
           </section>
           <section class="section task-group-section">
@@ -218,15 +252,20 @@
                     <code>
                     <a name="/c:objc(cs)BDBeaconInfo(py)name"></a>
                     <a name="//apple_ref/objc/Property/name" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)BDBeaconInfo(py)name">name</a>
+                    <a class="token discouraged" href="#/c:objc(cs)BDBeaconInfo(py)name">name</a>
                     </code>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>First deprecated in 15.4.0 - It will be removed in a future version</p>
+
+                      </div>
                       <div class="abstract">
-                        <p>The name of this Beacon that was entered into Point Access</p>
+                        <p>The name of this Beacon that was entered into Canvas</p>
 
                       </div>
                       <div class="declaration">
@@ -245,15 +284,20 @@
                     <code>
                     <a name="/c:objc(cs)BDBeaconInfo(py)description"></a>
                     <a name="//apple_ref/objc/Property/description" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)BDBeaconInfo(py)description">description</a>
+                    <a class="token discouraged" href="#/c:objc(cs)BDBeaconInfo(py)description">description</a>
                     </code>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>First deprecated in 15.4.0 - It will be removed in a future version</p>
+
+                      </div>
                       <div class="abstract">
-                        <p>The description of this Beacon that was entered into Point Access</p>
+                        <p>The description of this Beacon that was entered into Canvas</p>
 
                       </div>
                       <div class="declaration">
@@ -272,13 +316,18 @@
                     <code>
                     <a name="/c:objc(cs)BDBeaconInfo(py)ID"></a>
                     <a name="//apple_ref/objc/Property/ID" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)BDBeaconInfo(py)ID">ID</a>
+                    <a class="token discouraged" href="#/c:objc(cs)BDBeaconInfo(py)ID">ID</a>
                     </code>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>First deprecated in 15.4.0 - It will be removed in a future version</p>
+
+                      </div>
                       <div class="abstract">
                         <p>The ID of this Beacon</p>
 
@@ -299,15 +348,20 @@
                     <code>
                     <a name="/c:objc(cs)BDBeaconInfo(py)proximityUuid"></a>
                     <a name="//apple_ref/objc/Property/proximityUuid" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)BDBeaconInfo(py)proximityUuid">proximityUuid</a>
+                    <a class="token discouraged" href="#/c:objc(cs)BDBeaconInfo(py)proximityUuid">proximityUuid</a>
                     </code>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>First deprecated in 15.4.0 - It will be removed in a future version</p>
+
+                      </div>
                       <div class="abstract">
-                        <p>The proximityUUID of this Beacon, as entered into Point Access</p>
+                        <p>The proximityUUID of this Beacon, as entered into Canvas</p>
 
                       </div>
                       <div class="declaration">
@@ -326,15 +380,20 @@
                     <code>
                     <a name="/c:objc(cs)BDBeaconInfo(py)major"></a>
                     <a name="//apple_ref/objc/Property/major" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)BDBeaconInfo(py)major">major</a>
+                    <a class="token discouraged" href="#/c:objc(cs)BDBeaconInfo(py)major">major</a>
                     </code>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>First deprecated in 15.4.0 - It will be removed in a future version</p>
+
+                      </div>
                       <div class="abstract">
-                        <p>The major identifier of this Beacon, as entered into Point Access</p>
+                        <p>The major identifier of this Beacon, as entered into Canvas</p>
 
                       </div>
                       <div class="declaration">
@@ -353,15 +412,20 @@
                     <code>
                     <a name="/c:objc(cs)BDBeaconInfo(py)minor"></a>
                     <a name="//apple_ref/objc/Property/minor" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)BDBeaconInfo(py)minor">minor</a>
+                    <a class="token discouraged" href="#/c:objc(cs)BDBeaconInfo(py)minor">minor</a>
                     </code>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>First deprecated in 15.4.0 - It will be removed in a future version</p>
+
+                      </div>
                       <div class="abstract">
-                        <p>The minor identifier of this Beacon, as entered into Point Access</p>
+                        <p>The minor identifier of this Beacon, as entered into Canvas</p>
 
                       </div>
                       <div class="declaration">
@@ -380,15 +444,20 @@
                     <code>
                     <a name="/c:objc(cs)BDBeaconInfo(py)location"></a>
                     <a name="//apple_ref/objc/Property/location" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)BDBeaconInfo(py)location">location</a>
+                    <a class="token discouraged" href="#/c:objc(cs)BDBeaconInfo(py)location">location</a>
                     </code>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>First deprecated in 15.4.0 - It will be removed in a future version</p>
+
+                      </div>
                       <div class="abstract">
-                        <p>The approximate location of this Beacon, as entered into Point Access, or NULL if this Beacon has no fixed location.</p>
+                        <p>The approximate location of this Beacon, as entered into Canvas, or NULL if this Beacon has no fixed location.</p>
 
                       </div>
                       <div class="declaration">
@@ -407,17 +476,21 @@
                     <code>
                     <a name="/c:objc(cs)BDBeaconInfo(py)geometry"></a>
                     <a name="//apple_ref/objc/Property/geometry" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)BDBeaconInfo(py)geometry">geometry</a>
+                    <a class="token discouraged" href="#/c:objc(cs)BDBeaconInfo(py)geometry">geometry</a>
                     </code>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>First deprecated in 15.4.0 - It will be removed in a future version</p>
+
+                      </div>
                       <div class="abstract">
-                        <p>Returns a BDPoint representation of the approximate location of this Beacon, as entered into Point Access,
-or nil if this Beacon has no fixed location.
-This property conforms the spatial aspect of BDBeaconInfo and BDFenceInfo to a common interface BDPSpatialInfo.</p>
+                        <p>Returns a BDPoint representation of the approximate location of this Beacon, as entered into Canvas, or nil if this Beacon has no fixed location.
+This property conforms the spatial aspect of <code>BDBeaconInfo</code> and <code><a href="../Classes/BDFenceInfo.html">BDFenceInfo</a></code> to a common interface  <code><a href="../Protocols/BDPSpatialObjectInfo.html">BDPSpatialObjectInfo</a></code>.</p>
 
                       </div>
                       <div class="declaration">
@@ -436,7 +509,7 @@ This property conforms the spatial aspect of BDBeaconInfo and BDFenceInfo to a c
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="https://bluedot.io" target="_blank" rel="external">Bluedot</a>. All rights reserved. (Last updated: 2020-10-19)</p>
+          <p>&copy; 2020 <a class="link" href="https://bluedot.io" target="_blank" rel="external">Bluedot</a>. All rights reserved. (Last updated: 2020-12-21)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

@@ -15,7 +15,7 @@
     <a title="BDPLocationDelegate Protocol Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">PointSDK v15.3.2 Docs</a></p>
+        <p><a href="../index.html">PointSDK v15.4.0 Docs</a></p>
         <p class="header-right"><a href="https://github.com/Bluedot-Innovation/PointSDK-iOS"><img src="../img/gh.png"/>View on GitHub</a></p>
         <p class="header-right"><a href="dash-feed://https%3A%2F%2Fios%2Ddocs%2Ebluedot%2Eio%2Fdocsets%2FPointSDK%2Exml"><img src="../img/dash.png"/>Install in Dash</a></p>
       </div>
@@ -92,6 +92,12 @@
                 <a href="../Classes/BDPolygonal.html">BDPolygonal</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Classes/BDZoneEntryEvent.html">BDZoneEntryEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDZoneExitEvent.html">BDZoneExitEvent</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Classes/BDZoneInfo.html">BDZoneInfo</a>
               </li>
             </ul>
@@ -100,10 +106,19 @@
             <a href="../Constants.html">Constants</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="../Constants.html#/c:BDLocationManager+BDPointSDK.h@BDGeoTriggeringErrorDomain">BDGeoTriggeringErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Constants.html#/c:@BDPointSDKVersionNumber">BDPointSDKVersionNumber</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Constants.html#/c:@BDPointSDKVersionString">BDPointSDKVersionString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:BDLocationManager+BDPointSDK.h@BDServiceErrorDomain">BDServiceErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:BDLocationManager+BDPointSDK.h@BDTempoErrorDomain">BDTempoErrorDomain</a>
               </li>
             </ul>
           </li>
@@ -116,6 +131,15 @@
               <li class="nav-group-task">
                 <a href="../Enums/BDAuthorizationLevel.html">BDAuthorizationLevel</a>
               </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BDGeoTriggeringError.html">BDGeoTriggeringError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BDServiceError.html">BDServiceError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BDTempoError.html">BDTempoError</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -125,7 +149,13 @@
                 <a href="../Protocols/BDPAuthenticationStateProvider.html">BDPAuthenticationStateProvider</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Protocols/BDPBluedotServiceDelegate.html">BDPBluedotServiceDelegate</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Protocols/BDPDeepCopy.html">BDPDeepCopy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPGeoTriggeringEventDelegate.html">BDPGeoTriggeringEventDelegate</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/BDPGeometry.html">BDPGeometry</a>
@@ -199,23 +229,28 @@
         <section>
           <section class="section">
             <h1>BDPLocationDelegate</h1>
+            <div class="aside aside-deprecated">
+              <p class="aside-title">Deprecated</p>
+              <p>First deprecated in 15.4.0. Please refer to each deprecated methods for more information</p>
+
+            </div>
               <div class="declaration">
                 <div class="language">
                   <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">BDPLocationDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
 
                 </div>
               </div>
-            <p>@brief Defines the call-backs which <b>Point SDK</b> makes to inform the Application of location-related events.</p>
+            <p>Defines the call-backs which <b>Point SDK</b> makes to inform the Application of location-related events.</p>
 
 <p>Assign your own implementation of this protocol to the @ref BDLocationManager#locationDelegate &ldquo;locationDelegate&rdquo; property of the
-shared @ref BDLocationManager instance, to handle location related callbacks.</p>
+shared <code><a href="../Classes/BDLocationManager.html">BDLocationManager</a></code> instance, to handle location related callbacks.</p>
 
-<p>Callbacks inform the application when:
+<p>Callbacks inform the application when:</p>
+
 <ul>
-<li>&hellip;new Zones have been received from <b>Point Access</b></li>
+<li>&hellip;new Zones have been received from <b>Canvas</b></li>
 <li>&hellip;the user has triggered a <b>Custom Notification</b> action</li>
 </ul>
-</p>
 
           </section>
           <section class="section task-group-section">
@@ -226,19 +261,26 @@ shared @ref BDLocationManager instance, to handle location related callbacks.</p
                     <code>
                     <a name="/c:objc(pl)BDPLocationDelegate(im)didUpdateZoneInfo:"></a>
                     <a name="//apple_ref/objc/Method/-didUpdateZoneInfo:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)BDPLocationDelegate(im)didUpdateZoneInfo:">-didUpdateZoneInfo:<wbr></a>
+                    <a class="token discouraged" href="#/c:objc(pl)BDPLocationDelegate(im)didUpdateZoneInfo:">-didUpdateZoneInfo:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>First deprecated in 15.4.0 - Features migrated to <code><a href="../Protocols/BDPGeoTriggeringEventDelegate.html#/c:objc(pl)BDPGeoTriggeringEventDelegate(im)onZoneInfoUpdate:">-[BDPGeoTriggeringEventDelegate onZoneInfoUpdate:]</a></code> method</p>
+
+                      </div>
                       <div class="abstract">
-                        <p><p>Called whenever new @ref BDZoneInfo &ldquo;zone info&rdquo; is received from <b>Point Access</b>.</p>
- <p>This occurs immediately after the <b>Point SDK</b> successfully authenticates, and repeats when the rule download
+                        <p>Called whenever new <code><a href="../Classes/BDZoneInfo.html">BDZoneInfo</a></code> &ldquo;zone info&rdquo; is received from <b>Canvas</b>.</p>
+
+<p>This occurs immediately after the <b>Point SDK</b> successfully authenticates, and repeats when the rule download
  time interval is reached or significant distance has been travelled.</p>
- <p>This is a value that you set when creating the Application in the Point Access web-interface, and determines how often the Zone data
- will be refreshed on the device.<p></p>
+
+<p>This is a value that you set when creating the Application in the Canvas web-interface, and determines how often the Zone data
+ will be refreshed on the device.</p>
 
                       </div>
                       <div class="declaration">
@@ -261,8 +303,8 @@ shared @ref BDLocationManager instance, to handle location related callbacks.</p
                               </td>
                               <td>
                                 <div>
-                                  <p>A collection of @ref BDZoneInfo objects, corresponding to the Zones you created for this application, in the
-<b>Point Access</b> web-interface.</p>
+                                  <p>A collection of <code><a href="../Classes/BDZoneInfo.html">BDZoneInfo</a></code> objects, corresponding to the Zones you created for this application, in the
+<b>Canvas</b> web-interface.</p>
                                 </div>
                               </td>
                             </tr>
@@ -277,22 +319,27 @@ shared @ref BDLocationManager instance, to handle location related callbacks.</p
                     <code>
                     <a name="/c:objc(pl)BDPLocationDelegate(im)didCheckIntoFence:inZone:atLocation:willCheckOut:withCustomData:"></a>
                     <a name="//apple_ref/objc/Method/-didCheckIntoFence:inZone:atLocation:willCheckOut:withCustomData:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)BDPLocationDelegate(im)didCheckIntoFence:inZone:atLocation:willCheckOut:withCustomData:">-didCheckIntoFence:<wbr>inZone:<wbr>atLocation:<wbr>willCheckOut:<wbr>withCustomData:<wbr></a>
+                    <a class="token discouraged" href="#/c:objc(pl)BDPLocationDelegate(im)didCheckIntoFence:inZone:atLocation:willCheckOut:withCustomData:">-didCheckIntoFence:<wbr>inZone:<wbr>atLocation:<wbr>willCheckOut:<wbr>withCustomData:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>First deprecated in 15.4.0 - Feature migrated to <code><a href="../Protocols/BDPGeoTriggeringEventDelegate.html#/c:objc(pl)BDPGeoTriggeringEventDelegate(im)didEnterZone:">-[BDPGeoTriggeringEventDelegate didEnterZone:]</a></code></p>
+
+                      </div>
                       <div class="abstract">
-                        <p><p>Implement this method to provide your own <b>Custom Action</b> when a Zone is triggered by entering a Fence.</p></p>
+                        <p>Implement this method to provide your own <b>Custom Action</b> when a Zone is triggered by entering a Fence.</p>
 
-<p><p>This method and @ref didCheckIntoBeacon:inZone:atLocation:withProximity:willCheckOut:withCustomData: are both optional.<br/>
+<p>This method and <code><a href="../Protocols/BDPLocationDelegate.html#/c:objc(pl)BDPLocationDelegate(im)didCheckIntoBeacon:inZone:atLocation:withProximity:willCheckOut:withCustomData:">-[BDPLocationDelegate didCheckIntoBeacon:inZone:atLocation:withProximity:willCheckOut:withCustomData:]</a></code> are both optional.<br/>
  Implement them according to whether you have Custom Actions in your geo-location scenario, and whether those actions
- may be triggered by entering Fences, Beacon proximities, or both.</p></p>
+ may be triggered by entering Fences, Beacon proximities, or both.</p>
 
-<p><p><b>For clarity</b>: When a user&rsquo;s device checks into a @ref BDZoneInfo &ldquo;Zone&rdquo;, this method is called only if
- <b>Custom Action</b> is chosen as one of the @ref BDZoneInfo &ldquo;Zone&rdquo;&lsquo;s Actions in the <b>Point Access</b> web-interface.</p></p>
+<p><b>For clarity</b>: When a user&rsquo;s device checks into a <code><a href="../Classes/BDZoneInfo.html">BDZoneInfo</a></code> &ldquo;Zone&rdquo;, this method is called only if
+ <b>Custom Action</b> is chosen as one of the <code><a href="../Classes/BDZoneInfo.html">BDZoneInfo</a></code> &ldquo;Zone&rdquo;&lsquo;s Actions in the <b>Canvas</b> web-interface.</p>
 
                       </div>
                       <div class="declaration">
@@ -367,7 +414,7 @@ shared @ref BDLocationManager instance, to handle location related callbacks.</p
                               </td>
                               <td>
                                 <div>
-                                  <p>The custom fields setup from &ldquo;Dashboard&rdquo; in the <b>Point Access</b> web-interface.</p></p>
+                                  <p>The custom fields setup from &ldquo;Dashboard&rdquo; in the <b>Canvas</b> web-interface.</p></p>
                                 </div>
                               </td>
                             </tr>
@@ -391,13 +438,11 @@ shared @ref BDLocationManager instance, to handle location related callbacks.</p
                       <div class="pointer"></div>
                       <div class="aside aside-deprecated">
                         <p class="aside-title">Deprecated</p>
-                        <p>Use method didCheckIntoFence:inZone:atLocation:willCheckOut:withCustomData: instead</p>
+                        <p>First deprecated in 1.9.4 - Feature migrated to <code><a href="../Protocols/BDPGeoTriggeringEventDelegate.html#/c:objc(pl)BDPGeoTriggeringEventDelegate(im)didEnterZone:">-[BDPGeoTriggeringEventDelegate didEnterZone:]</a></code></p>
 
                       </div>
                       <div class="abstract">
                         <p>This method has been deprecated as of version 1.9.4; it will be removed in a future version.</p>
-
-<p>@deprecated Use @ref didCheckIntoFence:inZone:atLocation:willCheckOut:withCustomData:</p>
 
                       </div>
                       <div class="declaration">
@@ -421,17 +466,22 @@ shared @ref BDLocationManager instance, to handle location related callbacks.</p
                     <code>
                     <a name="/c:objc(pl)BDPLocationDelegate(im)didCheckOutFromFence:inZone:onDate:withDuration:withCustomData:"></a>
                     <a name="//apple_ref/objc/Method/-didCheckOutFromFence:inZone:onDate:withDuration:withCustomData:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)BDPLocationDelegate(im)didCheckOutFromFence:inZone:onDate:withDuration:withCustomData:">-didCheckOutFromFence:<wbr>inZone:<wbr>onDate:<wbr>withDuration:<wbr>withCustomData:<wbr></a>
+                    <a class="token discouraged" href="#/c:objc(pl)BDPLocationDelegate(im)didCheckOutFromFence:inZone:onDate:withDuration:withCustomData:">-didCheckOutFromFence:<wbr>inZone:<wbr>onDate:<wbr>withDuration:<wbr>withCustomData:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
-                      <div class="abstract">
-                        <p><p>Implement this method to provide your own <b>Custom Action</b> when checking out of fence.</p></p>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>First deprecated in 15.4.0 - Feature migrated to <code><a href="../Protocols/BDPGeoTriggeringEventDelegate.html#/c:objc(pl)BDPGeoTriggeringEventDelegate(im)didExitZone:">-[BDPGeoTriggeringEventDelegate didExitZone:]</a></code></p>
 
-<p><p>This method and @ref didCheckOutFromBeacon:inZone:withProximity:onDate:withDuration:withCustomData: are both optional.<br/>
+                      </div>
+                      <div class="abstract">
+                        <p>Implement this method to provide your own <b>Custom Action</b> when checking out of fence.</p>
+
+<p>This method and <code><a href="../Protocols/BDPLocationDelegate.html#/c:objc(pl)BDPLocationDelegate(im)didCheckOutFromBeacon:inZone:withProximity:onDate:withDuration:withCustomData:">-[BDPLocationDelegate didCheckOutFromBeacon:inZone:withProximity:onDate:withDuration:withCustomData:]</a></code> are both optional.
  Implement them according to whether you have a fence that has been configured with Check Out set.</p>
 
                       </div>
@@ -507,7 +557,7 @@ shared @ref BDLocationManager instance, to handle location related callbacks.</p
                               </td>
                               <td>
                                 <div>
-                                  <p>The custom fields setup from &ldquo;Dashboard&rdquo; in the <b>Point Access</b> web-interface.</p></p>
+                                  <p>The custom fields setup from &ldquo;Dashboard&rdquo; in the <b>Canvas</b> web-interface.</p>
                                 </div>
                               </td>
                             </tr>
@@ -522,23 +572,29 @@ shared @ref BDLocationManager instance, to handle location related callbacks.</p
                     <code>
                     <a name="/c:objc(pl)BDPLocationDelegate(im)didCheckIntoBeacon:inZone:atLocation:withProximity:willCheckOut:withCustomData:"></a>
                     <a name="//apple_ref/objc/Method/-didCheckIntoBeacon:inZone:atLocation:withProximity:willCheckOut:withCustomData:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)BDPLocationDelegate(im)didCheckIntoBeacon:inZone:atLocation:withProximity:willCheckOut:withCustomData:">-didCheckIntoBeacon:<wbr>inZone:<wbr>atLocation:<wbr>withProximity:<wbr>willCheckOut:<wbr>withCustomData:<wbr></a>
+                    <a class="token discouraged" href="#/c:objc(pl)BDPLocationDelegate(im)didCheckIntoBeacon:inZone:atLocation:withProximity:willCheckOut:withCustomData:">-didCheckIntoBeacon:<wbr>inZone:<wbr>atLocation:<wbr>withProximity:<wbr>willCheckOut:<wbr>withCustomData:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>First deprecated in 15.4.0 - It will be removed in a future version</p>
+
+                      </div>
                       <div class="abstract">
-                        <p><p>Implement this method to provide your own <b>Custom Action</b> when a Zone is triggered by entering the configured proximity of a Beacon.</p>
- <p>This configuration can be made in the Management section of each Zone in the <b>Point Access</b> web-interface.</p></p>
+                        <p>Implement this method to provide your own <b>Custom Action</b> when a Zone is triggered by entering the configured proximity of a Beacon.</p>
 
-<p><p>This method and @ref didCheckIntoFence:inZone:atLocation:willCheckOut:withCustomData: are both optional.<br/>
+<p>This configuration can be made in the Management section of each Zone in the <b>Canvas</b> web-interface.</p>
+
+<p>This method and <code><a href="../Protocols/BDPLocationDelegate.html#/c:objc(pl)BDPLocationDelegate(im)didCheckIntoFence:inZone:atLocation:willCheckOut:withCustomData:">-[BDPLocationDelegate didCheckIntoFence:inZone:atLocation:willCheckOut:withCustomData:]</a></code> are both optional.
  Implement them according to whether you have Custom Actions in your geo-location scenario, and whether those actions
- may be triggered by entering Fences, Beacon proximities or both.</p></p>
+ may be triggered by entering Fences, Beacon proximities or both.</p>
 
-<p><p><b>For clarity</b>: When a user&rsquo;s device checks into a @ref BDZoneInfo &ldquo;Zone&rdquo;, this method is called only if
- <b>Custom Action</b> is chosen as one of the @ref BDZoneInfo &ldquo;Zone&rdquo;&lsquo;s Actions in the <b>Point Access</b> web-interface.</p></p>
+<p><b>For clarity</b>: When a user&rsquo;s device checks into a <code><a href="../Classes/BDZoneInfo.html">BDZoneInfo</a></code> &ldquo;Zone&rdquo;, this method is called only if
+ <b>Custom Action</b> is chosen as one of the <code><a href="../Classes/BDZoneInfo.html">BDZoneInfo</a></code> &ldquo;Zone&rdquo;&lsquo;s Actions in the <b>Canvas</b> web-interface.</p>
 
                       </div>
                       <div class="declaration">
@@ -626,7 +682,7 @@ shared @ref BDLocationManager instance, to handle location related callbacks.</p
                               </td>
                               <td>
                                 <div>
-                                  <p>The custom fields setup from &ldquo;Dashboard&rdquo; in the <b>Point Access</b> web-interface.</p></p>
+                                  <p>The custom fields setup from &ldquo;Dashboard&rdquo; in the <b>Canvas</b> web-interface.</p></p>
                                 </div>
                               </td>
                             </tr>
@@ -650,13 +706,11 @@ shared @ref BDLocationManager instance, to handle location related callbacks.</p
                       <div class="pointer"></div>
                       <div class="aside aside-deprecated">
                         <p class="aside-title">Deprecated</p>
-                        <p>Use method didCheckIntoBeacon:inZone:atLocation:withProximity:willCheckOut:withCustomData: instead</p>
+                        <p>First deprecated in 1.9.4 - It will be removed in a future version</p>
 
                       </div>
                       <div class="abstract">
-                        <p>This method has been deprecated as of version 1.9.4; it will be removed in a future version.</p>
-
-<p>@deprecated Use @ref didCheckIntoBeacon:inZone:atLocation:withProximity:willCheckOut:withCustomData:</p>
+                        <p>This method has been deprecated as of version 1.9.4; it will be removed in a future version.</p></p>
 
                       </div>
                       <div class="declaration">
@@ -680,17 +734,22 @@ shared @ref BDLocationManager instance, to handle location related callbacks.</p
                     <code>
                     <a name="/c:objc(pl)BDPLocationDelegate(im)didCheckOutFromBeacon:inZone:withProximity:onDate:withDuration:withCustomData:"></a>
                     <a name="//apple_ref/objc/Method/-didCheckOutFromBeacon:inZone:withProximity:onDate:withDuration:withCustomData:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)BDPLocationDelegate(im)didCheckOutFromBeacon:inZone:withProximity:onDate:withDuration:withCustomData:">-didCheckOutFromBeacon:<wbr>inZone:<wbr>withProximity:<wbr>onDate:<wbr>withDuration:<wbr>withCustomData:<wbr></a>
+                    <a class="token discouraged" href="#/c:objc(pl)BDPLocationDelegate(im)didCheckOutFromBeacon:inZone:withProximity:onDate:withDuration:withCustomData:">-didCheckOutFromBeacon:<wbr>inZone:<wbr>withProximity:<wbr>onDate:<wbr>withDuration:<wbr>withCustomData:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
-                      <div class="abstract">
-                        <p><p>Implement this method to provide your own <b>Custom Action</b> when checking out of beacon.</p></p>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>First deprecated in 15.4.0 - It will be removed in a future version</p>
 
-<p><p>This method and @ref didCheckOutFromFence:inZone:onDate:withDuration:withCustomData: are both optional.<br/>
+                      </div>
+                      <div class="abstract">
+                        <p>Implement this method to provide your own <b>Custom Action</b> when checking out of beacon.</p>
+
+<p>This method and  <code><a href="../Protocols/BDPLocationDelegate.html#/c:objc(pl)BDPLocationDelegate(im)didCheckOutFromFence:inZone:onDate:withDuration:withCustomData:">-[BDPLocationDelegate didCheckOutFromFence:inZone:onDate:withDuration:withCustomData:]</a></code> are both optional.
  Implement them according to whether you have a beacon that has been configured with Check Out set.</p>
 
                       </div>
@@ -779,7 +838,7 @@ shared @ref BDLocationManager instance, to handle location related callbacks.</p
                               </td>
                               <td>
                                 <div>
-                                  <p>The custom fields setup from &ldquo;Dashboard&rdquo; in the <b>Point Access</b> web-interface.</p></p>
+                                  <p>The custom fields setup from &ldquo;Dashboard&rdquo; in the <b>Canvas</b> web-interface.</p>
                                 </div>
                               </td>
                             </tr>
@@ -794,21 +853,29 @@ shared @ref BDLocationManager instance, to handle location related callbacks.</p
                     <code>
                     <a name="/c:objc(pl)BDPLocationDelegate(im)didStartRequiringUserInterventionForBluetooth"></a>
                     <a name="//apple_ref/objc/Method/-didStartRequiringUserInterventionForBluetooth" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)BDPLocationDelegate(im)didStartRequiringUserInterventionForBluetooth">-didStartRequiringUserInterventionForBluetooth</a>
+                    <a class="token discouraged" href="#/c:objc(pl)BDPLocationDelegate(im)didStartRequiringUserInterventionForBluetooth">-didStartRequiringUserInterventionForBluetooth</a>
                     </code>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
-                      <div class="abstract">
-                        <p><p>These methods can be implemented to monitor whether the Bluetooth
- capabilities of the device are in a valid state when utilising the SDK&rsquo;s beacon functionality.</p></p>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>First deprecated in 15.4.0 - It will be removed in a future version</p>
 
-<p><p>If the configured location of a beacon is near the device, then <code>didStartRequiringUserInterventionForBluetooth</code> will be called.</p>
- <p>From the version 15.0.0 the SDK does not maintain Bluetooth enablement state. The boolean <code>isBluetoothEnabled</code> is removed from the SDK.</p>
- <p>Since then, it is an app responsibility to check the Bluetooth state and require user interraction in the most appropriate way.</p>
- <p>Thereafter, if the device leaves proximity of the beacon, then @ref didStopRequiringUserInterventionForBluetooth is called.</p></p>
+                      </div>
+                      <div class="abstract">
+                        <p>These methods can be implemented to monitor whether the Bluetooth
+ capabilities of the device are in a valid state when utilising the SDK&rsquo;s beacon functionality.</p>
+
+<p>If the configured location of a beacon is near the device, then <code>-[BDPLocationDelegate didStartRequiringUserInterventionForBluetooth]</code> will be called.</p>
+
+<p>From the version 15.0.0 the SDK does not maintain Bluetooth enablement state. The boolean <code>isBluetoothEnabled</code> is removed from the SDK.</p>
+
+<p>Since then, it is an app responsibility to check the Bluetooth state and require user interraction in the most appropriate way.</p>
+
+<p>Thereafter, if the device leaves proximity of the beacon, then  `-[BDPLocationDelegate didStopRequiringUserInterventionForBluetooth is called.</p>
 
                       </div>
                       <div class="declaration">
@@ -827,19 +894,24 @@ shared @ref BDLocationManager instance, to handle location related callbacks.</p
                     <code>
                     <a name="/c:objc(pl)BDPLocationDelegate(im)didStopRequiringUserInterventionForBluetooth"></a>
                     <a name="//apple_ref/objc/Method/-didStopRequiringUserInterventionForBluetooth" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)BDPLocationDelegate(im)didStopRequiringUserInterventionForBluetooth">-didStopRequiringUserInterventionForBluetooth</a>
+                    <a class="token discouraged" href="#/c:objc(pl)BDPLocationDelegate(im)didStopRequiringUserInterventionForBluetooth">-didStopRequiringUserInterventionForBluetooth</a>
                     </code>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>First deprecated in 15.4.0 - It will be removed in a future version</p>
+
+                      </div>
                       <div class="abstract">
                         <p>To preserve the energy and minimise the battery impact, it is recommended to turn off Bluetooth if the application is not using it.</p>
 
 <p>However, there might be other apps or peripheral using the Bluetooth. Thus the user  decides whenever to keep it enabled or disabled.</p>
 
-<p>Please refer to @ref didStartRequiringUserInterventionForBluetooth.</p>
+<p>Please refer to  <code><a href="../Protocols/BDPLocationDelegate.html#/c:objc(pl)BDPLocationDelegate(im)didStartRequiringUserInterventionForBluetooth">-[BDPLocationDelegate didStartRequiringUserInterventionForBluetooth]</a></code>.</p>
 
                       </div>
                       <div class="declaration">
@@ -858,20 +930,27 @@ shared @ref BDLocationManager instance, to handle location related callbacks.</p
                     <code>
                     <a name="/c:objc(pl)BDPLocationDelegate(im)didStartRequiringUserInterventionForLocationServicesAuthorizationStatus:"></a>
                     <a name="//apple_ref/objc/Method/-didStartRequiringUserInterventionForLocationServicesAuthorizationStatus:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)BDPLocationDelegate(im)didStartRequiringUserInterventionForLocationServicesAuthorizationStatus:">-didStartRequiringUserInterventionForLocationServicesAuthorizationStatus:<wbr></a>
+                    <a class="token discouraged" href="#/c:objc(pl)BDPLocationDelegate(im)didStartRequiringUserInterventionForLocationServicesAuthorizationStatus:">-didStartRequiringUserInterventionForLocationServicesAuthorizationStatus:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
-                      <div class="abstract">
-                        <p><p>These methods can be implemented to monitor whether iOS Location Services are in a valid state while the SDK is authenticated with Point Access.</p></p>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>First deprecated in 15.4.0 - Feature replaced by <code><a href="../Protocols/BDPBluedotServiceDelegate.html#/c:objc(pl)BDPBluedotServiceDelegate(im)locationAuthorizationDidChangeFromPreviousStatus:toNewStatus:">-[BDPBluedotServiceDelegate locationAuthorizationDidChangeFromPreviousStatus:toNewStatus:]</a></code></p>
 
-<p><p>If Point SDK is authenticated with Point Access and Location Services have not been enabled or set to &ldquo;Never&rdquo; or &ldquo;While Using&rdquo;
-    then didStartRequiringUserInterventionForLocationServicesAuthorizationStatus will be called.</p>
- <p>Thereafter, if Location Services have been set to &ldquo;Always Allow&rdquo;, or if Point SDK logs out from the authenticated state, then didStopRequiringUserInterventionForLocationServicesAuthorizationStatus: is called.</p>
- <p>If Location Services are both required and enabled, then these callbacks will not be invoked.</p></p>
+                      </div>
+                      <div class="abstract">
+                        <p>These methods can be implemented to monitor whether iOS Location Services are in a valid state while the SDK is authenticated with Canvas.</p>
+
+<p>If Point SDK is authenticated with Canvas and Location Services have not been enabled or set to &ldquo;Never&rdquo; or &ldquo;While Using&rdquo;
+ then  <code>didStartRequiringUserInterventionForLocationServicesAuthorizationStatus:</code> will be called.</p>
+
+<p>Thereafter, if Location Services have been set to &ldquo;Always Allow&rdquo;, or if Point SDK logs out from the authenticated state, then  <code><a href="../Protocols/BDPLocationDelegate.html#/c:objc(pl)BDPLocationDelegate(im)didStopRequiringUserInterventionForLocationServicesAuthorizationStatus:">-[BDPLocationDelegate didStopRequiringUserInterventionForLocationServicesAuthorizationStatus:]</a></code> is called.</p>
+
+<p>If Location Services are both required and enabled, then these callbacks will not be invoked.</p>
 
                       </div>
                       <div class="declaration">
@@ -910,15 +989,20 @@ shared @ref BDLocationManager instance, to handle location related callbacks.</p
                     <code>
                     <a name="/c:objc(pl)BDPLocationDelegate(im)didStopRequiringUserInterventionForLocationServicesAuthorizationStatus:"></a>
                     <a name="//apple_ref/objc/Method/-didStopRequiringUserInterventionForLocationServicesAuthorizationStatus:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)BDPLocationDelegate(im)didStopRequiringUserInterventionForLocationServicesAuthorizationStatus:">-didStopRequiringUserInterventionForLocationServicesAuthorizationStatus:<wbr></a>
+                    <a class="token discouraged" href="#/c:objc(pl)BDPLocationDelegate(im)didStopRequiringUserInterventionForLocationServicesAuthorizationStatus:">-didStopRequiringUserInterventionForLocationServicesAuthorizationStatus:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>First deprecated in 15.4.0 - Feature replaced by <code><a href="../Protocols/BDPBluedotServiceDelegate.html#/c:objc(pl)BDPBluedotServiceDelegate(im)locationAuthorizationDidChangeFromPreviousStatus:toNewStatus:">-[BDPBluedotServiceDelegate locationAuthorizationDidChangeFromPreviousStatus:toNewStatus:]</a></code></p>
+
+                      </div>
                       <div class="abstract">
-                        <p>Please refer to @ref didStartRequiringUserInterventionForLocationServicesAuthorizationStatus:.</p>
+                        <p>Please refer to  <code><a href="../Protocols/BDPLocationDelegate.html#/c:objc(pl)BDPLocationDelegate(im)didStartRequiringUserInterventionForLocationServicesAuthorizationStatus:">-[BDPLocationDelegate didStartRequiringUserInterventionForLocationServicesAuthorizationStatus:]</a></code>.</p>
 
                       </div>
                       <div class="declaration">
@@ -938,19 +1022,26 @@ shared @ref BDLocationManager instance, to handle location related callbacks.</p
                     <code>
                     <a name="/c:objc(pl)BDPLocationDelegate(im)didStartRequiringUserInterventionForPowerMode"></a>
                     <a name="//apple_ref/objc/Method/-didStartRequiringUserInterventionForPowerMode" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)BDPLocationDelegate(im)didStartRequiringUserInterventionForPowerMode">-didStartRequiringUserInterventionForPowerMode</a>
+                    <a class="token discouraged" href="#/c:objc(pl)BDPLocationDelegate(im)didStartRequiringUserInterventionForPowerMode">-didStartRequiringUserInterventionForPowerMode</a>
                     </code>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
-                      <div class="abstract">
-                        <p><p>These methods can be implemented to monitor whether the iOS &lsquo;Low Power Mode&rsquo; has been enabled while the SDK is authenticated with Point Access.</p>
- <p>The callback is required because Low Power mode negatively impacts the timeliness and precision of Point SDK, which your Application may need to communicate to the user.</p></p>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>First deprecated in 15.4.0 - Feature replaced by <code><a href="../Protocols/BDPBluedotServiceDelegate.html#/c:objc(pl)BDPBluedotServiceDelegate(im)lowPowerModeDidChange:">-[BDPBluedotServiceDelegate lowPowerModeDidChange:]</a></code></p>
 
-<p><p>If Point SDK is authenticated with Point Access and iOS has been switched to &lsquo;Low Power mode&rsquo;, then didStartRequiringUserInterventionForPowerMode will be called.</p>
- <p>Thereafter, if the user switches off &lsquo;Low Power mode&rsquo;, then didStopRequiringUserInterventionForPowerMode is called.</p></p>
+                      </div>
+                      <div class="abstract">
+                        <p>These methods can be implemented to monitor whether the iOS &lsquo;Low Power Mode&rsquo; has been enabled while the SDK is authenticated with Canvas.</p>
+
+<p>The callback is required because Low Power mode negatively impacts the timeliness and precision of Point SDK, which your Application may need to communicate to the user.</p>
+
+<p>If Point SDK is authenticated with Canvas and iOS has been switched to &lsquo;Low Power mode&rsquo;, then  <code>didStartRequiringUserInterventionForPowerMode</code> will be called.</p>
+
+<p>Thereafter, if the user switches off &lsquo;Low Power mode&rsquo;, then  <code><a href="../Protocols/BDPLocationDelegate.html#/c:objc(pl)BDPLocationDelegate(im)didStopRequiringUserInterventionForPowerMode">-[BDPLocationDelegate didStopRequiringUserInterventionForPowerMode]</a></code> is called.</p>
 
                       </div>
                       <div class="declaration">
@@ -969,15 +1060,20 @@ shared @ref BDLocationManager instance, to handle location related callbacks.</p
                     <code>
                     <a name="/c:objc(pl)BDPLocationDelegate(im)didStopRequiringUserInterventionForPowerMode"></a>
                     <a name="//apple_ref/objc/Method/-didStopRequiringUserInterventionForPowerMode" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)BDPLocationDelegate(im)didStopRequiringUserInterventionForPowerMode">-didStopRequiringUserInterventionForPowerMode</a>
+                    <a class="token discouraged" href="#/c:objc(pl)BDPLocationDelegate(im)didStopRequiringUserInterventionForPowerMode">-didStopRequiringUserInterventionForPowerMode</a>
                     </code>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>First deprecated in 15.4.0 - Feature replaced by <code><a href="../Protocols/BDPBluedotServiceDelegate.html#/c:objc(pl)BDPBluedotServiceDelegate(im)lowPowerModeDidChange:">-[BDPBluedotServiceDelegate lowPowerModeDidChange:]</a></code></p>
+
+                      </div>
                       <div class="abstract">
-                        <p>Please refer to @ref didStartRequiringUserInterventionForPowerMode.</p>
+                        <p>Please refer to  <code><a href="../Protocols/BDPLocationDelegate.html#/c:objc(pl)BDPLocationDelegate(im)didStartRequiringUserInterventionForPowerMode">-[BDPLocationDelegate didStartRequiringUserInterventionForPowerMode]</a></code>.</p>
 
                       </div>
                       <div class="declaration">
@@ -996,7 +1092,7 @@ shared @ref BDLocationManager instance, to handle location related callbacks.</p
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="https://bluedot.io" target="_blank" rel="external">Bluedot</a>. All rights reserved. (Last updated: 2020-10-19)</p>
+          <p>&copy; 2020 <a class="link" href="https://bluedot.io" target="_blank" rel="external">Bluedot</a>. All rights reserved. (Last updated: 2020-12-21)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

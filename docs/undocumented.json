@@ -156,35 +156,77 @@
     },
     {
       "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDLocationManager+BDPointSDK.h",
-      "line": 17,
+      "line": 25,
+      "symbol": "BDServiceError",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDLocationManager+BDPointSDK.h",
+      "line": 25,
+      "symbol": "BDServiceError",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDLocationManager+BDPointSDK.h",
+      "line": 60,
+      "symbol": "BDTempoError",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDLocationManager+BDPointSDK.h",
+      "line": 60,
+      "symbol": "BDTempoError",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDLocationManager+BDPointSDK.h",
+      "line": 88,
+      "symbol": "BDGeoTriggeringError",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDLocationManager+BDPointSDK.h",
+      "line": 88,
+      "symbol": "BDGeoTriggeringError",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDLocationManager+BDPointSDK.h",
+      "line": 112,
       "symbol": "BDAuthorizationLevel",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDLocationManager+BDPointSDK.h",
-      "line": 17,
+      "line": 112,
       "symbol": "BDAuthorizationLevel",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDLocationManager+BDPointSDK.h",
-      "line": 19,
+      "line": 114,
       "symbol": "BDAuthorizationLevel.authorizedAlways",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDLocationManager+BDPointSDK.h",
-      "line": 20,
+      "line": 115,
       "symbol": "BDAuthorizationLevel.authorizedWhenInUse",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDLocationManager+BDPointSDK.h",
-      "line": 70,
+      "line": 204,
       "symbol": "BDLocationManager.locationDelegate",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
@@ -233,14 +275,14 @@
     },
     {
       "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDPointSDK.h",
-      "line": 48,
+      "line": 54,
       "symbol": "BDPointSDKVersionNumber",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDPointSDK.h",
-      "line": 51,
+      "line": 58,
       "symbol": "BDPointSDKVersionString",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
       "warning": "undocumented"
@@ -254,21 +296,21 @@
     },
     {
       "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDZoneInfo.h",
-      "line": 53,
+      "line": 60,
       "symbol": "BDZoneInfo.-isEqual:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDZoneInfo.h",
-      "line": 55,
+      "line": 62,
       "symbol": "BDZoneInfo.-isEqualToInfo:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDZoneInfo.h",
-      "line": 57,
+      "line": 64,
       "symbol": "BDZoneInfo.-hash",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"

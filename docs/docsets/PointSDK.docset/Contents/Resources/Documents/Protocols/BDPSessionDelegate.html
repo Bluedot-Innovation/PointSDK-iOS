@@ -15,7 +15,7 @@
     <a title="BDPSessionDelegate Protocol Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">PointSDK v15.3.2 Docs</a></p>
+        <p><a href="../index.html">PointSDK v15.4.0 Docs</a></p>
         <p class="header-right"><a href="https://github.com/Bluedot-Innovation/PointSDK-iOS"><img src="../img/gh.png"/>View on GitHub</a></p>
         <p class="header-right"><a href="dash-feed://https%3A%2F%2Fios%2Ddocs%2Ebluedot%2Eio%2Fdocsets%2FPointSDK%2Exml"><img src="../img/dash.png"/>Install in Dash</a></p>
       </div>
@@ -92,6 +92,12 @@
                 <a href="../Classes/BDPolygonal.html">BDPolygonal</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Classes/BDZoneEntryEvent.html">BDZoneEntryEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDZoneExitEvent.html">BDZoneExitEvent</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Classes/BDZoneInfo.html">BDZoneInfo</a>
               </li>
             </ul>
@@ -100,10 +106,19 @@
             <a href="../Constants.html">Constants</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="../Constants.html#/c:BDLocationManager+BDPointSDK.h@BDGeoTriggeringErrorDomain">BDGeoTriggeringErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Constants.html#/c:@BDPointSDKVersionNumber">BDPointSDKVersionNumber</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Constants.html#/c:@BDPointSDKVersionString">BDPointSDKVersionString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:BDLocationManager+BDPointSDK.h@BDServiceErrorDomain">BDServiceErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:BDLocationManager+BDPointSDK.h@BDTempoErrorDomain">BDTempoErrorDomain</a>
               </li>
             </ul>
           </li>
@@ -116,6 +131,15 @@
               <li class="nav-group-task">
                 <a href="../Enums/BDAuthorizationLevel.html">BDAuthorizationLevel</a>
               </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BDGeoTriggeringError.html">BDGeoTriggeringError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BDServiceError.html">BDServiceError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BDTempoError.html">BDTempoError</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -125,7 +149,13 @@
                 <a href="../Protocols/BDPAuthenticationStateProvider.html">BDPAuthenticationStateProvider</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Protocols/BDPBluedotServiceDelegate.html">BDPBluedotServiceDelegate</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Protocols/BDPDeepCopy.html">BDPDeepCopy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPGeoTriggeringEventDelegate.html">BDPGeoTriggeringEventDelegate</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/BDPGeometry.html">BDPGeometry</a>
@@ -199,25 +229,24 @@
         <section>
           <section class="section">
             <h1>BDPSessionDelegate</h1>
+            <div class="aside aside-deprecated">
+              <p class="aside-title">Deprecated</p>
+              <p>First deprecated in 15.4.0 - initialization related delagate callbacks are now returned in completion callbacks. Please refer to <code><a href="../Classes/BDLocationManager.html#/c:objc(cs)BDLocationManager(im)initializeWithProjectId:completion:">BDLocationManager.-initializeWithProjectId:completion:</a></code></p>
+
+            </div>
               <div class="declaration">
                 <div class="language">
                   <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">BDPSessionDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
 
                 </div>
               </div>
-            <p>@brief Defines a delegate for handling <b>Point SDK</b>&lsquo;s session related callbacks</p>
+            <p>Defines a delegate for handling <b>Point SDK</b>&lsquo;s session related callbacks</p>
 
-<p><b>Point SDK</b> needs to authenticate with <b>Point Access</b> to function.
+<p><b>Point SDK</b> needs to authenticate with <b>Canvas</b> to function.
 Applications must observe the correct authentication lifecycle when using <b>Point SDK</b> features, as documented.</p>
 
-<p>Authentication state changes are most simply observed via the
-<a href="https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/KeyValueObserving/Articles/KVOCompliance.html">KVO-compliant</a>
-BDLocationManager.sessionDelegate.authenticationState property.</p>
-
 <p>For richer information about the authentication lifecycle, applications may optionally assign an implementation of this
-protocol to the sessionDelegate property of the shared BDLocationManager instance.</p>
-
-<p>@copyright Bluedot Innovation</p>
+protocol to the sessionDelegate property of the shared `BDLocationManager instance.</p>
 
           </section>
           <section class="section task-group-section">
@@ -228,13 +257,18 @@ protocol to the sessionDelegate property of the shared BDLocationManager instanc
                     <code>
                     <a name="/c:objc(pl)BDPSessionDelegate(im)willAuthenticateWithApiKey:"></a>
                     <a name="//apple_ref/objc/Method/-willAuthenticateWithApiKey:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)BDPSessionDelegate(im)willAuthenticateWithApiKey:">-willAuthenticateWithApiKey:<wbr></a>
+                    <a class="token discouraged" href="#/c:objc(pl)BDPSessionDelegate(im)willAuthenticateWithApiKey:">-willAuthenticateWithApiKey:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>First deprecated in 15.4.0 - initialization related delegate callbacks are now returned in completion callbacks. Please refer to <code><a href="../Classes/BDLocationManager.html#/c:objc(cs)BDLocationManager(im)initializeWithProjectId:completion:">BDLocationManager.-initializeWithProjectId:completion:</a></code></p>
+
+                      </div>
                       <div class="abstract">
                         <p>This method is called when an authentication request has been made to initiate a Point session.</p>
 
@@ -255,13 +289,18 @@ protocol to the sessionDelegate property of the shared BDLocationManager instanc
                     <code>
                     <a name="/c:objc(pl)BDPSessionDelegate(im)authenticationWasSuccessful"></a>
                     <a name="//apple_ref/objc/Method/-authenticationWasSuccessful" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)BDPSessionDelegate(im)authenticationWasSuccessful">-authenticationWasSuccessful</a>
+                    <a class="token discouraged" href="#/c:objc(pl)BDPSessionDelegate(im)authenticationWasSuccessful">-authenticationWasSuccessful</a>
                     </code>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>First deprecated in 15.4.0 - initialization related delegate callbacks are now returned in completion callbacks. Please refer to <code><a href="../Classes/BDLocationManager.html#/c:objc(cs)BDLocationManager(im)initializeWithProjectId:completion:">BDLocationManager.-initializeWithProjectId:completion:</a></code></p>
+
+                      </div>
                       <div class="abstract">
                         <p>This method indicates that authentication was successful and a Point session has started.</p>
 
@@ -282,13 +321,18 @@ protocol to the sessionDelegate property of the shared BDLocationManager instanc
                     <code>
                     <a name="/c:objc(pl)BDPSessionDelegate(im)authenticationWasDeniedWithReason:"></a>
                     <a name="//apple_ref/objc/Method/-authenticationWasDeniedWithReason:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)BDPSessionDelegate(im)authenticationWasDeniedWithReason:">-authenticationWasDeniedWithReason:<wbr></a>
+                    <a class="token discouraged" href="#/c:objc(pl)BDPSessionDelegate(im)authenticationWasDeniedWithReason:">-authenticationWasDeniedWithReason:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>First deprecated in 15.4.0 - initialization related delegate callbacks are now returned in completion callbacks. Please refer to <code><a href="../Classes/BDLocationManager.html#/c:objc(cs)BDLocationManager(im)initializeWithProjectId:completion:">BDLocationManager.-initializeWithProjectId:completion:</a></code></p>
+
+                      </div>
                       <div class="abstract">
                         <p>Indicates that connection was successful with the server but the session was denied for the reason provided.</p>
 
@@ -309,13 +353,18 @@ protocol to the sessionDelegate property of the shared BDLocationManager instanc
                     <code>
                     <a name="/c:objc(pl)BDPSessionDelegate(im)authenticationFailedWithError:"></a>
                     <a name="//apple_ref/objc/Method/-authenticationFailedWithError:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)BDPSessionDelegate(im)authenticationFailedWithError:">-authenticationFailedWithError:<wbr></a>
+                    <a class="token discouraged" href="#/c:objc(pl)BDPSessionDelegate(im)authenticationFailedWithError:">-authenticationFailedWithError:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>First deprecated in 15.4.0 - initialization related delegate callbacks are now returned in completion callbacks. Please refer to <code><a href="../Classes/BDLocationManager.html#/c:objc(cs)BDLocationManager(im)initializeWithProjectId:completion:">BDLocationManager.-initializeWithProjectId:completion:</a></code></p>
+
+                      </div>
                       <div class="abstract">
                         <p>Indicates a communication error with the server.</p>
 
@@ -336,13 +385,18 @@ protocol to the sessionDelegate property of the shared BDLocationManager instanc
                     <code>
                     <a name="/c:objc(pl)BDPSessionDelegate(im)didEndSession"></a>
                     <a name="//apple_ref/objc/Method/-didEndSession" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)BDPSessionDelegate(im)didEndSession">-didEndSession</a>
+                    <a class="token discouraged" href="#/c:objc(pl)BDPSessionDelegate(im)didEndSession">-didEndSession</a>
                     </code>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>First deprecated in 15.4.0 - session ending delegate callbacks are now returned in reset&rsquo;s completion callbacks. Please refer to <code><a href="../Classes/BDLocationManager.html#/c:objc(cs)BDLocationManager(im)resetWithCompletion:">BDLocationManager.-resetWithCompletion:</a></code></p>
+
+                      </div>
                       <div class="abstract">
                         <p>This method is called after an authenticated Point session has ended.</p>
 
@@ -363,17 +417,20 @@ protocol to the sessionDelegate property of the shared BDLocationManager instanc
                     <code>
                     <a name="/c:objc(pl)BDPSessionDelegate(im)didEndSessionWithError:"></a>
                     <a name="//apple_ref/objc/Method/-didEndSessionWithError:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)BDPSessionDelegate(im)didEndSessionWithError:">-didEndSessionWithError:<wbr></a>
+                    <a class="token discouraged" href="#/c:objc(pl)BDPSessionDelegate(im)didEndSessionWithError:">-didEndSessionWithError:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>First deprecated in 15.4.0 - session ending delegate callbacks are now returned in reset&rsquo;s completion callbacks. Please refer to <code><a href="../Classes/BDLocationManager.html#/c:objc(cs)BDLocationManager(im)resetWithCompletion:">BDLocationManager.-resetWithCompletion:</a></code></p>
+
+                      </div>
                       <div class="abstract">
-                        <p>This method is called if an authenticated Point session ends unexpectedly.
-Details from NSError objects delivered here are intended for development logging purposes
-and are not intended to be seen by your application&rsquo;s users.</p>
+                        <p>This method is called if an authenticated Point session ends unexpectedly.</p>
 
                       </div>
                       <div class="declaration">
@@ -384,6 +441,26 @@ and are not intended to be seen by your application&rsquo;s users.</p>
 
                         </div>
                       </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>object delivered here is intended for development logging purposes
+and is not intended to be seen by your application&rsquo;s users.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -392,7 +469,7 @@ and are not intended to be seen by your application&rsquo;s users.</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="https://bluedot.io" target="_blank" rel="external">Bluedot</a>. All rights reserved. (Last updated: 2020-10-19)</p>
+          <p>&copy; 2020 <a class="link" href="https://bluedot.io" target="_blank" rel="external">Bluedot</a>. All rights reserved. (Last updated: 2020-12-21)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

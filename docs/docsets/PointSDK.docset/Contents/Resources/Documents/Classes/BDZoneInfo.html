@@ -15,7 +15,7 @@
     <a title="BDZoneInfo Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">PointSDK v15.3.2 Docs</a></p>
+        <p><a href="../index.html">PointSDK v15.4.0 Docs</a></p>
         <p class="header-right"><a href="https://github.com/Bluedot-Innovation/PointSDK-iOS"><img src="../img/gh.png"/>View on GitHub</a></p>
         <p class="header-right"><a href="dash-feed://https%3A%2F%2Fios%2Ddocs%2Ebluedot%2Eio%2Fdocsets%2FPointSDK%2Exml"><img src="../img/dash.png"/>Install in Dash</a></p>
       </div>
@@ -92,6 +92,12 @@
                 <a href="../Classes/BDPolygonal.html">BDPolygonal</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Classes/BDZoneEntryEvent.html">BDZoneEntryEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDZoneExitEvent.html">BDZoneExitEvent</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Classes/BDZoneInfo.html">BDZoneInfo</a>
               </li>
             </ul>
@@ -100,10 +106,19 @@
             <a href="../Constants.html">Constants</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="../Constants.html#/c:BDLocationManager+BDPointSDK.h@BDGeoTriggeringErrorDomain">BDGeoTriggeringErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Constants.html#/c:@BDPointSDKVersionNumber">BDPointSDKVersionNumber</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Constants.html#/c:@BDPointSDKVersionString">BDPointSDKVersionString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:BDLocationManager+BDPointSDK.h@BDServiceErrorDomain">BDServiceErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:BDLocationManager+BDPointSDK.h@BDTempoErrorDomain">BDTempoErrorDomain</a>
               </li>
             </ul>
           </li>
@@ -116,6 +131,15 @@
               <li class="nav-group-task">
                 <a href="../Enums/BDAuthorizationLevel.html">BDAuthorizationLevel</a>
               </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BDGeoTriggeringError.html">BDGeoTriggeringError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BDServiceError.html">BDServiceError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BDTempoError.html">BDTempoError</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -125,7 +149,13 @@
                 <a href="../Protocols/BDPAuthenticationStateProvider.html">BDPAuthenticationStateProvider</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Protocols/BDPBluedotServiceDelegate.html">BDPBluedotServiceDelegate</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Protocols/BDPDeepCopy.html">BDPDeepCopy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPGeoTriggeringEventDelegate.html">BDPGeoTriggeringEventDelegate</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/BDPGeometry.html">BDPGeometry</a>
@@ -205,14 +235,12 @@
 
                 </div>
               </div>
-            <p>@brief Contains information about a Zone, including the set of @ref BDFenceInfo &ldquo;fences&rdquo; that comprise it.</p>
+            <p>Contains information about a Zone, including the set of <code><a href="../Classes/BDFenceInfo.html">BDFenceInfo</a></code> &ldquo;fences&rdquo; that comprise it.</p>
 
-<p>A set of @ref BDZoneInfo objects will be delivered to your application&rsquo;s BDPLocationDelegate#locationDelegate at
+<p>A set of <code>BDZoneInfo</code> objects will be delivered to your application&rsquo;s <code><a href="../Protocols/BDPLocationDelegate.html">BDPLocationDelegate</a></code> at
 the time of their download from the Bluedot Point web-service.</p>
 
 <p>This usually occurs immediately after the authentication process is complete.</p>
-
-<p>@copyright Bluedot Innovation</p>
 
           </section>
           <section class="section task-group-section">
@@ -231,7 +259,7 @@ the time of their download from the Bluedot Point web-service.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The name of this Zone that was entered into Point Access</p>
+                        <p>The name of this Zone that was entered into Canvas</p>
 
                       </div>
                       <div class="declaration">
@@ -258,7 +286,7 @@ the time of their download from the Bluedot Point web-service.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The description of this Zone that was entered into Point Access</p>
+                        <p>The description of this Zone that was entered into Canvas</p>
 
                       </div>
                       <div class="declaration">
@@ -285,9 +313,13 @@ the time of their download from the Bluedot Point web-service.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A unique <a href="http://en.wikipedia.org/wiki/Globally_unique_identifier">GUID</a> to identify this Zone by.
-This is permanent and may be used to identify specific Zones created in the Point Access web-interface,
-from your client application.</p>
+                        
+<ul>
+<li>A unique <a href="http://en.wikipedia.org/wiki/Globally_unique_identifier">GUID</a> to identify this Zone by.
+*</li>
+<li>This is permanent and may be used to identify specific Zones created in the Canvas web-interface,
+from your client application.</li>
+</ul>
 
                       </div>
                       <div class="declaration">
@@ -314,7 +346,7 @@ from your client application.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The set of BDFenceInfo fences included in this Zone.</p>
+                        <p>The set of <code><a href="../Classes/BDFenceInfo.html">BDFenceInfo</a></code> fences included in this Zone.</p>
 
                       </div>
                       <div class="declaration">
@@ -333,15 +365,20 @@ from your client application.</p>
                     <code>
                     <a name="/c:objc(cs)BDZoneInfo(py)beacons"></a>
                     <a name="//apple_ref/objc/Property/beacons" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)BDZoneInfo(py)beacons">beacons</a>
+                    <a class="token discouraged" href="#/c:objc(cs)BDZoneInfo(py)beacons">beacons</a>
                     </code>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>First deprecated in 15.4.0 - It will be removed in a future version</p>
+
+                      </div>
                       <div class="abstract">
-                        <p>The set of BDBeaconInfo beacons included in this Zone.</p>
+                        <p>The set of <code><a href="../Classes/BDBeaconInfo.html">BDBeaconInfo</a></code> beacons included in this Zone.</p>
 
                       </div>
                       <div class="declaration">
@@ -376,6 +413,33 @@ from your client application.</p>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">checkOut</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDZoneInfo(py)customData"></a>
+                    <a name="//apple_ref/objc/Property/customData" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDZoneInfo(py)customData">customData</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Custom Data included in this zone</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">copy</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSDictionary</span><span class="o">&lt;</span><span class="n">NSString</span> <span class="o">*</span><span class="p">,</span> <span class="n">NSString</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">customData</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
@@ -468,7 +532,7 @@ from your client application.</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="https://bluedot.io" target="_blank" rel="external">Bluedot</a>. All rights reserved. (Last updated: 2020-10-19)</p>
+          <p>&copy; 2020 <a class="link" href="https://bluedot.io" target="_blank" rel="external">Bluedot</a>. All rights reserved. (Last updated: 2020-12-21)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
