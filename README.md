@@ -10,13 +10,7 @@ The Bluedot Point SDK enables mobile apps to trigger any action (like opening we
 
 ## Cocoapods
 
-The pod now requires `git-lfs`. To install it, please follow https://git-lfs.github.com. Once installed, do not forget to run
-
-```
-git lfs install
-```
-
-then reference this repository in your `Podfile`:
+Reference this repository in your `Podfile`:
 
 ```
 source 'https://github.com/CocoaPods/Specs.git'
@@ -37,8 +31,8 @@ You can find [documentation](https://docs.bluedot.io/ios-sdk/) for the SDK and [
 
 ## Copyright and license
 
-Created by Bluedot Innovation in 2018.
-Copyright © 2018 Bluedot Innovation. All rights reserved.
+Created by Bluedot Innovation in 2020.
+Copyright © 2020 Bluedot Innovation. All rights reserved.
 
 By dowloading or using the Bluedot Point SDK for iOS, You agree to the Bluedot [Terms and Conditions](https://bluedot.io/agreements/#terms)
 and [Privacy Policy](https://bluedot.io/agreements/#privacy)
