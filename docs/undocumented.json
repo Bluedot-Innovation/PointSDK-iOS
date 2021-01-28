@@ -1,327 +1,327 @@
 {
   "warnings": [
     {
-      "file": "/Users/poborin/projects/point_sdk_ios/BDPointSDK/PublicHeaders/BDAuthenticationState.h",
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDAuthenticationState.h",
       "line": 11,
       "symbol": "BDAuthenticationState.BDAuthenticationStateNotAuthenticated",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/poborin/projects/point_sdk_ios/BDPointSDK/PublicHeaders/BDAuthenticationState.h",
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDAuthenticationState.h",
       "line": 12,
       "symbol": "BDAuthenticationState.BDAuthenticationStateAuthenticating",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/poborin/projects/point_sdk_ios/BDPointSDK/PublicHeaders/BDAuthenticationState.h",
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDAuthenticationState.h",
       "line": 13,
       "symbol": "BDAuthenticationState.BDAuthenticationStateAuthenticated",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/poborin/projects/point_sdk_ios/BDPointSDK/PublicHeaders/BDCircle.h",
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDCircle.h",
       "line": 30,
       "symbol": "BDCircle.-initWithCenter:radius:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/poborin/projects/point_sdk_ios/BDPointSDK/PublicHeaders/BDCircle.h",
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDCircle.h",
       "line": 33,
       "symbol": "BDCircle.+circleWithCenter:radius:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/poborin/projects/point_sdk_ios/BDPointSDK/PublicHeaders/BDCircle.h",
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDCircle.h",
       "line": 36,
       "symbol": "BDCircle.-isEqual:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/poborin/projects/point_sdk_ios/BDPointSDK/PublicHeaders/BDCircle.h",
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDCircle.h",
       "line": 37,
       "symbol": "BDCircle.-isEqualToCircle:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/poborin/projects/point_sdk_ios/BDPointSDK/PublicHeaders/BDCircle.h",
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDCircle.h",
       "line": 38,
       "symbol": "BDCircle.-hash",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/poborin/projects/point_sdk_ios/BDPointSDK/PublicHeaders/BDGeospatialUnits.h",
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDGeospatialUnits.h",
       "line": 10,
       "symbol": "BDLocationDegrees",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/poborin/projects/point_sdk_ios/BDPointSDK/PublicHeaders/BDGeospatialUnits.h",
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDGeospatialUnits.h",
       "line": 11,
       "symbol": "BDLocationDistance",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/poborin/projects/point_sdk_ios/BDPointSDK/PublicHeaders/BDGeospatialUnits.h",
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDGeospatialUnits.h",
       "line": 12,
       "symbol": "BDLocationAccuracy",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/poborin/projects/point_sdk_ios/BDPointSDK/PublicHeaders/BDGeospatialUnits.h",
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDGeospatialUnits.h",
       "line": 13,
       "symbol": "BDLocationSpeed",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/poborin/projects/point_sdk_ios/BDPointSDK/PublicHeaders/BDGeospatialUnits.h",
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDGeospatialUnits.h",
       "line": 14,
       "symbol": "BDLocationDirection",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/poborin/projects/point_sdk_ios/BDPointSDK/PublicHeaders/BDLineString.h",
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDLineString.h",
       "line": 23,
       "symbol": "BDLineString.+lineStringWithVertices:copy:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/poborin/projects/point_sdk_ios/BDPointSDK/PublicHeaders/BDLineString.h",
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDLineString.h",
       "line": 25,
       "symbol": "BDLineString.+lineWithStart:end:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/poborin/projects/point_sdk_ios/BDPointSDK/PublicHeaders/BDLineString.h",
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDLineString.h",
       "line": 28,
       "symbol": "BDLineString.-initWithVertices:copy:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/poborin/projects/point_sdk_ios/BDPointSDK/PublicHeaders/BDLineString.h",
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDLineString.h",
       "line": 30,
       "symbol": "BDLineString.-initWithStart:end:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/poborin/projects/point_sdk_ios/BDPointSDK/PublicHeaders/BDLineString.h",
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDLineString.h",
       "line": 33,
       "symbol": "BDLineString.start",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/poborin/projects/point_sdk_ios/BDPointSDK/PublicHeaders/BDLineString.h",
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDLineString.h",
       "line": 34,
       "symbol": "BDLineString.end",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/poborin/projects/point_sdk_ios/BDPointSDK/PublicHeaders/BDLocation.h",
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDLocation.h",
       "line": 29,
       "symbol": "BDLocation.-initWithLatitude:longitude:altitude:accuracy:altitudeAccuracy:speed:bearing:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/poborin/projects/point_sdk_ios/BDPointSDK/PublicHeaders/BDLocation.h",
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDLocation.h",
       "line": 81,
       "symbol": "BDLocation.-isEqualToLocation:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/poborin/projects/point_sdk_ios/BDPointSDK/PublicHeaders/BDLocation.h",
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDLocation.h",
       "line": 82,
       "symbol": "BDLocation.-hash",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/poborin/projects/point_sdk_ios/BDPointSDK/PublicHeaders/BDLocationManager+BDPointSDK.h",
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDLocationManager+BDPointSDK.h",
       "line": 25,
       "symbol": "BDServiceError",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/poborin/projects/point_sdk_ios/BDPointSDK/PublicHeaders/BDLocationManager+BDPointSDK.h",
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDLocationManager+BDPointSDK.h",
       "line": 25,
       "symbol": "BDServiceError",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/poborin/projects/point_sdk_ios/BDPointSDK/PublicHeaders/BDLocationManager+BDPointSDK.h",
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDLocationManager+BDPointSDK.h",
       "line": 60,
       "symbol": "BDTempoError",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/poborin/projects/point_sdk_ios/BDPointSDK/PublicHeaders/BDLocationManager+BDPointSDK.h",
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDLocationManager+BDPointSDK.h",
       "line": 60,
       "symbol": "BDTempoError",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/poborin/projects/point_sdk_ios/BDPointSDK/PublicHeaders/BDLocationManager+BDPointSDK.h",
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDLocationManager+BDPointSDK.h",
       "line": 88,
       "symbol": "BDGeoTriggeringError",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/poborin/projects/point_sdk_ios/BDPointSDK/PublicHeaders/BDLocationManager+BDPointSDK.h",
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDLocationManager+BDPointSDK.h",
       "line": 88,
       "symbol": "BDGeoTriggeringError",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/poborin/projects/point_sdk_ios/BDPointSDK/PublicHeaders/BDLocationManager+BDPointSDK.h",
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDLocationManager+BDPointSDK.h",
       "line": 112,
       "symbol": "BDAuthorizationLevel",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/poborin/projects/point_sdk_ios/BDPointSDK/PublicHeaders/BDLocationManager+BDPointSDK.h",
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDLocationManager+BDPointSDK.h",
       "line": 112,
       "symbol": "BDAuthorizationLevel",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/poborin/projects/point_sdk_ios/BDPointSDK/PublicHeaders/BDLocationManager+BDPointSDK.h",
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDLocationManager+BDPointSDK.h",
       "line": 114,
       "symbol": "BDAuthorizationLevel.authorizedAlways",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/poborin/projects/point_sdk_ios/BDPointSDK/PublicHeaders/BDLocationManager+BDPointSDK.h",
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDLocationManager+BDPointSDK.h",
       "line": 115,
       "symbol": "BDAuthorizationLevel.authorizedWhenInUse",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/poborin/projects/point_sdk_ios/BDPointSDK/PublicHeaders/BDLocationManager+BDPointSDK.h",
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDLocationManager+BDPointSDK.h",
       "line": 204,
       "symbol": "BDLocationManager.locationDelegate",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/poborin/projects/point_sdk_ios/BDPointSDK/PublicHeaders/BDPSpatialObjectInfo.h",
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDPSpatialObjectInfo.h",
       "line": 12,
       "symbol": "BDPSpatialObjectInfo",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/poborin/projects/point_sdk_ios/BDPointSDK/PublicHeaders/BDPoint.h",
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDPoint.h",
       "line": 69,
       "symbol": "BDPoint.-isEqual:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/poborin/projects/point_sdk_ios/BDPointSDK/PublicHeaders/BDPoint.h",
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDPoint.h",
       "line": 70,
       "symbol": "BDPoint.-isEqualToPoint:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/poborin/projects/point_sdk_ios/BDPointSDK/PublicHeaders/BDPoint.h",
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDPoint.h",
       "line": 71,
       "symbol": "BDPoint.-hash",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/poborin/projects/point_sdk_ios/BDPointSDK/PublicHeaders/BDPointOverlayRendererFactory.h",
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDPointOverlayRendererFactory.h",
       "line": 23,
       "symbol": "BDPointOverlayRendererFactory.+sharedInstance",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/poborin/projects/point_sdk_ios/BDPointSDK/PublicHeaders/BDPointOverlayRendererFactory.h",
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDPointOverlayRendererFactory.h",
       "line": 31,
       "symbol": "BDPointOverlayRendererFactory.-isPointOverlay:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/poborin/projects/point_sdk_ios/BDPointSDK/PublicHeaders/BDPointSDK.h",
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDPointSDK.h",
       "line": 54,
       "symbol": "BDPointSDKVersionNumber",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/poborin/projects/point_sdk_ios/BDPointSDK/PublicHeaders/BDPointSDK.h",
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDPointSDK.h",
       "line": 58,
       "symbol": "BDPointSDKVersionString",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/poborin/projects/point_sdk_ios/BDPointSDK/PublicHeaders/BDPointSessionException.h",
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDPointSessionException.h",
       "line": 14,
       "symbol": "BDPointSessionException.+exceptionWithReason:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/poborin/projects/point_sdk_ios/BDPointSDK/PublicHeaders/BDZoneInfo.h",
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDZoneInfo.h",
       "line": 60,
       "symbol": "BDZoneInfo.-isEqual:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/poborin/projects/point_sdk_ios/BDPointSDK/PublicHeaders/BDZoneInfo.h",
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDZoneInfo.h",
       "line": 62,
       "symbol": "BDZoneInfo.-isEqualToInfo:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/poborin/projects/point_sdk_ios/BDPointSDK/PublicHeaders/BDZoneInfo.h",
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/BDZoneInfo.h",
       "line": 64,
       "symbol": "BDZoneInfo.-hash",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/poborin/projects/point_sdk_ios/BDPointSDK/PublicHeaders/MKMapView+BDPointSDK.h",
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders/MKMapView+BDPointSDK.h",
       "line": 16,
       "symbol": "MKMapView(BDPointSDK)",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.category",
       "warning": "undocumented"
     }
   ],
-  "source_directory": "/Users/poborin/projects/point_sdk_ios/BDPointSDK/PublicHeaders"
+  "source_directory": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/PublicHeaders"
 }
