@@ -1,5 +1,5 @@
-PointSDK v15.4.2 (56)
-# SDK Version 15.4.2
+PointSDK v15.4.3 (59)
+# SDK Version 15.4.3
 
-**Bug fixes** 
-- Fixed an issue where location services incorrectly activated when tempo/geo-triggering is not running.
+### Enhancements
+- Improved SDK triggering performance in built up areas where devices move slowly. The improvement is observed in the drive-through and curbside use cases.
