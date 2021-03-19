@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.summary = "The Bluedot Point SDK is powering the most innovative location-based apps for iOS and Android."
   s.description = "Bluedot Innovation's cutting edge location services solution - the Bluedot Point SDK - is powering the most innovative location-based apps for iOS and Android.
   Deliver creative content and collect valuable analytics using Bluedot Innovation's powerful, precise and easy-to-use location services technology."
-  s.homepage = "https://www.bluedot.io"
+  s.homepage = "https://bluedot.io"
   s.license = {
     :type => 'Copyright',
     :text => <<-LICENSE
@@ -31,4 +31,10 @@ Pod::Spec.new do |s|
   s.frameworks = 'CoreGraphics', 'CoreLocation', 'CoreMotion', 'Foundation', 'MapKit', 'SystemConfiguration', 'UIKit'
   s.weak_framework = 'CoreData', 'Foundation'
   s.vendored_frameworks = 'PointSDK/BDPointSDK.framework'
+  s.pod_target_xcconfig = {
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+  }
+  s.user_target_xcconfig = { 
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+  }
 end
