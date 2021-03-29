@@ -18,7 +18,7 @@
     <a title="BDServiceError Enumeration Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">PointSDK v15.4.3 Docs</a></p>
+        <p><a href="../index.html">PointSDK v15.5.0 Docs</a></p>
         <p class="header-right"><a href="https://github.com/Bluedot-Innovation/PointSDK-iOS"><img src="../img/gh.png"/>View on GitHub</a></p>
         <p class="header-right"><a href="dash-feed://https%3A%2F%2Fios-docs.bluedot.io%2Fdocsets%2FPointSDK.xml"><img src="../img/dash.png"/>Install in Dash</a></p>
         <p class="header-right">
@@ -234,7 +234,7 @@
                   
                   <pre class="highlight objective_c"><code><span class="n">NS_ENUM</span><span class="p">(</span><span class="n">NSInteger</span><span class="p">,</span> <span class="n">BDServiceError</span><span class="p">)</span> <span class="p">{</span>
     <span class="cm">/**
-     * SDK not initilalized
+     * SDK not initialized
      */</span>
     <span class="n">BDServiceErrorSDKNotInitialized</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1000</span><span class="p">,</span>
     <span class="cm">/**
@@ -249,6 +249,14 @@
      * Storage full on device
      */</span>
     <span class="n">BDServiceErrorStorageFull</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1003</span><span class="p">,</span>
+    <span class="cm">/**
+     * Notification Permission Not Granted
+     */</span>
+    <span class="n">BDServiceErrorNotificationPermissionNotGranted</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1004</span><span class="p">,</span>
+    <span class="cm">/**
+     * SDK already initialized
+     */</span>
+    <span class="n">BDServiceErrorSDKAlreadyInitialized</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1005</span><span class="p">,</span>
     <span class="cm">/**
      * Failed to connect to Point API
      */</span>
@@ -284,7 +292,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>SDK not initilalized</p>
+                        <p>SDK not initialized</p>
 
                       </div>
                       <div class="declaration">
@@ -382,6 +390,60 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/c:@E@BDServiceError@BDServiceErrorNotificationPermissionNotGranted"></a>
+                    <a name="//apple_ref/objc/Case/BDServiceErrorNotificationPermissionNotGranted" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@BDServiceError@BDServiceErrorNotificationPermissionNotGranted">BDServiceErrorNotificationPermissionNotGranted</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Notification Permission Not Granted</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">BDServiceErrorNotificationPermissionNotGranted</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1004</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@BDServiceError@BDServiceErrorSDKAlreadyInitialized"></a>
+                    <a name="//apple_ref/objc/Case/BDServiceErrorSDKAlreadyInitialized" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@BDServiceError@BDServiceErrorSDKAlreadyInitialized">BDServiceErrorSDKAlreadyInitialized</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>SDK already initialized</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">BDServiceErrorSDKAlreadyInitialized</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1005</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/c:@E@BDServiceError@BDServiceErrorFailedToConnect"></a>
                     <a name="//apple_ref/objc/Case/BDServiceErrorFailedToConnect" class="dashAnchor"></a>
                     <a class="token" href="#/c:@E@BDServiceError@BDServiceErrorFailedToConnect">BDServiceErrorFailedToConnect</a>
@@ -465,7 +527,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2021 <a class="link" href="https://bluedot.io" target="_blank" rel="external">Bluedot</a>. All rights reserved. (Last updated: 2021-03-18)</p>
+          <p>&copy; 2021 <a class="link" href="https://bluedot.io" target="_blank" rel="external">Bluedot</a>. All rights reserved. (Last updated: 2021-03-29)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

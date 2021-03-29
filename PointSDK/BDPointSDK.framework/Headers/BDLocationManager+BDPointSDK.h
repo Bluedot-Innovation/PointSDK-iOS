@@ -24,7 +24,7 @@
 static NSString * const _Nonnull BDServiceErrorDomain = @"com.bluedot.service";
 typedef NS_ENUM(NSInteger, BDServiceError) {
     /**
-     * SDK not initilalized
+     * SDK not initialized
      */
     BDServiceErrorSDKNotInitialized = -1000,
     /**
@@ -39,6 +39,14 @@ typedef NS_ENUM(NSInteger, BDServiceError) {
      * Storage full on device
      */
     BDServiceErrorStorageFull = -1003,
+    /**
+     * Notification Permission Not Granted
+     */
+    BDServiceErrorNotificationPermissionNotGranted = -1004,
+    /**
+     * SDK already initialized
+     */
+    BDServiceErrorSDKAlreadyInitialized = -1005,
     /**
      * Failed to connect to Point API
      */
@@ -105,7 +113,11 @@ typedef NS_ENUM(NSInteger, BDGeoTriggeringError) {
     /**
      * Fail to download zone info from Canvas
      */
-    BDGeoTriggeringErrorZoneDownloadFailed = -1004
+    BDGeoTriggeringErrorZoneDownloadFailed = -1004,
+    /**
+     * Couldn't start Geo-Trigggering with restart notification service, due to insufficient notifications permission
+     */
+    BDGeoTriggeringInsufficientNotificationPermission = -1005
 };
 
 
@@ -329,6 +341,7 @@ __attribute__((deprecated("First deprecated in 1.13 - use method `-[BDLocationMa
  *
  * @note You can start Geo-triggering feature <b>only</b> while your App is in the Foreground.
  * @note An error will be returned if your App does not have <b>Always</b> location permission.
+ * @note An error will be returned if notification permission is not granted.
  * @param notificationTitle the string to be used in the title of the banner or alert to be used in the local notification to restart the app.
  * @param notificationButtonText the string to be used in the text of the action button to be used in the local notification to restart the app.
  * @param completion A mandatory completion handler called once Start GeoTriggering processing completed. If the  GeoTriggering feature is started successful, error will be returned as nil. However, if the Start GeoTriggering feature fails, an error will be provided.

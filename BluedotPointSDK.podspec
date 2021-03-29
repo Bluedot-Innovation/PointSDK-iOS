@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
   s.name = "BluedotPointSDK"
-  s.version = "15.4.3"
+  s.version = "15.5.0"
   s.summary = "The Bluedot Point SDK is powering the most innovative location-based apps for iOS and Android."
   s.description = "Bluedot Innovation's cutting edge location services solution - the Bluedot Point SDK - is powering the most innovative location-based apps for iOS and Android.
   Deliver creative content and collect valuable analytics using Bluedot Innovation's powerful, precise and easy-to-use location services technology."
-  s.homepage = "https://bluedot.io"
+  s.homepage = "https://www.bluedot.io"
   s.license = {
     :type => 'Copyright',
     :text => <<-LICENSE
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 
     LICENSE
   }
-  s.author = { "Bluedot Innovation" => "https://www.bluedot.io" }
+  s.author = { "Bluedot Innovation" => "https://bluedot.io" }
   s.source = { :git => 'https://github.com/Bluedot-Innovation/PointSDK-iOS.git', :tag => s.version.to_s }
   s.platform = :ios
   s.ios.deployment_target = '10.0'
@@ -37,4 +37,5 @@ Pod::Spec.new do |s|
   s.user_target_xcconfig = { 
     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
   }
+
 end
