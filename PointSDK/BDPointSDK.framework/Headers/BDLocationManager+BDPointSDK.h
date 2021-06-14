@@ -117,7 +117,7 @@ typedef NS_ENUM(NSInteger, BDGeoTriggeringError) {
     /**
      * Couldn't start Geo-Trigggering with restart notification service, due to insufficient notifications permission
      */
-    BDGeoTriggeringInsufficientNotificationPermission = -1005
+    BDGeoTriggeringErrorInsufficientNotificationPermission = -1005
 };
 
 
