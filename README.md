@@ -25,6 +25,14 @@ Add the following dependency in your `Cartfile`
 github "Bluedot-Innovation/PointSDK-iOS"
 ```
 
+## Swift Package Manager
+
+1. **Star** this repository. This is a very important step. Without it the repository will not be visible in Xcode.
+2. Open *Xcode -> Preferences -> Accounts* and add an account by clicking the plus sign at the bottom. Now, click on the GitHub option and enter your GitHub's email and personal access token. Make sure you are adding the same account you used to **star** the repository.
+3. Open an *Add Package Dependency* dialog. You can find more details on https://developer.apple.com/documentation/swift_packages/adding_package_dependencies_to_your_app
+4. Select the GitHub account you just added and search for the `PointSDK-iOS`
+5. Select the right version and press the *Add Package* button
+
 ## Documentation
 
 You can find [documentation](https://docs.bluedot.io/ios-sdk/) for the SDK and [release notes](https://docs.bluedot.io/version-release-notes/) on https://docs.bluedot.io/.
