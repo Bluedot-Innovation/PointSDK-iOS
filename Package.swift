@@ -3,19 +3,19 @@
 import PackageDescription
 
 let package = Package(
-    name: "PointSDK",
+    name: "BDPointSDK",
     platforms: [
         .iOS(.v10)
     ],
     products: [
         .library(
-            name: "PointSDK",
-            targets: ["PointSDK"]
+            name: "BDPointSDK",
+            targets: ["BDPointSDK"]
         )
     ],
     targets:[
         .binaryTarget(
-            name: "PointSDK",
+            name: "BDPointSDK",
             path: "PointSDK/BDPointSDK.xcframework"
         )
     ]
