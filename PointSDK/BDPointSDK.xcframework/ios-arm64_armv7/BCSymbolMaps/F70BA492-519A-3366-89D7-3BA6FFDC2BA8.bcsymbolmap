@@ -168,12 +168,12 @@ __OBJC_$_CATEGORY_CLASS_METHODS_NSMapTable_$_BDInitPersonalities
 __OBJC_$_CATEGORY_NSMapTable_$_BDInitPersonalities
 /Users/runner/work/point_sdk_ios/point_sdk_ios/Modules/BDCore/Collection/NSMapTable+BDInitPersonalities.m
 Modules/BDCore/Collection/NSMapTable+BDInitPersonalities.m
+-[BDApplicationNotificationAction customData]
+-[BDApplicationNotificationAction setCustomData:]
 -[BDApplicationNotificationAction isDeepEqual:]
 -[BDApplicationNotificationAction isEqual:]
 -[BDApplicationNotificationAction isEqualToAction:]
 -[BDApplicationNotificationAction hash]
--[BDApplicationNotificationAction customData]
--[BDApplicationNotificationAction setCustomData:]
 -[BDApplicationNotificationAction .cxx_destruct]
 _OBJC_IVAR_$_BDApplicationNotificationAction._customData
 __OBJC_$_PROTOCOL_INSTANCE_METHODS_BDPDeepComparison
@@ -188,7 +188,6 @@ __OBJC_$_PROP_LIST_BDApplicationNotificationAction
 __OBJC_CLASS_RO_$_BDApplicationNotificationAction
 /Users/runner/work/point_sdk_ios/point_sdk_ios/Modules/BDApplicationModel/model/action/BDApplicationNotificationAction.m
 Modules/BDApplicationModel/model/action/BDApplicationNotificationAction.m
-Modules/BDApplicationModel/model/action/BDApplicationNotificationAction.h
 +[wIhy5hSFAdYb38e5 exceptionWithError:]
 -[wIhy5hSFAdYb38e5 error]
 -[wIhy5hSFAdYb38e5 invalidObject]
@@ -365,17 +364,20 @@ ___copy_helper_block_e4_20s24s28b
 ___destroy_helper_block_e4_20s24s28s
 -[BDFenceCollection fencesEnclosing:triggerLocation:delegate:]
 ___62-[BDFenceCollection fencesEnclosing:triggerLocation:delegate:]_block_invoke
+-[BDFenceCollection fencesWithNativeApproximationEncloseOrIntersectWith:triggerLocation:delegate:]
 -[BDFenceCollection geometryCollection]
 -[BDFenceCollection setGeometryCollection:]
 -[BDFenceCollection geometryFences]
 -[BDFenceCollection setGeometryFences:]
 -[BDFenceCollection .cxx_destruct]
+_BDServiceErrorDomain
+_BDTempoErrorDomain
+_BDGeoTriggeringErrorDomain
 ___block_descriptor_28_e4_20s24bs_e23_c12?0"BDGeometry"4^d8l
+_OBJC_SELECTOR_REFERENCES_.27
 ___block_descriptor_28_e4_20s24bs_e19_c8?0"BDGeometry"4l
-_OBJC_SELECTOR_REFERENCES_.25
-_OBJC_CLASSLIST_REFERENCES_$_.26
 ___block_descriptor_32_e4_20s24s28bs_e19_c8?0"BDGeometry"4l
-_OBJC_CLASSLIST_REFERENCES_$_.39
+_OBJC_CLASSLIST_REFERENCES_$_.44
 __OBJC_METACLASS_RO_$_BDFenceCollection
 __OBJC_$_INSTANCE_METHODS_BDFenceCollection
 _OBJC_IVAR_$_BDFenceCollection._geometryCollection
@@ -479,6 +481,8 @@ __OBJC_CLASS_RO_$_BDAndroidLocationSensorLogEntry
 /Users/runner/work/point_sdk_ios/point_sdk_ios/Modules/BDSensors/Model/Sensor/Implementation/AndroidLogFile/Model/BDAndroidLocationSensorLogEntry.m
 Modules/BDSensors/Model/Sensor/Implementation/AndroidLogFile/Model/BDAndroidLocationSensorLogEntry.m
 Modules/BDSensors/Model/Sensor/Implementation/AndroidLogFile/Model/BDAndroidLocationSensorLogEntry.h
+-[BDZoneInfo customData]
+-[BDZoneInfo setCustomData:]
 -[BDZoneInfo isEqual:]
 -[BDZoneInfo isEqualToInfo:]
 -[BDZoneInfo hash]
@@ -493,17 +497,15 @@ Modules/BDSensors/Model/Sensor/Implementation/AndroidLogFile/Model/BDAndroidLoca
 -[BDZoneInfo setBeacons:]
 -[BDZoneInfo checkOut]
 -[BDZoneInfo setCheckOut:]
--[BDZoneInfo customData]
--[BDZoneInfo setCustomData:]
 -[BDZoneInfo .cxx_destruct]
 __OBJC_METACLASS_RO_$_BDZoneInfo
 __OBJC_$_INSTANCE_METHODS_BDZoneInfo
 _OBJC_IVAR_$_BDZoneInfo._checkOut
+_OBJC_IVAR_$_BDZoneInfo._customData
 _OBJC_IVAR_$_BDZoneInfo._name
 _OBJC_IVAR_$_BDZoneInfo._ID
 _OBJC_IVAR_$_BDZoneInfo._fences
 _OBJC_IVAR_$_BDZoneInfo._beacons
-_OBJC_IVAR_$_BDZoneInfo._customData
 __OBJC_$_INSTANCE_VARIABLES_BDZoneInfo
 __OBJC_$_PROP_LIST_BDZoneInfo
 __OBJC_CLASS_RO_$_BDZoneInfo
@@ -580,7 +582,7 @@ Modules/BDGeospatialModel/Model/Intersection/BDCircle+BDPGeometryIntersection.m
 +[BDBeaconInfo(Init) beaconForInfo:]
 -[BDBeaconInfo(Init) initWithBeacon:]
 _beaconsWithInfos
-_OBJC_SELECTOR_REFERENCES_.27
+_OBJC_SELECTOR_REFERENCES_.25
 __OBJC_$_CATEGORY_INSTANCE_METHODS_BDBeaconInfo_$_Init
 __OBJC_$_CATEGORY_CLASS_METHODS_BDBeaconInfo_$_Init
 __OBJC_$_CATEGORY_BDBeaconInfo_$_Init
@@ -801,9 +803,6 @@ ___63-[BDBeaconTracker enablementOfSpatialObjects:zCmAFwylyEm0ZTeV:]_block_invok
 -[BDBeaconTracker isRefreshPending]
 -[BDBeaconTracker setIsRefreshPending:]
 -[BDBeaconTracker .cxx_destruct]
-_BDServiceErrorDomain
-_BDTempoErrorDomain
-_BDGeoTriggeringErrorDomain
 _emptySet
 _OBJC_CLASSLIST_REFERENCES_$_.12
 _OBJC_CLASSLIST_REFERENCES_$_.15
@@ -1127,13 +1126,6 @@ __OBJC_CLASS_RO_$_BDRemoteActivitySensor
 /Users/runner/work/point_sdk_ios/point_sdk_ios/Modules/BDSensors/Model/Sensor/Implementation/Remote/BDRemoteActivitySensor.m
 Modules/BDSensors/Model/Sensor/Implementation/Remote/BDRemoteActivitySensor.m
 __46-[BDRemoteActivitySensor setValuesFromRemote:]_block_invoke
-___BDPointNotificationCenter_block_invoke
-_BDPointNotificationCenter.once
-_BDPointNotificationCenter.sharedLocationNotificationCenter
-/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/BDPointNotificationCenter.m
-__BDPointNotificationCenter_block_invoke
-BDPointSDK/BDPointNotificationCenter.m
-BDPointNotificationCenter
 +[UILocalNotification(BDPendingForegroundExecutionNotification) pendingActionNotificationWithMessage:]
 +[UILocalNotification(BDPendingForegroundExecutionNotification) pendingURLActionNotificationWithMessage:andURL:]
 -[UILocalNotification(BDPendingForegroundExecutionNotification) executePendingForegroundAction]
@@ -1197,6 +1189,7 @@ _OBJC_CLASSLIST_REFERENCES_$_.9
 _OBJC_CLASSLIST_REFERENCES_$_.25
 ___block_descriptor_24_e4_20w_e5_v4?0l
 __OBJC_PROTOCOL_REFERENCE_$_BDPNamedDescribed
+_OBJC_CLASSLIST_REFERENCES_$_.39
 __OBJC_$_CLASS_METHODS_lPwBoTHFxKnuEqSL
 __OBJC_CLASS_PROTOCOLS_$_lPwBoTHFxKnuEqSL
 __OBJC_METACLASS_RO_$_lPwBoTHFxKnuEqSL
@@ -1322,6 +1315,7 @@ Modules/BDCore/Collection/Subscript/BDBiMapTable+BDKeyedSubscript.m
 -[BDRuleSet(BDGraphOps) fences]
 -[BDRuleSet(BDGraphOps) spatialObjects]
 -[BDRuleSet(BDGraphOps) countedSpatialObjects]
+_OBJC_CLASSLIST_REFERENCES_$_.26
 __OBJC_$_CATEGORY_INSTANCE_METHODS_BDRuleSet_$_BDGraphOps
 __OBJC_$_CATEGORY_BDRuleSet_$_BDGraphOps
 /Users/runner/work/point_sdk_ios/point_sdk_ios/Modules/BDApplicationModel/Process/BDRuleSet+BDGraphOps.m
@@ -1437,9 +1431,11 @@ Modules/BDCore/Lang/Blocks/NSSet+Blocks.m
 -[BDCircle description]
 -[BDCircle boundingBox]
 -[BDCircle centroid]
+-[BDCircle geometryTypeString]
 -[BDCircle encodeWithCoder:]
 -[BDCircle initWithCoder:]
 -[BDCircle .cxx_destruct]
+_BDGeometryTypeCircle
 _OBJC_IVAR_$_BDCircle._center
 _OBJC_IVAR_$_BDCircle._radius
 _OBJC_IVAR_$_BDCircle._cachedBoundingBox
@@ -1467,8 +1463,11 @@ Modules/BDGeospatialModel/Model/BDCircle.m
 -[BDLineString deepCopy]
 -[BDLineString description]
 -[BDLineString lineStringCoordinatesDescription]
+-[BDLineString geometryTypeString]
 -[BDLineString encodeWithCoder:]
 -[BDLineString initWithCoder:]
+_BDGeometryTypeLineString
+_OBJC_SELECTOR_REFERENCES_.60
 __OBJC_$_CLASS_METHODS_BDLineString
 __OBJC_$_PROTOCOL_REFS_BDPPolygonal_Implementation
 __OBJC_$_PROTOCOL_INSTANCE_METHODS_BDPPolygonal_Implementation
@@ -1712,8 +1711,10 @@ ___copy_helper_block_e4_20s24s28r32r
 ___destroy_helper_block_e4_20s24s28r32r
 -[xk2ET4BlErbxzYp2 startObservingAssignedCriterionProviders]
 ___60-[xk2ET4BlErbxzYp2 startObservingAssignedCriterionProviders]_block_invoke
+___60-[xk2ET4BlErbxzYp2 startObservingAssignedCriterionProviders]_block_invoke_2
 -[xk2ET4BlErbxzYp2 stopObservingAssignedCriterionProviders]
 -[xk2ET4BlErbxzYp2 csAIWuqMAvDrLnYx]
+___36-[xk2ET4BlErbxzYp2 csAIWuqMAvDrLnYx]_block_invoke
 -[xk2ET4BlErbxzYp2 heSlqtbLTiUiYg7y:]
 -[xk2ET4BlErbxzYp2 shouldEvaluateRule:]
 -[xk2ET4BlErbxzYp2 setDelegate:]
@@ -1841,10 +1842,11 @@ _OBJC_SELECTOR_REFERENCES_.280
 _OBJC_CLASSLIST_REFERENCES_$_.281
 ___block_descriptor_20_e34_c12?0"BDAction"4"NSDictionary"8l
 ___block_literal_global.283
-_OBJC_SELECTOR_REFERENCES_.287
-_OBJC_SELECTOR_REFERENCES_.289
-_OBJC_SELECTOR_REFERENCES_.291
-_OBJC_SELECTOR_REFERENCES_.293
+_OBJC_CLASSLIST_REFERENCES_$_.284
+_OBJC_SELECTOR_REFERENCES_.286
+_OBJC_SELECTOR_REFERENCES_.288
+_OBJC_SELECTOR_REFERENCES_.290
+_OBJC_SELECTOR_REFERENCES_.292
 __OBJC_$_PROTOCOL_REFS_BDPScheduler
 __OBJC_$_PROTOCOL_INSTANCE_METHODS_BDPScheduler
 __OBJC_$_PROP_LIST_BDPScheduler
@@ -1852,21 +1854,20 @@ __OBJC_$_PROTOCOL_METHOD_TYPES_BDPScheduler
 __OBJC_PROTOCOL_$_BDPScheduler
 __OBJC_LABEL_PROTOCOL_$_BDPScheduler
 __OBJC_PROTOCOL_REFERENCE_$_BDPScheduler
+_OBJC_SELECTOR_REFERENCES_.301
 _OBJC_SELECTOR_REFERENCES_.302
-_OBJC_SELECTOR_REFERENCES_.303
 ___block_descriptor_36_e4_20s24s28r32r_e21_v12?0"BDFilter"4^c8l
-_OBJC_SELECTOR_REFERENCES_.305
-_OBJC_SELECTOR_REFERENCES_.307
-_OBJC_SELECTOR_REFERENCES_.309
-_OBJC_SELECTOR_REFERENCES_.311
-_OBJC_SELECTOR_REFERENCES_.313
-_OBJC_SELECTOR_REFERENCES_.315
+_OBJC_SELECTOR_REFERENCES_.304
+_OBJC_SELECTOR_REFERENCES_.306
+_OBJC_SELECTOR_REFERENCES_.308
+_OBJC_SELECTOR_REFERENCES_.310
+_OBJC_SELECTOR_REFERENCES_.312
 ___block_descriptor_28_e4_20s24s_e38_v20?0"<NSObject>"4"NSString"81216l
-_OBJC_SELECTOR_REFERENCES_.320
-_OBJC_SELECTOR_REFERENCES_.326
+_OBJC_SELECTOR_REFERENCES_.317
+_OBJC_SELECTOR_REFERENCES_.323
+_OBJC_SELECTOR_REFERENCES_.324
+_OBJC_CLASSLIST_REFERENCES_$_.325
 _OBJC_SELECTOR_REFERENCES_.327
-_OBJC_CLASSLIST_REFERENCES_$_.328
-_OBJC_SELECTOR_REFERENCES_.330
 __OBJC_$_CLASS_METHODS_xk2ET4BlErbxzYp2
 __OBJC_$_PROTOCOL_REFS_p7bJmt5psXrJ4OKM
 __OBJC_$_PROTOCOL_INSTANCE_METHODS_p7bJmt5psXrJ4OKM
@@ -1881,6 +1882,8 @@ __OBJC_$_PROP_LIST_xk2ET4BlErbxzYp2
 __OBJC_CLASS_RO_$_xk2ET4BlErbxzYp2
 /Users/runner/work/point_sdk_ios/point_sdk_ios/Modules/BDRuleEngine/Process/BDRuleSetEvaluator.m
 Modules/BDRuleEngine/Process/BDRuleSetEvaluator.m
+__36-[xk2ET4BlErbxzYp2 csAIWuqMAvDrLnYx]_block_invoke
+__60-[xk2ET4BlErbxzYp2 startObservingAssignedCriterionProviders]_block_invoke_2
 __60-[xk2ET4BlErbxzYp2 startObservingAssignedCriterionProviders]_block_invoke
 __destroy_helper_block_e4_20s24s28r32r
 __copy_helper_block_e4_20s24s28r32r
@@ -2058,8 +2061,6 @@ _OBJC_IVAR_$_BDRemoteLocationSensor._targetAccuracy
 _OBJC_IVAR_$_BDRemoteLocationSensor._dummyUsageSensor
 _OBJC_IVAR_$_BDRemoteLocationSensor._dummyUsageToken
 _OBJC_CLASSLIST_REFERENCES_$_.33
-_OBJC_CLASSLIST_REFERENCES_$_.44
-_OBJC_SELECTOR_REFERENCES_.60
 _OBJC_IVAR_$_BDRemoteLocationSensor.processMode
 _OBJC_IVAR_$_BDRemoteLocationSensor._location
 __OBJC_$_PROTOCOL_REFS_BDPRequisitionableToAccuracy
@@ -2317,9 +2318,9 @@ _OBJC_SELECTOR_REFERENCES_.166
 _OBJC_CLASSLIST_REFERENCES_$_.167
 _OBJC_SELECTOR_REFERENCES_.169
 _OBJC_SELECTOR_REFERENCES_.171
-_OBJC_CLASSLIST_REFERENCES_$_.184
-_OBJC_SELECTOR_REFERENCES_.186
-_OBJC_CLASSLIST_REFERENCES_$_.193
+_OBJC_CLASSLIST_REFERENCES_$_.180
+_OBJC_SELECTOR_REFERENCES_.184
+_OBJC_CLASSLIST_REFERENCES_$_.185
 _OBJC_SELECTOR_REFERENCES_.195
 _OBJC_SELECTOR_REFERENCES_.197
 __OBJC_$_PROTOCOL_REFS_BDPRestartAlertDelegate
@@ -2345,15 +2346,16 @@ _OBJC_SELECTOR_REFERENCES_.267
 _OBJC_SELECTOR_REFERENCES_.275
 _OBJC_SELECTOR_REFERENCES_.281
 _OBJC_SELECTOR_REFERENCES_.285
+_OBJC_SELECTOR_REFERENCES_.287
+_OBJC_SELECTOR_REFERENCES_.289
+_OBJC_SELECTOR_REFERENCES_.291
+_OBJC_SELECTOR_REFERENCES_.293
 _OBJC_SELECTOR_REFERENCES_.295
 _OBJC_SELECTOR_REFERENCES_.298
-_OBJC_SELECTOR_REFERENCES_.304
-_OBJC_SELECTOR_REFERENCES_.306
-_OBJC_SELECTOR_REFERENCES_.308
-_OBJC_SELECTOR_REFERENCES_.310
-_OBJC_SELECTOR_REFERENCES_.312
 _OBJC_SELECTOR_REFERENCES_.318
-_OBJC_SELECTOR_REFERENCES_.324
+_OBJC_SELECTOR_REFERENCES_.320
+_OBJC_SELECTOR_REFERENCES_.326
+_OBJC_SELECTOR_REFERENCES_.330
 _OBJC_SELECTOR_REFERENCES_.332
 _OBJC_SELECTOR_REFERENCES_.336
 _OBJC_CLASSLIST_REFERENCES_$_.337
@@ -2542,6 +2544,7 @@ Modules/BDSensors/Model/Sensor/Implementation/AndroidLogFile/Model/BDAndroidActi
 -[BDBoundingBox east]
 -[BDBoundingBox boundingBox]
 -[BDBoundingBox centroid]
+-[BDBoundingBox geometryTypeString]
 -[BDBoundingBox copyWithZone:]
 -[BDBoundingBox deepCopy]
 -[BDBoundingBox longitudeSpan]
@@ -2562,6 +2565,7 @@ Modules/BDSensors/Model/Sensor/Implementation/AndroidLogFile/Model/BDAndroidActi
 -[BDBoundingBox encodeWithCoder:]
 -[BDBoundingBox initWithCoder:]
 -[BDBoundingBox .cxx_destruct]
+_BDGeometryTypeBoundingBox
 _OBJC_IVAR_$_BDBoundingBox._cachedPolygon
 _OBJC_IVAR_$_BDBoundingBox._cachedCentroid
 _OBJC_IVAR_$_BDBoundingBox._northEast
@@ -2779,6 +2783,7 @@ Modules/BDGeospatialModel/Process/BDGeoProcessor.m
 -[BDPoint centroid]
 -[BDPoint coordinate]
 -[BDPoint boundingBox]
+-[BDPoint geometryTypeString]
 -[BDPoint copyWithZone:]
 -[BDPoint description]
 -[BDPoint deepCopy]
@@ -2790,6 +2795,7 @@ _CGPointMake
 -[BDPoint isOrigin]
 -[BDPoint encodeWithCoder:]
 -[BDPoint initWithCoder:]
+_BDGeometryTypePoint
 _OBJC_IVAR_$_BDPoint._coordinate
 __OBJC_$_CLASS_METHODS_BDPoint
 __OBJC_CLASS_PROTOCOLS_$_BDPoint
@@ -2828,7 +2834,7 @@ __62-[BDASynchronousManagedObjectCache getInternalWithType:andID:]_block_invoke
 Modules/BDCore-Persist/Process/Cache/BDAsynchronousManagedObjectCache.m
 __65-[BDASynchronousManagedObjectCache removeInternalWithType:andId:]_block_invoke
 __48-[BDASynchronousManagedObjectCache putInternal:]_block_invoke
--[BDZoneCheckInOutAction init]
+-[BDZoneCheckInOutAction initWithID:]
 -[BDZoneCheckInOutAction setSuppressRules:]
 -[BDZoneCheckInOutAction suppressRules]
 -[BDZoneCheckInOutAction isEqual:]
@@ -3817,8 +3823,6 @@ __OBJC_CLASS_RO_$_BDAccuracyRequirement
 Modules/BDSensors/Requirement/BDAccuracyRequirement.m
 -[BDPointAPIRuleSetProvider initWithRequestClient:authenticationProvider:rulesPersister:schedule:locationSensor:]
 ___113-[BDPointAPIRuleSetProvider initWithRequestClient:authenticationProvider:rulesPersister:schedule:locationSensor:]_block_invoke
-___copy_helper_block_e4_20s24w
-___destroy_helper_block_e4_20s24w
 -[BDPointAPIRuleSetProvider startObservingAuthenticationState]
 ___62-[BDPointAPIRuleSetProvider startObservingAuthenticationState]_block_invoke
 -[BDPointAPIRuleSetProvider stopObservingAuthenticationState]
@@ -3834,6 +3838,8 @@ ___58-[BDPointAPIRuleSetProvider beginUpdateRulesWithLocation:]_block_invoke
 ___58-[BDPointAPIRuleSetProvider beginUpdateRulesWithLocation:]_block_invoke_2
 ___58-[BDPointAPIRuleSetProvider beginUpdateRulesWithLocation:]_block_invoke.210
 ___58-[BDPointAPIRuleSetProvider beginUpdateRulesWithLocation:]_block_invoke_2.211
+___copy_helper_block_e4_20s24w
+___destroy_helper_block_e4_20s24w
 -[BDPointAPIRuleSetProvider refreshLocationObservation]
 -[BDPointAPIRuleSetProvider startObservingLocation]
 ___51-[BDPointAPIRuleSetProvider startObservingLocation]_block_invoke
@@ -3869,7 +3875,6 @@ ___51-[BDPointAPIRuleSetProvider startObservingLocation]_block_invoke
 -[BDPointAPIRuleSetProvider isUpdatePending]
 -[BDPointAPIRuleSetProvider setIsUpdatePending:]
 -[BDPointAPIRuleSetProvider .cxx_destruct]
-___block_descriptor_28_e4_20s24w_e5_v4?0l
 ___block_descriptor_24_e4_20s_e80_v20?0"<BDPAuthenticationStateProvider>"4"NSString"8"NSNumber"12"NSNumber"16l
 _OBJC_CLASSLIST_REFERENCES_$_.95
 ___block_descriptor_24_e4_20s_e19_v8?0"BDLocation"4l
@@ -3887,6 +3892,7 @@ _OBJC_SELECTOR_REFERENCES_.173
 _OBJC_CLASSLIST_REFERENCES_$_.176
 _OBJC_SELECTOR_REFERENCES_.178
 _OBJC_SELECTOR_REFERENCES_.180
+_OBJC_SELECTOR_REFERENCES_.186
 _OBJC_SELECTOR_REFERENCES_.190
 _OBJC_SELECTOR_REFERENCES_.194
 _OBJC_SELECTOR_REFERENCES_.198
@@ -3935,6 +3941,8 @@ __OBJC_CLASS_RO_$_BDPointAPIRuleSetProvider
 BDPointSDK/Process/Rule/Source/BDPointAPIRuleSetProvider.m
 BDPointSDK/Process/Rule/Source/BDPointAPIRuleSetProvider.h
 __51-[BDPointAPIRuleSetProvider startObservingLocation]_block_invoke
+__destroy_helper_block_e4_20s24w
+__copy_helper_block_e4_20s24w
 __58-[BDPointAPIRuleSetProvider beginUpdateRulesWithLocation:]_block_invoke_2.211
 __58-[BDPointAPIRuleSetProvider beginUpdateRulesWithLocation:]_block_invoke.210
 __58-[BDPointAPIRuleSetProvider beginUpdateRulesWithLocation:]_block_invoke_2
@@ -3942,8 +3950,6 @@ __58-[BDPointAPIRuleSetProvider beginUpdateRulesWithLocation:]_block_invoke
 __60-[BDPointAPIRuleSetProvider beginUpdateRulesWithCompletion:]_block_invoke_2
 __60-[BDPointAPIRuleSetProvider beginUpdateRulesWithCompletion:]_block_invoke
 __62-[BDPointAPIRuleSetProvider startObservingAuthenticationState]_block_invoke
-__destroy_helper_block_e4_20s24w
-__copy_helper_block_e4_20s24w
 __113-[BDPointAPIRuleSetProvider initWithRequestClient:authenticationProvider:rulesPersister:schedule:locationSensor:]_block_invoke
 -[BDAbstractRemoteSensor initWithDataService:implementation:]
 -[BDAbstractRemoteSensor initWithName:description:implementation:]
@@ -4138,6 +4144,11 @@ Modules/BDRuleEngine/Model/Filter/Impl/BDScheduleFilter.h
 +[BDLocationManager(BDPointSDK) load]
 -[BDLocationManager(BDPointSDK) initializeWithProjectId:completion:]
 -[BDLocationManager(BDPointSDK) initializeWithProjectId:endpointURL:completion:]
+___80-[BDLocationManager(BDPointSDK) initializeWithProjectId:endpointURL:completion:]_block_invoke
+___copy_helper_block_e4_20b24w
+___80-[BDLocationManager(BDPointSDK) initializeWithProjectId:endpointURL:completion:]_block_invoke.53
+___copy_helper_block_e4_20b24s28s32w
+___destroy_helper_block_e4_20s24s28s32w
 -[BDLocationManager(BDPointSDK) isInitialized]
 -[BDLocationManager(BDPointSDK) resetWithCompletion:]
 -[BDLocationManager(BDPointSDK) authenticateWithApiKey:]
@@ -4170,8 +4181,8 @@ ___39-[BDLocationManager(BDPointSDK) logOut]_block_invoke
 ___62-[BDLocationManager(BDPointSDK) setZone:disableByApplication:]_block_invoke
 ___62-[BDLocationManager(BDPointSDK) setZone:disableByApplication:]_block_invoke_2
 ___62-[BDLocationManager(BDPointSDK) setZone:disableByApplication:]_block_invoke_3
-___62-[BDLocationManager(BDPointSDK) setZone:disableByApplication:]_block_invoke.187
-___62-[BDLocationManager(BDPointSDK) setZone:disableByApplication:]_block_invoke_2.188
+___62-[BDLocationManager(BDPointSDK) setZone:disableByApplication:]_block_invoke.200
+___62-[BDLocationManager(BDPointSDK) setZone:disableByApplication:]_block_invoke_2.201
 -[BDLocationManager(BDPointSDK) isZoneDisabledByApplication:]
 ___61-[BDLocationManager(BDPointSDK) isZoneDisabledByApplication:]_block_invoke
 -[BDLocationManager(BDPointSDK) applicationContainsDisabledZone:completion:]
@@ -4211,58 +4222,55 @@ _BDPushNotificationIdentifier
 _BDPushNotificationMeanLatPrefix
 _BDPushNotificationMeanLonPrefix
 _BDPushNotificationRadiusPrefix
+___block_descriptor_28_e4_20bs24w_e27_v12?0"NSString"4"NSURL"8l
+___block_descriptor_36_e4_20bs24s28s32w_e16_v8?0"NSError"4l
+_OBJC_SELECTOR_REFERENCES_.77
 ___block_descriptor_20_e16_v8?0"NSError"4l
-___block_literal_global.65
+___block_literal_global.83
 ___block_descriptor_28_e4_20s_e16_v8?0"NSError"4l
-_OBJC_CLASSLIST_REFERENCES_$_.72
+_OBJC_CLASSLIST_REFERENCES_$_.90
 ___block_descriptor_32_e4_20s24s28bs_e5_v4?0l
+_OBJC_CLASSLIST_REFERENCES_$_.113
 _OBJC_SELECTOR_REFERENCES_.131
-_OBJC_SELECTOR_REFERENCES_.133
-_OBJC_CLASSLIST_REFERENCES_$_.158
-_OBJC_CLASSLIST_REFERENCES_$_.169
-_OBJC_CLASSLIST_REFERENCES_$_.172
-_OBJC_CLASSLIST_REFERENCES_$_.179
 _OBJC_SELECTOR_REFERENCES_.181
-___block_literal_global.184
-___block_literal_global.189
+_OBJC_CLASSLIST_REFERENCES_$_.182
+_OBJC_SELECTOR_REFERENCES_.189
+_OBJC_CLASSLIST_REFERENCES_$_.192
+___block_literal_global.197
+_OBJC_SELECTOR_REFERENCES_.199
+___block_literal_global.202
 ___block_descriptor_33_e4_20s24s28s_e7_v8?0c4l
 ___block_descriptor_24_e4_20r_e7_v8?0c4l
-_OBJC_CLASSLIST_REFERENCES_$_.199
-_OBJC_CLASSLIST_REFERENCES_$_.202
-_OBJC_SELECTOR_REFERENCES_.208
-_OBJC_SELECTOR_REFERENCES_.210
-_OBJC_SELECTOR_REFERENCES_.218
+_OBJC_SELECTOR_REFERENCES_.211
+_OBJC_SELECTOR_REFERENCES_.221
+_OBJC_CLASSLIST_REFERENCES_$_.234
 ___block_descriptor_24_e4_20s_e34_c12?0"BDCircle"4"NSDictionary"8l
-_OBJC_SELECTOR_REFERENCES_.228
-_OBJC_SELECTOR_REFERENCES_.230
-_OBJC_CLASSLIST_REFERENCES_$_.231
-_OBJC_SELECTOR_REFERENCES_.233
-_OBJC_SELECTOR_REFERENCES_.235
-_OBJC_CLASSLIST_REFERENCES_$_.236
+_OBJC_CLASSLIST_REFERENCES_$_.242
 _OBJC_SELECTOR_REFERENCES_.244
-_OBJC_CLASSLIST_REFERENCES_$_.247
-_OBJC_CLASSLIST_REFERENCES_$_.250
-_OBJC_SELECTOR_REFERENCES_.254
-_OBJC_SELECTOR_REFERENCES_.256
-_OBJC_CLASSLIST_REFERENCES_$_.257
-_OBJC_SELECTOR_REFERENCES_.259
+_OBJC_CLASSLIST_REFERENCES_$_.245
+_OBJC_SELECTOR_REFERENCES_.253
+_OBJC_SELECTOR_REFERENCES_.255
+_OBJC_CLASSLIST_REFERENCES_$_.256
+_OBJC_SELECTOR_REFERENCES_.258
+_OBJC_CLASSLIST_REFERENCES_$_.259
 _OBJC_SELECTOR_REFERENCES_.261
+_OBJC_CLASSLIST_REFERENCES_$_.264
 _MAXCustomEventDataAllowed
-_OBJC_SELECTOR_REFERENCES_.269
-_OBJC_SELECTOR_REFERENCES_.297
-_OBJC_SELECTOR_REFERENCES_.301
-_OBJC_CLASSLIST_REFERENCES_$_.306
-___block_literal_global.315
-___block_literal_global.316
-_OBJC_CLASSLIST_REFERENCES_$_.317
-_OBJC_SELECTOR_REFERENCES_.319
-_OBJC_SELECTOR_REFERENCES_.321
-_OBJC_SELECTOR_REFERENCES_.323
-_OBJC_SELECTOR_REFERENCES_.335
-_OBJC_SELECTOR_REFERENCES_.337
+_OBJC_SELECTOR_REFERENCES_.274
+_OBJC_SELECTOR_REFERENCES_.296
+_OBJC_SELECTOR_REFERENCES_.300
+_OBJC_CLASSLIST_REFERENCES_$_.313
+___block_literal_global.322
+___block_literal_global.323
+_OBJC_CLASSLIST_REFERENCES_$_.324
+_OBJC_SELECTOR_REFERENCES_.328
+_OBJC_SELECTOR_REFERENCES_.334
+_OBJC_SELECTOR_REFERENCES_.342
+_OBJC_SELECTOR_REFERENCES_.344
 ___block_descriptor_24_e4_20bs_e16_v8?0"NSError"4l
+_OBJC_SELECTOR_REFERENCES_.348
+_OBJC_SELECTOR_REFERENCES_.350
 ___block_descriptor_32_e4_20bs24s28s_e16_v8?0"NSError"4l
-_OBJC_SELECTOR_REFERENCES_.349
 __OBJC_$_CATEGORY_INSTANCE_METHODS_BDLocationManager_$_BDPointSDK
 __OBJC_$_CATEGORY_CLASS_METHODS_BDLocationManager_$_BDPointSDK
 __OBJC_$_PROTOCOL_REFS_BDPAuthenticationStateProvider
@@ -4285,8 +4293,8 @@ __52-[BDLocationManager(BDPointSDK) startTempoTracking:]_block_invoke
 __58-[BDLocationManager(BDPointSDK) notifyPushUpdateWithData:]_block_invoke_2
 __58-[BDLocationManager(BDPointSDK) notifyPushUpdateWithData:]_block_invoke
 __61-[BDLocationManager(BDPointSDK) isZoneDisabledByApplication:]_block_invoke
-__62-[BDLocationManager(BDPointSDK) setZone:disableByApplication:]_block_invoke_2.188
-__62-[BDLocationManager(BDPointSDK) setZone:disableByApplication:]_block_invoke.187
+__62-[BDLocationManager(BDPointSDK) setZone:disableByApplication:]_block_invoke_2.201
+__62-[BDLocationManager(BDPointSDK) setZone:disableByApplication:]_block_invoke.200
 __62-[BDLocationManager(BDPointSDK) setZone:disableByApplication:]_block_invoke_3
 __62-[BDLocationManager(BDPointSDK) setZone:disableByApplication:]_block_invoke_2
 __62-[BDLocationManager(BDPointSDK) setZone:disableByApplication:]_block_invoke
@@ -4295,6 +4303,11 @@ __75-[BDLocationManager(BDPointSDK) authenticateWithApiKeyInternal:completion:]_
 __89-[BDLocationManager(BDPointSDK) authenticateWithApiKey:requestAuthorization:endpointURL:]_block_invoke_3
 __89-[BDLocationManager(BDPointSDK) authenticateWithApiKey:requestAuthorization:endpointURL:]_block_invoke_2
 __89-[BDLocationManager(BDPointSDK) authenticateWithApiKey:requestAuthorization:endpointURL:]_block_invoke
+__destroy_helper_block_e4_20s24s28s32w
+__copy_helper_block_e4_20b24s28s32w
+__80-[BDLocationManager(BDPointSDK) initializeWithProjectId:endpointURL:completion:]_block_invoke.53
+__copy_helper_block_e4_20b24w
+__80-[BDLocationManager(BDPointSDK) initializeWithProjectId:endpointURL:completion:]_block_invoke
 __OBJC_METACLASS_RO_$_GzdGCtM7IJfrelOf
 __OBJC_CLASS_RO_$_GzdGCtM7IJfrelOf
 /Users/runner/work/point_sdk_ios/point_sdk_ios/Modules/BDSemaphore/Transport/Address/BDTransportAddress.m
@@ -4370,7 +4383,7 @@ ___51-[BDPointEngine yZHMVsMBxWfFmS7T:zCmAFwylyEm0ZTeV:]_block_invoke
 ___25+[BDPointEngine instance]_block_invoke
 -[BDPointEngine singletonInit]
 ___30-[BDPointEngine singletonInit]_block_invoke
--[BDPointEngine resetCoreDataOnSDKUpdate]
+-[BDPointEngine resetCoreDataOnSDKUpdate:]
 -[BDPointEngine configureEngine]
 -[BDPointEngine applicationEnterForeground]
 -[BDPointEngine applicationEnterBackground]
@@ -4449,6 +4462,8 @@ ___52-[BDPointEngine startObservingRequestClientEndpoint]_block_invoke
 -[BDPointEngine setEndpointAddress:]
 ___36-[BDPointEngine setEndpointAddress:]_block_invoke
 -[BDPointEngine authenticateWithCredentials:completion:]
+___56-[BDPointEngine authenticateWithCredentials:completion:]_block_invoke
+___copy_helper_block_e4_20b24r
 -[BDPointEngine authenticatedOnHybridRestartWithCredentials:pointApiUrl:completion:]
 -[BDPointEngine logOutWithError:]
 -[BDPointEngine logOut]
@@ -4473,7 +4488,7 @@ ___60-[BDPointEngine refreshRequiresUserInterventionForBluetooth]_block_invoke
 ___60-[BDPointEngine refreshRequiresUserInterventionForBluetooth]_block_invoke_2
 -[BDPointEngine refreshRequiresUserInterventionForLocationServices]
 ___67-[BDPointEngine refreshRequiresUserInterventionForLocationServices]_block_invoke
-___67-[BDPointEngine refreshRequiresUserInterventionForLocationServices]_block_invoke.564
+___67-[BDPointEngine refreshRequiresUserInterventionForLocationServices]_block_invoke.566
 -[BDPointEngine didChangePowerMode]
 ___35-[BDPointEngine didChangePowerMode]_block_invoke
 -[BDPointEngine refreshRequiresUserInterventionForPowerMode]
@@ -4545,40 +4560,54 @@ ___60-[BDPointEngine refreshRequiresUserInterventionForPowerMode]_block_invoke_2
 -[BDPointEngine .cxx_destruct]
 _pointQueue
 _instance.sharedPointEngine
-_OBJC_CLASSLIST_REFERENCES_$_.47
-_OBJC_CLASSLIST_REFERENCES_$_.96
-_OBJC_CLASSLIST_REFERENCES_$_.104
+_OBJC_CLASSLIST_REFERENCES_$_.42
+_OBJC_CLASSLIST_REFERENCES_$_.49
+_OBJC_CLASSLIST_REFERENCES_$_.78
+_OBJC_CLASSLIST_REFERENCES_$_.91
+_OBJC_CLASSLIST_REFERENCES_$_.97
+_OBJC_CLASSLIST_REFERENCES_$_.100
 _OBJC_CLASSLIST_REFERENCES_$_.107
-_OBJC_CLASSLIST_REFERENCES_$_.110
-_OBJC_CLASSLIST_REFERENCES_$_.122
-_OBJC_CLASSLIST_REFERENCES_$_.128
-_OBJC_CLASSLIST_REFERENCES_$_.131
-_OBJC_CLASSLIST_REFERENCES_$_.134
-_OBJC_CLASSLIST_REFERENCES_$_.180
-_OBJC_SELECTOR_REFERENCES_.192
-_OBJC_CLASSLIST_REFERENCES_$_.200
+_OBJC_CLASSLIST_REFERENCES_$_.112
+_OBJC_CLASSLIST_REFERENCES_$_.126
+_OBJC_CLASSLIST_REFERENCES_$_.127
+_OBJC_CLASSLIST_REFERENCES_$_.130
+_OBJC_CLASSLIST_REFERENCES_$_.136
+_OBJC_CLASSLIST_REFERENCES_$_.145
+_OBJC_CLASSLIST_REFERENCES_$_.150
+_OBJC_SELECTOR_REFERENCES_.158
+_OBJC_SELECTOR_REFERENCES_.162
+_OBJC_SELECTOR_REFERENCES_.174
+_OBJC_CLASSLIST_REFERENCES_$_.201
+_OBJC_CLASSLIST_REFERENCES_$_.202
+_OBJC_SELECTOR_REFERENCES_.208
+_OBJC_SELECTOR_REFERENCES_.210
 _OBJC_SELECTOR_REFERENCES_.220
+_OBJC_SELECTOR_REFERENCES_.228
+_OBJC_SELECTOR_REFERENCES_.230
 _OBJC_CLASSLIST_REFERENCES_$_.243
 _OBJC_CLASSLIST_REFERENCES_$_.252
+_OBJC_SELECTOR_REFERENCES_.254
+_OBJC_SELECTOR_REFERENCES_.256
 _OBJC_CLASSLIST_REFERENCES_$_.269
 _OBJC_CLASSLIST_REFERENCES_$_.272
-_OBJC_SELECTOR_REFERENCES_.274
 _OBJC_CLASSLIST_REFERENCES_$_.279
 _OBJC_SELECTOR_REFERENCES_.283
-_OBJC_SELECTOR_REFERENCES_.286
-_OBJC_SELECTOR_REFERENCES_.288
 ___block_descriptor_32_e4_20s24s28s_e5_v4?0l
 _OBJC_CLASSLIST_REFERENCES_$_.289
 _OBJC_SELECTOR_REFERENCES_.299
+_OBJC_SELECTOR_REFERENCES_.311
+_OBJC_SELECTOR_REFERENCES_.313
+_OBJC_SELECTOR_REFERENCES_.315
 _OBJC_CLASSLIST_REFERENCES_$_.316
 _OBJC_CLASSLIST_REFERENCES_$_.319
+_OBJC_SELECTOR_REFERENCES_.321
 _OBJC_SELECTOR_REFERENCES_.325
 _OBJC_SELECTOR_REFERENCES_.329
 _OBJC_SELECTOR_REFERENCES_.331
 _OBJC_SELECTOR_REFERENCES_.333
+_OBJC_SELECTOR_REFERENCES_.335
+_OBJC_SELECTOR_REFERENCES_.337
 _OBJC_SELECTOR_REFERENCES_.346
-_OBJC_SELECTOR_REFERENCES_.348
-_OBJC_SELECTOR_REFERENCES_.350
 _OBJC_CLASSLIST_REFERENCES_$_.353
 _OBJC_SELECTOR_REFERENCES_.355
 _OBJC_SELECTOR_REFERENCES_.357
@@ -4598,13 +4627,14 @@ _OBJC_SELECTOR_REFERENCES_.386
 ___block_descriptor_28_e4_20s24bs_e16_v8?0"NSError"4l
 _OBJC_SELECTOR_REFERENCES_.389
 _OBJC_SELECTOR_REFERENCES_.391
+_OBJC_SELECTOR_REFERENCES_.393
 _OBJC_SELECTOR_REFERENCES_.401
 _OBJC_SELECTOR_REFERENCES_.403
 _OBJC_SELECTOR_REFERENCES_.405
 _OBJC_SELECTOR_REFERENCES_.407
+_OBJC_SELECTOR_REFERENCES_.409
 ___block_descriptor_24_e4_20s_e46_v20?04"NSString"8"NSNumber"12"NSNumber"16l
 ___block_descriptor_24_e4_20s_e94_v20?04"NSString"8"BDHTTPTransportServerAddressImpl"12"BDHTTPTransportServerAddressImpl"16l
-_OBJC_SELECTOR_REFERENCES_.413
 _OBJC_SELECTOR_REFERENCES_.415
 _OBJC_SELECTOR_REFERENCES_.421
 _OBJC_SELECTOR_REFERENCES_.423
@@ -4620,51 +4650,53 @@ _OBJC_SELECTOR_REFERENCES_.443
 _OBJC_SELECTOR_REFERENCES_.445
 _OBJC_SELECTOR_REFERENCES_.447
 _OBJC_SELECTOR_REFERENCES_.449
-___block_literal_global.450
-_OBJC_SELECTOR_REFERENCES_.452
+_OBJC_SELECTOR_REFERENCES_.451
+___block_literal_global.452
 _OBJC_SELECTOR_REFERENCES_.454
 _OBJC_SELECTOR_REFERENCES_.456
 _OBJC_SELECTOR_REFERENCES_.458
+___block_descriptor_28_e4_20bs24r_e5_v4?0l
 _OBJC_SELECTOR_REFERENCES_.460
 _OBJC_SELECTOR_REFERENCES_.462
 _OBJC_SELECTOR_REFERENCES_.464
 _OBJC_SELECTOR_REFERENCES_.466
-_OBJC_SELECTOR_REFERENCES_.506
+_OBJC_SELECTOR_REFERENCES_.468
 _OBJC_SELECTOR_REFERENCES_.508
 _OBJC_SELECTOR_REFERENCES_.510
 _OBJC_SELECTOR_REFERENCES_.512
 _OBJC_SELECTOR_REFERENCES_.514
+_OBJC_SELECTOR_REFERENCES_.516
 ___block_descriptor_24_e4_20s_e40_v20?04"NSString"8"NSSet"12"NSSet"16l
-_OBJC_SELECTOR_REFERENCES_.519
 _OBJC_SELECTOR_REFERENCES_.521
-_OBJC_SELECTOR_REFERENCES_.525
+_OBJC_SELECTOR_REFERENCES_.523
 _OBJC_SELECTOR_REFERENCES_.527
-_OBJC_CLASSLIST_REFERENCES_$_.532
-_OBJC_SELECTOR_REFERENCES_.534
+_OBJC_SELECTOR_REFERENCES_.529
+_OBJC_CLASSLIST_REFERENCES_$_.534
 _OBJC_SELECTOR_REFERENCES_.536
 _OBJC_SELECTOR_REFERENCES_.538
 _OBJC_SELECTOR_REFERENCES_.540
-_refreshRequiresUserInterventionForBluetooth.requiresUserInterventionForBluetooth
 _OBJC_SELECTOR_REFERENCES_.542
+_refreshRequiresUserInterventionForBluetooth.requiresUserInterventionForBluetooth
 _OBJC_SELECTOR_REFERENCES_.544
 _OBJC_SELECTOR_REFERENCES_.546
-_OBJC_SELECTOR_REFERENCES_.550
+_OBJC_SELECTOR_REFERENCES_.548
 _OBJC_SELECTOR_REFERENCES_.552
+_OBJC_SELECTOR_REFERENCES_.554
 _refreshRequiresUserInterventionForLocationServices.requiresUserInterventionForLocationServices
-_OBJC_CLASSLIST_REFERENCES_$_.555
-_OBJC_SELECTOR_REFERENCES_.557
+_OBJC_CLASSLIST_REFERENCES_$_.557
 _OBJC_SELECTOR_REFERENCES_.559
+_OBJC_SELECTOR_REFERENCES_.561
 ___block_descriptor_28_e4_20s_e5_v4?0l
-_OBJC_SELECTOR_REFERENCES_.563
+_OBJC_SELECTOR_REFERENCES_.565
 _refreshRequiresUserInterventionForPowerMode.requiresUserInterventionForPowerMode
-_OBJC_CLASSLIST_REFERENCES_$_.567
-_OBJC_SELECTOR_REFERENCES_.569
+_OBJC_CLASSLIST_REFERENCES_$_.569
 _OBJC_SELECTOR_REFERENCES_.571
 _OBJC_SELECTOR_REFERENCES_.573
-_OBJC_SELECTOR_REFERENCES_.577
+_OBJC_SELECTOR_REFERENCES_.575
 _OBJC_SELECTOR_REFERENCES_.579
 _OBJC_SELECTOR_REFERENCES_.581
-_OBJC_SELECTOR_REFERENCES_.585
+_OBJC_SELECTOR_REFERENCES_.583
+_OBJC_SELECTOR_REFERENCES_.587
 __OBJC_$_CLASS_METHODS_BDPointEngine
 __OBJC_$_PROTOCOL_REFS_BDPSessionManager
 __OBJC_$_PROTOCOL_INSTANCE_METHODS_BDPSessionManager
@@ -4719,13 +4751,15 @@ BDPointSDK/Process/BDPointEngine.h
 __60-[BDPointEngine refreshRequiresUserInterventionForPowerMode]_block_invoke_2
 __60-[BDPointEngine refreshRequiresUserInterventionForPowerMode]_block_invoke
 __35-[BDPointEngine didChangePowerMode]_block_invoke
-__67-[BDPointEngine refreshRequiresUserInterventionForLocationServices]_block_invoke.564
+__67-[BDPointEngine refreshRequiresUserInterventionForLocationServices]_block_invoke.566
 __67-[BDPointEngine refreshRequiresUserInterventionForLocationServices]_block_invoke
 __60-[BDPointEngine refreshRequiresUserInterventionForBluetooth]_block_invoke_2
 __60-[BDPointEngine refreshRequiresUserInterventionForBluetooth]_block_invoke
 __66-[BDPointEngine startObservingLocationServicesAuthorizationStatus]_block_invoke_2
 __66-[BDPointEngine startObservingLocationServicesAuthorizationStatus]_block_invoke
 __47-[BDPointEngine startObservingBeaconMonitoring]_block_invoke
+__copy_helper_block_e4_20b24r
+__56-[BDPointEngine authenticateWithCredentials:completion:]_block_invoke
 __36-[BDPointEngine setEndpointAddress:]_block_invoke
 __52-[BDPointEngine startObservingRequestClientEndpoint]_block_invoke
 __50-[BDPointEngine startObservingAuthenticationState]_block_invoke_3
@@ -4886,9 +4920,9 @@ ___58-[cn4839n4t7b67dDw fetchRemoteConfig:isHybrid:completion:]_block_invoke
 ___58-[cn4839n4t7b67dDw fetchRemoteConfig:isHybrid:completion:]_block_invoke_2
 ___58-[cn4839n4t7b67dDw fetchRemoteConfig:isHybrid:completion:]_block_invoke_3
 ___58-[cn4839n4t7b67dDw fetchRemoteConfig:isHybrid:completion:]_block_invoke_4
-___58-[cn4839n4t7b67dDw fetchRemoteConfig:isHybrid:completion:]_block_invoke.110
-___58-[cn4839n4t7b67dDw fetchRemoteConfig:isHybrid:completion:]_block_invoke_2.111
-___58-[cn4839n4t7b67dDw fetchRemoteConfig:isHybrid:completion:]_block_invoke_3.112
+___58-[cn4839n4t7b67dDw fetchRemoteConfig:isHybrid:completion:]_block_invoke.112
+___58-[cn4839n4t7b67dDw fetchRemoteConfig:isHybrid:completion:]_block_invoke_2.113
+___58-[cn4839n4t7b67dDw fetchRemoteConfig:isHybrid:completion:]_block_invoke_3.114
 -[cn4839n4t7b67dDw logOut]
 ___26-[cn4839n4t7b67dDw logOut]_block_invoke
 -[cn4839n4t7b67dDw logOutWithError:]
@@ -4904,8 +4938,8 @@ ___36-[cn4839n4t7b67dDw logOutWithError:]_block_invoke
 -[cn4839n4t7b67dDw setKeychain:]
 -[cn4839n4t7b67dDw .cxx_destruct]
 _OBJC_CLASSLIST_REFERENCES_$_.64
+_OBJC_CLASSLIST_REFERENCES_$_.72
 ___block_descriptor_32_e4_20s24bs28s_e16_v8?0"NSError"4l
-_OBJC_CLASSLIST_REFERENCES_$_.90
 ___block_descriptor_29_e4_20s24bs_e16_v8?0"NSError"4l
 __OBJC_$_CLASS_METHODS_cn4839n4t7b67dDw
 __OBJC_CLASS_PROTOCOLS_$_cn4839n4t7b67dDw
@@ -4925,9 +4959,9 @@ BDPointSDK/Process/Session/BDPointAPISessionManager.m
 BDPointSDK/Process/Session/BDPointAPISessionManager.h
 __36-[cn4839n4t7b67dDw logOutWithError:]_block_invoke
 __26-[cn4839n4t7b67dDw logOut]_block_invoke
-__58-[cn4839n4t7b67dDw fetchRemoteConfig:isHybrid:completion:]_block_invoke_3.112
-__58-[cn4839n4t7b67dDw fetchRemoteConfig:isHybrid:completion:]_block_invoke_2.111
-__58-[cn4839n4t7b67dDw fetchRemoteConfig:isHybrid:completion:]_block_invoke.110
+__58-[cn4839n4t7b67dDw fetchRemoteConfig:isHybrid:completion:]_block_invoke_3.114
+__58-[cn4839n4t7b67dDw fetchRemoteConfig:isHybrid:completion:]_block_invoke_2.113
+__58-[cn4839n4t7b67dDw fetchRemoteConfig:isHybrid:completion:]_block_invoke.112
 __58-[cn4839n4t7b67dDw fetchRemoteConfig:isHybrid:completion:]_block_invoke_4
 __58-[cn4839n4t7b67dDw fetchRemoteConfig:isHybrid:completion:]_block_invoke_3
 __58-[cn4839n4t7b67dDw fetchRemoteConfig:isHybrid:completion:]_block_invoke_2
@@ -4986,7 +5020,6 @@ ___59-[BDSessionRequestClient startObservingAuthenticationState]_block_invoke
 ___block_descriptor_36_e4_20s24s28s32bs_e33_v12?0"BDRequest"4"BDResponse"8l
 ___block_descriptor_32_e4_20s24bs28s_e33_v12?0"BDRequest"4"BDResponse"8l
 _OBJC_CLASSLIST_REFERENCES_$_.71
-_OBJC_SELECTOR_REFERENCES_.77
 __OBJC_CLASS_PROTOCOLS_$_BDSessionRequestClient
 __OBJC_METACLASS_RO_$_BDSessionRequestClient
 __OBJC_$_INSTANCE_METHODS_BDSessionRequestClient
@@ -5081,6 +5114,7 @@ __38-[D2bVbli1silRZeNY scheduleNextPeriod]_block_invoke
 -[Yg2yy1eSUNkYMkJ7 .cxx_destruct]
 __OBJC_PROTOCOL_REFERENCE_$_BDPRequisitionable
 __OBJC_PROTOCOL_REFERENCE_$_BDPEnableable
+_OBJC_CLASSLIST_REFERENCES_$_.110
 __OBJC_CLASS_PROTOCOLS_$_Yg2yy1eSUNkYMkJ7
 __OBJC_METACLASS_RO_$_Yg2yy1eSUNkYMkJ7
 __OBJC_$_INSTANCE_METHODS_Yg2yy1eSUNkYMkJ7
@@ -5183,6 +5217,7 @@ __OBJC_CLASS_RO_$_BDAuthenticationSuccessResponse
 -[BDGeometry intersects:]
 -[BDGeometry boundingBox]
 -[BDGeometry centroid]
+-[BDGeometry geometryTypeString]
 -[BDGeometry isEnclosedBy:]
 -[BDGeometry distanceTo:]
 -[BDGeometry translateBearing:distance:]
@@ -5190,6 +5225,7 @@ __OBJC_CLASS_RO_$_BDAuthenticationSuccessResponse
 -[BDGeometry deepCopy]
 __OBJC_PROTOCOL_REFERENCE_$_jAVow9noaox1ryUy
 __OBJC_PROTOCOL_REFERENCE_$_BDPGeometryEnclosure
+_OBJC_CLASSLIST_REFERENCES_$_.93
 __OBJC_PROTOCOL_REFERENCE_$_NBgFxgg3c8hXxSq4
 __OBJC_CLASS_PROTOCOLS_$_BDGeometry
 __OBJC_METACLASS_RO_$_BDGeometry
@@ -5426,7 +5462,6 @@ BDIntersectionPoint
 -[BDGeometryRendererFactory setStrokeColor:]
 -[BDGeometryRendererFactory .cxx_destruct]
 __OBJC_PROTOCOL_REFERENCE_$_BDPMKShape
-_OBJC_CLASSLIST_REFERENCES_$_.49
 __OBJC_METACLASS_RO_$_BDGeometryRendererFactory
 __OBJC_$_INSTANCE_METHODS_BDGeometryRendererFactory
 _OBJC_IVAR_$_BDGeometryRendererFactory._strokeWidth
@@ -5796,11 +5831,12 @@ _OBJC_IVAR_$_Mi8rkQFeh7oV8hcP._dateFormat
 _OBJC_IVAR_$_Mi8rkQFeh7oV8hcP._timer
 _OBJC_IVAR_$_Mi8rkQFeh7oV8hcP._nextTask
 ___block_descriptor_28_e4_20s24r_e30_v16?0"BDScheduleTask"4I8^c12l
+_OBJC_SELECTOR_REFERENCES_.133
 ___block_descriptor_24_e4_20bs_e30_v16?0"BDScheduleTask"4I8^c12l
 _OBJC_CLASSLIST_REFERENCES_$_.149
-_OBJC_SELECTOR_REFERENCES_.162
+_OBJC_CLASSLIST_REFERENCES_$_.169
 ___block_descriptor_28_e4_20s24s_e44_v24?0"NSString"4"NSDate"8?<v?>12I16^c20l
-_OBJC_SELECTOR_REFERENCES_.199
+_OBJC_CLASSLIST_REFERENCES_$_.200
 _OBJC_CLASSLIST_REFERENCES_$_.206
 __OBJC_CLASS_PROTOCOLS_$_Mi8rkQFeh7oV8hcP
 __OBJC_METACLASS_RO_$_Mi8rkQFeh7oV8hcP
@@ -6117,9 +6153,8 @@ _OBJC_IVAR_$_BDBeaconCheckOutManager._beaconSensor
 _OBJC_IVAR_$_BDBeaconCheckOutManager._logger
 ___block_descriptor_28_e4_20s24w_e44_v20?04"NSString"8"NSArray"12"NSArray"16l
 _OBJC_IVAR_$_BDBeaconCheckOutManager._beaconsObservation
-_OBJC_CLASSLIST_REFERENCES_$_.93
+_OBJC_CLASSLIST_REFERENCES_$_.128
 _OBJC_CLASSLIST_REFERENCES_$_.146
-_OBJC_SELECTOR_REFERENCES_.158
 _maxDwellTimeForMissedCheckOut
 ___block_descriptor_32_e4_20s24s28bs_e31_v8?0"NSManagedObjectContext"4l
 __OBJC_$_PROTOCOL_REFS_BDPPendingCheckOutManager_Implementation
@@ -6402,11 +6437,14 @@ ___62-[BDCoreLocationRegionMonitoringSensor startMonitoringFences:]_block_invoke
 -[BDCoreLocationRegionMonitoringSensor stopMonitoringFences:]
 -[BDCoreLocationRegionMonitoringSensor monitoredFences]
 -[BDCoreLocationRegionMonitoringSensor isFence:inSet:]
--[BDCoreLocationRegionMonitoringSensor isFenceCircularRegion:equalTo:]
 -[BDCoreLocationRegionMonitoringSensor monitoredFencesForRegion:excludingFenceCheckouts:]
+-[BDCoreLocationRegionMonitoringSensor isNativeFenceRegion:]
 -[BDCoreLocationRegionMonitoringSensor didEnterRegionMonitoringRegion:]
 -[BDCoreLocationRegionMonitoringSensor didExitRegionMonitoringRegion:]
+-[BDCoreLocationRegionMonitoringSensor updateLocationFromCoreLocation]
 -[BDCoreLocationRegionMonitoringSensor didDetermineState:forRegionMonitoringRegion:]
+-[BDCoreLocationRegionMonitoringSensor handleRegionInsideLogic:]
+-[BDCoreLocationRegionMonitoringSensor handleRegionOutsideLogic:]
 -[BDCoreLocationRegionMonitoringSensor monitoringDidFailForRegion:withError:]
 -[BDCoreLocationRegionMonitoringSensor startSensor]
 -[BDCoreLocationRegionMonitoringSensor stopSensor]
@@ -6487,19 +6525,16 @@ _OBJC_IVAR_$_BDLocationManager._defaultRequestToken_Heading
 _OBJC_IVAR_$_BDLocationManager._locationSensor
 _OBJC_IVAR_$_BDLocationManager._headingSensor
 _OBJC_IVAR_$_BDLocationManager._beaconSensor
-_OBJC_CLASSLIST_REFERENCES_$_.42
 _OBJC_IVAR_$_BDLocationManager._regionMonitoringSensor
 _OBJC_IVAR_$_BDLocationManager._swiftLocationSensor
 _OBJC_IVAR_$_BDLocationManager._locationPermissionAuthorizationStatus
 _OBJC_IVAR_$_BDLocationManager._locationPermissionAccuracyAuthorization
 _OBJC_IVAR_$_BDLocationManager._proxyDelegate
 _OBJC_IVAR_$_BDLocationManager._logger
-_OBJC_CLASSLIST_REFERENCES_$_.78
-_OBJC_CLASSLIST_REFERENCES_$_.143
+_OBJC_CLASSLIST_REFERENCES_$_.96
 _setDesiredAccuracy_Internal:.prevDesiredAccuracy
 ___block_descriptor_36_e8_20s_e5_v4?0l
-_OBJC_SELECTOR_REFERENCES_.174
-_OBJC_SELECTOR_REFERENCES_.184
+_OBJC_CLASSLIST_REFERENCES_$_.174
 _OBJC_IVAR_$_BDLocationManager._filteringEnabled
 __OBJC_$_CLASS_METHODS_BDLocationManager
 __OBJC_METACLASS_RO_$_BDLocationManager
@@ -6513,9 +6548,11 @@ _OBJC_IVAR_$_BDCoreLocationSensor._minimumAccuracy
 _OBJC_IVAR_$_BDCoreLocationSensor._maximumAccuracy
 _OBJC_IVAR_$_BDCoreLocationSensor._processMode
 _OBJC_IVAR_$_BDCoreLocationSensor._logger
-_OBJC_SELECTOR_REFERENCES_.294
-_OBJC_SELECTOR_REFERENCES_.296
-_OBJC_CLASSLIST_REFERENCES_$_.301
+_OBJC_SELECTOR_REFERENCES_.282
+_OBJC_SELECTOR_REFERENCES_.297
+_OBJC_CLASSLIST_REFERENCES_$_.302
+_OBJC_SELECTOR_REFERENCES_.307
+_OBJC_SELECTOR_REFERENCES_.309
 _OBJC_IVAR_$_BDCoreLocationSensor._pauseLocationProcessTimer
 _OBJC_IVAR_$_BDCoreLocationSensor._resumeLocationProcessTimer
 _OBJC_IVAR_$_BDCoreLocationSensor.clLocation
@@ -6533,7 +6570,6 @@ __OBJC_$_PROP_LIST_BDCoreLocationSensor
 __OBJC_CLASS_RO_$_BDCoreLocationSensor
 _OBJC_IVAR_$_BDCoreLocationHeadingSensor._heading
 _OBJC_IVAR_$_BDCoreLocationHeadingSensor._locationManager
-_OBJC_SELECTOR_REFERENCES_.420
 _OBJC_SELECTOR_REFERENCES_.422
 __OBJC_CLASS_PROTOCOLS_$_BDCoreLocationHeadingSensor
 __OBJC_METACLASS_RO_$_BDCoreLocationHeadingSensor
@@ -6542,50 +6578,42 @@ __OBJC_$_INSTANCE_VARIABLES_BDCoreLocationHeadingSensor
 __OBJC_$_PROP_LIST_BDCoreLocationHeadingSensor
 __OBJC_CLASS_RO_$_BDCoreLocationHeadingSensor
 _OBJC_IVAR_$_BDCoreLocationRegionMonitoringSensor._locationManager
-_OBJC_CLASSLIST_REFERENCES_$_.438
-_OBJC_SELECTOR_REFERENCES_.440
+_OBJC_CLASSLIST_REFERENCES_$_.439
 _OBJC_IVAR_$_BDCoreLocationRegionMonitoringSensor._hittingFences
 _OBJC_IVAR_$_BDCoreLocationRegionMonitoringSensor._hittingFencesAwaitingCheckOut
 _OBJC_IVAR_$_BDCoreLocationRegionMonitoringSensor._deviceExitDetected
-_OBJC_CLASSLIST_REFERENCES_$_.441
+_OBJC_CLASSLIST_REFERENCES_$_.442
 _OBJC_IVAR_$_BDCoreLocationRegionMonitoringSensor._monitoredFences
 _OBJC_IVAR_$_BDCoreLocationRegionMonitoringSensor._monitoredFencesAwaitingCheckOut
 _OBJC_IVAR_$_BDCoreLocationRegionMonitoringSensor._logger
-_OBJC_SELECTOR_REFERENCES_.451
-_OBJC_SELECTOR_REFERENCES_.453
-_OBJC_SELECTOR_REFERENCES_.455
-_OBJC_SELECTOR_REFERENCES_.457
-_OBJC_SELECTOR_REFERENCES_.459
-_OBJC_SELECTOR_REFERENCES_.461
-_OBJC_SELECTOR_REFERENCES_.463
-_OBJC_SELECTOR_REFERENCES_.467
-_OBJC_SELECTOR_REFERENCES_.471
-_OBJC_SELECTOR_REFERENCES_.473
-_OBJC_SELECTOR_REFERENCES_.475
-_OBJC_CLASSLIST_REFERENCES_$_.476
-_OBJC_SELECTOR_REFERENCES_.478
-_OBJC_CLASSLIST_REFERENCES_$_.479
-_OBJC_SELECTOR_REFERENCES_.481
-_OBJC_SELECTOR_REFERENCES_.483
-_OBJC_SELECTOR_REFERENCES_.485
-_OBJC_SELECTOR_REFERENCES_.487
-_OBJC_SELECTOR_REFERENCES_.491
-_OBJC_SELECTOR_REFERENCES_.493
-_OBJC_SELECTOR_REFERENCES_.495
-_OBJC_SELECTOR_REFERENCES_.503
-_OBJC_SELECTOR_REFERENCES_.509
-_OBJC_SELECTOR_REFERENCES_.511
-_OBJC_SELECTOR_REFERENCES_.513
-_OBJC_CLASSLIST_REFERENCES_$_.514
-_OBJC_SELECTOR_REFERENCES_.516
-_OBJC_SELECTOR_REFERENCES_.518
-_OBJC_SELECTOR_REFERENCES_.520
-_OBJC_SELECTOR_REFERENCES_.526
+_OBJC_SELECTOR_REFERENCES_.446
+_OBJC_SELECTOR_REFERENCES_.448
+_OBJC_SELECTOR_REFERENCES_.450
+_OBJC_SELECTOR_REFERENCES_.452
+_OBJC_SELECTOR_REFERENCES_.472
+_OBJC_SELECTOR_REFERENCES_.474
+_OBJC_SELECTOR_REFERENCES_.476
+_OBJC_CLASSLIST_REFERENCES_$_.477
+_OBJC_SELECTOR_REFERENCES_.479
+_OBJC_CLASSLIST_REFERENCES_$_.480
+_OBJC_SELECTOR_REFERENCES_.482
+_OBJC_SELECTOR_REFERENCES_.484
+_OBJC_SELECTOR_REFERENCES_.486
+_OBJC_SELECTOR_REFERENCES_.488
+_OBJC_SELECTOR_REFERENCES_.492
+_OBJC_SELECTOR_REFERENCES_.494
+_OBJC_SELECTOR_REFERENCES_.496
+_OBJC_SELECTOR_REFERENCES_.504
+_OBJC_SELECTOR_REFERENCES_.522
+_OBJC_CLASSLIST_REFERENCES_$_.523
+_OBJC_SELECTOR_REFERENCES_.525
+_OBJC_CLASSLIST_REFERENCES_$_.530
 _OBJC_SELECTOR_REFERENCES_.532
-_OBJC_SELECTOR_REFERENCES_.535
-_OBJC_SELECTOR_REFERENCES_.537
-_OBJC_SELECTOR_REFERENCES_.545
+_OBJC_SELECTOR_REFERENCES_.533
 _OBJC_SELECTOR_REFERENCES_.549
+_OBJC_SELECTOR_REFERENCES_.551
+_OBJC_SELECTOR_REFERENCES_.553
+_OBJC_SELECTOR_REFERENCES_.557
 __OBJC_$_CLASS_METHODS_BDCoreLocationRegionMonitoringSensor
 __OBJC_CLASS_PROTOCOLS_$_BDCoreLocationRegionMonitoringSensor
 __OBJC_METACLASS_RO_$_BDCoreLocationRegionMonitoringSensor
@@ -6593,50 +6621,51 @@ __OBJC_$_INSTANCE_METHODS_BDCoreLocationRegionMonitoringSensor
 __OBJC_$_INSTANCE_VARIABLES_BDCoreLocationRegionMonitoringSensor
 __OBJC_$_PROP_LIST_BDCoreLocationRegionMonitoringSensor
 __OBJC_CLASS_RO_$_BDCoreLocationRegionMonitoringSensor
-_OBJC_SELECTOR_REFERENCES_.592
-_OBJC_SELECTOR_REFERENCES_.594
-_OBJC_SELECTOR_REFERENCES_.596
-_OBJC_SELECTOR_REFERENCES_.598
 _OBJC_SELECTOR_REFERENCES_.600
 _OBJC_SELECTOR_REFERENCES_.602
 _OBJC_SELECTOR_REFERENCES_.604
-_OBJC_IVAR_$_BDCoreLocationBeaconSensor._locationManager
-_OBJC_CLASSLIST_REFERENCES_$_.610
+_OBJC_SELECTOR_REFERENCES_.606
+_OBJC_SELECTOR_REFERENCES_.608
+_OBJC_SELECTOR_REFERENCES_.610
 _OBJC_SELECTOR_REFERENCES_.612
+_OBJC_SELECTOR_REFERENCES_.614
+_OBJC_IVAR_$_BDCoreLocationBeaconSensor._locationManager
+_OBJC_CLASSLIST_REFERENCES_$_.620
+_OBJC_SELECTOR_REFERENCES_.622
 _OBJC_IVAR_$_BDCoreLocationBeaconSensor._beaconRegionCache
 _OBJC_IVAR_$_BDCoreLocationBeaconSensor._detectedBeaconRanges
 _OBJC_IVAR_$_BDCoreLocationBeaconSensor._monitoredBeaconRanges
 _OBJC_IVAR_$_BDCoreLocationBeaconSensor._logger
-_OBJC_SELECTOR_REFERENCES_.616
-_OBJC_SELECTOR_REFERENCES_.618
-_OBJC_SELECTOR_REFERENCES_.620
-_OBJC_SELECTOR_REFERENCES_.622
-_OBJC_CLASSLIST_REFERENCES_$_.623
-_OBJC_SELECTOR_REFERENCES_.625
-_OBJC_SELECTOR_REFERENCES_.629
-_OBJC_SELECTOR_REFERENCES_.631
-_OBJC_SELECTOR_REFERENCES_.633
+_OBJC_SELECTOR_REFERENCES_.626
+_OBJC_SELECTOR_REFERENCES_.628
+_OBJC_SELECTOR_REFERENCES_.630
+_OBJC_SELECTOR_REFERENCES_.632
+_OBJC_CLASSLIST_REFERENCES_$_.633
 _OBJC_SELECTOR_REFERENCES_.635
-_OBJC_SELECTOR_REFERENCES_.637
 _OBJC_SELECTOR_REFERENCES_.639
 _OBJC_SELECTOR_REFERENCES_.641
-_OBJC_SELECTOR_REFERENCES_.642
-_OBJC_SELECTOR_REFERENCES_.646
-_OBJC_SELECTOR_REFERENCES_.648
-_OBJC_SELECTOR_REFERENCES_.654
+_OBJC_SELECTOR_REFERENCES_.643
+_OBJC_SELECTOR_REFERENCES_.645
+_OBJC_SELECTOR_REFERENCES_.647
+_OBJC_SELECTOR_REFERENCES_.649
+_OBJC_SELECTOR_REFERENCES_.651
+_OBJC_SELECTOR_REFERENCES_.652
 _OBJC_SELECTOR_REFERENCES_.656
-_OBJC_SELECTOR_REFERENCES_.662
-_OBJC_SELECTOR_REFERENCES_.674
-_OBJC_SELECTOR_REFERENCES_.676
-_OBJC_CLASSLIST_REFERENCES_$_.679
-_OBJC_SELECTOR_REFERENCES_.681
-_OBJC_SELECTOR_REFERENCES_.683
-_OBJC_SELECTOR_REFERENCES_.685
+_OBJC_SELECTOR_REFERENCES_.658
+_OBJC_SELECTOR_REFERENCES_.664
+_OBJC_SELECTOR_REFERENCES_.666
+_OBJC_SELECTOR_REFERENCES_.672
+_OBJC_SELECTOR_REFERENCES_.684
+_OBJC_SELECTOR_REFERENCES_.686
+_OBJC_CLASSLIST_REFERENCES_$_.689
 _OBJC_SELECTOR_REFERENCES_.691
+_OBJC_SELECTOR_REFERENCES_.693
 _OBJC_SELECTOR_REFERENCES_.695
-_OBJC_SELECTOR_REFERENCES_.697
+_OBJC_SELECTOR_REFERENCES_.701
+_OBJC_SELECTOR_REFERENCES_.705
 _OBJC_SELECTOR_REFERENCES_.707
-_OBJC_SELECTOR_REFERENCES_.709
+_OBJC_SELECTOR_REFERENCES_.717
+_OBJC_SELECTOR_REFERENCES_.719
 __OBJC_$_CLASS_METHODS_BDCoreLocationBeaconSensor
 __OBJC_CLASS_PROTOCOLS_$_BDCoreLocationBeaconSensor
 __OBJC_METACLASS_RO_$_BDCoreLocationBeaconSensor
@@ -6644,46 +6673,45 @@ __OBJC_$_INSTANCE_METHODS_BDCoreLocationBeaconSensor
 __OBJC_$_INSTANCE_VARIABLES_BDCoreLocationBeaconSensor
 __OBJC_$_PROP_LIST_BDCoreLocationBeaconSensor
 __OBJC_CLASS_RO_$_BDCoreLocationBeaconSensor
-_OBJC_CLASSLIST_REFERENCES_$_.735
-_OBJC_CLASSLIST_REFERENCES_$_.736
-_OBJC_SELECTOR_REFERENCES_.742
-_OBJC_SELECTOR_REFERENCES_.748
-_OBJC_SELECTOR_REFERENCES_.750
+_OBJC_CLASSLIST_REFERENCES_$_.745
+_OBJC_CLASSLIST_REFERENCES_$_.746
 _OBJC_SELECTOR_REFERENCES_.752
-_OBJC_SELECTOR_REFERENCES_.754
-_OBJC_SELECTOR_REFERENCES_.755
-_OBJC_CLASSLIST_REFERENCES_$_.756
 _OBJC_SELECTOR_REFERENCES_.758
 _OBJC_SELECTOR_REFERENCES_.760
-_OBJC_CLASSLIST_REFERENCES_$_.761
-_OBJC_SELECTOR_REFERENCES_.763
+_OBJC_SELECTOR_REFERENCES_.762
+_OBJC_SELECTOR_REFERENCES_.764
 _OBJC_SELECTOR_REFERENCES_.765
-_OBJC_SELECTOR_REFERENCES_.769
+_OBJC_CLASSLIST_REFERENCES_$_.766
+_OBJC_SELECTOR_REFERENCES_.768
 _OBJC_SELECTOR_REFERENCES_.770
-_OBJC_SELECTOR_REFERENCES_.772
+_OBJC_CLASSLIST_REFERENCES_$_.771
 _OBJC_SELECTOR_REFERENCES_.773
-_OBJC_SELECTOR_REFERENCES_.777
+_OBJC_SELECTOR_REFERENCES_.775
 _OBJC_SELECTOR_REFERENCES_.779
+_OBJC_SELECTOR_REFERENCES_.780
+_OBJC_SELECTOR_REFERENCES_.782
 _OBJC_SELECTOR_REFERENCES_.783
-_OBJC_SELECTOR_REFERENCES_.785
-_OBJC_SELECTOR_REFERENCES_.786
-_OBJC_SELECTOR_REFERENCES_.788
+_OBJC_SELECTOR_REFERENCES_.787
 _OBJC_SELECTOR_REFERENCES_.789
-_OBJC_SELECTOR_REFERENCES_.790
-_OBJC_SELECTOR_REFERENCES_.792
-___block_descriptor_36_e4_20s24s28s_e5_v4?0l
 _OBJC_SELECTOR_REFERENCES_.793
-_OBJC_SELECTOR_REFERENCES_.794
-_OBJC_SELECTOR_REFERENCES_.796
+_OBJC_SELECTOR_REFERENCES_.795
 _OBJC_SELECTOR_REFERENCES_.797
 _OBJC_SELECTOR_REFERENCES_.798
-_OBJC_SELECTOR_REFERENCES_.800
-___block_descriptor_40_e4_20s24s28s_e5_v4?0l
+_OBJC_SELECTOR_REFERENCES_.799
 _OBJC_SELECTOR_REFERENCES_.801
+___block_descriptor_36_e4_20s24s28s_e5_v4?0l
 _OBJC_SELECTOR_REFERENCES_.802
-_OBJC_SELECTOR_REFERENCES_.804
-___block_descriptor_40_e4_20s24s28s32s_e5_v4?0l
+_OBJC_SELECTOR_REFERENCES_.803
+_OBJC_SELECTOR_REFERENCES_.805
 _OBJC_SELECTOR_REFERENCES_.806
+_OBJC_SELECTOR_REFERENCES_.807
+_OBJC_SELECTOR_REFERENCES_.809
+___block_descriptor_40_e4_20s24s28s_e5_v4?0l
+_OBJC_SELECTOR_REFERENCES_.810
+_OBJC_SELECTOR_REFERENCES_.811
+_OBJC_SELECTOR_REFERENCES_.813
+___block_descriptor_40_e4_20s24s28s32s_e5_v4?0l
+_OBJC_SELECTOR_REFERENCES_.815
 __OBJC_$_PROTOCOL_REFS_CLLocationManagerDelegate
 __OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_CLLocationManagerDelegate
 __OBJC_$_PROTOCOL_METHOD_TYPES_CLLocationManagerDelegate
@@ -6760,8 +6788,12 @@ _OBJC_IVAR_$_BDFenceCheckOutManager._regionMonitoringSensor
 _OBJC_IVAR_$_BDFenceCheckOutManager._logger
 _OBJC_IVAR_$_BDFenceCheckOutManager._hittingFencesAwaitingCheckOutObservation
 _OBJC_IVAR_$_BDFenceCheckOutManager._lastFiveEvaluationAccuracyCircles
+_OBJC_CLASSLIST_REFERENCES_$_.123
 _OBJC_IVAR_$_BDFenceCheckOutManager._locationObservation
-_OBJC_CLASSLIST_REFERENCES_$_.151
+_OBJC_CLASSLIST_REFERENCES_$_.152
+_OBJC_CLASSLIST_REFERENCES_$_.159
+_OBJC_CLASSLIST_REFERENCES_$_.170
+_OBJC_CLASSLIST_REFERENCES_$_.177
 __OBJC_CLASS_PROTOCOLS_$_BDFenceCheckOutManager
 __OBJC_METACLASS_RO_$_BDFenceCheckOutManager
 __OBJC_$_INSTANCE_METHODS_BDFenceCheckOutManager
@@ -6923,7 +6955,6 @@ __OBJC_PROTOCOL_REFERENCE_$_BDPNodeTypeAdapter
 __OBJC_PROTOCOL_REFERENCE_$_BDPNotationStructuringTypeAdapter
 _OBJC_IVAR_$_b4zP8KRAN0HN6jg3._notationStructureFactory
 _OBJC_IVAR_$_b4zP8KRAN0HN6jg3._mode
-_OBJC_CLASSLIST_REFERENCES_$_.130
 _OBJC_CLASSLIST_REFERENCES_$_.141
 _OBJC_CLASSLIST_REFERENCES_$_.144
 _OBJC_CLASSLIST_REFERENCES_$_.147
@@ -6932,10 +6963,8 @@ _OBJC_IVAR_$_b4zP8KRAN0HN6jg3._referenceCount
 _OBJC_IVAR_$_b4zP8KRAN0HN6jg3._platformTypeMapper
 __OBJC_PROTOCOL_REFERENCE_$_BDPReferencingTypeAdapter
 __OBJC_PROTOCOL_REFERENCE_$_BDPClassSubstitutingTypeAdapter
-_OBJC_CLASSLIST_REFERENCES_$_.201
 _OBJC_SELECTOR_REFERENCES_.203
 _OBJC_CLASSLIST_REFERENCES_$_.209
-_OBJC_SELECTOR_REFERENCES_.211
 __OBJC_CLASS_PROTOCOLS_$_b4zP8KRAN0HN6jg3
 __OBJC_METACLASS_RO_$_b4zP8KRAN0HN6jg3
 __OBJC_$_INSTANCE_METHODS_b4zP8KRAN0HN6jg3
@@ -7039,6 +7068,7 @@ _OBJC_CLASSLIST_REFERENCES_$_.129
 __OBJC_$_CATEGORY_INSTANCE_METHODS_BDTypeDescriptor_$_Class
 __OBJC_$_CATEGORY_BDTypeDescriptor_$_Class
 _BDTypeDescriptorFromClass.classMap
+_OBJC_CLASSLIST_REFERENCES_$_.134
 /Users/runner/work/point_sdk_ios/point_sdk_ios/Modules/BDCore/Lang/BDRuntime.m
 BDSwizzleMethod
 Modules/BDCore/Lang/BDRuntime.m
@@ -7147,10 +7177,7 @@ ___62-[BDFenceTracker enablementOfSpatialObjects:zCmAFwylyEm0ZTeV:]_block_invoke
 -[BDFenceTracker setIsRefreshPending:]
 -[BDFenceTracker .cxx_destruct]
 ___block_descriptor_24_e4_20s_e20_c12?0"BDFence"4^d8l
-_OBJC_CLASSLIST_REFERENCES_$_.100
 ___block_descriptor_24_e4_20s_e16_c8?0"BDFence"4l
-_OBJC_CLASSLIST_REFERENCES_$_.113
-_OBJC_CLASSLIST_REFERENCES_$_.136
 _OBJC_CLASSLIST_REFERENCES_$_.165
 _OBJC_CLASSLIST_REFERENCES_$_.183
 __OBJC_$_CLASS_METHODS_BDFenceTracker
@@ -7303,9 +7330,11 @@ ___42-[BDPolygonal enumerateVerticesWithBlock:]_block_invoke
 -[BDPolygonal boundingBox]
 -[BDPolygonal isClosed]
 -[BDPolygonal centroid]
+-[BDPolygonal geometryTypeString]
 -[BDPolygonal vertices]
 -[BDPolygonal setVertices:]
 -[BDPolygonal .cxx_destruct]
+_BDGeometryTypePolygon
 _OBJC_IVAR_$_BDPolygonal._polygonalImplementation
 _OBJC_IVAR_$_BDPolygonal._vertices
 ___block_descriptor_24_e4_20bs_e23_v16?0"BDPoint"4I8^c12l
@@ -7461,6 +7490,7 @@ Modules/BDSensors/Model/Sensor/Partial/BDAbstractSensor.h
 -[BDPointOverlayRendererFactory setTintColor:forSpatialObject:]
 -[BDPointOverlayRendererFactory .cxx_destruct]
 _sharedInstance
+_OBJC_CLASSLIST_REFERENCES_$_.122
 __OBJC_$_CLASS_METHODS_BDPointOverlayRendererFactory
 __OBJC_METACLASS_RO_$_BDPointOverlayRendererFactory
 __OBJC_$_INSTANCE_METHODS_BDPointOverlayRendererFactory
@@ -7788,6 +7818,7 @@ ___46-[BDNativeFenceTracker refreshMonitoredFences]_block_invoke_2
 -[BDNativeFenceTracker createRegionsOnTerminateOrResignActive:]
 -[BDNativeFenceTracker startObservingLocationUpdates]
 ___53-[BDNativeFenceTracker startObservingLocationUpdates]_block_invoke
+___53-[BDNativeFenceTracker startObservingLocationUpdates]_block_invoke_2
 -[BDNativeFenceTracker stopObservingLocationUpdates]
 -[BDNativeFenceTracker ruleSet]
 -[BDNativeFenceTracker setRuleSet:]
@@ -7826,11 +7857,13 @@ ___68-[BDNativeFenceTracker enablementOfSpatialObjects:zCmAFwylyEm0ZTeV:]_block_
 -[BDNativeFenceTracker setIsRefreshPending:]
 -[BDNativeFenceTracker deviceGeometry]
 -[BDNativeFenceTracker setDeviceGeometry:]
--[BDNativeFenceTracker locationAccuracy]
--[BDNativeFenceTracker setLocationAccuracy:]
+-[BDNativeFenceTracker lastLocationTimestamp]
+-[BDNativeFenceTracker setLastLocationTimestamp:]
 -[BDNativeFenceTracker .cxx_destruct]
+___block_descriptor_20_e16_c8?0"BDFence"4l
 ___block_descriptor_24_e4_20s_e33_c12?0"BDFence"4"NSDictionary"8l
-_OBJC_CLASSLIST_REFERENCES_$_.132
+_OBJC_CLASSLIST_REFERENCES_$_.172
+_OBJC_CLASSLIST_REFERENCES_$_.179
 __OBJC_$_CLASS_METHODS_BDNativeFenceTracker
 __OBJC_CLASS_PROTOCOLS_$_BDNativeFenceTracker
 __OBJC_METACLASS_RO_$_BDNativeFenceTracker
@@ -7838,6 +7871,7 @@ __OBJC_$_INSTANCE_METHODS_BDNativeFenceTracker
 _OBJC_IVAR_$_BDNativeFenceTracker._ruleSet
 _OBJC_IVAR_$_BDNativeFenceTracker._access
 _OBJC_IVAR_$_BDNativeFenceTracker._enabled
+_OBJC_IVAR_$_BDNativeFenceTracker._logger
 _OBJC_IVAR_$_BDNativeFenceTracker._isRefreshPending
 _OBJC_IVAR_$_BDNativeFenceTracker._fenceCollection
 _OBJC_IVAR_$_BDNativeFenceTracker._regionMonitoringSensor
@@ -7850,13 +7884,14 @@ _OBJC_IVAR_$_BDNativeFenceTracker._locationObservation
 _OBJC_IVAR_$_BDNativeFenceTracker._regionMonitoringSensorRequirementToken
 _OBJC_IVAR_$_BDNativeFenceTracker._locationSensorRequirementToken
 _OBJC_IVAR_$_BDNativeFenceTracker._deviceGeometry
-_OBJC_IVAR_$_BDNativeFenceTracker._locationAccuracy
+_OBJC_IVAR_$_BDNativeFenceTracker._lastLocationTimestamp
 __OBJC_$_INSTANCE_VARIABLES_BDNativeFenceTracker
 __OBJC_$_PROP_LIST_BDNativeFenceTracker
 __OBJC_CLASS_RO_$_BDNativeFenceTracker
 /Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Process/Tracker/BDNativeFenceTracker.m
 BDPointSDK/Process/Tracker/BDNativeFenceTracker.m
 __68-[BDNativeFenceTracker enablementOfSpatialObjects:zCmAFwylyEm0ZTeV:]_block_invoke
+__53-[BDNativeFenceTracker startObservingLocationUpdates]_block_invoke_2
 __53-[BDNativeFenceTracker startObservingLocationUpdates]_block_invoke
 __46-[BDNativeFenceTracker refreshMonitoredFences]_block_invoke_2
 __46-[BDNativeFenceTracker refreshMonitoredFences]_block_invoke
@@ -8127,9 +8162,9 @@ Modules/BDCore/Collection/NSHashTable+BDInitPersonalities.m
 -[BDZoneCheckInOutAction(Fire) firedByRuleEvaluator:fromRules:]
 ___63-[BDZoneCheckInOutAction(Fire) firedByRuleEvaluator:fromRules:]_block_invoke
 ___63-[BDZoneCheckInOutAction(Fire) firedByRuleEvaluator:fromRules:]_block_invoke.154
-_OBJC_CLASSLIST_REFERENCES_$_.91
-_OBJC_CLASSLIST_REFERENCES_$_.123
+_OBJC_CLASSLIST_REFERENCES_$_.104
 _OBJC_CLASSLIST_REFERENCES_$_.124
+_OBJC_CLASSLIST_REFERENCES_$_.151
 ___block_descriptor_28_e4_20s24s_e31_v8?0"NSManagedObjectContext"4l
 __OBJC_$_CATEGORY_INSTANCE_METHODS_BDZoneCheckInOutAction_$_Fire
 __OBJC_$_CATEGORY_BDZoneCheckInOutAction_$_Fire
@@ -8343,21 +8378,21 @@ ___swift_memcpy16_4
 _$sSo11sockaddr_inVwet
 _$sSo11sockaddr_inVwst
 _$sSo11sockaddr_inVMa
-_$sSo22CLLocationCoordinate2DVwCP
-_$sSo22CLLocationCoordinate2DVwet
-_$sSo22CLLocationCoordinate2DVwst
-_$sSo22CLLocationCoordinate2DVMa
 _$sSo9NSDecimalawCP
 ___swift_memcpy20_2
 _$sSo9NSDecimalawet
 _$sSo9NSDecimalawst
 _$sSo9NSDecimalaMa
+_$sSo22CLLocationCoordinate2DVwCP
+_$sSo22CLLocationCoordinate2DVwet
+_$sSo22CLLocationCoordinate2DVwst
+_$sSo22CLLocationCoordinate2DVMa
 _$sSo11CLProximityVMa
 _$sSo19UIDeviceOrientationVMa
+_$sSo20UIDeviceBatteryStateVMa
 _$sSo12CFBooleanRefaMa
 _$sSo11CFStringRefaMa
 _$sSo21CLAuthorizationStatusVMa
-_$sSo20UIDeviceBatteryStateVMa
 _$sSo26UIBackgroundTaskIdentifieraMa
 _$sSo8sockaddrVwCP
 ___swift_memcpy16_1
@@ -8543,6 +8578,8 @@ ___swift_allocate_boxed_opaque_existential_1
 _block_copy_helper
 _block_destroy_helper
 _$s10BDPointSDK9PointAPIsC15getRemoteConfig9projectId13retryStrategy19observeReachability0J9DelaySeed10completionySS_AA05RetryK0OSbSdys5Error_pSgctFZAA7PromiseCyAA0C11APIResponseOyAA0F13ConfigurationCGGyKcfU_AUs5Int16VcfU_TA
+_$s10Foundation4DateVACs23CustomStringConvertibleAAWl
+_$ss26DefaultStringInterpolationVWOh
 _$s10BDPointSDK9PointAPIsC15getRemoteConfig9projectId13retryStrategy19observeReachability0J9DelaySeed10completionySS_AA05RetryK0OSbSdys5Error_pSgctFZAA7PromiseCyAA0C11APIResponseOyAA0F13ConfigurationCGGyKcfU_AUs5Int16VcfU_AUyt_tcfU_TA
 _$s10BDPointSDK7PromiseCyAA16PointAPIResponseOyAA19RemoteConfigurationCGGs5Error_pIegozo_ytAIsAJ_pIegnozo_TRTA
 _$s10BDPointSDK15GlobalConfigUrlVMa
@@ -8551,7 +8588,6 @@ _$s10BDPointSDK16PointAPIResponseOyAA15GlobalConfigUrlVGWOh
 _$s10BDPointSDK15GlobalConfigUrlVWOb
 _$sSo32BDHTTPTransportServerAddressImplCMa
 _$sSSWOh
-_$ss26DefaultStringInterpolationVWOh
 _$s10BDPointSDK15GlobalConfigUrlVWOh
 _$sSo15NSExceptionNameaMa
 _$sSo15BDFenceAccuracyVMa
@@ -8655,17 +8691,18 @@ _$s10BDPointSDK17PointSDKConstantsC18useCaseTypeDefault_Wz
 _$s10BDPointSDK17PointSDKConstantsC17useCaseTypeRetail_Wz
 _$s10BDPointSDK17PointSDKConstantsC16defaultGlobalUrl_Wz
 _$s10BDPointSDK17PointSDKConstantsC47defaultAccuracyModifierFocalDistanceCoefficient_Wz
-_$s10BDPointSDK17PointSDKConstantsC49defaultNativeFenceTrackerCheckInAccuracyThreshold_Wz
 _$s10BDPointSDK17PointSDKConstantsC47defaultFenceTrackerWifiAccuracyTriggerThreshold_Wz
 _$s10BDPointSDK17PointSDKConstantsC46defaultFenceTrackerGpsAccuracyTriggerThreshold_Wz
 _$s10BDPointSDK17PointSDKConstantsC47defaultFenceTrackerGpsAccuracyTrackingThreshold_Wz
 _$s10BDPointSDK17PointSDKConstantsC35defaultFenceTrackerCheckoutDistance_Wz
-_$s10BDPointSDK17PointSDKConstantsC41defaultFenceTrackerNativeCheckoutDistance_Wz
 _$s10BDPointSDK17PointSDKConstantsC47defaultFenceTrackerSignificantMovementThreshold_Wz
 _$s10BDPointSDK17PointSDKConstantsC026defaultFenceTrackerFocusedF20ReevaluationDistance_Wz
 _$s10BDPointSDK17PointSDKConstantsC46defaultFenceTrackerHittingReevaluationDistance_Wz
 _$s10BDPointSDK17PointSDKConstantsC045defaultFenceTrackerMinAccuracyRequiredForHighiF0_Wz
 _$s10BDPointSDK17PointSDKConstantsC031defaultFenceTrackerHighAccuracyF13SizeThreshold_Wz
+_$s10BDPointSDK17PointSDKConstantsC49defaultNativeFenceTrackerCheckinAccuracyThreshold_Wz
+_$s10BDPointSDK17PointSDKConstantsC41defaultNativeFenceTrackerCheckoutDistance_Wz
+_$s10BDPointSDK17PointSDKConstantsC50defaultNativeFenceTrackerMinLocationUpdateInterval_Wz
 _$s10BDPointSDK17PointSDKConstantsC40defaultBeaconTrackerReevaluationDistance_Wz
 _$s10BDPointSDK17PointSDKConstantsC41defaultBeaconTrackerActivationCoefficient_Wz
 _$s10BDPointSDK17PointSDKConstantsC38defaultBeaconTrackerActivationDistance_Wz
@@ -8699,6 +8736,7 @@ _$s10BDPointSDK17PointSDKConstantsC33defaultRemoteConfigRetryDelaySeed_Wz
 _$s10BDPointSDK14SqliteFilename33_A8E36B7BFFFC818460CDF38D27FD940ELL_Wz
 _$s10BDPointSDK8readLock33_2202A14A93CCB722B5C7657294F0B6B9LL_Wz
 _$s10BDPointSDK19managedObjectLogger_Wz
+_$s10BDPointSDK10LogFactoryC22BDLogFileCSVDefaultKey_Wz
 _$s10BDPointSDK10LogCentralC14sharedInstance_Wz
 _$s10BDPointSDK18defaultEndpointURL_Wz
 _got.$ss5ErrorMp
@@ -8831,20 +8869,23 @@ _$sSo11sockaddr_inVWV
 _$sSo11sockaddr_inVMn
 _$sSo11sockaddr_inVMf
 _$sSo11sockaddr_inVML
-_$sSo22CLLocationCoordinate2DVWV
-_$sSo22CLLocationCoordinate2DVMn
-_$sSo22CLLocationCoordinate2DVMf
-_$sSo22CLLocationCoordinate2DVML
 _$sSo9NSDecimalaWV
 _$sSo9NSDecimalaMn
 _$sSo9NSDecimalaMf
 _$sSo9NSDecimalaML
+_$sSo22CLLocationCoordinate2DVWV
+_$sSo22CLLocationCoordinate2DVMn
+_$sSo22CLLocationCoordinate2DVMf
+_$sSo22CLLocationCoordinate2DVML
 _$sSo11CLProximityVMn
 _$sSo11CLProximityVMf
 _$sSo11CLProximityVML
 _$sSo19UIDeviceOrientationVMn
 _$sSo19UIDeviceOrientationVMf
 _$sSo19UIDeviceOrientationVML
+_$sSo20UIDeviceBatteryStateVMn
+_$sSo20UIDeviceBatteryStateVMf
+_$sSo20UIDeviceBatteryStateVML
 _$sSo12CFBooleanRefaMn
 _$sSo12CFBooleanRefaMf
 _$sSo12CFBooleanRefaML
@@ -8854,9 +8895,6 @@ _$sSo11CFStringRefaML
 _$sSo21CLAuthorizationStatusVMn
 _$sSo21CLAuthorizationStatusVMf
 _$sSo21CLAuthorizationStatusVML
-_$sSo20UIDeviceBatteryStateVMn
-_$sSo20UIDeviceBatteryStateVMf
-_$sSo20UIDeviceBatteryStateVML
 _$sSo26UIBackgroundTaskIdentifieraMn
 _$sSo26UIBackgroundTaskIdentifieraMf
 _$sSo26UIBackgroundTaskIdentifieraML
@@ -8877,14 +8915,14 @@ _symbolic _____ So19UIDeviceOrientationV
 _$sSo19UIDeviceOrientationVMB
 _symbolic _____ So11CLProximityV
 _$sSo11CLProximityVMB
+_symbolic _____ So22CLLocationCoordinate2DV
+_$sSo22CLLocationCoordinate2DVMB
+_$sSo22CLLocationCoordinate2DVMF
 _symbolic _____ So9NSDecimala
 _$sSo9NSDecimalaMB
 _got.$ss6UInt16VMn
 _symbolic ______A7At s6UInt16V
 _$sSo9NSDecimalaMF
-_symbolic _____ So22CLLocationCoordinate2DV
-_$sSo22CLLocationCoordinate2DVMB
-_$sSo22CLLocationCoordinate2DVMF
 _symbolic _____ So11sockaddr_inV
 _$sSo11sockaddr_inVMB
 _symbolic _____ s6UInt16V
@@ -9037,6 +9075,7 @@ _symbolic SS_ypt
 _$sSS_yptMD
 _$s10BDPointSDK14CSVLogListenerVAA03LogD0AAWP
 _block_descriptor
+_$s10Foundation4DateVACs23CustomStringConvertibleAAWL
 _got.$s10BDPointSDK7PromiseCMn
 _symbolic _____y_____y_____GG______pIegozo_ 10BDPointSDK7PromiseC AA16PointAPIResponseO AA19RemoteConfigurationC s5ErrorP
 _got.$s10Foundation3URLVMn
@@ -9384,7 +9423,6 @@ $sSo20NSDataReadingOptionsVMa
 $sSo15BDFenceAccuracyVMa
 $sSo15NSExceptionNameaMa
 $s10BDPointSDK15GlobalConfigUrlVWOh
-$ss26DefaultStringInterpolationVWOh
 $sSSWOh
 $sSo32BDHTTPTransportServerAddressImplCMa
 $s10BDPointSDK15GlobalConfigUrlVWOb
@@ -9394,6 +9432,8 @@ $s10BDPointSDK7PromiseCyAA16PointAPIResponseOyAA19RemoteConfigurationCGGs5Error_
 objectdestroy.40
 $s10BDPointSDK9PointAPIsC15getRemoteConfig9projectId13retryStrategy19observeReachability0J9DelaySeed10completionySS_AA05RetryK0OSbSdys5Error_pSgctFZAA7PromiseCyAA0C11APIResponseOyAA0F13ConfigurationCGGyKcfU_AUs5Int16VcfU_AUyt_tcfU_TA
 objectdestroy.37
+$ss26DefaultStringInterpolationVWOh
+$s10Foundation4DateVACs23CustomStringConvertibleAAWl
 $s10BDPointSDK9PointAPIsC15getRemoteConfig9projectId13retryStrategy19observeReachability0J9DelaySeed10completionySS_AA05RetryK0OSbSdys5Error_pSgctFZAA7PromiseCyAA0C11APIResponseOyAA0F13ConfigurationCGGyKcfU_AUs5Int16VcfU_TA
 objectdestroy.34
 block_destroy_helper
@@ -9458,21 +9498,21 @@ $sSo8sockaddrVwet
 __swift_memcpy16_1
 $sSo8sockaddrVwCP
 $sSo26UIBackgroundTaskIdentifieraMa
-$sSo20UIDeviceBatteryStateVMa
 $sSo21CLAuthorizationStatusVMa
 $sSo11CFStringRefaMa
 $sSo12CFBooleanRefaMa
+$sSo20UIDeviceBatteryStateVMa
 $sSo19UIDeviceOrientationVMa
 $sSo11CLProximityVMa
+$sSo22CLLocationCoordinate2DVMa
+$sSo22CLLocationCoordinate2DVwst
+$sSo22CLLocationCoordinate2DVwet
+$sSo22CLLocationCoordinate2DVwCP
 $sSo9NSDecimalaMa
 $sSo9NSDecimalawst
 $sSo9NSDecimalawet
 __swift_memcpy20_2
 $sSo9NSDecimalawCP
-$sSo22CLLocationCoordinate2DVMa
-$sSo22CLLocationCoordinate2DVwst
-$sSo22CLLocationCoordinate2DVwet
-$sSo22CLLocationCoordinate2DVwCP
 $sSo11sockaddr_inVMa
 $sSo11sockaddr_inVwst
 $sSo11sockaddr_inVwet
@@ -12054,6 +12094,10 @@ _$s10BDPointSDK19RemoteConfigurationC40fenceTrackerWifiAccuracyTriggerThresholdS
 _$s10BDPointSDK19RemoteConfigurationC39fenceTrackerGpsAccuracyTriggerThresholdSdvgTo
 _$s10BDPointSDK19RemoteConfigurationC28fenceTrackerCheckoutDistanceSdvgTo
 _$s10BDPointSDK19RemoteConfigurationC40fenceTrackerGpsAccuracyTrackingThresholdSdvgTo
+_$s10BDPointSDK19RemoteConfigurationC42fenceTrackerNativeCheckinAccuracyThresholdSdvgTo
+_$s10BDPointSDK19RemoteConfigurationC34fenceTrackerNativeCheckoutDistanceSdvgTo
+_$s10BDPointSDK19RemoteConfigurationC43fenceTrackerNativeMinLocationUpdateIntervalSdvgTo
+_$s10BDPointSDK19RemoteConfigurationC20maxMonitoringRegionss5Int32VvgTo
 _$s10BDPointSDK19RemoteConfigurationC40accuracyModifierFocalDistanceCoefficientSdvgTo
 _$s10BDPointSDK19RemoteConfigurationC33beaconTrackerReevaluationDistanceSdvgTo
 _$s10BDPointSDK19RemoteConfigurationC34beaconTrackerActivationCoefficientSdvgTo
@@ -12218,6 +12262,10 @@ beaconTrackerActivationDistance.get
 beaconTrackerActivationCoefficient.get
 beaconTrackerReevaluationDistance.get
 accuracyModifierFocalDistanceCoefficient.get
+maxMonitoringRegions.get
+fenceTrackerNativeMinLocationUpdateInterval.get
+fenceTrackerNativeCheckoutDistance.get
+fenceTrackerNativeCheckinAccuracyThreshold.get
 fenceTrackerGpsAccuracyTrackingThreshold.get
 fenceTrackerCheckoutDistance.get
 fenceTrackerGpsAccuracyTriggerThreshold.get
@@ -15306,7 +15354,9 @@ _$sSo28NSPersistentStoreDescriptionCs5Error_pSgIeggg_ABSo7NSErrorCSgIeyByy_TR
 _$s10BDPointSDK14DataControllerC19persistentContainerSo012NSPersistentF0CvM.resume.0
 _$s10BDPointSDK14DataControllerCSo21NSPersistentContainerCIetMAgYl_TC
 _$s10BDPointSDK14DataControllerC18managedObjectModelSo09NSManagedfG0Cvg
-_$s10BDPointSDK14DataControllerC10clearStore010persistentF11Coordinator8storeUrlySo012NSPersistentfH0C_10Foundation3URLVtKF
+_$s10BDPointSDK14DataControllerC10clearStore010persistentF11Coordinator8storeUrl0E5ErrorySo012NSPersistentfH0C_10Foundation3URLVs0K0_pSgztF
+_$s10BDPointSDK14DataControllerC12destroyStore010persistentF11Coordinator8storeUrlySo012NSPersistentfH0C_10Foundation3URLVtKF
+_$s10BDPointSDK14DataControllerC8addStore010persistentF11Coordinator8storeUrlySo012NSPersistentfH0C_10Foundation3URLVtKF
 _$s10BDPointSDK14DataControllerCACycfcTo
 _$s10BDPointSDK14DataControllerCfETo
 _$s10BDPointSDK14DataControllerCAA0cD12CRUDProtocolA2aDP6insert6object10completionyqd___ys6ResultOyyts5Error_pGctAA11PersistableRd__lFTW
@@ -15438,7 +15488,9 @@ _$s10BDPointSDK14DataControllerC6exists6object10completionyx_ys6ResultOyyts5Erro
 _$s10BDPointSDK14DataControllerC6delete6object10completionyx_ys6ResultOyyts5Error_pGctAA11PersistableRzlFTq
 _$s10BDPointSDK14DataControllerC6delete7objects10completionySayxG_ys6ResultOyyts5Error_pGctAA11PersistableRzlFTq
 _$s10BDPointSDK14DataControllerC18managedObjectModelSo09NSManagedfG0CvgTq
-_$s10BDPointSDK14DataControllerC10clearStore010persistentF11Coordinator8storeUrlySo012NSPersistentfH0C_10Foundation3URLVtKFTq
+_$s10BDPointSDK14DataControllerC10clearStore010persistentF11Coordinator8storeUrl0E5ErrorySo012NSPersistentfH0C_10Foundation3URLVs0K0_pSgztFTq
+_$s10BDPointSDK14DataControllerC12destroyStore010persistentF11Coordinator8storeUrlySo012NSPersistentfH0C_10Foundation3URLVtKFTq
+_$s10BDPointSDK14DataControllerC8addStore010persistentF11Coordinator8storeUrlySo012NSPersistentfH0C_10Foundation3URLVtKFTq
 -private-discriminator _F8CD54625127EAB858782FF19BBCE596
 /Users/runner/work/point_sdk_ios/point_sdk_ios/Modules/BDCore-Persist-SQLite/Process/DataController.swift
 $s10Foundation3URLVSgWOb
@@ -15499,6 +15551,8 @@ exists
 fetch
 $s10BDPointSDK14DataControllerCfETo
 $s10BDPointSDK14DataControllerCMa
+addStore
+destroyStore
 clearStore
 managedObjectModel.get
 persistentContainer.modify
@@ -18256,8 +18310,6 @@ _$s10BDPointSDK17PointSDKConstantsC16defaultGlobalUrl_WZ
 _$s10BDPointSDK17PointSDKConstantsC16defaultGlobalUrlSSvgZTo
 _$s10BDPointSDK17PointSDKConstantsC47defaultAccuracyModifierFocalDistanceCoefficient_WZ
 _$s10BDPointSDK17PointSDKConstantsC47defaultAccuracyModifierFocalDistanceCoefficientSdvgZTo
-_$s10BDPointSDK17PointSDKConstantsC49defaultNativeFenceTrackerCheckInAccuracyThreshold_WZ
-_$s10BDPointSDK17PointSDKConstantsC49defaultNativeFenceTrackerCheckInAccuracyThresholdSdvgZTo
 _$s10BDPointSDK17PointSDKConstantsC47defaultFenceTrackerWifiAccuracyTriggerThreshold_WZ
 _$s10BDPointSDK17PointSDKConstantsC47defaultFenceTrackerWifiAccuracyTriggerThresholdSdvgZTo
 _$s10BDPointSDK17PointSDKConstantsC46defaultFenceTrackerGpsAccuracyTriggerThreshold_WZ
@@ -18266,8 +18318,6 @@ _$s10BDPointSDK17PointSDKConstantsC47defaultFenceTrackerGpsAccuracyTrackingThres
 _$s10BDPointSDK17PointSDKConstantsC47defaultFenceTrackerGpsAccuracyTrackingThresholdSdvgZTo
 _$s10BDPointSDK17PointSDKConstantsC35defaultFenceTrackerCheckoutDistance_WZ
 _$s10BDPointSDK17PointSDKConstantsC35defaultFenceTrackerCheckoutDistanceSdvgZTo
-_$s10BDPointSDK17PointSDKConstantsC41defaultFenceTrackerNativeCheckoutDistance_WZ
-_$s10BDPointSDK17PointSDKConstantsC41defaultFenceTrackerNativeCheckoutDistanceSdvgZTo
 _$s10BDPointSDK17PointSDKConstantsC47defaultFenceTrackerSignificantMovementThreshold_WZ
 _$s10BDPointSDK17PointSDKConstantsC47defaultFenceTrackerSignificantMovementThresholdSdvgZTo
 _$s10BDPointSDK17PointSDKConstantsC026defaultFenceTrackerFocusedF20ReevaluationDistance_WZ
@@ -18278,6 +18328,12 @@ _$s10BDPointSDK17PointSDKConstantsC045defaultFenceTrackerMinAccuracyRequiredForH
 _$s10BDPointSDK17PointSDKConstantsC045defaultFenceTrackerMinAccuracyRequiredForHighiF0SdvgZTo
 _$s10BDPointSDK17PointSDKConstantsC031defaultFenceTrackerHighAccuracyF13SizeThreshold_WZ
 _$s10BDPointSDK17PointSDKConstantsC031defaultFenceTrackerHighAccuracyF13SizeThresholdSdvgZTo
+_$s10BDPointSDK17PointSDKConstantsC49defaultNativeFenceTrackerCheckinAccuracyThreshold_WZ
+_$s10BDPointSDK17PointSDKConstantsC49defaultNativeFenceTrackerCheckinAccuracyThresholdSdvgZTo
+_$s10BDPointSDK17PointSDKConstantsC41defaultNativeFenceTrackerCheckoutDistance_WZ
+_$s10BDPointSDK17PointSDKConstantsC41defaultNativeFenceTrackerCheckoutDistanceSdvgZTo
+_$s10BDPointSDK17PointSDKConstantsC50defaultNativeFenceTrackerMinLocationUpdateInterval_WZ
+_$s10BDPointSDK17PointSDKConstantsC50defaultNativeFenceTrackerMinLocationUpdateIntervalSdvgZTo
 _$s10BDPointSDK17PointSDKConstantsC40defaultBeaconTrackerReevaluationDistance_WZ
 _$s10BDPointSDK17PointSDKConstantsC40defaultBeaconTrackerReevaluationDistanceSdvgZTo
 _$s10BDPointSDK17PointSDKConstantsC41defaultBeaconTrackerActivationCoefficient_WZ
@@ -18414,6 +18470,12 @@ defaultBeaconTrackerActivationCoefficient.get
 $s10BDPointSDK17PointSDKConstantsC41defaultBeaconTrackerActivationCoefficient_WZ
 defaultBeaconTrackerReevaluationDistance.get
 $s10BDPointSDK17PointSDKConstantsC40defaultBeaconTrackerReevaluationDistance_WZ
+defaultNativeFenceTrackerMinLocationUpdateInterval.get
+$s10BDPointSDK17PointSDKConstantsC50defaultNativeFenceTrackerMinLocationUpdateInterval_WZ
+defaultNativeFenceTrackerCheckoutDistance.get
+$s10BDPointSDK17PointSDKConstantsC41defaultNativeFenceTrackerCheckoutDistance_WZ
+defaultNativeFenceTrackerCheckinAccuracyThreshold.get
+$s10BDPointSDK17PointSDKConstantsC49defaultNativeFenceTrackerCheckinAccuracyThreshold_WZ
 defaultFenceTrackerHighAccuracyFenceSizeThreshold.get
 $s10BDPointSDK17PointSDKConstantsC031defaultFenceTrackerHighAccuracyF13SizeThresholdSdvau
 $s10BDPointSDK17PointSDKConstantsC031defaultFenceTrackerHighAccuracyF13SizeThreshold_WZ
@@ -18429,9 +18491,6 @@ $s10BDPointSDK17PointSDKConstantsC026defaultFenceTrackerFocusedF20ReevaluationDi
 defaultFenceTrackerSignificantMovementThreshold.get
 $s10BDPointSDK17PointSDKConstantsC47defaultFenceTrackerSignificantMovementThresholdSdvau
 $s10BDPointSDK17PointSDKConstantsC47defaultFenceTrackerSignificantMovementThreshold_WZ
-defaultFenceTrackerNativeCheckoutDistance.get
-$s10BDPointSDK17PointSDKConstantsC41defaultFenceTrackerNativeCheckoutDistanceSdvau
-$s10BDPointSDK17PointSDKConstantsC41defaultFenceTrackerNativeCheckoutDistance_WZ
 defaultFenceTrackerCheckoutDistance.get
 $s10BDPointSDK17PointSDKConstantsC35defaultFenceTrackerCheckoutDistance_WZ
 defaultFenceTrackerGpsAccuracyTrackingThreshold.get
@@ -18440,9 +18499,6 @@ defaultFenceTrackerGpsAccuracyTriggerThreshold.get
 $s10BDPointSDK17PointSDKConstantsC46defaultFenceTrackerGpsAccuracyTriggerThreshold_WZ
 defaultFenceTrackerWifiAccuracyTriggerThreshold.get
 $s10BDPointSDK17PointSDKConstantsC47defaultFenceTrackerWifiAccuracyTriggerThreshold_WZ
-defaultNativeFenceTrackerCheckInAccuracyThreshold.get
-$s10BDPointSDK17PointSDKConstantsC49defaultNativeFenceTrackerCheckInAccuracyThresholdSdvau
-$s10BDPointSDK17PointSDKConstantsC49defaultNativeFenceTrackerCheckInAccuracyThreshold_WZ
 defaultAccuracyModifierFocalDistanceCoefficient.get
 $s10BDPointSDK17PointSDKConstantsC47defaultAccuracyModifierFocalDistanceCoefficient_WZ
 defaultGlobalUrl.get
@@ -18470,7 +18526,6 @@ defaultDeviceExitRegionRadius.get
 $s10BDPointSDK17PointSDKConstantsC29defaultDeviceExitRegionRadiusSdvau
 $s10BDPointSDK17PointSDKConstantsC29defaultDeviceExitRegionRadius_WZ
 defaultMaxMonitoringRegions.get
-$s10BDPointSDK17PointSDKConstantsC27defaultMaxMonitoringRegionss5Int32Vvau
 $s10BDPointSDK17PointSDKConstantsC27defaultMaxMonitoringRegions_WZ
 bluedotFarthestExitRegionIdentifier.get
 $s10BDPointSDK17PointSDKConstantsC35bluedotFarthestExitRegionIdentifierSSvau
@@ -18512,6 +18567,10 @@ $s10BDPointSDK17PointSDKConstantsC38defaultBeaconTrackerActivationDistanceSdvau
 $s10BDPointSDK17PointSDKConstantsC41defaultBeaconTrackerActivationCoefficientSdvau
 $s10BDPointSDK17PointSDKConstantsC40defaultBeaconTrackerReevaluationDistanceSdvau
 $s10BDPointSDK17PointSDKConstantsC47defaultAccuracyModifierFocalDistanceCoefficientSdvau
+$s10BDPointSDK17PointSDKConstantsC27defaultMaxMonitoringRegionss5Int32Vvau
+$s10BDPointSDK17PointSDKConstantsC50defaultNativeFenceTrackerMinLocationUpdateIntervalSdvau
+$s10BDPointSDK17PointSDKConstantsC41defaultNativeFenceTrackerCheckoutDistanceSdvau
+$s10BDPointSDK17PointSDKConstantsC49defaultNativeFenceTrackerCheckinAccuracyThresholdSdvau
 $s10BDPointSDK17PointSDKConstantsC47defaultFenceTrackerGpsAccuracyTrackingThresholdSdvau
 $s10BDPointSDK17PointSDKConstantsC35defaultFenceTrackerCheckoutDistanceSdvau
 $s10BDPointSDK17PointSDKConstantsC46defaultFenceTrackerGpsAccuracyTriggerThresholdSdvau
@@ -20835,9 +20894,6 @@ _$s10BDPointSDK12KeychainKeysOACSYAAWl
 _$sSo6NSLockCMa
 _$sSo6NSLockCABycfcTO
 _$s10BDPointSDK8readLock33_2202A14A93CCB722B5C7657294F0B6B9LLSo6NSLockCvp
-_got.$sSo12CFBooleanRefaMn
-_symbolic _____Sg So12CFBooleanRefa
-_$sSo12CFBooleanRefaSgMD
 _symbolic yXlSg
 _$syXlSgMD
 _$s10BDPointSDK8KeychainC6loggerAA6Logger_pvpWvd
@@ -21195,6 +21251,8 @@ _$sSo10CLLocationC10BDPointSDKE18LocationDetailsKeyOs23CustomStringConvertibleAC
 _$sSo10CLLocationC10BDPointSDKE18LocationDetailsKeyOAEs06CodingF0ACWl
 _$sSo10CLLocationCSE10BDPointSDKSE6encode2toys7Encoder_p_tKFTW
 _$sSo10CLLocationC10BDPointSDKE8locationABSo10BDLocationC_tcfcTo
+_$sSo22CLLocationCoordinate2DVSQ10BDPointSDKSQ2eeoiySbx_xtFZTW
+_$sSo16CLCircularRegionC10BDPointSDKE017isEqualToCircularB0ySbABFTo
 _$sSo10CLLocationC10BDPointSDKE18LocationDetailsKeyOwet
 _$sSo10CLLocationC10BDPointSDKE18LocationDetailsKeyOwst
 _$sSo10CLLocationC10BDPointSDKE18LocationDetailsKeyOwug
@@ -21212,6 +21270,7 @@ _symbolic _____y_____G s22KeyedEncodingContainerV So10CLLocationC10BDPointSDKE18
 _$ss22KeyedEncodingContainerVySo10CLLocationC10BDPointSDKE18LocationDetailsKeyOGMD
 _$sSo10CLLocationC10BDPointSDKE18LocationDetailsKeyOAEs06CodingF0ACWL
 _$sSo10CLLocationCSE10BDPointSDKMcMK
+_$sSo22CLLocationCoordinate2DVSQ10BDPointSDKMcMK
 _$sSo10CLLocationC10BDPointSDKE18LocationDetailsKeyOWV
 _$sSo10CLLocationC10BDPointSDKEMXE
 _$sSo10CLLocationC10BDPointSDKE18LocationDetailsKeyOMn
@@ -21220,6 +21279,8 @@ _symbolic _____ So10CLLocationC10BDPointSDKE18LocationDetailsKeyO
 _$sSo10CLLocationC10BDPointSDKE18LocationDetailsKeyOMF
 __CATEGORY_INSTANCE_METHODS_CLLocation_$_BDPointSDK
 __CATEGORY_CLLocation_$_BDPointSDK
+__CATEGORY_INSTANCE_METHODS_CLCircularRegion_$_BDPointSDK
+__CATEGORY_CLCircularRegion_$_BDPointSDK
 _$sSo10CLLocationC10BDPointSDKE18LocationDetailsKeyOs23CustomStringConvertibleACMcMK
 _$sSo10CLLocationC10BDPointSDKE18LocationDetailsKeyOs23CustomStringConvertibleACMc
 _$sSo10CLLocationC10BDPointSDKE18LocationDetailsKeyOs28CustomDebugStringConvertibleACMcMK
@@ -21255,6 +21316,7 @@ $sSo10CLLocationC10BDPointSDKE18LocationDetailsKeyOwup
 $sSo10CLLocationC10BDPointSDKE18LocationDetailsKeyOwug
 $sSo10CLLocationC10BDPointSDKE18LocationDetailsKeyOwst
 $sSo10CLLocationC10BDPointSDKE18LocationDetailsKeyOwet
+isEqualToCircularRegion
 $sSo10CLLocationC10BDPointSDKE18LocationDetailsKeyOAEs06CodingF0ACWl
 _$s10BDPointSDK19TravelPathConditionVwCP
 _$s10BDPointSDK19TravelPathConditionVwet
@@ -21401,6 +21463,8 @@ $s10BDPointSDK14ZoneActionTypeOwst
 $s10BDPointSDK14ZoneActionTypeOwet
 /Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/Support/Extensions/ArrayExtensions.swift
 _$s10BDPointSDK12ScopedLoggerCMa
+_$s10BDPointSDK10LogFactoryC22BDLogFileCSVDefaultKey_WZ
+_$s10BDPointSDK10LogFactoryC22BDLogFileCSVDefaultKeySSvgZTo
 _$s10BDPointSDK12ScopedLoggerCyACSScfC
 _$s10BDPointSDK10LogFactoryC6createyAA6Logger_pSSFZTo
 _$s10BDPointSDK16exceptionHandler0C0ySo11NSExceptionC_tFTo
@@ -21409,6 +21473,7 @@ _$s10BDPointSDK13signalHandler0C0ys5Int32V_tFTo
 _$s10BDPointSDK13signalHandler0C0ys5Int32V_tF
 _$s10BDPointSDK10LogFactoryC26installGlobalErrorHandlersyyFZTo
 _$s10BDPointSDK10LogFactoryCACycfcTo
+_$s10BDPointSDK10LogFactoryCfETo
 _$s10BDPointSDK8LogLevelOSQAASQ2eeoiySbx_xtFZTW
 _$s10BDPointSDK8LogLevelOSHAASH9hashValueSivgTW
 _$s10BDPointSDK8LogLevelOSHAASH4hash4intoys6HasherVz_tFTW
@@ -21531,6 +21596,7 @@ _$s10BDPointSDK8LogLevelOSYAAMcMK
 _symbolic $s10BDPointSDK6LoggerP
 _$s10BDPointSDK6Logger_pMF
 __CLASS_METHODS__TtC10BDPointSDK10LogFactory
+__CLASS_PROPERTIES__TtC10BDPointSDK10LogFactory
 __METACLASS_DATA__TtC10BDPointSDK10LogFactory
 __INSTANCE_METHODS__TtC10BDPointSDK10LogFactory
 __DATA__TtC10BDPointSDK10LogFactory
@@ -21692,10 +21758,14 @@ scope.get
 level.get
 timestamp.get
 shortString.get
+$s10BDPointSDK10LogFactoryCfETo
 installGlobalErrorHandlers
 signalHandler
 exceptionHandler
 create
+BDLogFileCSVDefaultKey.get
+$s10BDPointSDK10LogFactoryC22BDLogFileCSVDefaultKeySSvau
+$s10BDPointSDK10LogFactoryC22BDLogFileCSVDefaultKey_WZ
 replacingOccurrences
 removeListener
 addListener
@@ -21858,7 +21928,6 @@ _$s10BDPointSDK4PageVWOb
 _$s10BDPointSDK4PageVSgWOc
 _$s10BDPointSDK4PageVSgWOh
 _$s10BDPointSDK10PaginationC20scheduleRuleDownload33_A084816012BB091D2E49A8D9B8983F27LLyyFyycfU_TA
-_$s10Foundation4DateVACs23CustomStringConvertibleAAWl
 _$s10BDPointSDK10PaginationCSbIetMAgYl_TC
 _$s10BDPointSDK10PaginationCSo10CLLocationCSgIetMAgYl_TC
 _$s10BDPointSDK10PaginationCAA9Scheduled_pSgIetMAgYl_TC
@@ -21905,7 +21974,6 @@ _symbolic _____y_____G 10BDPointSDK16PointAPIResponseO AA4PageV
 _$s10BDPointSDK16PointAPIResponseOyAA4PageVGMD
 _symbolic _____Sg 10BDPointSDK4PageV
 _$s10BDPointSDK4PageVSgMD
-_$s10Foundation4DateVACs23CustomStringConvertibleAAWL
 _$s10BDPointSDK6SignalCyAA4PageVGMD
 _$s10BDPointSDK10PaginationC17pageLastRequested33_A084816012BB091D2E49A8D9B8983F27LL10Foundation4DateVvgTq
 _$s10BDPointSDK10PaginationC17pageLastRequested33_A084816012BB091D2E49A8D9B8983F27LL10Foundation4DateVvsTq
@@ -21928,7 +21996,6 @@ _$s10BDPointSDK10PaginationCN
 -private-discriminator _A084816012BB091D2E49A8D9B8983F27
 /Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/Signal Processing/Pagination/Pagination.swift
 $s10BDPointSDK9GeoCircleVSgWOb
-$s10Foundation4DateVACs23CustomStringConvertibleAAWl
 $s10BDPointSDK10PaginationC20scheduleRuleDownload33_A084816012BB091D2E49A8D9B8983F27LLyyFyycfU_TA
 $s10BDPointSDK4PageVSgWOh
 $s10BDPointSDK4PageVSgWOc
@@ -23986,7 +24053,7 @@ _$s10BDPointSDK14DataControllerC21getStalePendingEvents7context10completionySo22
 _$sSo7NSArrayCSgIeyBy_Say10BDPointSDK14MOPendingEventCGSgIegg_TR
 _$sSaySo28NSPersistentStoreDescriptionCGSayxGSlsWl
 _$sSaySo28NSPersistentStoreDescriptionCGMa
-_$s10BDPointSDK14DataControllerC09clearCoreC0yyFTo
+_$s10BDPointSDK14DataControllerC09clearCoreC0s5Error_pSgyFTo
 _$sSo7NSArrayCSgIeyBy_Say10BDPointSDK14MOPendingEventCGSgIegg_TRTA
 _$s10BDPointSDK14DataControllerC21getStalePendingEvents7context10completionySo22NSManagedObjectContextC_ySayAA14MOPendingEventCGSgctFyAKcfU_TA
 _$sSo7NSArrayCSgIeyBy_Say10BDPointSDK26MOTriggerEventNotificationCGSgIegg_TRTA

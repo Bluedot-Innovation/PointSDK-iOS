@@ -8,9 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+
 @class BDFenceInfo;
 @class BDZoneInfo;
 @class BDLocationInfo;
+
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wnullability-completeness"
 
 /**
  * Contains information about a Zone Entry Event
@@ -46,3 +50,5 @@
 @property (readonly) NSDictionary* customData;
 
 @end
+
+#pragma clang diagnostic pop

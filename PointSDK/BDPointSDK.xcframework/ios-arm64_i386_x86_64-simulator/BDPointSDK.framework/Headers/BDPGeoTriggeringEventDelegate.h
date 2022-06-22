@@ -36,14 +36,14 @@
 /**
  * Implement this method to provide your own implementation when device enters a Zone.
  *
- * @param BDZoneEntryEvent Contains zone entry event information, please refer to `BDZoneEntryEvent` for more information.
+ * @param enterEvent Contains zone entry event information, please refer to `BDZoneEntryEvent` for more information.
  */
 - (void)didEnterZone: (nonnull BDZoneEntryEvent *) enterEvent;
 
 /**
  * Implement this method to provide your own implementation when device exits a Zone.
  *
- * @param BDZoneExitEvent Contains zone exit event information, please refer to `BDZoneExitEvent` for more information.
+ * @param exitEvent Contains zone exit event information, please refer to `BDZoneExitEvent` for more information.
  */
 - (void)didExitZone: (nonnull BDZoneExitEvent *) exitEvent;
 

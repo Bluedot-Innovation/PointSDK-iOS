@@ -51,4 +51,9 @@
  */
 -(BDLocationDistance)distanceTo:(BDGeometry *)geometry;
 
+/**
+ @returns The type of current geometry. Available values: point, circle, lineString, boundingBox, polygon.
+ */
+-(NSString *)geometryTypeString;
+
 @end

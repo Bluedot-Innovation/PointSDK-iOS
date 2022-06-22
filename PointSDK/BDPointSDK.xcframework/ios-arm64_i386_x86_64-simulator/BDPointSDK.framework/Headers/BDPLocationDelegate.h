@@ -56,7 +56,7 @@ __attribute__((deprecated("First deprecated in 15.4.0 - Features migrated to `-[
  * @param zoneInfo The zone containing the entered fence.
  * @param location The location relevant information of the device when the custom action was triggered.
  * @param willCheckOut Whether a subsequent Check Out callback is expected when the device moves a significant distance away from the Fence.
- * @param customData The custom fields setup from "Dashboard" in the <b>Canvas</b> web-interface.</p>
+ * @param customData The custom fields setup from "Dashboard" in the <b>Canvas</b> web-interface.
  */
 - (void)didCheckIntoFence: (BDFenceInfo *)fence
                    inZone: (BDZoneInfo *)zoneInfo
@@ -110,7 +110,7 @@ __attribute__((deprecated("First deprecated in 15.4.0 - Feature migrated to `-[B
  * @param locationInfo The location of beacon when the custom action was triggered.
  * @param proximity The proximity of the beacon when the custom action was triggered.
  * @param willCheckOut Whether a subsequent Check Out callback is expected when the device moves outside of the Beacon's range.
- * @param customData The custom fields setup from "Dashboard" in the <b>Canvas</b> web-interface.</p>
+ * @param customData The custom fields setup from "Dashboard" in the <b>Canvas</b> web-interface.
  */
 - (void)didCheckIntoBeacon: (BDBeaconInfo *)beacon
                     inZone: (BDZoneInfo *)zoneInfo
@@ -120,7 +120,6 @@ __attribute__((deprecated("First deprecated in 15.4.0 - Feature migrated to `-[B
             withCustomData: (NSDictionary *)customData
 __attribute__((deprecated("First deprecated in 15.4.0 - It will be removed in a future version")));
 
-/// This method has been deprecated as of version 1.9.4; it will be removed in a future version.</p>
 - (void)didCheckIntoBeacon: (BDBeaconInfo *)beacon
                     inZone: (BDZoneInfo *)zoneInfo
              withProximity: (CLProximity)proximity

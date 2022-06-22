@@ -13,10 +13,11 @@
 #import "BDPBluedotServiceDelegate.h"
 #import "BDPGeoTriggeringEventDelegate.h"
 #import "BDPTempoTrackingDelegate.h"
-#import "BDPAuthenticationStateProvider.h"
 
 @protocol BDPAuthenticationDelegate;
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wnullability-completeness"
 
 /**
  * Bluedot Service Related Errors
@@ -103,7 +104,7 @@ typedef NS_ENUM(NSInteger, BDGeoTriggeringError) {
      */
     BDGeoTriggeringErrorCannotStopWhileNotInProgress = -1001,
     /**
-     * Couldn't start Geo-triggering service due to insufficient Location Permision. <b>Always</b> or <b>When in use<b> permission is required
+     * Couldn't start Geo-triggering service due to insufficient Location Permision. <b>Always</b> or <b>When in use</b> permission is required
      */
     BDGeoTriggeringErrorInsufficientLocationPermission = -1002,
     /**
@@ -132,7 +133,7 @@ typedef NS_ENUM(NSInteger, BDAuthorizationLevel)
 
   @see details in `BDLocationManager` for unified documentation of the class, including this Category.
 */
-@interface BDLocationManager (BDPointSDK) <BDPAuthenticationStateProvider>
+@interface BDLocationManager (BDPointSDK)
 
 /**
  * Initialize Bluedot Point SDK with projectId.
@@ -150,7 +151,7 @@ typedef NS_ENUM(NSInteger, BDAuthorizationLevel)
  * @param projectId The projectId to be initialised. You can find your projectId on Bluedot Canvas
  * @param completion A mandatory completion handler called once processing completed. If the initialization is successful, error will be returned as nil. However, if the initilialization fails, an error will be provided.
 */
-- (void)initializeWithProjectId: (NSString * _Nonnull)projectId completion: (void (^_Nonnull)(NSError * _Nullable error)) completion;
+- (void)initializeWithProjectId:(NSString *_Nonnull)projectId completion:(void (^_Nonnull)(NSError * _Nullable error))completion;
 
 
 /**
@@ -158,7 +159,7 @@ typedef NS_ENUM(NSInteger, BDAuthorizationLevel)
  *
  * @return Returns whether Bluedot Point SDK is initialized or not
  */
-- (BOOL) isInitialized;
+- (BOOL)isInitialized;
 
 /**
  *
@@ -168,12 +169,12 @@ typedef NS_ENUM(NSInteger, BDAuthorizationLevel)
  *
  * @param completion A mandatory completion handler called once processing completed. If the initialization is successful, error will be returned as nil. However, if the initilialization fails, an error will be provided.
 */
-- (void)resetWithCompletion: (void (^_Nonnull)(NSError * _Nullable error)) completion;
+- (void)resetWithCompletion:(void (^_Nonnull)(NSError * _Nullable error))completion;
 
 
 
 /// This method has been deprecated as of version 1.14.0; it will be removed in a future version.
-- (void)authenticateWithApiKey: (NSString *)apiKey
+- (void)authenticateWithApiKey:(NSString *)apiKey
 __attribute__((deprecated("First deprecated in 1.14.0 - use method `-[BDLocationManager initializeWithProjectId:completion:]` instead")));
 
 /**
@@ -192,7 +193,8 @@ __attribute__((deprecated("First deprecated in 1.14.0 - use method `-[BDLocation
  Requesting with "authorizedWhenInUse" option will show iOS location permission prompt with two options, "When in use" and "Never".
  @note `BDPointSessionException` Calling this method while in an invalid state will result in a `BDPointSessionException` being thrown.
  */
-- (void)authenticateWithApiKey: (NSString *)apiKey requestAuthorization: (BDAuthorizationLevel) authorizationLevel
+- (void)authenticateWithApiKey:(NSString *)apiKey
+          requestAuthorization:(BDAuthorizationLevel)authorizationLevel
 __attribute__((deprecated("First deprecated in 15.4.0 - use method `-[BDLocationManager initializeWithProjectId:completion:]` instead")));
 
 /**
@@ -210,7 +212,7 @@ __attribute__((deprecated("First deprecated in 15.4.0 - use method `-[BDLocation
  
   @param pointDelegate Object implementing `BDPointDelegate`, equivalent to both `BDPSessionDelegate` and `BDPLocationDelegate`
  */
-- (void)setPointDelegate: (id<BDPointDelegate>)pointDelegate
+- (void)setPointDelegate:(id<BDPointDelegate>)pointDelegate
 __attribute__((deprecated("First deprecated in 15.4.0 - Please implement individual delegates separately")));
 
 @property id<BDPLocationDelegate> locationDelegate
@@ -270,13 +272,13 @@ __attribute__((deprecated("First deprecated in 15.4.0 - This will be removed in 
  * A collection of `BDZoneInfo` objects, corresponding to the Zones you created for this project, in the
  * <b>Canvas</b> web-interface.
  */
-@property (nonatomic, readonly) NSSet* zoneInfos;
+@property (nonatomic, readonly) NSSet *zoneInfos;
 
 /**
   Disabled or re-enable a specific `BDZoneInfo` "zone".  Information about valid `BDZoneInfo` "zones", including
   their respective <i>zoneId</i>'s for use in this method, is delivered to `-[BDPGeoTriggeringEventDelegate onZoneInfoUpdate:]`.
  */
-- (void)setZone: (NSString *)zoneId disableByApplication: (BOOL)disable;
+- (void)setZone:(NSString *)zoneId disableByApplication:(BOOL)disable;
 
 /**
  *  Blocking method to determine if a user zone is in an enabled state.
@@ -284,7 +286,7 @@ __attribute__((deprecated("First deprecated in 15.4.0 - This will be removed in 
  *  @param zoneId zone UUID.
  *  @return Returns whenever zone is disabled or not
  */
-- (BOOL)isZoneDisabledByApplication: (NSString *)zoneId
+- (BOOL)isZoneDisabledByApplication:(NSString *)zoneId
 __attribute__((deprecated("First deprecated in 1.13 - use method `-[BDLocationManager applicationContainsDisabledZone:completion:]` instead")));
 
 /**
@@ -292,7 +294,8 @@ __attribute__((deprecated("First deprecated in 1.13 - use method `-[BDLocationMa
  *  @param zoneId zone UUID
  *  @param completion closure returns whenever zone is disabled or not
  */
-- (void)applicationContainsDisabledZone:(NSString *)zoneId completion:(void (^)(BOOL))completion;
+- (void)applicationContainsDisabledZone:(NSString *)zoneId
+                             completion:(void (^)(BOOL))completion;
 
 /**
  * Returns the installation reference of this Point SDK enabled App.
@@ -306,7 +309,7 @@ __attribute__((deprecated("First deprecated in 1.13 - use method `-[BDLocationMa
  * Notifies <b>Point SDK</b> that the push notification has been received with given data.
  * @param data Push data passed through AppDelegate callback methods.
  */
-- (void)notifyPushUpdateWithData: (NSDictionary *)data;
+- (void)notifyPushUpdateWithData:(NSDictionary *)data;
 
 /**
  * Returns the version of the Point SDK as a NSString.
@@ -319,7 +322,7 @@ __attribute__((deprecated("First deprecated in 1.13 - use method `-[BDLocationMa
  * Only up to 20 custom meta data fields are allowed. Throws `BDCustomEventMetadataCountException` exception if the number of custom fields exceeded.
  * Only String Type is allowed. Throws `BDCustomEventMetadataDataFormatException` exception if data contains non-String type.
  */
-- (void) setCustomEventMetaData: (NSDictionary *)data;
+- (void)setCustomEventMetaData:(NSDictionary *)data;
 
 /**
  * Returns the custom metadata set by calling setCustomEventMetaData.
@@ -333,7 +336,7 @@ __attribute__((deprecated("First deprecated in 1.13 - use method `-[BDLocationMa
  * @note An error will be returned if your App does not have either <b>Always</b> or <b>When In Use</b> location permission.
  * @param completion A mandatory completion handler called once Start GeoTriggering processing completed. If the  GeoTriggering feature is started successful, error will be returned as nil. However, if the Start GeoTriggering feature fails, an error will be provided.
 */
-- (void)startGeoTriggeringWithCompletion: (void (^_Nonnull)(NSError *  _Nullable error)) completion;
+- (void)startGeoTriggeringWithCompletion:(void (^_Nonnull)(NSError * _Nullable error))completion;
 
 
 /**
@@ -346,7 +349,9 @@ __attribute__((deprecated("First deprecated in 1.13 - use method `-[BDLocationMa
  * @param notificationButtonText the string to be used in the text of the action button to be used in the local notification to restart the app.
  * @param completion A mandatory completion handler called once Start GeoTriggering processing completed. If the  GeoTriggering feature is started successful, error will be returned as nil. However, if the Start GeoTriggering feature fails, an error will be provided.
 */
-- (void)startGeoTriggeringWithAppRestartNotificationTitle: (NSString  * _Nonnull ) notificationTitle notificationButtonText: (NSString * _Nonnull) notificationButtonText completion: (void (^_Nonnull)(NSError *  _Nullable error)) completion;
+- (void)startGeoTriggeringWithAppRestartNotificationTitle:(NSString *_Nonnull)notificationTitle
+                                   notificationButtonText:(NSString *_Nonnull)notificationButtonText
+                                               completion:(void (^_Nonnull)(NSError * _Nullable error))completion;
 
 
 /**
@@ -354,7 +359,7 @@ __attribute__((deprecated("First deprecated in 1.13 - use method `-[BDLocationMa
  *
  * @return Returns whether GeoTriggering is running
  */
-- (BOOL) isGeoTriggeringRunning;
+- (BOOL)isGeoTriggeringRunning;
 
 /**
  * Stop GeoTriggering features of the Bluedot Point SDK
@@ -362,7 +367,7 @@ __attribute__((deprecated("First deprecated in 1.13 - use method `-[BDLocationMa
  * @note Stopping Geo-triggering feature has the intended effect of stopping location services on the device, thereby conserving battery on your user’s device unless another feature such as Tempo, is active.
  * @param completion A mandatory completion handler called once Stop Geotriggering processing completed. If the Geotriggering feature is stopped successful, error will be returned as nil. However, if the Stop Geotriggering fails, an error will be provided.
 */
-- (void)stopGeoTriggeringWithCompletion: (void (^_Nullable)(NSError * _Nullable error)) completion;
+- (void)stopGeoTriggeringWithCompletion:(void (^_Nullable)(NSError * _Nullable error))completion;
 
 /**
  * Start Tempo Tracking for destination id provided
@@ -371,7 +376,8 @@ __attribute__((deprecated("First deprecated in 1.13 - use method `-[BDLocationMa
  * @param destinationId The destinationId to be tracked
  * @param completion A mandatory completion handler called once Start Tempo processing completed. If the Tempo is started successful, error will be returned as nil. However, if the Start Tempo fails, an error will be provided.
 */
-- (void)startTempoTrackingWithDestinationId: (NSString * _Nonnull)destinationId  completion: (void (^ _Nonnull)(NSError *  _Nullable error)) completion;
+- (void)startTempoTrackingWithDestinationId:(NSString *_Nonnull)destinationId
+                                 completion:(void (^_Nonnull)(NSError * _Nullable error))completion;
 
 /**
  * Start Tempo Tracking for destination id provided
@@ -380,7 +386,7 @@ __attribute__((deprecated("First deprecated in 1.13 - use method `-[BDLocationMa
  * @note NSException with the name "BDTempoTrackingAlreadyStartedException" thrown if Tempo Tracking is currently already in progress
  * @note NSException with the name "BDTempoDestinationIdEmptyException" thrown if destinationId is empty
  */
-- (void)startTempoTracking: (NSString * _Nonnull)destinationId
+- (void)startTempoTracking:(NSString *_Nonnull)destinationId
 __attribute__((deprecated("First deprecated in 15.4.0 - use method `-[BDLocationManager startTempoTrackingWithDestinationId:completion:]` instead")));
 
 
@@ -389,14 +395,14 @@ __attribute__((deprecated("First deprecated in 15.4.0 - use method `-[BDLocation
  *
  * @param completion A mandatory completion handler called once Stop Tempo processing completed. If the Tempo is stopped successful, error will be returned as nil. However, if the Start Tempo fails, an error will be provided.
 */
-- (void)stopTempoTrackingWithCompletion: (void (^ _Nonnull)(NSError *  _Nullable error)) completion;
+- (void)stopTempoTrackingWithCompletion:(void (^_Nonnull)(NSError * _Nullable error))completion;
 
 /**
  * Method to determine if Tempo is running
  *
  * @return Returns whether Tempo is running
  */
-- (BOOL) isTempoRunning;
+- (BOOL)isTempoRunning;
 
 /**
  * Stop Tempo Tracking
@@ -406,3 +412,5 @@ __attribute__((deprecated("First deprecated in 15.4.0 - use method `-[BDLocation
 __attribute__((deprecated("First deprecated in 15.4.0 - use method `-[BDLocationManager stopTempoTrackingWithCompletion:]` instead")));
 
 @end
+
+#pragma clang diagnostic pop

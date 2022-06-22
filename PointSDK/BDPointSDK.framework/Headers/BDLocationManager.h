@@ -11,7 +11,7 @@
 
 <b>Point SDK</b> carries out location specific, conditional actions that you define in the <b>Canvas</b> web-interface.
 To start these behaviours with your Application, it is necessary only to call the authentication method
-on the @ref BDLocationManager#instance "shared singleton instance" of @ref BDLocationManager.</p>
+on the @ref BDLocationManager#instance "shared singleton instance" of @ref BDLocationManager.<p/>
 
 Calling the authentication method will start a session with <b>Canvas</b>.
 Upon success, `BDZoneInfo` "Zones" will be downloaded and associated actions will be executed by the library,
