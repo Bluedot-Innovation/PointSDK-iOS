@@ -24,7 +24,7 @@
 
   @returns YES if the point falls on or inside the bounds, NO if the point falls outside the bounds
  */
-- (BOOL)intersects: (BDGeometry *)geometry;
+- (BOOL)intersects:(BDGeometry *)geometry;
 
 /**
  * <p>Currently, only Circles may receive this message; other shapes will throw an assertion error in DEBUG or return NO in RELEASE.</p>
