@@ -4,6 +4,13 @@
 //
 
 #import "BDPGeometry.h"
+#import "BDPJSONSerializable.h"
+
+extern const BDGeometryType BDGeometryTypeBoundingBox;
+extern const BDGeometryType BDGeometryTypeCircle;
+extern const BDGeometryType BDGeometryTypeLineString;
+extern const BDGeometryType BDGeometryTypePoint;
+extern const BDGeometryType BDGeometryTypePolygon;
 
 /**
   @brief Base class for all geometries.
@@ -13,6 +20,6 @@
 
   @copyright Bluedot Innovation
 */
-@interface BDGeometry : NSObject <BDPGeometry>
+@interface BDGeometry : NSObject <BDPGeometry, BDPJSONSerializable, BDPJSONDeserializable>
 
 @end

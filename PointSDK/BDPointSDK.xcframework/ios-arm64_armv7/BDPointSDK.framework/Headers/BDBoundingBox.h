@@ -6,11 +6,8 @@
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
 
-#ifdef BDPlatformApple
 #import <MapKit/MapKit.h>
 #import "BDPMKShape.h"
-#endif
-
 #import "BDGeometry.h"
 #import "BDPValidatable.h"
 
@@ -39,8 +36,6 @@
 - (instancetype)initWithNorthEast: (BDPoint *)northEast
                         southWest: (BDPoint*)southWest;
 
-#ifdef BDPlatformApple
-
 /**
  * Initializes a BDBoundingBox using a <a href="https://developer.apple.com/library/ios/documentation/MapKit/Reference/MapKitDataTypesReference/Reference/reference.html">MapKit coordinate region</a>.
  */
@@ -50,8 +45,6 @@
  * @returns the equivalent <a href="https://developer.apple.com/library/ios/documentation/MapKit/Reference/MapKitDataTypesReference/Reference/reference.html">MapKit coordinate region</a> representation of this rectangular region.
  */
 - (MKCoordinateRegion)coordinateRegion;
-
-#endif
 
 /**
  * @param west the longitudinal component of the South-West corner point of this rectangular region

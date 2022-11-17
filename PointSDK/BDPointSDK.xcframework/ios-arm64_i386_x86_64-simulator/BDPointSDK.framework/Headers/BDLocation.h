@@ -9,9 +9,7 @@
 
 @class BDPoint;
 
-#ifdef BDPlatformApple
 @class CLLocation;
-#endif
 
 /**
 *  Represents a recorded, geographic location; combining a geographic @ref BDPointSDK "point" with an altitude, as well as a known
@@ -19,12 +17,10 @@
 */
 @interface BDLocation : NSObject <BDPDeepCopy>
 
-#ifdef BDPlatformApple
 /**
  *  Initialisation methods for to creation a location.
  */
 - (instancetype)initWithCLLocation: (CLLocation*)coreLocation;
-#endif
 
 - (instancetype)initWithLatitude: (BDLocationDegrees)latitude
                        longitude: (BDLocationDegrees)longitude

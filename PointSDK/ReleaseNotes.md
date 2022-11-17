@@ -1,4 +1,4 @@
-PointSDK v15.6.4 (116)
-# SDK Version 15.6.4
+PointSDK v15.6.5 (134)
+# SDK Version 15.6.5
 
-Fixed an issue where the Travel Path Condition that determines the order in which geofences are crossed was not respected in some cases.
+Optimized networking behavior, resulting in reduced network traffic by roughly 40%.

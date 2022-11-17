@@ -49,6 +49,10 @@ typedef NS_ENUM(NSInteger, BDServiceError) {
      */
     BDServiceErrorSDKAlreadyInitialized = -1005,
     /**
+     * Missing Location (when requesting RuleSet)
+     */
+    BDServiceErrorMissingLocation = -1006,
+    /**
      * Failed to connect to Point API
      */
     BDServiceErrorFailedToConnect = -2000,
@@ -60,6 +64,10 @@ typedef NS_ENUM(NSInteger, BDServiceError) {
      * Failed to retrieve global config
      */
     BDServiceErrorFailedToRetrieveGlobalConfig = -2002,
+    /**
+     * Failed to retrieve ruleset
+     */
+    BDServiceErrorFailedToRetrieveRuleSet = -2003,
 };
 
 /**

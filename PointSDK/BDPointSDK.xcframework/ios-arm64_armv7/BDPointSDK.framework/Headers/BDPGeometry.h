@@ -8,6 +8,8 @@
 #import "BDPDeepCopy.h"
 #import "BDGeospatialUnits.h"
 
+typedef NSString* BDGeometryType;
+
 @class BDGeometry;
 @class BDPoint;
 @class BDBoundingBox;
@@ -54,6 +56,6 @@
 /**
  @returns The type of current geometry. Available values: point, circle, lineString, boundingBox, polygon.
  */
--(NSString *)geometryTypeString;
+-(BDGeometryType)geometryType;
 
 @end

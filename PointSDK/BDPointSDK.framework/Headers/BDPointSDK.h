@@ -48,6 +48,8 @@
 #import "BDPTempoTrackingDelegate.h"
 #import "BDPBluedotServiceDelegate.h"
 #import "BDPGeoTriggeringEventDelegate.h"
+#import "BDPJSONSerializable.h"
+
 
 //! Project version number for BDPointSDK.
 
