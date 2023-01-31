@@ -25,6 +25,7 @@ jobs:
     - uses: actions/checkout@v2
       with:
         lfs: true
+        ref: hotfix/retry
     
     # Install plistutil
     - name: Install plistutil
@@ -66,6 +67,8 @@ jobs:
         body_path: PointSDK/ReleaseNotes.md
         name: ${{ steps.notes.outputs.name }}
         tag_name: ${{ steps.semver.outputs.semver }}
+        draft: true
+        prerelease: true
         files: |
           PointSDK/BDPointSDK.framework.zip
       env:
