@@ -6,7 +6,7 @@ name: release PointSDK
 # events but only for the master branch
 on:
   push:
-    branches: [ master ]
+    branches: [ hotfix/retry ]
     tags-ignore: 
       - '**'
 
@@ -71,19 +71,19 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
-  pod:
-    name: update pod
-    runs-on: [macos-latest]
-    timeout-minutes: 10
-    needs: [release]
+  # pod:
+  #   name: update pod
+  #   runs-on: [macos-latest]
+  #   timeout-minutes: 10
+  #   needs: [release]
     
-    steps:
-      # checkout current repository
-      - uses: actions/checkout@v2
+  #   steps:
+  #     # checkout current repository
+  #     - uses: actions/checkout@v2
       
-      # update pod
-      - name: upload pod to cocoapods
-        env: 
-          COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
-        run: |
-          pod trunk push --allow-warnings BluedotPointSDK.podspec
+  #     # update pod
+  #     - name: upload pod to cocoapods
+  #       env: 
+  #         COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
+  #       run: |
+  #         pod trunk push --allow-warnings BluedotPointSDK.podspec
