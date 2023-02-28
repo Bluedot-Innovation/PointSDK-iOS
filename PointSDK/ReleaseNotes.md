@@ -1,4 +1,4 @@
-PointSDK v15.6.5 (134)
-# SDK Version 15.6.5
+PointSDK v15.6.6 (150)
+# SDK Version 15.6.6
 
-Optimized networking behavior, resulting in reduced network traffic by roughly 40%.
+Reduced the time between retries when sending Entry/Exit events to our systems. This will help ensure that the Entry/Exit notifications are sent as soon as the device has network access.
