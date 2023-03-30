@@ -1,4 +1,5 @@
-PointSDK v15.6.6 (150)
-# SDK Version 15.6.6
+PointSDK v15.6.7 (156)
+# SDK Version 15.6.7
 
-Reduced the time between retries when sending Entry/Exit events to our systems. This will help ensure that the Entry/Exit notifications are sent as soon as the device has network access.
+- Improved the reliability of the SDK under poor or no network access.
+- Fixed an issue that was preventing the Restart Notification to reliably start.
