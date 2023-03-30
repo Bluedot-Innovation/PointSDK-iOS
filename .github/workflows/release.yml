@@ -54,9 +54,11 @@ jobs:
     # prepare release assets
     - name: prepare release assets
       working-directory: PointSDK
+      # remove bitcode symbol files *.bcsymbolmap as Apple Xcode drops support for bitcode in Xcode 14, PointSDK always disabled Bitcode
       run: |
         mkdir -p ./Carthage/Build/iOS
-        cp -R *.bcsymbolmap *.dSYM *.framework Carthage/Build/iOS
+        cp -R  *.dSYM *.framework Carthage/Build/iOS
+        rm -f *.bcsymbolmap 
         zip -r BDPointSDK.framework.zip Carthage
     
     # make new GitHub release
