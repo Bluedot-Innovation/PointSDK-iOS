@@ -15,7 +15,7 @@
 
   @copyright Bluedot Innovation
 */
-@interface BDCircle : BDGeometry<NSCoding>
+@interface BDCircle : BDGeometry<NSSecureCoding>
 
 /**
  * Center of this Circle as a @ref BDPoint in latitude/longitude coordinates.

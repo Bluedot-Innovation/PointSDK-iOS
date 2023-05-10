@@ -15,7 +15,7 @@
 
   @copyright Bluedot Innovation
 */
-@interface BDPolygon : BDPolygonal<NSCoding>
+@interface BDPolygon : BDPolygonal<NSSecureCoding>
 
 /**
   Convenience method to create a BDPolygon with an array of @ref BDPoint  vertices.

@@ -5,8 +5,9 @@
 
 #import <Foundation/Foundation.h>
 
-@class BDFenceInfo;
-@class BDBeaconInfo;
+NS_ASSUME_NONNULL_BEGIN
+ 
+@class BDFenceInfo, Destination;
 
 /**
  Contains information about a Zone, including the set of `BDFenceInfo` "fences" that comprise it.
@@ -14,7 +15,6 @@
  A set of `BDZoneInfo` objects will be delivered to your application's `BDPLocationDelegate` at
  the time of their download from the Bluedot Point web-service.
  
- This usually occurs immediately after the authentication process is complete.
 */
 @interface BDZoneInfo : NSObject
 
@@ -42,12 +42,6 @@
 @property (copy,readonly) NSSet<BDFenceInfo *>  *fences;
 
 /**
- * The set of `BDBeaconInfo` beacons included in this Zone.
-*/
-@property (copy,readonly) NSSet<BDBeaconInfo *>  *beacons
-__attribute__((deprecated("First deprecated in 15.4.0 - It will be removed in a future version")));
-
-/**
  * Whether CheckOuts should be generated for any CheckIns to this Zone.
 */
 @property (readonly) BOOL checkOut;
@@ -57,10 +51,11 @@ __attribute__((deprecated("First deprecated in 15.4.0 - It will be removed in a 
  */
 @property (copy, readonly) NSDictionary<NSString *, NSString *> *customData;
 
-- (BOOL)isEqual:(id)other;
-
-- (BOOL)isEqualToInfo:(BDZoneInfo *)info;
-
-- (NSUInteger)hash;
+/**
+ * The `Destination` (aka Store) that this zone is linked with.
+ */
+@property (readonly, nullable) Destination *destination;
 
 @end
+
+NS_ASSUME_NONNULL_END

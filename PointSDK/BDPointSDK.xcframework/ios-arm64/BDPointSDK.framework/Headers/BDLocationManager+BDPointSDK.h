@@ -6,15 +6,11 @@
 #import <Foundation/Foundation.h>
 
 #import "BDLocationManager.h"
-#import "BDAuthenticationState.h"
-#import "BDPointDelegate.h"
-#import "BDPLocationDelegate.h"
-#import "BDPSessionDelegate.h"
+#import "BDInitializationState.h"
 #import "BDPBluedotServiceDelegate.h"
 #import "BDPGeoTriggeringEventDelegate.h"
 #import "BDPTempoTrackingDelegate.h"
-
-@protocol BDPAuthenticationDelegate;
+#import "BDZoneInfo.h"
 
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wnullability-completeness"
@@ -94,7 +90,19 @@ typedef NS_ENUM(NSInteger, BDTempoError) {
     /**
      * Couldn't start Tempo when application is in the background
      */
-    BDTempoErrorCannotStartWhileApplicationInBackground = -1004
+    BDTempoErrorCannotStartWhileApplicationInBackground = -1004,
+    /**
+     * Tempo Tracking stopped due to SDK has been reset
+     */
+    BDTempoErrorSDKHasBeenReset = -1005,
+    /**
+     * Tempo Tracking stopped due to an unexpected error
+     */
+    BDTempoErrorUnexpectedError = -1006,
+    /**
+     * Tempo is not enabled. Contact Bluedot Support team to have it enabled.
+     */
+    BDTempoErrorTempoNotEnabled = -1007
 };
 
 /**
@@ -129,15 +137,8 @@ typedef NS_ENUM(NSInteger, BDGeoTriggeringError) {
     BDGeoTriggeringInsufficientNotificationPermission = -1005
 };
 
-
-typedef NS_ENUM(NSInteger, BDAuthorizationLevel)
-{
-    authorizedAlways,
-    authorizedWhenInUse
-} __attribute__((deprecated("First deprecated in 15.4.0 - This will be removed in future version")));
-
 /**
-  Provides <b>Point SDK</b> specific authentication methods and delegate properties to `BDLocationManager`.
+  Provides <b>Point SDK</b> specific initialization methods and delegate properties to `BDLocationManager`.
 
   @see details in `BDLocationManager` for unified documentation of the class, including this Category.
 */
@@ -148,15 +149,14 @@ typedef NS_ENUM(NSInteger, BDAuthorizationLevel)
  *
  * @note Bluedot SDK will not start triggering Geofeatures immediately after initialization as per previous API. You will have to make the call explicitly to start/stop Geo-triggering.
  *
- * @note Bluedot Point SDK no longer requests for OS location permission on authentication/initialization as per previous API.
- *
- * We encourage you to request OS location permission that you requires (Always or When in Use), at an opportune moment from within your app, to get the best conversion rate. For example, when customer places an order within the mobile app, at this point you can start geotriggering, as well as requesting for location permission. To request for OS location permission, you can make the calls via our *BDLocationManager* Singleton, for example:
+ * @note Bluedot Point SDK doesn not request for OS location permission on initialization. We encourage you to request OS location permission that you requires (Always or When in Use), at an opportune moment from within your app, to get the best conversion rate.
+ * For example, when customer places an order within the mobile app, at this point you can start Geo-triggering, as well as requesting for location permission. To request for OS location permission, you can make the calls via our *BDLocationManager* Singleton, for example:
  * ````
  * [BDLocationManager.instance requestAlwaysAuthorization];
  * [BDLocationManager.instance requestWhenInUseAuthorization];
  * ````
  *
- * @param projectId The projectId to be initialised. You can find your projectId on Bluedot Canvas
+ * @param projectId The projectId to be initialized. You can find your projectId on Bluedot Canvas
  * @param completion A mandatory completion handler called once processing completed. If the initialization is successful, error will be returned as nil. However, if the initilialization fails, an error will be provided.
 */
 - (void)initializeWithProjectId:(NSString *_Nonnull)projectId completion:(void (^_Nonnull)(NSError * _Nullable error))completion;
@@ -178,68 +178,6 @@ typedef NS_ENUM(NSInteger, BDAuthorizationLevel)
  * @param completion A mandatory completion handler called once processing completed. If the initialization is successful, error will be returned as nil. However, if the initilialization fails, an error will be provided.
 */
 - (void)resetWithCompletion:(void (^_Nonnull)(NSError * _Nullable error))completion;
-
-
-
-/// This method has been deprecated as of version 1.14.0; it will be removed in a future version.
-- (void)authenticateWithApiKey:(NSString *)apiKey
-__attribute__((deprecated("First deprecated in 1.14.0 - use method `-[BDLocationManager initializeWithProjectId:completion:]` instead")));
-
-/**
- Authenticate, and start a session with <b>Canvas</b>.
- This behaviour is asynchronous and this method will return immediately. Progress of the authentication process can be
- monitored by callbacks provided via the <b>sessionDelegate</b> property, or the KVO-enabled <b>authenticationState</b> property.
- 
- Location Services are required immediately after successful authentication.
- 
- It is the responsibility of the Application to respect the authentication life-cycle and ensure that `BDLocationManager`
- is not already Authenticated, or in the process of Authenticating, while calling this method.
- 
- @param apiKey API Key
- @param authorizationLevel It is mandatory to request authorization level during SDK authentication. Requesting with
- "authorizedAlways" option will show iOS location permission prompt with three options, "Always", "When in use" and "Never".
- Requesting with "authorizedWhenInUse" option will show iOS location permission prompt with two options, "When in use" and "Never".
- @note `BDPointSessionException` Calling this method while in an invalid state will result in a `BDPointSessionException` being thrown.
- */
-- (void)authenticateWithApiKey:(NSString *)apiKey
-          requestAuthorization:(BDAuthorizationLevel)authorizationLevel
-__attribute__((deprecated("First deprecated in 15.4.0 - use method `-[BDLocationManager initializeWithProjectId:completion:]` instead")));
-
-/**
-  Immediately ends a currently active session with <b>Canvas</b>.
-  According to the authentication lifecycle, this method should only be called when <b>authenticationState</b> is
-  `BDAuthenticationStateAuthenticated`. Otherwise, a `BDPointSessionException` will be thrown.
-  
- @note `BDPointSessionException` Thrown if `BDLocationManager` is already logged out.
- */
-- (void)logOut
-__attribute__((deprecated("First deprecated in 15.4.0 - use method `-[BDLocationManager resetWithCompletion:]` instead")));
-
-/**
-  Equivalent to setting <b>locationDelegate</b> and <b>sessionDelegate</b>.
- 
-  @param pointDelegate Object implementing `BDPointDelegate`, equivalent to both `BDPSessionDelegate` and `BDPLocationDelegate`
- */
-- (void)setPointDelegate:(id<BDPointDelegate>)pointDelegate
-__attribute__((deprecated("First deprecated in 15.4.0 - Please implement individual delegates separately")));
-
-@property id<BDPLocationDelegate> locationDelegate
-__attribute__((deprecated("First deprecated in 15.4.0 - Features migrated to `bluedotServiceDelegate` or `geoTriggeringEventDelegate`")));
-
-/**
- Applications using <b>Point SDK</b> must authenticate before using its features.
-  
- Which classes and methods require authentication is set out clearly in the API documentation. Authentication is performed simply
- by calling `-[BDLocationManager authenticateWithApiKey:requestAuthorization:]` with the API credentials provided in your
- <a href="https://www.pointaccess.bluedot.com.au/pointaccess-v1/login.html"><b>Canvas</b> management portal</a>.
- 
- Implement the callbacks in your own implementation of `BDPSessionDelegate`, and assign it to this property to
- receive feedback on the outcome of authentication, and to tell your application when it can start
- fully using <b>Point SDK</b>.  Attempting to call protected features when not authenticated will case a
- `BDPointSessionException` to be thrown.
- */
-@property id<BDPSessionDelegate> sessionDelegate
-__attribute__((deprecated("First deprecated in 15.4.0 - initialization related delegate callbacks are now returned in completion callbacks. Please refer to `-[BDLocationManager initialize:completion:]`")));
 
 /**
  * Implement the callbacks in your own implementation of `BDPTempoTrackingDelegate`, and assign it to this property to
@@ -264,38 +202,17 @@ __attribute__((deprecated("First deprecated in 15.4.0 - initialization related d
  */
 @property id<BDPGeoTriggeringEventDelegate> _Nullable geoTriggeringEventDelegate;
 
-/// This method has been deprecated as of version 1.14.0; it will be removed in a future version.
-@property id<BDPAuthenticationDelegate> authenticationDelegate __attribute__((deprecated("First deprecated in 1.14.0 - initialization related delegate callbacks are now returned in completion callbacks. Please refer to `-[BDLocationManager initialize:completion:]`")));
-
-
-/**
-  Read-only property, providing the current authentication authenticationState.
-  This property is <a href="https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/KeyValueObserving/Articles/KVOCompliance.html#//apple_ref/doc/uid/20002178-BAJEAIEE">KVO compliant</a>,
-  meaning that it can be observed for changes with <a href="https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/KeyValueObserving/KeyValueObserving.html">Key-Value Observing</a>.
- */
-@property (readonly) BDAuthenticationState authenticationState
-__attribute__((deprecated("First deprecated in 15.4.0 - This will be removed in future version. To check if Point SDK is initialized, please refer to `-[BDLocationManager isInitialized]`")));
-
 /**
  * A collection of `BDZoneInfo` objects, corresponding to the Zones you created for this project, in the
  * <b>Canvas</b> web-interface.
  */
-@property (nonatomic, readonly) NSSet *zoneInfos;
+@property (nonatomic, readonly) NSSet<BDZoneInfo *> *zoneInfos;
 
 /**
   Disabled or re-enable a specific `BDZoneInfo` "zone".  Information about valid `BDZoneInfo` "zones", including
-  their respective <i>zoneId</i>'s for use in this method, is delivered to `-[BDPGeoTriggeringEventDelegate onZoneInfoUpdate:]`.
+  their respective <i>zoneId</i>'s for use in this method, is delivered to `-[BDPGeoTriggeringEventDelegate didUpdateZoneInfo]`.
  */
 - (void)setZone:(NSString *)zoneId disableByApplication:(BOOL)disable;
-
-/**
- *  Blocking method to determine if a user zone is in an enabled state.
- *
- *  @param zoneId zone UUID.
- *  @return Returns whenever zone is disabled or not
- */
-- (BOOL)isZoneDisabledByApplication:(NSString *)zoneId
-__attribute__((deprecated("First deprecated in 1.13 - use method `-[BDLocationManager applicationContainsDisabledZone:completion:]` instead")));
 
 /**
  *  Non-blocking method to determine if a user zone is in an enabled state.
@@ -312,12 +229,6 @@ __attribute__((deprecated("First deprecated in 1.13 - use method `-[BDLocationMa
  * installation.
  */
 - (NSString *)installRef;
-
-/**
- * Notifies <b>Point SDK</b> that the push notification has been received with given data.
- * @param data Push data passed through AppDelegate callback methods.
- */
-- (void)notifyPushUpdateWithData:(NSDictionary *)data;
 
 /**
  * Returns the version of the Point SDK as a NSString.
@@ -388,17 +299,6 @@ __attribute__((deprecated("First deprecated in 1.13 - use method `-[BDLocationMa
                                  completion:(void (^_Nonnull)(NSError * _Nullable error))completion;
 
 /**
- * Start Tempo Tracking for destination id provided
- * @param destinationId The destinationId to be tracked
- * @note `BDPointSessionException` thrown if PointSDK is not logged in.
- * @note NSException with the name "BDTempoTrackingAlreadyStartedException" thrown if Tempo Tracking is currently already in progress
- * @note NSException with the name "BDTempoDestinationIdEmptyException" thrown if destinationId is empty
- */
-- (void)startTempoTracking:(NSString *_Nonnull)destinationId
-__attribute__((deprecated("First deprecated in 15.4.0 - use method `-[BDLocationManager startTempoTrackingWithDestinationId:completion:]` instead")));
-
-
-/**
  * Stop Tempo Tracking
  *
  * @param completion A mandatory completion handler called once Stop Tempo processing completed. If the Tempo is stopped successful, error will be returned as nil. However, if the Start Tempo fails, an error will be provided.
@@ -411,13 +311,6 @@ __attribute__((deprecated("First deprecated in 15.4.0 - use method `-[BDLocation
  * @return Returns whether Tempo is running
  */
 - (BOOL)isTempoRunning;
-
-/**
- * Stop Tempo Tracking
- * @note `BDPointSessionException` thrown if PointSDK is not logged in.
- */
-- (void)stopTempoTracking
-__attribute__((deprecated("First deprecated in 15.4.0 - use method `-[BDLocationManager stopTempoTrackingWithCompletion:]` instead")));
 
 @end
 

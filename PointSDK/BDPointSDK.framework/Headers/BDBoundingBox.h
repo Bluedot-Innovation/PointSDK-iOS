@@ -7,7 +7,6 @@
 #import <CoreGraphics/CoreGraphics.h>
 
 #import <MapKit/MapKit.h>
-#import "BDPMKShape.h"
 #import "BDGeometry.h"
 #import "BDPValidatable.h"
 
@@ -20,7 +19,7 @@
 
 @copyright Bluedot Innovation
 */
-@interface BDBoundingBox : BDGeometry <NSCopying, BDPValidatable, NSCoding>
+@interface BDBoundingBox : BDGeometry <NSCopying, BDPValidatable, NSSecureCoding>
 
 /**
  * Initializes a BDBoundingBox with individual values for the four bounding edges, in degrees.

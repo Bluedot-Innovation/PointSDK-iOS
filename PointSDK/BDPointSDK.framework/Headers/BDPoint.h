@@ -12,7 +12,7 @@
 /**
   @brief A geographic point expressed in latitude and longitude coordinates.
 */
-@interface BDPoint : BDGeometry <NSCopying, NSCoding>
+@interface BDPoint : BDGeometry <NSCopying, NSSecureCoding>
 
 /**
   Convenience constructor to create a @ref BDPoint "point" with a longitude and latitude, in degrees.

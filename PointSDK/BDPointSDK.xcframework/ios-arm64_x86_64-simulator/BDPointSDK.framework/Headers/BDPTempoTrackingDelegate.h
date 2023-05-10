@@ -1,12 +1,11 @@
 //
-//  BDPTempoTrackingDelegate.h
-//  BDPointSDK
-//
-//  Created by Duncan Lau on 4/5/20.
-//  Copyright © 2020 BlueDot. All rights reserved.
+//  Created by Bluedot Innovation
+//  Copyright © 2020 Bluedot Innovation. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
+
+@class TempoTrackingUpdate;
 
 /**
   Defines the call-backs which Point SDK makes to inform the Application of Tempo events.
@@ -22,17 +21,12 @@
 */
 - (void)tempoTrackingDidExpire;
 
+@optional
 /**
-*  This method indicates that Tempo Tracking has started
-*/
-- (void)didStartTracking
-__attribute__((deprecated("First deprecated in 15.4.0 - This is now deprecated in favor of completion callback. Please refer to `BDLocationManager.-startTempoTrackingWithDestinationId:completion:`")));
-
-/**
-*   This method indicates that Tempo Tracking has stopped
-*/
-- (void)didStopTracking
-__attribute__((deprecated("First deprecated in 15.4.0 - This is now deprecated in favor of completion callback. Please refer to `BDLocationManager.-stopTempoTrackingWithCompletion:`. However, if tempo tracking expires, `tempoTrackingdidExpire` will be called instead")));
+ * This method indicates that Tempo Tracking has been updated
+ * @param tempoUpdate The Tempo tracking update details, including ETA and @ref Destination information
+ */
+- (void)tempoTrackingDidUpdate:(TempoTrackingUpdate *)tempoUpdate;
 
 @required
 
@@ -41,6 +35,6 @@ __attribute__((deprecated("First deprecated in 15.4.0 - This is now deprecated i
 * @param error Details from NSError objects delivered here are intended for development logging purposes
 *  and are not intended to be seen by your application's users.
 */
-- (void)didStopTrackingWithError: (NSError *)error;
+- (void)didStopTrackingWithError:(NSError *)error;
 
 @end

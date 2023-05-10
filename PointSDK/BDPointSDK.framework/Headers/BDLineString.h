@@ -18,7 +18,7 @@
 
   @copyright Bluedot Innovation
 */
-@interface BDLineString : BDPolygonal<NSCoding>
+@interface BDLineString : BDPolygonal<NSSecureCoding>
 
 + (instancetype)lineStringWithVertices:(NSArray*)vertices copy:(BOOL)copy;
 

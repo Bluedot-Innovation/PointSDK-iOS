@@ -6,7 +6,7 @@
 #import <Foundation/Foundation.h>
 
 /**
-  @brief Thrown when the <b>Point SDK</b> session life-cycle or authentication state has been violated.
+  @brief Thrown when the <b>Point SDK</b> session life-cycle or initialization state has been violated.
   @copyright Bluedot Innovation
 */
 @interface BDPointSessionException : NSException
