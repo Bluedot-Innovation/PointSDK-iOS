@@ -5,7 +5,7 @@
 import AdSupport
 import AppTrackingTransparency
 @_exported import BDPointSDK
-import BDPointSDKPrivate
+
 import CommonCrypto
 import CoreData
 import CoreLocation
