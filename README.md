@@ -6,7 +6,7 @@
 # iOS PointSDK
 Bluedot Innovation's cutting edge location services solution - the Bluedot Point SDK - is powering the most innovative location-based apps for iOS and Android. Deliver creative content and collect valuable analytics using Bluedot Innovation's powerful, precise and easy-to-use location services technology.
 
-The Bluedot Point SDK enables mobile apps to trigger any action (like opening websites, sending messages and playing video) when users walk or drive through precise locations set anywhere in the world using Bluedot's advanced Geofences, Geolines™ or Beacon capability.
+The Bluedot Point SDK enables mobile apps to trigger any action (like opening websites, sending messages and playing video) when users walk or drive through precise locations set anywhere in the world using Bluedot's advanced Geofences or Geolines™ capability.
 
 ## Cocoapods
 
@@ -27,11 +27,9 @@ github "Bluedot-Innovation/PointSDK-iOS"
 
 ## Swift Package Manager
 
-1. **Star** this repository. This is a very important step. Without it the repository will not be visible in Xcode.
-2. Open *Xcode -> Preferences -> Accounts* and add an account by clicking the plus sign at the bottom. Now, click on the GitHub option and enter your GitHub's email and personal access token. Make sure you are adding the same account you used to **star** the repository.
-3. Open an *Add Package Dependency* dialog. You can find more details on https://developer.apple.com/documentation/swift_packages/adding_package_dependencies_to_your_app
-4. Select the GitHub account you just added and search for the `PointSDK-iOS`
-5. Select the right version and press the *Add Package* button
+1. In Xcode, Open an *Add Package Dependency* dialog. You can find more details on https://developer.apple.com/documentation/swift_packages/adding_package_dependencies_to_your_app
+2. Paste `https://github.com/Bluedot-Innovation/PointSDK-iOS` into the Search box. The package `PointSDK-iOS` should appear in the results.
+3. Select the right version and press the *Add Package* button.
 
 ## Documentation
 
