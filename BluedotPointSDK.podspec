@@ -30,12 +30,6 @@ Pod::Spec.new do |s|
   s.documentation_url = 'http://docs.bluedot.io'
   s.frameworks = 'CoreGraphics', 'CoreLocation', 'CoreMotion', 'Foundation', 'MapKit', 'SystemConfiguration', 'UIKit'
   s.weak_framework = 'CoreData', 'Foundation'
-  s.vendored_frameworks = 'PointSDK/BDPointSDK.framework'
-  s.pod_target_xcconfig = {
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
-  }
-  s.user_target_xcconfig = { 
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
-  }
+  s.vendored_frameworks = 'PointSDK/BDPointSDK.xcframework'
 
 end
