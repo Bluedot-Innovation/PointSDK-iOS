@@ -35,7 +35,7 @@ jobs:
       id: semver
       working-directory: PointSDK
       run: |
-        SEMVER=$(plistutil -i ./BDPointSDK.framework/Info.plist \
+        SEMVER=$(plistutil -i ./BDPointSDK.xcframework/ios-arm64/BDPointSDK.framework/Info.plist \
         | grep -C 1 CFBundleShortVersionString \
         | grep -o '[0-9]*\.[0-9]*\.[0-9]*')      
         
@@ -56,10 +56,7 @@ jobs:
       working-directory: PointSDK
       # remove bitcode symbol files *.bcsymbolmap as Apple Xcode drops support for bitcode in Xcode 14
       run: |
-        mkdir -p ./Carthage/Build/iOS
-        cp -R  *.dSYM *.framework Carthage/Build/iOS
-        rm -f *.bcsymbolmap 
-        zip -r BDPointSDK.framework.zip Carthage
+        zip -r BDPointSDK.xcframework.zip BDPointSDK.xcframework
     
     # make new GitHub release
     - name: create a release
@@ -69,7 +66,7 @@ jobs:
         name: ${{ steps.notes.outputs.name }}
         tag_name: ${{ steps.semver.outputs.semver }}
         files: |
-          PointSDK/BDPointSDK.framework.zip
+          PointSDK/BDPointSDK.xcframework.zip
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
