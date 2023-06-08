@@ -213,6 +213,20 @@ typedef NS_ENUM(NSInteger, BDGeoTriggeringError) {
 @property (nonatomic, readonly) NSSet<BDZoneInfo *> *zoneInfos;
 
 /**
+ * Determine whether to allow the SDK to function in the background and when Location permission is While Using.
+ *
+ * Set to <b>true</b> to enable the SDK to function (receive location updates) when app is in the background and Location permission is While Using.
+ *
+ * Set to <b>false</b> to disable the SDK to function (receiving location updates) when app is in the background and Location permission is While Using.
+ *
+ * Default value is <b>true</b> .
+ *
+ * @note This value doesn't have effect if Location permission is Always.
+ *
+ */
+@property (nonatomic) BOOL backgroundLocationAccessForWhileUsing;
+
+/**
   Disabled or re-enable a specific `BDZoneInfo` "zone".  Information about valid `BDZoneInfo` "zones", including
   their respective <i>zoneId</i>'s for use in this method, is delivered to `-[BDPGeoTriggeringEventDelegate didUpdateZoneInfo]`.
  */

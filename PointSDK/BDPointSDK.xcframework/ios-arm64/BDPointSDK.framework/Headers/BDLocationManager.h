@@ -30,6 +30,9 @@ inherited from <a href="https://developer.apple.com/library/ios/documentation/Co
  of Tempo related events.
  - `BDLocationManager.bluedotServiceDelegate` - to which you should assign your own implementation of the `BDPBluedotServiceDelegate` protocol to receive Bluedot service related callbacks (for e.g. location permission changed, accuracy authorization changed, etc.).
 
+By default, ``BDLocationManager`` enables background location updates for While Using location permission, which will display the visual blue bar in the StatusBar area at the top of the screen.
+ If you prefer to disable that behavior and don't want the Point SDK to process location updates when app is in the background and permission is While Using, set ``BDLocationManager.backgroundLocationAccessForWhileUsing`` to `false`.
+ 
 <p>In addition, some methods of <b>Point SDK</b> classes may only be called while initialized
 and will otherwise cause an exception to be thrown. Individual restrictions are documented clearly in this API
 reference. It is only necessary to initialize once during the runtime of the application.
