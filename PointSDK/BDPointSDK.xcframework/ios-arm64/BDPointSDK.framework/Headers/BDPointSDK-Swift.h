@@ -1805,11 +1805,20 @@ typedef SWIFT_ENUM(NSInteger, TempoStopReason, open) {
   TempoStopReasonTempoNotEnabled = 4,
 };
 
+enum TempoUpdateETADirection : NSInteger;
 
 /// Detail of the <code>TempoUpdate</code> event being reported to main application via callback <code>BDPTempoTrackingDelegate/tempoTrackingDidUpdate(_:)</code>
 /// Includes details of the destination and ETA information
 SWIFT_CLASS("_TtC10BDPointSDK19TempoTrackingUpdate")
 @interface TempoTrackingUpdate : NSObject
+/// The unique UDID of the trigger chain
+@property (nonatomic, readonly, copy) NSString * _Nonnull triggerChainId;
+/// The ETA from the destination, in minutes
+@property (nonatomic, readonly) NSInteger eta;
+/// The ETA direction, either lessThan or greaterThan
+@property (nonatomic, readonly) enum TempoUpdateETADirection etaDirection;
+/// The <code>Destination</code> object being Tempo-tracked
+@property (nonatomic, readonly, strong) Destination * _Nullable destination;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

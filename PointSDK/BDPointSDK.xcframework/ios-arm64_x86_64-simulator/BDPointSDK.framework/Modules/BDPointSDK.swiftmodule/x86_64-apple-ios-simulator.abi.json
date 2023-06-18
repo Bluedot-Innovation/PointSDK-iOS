@@ -22434,13 +22434,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:10BDPointSDK19TempoTrackingUpdateC14triggerChainIdSSvp",
+            "usr": "c:@M@BDPointSDK@objc(cs)TempoTrackingUpdate(py)triggerChainId",
             "mangledName": "$s10BDPointSDK19TempoTrackingUpdateC14triggerChainIdSSvp",
             "moduleName": "BDPointSDK",
             "declAttributes": [
               "Final",
               "HasStorage",
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "isLet": true,
@@ -22459,12 +22460,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10BDPointSDK19TempoTrackingUpdateC14triggerChainIdSSvg",
+                "usr": "c:@M@BDPointSDK@objc(cs)TempoTrackingUpdate(im)triggerChainId",
                 "mangledName": "$s10BDPointSDK19TempoTrackingUpdateC14triggerChainIdSSvg",
                 "moduleName": "BDPointSDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               }
@@ -22483,13 +22485,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:10BDPointSDK19TempoTrackingUpdateC3etaSivp",
+            "usr": "c:@M@BDPointSDK@objc(cs)TempoTrackingUpdate(py)eta",
             "mangledName": "$s10BDPointSDK19TempoTrackingUpdateC3etaSivp",
             "moduleName": "BDPointSDK",
             "declAttributes": [
               "Final",
               "HasStorage",
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "isLet": true,
@@ -22508,12 +22511,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10BDPointSDK19TempoTrackingUpdateC3etaSivg",
+                "usr": "c:@M@BDPointSDK@objc(cs)TempoTrackingUpdate(im)eta",
                 "mangledName": "$s10BDPointSDK19TempoTrackingUpdateC3etaSivg",
                 "moduleName": "BDPointSDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               }
@@ -22532,13 +22536,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:10BDPointSDK19TempoTrackingUpdateC12etaDirectionAA0cE12ETADirectionOvp",
+            "usr": "c:@M@BDPointSDK@objc(cs)TempoTrackingUpdate(py)etaDirection",
             "mangledName": "$s10BDPointSDK19TempoTrackingUpdateC12etaDirectionAA0cE12ETADirectionOvp",
             "moduleName": "BDPointSDK",
             "declAttributes": [
               "Final",
               "HasStorage",
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "isLet": true,
@@ -22557,12 +22562,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10BDPointSDK19TempoTrackingUpdateC12etaDirectionAA0cE12ETADirectionOvg",
+                "usr": "c:@M@BDPointSDK@objc(cs)TempoTrackingUpdate(im)etaDirection",
                 "mangledName": "$s10BDPointSDK19TempoTrackingUpdateC12etaDirectionAA0cE12ETADirectionOvg",
                 "moduleName": "BDPointSDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               }
@@ -22589,13 +22595,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:10BDPointSDK19TempoTrackingUpdateC11destinationAA11DestinationCSgvp",
+            "usr": "c:@M@BDPointSDK@objc(cs)TempoTrackingUpdate(py)destination",
             "mangledName": "$s10BDPointSDK19TempoTrackingUpdateC11destinationAA11DestinationCSgvp",
             "moduleName": "BDPointSDK",
             "declAttributes": [
               "Final",
               "HasStorage",
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "isLet": true,
@@ -22622,12 +22629,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10BDPointSDK19TempoTrackingUpdateC11destinationAA11DestinationCSgvg",
+                "usr": "c:@M@BDPointSDK@objc(cs)TempoTrackingUpdate(im)destination",
                 "mangledName": "$s10BDPointSDK19TempoTrackingUpdateC11destinationAA11DestinationCSgvg",
                 "moduleName": "BDPointSDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               }

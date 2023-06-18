@@ -250,10 +250,10 @@ extension BDPointSDK.GeoTriggerEvent : Swift.Encodable {
   }
 }
 @objc public class TempoTrackingUpdate : ObjectiveC.NSObject, Swift.Decodable {
-  final public let triggerChainId: Swift.String
-  final public let eta: Swift.Int
-  final public let etaDirection: BDPointSDK.TempoUpdateETADirection
-  final public let destination: BDPointSDK.Destination?
+  @objc final public let triggerChainId: Swift.String
+  @objc final public let eta: Swift.Int
+  @objc final public let etaDirection: BDPointSDK.TempoUpdateETADirection
+  @objc final public let destination: BDPointSDK.Destination?
   public init(triggerChainId: Swift.String, eta: Swift.Int, etaDirection: BDPointSDK.TempoUpdateETADirection, destination: BDPointSDK.Destination? = nil)
   required public init(from decoder: Swift.Decoder) throws
   @objc deinit

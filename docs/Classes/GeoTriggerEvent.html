@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>GeoTriggerEvent Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    <link rel="shortcut icon" type="image/png" href="./img/icon.png"/>
+
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/GeoTriggerEvent" class="dashAnchor"></a>
+    <a title="GeoTriggerEvent Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">BDPointSDK v16.0.0 Docs</a></p>
+        <p class="header-right"><a href="https://github.com/Bluedot-Innovation/PointSDK-iOS"><img src="../img/gh.png" alt="GitHub"/>View on GitHub</a></p>
+        <p class="header-right"><a href="dash-feed://https%3A%2F%2Fios-docs.bluedot.io%2Fdocsets%2FBDPointSDK.xml"><img src="../img/dash.png" alt="Dash"/>Install in Dash</a></p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">BDPointSDK Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        GeoTriggerEvent Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AppInfo.html">AppInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AppState.html">AppState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDBoundingBox.html">BDBoundingBox</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDCircle.html">BDCircle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDFenceInfo.html">BDFenceInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)BDGeometry">BDGeometry</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDLineString.html">BDLineString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDLocation.html">BDLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDLocationInfo.html">BDLocationInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDLocationManager.html">BDLocationManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDPoint.html">BDPoint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDPointSessionException.html">BDPointSessionException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDPolygon.html">BDPolygon</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDPolygonal.html">BDPolygonal</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDZoneInfo.html">BDZoneInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CrossedFence.html">CrossedFence</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Destination.html">Destination</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DeviceInfo.html">DeviceInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FenceEntered.html">FenceEntered</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FenceExited.html">FenceExited</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GeoTriggerEvent.html">GeoTriggerEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OperatingSystemInfo.html">OperatingSystemInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TempoTrackingUpdate.html">TempoTrackingUpdate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ZoneInfo.html">ZoneInfo</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:BDLocationManager+BDPointSDK.h@BDGeoTriggeringErrorDomain">BDGeoTriggeringErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@BDGeometryTypeBoundingBox">BDGeometryTypeBoundingBox</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@BDGeometryTypeCircle">BDGeometryTypeCircle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@BDGeometryTypeLineString">BDGeometryTypeLineString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@BDGeometryTypePoint">BDGeometryTypePoint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@BDGeometryTypePolygon">BDGeometryTypePolygon</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:BDLocationManager+BDPointSDK.h@BDServiceErrorDomain">BDServiceErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:BDLocationManager+BDPointSDK.h@BDTempoErrorDomain">BDTempoErrorDomain</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/BDGeoTriggeringError.html">BDGeoTriggeringError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BDServiceError.html">BDServiceError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BDTempoError.html">BDTempoError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EventType.html">EventType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/NotificationType.html">NotificationType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TempoUpdateETADirection.html">TempoUpdateETADirection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TriggerEngine.html">TriggerEngine</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPBluedotServiceDelegate.html">BDPBluedotServiceDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPDeepCopy.html">BDPDeepCopy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPGeoTriggeringEventDelegate.html">BDPGeoTriggeringEventDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPGeometry.html">BDPGeometry</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPJSONDeserializable.html">BDPJSONDeserializable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPJSONSerializable.html">BDPJSONSerializable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPNamedDescribed.html">BDPNamedDescribed</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPSpatialObject.html">BDPSpatialObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPSpatialObjectInfo.html">BDPSpatialObjectInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPTempoTrackingDelegate.html">BDPTempoTrackingDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPValidatable.html">BDPValidatable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Event.html">Event</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/JsonString.html">JsonString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TriggerEvent.html">TriggerEvent</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Type%20Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:BDPGeometry.h@T@BDGeometryType">BDGeometryType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationAccuracy">BDLocationAccuracy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationCoordinate2D">BDLocationCoordinate2D</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDegrees">BDLocationDegrees</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDirection">BDLocationDirection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDistance">BDLocationDistance</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationSpeed">BDLocationSpeed</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>GeoTriggerEvent</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="kt">GeoTriggerEvent</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">GeoTriggerEvent</span><span class="p">:</span> <span class="kt"><a href="../Protocols/JsonString.html">JsonString</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>An event triggered by GeoTriggering service when a trigger (zone entry or exit) happens.</p>
+
+<p>This event is being sent to application via <code>BDPGeoTriggeringEventDelegate.didEnterZone(_:)</code>
+and <code>BDPGeoTriggeringEventDelegate.didExitZone(_:)</code>.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@BDPointSDK@objc(cs)GeoTriggerEvent(py)installRef"></a>
+                    <a name="//apple_ref/objc/Property/installRef" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@BDPointSDK@objc(cs)GeoTriggerEvent(py)installRef">installRef</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The installation reference of this Point SDK enabled App. Same as <code>BDLocationManager/installRef</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">let</span> <span class="nv">installRef</span><span class="p">:</span> <span class="kt">UUID</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@BDPointSDK@objc(cs)GeoTriggerEvent(py)projectId"></a>
+                    <a name="//apple_ref/objc/Property/projectId" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@BDPointSDK@objc(cs)GeoTriggerEvent(py)projectId">projectId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The projectId SDK initialized with</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">let</span> <span class="nv">projectId</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@BDPointSDK@objc(cs)GeoTriggerEvent(py)deviceInfo"></a>
+                    <a name="//apple_ref/objc/Property/deviceInfo" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@BDPointSDK@objc(cs)GeoTriggerEvent(py)deviceInfo">deviceInfo</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Device infomation e.g. model, os, advertisingId (IDFA)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">let</span> <span class="nv">deviceInfo</span><span class="p">:</span> <span class="kt"><a href="../Classes/DeviceInfo.html">DeviceInfo</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@BDPointSDK@objc(cs)GeoTriggerEvent(py)triggerChainId"></a>
+                    <a name="//apple_ref/objc/Property/triggerChainId" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@BDPointSDK@objc(cs)GeoTriggerEvent(py)triggerChainId">triggerChainId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The unique ID of the trigger chain.
+A trigger chain includes an Entry event (if zone setting in Canvas is Exit-disabled), or a pair of Entry and Exit events (if zone setting in Canvas is Exit-enabled)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">let</span> <span class="nv">triggerChainId</span><span class="p">:</span> <span class="kt">UUID</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@BDPointSDK@objc(cs)GeoTriggerEvent(py)notificationType"></a>
+                    <a name="//apple_ref/objc/Property/notificationType" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@BDPointSDK@objc(cs)GeoTriggerEvent(py)notificationType">notificationType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Notification Type of this event. For GeoTriggerEvent events, can be either <code><a href="../Enums/NotificationType.html#/c:@M@BDPointSDK@E@NotificationType@NotificationTypeEntry">entry</a></code> or <code><a href="../Enums/NotificationType.html#/c:@M@BDPointSDK@E@NotificationType@NotificationTypeExit">exit</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">let</span> <span class="nv">notificationType</span><span class="p">:</span> <span class="kt"><a href="../Enums/NotificationType.html">NotificationType</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@BDPointSDK@objc(cs)GeoTriggerEvent(py)zoneInfo"></a>
+                    <a name="//apple_ref/objc/Property/zoneInfo" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@BDPointSDK@objc(cs)GeoTriggerEvent(py)zoneInfo">zoneInfo</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Details of the zone triggering the event</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">let</span> <span class="nv">zoneInfo</span><span class="p">:</span> <span class="kt"><a href="../Classes/ZoneInfo.html">ZoneInfo</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@BDPointSDK@objc(cs)GeoTriggerEvent(py)appInfo"></a>
+                    <a name="//apple_ref/objc/Property/appInfo" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@BDPointSDK@objc(cs)GeoTriggerEvent(py)appInfo">appInfo</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Application-related detail. Note that the PointSDK&rsquo;s <code>customEventMetaData</code> is included in this <code>appInfo</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">let</span> <span class="nv">appInfo</span><span class="p">:</span> <span class="kt"><a href="../Classes/AppInfo.html">AppInfo</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@BDPointSDK@objc(cs)GeoTriggerEvent(py)triggerEvents"></a>
+                    <a name="//apple_ref/objc/Property/triggerEvents" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@BDPointSDK@objc(cs)GeoTriggerEvent(py)triggerEvents">triggerEvents</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A list of trigger events included in this GeoTriggerEvent.</p>
+
+<ul>
+<li>An entry event will include only 1 item of type <code><a href="../Classes/FenceEntered.html">FenceEntered</a></code>.</li>
+<li>An exit event will include 2 items: the <code><a href="../Classes/FenceEntered.html">FenceEntered</a></code> event and the <code><a href="../Classes/FenceExited.html">FenceExited</a></code> event linking to the same zone.</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">let</span> <span class="nv">triggerEvents</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Protocols/TriggerEvent.html">TriggerEvent</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@BDPointSDK@objc(cs)GeoTriggerEvent(py)entryEvent"></a>
+                    <a name="//apple_ref/objc/Property/entryEvent" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@BDPointSDK@objc(cs)GeoTriggerEvent(py)entryEvent">entryEvent</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A <code><a href="../Classes/FenceEntered.html">FenceEntered</a></code> event causing the zone entry trigger, same as the first event in <code><a href="../Classes/GeoTriggerEvent.html#/c:@M@BDPointSDK@objc(cs)GeoTriggerEvent(py)triggerEvents">triggerEvents</a></code>.
+For exit trigger event, this returns the <code><a href="../Classes/FenceEntered.html">FenceEntered</a></code> event linked to the <code><a href="../Classes/FenceExited.html">FenceExited</a></code> in the same <code><a href="../Classes/GeoTriggerEvent.html#/c:@M@BDPointSDK@objc(cs)GeoTriggerEvent(py)triggerChainId">triggerChainId</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">entryEvent</span><span class="p">:</span> <span class="kt"><a href="../Classes/FenceEntered.html">FenceEntered</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@BDPointSDK@objc(cs)GeoTriggerEvent(py)exitEvent"></a>
+                    <a name="//apple_ref/objc/Property/exitEvent" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@BDPointSDK@objc(cs)GeoTriggerEvent(py)exitEvent">exitEvent</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A <code><a href="../Classes/FenceExited.html">FenceExited</a></code> event causing the zone exit trigger, same as the last event in <code><a href="../Classes/GeoTriggerEvent.html#/c:@M@BDPointSDK@objc(cs)GeoTriggerEvent(py)triggerEvents">triggerEvents</a></code>.
+<code>nil</code> if this GeoTriggerEvent is an entry event.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">exitEvent</span><span class="p">:</span> <span class="kt"><a href="../Classes/FenceExited.html">FenceExited</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@BDPointSDK@objc(cs)GeoTriggerEvent(im)toJson:"></a>
+                    <a name="//apple_ref/objc/Method/toJson()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@BDPointSDK@objc(cs)GeoTriggerEvent(im)toJson:">toJson()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Convert to JSON string</p>
+
+<p>This function throws an error if JSON encoding process fails</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc(toJson:)</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">toJson</span><span class="p">()</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2023 <a class="link" href="https://bluedot.io" target="_blank" rel="external noopener">Bluedot</a>. All rights reserved. (Last updated: 2023-06-18)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
