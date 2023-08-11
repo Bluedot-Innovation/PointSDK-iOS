@@ -1,5 +1,4 @@
-PointSDK v15.6.7 (156)
-# SDK Version 15.6.7
+PointSDK v15.6.8 (191)
+# SDK Version 15.6.8
 
-- Improved the reliability of the SDK under poor or no network access.
-- Fixed an issue that was preventing the Restart Notification to reliably start.
+- Fixed rare race condition crash caused by null pointer on startup.
