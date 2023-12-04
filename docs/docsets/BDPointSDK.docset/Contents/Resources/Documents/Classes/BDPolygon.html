@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BDPolygon Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    <link rel="shortcut icon" type="image/png" href="./img/icon.png"/>
+
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/BDPolygon" class="dashAnchor"></a>
+    <a title="BDPolygon Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">BDPointSDK v16.0.0 Docs</a></p>
+        <p class="header-right"><a href="https://github.com/Bluedot-Innovation/PointSDK-iOS"><img src="../img/gh.png" alt="GitHub"/>View on GitHub</a></p>
+        <p class="header-right"><a href="dash-feed://https%3A%2F%2Fios-docs.bluedot.io%2Fdocsets%2FBDPointSDK.xml"><img src="../img/dash.png" alt="Dash"/>Install in Dash</a></p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">BDPointSDK Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        BDPolygon Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AppInfo.html">AppInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AppState.html">AppState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDBoundingBox.html">BDBoundingBox</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDCircle.html">BDCircle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDFenceInfo.html">BDFenceInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)BDGeometry">BDGeometry</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDLineString.html">BDLineString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDLocation.html">BDLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDLocationInfo.html">BDLocationInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDLocationManager.html">BDLocationManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDPoint.html">BDPoint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDPointSessionException.html">BDPointSessionException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDPolygon.html">BDPolygon</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDPolygonal.html">BDPolygonal</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDZoneInfo.html">BDZoneInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CrossedFence.html">CrossedFence</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Destination.html">Destination</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DeviceInfo.html">DeviceInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FenceEntered.html">FenceEntered</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FenceExited.html">FenceExited</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GeoTriggerEvent.html">GeoTriggerEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OperatingSystemInfo.html">OperatingSystemInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TempoTrackingUpdate.html">TempoTrackingUpdate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ZoneInfo.html">ZoneInfo</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:BDLocationManager+BDPointSDK.h@BDGeoTriggeringErrorDomain">BDGeoTriggeringErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@BDGeometryTypeBoundingBox">BDGeometryTypeBoundingBox</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@BDGeometryTypeCircle">BDGeometryTypeCircle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@BDGeometryTypeLineString">BDGeometryTypeLineString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@BDGeometryTypePoint">BDGeometryTypePoint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@BDGeometryTypePolygon">BDGeometryTypePolygon</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:BDLocationManager+BDPointSDK.h@BDServiceErrorDomain">BDServiceErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:BDLocationManager+BDPointSDK.h@BDTempoErrorDomain">BDTempoErrorDomain</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/BDGeoTriggeringError.html">BDGeoTriggeringError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BDServiceError.html">BDServiceError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BDTempoError.html">BDTempoError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EventType.html">EventType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/NotificationType.html">NotificationType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TempoUpdateETADirection.html">TempoUpdateETADirection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TriggerEngine.html">TriggerEngine</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPBluedotServiceDelegate.html">BDPBluedotServiceDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPDeepCopy.html">BDPDeepCopy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPGeoTriggeringEventDelegate.html">BDPGeoTriggeringEventDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPGeometry.html">BDPGeometry</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPJSONDeserializable.html">BDPJSONDeserializable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPJSONSerializable.html">BDPJSONSerializable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPNamedDescribed.html">BDPNamedDescribed</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPSpatialObject.html">BDPSpatialObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPSpatialObjectInfo.html">BDPSpatialObjectInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPTempoTrackingDelegate.html">BDPTempoTrackingDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPValidatable.html">BDPValidatable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Event.html">Event</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/JsonString.html">JsonString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TriggerEvent.html">TriggerEvent</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Type%20Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:BDPGeometry.h@T@BDGeometryType">BDGeometryType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationAccuracy">BDLocationAccuracy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationCoordinate2D">BDLocationCoordinate2D</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDegrees">BDLocationDegrees</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDirection">BDLocationDirection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDistance">BDLocationDistance</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationSpeed">BDLocationSpeed</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>BDPolygon</h1>
+              <div class="declaration">
+                <div class="language">
+                  <p class="aside-title">Objective-C</p>
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BDPolygon</span> <span class="p">:</span> <span class="nc"><a href="../Classes/BDPolygonal.html">BDPolygonal</a></span> <span class="o">&lt;</span><span class="n">NSSecureCoding</span><span class="o">&gt;</span></code></pre>
+
+                </div>
+                <div class="language">
+                  <p class="aside-title">Swift</p>
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">BDPolygon</span> <span class="p">:</span> <span class="kt"><a href="../Classes/BDPolygonal.html">BDPolygonal</a></span><span class="p">,</span> <span class="kt">NSSecureCoding</span></code></pre>
+
+                </div>
+              </div>
+            <p>Arbitrary region on the Earth&rsquo;s surface, comprised of two or more <code><a href="../Classes/BDPoint.html">BDPoint</a></code> &ldquo;points&rdquo; connected by straight-line segments.</p>
+
+<p><p>Unlike a <code><a href="../Classes/BDLineString.html">BDLineString</a></code> &ldquo;line-string&rdquo; this geometry forms an enclosed area.</p></p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDPolygon(cm)polygonWithVertices:copy:"></a>
+                    <a name="//apple_ref/objc/Method/+polygonWithVertices:copy:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDPolygon(cm)polygonWithVertices:copy:">+polygonWithVertices:<wbr>copy:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Convenience method to create a BDPolygon with an array of <code><a href="../Classes/BDPoint.html">BDPoint</a></code>  vertices.</p>
+
+<p>Vertices is an array containing 1 or more BDPointSDK objects describing the intended polygon.
+If the array is empty, or if the array contains any non-BDPointSDK elements, an <b><code>NSInvalidArgumentException</code></b> will be thrown.
+Copy is if YES, then the BDPointSDK elements will be copied before inclusion in the new BDPolygon.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="nf">polygonWithVertices</span><span class="p">:(</span><span class="n">NSArray</span> <span class="o">*</span><span class="p">)</span><span class="nv">vertices</span> <span class="nf">copy</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">copy</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="n">convenience</span> <span class="nf">init</span><span class="o">!</span><span class="p">(</span><span class="nv">vertices</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]</span><span class="o">!</span><span class="p">,</span> <span class="nv">copy</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDPolygon(cm)polygonWithLatLongCoordinates:"></a>
+                    <a name="//apple_ref/objc/Method/+polygonWithLatLongCoordinates:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDPolygon(cm)polygonWithLatLongCoordinates:">+polygonWithLatLongCoordinates:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Convenience method to construct an ad-hoc polygon using variable length lat/long variable arguments.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="nf">polygonWithLatLongCoordinates</span><span class="p">:(</span><span class="n">NSNumber</span> <span class="o">*</span><span class="p">)</span><span class="nv">scalar</span><span class="p">,</span> <span class="p">...;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2023 <a class="link" href="https://bluedot.io" target="_blank" rel="external noopener">Bluedot</a>. All rights reserved. (Last updated: 2023-09-25)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

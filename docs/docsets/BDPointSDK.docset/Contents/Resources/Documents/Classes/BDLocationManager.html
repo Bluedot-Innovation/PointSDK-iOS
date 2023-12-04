@@ -1,0 +1,1375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BDLocationManager Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    <link rel="shortcut icon" type="image/png" href="./img/icon.png"/>
+
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/BDLocationManager" class="dashAnchor"></a>
+    <a title="BDLocationManager Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">BDPointSDK v16.0.0 Docs</a></p>
+        <p class="header-right"><a href="https://github.com/Bluedot-Innovation/PointSDK-iOS"><img src="../img/gh.png" alt="GitHub"/>View on GitHub</a></p>
+        <p class="header-right"><a href="dash-feed://https%3A%2F%2Fios-docs.bluedot.io%2Fdocsets%2FBDPointSDK.xml"><img src="../img/dash.png" alt="Dash"/>Install in Dash</a></p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">BDPointSDK Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        BDLocationManager Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AppInfo.html">AppInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AppState.html">AppState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDBoundingBox.html">BDBoundingBox</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDCircle.html">BDCircle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDFenceInfo.html">BDFenceInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)BDGeometry">BDGeometry</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDLineString.html">BDLineString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDLocation.html">BDLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDLocationInfo.html">BDLocationInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDLocationManager.html">BDLocationManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDPoint.html">BDPoint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDPointSessionException.html">BDPointSessionException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDPolygon.html">BDPolygon</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDPolygonal.html">BDPolygonal</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BDZoneInfo.html">BDZoneInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CrossedFence.html">CrossedFence</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Destination.html">Destination</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DeviceInfo.html">DeviceInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FenceEntered.html">FenceEntered</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FenceExited.html">FenceExited</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GeoTriggerEvent.html">GeoTriggerEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OperatingSystemInfo.html">OperatingSystemInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TempoTrackingUpdate.html">TempoTrackingUpdate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ZoneInfo.html">ZoneInfo</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:BDLocationManager+BDPointSDK.h@BDGeoTriggeringErrorDomain">BDGeoTriggeringErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@BDGeometryTypeBoundingBox">BDGeometryTypeBoundingBox</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@BDGeometryTypeCircle">BDGeometryTypeCircle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@BDGeometryTypeLineString">BDGeometryTypeLineString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@BDGeometryTypePoint">BDGeometryTypePoint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@BDGeometryTypePolygon">BDGeometryTypePolygon</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:BDLocationManager+BDPointSDK.h@BDServiceErrorDomain">BDServiceErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:BDLocationManager+BDPointSDK.h@BDTempoErrorDomain">BDTempoErrorDomain</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/BDGeoTriggeringError.html">BDGeoTriggeringError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BDServiceError.html">BDServiceError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BDTempoError.html">BDTempoError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EventType.html">EventType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/NotificationType.html">NotificationType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TempoUpdateETADirection.html">TempoUpdateETADirection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TriggerEngine.html">TriggerEngine</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPBluedotServiceDelegate.html">BDPBluedotServiceDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPDeepCopy.html">BDPDeepCopy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPGeoTriggeringEventDelegate.html">BDPGeoTriggeringEventDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPGeometry.html">BDPGeometry</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPJSONDeserializable.html">BDPJSONDeserializable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPJSONSerializable.html">BDPJSONSerializable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPNamedDescribed.html">BDPNamedDescribed</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPSpatialObject.html">BDPSpatialObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPSpatialObjectInfo.html">BDPSpatialObjectInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPTempoTrackingDelegate.html">BDPTempoTrackingDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BDPValidatable.html">BDPValidatable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Event.html">Event</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/JsonString.html">JsonString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TriggerEvent.html">TriggerEvent</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Type%20Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:BDPGeometry.h@T@BDGeometryType">BDGeometryType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationAccuracy">BDLocationAccuracy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationCoordinate2D">BDLocationCoordinate2D</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDegrees">BDLocationDegrees</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDirection">BDLocationDirection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDistance">BDLocationDistance</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationSpeed">BDLocationSpeed</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>BDLocationManager</h1>
+              <div class="declaration">
+                <div class="language">
+                  <p class="aside-title">Objective-C</p>
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BDLocationManager</span> <span class="p">:</span> <span class="nc">CLLocationManager</span></code></pre>
+
+                </div>
+                <div class="language">
+                  <p class="aside-title">Swift</p>
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">BDLocationManager</span> <span class="p">:</span> <span class="kt">CLLocationManager</span></code></pre>
+
+                </div>
+              </div>
+            <p>Entry-point for your Application&rsquo;s interaction with <b>Point SDK</b>.</p>
+
+<p><b>Point SDK</b> carries out location specific, conditional actions that you define in the <b>Canvas</b> web-interface.
+To start these behaviours with your Application, it is necessary only to call the initialize method
+on the <code>BDLocationManager.instance</code> &ldquo;shared singleton instance&rdquo; of <code>BDLocationManager</code>.<p/></p>
+
+<p>Calling the initialization method will start a session with <b>Canvas</b>..</p>
+
+<p><p>In general, the <code>BDLocationManager.instance</code> &ldquo;shared, singleton instance&rdquo; of <code>BDLocationManager</code> should be used wherever the standard Core Location
+<a hef="https://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CLLocationManager_Class/">CLLocationManager</a>
+class would have been used.</p>
+
+<p><code>BDLocationManager</code> is a subclass of <a hef="https://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CLLocationManager_Class/">CLLocationManager</a>
+and is intended as a drop-in replacement while providing additional features.</p>
+
+<p><code>BDLocationManager</code> exposes <b>a few new delegate properties</b>, in addition to the usual <a href="https://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CLLocationManager_Class/#//apple_ref/occ/instp/CLLocationManager/delegate"><b>delegate</b></a> property
+inherited from <a href="https://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CLLocationManager_Class/">CLLocationManager</a>:</p>
+
+<ul>
+<li><code><a href="../Classes/BDLocationManager.html#/c:objc(cs)BDLocationManager(py)geoTriggeringEventDelegate">BDLocationManager.geoTriggeringEventDelegate</a></code> - to which you should assign your own implementation of the <code><a href="../Protocols/BDPGeoTriggeringEventDelegate.html">BDPGeoTriggeringEventDelegate</a></code> protocol. The property provides callbacks to notify your application when Zone information is received and any zone enter/ zone exit events as they occur, in real-time.</li>
+<li><code><a href="../Classes/BDLocationManager.html#/c:objc(cs)BDLocationManager(py)tempoTrackingDelegate">BDLocationManager.tempoTrackingDelegate</a></code> - to which you should assign your own implementation of the <code><a href="../Protocols/BDPTempoTrackingDelegate.html">BDPTempoTrackingDelegate</a></code> protocol. This  property provides callbacks to notify your application
+of Tempo related events.</li>
+<li><code><a href="../Classes/BDLocationManager.html#/c:objc(cs)BDLocationManager(py)bluedotServiceDelegate">BDLocationManager.bluedotServiceDelegate</a></code> - to which you should assign your own implementation of the <code><a href="../Protocols/BDPBluedotServiceDelegate.html">BDPBluedotServiceDelegate</a></code> protocol to receive Bluedot service related callbacks (for e.g. location permission changed, accuracy authorization changed, etc.).</li>
+</ul>
+
+<p>By default, <code>BDLocationManager</code> enables background location updates for While Using location permission, which will display the visual blue bar in the StatusBar area at the top of the screen.
+ If you prefer to disable that behavior and don&rsquo;t want the Point SDK to process location updates when app is in the background and permission is While Using, set <code><a href="../Classes/BDLocationManager.html#/c:objc(cs)BDLocationManager(py)backgroundLocationAccessForWhileUsing">BDLocationManager.backgroundLocationAccessForWhileUsing</a></code> to <code>false</code>.</p>
+
+<p><p>In addition, some methods of <b>Point SDK</b> classes may only be called while initialized
+and will otherwise cause an exception to be thrown. Individual restrictions are documented clearly in this API
+reference. It is only necessary to initialize once during the runtime of the application.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDLocationManager(cm)instance"></a>
+                    <a name="//apple_ref/objc/Method/+instance" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDLocationManager(cm)instance">+instance</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">BDLocationManager</span> <span class="o">*</span><span class="p">)</span><span class="n">instance</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">instance</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">BDLocationManager</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The singleton instance of <code>BDLocationManager</code></p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDLocationManager(py)authorizationStatus"></a>
+                    <a name="//apple_ref/objc/Property/authorizationStatus" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDLocationManager(py)authorizationStatus">authorizationStatus</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Key-Value Observable representation of the current, underlying <a href="https://developer.apple.com/documentation/corelocation/clauthorizationstatus">CoreLocation authorization status</a> for this Application.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">CLAuthorizationStatus</span> <span class="n">authorizationStatus</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">authorizationStatus</span><span class="p">:</span> <span class="kt">CLAuthorizationStatus</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/BDPointSDK"></a>
+                <a name="//apple_ref/objc/Section/BDPointSDK" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/BDPointSDK"></a>
+                  <h3 class="section-name"><span>BDPointSDK</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDLocationManager(im)initializeWithProjectId:completion:"></a>
+                    <a name="//apple_ref/objc/Method/-initializeWithProjectId:completion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDLocationManager(im)initializeWithProjectId:completion:">-initializeWithProjectId:<wbr>completion:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initialize Bluedot Point SDK with projectId.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>Bluedot SDK will not start triggering Geofeatures immediately after initialization as per previous API. You will have to make the call explicitly to start/stop Geo-triggering.</p>
+
+</div><div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>Bluedot Point SDK doesn not request for OS location permission on initialization. We encourage you to request OS location permission that you requires (Always or When in Use), at an opportune moment from within your app, to get the best conversion rate.
+For example, when customer places an order within the mobile app, at this point you can start Geo-triggering, as well as requesting for location permission. To request for OS location permission, you can make the calls via our <em>BDLocationManager</em> Singleton, for example:</p>
+<pre class="highlight objective_c"><code><span class="p">[</span><span class="n">BDLocationManager</span><span class="p">.</span><span class="n">instance</span> <span class="nf">requestAlwaysAuthorization</span><span class="p">];</span>
+<span class="p">[</span><span class="n">BDLocationManager</span><span class="p">.</span><span class="n">instance</span> <span class="nf">requestWhenInUseAuthorization</span><span class="p">];</span>
+</code></pre>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">initializeWithProjectId</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">projectId</span>
+                     <span class="nf">completion</span><span class="p">:</span>
+                         <span class="p">(</span><span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="n">_Nonnull</span><span class="p">)(</span><span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span><span class="nv">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">initialize</span><span class="p">(</span><span class="n">withProjectId</span> <span class="nv">projectId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="n">async</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>projectId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The projectId to be initialized. You can find your projectId on Bluedot Canvas</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A mandatory completion handler called once processing completed. If the initialization is successful, error will be returned as nil. However, if the initilialization fails, an error will be provided.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDLocationManager(im)isInitialized"></a>
+                    <a name="//apple_ref/objc/Method/-isInitialized" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDLocationManager(im)isInitialized">-isInitialized</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Method to determine if Point SDK is initialized.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="n">isInitialized</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">isInitialized</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Returns whether Bluedot Point SDK is initialized or not</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDLocationManager(im)resetWithCompletion:"></a>
+                    <a name="//apple_ref/objc/Method/-resetWithCompletion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDLocationManager(im)resetWithCompletion:">-resetWithCompletion:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reset Bluedot Point SDK (only if you wish to switch to a different projectId)</p>
+
+<p>Call this method only if you need to switch to a different projectId, this will reset the Bluedot Point SDK to its original state. Upon completion callback, you can make the call <code><a href="../Classes/BDLocationManager.html#/c:objc(cs)BDLocationManager(im)initializeWithProjectId:completion:">-initializeWithProjectId:completion:</a></code>  to initialize with a different projectId.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">resetWithCompletion</span><span class="p">:(</span><span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="n">_Nonnull</span><span class="p">)(</span><span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span><span class="nv">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">reset</span><span class="p">()</span> <span class="n">async</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A mandatory completion handler called once processing completed. If the initialization is successful, error will be returned as nil. However, if the initilialization fails, an error will be provided.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDLocationManager(py)tempoTrackingDelegate"></a>
+                    <a name="//apple_ref/objc/Property/tempoTrackingDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDLocationManager(py)tempoTrackingDelegate">tempoTrackingDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Implement the callbacks in your own implementation of <code><a href="../Protocols/BDPTempoTrackingDelegate.html">BDPTempoTrackingDelegate</a></code>, and assign it to this property to
+   receive Tempo related events</p>
+
+<p>Applications using Point SDK must initialize before using its features. Attempting to call protected features when not initialized will case a <code><a href="../Classes/BDPointSessionException.html">BDPointSessionException</a></code> to be thrown.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/BDPTempoTrackingDelegate.html">BDPTempoTrackingDelegate</a></span><span class="o">&gt;</span> <span class="n">tempoTrackingDelegate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">tempoTrackingDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/BDPTempoTrackingDelegate.html">BDPTempoTrackingDelegate</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDLocationManager(py)bluedotServiceDelegate"></a>
+                    <a name="//apple_ref/objc/Property/bluedotServiceDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDLocationManager(py)bluedotServiceDelegate">bluedotServiceDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Implement the callbacks in your own implementation of <code><a href="../Protocols/BDPBluedotServiceDelegate.html">BDPBluedotServiceDelegate</a></code>, and assign it to this property to receive bluedot service related callbacks (for e.g. location permission changed, accuracy authorization changed, e.t.c.</p>
+
+<p>Applications using Point SDK must initialize before using its features. Attempting to call protected features when not initialized will case a <code><a href="../Classes/BDPointSessionException.html">BDPointSessionException</a></code> to be thrown.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/BDPBluedotServiceDelegate.html">BDPBluedotServiceDelegate</a></span><span class="o">&gt;</span> <span class="n">_Nullable</span> <span class="n">bluedotServiceDelegate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">bluedotServiceDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/BDPBluedotServiceDelegate.html">BDPBluedotServiceDelegate</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDLocationManager(py)geoTriggeringEventDelegate"></a>
+                    <a name="//apple_ref/objc/Property/geoTriggeringEventDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDLocationManager(py)geoTriggeringEventDelegate">geoTriggeringEventDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Implement the callbacks in your own implementation of <code><a href="../Protocols/BDPGeoTriggeringEventDelegate.html">BDPGeoTriggeringEventDelegate</a></code>, and assign it to this property to receive Geotriggering e related callbacks (for e.g. zone updates, fence checkin e.t.c.)</p>
+
+<p>Applications using Point SDK must initialize before using its features. Attempting to call protected features when not initialized will case a <code><a href="../Classes/BDPointSessionException.html">BDPointSessionException</a></code> to be thrown.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/BDPGeoTriggeringEventDelegate.html">BDPGeoTriggeringEventDelegate</a></span><span class="o">&gt;</span> <span class="n">_Nullable</span> <span class="n">geoTriggeringEventDelegate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">geoTriggeringEventDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/BDPGeoTriggeringEventDelegate.html">BDPGeoTriggeringEventDelegate</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDLocationManager(py)zoneInfos"></a>
+                    <a name="//apple_ref/objc/Property/zoneInfos" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDLocationManager(py)zoneInfos">zoneInfos</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A collection of <code><a href="../Classes/BDZoneInfo.html">BDZoneInfo</a></code> objects, corresponding to the Zones you created for this project, in the
+<b>Canvas</b> web-interface.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSSet</span><span class="o">&lt;</span><span class="n"><a href="../Classes/BDZoneInfo.html">BDZoneInfo</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">zoneInfos</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">zoneInfos</span><span class="p">:</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt"><a href="../Classes/BDZoneInfo.html">BDZoneInfo</a></span><span class="o">&gt;!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDLocationManager(py)backgroundLocationAccessForWhileUsing"></a>
+                    <a name="//apple_ref/objc/Property/backgroundLocationAccessForWhileUsing" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDLocationManager(py)backgroundLocationAccessForWhileUsing">backgroundLocationAccessForWhileUsing</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Determine whether to allow the SDK to function in the background and when Location permission is While Using.</p>
+
+<p>Set to <b>true</b> to enable the SDK to function (receive location updates) when app is in the background and Location permission is While Using.</p>
+
+<p>Set to <b>false</b> to disable the SDK to function (receiving location updates) when app is in the background and Location permission is While Using.</p>
+
+<p>Default value is <b>true</b> .</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    This value doesn&rsquo;t have effect if Location permission is Always.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">backgroundLocationAccessForWhileUsing</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">backgroundLocationAccessForWhileUsing</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDLocationManager(im)setZone:disableByApplication:"></a>
+                    <a name="//apple_ref/objc/Method/-setZone:disableByApplication:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDLocationManager(im)setZone:disableByApplication:">-setZone:<wbr>disableByApplication:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Disabled or re-enable a specific <code><a href="../Classes/BDZoneInfo.html">BDZoneInfo</a></code> &ldquo;zone&rdquo;.  Information about valid <code><a href="../Classes/BDZoneInfo.html">BDZoneInfo</a></code> &ldquo;zones&rdquo;, including
+their respective <i>zoneId</i>&lsquo;s for use in this method, is delivered to <code><a href="../Protocols/BDPGeoTriggeringEventDelegate.html#/c:objc(pl)BDPGeoTriggeringEventDelegate(im)didUpdateZoneInfo">-[BDPGeoTriggeringEventDelegate didUpdateZoneInfo]</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setZone</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">zoneId</span> <span class="nf">disableByApplication</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">disable</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setZone</span><span class="p">(</span><span class="n">_</span> <span class="nv">zoneId</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">,</span> <span class="n">disableByApplication</span> <span class="nv">disable</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDLocationManager(im)applicationContainsDisabledZone:completion:"></a>
+                    <a name="//apple_ref/objc/Method/-applicationContainsDisabledZone:completion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDLocationManager(im)applicationContainsDisabledZone:completion:">-applicationContainsDisabledZone:<wbr>completion:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Non-blocking method to determine if a user zone is in an enabled state.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">applicationContainsDisabledZone</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">zoneId</span>
+                             <span class="nf">completion</span><span class="p">:(</span><span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n">BOOL</span><span class="p">))</span><span class="nv">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">applicationContainsDisabledZone</span><span class="p">(</span><span class="n">_</span> <span class="nv">zoneId</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">)</span> <span class="n">async</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>zoneId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>zone UUID</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>closure returns whenever zone is disabled or not</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDLocationManager(im)installRef"></a>
+                    <a name="//apple_ref/objc/Method/-installRef" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDLocationManager(im)installRef">-installRef</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the installation reference of this Point SDK enabled App.
+This is the same as the Install Ref that appears in a Zone&rsquo;s Activity Log in Canvas, or queried via Open API.
+This reference is randomly generated at the first run-time of the App and remains fixed for the duration of the App
+installation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">installRef</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">installRef</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDLocationManager(im)sdkVersion"></a>
+                    <a name="//apple_ref/objc/Method/-sdkVersion" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDLocationManager(im)sdkVersion">-sdkVersion</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the version of the Point SDK as a NSString.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">sdkVersion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">sdkVersion</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDLocationManager(im)setCustomEventMetaData:"></a>
+                    <a name="//apple_ref/objc/Method/-setCustomEventMetaData:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDLocationManager(im)setCustomEventMetaData:">-setCustomEventMetaData:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets custom metadata for Notification events.
+The custom metadata set through this API will be available on the backend in checkin activity log and via webhooks.
+Only up to 20 custom meta data fields are allowed. Throws <code>BDCustomEventMetadataCountException</code> exception if the number of custom fields exceeded.
+Only String Type is allowed. Throws <code>BDCustomEventMetadataDataFormatException</code> exception if data contains non-String type.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setCustomEventMetaData</span><span class="p">:(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="p">)</span><span class="nv">data</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setCustomEventMetaData</span><span class="p">(</span><span class="n">_</span> <span class="nv">data</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDLocationManager(im)customEventMetaData"></a>
+                    <a name="//apple_ref/objc/Method/-customEventMetaData" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDLocationManager(im)customEventMetaData">-customEventMetaData</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the custom metadata set by calling setCustomEventMetaData.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="p">)</span><span class="n">customEventMetaData</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">customEventMetaData</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDLocationManager(im)startGeoTriggeringWithCompletion:"></a>
+                    <a name="//apple_ref/objc/Method/-startGeoTriggeringWithCompletion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDLocationManager(im)startGeoTriggeringWithCompletion:">-startGeoTriggeringWithCompletion:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Start GeoTriggering features of the Bluedot Point SDK. Please refer to <code><a href="../Classes/BDLocationManager.html#/c:objc(cs)BDLocationManager(im)startGeoTriggeringWithAppRestartNotificationTitle:notificationButtonText:completion:">-[BDLocationManager startGeoTriggeringWithAppRestartNotificationTitle:notificationButtonText:completion:]</a></code> if you wish to implement App Restart Feature</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    You can start Geo-triggering feature <b>only</b> while your App is in the Foreground.
+
+</div><div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    An error will be returned if your App does not have either <b>Always</b> or <b>When In Use</b> location permission.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">startGeoTriggeringWithCompletion</span><span class="p">:</span>
+    <span class="p">(</span><span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="n">_Nonnull</span><span class="p">)(</span><span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span><span class="nv">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">startGeoTriggering</span><span class="p">()</span> <span class="n">async</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A mandatory completion handler called once Start GeoTriggering processing completed. If the GeoTriggering feature is started successfully, error will be returned as nil. However, if the Start GeoTriggering feature fails, an error will be provided.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDLocationManager(im)startGeoTriggeringWithAppRestartNotificationTitle:notificationButtonText:completion:"></a>
+                    <a name="//apple_ref/objc/Method/-startGeoTriggeringWithAppRestartNotificationTitle:notificationButtonText:completion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDLocationManager(im)startGeoTriggeringWithAppRestartNotificationTitle:notificationButtonText:completion:">-startGeoTriggeringWithAppRestartNotificationTitle:<wbr>notificationButtonText:<wbr>completion:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Start GeoTriggering features of the Bluedot Point SDK with App Restart feature. Note that <b>Always</b> location permission is required for the App Restart feature.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    You can start Geo-triggering feature <b>only</b> while your App is in the Foreground.
+
+</div><div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    An error will be returned if your App does not have <b>Always</b> location permission.
+
+</div><div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    An error will be returned if notification permission is not granted.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+    <span class="nf">startGeoTriggeringWithAppRestartNotificationTitle</span><span class="p">:</span>
+        <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">notificationTitle</span>
+                               <span class="nf">notificationButtonText</span><span class="p">:</span>
+                                   <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">notificationButtonText</span>
+                                           <span class="nf">completion</span><span class="p">:(</span><span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="n">_Nonnull</span><span class="p">)(</span>
+                                                          <span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span>
+                                                          <span class="n">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">startGeoTriggering</span><span class="p">(</span><span class="n">withAppRestartNotificationTitle</span> <span class="nv">notificationTitle</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">notificationButtonText</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="n">async</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>notificationTitle</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the string to be used in the title of the banner or alert to be used in the local notification to restart the app.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>notificationButtonText</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the string to be used in the text of the action button to be used in the local notification to restart the app.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A mandatory completion handler called once Start GeoTriggering processing completed. If the GeoTriggering feature is started successfully, error will be returned as nil. However, if the Start GeoTriggering feature fails, an error will be provided.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDLocationManager(im)isGeoTriggeringRunning"></a>
+                    <a name="//apple_ref/objc/Method/-isGeoTriggeringRunning" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDLocationManager(im)isGeoTriggeringRunning">-isGeoTriggeringRunning</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Method to determine if GeoTriggering is running</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="n">isGeoTriggeringRunning</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">isGeoTriggeringRunning</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Returns whether GeoTriggering is running</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDLocationManager(im)stopGeoTriggeringWithCompletion:"></a>
+                    <a name="//apple_ref/objc/Method/-stopGeoTriggeringWithCompletion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDLocationManager(im)stopGeoTriggeringWithCompletion:">-stopGeoTriggeringWithCompletion:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Stop GeoTriggering features of the Bluedot Point SDK</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Stopping Geo-triggering feature has the intended effect of stopping location services on the device, thereby conserving battery on your user’s device unless another feature such as Tempo, is active.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">stopGeoTriggeringWithCompletion</span><span class="p">:</span>
+    <span class="p">(</span><span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="n">_Nullable</span><span class="p">)(</span><span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span><span class="nv">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">stopGeoTriggering</span><span class="p">()</span> <span class="n">async</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A mandatory completion handler called once Stop Geotriggering processing completed. If the Geotriggering feature is stopped successfully, error will be returned as nil. However, if the Stop Geotriggering fails, an error will be provided.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDLocationManager(im)startTempoTrackingWithDestinationId:completion:"></a>
+                    <a name="//apple_ref/objc/Method/-startTempoTrackingWithDestinationId:completion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDLocationManager(im)startTempoTrackingWithDestinationId:completion:">-startTempoTrackingWithDestinationId:<wbr>completion:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Start Tempo Tracking for destination id provided</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    An error will be returned if your App does not have <b>Always</b>  location permission.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">startTempoTrackingWithDestinationId</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">destinationId</span>
+                                 <span class="nf">completion</span><span class="p">:(</span><span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="n">_Nonnull</span><span class="p">)(</span>
+                                                <span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span><span class="n">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">startTempoTracking</span><span class="p">(</span><span class="n">withDestinationId</span> <span class="nv">destinationId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="n">async</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>destinationId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The destinationId to be tracked</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A mandatory completion handler called once Start Tempo processing completed. If the Tempo is started successfully, error will be returned as nil. However, if the Start Tempo fails, an error will be provided.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDLocationManager(im)stopTempoTrackingWithCompletion:"></a>
+                    <a name="//apple_ref/objc/Method/-stopTempoTrackingWithCompletion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDLocationManager(im)stopTempoTrackingWithCompletion:">-stopTempoTrackingWithCompletion:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Stop Tempo Tracking</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">stopTempoTrackingWithCompletion</span><span class="p">:</span>
+    <span class="p">(</span><span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="n">_Nonnull</span><span class="p">)(</span><span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span><span class="nv">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">stopTempoTracking</span><span class="p">()</span> <span class="n">async</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A mandatory completion handler called once Stop Tempo processing completed. If the Tempo is stopped successfully, error will be returned as nil. However, if the Stop Tempo fails, an error will be provided.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BDLocationManager(im)isTempoRunning"></a>
+                    <a name="//apple_ref/objc/Method/-isTempoRunning" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDLocationManager(im)isTempoRunning">-isTempoRunning</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Method to determine if Tempo is running</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="n">isTempoRunning</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">isTempoRunning</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Returns whether Tempo is running</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2023 <a class="link" href="https://bluedot.io" target="_blank" rel="external noopener">Bluedot</a>. All rights reserved. (Last updated: 2023-09-25)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
