@@ -6,239 +6,207 @@
 	<dict>
 		<key>BDDataModel.momd/BDDataModel_1.13.1.mom</key>
 		<data>
-		Spne2JDr15EBI2vHmwezcrwXWGw=
+		HceC9vwlxYryj7RD5ZUs6qA7T7Y=
 		</data>
 		<key>BDDataModel.momd/BDDataModel_1.13.2.mom</key>
 		<data>
-		JbAHaYUPcAyoSKYQXXO5XbShuFk=
+		bnJG3AwyUk/PPOZSckMaVsjnoXU=
 		</data>
 		<key>BDDataModel.momd/BDDataModel_1.13.mom</key>
 		<data>
-		GR3RQ1VOCii1hbdYYnes7vNyaZk=
+		LkWNrrwnnwI06Pq83TYHdY8STMk=
 		</data>
 		<key>BDDataModel.momd/BDDataModel_1.8.1.mom</key>
 		<data>
-		cejk9kX0rLXBUmuN37+NyrYBxrA=
+		OO5gWO/APw4iR+9uHESRNu5hLBc=
 		</data>
 		<key>BDDataModel.momd/BDDataModel_1.9.mom</key>
 		<data>
-		+/ykkMiVM29wMRpKLYgw+jjEIm0=
+		8S5tRobX425dnmBoMqO5WtF4Fcc=
 		</data>
 		<key>BDDataModel.momd/BDDataModel_15.2.mom</key>
 		<data>
-		aQNWoyS3DfdcRhM2CpcZBf5YufU=
+		43WYxt5vy1Q+wYx8mjPjdQKPiUI=
 		</data>
 		<key>BDDataModel.momd/BDDataModel_15.3.2.mom</key>
 		<data>
-		upRwIbHrCzM2fNKr6f1tdR5dvgQ=
+		MxKyCBjFG6CFAUD6B+DgM4ifvb8=
 		</data>
 		<key>BDDataModel.momd/BDDataModel_15.6.0.mom</key>
 		<data>
-		VGq0VWjRoAG/9G48jTEBsWqucfY=
+		LIId54lbBfyWFgn5j+iGCdXa9oM=
 		</data>
-		<key>BDDataModel.momd/BDDataModel_15.6.0.omo</key>
+		<key>BDDataModel.momd/BDDataModel_16.0.0.mom</key>
 		<data>
-		U3w2/oWceQ2spcukKMFnBkkeJA4=
+		4YeDEv2+5cG5G3jNE+ObxdF4kUs=
+		</data>
+		<key>BDDataModel.momd/BDDataModel_16.0.0.omo</key>
+		<data>
+		zgLSMttmHNmkRGX9n/qoZzCI9x8=
 		</data>
 		<key>BDDataModel.momd/VersionInfo.plist</key>
 		<data>
-		q2ZyQuGc26pGL5kEFz+1s0uv3LA=
-		</data>
-		<key>BDPoint-DefaultConfiguration.plist</key>
-		<data>
-		z75tkMPDf79GKSo7+rZdN0xRZms=
-		</data>
-		<key>Headers/BDAuthenticationState.h</key>
-		<data>
-		zDLup445gFh/+N8slI9Oawk/sOU=
-		</data>
-		<key>Headers/BDBeaconInfo.h</key>
-		<data>
-		1dIOzD2kVcIMXmy17tIuZmikcYs=
+		YpgukYIuTLRrJM0ukdddNmVcWBQ=
 		</data>
 		<key>Headers/BDBoundingBox.h</key>
 		<data>
-		qaPE6ls/Ppn/czHgvq/hSFtTwF8=
+		eYRjzaWXCt1fQ34GooUOMLvvmTM=
 		</data>
 		<key>Headers/BDCircle.h</key>
 		<data>
-		XAsMOMF44mgJafqihimGI3LM+qc=
+		oOyESwOOOXMqFyKN/gQx+ZSjb+E=
 		</data>
 		<key>Headers/BDFenceInfo.h</key>
 		<data>
-		WeWGVl/p+EMSsb9gZMNRZrpKGMw=
+		vltpW6DWCnaxhk2/w80e9P8tmns=
 		</data>
 		<key>Headers/BDGeometry.h</key>
 		<data>
-		95ikIVuSxSMVu8MEahbo53KEG8Y=
+		LQepWJc4tChUyU510p6GdM7LTec=
 		</data>
 		<key>Headers/BDGeospatialUnits.h</key>
 		<data>
-		AAkXLoWCGWP4Qq/jjT/GKXUfOK4=
+		V/hLKftLLCOxXSY3JAxZKakCTNI=
 		</data>
 		<key>Headers/BDLineString.h</key>
 		<data>
-		RrIXbjVnCxu7at41tgvnaqI28IQ=
+		L4LEw27hgO5M7qO2ZhlO6+JabpM=
 		</data>
 		<key>Headers/BDLocation.h</key>
 		<data>
-		KqFqSWDFN+EUUdxL1UboN29uQOs=
+		Kpm+WIuv/vtpr2AyNiT97ZeSp3g=
 		</data>
 		<key>Headers/BDLocationInfo.h</key>
 		<data>
-		Svwonnk1MG4WaYozkRSZ6z1KV3U=
+		X5I1luWq/zFAWidY1O2GDWMRUqs=
 		</data>
 		<key>Headers/BDLocationManager+BDPointSDK.h</key>
 		<data>
-		5tr0F0wvNcZWxVcZdYa+Lndvxd8=
+		PzGi67g4rzeFAan5DeJ15/mh53w=
 		</data>
 		<key>Headers/BDLocationManager.h</key>
 		<data>
-		ywAKdIhg4druMGzGFJH2T8tEeyM=
-		</data>
-		<key>Headers/BDPAuthenticationStateProvider.h</key>
-		<data>
-		fKjOpw3w4DvwWS4v719rN6H56Cc=
+		sdWfQiXzGrvK0uLDnUjDuwrVKbc=
 		</data>
 		<key>Headers/BDPBluedotServiceDelegate.h</key>
 		<data>
-		90j9SYfs5Ql8GCIgwWJNa+pWE+k=
+		mBQ0Hublqz7i1McZ7DMwlc5SykI=
 		</data>
 		<key>Headers/BDPDeepCopy.h</key>
 		<data>
-		9vfLvsGvc3pz4Riw+HPTqQVZypQ=
+		X3qQCMBqb1y1nQxeneK2rEnfNh0=
 		</data>
 		<key>Headers/BDPGeoTriggeringEventDelegate.h</key>
 		<data>
-		Y7+sZJ29/XqzRoV1IR3fANWuUFw=
+		xrze4nmTN9+B0y2mJiYiRDOqVrE=
 		</data>
 		<key>Headers/BDPGeometry.h</key>
 		<data>
-		cLQltrYauyBcKrCF+BYzGZ5Kab8=
+		PBK6FVCqkuu4wm7xrBic/h49Xsw=
 		</data>
 		<key>Headers/BDPJSONSerializable.h</key>
 		<data>
-		1IVzCTdf7L7xPyeqhWy/dKK026E=
-		</data>
-		<key>Headers/BDPLocationDelegate.h</key>
-		<data>
-		Z9m05E9OlzlGxapEh014QF7qDME=
-		</data>
-		<key>Headers/BDPMKShape.h</key>
-		<data>
-		tCntP77Sd0bgsZjD+b0R+6pTfK0=
+		PsH8BvzX+Fx2KdiGZmyN9b8TqKY=
 		</data>
 		<key>Headers/BDPNamedDescribed.h</key>
 		<data>
-		KiNpIpjcRklxhA5gt2gDV3rtTsY=
-		</data>
-		<key>Headers/BDPRestartAlertDelegate.h</key>
-		<data>
-		bFSu37kpdQ/XNBRW9G72xhQcME0=
-		</data>
-		<key>Headers/BDPSessionDelegate.h</key>
-		<data>
-		ecHftBSUyDubbwh+zyKDPu6iQgM=
+		tTBqVG7bAl2kUuu5fqNttKSbqvc=
 		</data>
 		<key>Headers/BDPSpatialObject.h</key>
 		<data>
-		IdQr9vhIr9vovT4Rk4bGT3QsW2c=
+		YPKTrsQCYAm47eeMTlNQA1C2AxM=
 		</data>
 		<key>Headers/BDPSpatialObjectInfo.h</key>
 		<data>
-		s4GxXm1VM5xlqnv0OsZ+4fnVc/o=
+		rTSWb5yAavLwiN766YKH2vNEVrA=
 		</data>
 		<key>Headers/BDPTempoTrackingDelegate.h</key>
 		<data>
-		40ZkjEpl/2tVtyXauVESGatRfI0=
+		fCJlhHH0dmTuTj3EFKEIyciI1ec=
 		</data>
 		<key>Headers/BDPValidatable.h</key>
 		<data>
-		hIgWAONFT7+XMof2GPY8GVrU2Do=
+		O1IDpDvLF8klW7uttKH4AVm4+tA=
 		</data>
 		<key>Headers/BDPoint.h</key>
 		<data>
-		AdFRglU+Iy08OJDqQ13u9Uq6HBs=
-		</data>
-		<key>Headers/BDPointDelegate.h</key>
-		<data>
-		ws4h1zdxnujpluak5opj1NlPNxs=
-		</data>
-		<key>Headers/BDPointOverlayRendererFactory.h</key>
-		<data>
-		GNVyDqLAhG8xJdVbaPpC0Y9HBPI=
+		ufRikJ/jheJJoLd/fMm/fjfrOtU=
 		</data>
 		<key>Headers/BDPointSDK-Swift.h</key>
 		<data>
-		jM6XTfHLbjoJbCg11iiHWmZN0AE=
+		+kVIiGpc0K1sr+TjaLhh4NtlvNc=
 		</data>
 		<key>Headers/BDPointSDK.h</key>
 		<data>
-		CXd2AtBA7mZsDjDkATzgL1jR63g=
+		h4zwYMFWIdGZAnjVSTRLCtrtslQ=
 		</data>
 		<key>Headers/BDPointSessionException.h</key>
 		<data>
-		8CuJWyBlLCSFRJXwZROt+lXp6Uo=
+		vM80u4KCB/ore4Abirv8xxP7n+E=
 		</data>
 		<key>Headers/BDPolygon.h</key>
 		<data>
-		D14OgCB5gpJt5c4P04OLyTnFcEI=
+		x/5+cnQc9KZfzDkJ4JfFS4Zs7Zs=
 		</data>
 		<key>Headers/BDPolygonal.h</key>
 		<data>
-		nOPE/mxtTv1w1gMHjMTuxqBQutc=
-		</data>
-		<key>Headers/BDZoneEntryEvent.h</key>
-		<data>
-		Pc6YV9fZUWi1lJRXrlG3PhPF4o0=
-		</data>
-		<key>Headers/BDZoneExitEvent.h</key>
-		<data>
-		jt596Y8O8G+SLDod12XBzI1ELOE=
+		V2oJvWReZfoNDWxVCDmnYlNkaf0=
 		</data>
 		<key>Headers/BDZoneInfo.h</key>
 		<data>
-		qu4PtNqO5vyfmdR7S72xcHPRzjM=
-		</data>
-		<key>Headers/MKMapView+BDPointSDK.h</key>
-		<data>
-		3u3RWMb1Ua/4zO0UBGst6KZ3bGk=
+		wJLSs2T2cY3DKjMWegcvBe1vT4w=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		VR2AnXqoKxNJvhZwcNNPrZzkemQ=
+		fRj50tePGh59XAma++KJ4EKpHVQ=
 		</data>
 		<key>Modules/BDPointSDK.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		NRducE6ByJaQZOyJKmfKDr/dVxI=
+		RteL6z2doeh2ERuC7UXGSUGJAYU=
 		</data>
 		<key>Modules/BDPointSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		a7Yvy4epiJXvcSBNJXo6oB3zE54=
+		hhsuz7oXV/q08I2qnDrXlSVxKGU=
 		</data>
 		<key>Modules/BDPointSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		FSPnLbho3G+LL9smI3XgVOqBIQ4=
+		DK7Yny38aJoEb2srB9s1mccfnKU=
+		</data>
+		<key>Modules/BDPointSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		jX6fYU1Js6e7XNU8XA5xHHYcbnA=
 		</data>
 		<key>Modules/BDPointSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Yu0SnLBKosE7YtM3wsELV0u9R8I=
+		RcUQogorNKW3ouOlncsxCfB25Us=
+		</data>
+		<key>Modules/BDPointSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<data>
+		BI3+nikE1hSd1qkRPDrYHaOszSM=
 		</data>
 		<key>Modules/BDPointSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		q3P3FCVZ2q5XPkltme9H1VVmsKo=
+		hlU2yItYLFLBW+LdAyEHcSiL3uY=
 		</data>
 		<key>Modules/BDPointSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		FSPnLbho3G+LL9smI3XgVOqBIQ4=
+		DK7Yny38aJoEb2srB9s1mccfnKU=
+		</data>
+		<key>Modules/BDPointSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		N6EFkP69sGPMz7t64HBmgKmdqS4=
 		</data>
 		<key>Modules/BDPointSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		4/PVYheIfzty3ipIXexgs0AL+Xo=
+		o/2Ap5NKnLnhx4ta2vhSVjiAIQQ=
+		</data>
+		<key>Modules/BDPointSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<data>
+		nePNqMR6LsHBZwNicBkrcn1cDps=
 		</data>
 		<key>Modules/BDPointSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		n4fUUDdsfU0z6jt8LhF8vzNffXk=
+		s5fziHfuaQ6fA9xqy0X5M2ge0Zg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -257,648 +225,356 @@
 	<dict>
 		<key>BDDataModel.momd/BDDataModel_1.13.1.mom</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Spne2JDr15EBI2vHmwezcrwXWGw=
-			</data>
 			<key>hash2</key>
 			<data>
-			JTdrQ0n5V3HTwIjna0fSsFhXQ6qZXPWzoJ2cQVZVRjI=
+			8tbuWvm3vS06Fvo+l1wN4W2CsbkgCLyZV2YGpAuCZxM=
 			</data>
 		</dict>
 		<key>BDDataModel.momd/BDDataModel_1.13.2.mom</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			JbAHaYUPcAyoSKYQXXO5XbShuFk=
-			</data>
 			<key>hash2</key>
 			<data>
-			7/dYyTS/PvGXQeZ6ctbA9RunF7OV2FW7zfUft5LpYcs=
+			i5eSvDFhFQK77SOWHIlcAwzqSeyNG8CSC7yPprJDm6U=
 			</data>
 		</dict>
 		<key>BDDataModel.momd/BDDataModel_1.13.mom</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			GR3RQ1VOCii1hbdYYnes7vNyaZk=
-			</data>
 			<key>hash2</key>
 			<data>
-			2+leeJ/KtyW9zc5uVZHnfWNjR6phx0sXVnKl2vL/ZeQ=
+			XLL9L8Wl6vHFtrJ5CKKUHafXo0sRY2H6k5jlgvxWakU=
 			</data>
 		</dict>
 		<key>BDDataModel.momd/BDDataModel_1.8.1.mom</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			cejk9kX0rLXBUmuN37+NyrYBxrA=
-			</data>
 			<key>hash2</key>
 			<data>
-			pUz2WuIDzhJ9RtSVGA3UwfOJ0fDGBOxXrxyp1zlxjIM=
+			Cf0R56kNJmqSAVTUDf/twkzLCKBCOZ9+HwmFTk/bNvk=
 			</data>
 		</dict>
 		<key>BDDataModel.momd/BDDataModel_1.9.mom</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			+/ykkMiVM29wMRpKLYgw+jjEIm0=
-			</data>
 			<key>hash2</key>
 			<data>
-			Kl0FLY3kmGe9CC8sqGpy4BdNwTmHfuGcXmRyUxkBbas=
+			ViG+jNI7AooCDZMvaXt4wM+TEn5lORCGJKyD5UYWz3Q=
 			</data>
 		</dict>
 		<key>BDDataModel.momd/BDDataModel_15.2.mom</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			aQNWoyS3DfdcRhM2CpcZBf5YufU=
-			</data>
 			<key>hash2</key>
 			<data>
-			0QPfacz42ZD21uigKEJOp5Ry+kZzVSuqHm1otDWUqz4=
+			sNsJXQZiuD6zEkeUm24o1JL2xRuvtHL+BDpMeyIFilw=
 			</data>
 		</dict>
 		<key>BDDataModel.momd/BDDataModel_15.3.2.mom</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			upRwIbHrCzM2fNKr6f1tdR5dvgQ=
-			</data>
 			<key>hash2</key>
 			<data>
-			TFJy+OaSHk2Pw+doQpfsCgpeDzn4mxUSnxl+VrDR/Oo=
+			/XmHywYQvdBVu530j59hCSxoejghFW2uSfO+nfCcd+M=
 			</data>
 		</dict>
 		<key>BDDataModel.momd/BDDataModel_15.6.0.mom</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			VGq0VWjRoAG/9G48jTEBsWqucfY=
-			</data>
 			<key>hash2</key>
 			<data>
-			KOTELe0A8gNblxuS1fK5UsSnJedM0WMB1l/bGH7Z6WE=
+			1QYP9zG9k+8Gn/iONOifoetwwy0Jl6iy+U68nHFCQNM=
 			</data>
 		</dict>
-		<key>BDDataModel.momd/BDDataModel_15.6.0.omo</key>
+		<key>BDDataModel.momd/BDDataModel_16.0.0.mom</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			U3w2/oWceQ2spcukKMFnBkkeJA4=
-			</data>
 			<key>hash2</key>
 			<data>
-			uxjEP0Bo7+wPyTkCi0dHLDFzdseyE6kF3UZNSqX2Wx0=
+			nVwlnKLoRaAuLTc6kYSdKDwi9Vv1JEc0TJYDD5W40L8=
+			</data>
+		</dict>
+		<key>BDDataModel.momd/BDDataModel_16.0.0.omo</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Or0yHtuZ9GiD10eKqPbHi+HYpE2mVcMeIOcAG6LMtrA=
 			</data>
 		</dict>
 		<key>BDDataModel.momd/VersionInfo.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			q2ZyQuGc26pGL5kEFz+1s0uv3LA=
-			</data>
 			<key>hash2</key>
 			<data>
-			AoVucObv+2YCSDKLx7qt7Uu4SvOMopnsnPZH0gw+RLM=
-			</data>
-		</dict>
-		<key>BDPoint-DefaultConfiguration.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			z75tkMPDf79GKSo7+rZdN0xRZms=
-			</data>
-			<key>hash2</key>
-			<data>
-			JgSGGnjTqIBqpzaVXgJCWlPtgWZmu17Xj31BWkQauqM=
-			</data>
-		</dict>
-		<key>Headers/BDAuthenticationState.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			zDLup445gFh/+N8slI9Oawk/sOU=
-			</data>
-			<key>hash2</key>
-			<data>
-			EIq2St/ndryc9wlqKFqM6H1YaN2qwAQVWkTRdryFH78=
-			</data>
-		</dict>
-		<key>Headers/BDBeaconInfo.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			1dIOzD2kVcIMXmy17tIuZmikcYs=
-			</data>
-			<key>hash2</key>
-			<data>
-			fb1e9gNXfST+gTRtqN89CwDMR07BH1hF+tPag4TjVjo=
+			7Zb1IpwizhrsCYiESnnpFdH+6hwEqObjSPXH90zYfHo=
 			</data>
 		</dict>
 		<key>Headers/BDBoundingBox.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			qaPE6ls/Ppn/czHgvq/hSFtTwF8=
-			</data>
 			<key>hash2</key>
 			<data>
-			tYvqaUjGTqnOdmsOMzsgKDVzf18d8A9KCOXWBuoInOo=
+			zKyHKe4a6vNnabLMQ8tvHHCR9x5L4qBIDqWMRo35Z60=
 			</data>
 		</dict>
 		<key>Headers/BDCircle.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			XAsMOMF44mgJafqihimGI3LM+qc=
-			</data>
 			<key>hash2</key>
 			<data>
-			lGAHr43R7DLBskMCmyv7psX7L+JKdgNZGR0CL6TbdBU=
+			LMUCtjGfW/DQ2qWq1mKNHEuur2MI00c5Z37MAAi4BRQ=
 			</data>
 		</dict>
 		<key>Headers/BDFenceInfo.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			WeWGVl/p+EMSsb9gZMNRZrpKGMw=
-			</data>
 			<key>hash2</key>
 			<data>
-			Ot4DbBtoBkjDnpj/ynDYpB1t9JklA49WACODN7Z0eak=
+			+EzvBF7tRP5y+weyUrTDm6XB2fKtsPjRs9bmPtblHak=
 			</data>
 		</dict>
 		<key>Headers/BDGeometry.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			95ikIVuSxSMVu8MEahbo53KEG8Y=
-			</data>
 			<key>hash2</key>
 			<data>
-			v3zHDBo0amP2C0uJQLNrpnWWUlNJ4DecuTtQ74CmDnc=
+			MhY8ZQg2bJBdazAoM7VMFNmRM7ETB8Z7RMY5PZTf5ak=
 			</data>
 		</dict>
 		<key>Headers/BDGeospatialUnits.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			AAkXLoWCGWP4Qq/jjT/GKXUfOK4=
-			</data>
 			<key>hash2</key>
 			<data>
-			p507mVB+M2gbxhIVyfC5ktOjnN+vqZhY2W1GxitjUUA=
+			2Yq/Aa8Wio7uvYPPqFQXxmRhyID96wtBayp+mftb08I=
 			</data>
 		</dict>
 		<key>Headers/BDLineString.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			RrIXbjVnCxu7at41tgvnaqI28IQ=
-			</data>
 			<key>hash2</key>
 			<data>
-			DcmH9EwfMpPIsNVrIWim+OBbEkTI21SjBxS+UkLzFFw=
+			v/3ePbTrLA/pa14wZhjNxKU2jt4bhjNtLqXLPZmb+gM=
 			</data>
 		</dict>
 		<key>Headers/BDLocation.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			KqFqSWDFN+EUUdxL1UboN29uQOs=
-			</data>
 			<key>hash2</key>
 			<data>
-			+X3rTxbUAlxW/lz6etgVUckTMuflG9DCc0fUq6JueSk=
+			VmnL2QNI1jr+y6wuxmoB5V+fSkcFFbor/EH9Jn3Ty+w=
 			</data>
 		</dict>
 		<key>Headers/BDLocationInfo.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Svwonnk1MG4WaYozkRSZ6z1KV3U=
-			</data>
 			<key>hash2</key>
 			<data>
-			o7pxaQBVQBH5oqmNSaxqHmWWCt2oei37pTgzWVa7brg=
+			qh3s947X+eR5n/jr+pqravD1m/fND8shz1UWEF8eA1s=
 			</data>
 		</dict>
 		<key>Headers/BDLocationManager+BDPointSDK.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			5tr0F0wvNcZWxVcZdYa+Lndvxd8=
-			</data>
 			<key>hash2</key>
 			<data>
-			dxMwBlDtf0tzWL02fwxU6wh9r+xRyv7PjOY/lKreFNE=
+			cKNLTy7rUrrOmu0S/2vrob8rMH9nKYELL9bKD4c0Qsw=
 			</data>
 		</dict>
 		<key>Headers/BDLocationManager.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ywAKdIhg4druMGzGFJH2T8tEeyM=
-			</data>
 			<key>hash2</key>
 			<data>
-			PJDSDKYTdV9uEOj464IhcZivVUieIpoH6pL/yc+3vYo=
-			</data>
-		</dict>
-		<key>Headers/BDPAuthenticationStateProvider.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			fKjOpw3w4DvwWS4v719rN6H56Cc=
-			</data>
-			<key>hash2</key>
-			<data>
-			YrKyn6tA7+N+EwtYyKJnp7mCjGQqTjhuwMTuhzKxw2o=
+			xp+m53jRVa2A+8WbLj09LoF76wY3hIgGz6+DgI1gUiQ=
 			</data>
 		</dict>
 		<key>Headers/BDPBluedotServiceDelegate.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			90j9SYfs5Ql8GCIgwWJNa+pWE+k=
-			</data>
 			<key>hash2</key>
 			<data>
-			+DbNPMfpXoAxK80Dt/zMndglJm4ydpZSeLeIyExAIqY=
+			aVlo1JL62BUaQy51NiTM2XAxhPVSdJTX4oe3ZfY9jNs=
 			</data>
 		</dict>
 		<key>Headers/BDPDeepCopy.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			9vfLvsGvc3pz4Riw+HPTqQVZypQ=
-			</data>
 			<key>hash2</key>
 			<data>
-			73A48bQYAYNJKvmqkPIyMQPSLaAzm/L/0pfqQw3Z3dQ=
+			YirTa02HL7ZoY+L7It+5qV1ALf3ZMZA4JmFET4ra+TY=
 			</data>
 		</dict>
 		<key>Headers/BDPGeoTriggeringEventDelegate.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Y7+sZJ29/XqzRoV1IR3fANWuUFw=
-			</data>
 			<key>hash2</key>
 			<data>
-			sXZYNdyo5BYc8WIVegYbAaB2jQ3Z8ezfS9eK2SpO8Cc=
+			1MiOP+ZZjcaKWh4AZE5HxCxjpavpE1rV0yHfUXqMUO4=
 			</data>
 		</dict>
 		<key>Headers/BDPGeometry.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			cLQltrYauyBcKrCF+BYzGZ5Kab8=
-			</data>
 			<key>hash2</key>
 			<data>
-			kt8ximTVcDev5JLVlIY2VG3/W5KYnj3r/9Dmzvuungs=
+			Zp/dMx+UYck8tk5PbuND+fh3by9rPvHwNZvK4Dxx0uI=
 			</data>
 		</dict>
 		<key>Headers/BDPJSONSerializable.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			1IVzCTdf7L7xPyeqhWy/dKK026E=
-			</data>
 			<key>hash2</key>
 			<data>
-			AAn9LtbORTQavjjOh0vN+teidi42XS+IhTHVJ2Rr+yg=
-			</data>
-		</dict>
-		<key>Headers/BDPLocationDelegate.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Z9m05E9OlzlGxapEh014QF7qDME=
-			</data>
-			<key>hash2</key>
-			<data>
-			Mvs4D7xJDtsXrV/gSS68ezH6f1ihLJ4+h7B6PDQcSkY=
-			</data>
-		</dict>
-		<key>Headers/BDPMKShape.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			tCntP77Sd0bgsZjD+b0R+6pTfK0=
-			</data>
-			<key>hash2</key>
-			<data>
-			s+OweLxx8pe/UWmbndXF9vZkmwg2hdgBv6ixAHUK3bo=
+			Z5NbzVnKG0itWPacRnBKtI7oozi+zXAOavIGmlOZsNo=
 			</data>
 		</dict>
 		<key>Headers/BDPNamedDescribed.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			KiNpIpjcRklxhA5gt2gDV3rtTsY=
-			</data>
 			<key>hash2</key>
 			<data>
-			hE1snqItBQpPEseu5oW7ABq1RiOpyU5wKuJoxcV9LNE=
-			</data>
-		</dict>
-		<key>Headers/BDPRestartAlertDelegate.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			bFSu37kpdQ/XNBRW9G72xhQcME0=
-			</data>
-			<key>hash2</key>
-			<data>
-			hFXDlE1diuofaARqpuKDbYl9a7ipTA6fufqNjtroJ4k=
-			</data>
-		</dict>
-		<key>Headers/BDPSessionDelegate.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ecHftBSUyDubbwh+zyKDPu6iQgM=
-			</data>
-			<key>hash2</key>
-			<data>
-			1YWLuKO4byzgfRUTFUN0xm4Fgas2ys6fE7iLD0T211k=
+			OsTGpWzMUoOHqg6SkpiWL6/xUcrp5EpjVEMx1DsF6QY=
 			</data>
 		</dict>
 		<key>Headers/BDPSpatialObject.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			IdQr9vhIr9vovT4Rk4bGT3QsW2c=
-			</data>
 			<key>hash2</key>
 			<data>
-			FA0UNnE5oT7wP5LoslDxzO3202g3SW+aJKOdf/4CcLY=
+			RqKxfLd6hTdNSjvZfOhljlTnSYuJNOuk5wUR3A5lyVE=
 			</data>
 		</dict>
 		<key>Headers/BDPSpatialObjectInfo.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			s4GxXm1VM5xlqnv0OsZ+4fnVc/o=
-			</data>
 			<key>hash2</key>
 			<data>
-			ncrZcTSB/pRtUnHubBcEqdAxVZnn+hLu56ui+R4YeKI=
+			jTFbv8UHmlrMYkHCXh9cvTs6Vp41oN2NYhIaES6DwGM=
 			</data>
 		</dict>
 		<key>Headers/BDPTempoTrackingDelegate.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			40ZkjEpl/2tVtyXauVESGatRfI0=
-			</data>
 			<key>hash2</key>
 			<data>
-			/TXUNfynJj70JpD+Dvv6OGnSpbu8SCleBTQxXiC6JWw=
+			4SdOqVz6ZqGgRdLTt0rzLd6b1boLs5qPK1yLrRtO5ds=
 			</data>
 		</dict>
 		<key>Headers/BDPValidatable.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			hIgWAONFT7+XMof2GPY8GVrU2Do=
-			</data>
 			<key>hash2</key>
 			<data>
-			dnThUlpHB6fiQS9ikLrDzPMHeLaWk8q4H/y9f3Lzkb0=
+			EGZcgcsXZmQktl0QoF6p0tsO56E5t6VJsics23/Syg8=
 			</data>
 		</dict>
 		<key>Headers/BDPoint.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			AdFRglU+Iy08OJDqQ13u9Uq6HBs=
-			</data>
 			<key>hash2</key>
 			<data>
-			P5e4mrlpteFSgg39Cus/aHSnMzkdB9H9GPP6WAgcFBQ=
-			</data>
-		</dict>
-		<key>Headers/BDPointDelegate.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ws4h1zdxnujpluak5opj1NlPNxs=
-			</data>
-			<key>hash2</key>
-			<data>
-			CVXPON2cvFXCYQq7+8xl3TNSUudbxofVprGyXV6hNXA=
-			</data>
-		</dict>
-		<key>Headers/BDPointOverlayRendererFactory.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			GNVyDqLAhG8xJdVbaPpC0Y9HBPI=
-			</data>
-			<key>hash2</key>
-			<data>
-			qJXL+30m7+9nVW98yv2qqLcXFIWBuKo4FAG9HeX6zGA=
+			ZqIkV4ske+z5ZoVQbsIgN7+GXWzNOgwvxEEqRJGIwwc=
 			</data>
 		</dict>
 		<key>Headers/BDPointSDK-Swift.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			jM6XTfHLbjoJbCg11iiHWmZN0AE=
-			</data>
 			<key>hash2</key>
 			<data>
-			8ubkI7eLF29iMrDPeZia/YGIDx5XcpP6cOTlxLxwXLE=
+			oUR9hN4q4qiz42goReWmtmaQOYDNGiWXxh+/2EZMnHc=
 			</data>
 		</dict>
 		<key>Headers/BDPointSDK.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			CXd2AtBA7mZsDjDkATzgL1jR63g=
-			</data>
 			<key>hash2</key>
 			<data>
-			Tr7fJ9cRnmyD17H0CrNiNNu8paAVkmM2EPkVOfJZGVs=
+			nzvBdO41ErgTT33aN1YzjS3ZX2I8Z9OZHSly+MhtDVo=
 			</data>
 		</dict>
 		<key>Headers/BDPointSessionException.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			8CuJWyBlLCSFRJXwZROt+lXp6Uo=
-			</data>
 			<key>hash2</key>
 			<data>
-			7/MkzxXOrdy4NtNS7LKWsexLTtJc1sYVVshMNtcwwdk=
+			ooePSyndPv3e9TbcijpXLliy+NBNcDEx6ai3lsUoAJQ=
 			</data>
 		</dict>
 		<key>Headers/BDPolygon.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			D14OgCB5gpJt5c4P04OLyTnFcEI=
-			</data>
 			<key>hash2</key>
 			<data>
-			VIOfq1ZlyBOfQUUg4JXUpXpJQyIWEkKYCYte3/cce08=
+			xw9mJHU+6l/JuHq07rbS/sTTYIzhMXVm8ViI/mbi6kU=
 			</data>
 		</dict>
 		<key>Headers/BDPolygonal.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			nOPE/mxtTv1w1gMHjMTuxqBQutc=
-			</data>
 			<key>hash2</key>
 			<data>
-			XgURRX/8VXW4bwkopn11Ob0KAOl4RrhF6B56JmMAghk=
-			</data>
-		</dict>
-		<key>Headers/BDZoneEntryEvent.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Pc6YV9fZUWi1lJRXrlG3PhPF4o0=
-			</data>
-			<key>hash2</key>
-			<data>
-			tQc9iOPv26aGNn0+dWZhRSbKHqqBHoYRiKFZF18Wc3k=
-			</data>
-		</dict>
-		<key>Headers/BDZoneExitEvent.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			jt596Y8O8G+SLDod12XBzI1ELOE=
-			</data>
-			<key>hash2</key>
-			<data>
-			1D+zoc1cCZsmnU2oKxzhe5N8M5dvb63WJvOB+R9g3RE=
+			ptWxZF7j2nb5cjlaQrbbsRYUtq1Wk1+1wcZWpF4FZ1o=
 			</data>
 		</dict>
 		<key>Headers/BDZoneInfo.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			qu4PtNqO5vyfmdR7S72xcHPRzjM=
-			</data>
 			<key>hash2</key>
 			<data>
-			PuDJumMcq9vEtWtiKbgPBaDCQICOmh7LjZbPR9qaREY=
-			</data>
-		</dict>
-		<key>Headers/MKMapView+BDPointSDK.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			3u3RWMb1Ua/4zO0UBGst6KZ3bGk=
-			</data>
-			<key>hash2</key>
-			<data>
-			hPGjRXlMtbDbL7n8l+GRegyIiHsFJNiJLhFkIFj9DLo=
+			erixkPQviYAb5+XScKcPZQvS/KpELDYwBMBc/W1B7bo=
 			</data>
 		</dict>
 		<key>Modules/BDPointSDK.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			NRducE6ByJaQZOyJKmfKDr/dVxI=
-			</data>
 			<key>hash2</key>
 			<data>
-			Bxno8gk/j1wcOmRL97qrvm8tN1MyjriDW65sP+jaiCg=
+			UsE7yDpJmfvuu2R7INmb/Z1eGpk1kg+TPkswIJLOMIc=
 			</data>
 		</dict>
 		<key>Modules/BDPointSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			a7Yvy4epiJXvcSBNJXo6oB3zE54=
-			</data>
 			<key>hash2</key>
 			<data>
-			/V5PDJB61TY48HrnuOokR6/nqiUtPvA8+WqSk3nemNU=
+			nXM2jVzJcnaPZI+W9EWsQE/k53qlZWe3a9AE6HS4vxo=
 			</data>
 		</dict>
 		<key>Modules/BDPointSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			FSPnLbho3G+LL9smI3XgVOqBIQ4=
-			</data>
 			<key>hash2</key>
 			<data>
-			KnRdWE4y6t4QM5zi5JDptPdHFgJy1Tku+7GLkZS2aNM=
+			684cN8MS9+8nhlyYffl/vN/uWYmyXFOjjvoN/LbeMpY=
+			</data>
+		</dict>
+		<key>Modules/BDPointSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Aq7lS8odfyNA6/GkoMvIxTB/EeXQBJ4hZB4qJe5A+rQ=
 			</data>
 		</dict>
 		<key>Modules/BDPointSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Yu0SnLBKosE7YtM3wsELV0u9R8I=
-			</data>
 			<key>hash2</key>
 			<data>
-			VPGMmRaWflXG07fDSS5xLnHZ57ZTpBCYFVcJB+gZmnQ=
+			QV+SznM0pd52ayYwwLTLc03ULUqaV/IaeXMdi7tLMRQ=
+			</data>
+		</dict>
+		<key>Modules/BDPointSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RsYIYoIvCmXVrDjJb1ZBqQxeb/i7ZRJzsA8yzrXzArQ=
 			</data>
 		</dict>
 		<key>Modules/BDPointSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			q3P3FCVZ2q5XPkltme9H1VVmsKo=
-			</data>
 			<key>hash2</key>
 			<data>
-			Mqnm1y9iFKaUlfeHDmXGnLCAHi+0nNYgbc3jCxUGh1k=
+			LFZ5LTIcdiRVEtUC3hFCAWkheiBsskGulXcUSlbi2Ow=
 			</data>
 		</dict>
 		<key>Modules/BDPointSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			FSPnLbho3G+LL9smI3XgVOqBIQ4=
-			</data>
 			<key>hash2</key>
 			<data>
-			KnRdWE4y6t4QM5zi5JDptPdHFgJy1Tku+7GLkZS2aNM=
+			684cN8MS9+8nhlyYffl/vN/uWYmyXFOjjvoN/LbeMpY=
+			</data>
+		</dict>
+		<key>Modules/BDPointSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			X9hBlOI3u6dLZuI19kpKj4QUYBIe1fXDIgODX2FIx/Q=
 			</data>
 		</dict>
 		<key>Modules/BDPointSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			4/PVYheIfzty3ipIXexgs0AL+Xo=
-			</data>
 			<key>hash2</key>
 			<data>
-			4ziFPSa2le+IWJboVTiCOAxegb9tCREcO56Y8JJ5R6k=
+			RV4Y8Mi97x4+9pGVcBnDp8qub4rZNgNrfJ+cXs2vSlg=
+			</data>
+		</dict>
+		<key>Modules/BDPointSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			urqt+UxGxJwY6PRjgEUh4AA7tLPUPIMRMnz34sAu8Fk=
 			</data>
 		</dict>
 		<key>Modules/BDPointSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			n4fUUDdsfU0z6jt8LhF8vzNffXk=
-			</data>
 			<key>hash2</key>
 			<data>
-			iTlLLLE0mkS0h1+Xg7GIxh4GLvABo3zqGUWtnvqQUEw=
+			tynbvAZWHudJGclJZavf7DTwrNiYN/NY8yKejm34ilQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			6aMARnHbv0bMMt8Mb8lpcWRAxkE=
-			</data>
 			<key>hash2</key>
 			<data>
 			ZymBTse7gVP+CUPFtqD3wFUDZV0wqYEkfLr+/evs5jY=
@@ -906,10 +582,6 @@
 		</dict>
 		<key>Readme.txt</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Of8ib1XFUtp7JLISGb+ne/4MC5g=
-			</data>
 			<key>hash2</key>
 			<data>
 			HtH63ShSCfoBegbKoJzQaAW+0Juk3Q66E6Tx7EkclGY=
@@ -917,10 +589,6 @@
 		</dict>
 		<key>Xcode12_beta3.xcconfig</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			8F8wHHQuO5dsWWh+l2mr6Ue/b0Q=
-			</data>
 			<key>hash2</key>
 			<data>
 			26KV3Td3voaewo+UvRPwQEx5dijefBxObB0qpAJKvY8=

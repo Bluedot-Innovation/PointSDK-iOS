@@ -6,8 +6,7 @@
 #import <Foundation/Foundation.h>
 
 /**
-  @brief Any object having a human-readable name and description, typically for display in a User Interface.
-  @copyright Bluedot Innovation
+ * Any object having a human-readable name and description, typically for display in a User Interface.
 */
 @protocol BDPNamedDescribed
 

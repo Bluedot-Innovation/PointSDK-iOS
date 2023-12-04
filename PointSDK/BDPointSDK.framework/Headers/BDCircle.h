@@ -9,16 +9,12 @@
 @class BDPoint;
 
 /**
-  @brief A circular region on the Earth's surface, defined by a center @ref BDPoint "point" and a radius, in meters.
-
-  \image html circle.gif
-
-  @copyright Bluedot Innovation
+  A circular region on the Earth's surface, defined by a center ``BDPoint`` "point" and a radius, in meters.
 */
-@interface BDCircle : BDGeometry<NSCoding>
+@interface BDCircle : BDGeometry<NSSecureCoding>
 
 /**
- * Center of this Circle as a @ref BDPoint in latitude/longitude coordinates.
+ * Center of this Circle as a ``BDPoint`` in latitude/longitude coordinates.
  */
 @property (nonatomic) BDPoint  *center;
 
@@ -27,15 +23,22 @@
  */
 @property (nonatomic) BDLocationDistance  radius;
 
+/**
+ * Convenience init method with a center point ``BDPoint`` and a radius
+ */
 - (instancetype)initWithCenter: (BDPoint *)center
                         radius: (BDLocationDistance)radius;
 
+/**
+ * Convenience class method to init a circle with a center point ``BDPoint`` and a radius
+ */
 + (BDCircle*)circleWithCenter: (BDPoint *)center
                        radius: (BDLocationDistance)radius;
 
-- (BOOL)isEqual: (id)other;
+/**
+ * Compare the current circle with the passing in `circle`.
+ */
 - (BOOL)isEqualToCircle: (BDCircle *)circle;
-- (NSUInteger)hash;
 
 @end
 

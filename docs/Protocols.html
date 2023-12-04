@@ -18,9 +18,9 @@
     <a title="Protocols  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">PointSDK v15.6.8 Docs</a></p>
+        <p><a href="index.html">BDPointSDK v16.0.0 Docs</a></p>
         <p class="header-right"><a href="https://github.com/Bluedot-Innovation/PointSDK-iOS"><img src="img/gh.png" alt="GitHub"/>View on GitHub</a></p>
-        <p class="header-right"><a href="dash-feed://https%3A%2F%2Fios-docs.bluedot.io%2Fdocsets%2FPointSDK.xml"><img src="img/dash.png" alt="Dash"/>Install in Dash</a></p>
+        <p class="header-right"><a href="dash-feed://https%3A%2F%2Fios-docs.bluedot.io%2Fdocsets%2FBDPointSDK.xml"><img src="img/dash.png" alt="Dash"/>Install in Dash</a></p>
         <div class="header-right">
           <form role="search" action="search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -30,7 +30,7 @@
     </header>
     <div class="content-wrapper">
       <p id="breadcrumbs">
-        <a href="index.html">PointSDK Reference</a>
+        <a href="index.html">BDPointSDK Reference</a>
         <img id="carat" src="img/carat.png" alt=""/>
         Protocols  Reference
       </p>
@@ -39,18 +39,13 @@
       <nav class="sidebar">
         <ul class="nav-groups">
           <li class="nav-group-name">
-            <a href="Categories.html">Categories</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="Categories/MKMapView%28BDPointSDK%29.html">MKMapView(BDPointSDK)</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-group-name">
             <a href="Classes.html">Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Classes/BDBeaconInfo.html">BDBeaconInfo</a>
+                <a href="Classes/AppInfo.html">AppInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/AppState.html">AppState</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/BDBoundingBox.html">BDBoundingBox</a>
@@ -80,9 +75,6 @@
                 <a href="Classes/BDPoint.html">BDPoint</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/BDPointOverlayRendererFactory.html">BDPointOverlayRendererFactory</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="Classes/BDPointSessionException.html">BDPointSessionException</a>
               </li>
               <li class="nav-group-task">
@@ -92,13 +84,34 @@
                 <a href="Classes/BDPolygonal.html">BDPolygonal</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/BDZoneEntryEvent.html">BDZoneEntryEvent</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/BDZoneExitEvent.html">BDZoneExitEvent</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="Classes/BDZoneInfo.html">BDZoneInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/CrossedFence.html">CrossedFence</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Destination.html">Destination</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/DeviceInfo.html">DeviceInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/FenceEntered.html">FenceEntered</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/FenceExited.html">FenceExited</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/GeoTriggerEvent.html">GeoTriggerEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/OperatingSystemInfo.html">OperatingSystemInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/TempoTrackingUpdate.html">TempoTrackingUpdate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/ZoneInfo.html">ZoneInfo</a>
               </li>
             </ul>
           </li>
@@ -124,12 +137,6 @@
                 <a href="Constants.html#/c:@BDGeometryTypePolygon">BDGeometryTypePolygon</a>
               </li>
               <li class="nav-group-task">
-                <a href="Constants.html#/c:@BDPointSDKVersionNumber">BDPointSDKVersionNumber</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Constants.html#/c:@BDPointSDKVersionString">BDPointSDKVersionString</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="Constants.html#/c:BDLocationManager+BDPointSDK.h@BDServiceErrorDomain">BDServiceErrorDomain</a>
               </li>
               <li class="nav-group-task">
@@ -141,12 +148,6 @@
             <a href="Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Enums/BDAuthenticationState.html">BDAuthenticationState</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Enums/BDAuthorizationLevel.html">BDAuthorizationLevel</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="Enums/BDGeoTriggeringError.html">BDGeoTriggeringError</a>
               </li>
               <li class="nav-group-task">
@@ -155,14 +156,23 @@
               <li class="nav-group-task">
                 <a href="Enums/BDTempoError.html">BDTempoError</a>
               </li>
+              <li class="nav-group-task">
+                <a href="Enums/EventType.html">EventType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/NotificationType.html">NotificationType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/TempoUpdateETADirection.html">TempoUpdateETADirection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/TriggerEngine.html">TriggerEngine</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
             <a href="Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="Protocols/BDPAuthenticationStateProvider.html">BDPAuthenticationStateProvider</a>
-              </li>
               <li class="nav-group-task">
                 <a href="Protocols/BDPBluedotServiceDelegate.html">BDPBluedotServiceDelegate</a>
               </li>
@@ -182,19 +192,7 @@
                 <a href="Protocols/BDPJSONSerializable.html">BDPJSONSerializable</a>
               </li>
               <li class="nav-group-task">
-                <a href="Protocols/BDPLocationDelegate.html">BDPLocationDelegate</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Protocols/BDPMKShape.html">BDPMKShape</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="Protocols/BDPNamedDescribed.html">BDPNamedDescribed</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Protocols/BDPRestartAlertDelegate.html">BDPRestartAlertDelegate</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Protocols/BDPSessionDelegate.html">BDPSessionDelegate</a>
               </li>
               <li class="nav-group-task">
                 <a href="Protocols/BDPSpatialObject.html">BDPSpatialObject</a>
@@ -209,7 +207,13 @@
                 <a href="Protocols/BDPValidatable.html">BDPValidatable</a>
               </li>
               <li class="nav-group-task">
-                <a href="Protocols.html#/c:objc(pl)BDPointDelegate">BDPointDelegate</a>
+                <a href="Protocols/Event.html">Event</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/JsonString.html">JsonString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/TriggerEvent.html">TriggerEvent</a>
               </li>
             </ul>
           </li>
@@ -239,14 +243,6 @@
               </li>
             </ul>
           </li>
-          <li class="nav-group-name">
-            <a href="Functions.html">Functions</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="Functions.html#/c:@F@BDStringFromAuthenticationState">BDStringFromAuthenticationState</a>
-              </li>
-            </ul>
-          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -259,39 +255,6 @@
           <section class="section task-group-section">
             <div class="task-group">
               <ul>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(pl)BDPAuthenticationStateProvider"></a>
-                    <a name="//apple_ref/objc/Protocol/BDPAuthenticationStateProvider" class="dashAnchor"></a>
-                    <a class="token discouraged" href="#/c:objc(pl)BDPAuthenticationStateProvider">BDPAuthenticationStateProvider</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="aside aside-deprecated">
-                        <p class="aside-title">Deprecated</p>
-                        <p>First deprecated in 15.4.0 - This will be removed in future version</p>
-
-                      </div>
-                      <div class="abstract">
-                        <p>@brief Describes an object which can provide an authentication state.  Currently @ref BDLocationManager(BDPointSDK).</p>
-
-                        <a href="Protocols/BDPAuthenticationStateProvider.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">BDPAuthenticationStateProvider</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
                 <li class="item">
                   <div>
                     <code>
@@ -319,6 +282,11 @@ shared <code><a href="Classes/BDLocationManager.html">BDLocationManager</a></cod
                           <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">BDPBluedotServiceDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">BDPBluedotServiceDelegate</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -336,10 +304,10 @@ shared <code><a href="Classes/BDLocationManager.html">BDLocationManager</a></cod
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>@brief An object which may be <a href="http://en.wikipedia.org/wiki/Object_copy#Deep_copy">deep copied</a>.</p>
+                        <p>An object which may be <a href="http://en.wikipedia.org/wiki/Object_copy#Deep_copy">deep copied</a>.</p>
 
 <p>Whereas the <a href="https://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Protocols/NSCopying_Protocol/Reference/Reference.html">NSCopying</a>
-Protocol is typically used to define shallow copying; @ref BDPDeepCopy specifies a copying method that must return a
+Protocol is typically used to define shallow copying; &ldquo;BDPDeepCopy&rdquo; specifies a copying method that must return a
 deep-copy.  That is, an entirely new object graph which is identical to the receiver and its referenced objects.</p>
 
 <p>There may be application specific exceptions to this definition, for example where those referenced objects are
@@ -357,6 +325,11 @@ singletons.</p>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">BDPDeepCopy</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">BDPDeepCopy</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
 
                         </div>
                       </div>
@@ -378,7 +351,7 @@ singletons.</p>
                       <div class="abstract">
                         <p>Defines the call-backs which Point SDK makes to inform the Application of Geotriggering events.</p>
 
-<p>Assign your own implementation of this protocol to the <code><a href="Classes/BDLocationManager.html#/c:objc(cs)BDLocationManager(py)geoTriggeringEventDelegate">BDLocationManager.geoTriggeringEventDelegate</a></code>  property of the
+<p>Assign your own implementation of this protocol to the <code><a href="Classes/BDLocationManager.html#/c:objc(cs)BDLocationManager(py)geoTriggeringEventDelegate">BDLocationManager.geoTriggeringEventDelegate</a></code> property of the
 shared <code><a href="Classes/BDLocationManager.html">BDLocationManager</a></code> instance, to handle Geotriggering related callbacks.</p>
 
                         <a href="Protocols/BDPGeoTriggeringEventDelegate.html" class="slightly-smaller">See more</a>
@@ -388,6 +361,11 @@ shared <code><a href="Classes/BDLocationManager.html">BDLocationManager</a></cod
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">BDPGeoTriggeringEventDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">BDPGeoTriggeringEventDelegate</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
 
                         </div>
                       </div>
@@ -407,8 +385,7 @@ shared <code><a href="Classes/BDLocationManager.html">BDLocationManager</a></cod
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>@brief Geometrical methods required for implementation of a concrete geometry class.
-@copyright Bluedot Innovation</p>
+                        <p>Geometrical methods required for implementation of a concrete geometry class.</p>
 
                         <a href="Protocols/BDPGeometry.html" class="slightly-smaller">See more</a>
                       </div>
@@ -417,6 +394,11 @@ shared <code><a href="Classes/BDLocationManager.html">BDLocationManager</a></cod
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">BDPGeometry</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/BDPDeepCopy.html">BDPDeepCopy</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">BDPGeometry</span> <span class="p">:</span> <span class="kt"><a href="Protocols/BDPDeepCopy.html">BDPDeepCopy</a></span></code></pre>
 
                         </div>
                       </div>
@@ -436,8 +418,7 @@ shared <code><a href="Classes/BDLocationManager.html">BDLocationManager</a></cod
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>@brief Any object can be Json-serialized to a Dictionary of Foundation objects
-@copyright Bluedot Innovation</p>
+                        <p>Any object can be Json-serialized to a Dictionary of Foundation objects</p>
 
                         <a href="Protocols/BDPJSONSerializable.html" class="slightly-smaller">See more</a>
                       </div>
@@ -446,6 +427,11 @@ shared <code><a href="Classes/BDLocationManager.html">BDLocationManager</a></cod
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">BDPJSONSerializable</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">BDPJSONSerializable</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
 
                         </div>
                       </div>
@@ -465,8 +451,7 @@ shared <code><a href="Classes/BDLocationManager.html">BDLocationManager</a></cod
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>@brief Any object can be Json-deserialized and instantiated from a Json Dictionary
-@copyright Bluedot Innovation</p>
+                        <p>Any object can be Json-deserialized and instantiated from a Json Dictionary</p>
 
                         <a href="Protocols/BDPJSONDeserializable.html" class="slightly-smaller">See more</a>
                       </div>
@@ -477,79 +462,9 @@ shared <code><a href="Classes/BDLocationManager.html">BDLocationManager</a></cod
                           <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">BDPJSONDeserializable</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
 
                         </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(pl)BDPLocationDelegate"></a>
-                    <a name="//apple_ref/objc/Protocol/BDPLocationDelegate" class="dashAnchor"></a>
-                    <a class="token discouraged" href="#/c:objc(pl)BDPLocationDelegate">BDPLocationDelegate</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="aside aside-deprecated">
-                        <p class="aside-title">Deprecated</p>
-                        <p>First deprecated in 15.4.0. Please refer to each deprecated methods for more information</p>
-
-                      </div>
-                      <div class="abstract">
-                        <p>Defines the call-backs which <b>Point SDK</b> makes to inform the Application of location-related events.</p>
-
-<p>Assign your own implementation of this protocol to the @ref BDLocationManager#locationDelegate &ldquo;locationDelegate&rdquo; property of the
-shared <code><a href="Classes/BDLocationManager.html">BDLocationManager</a></code> instance, to handle location related callbacks.</p>
-
-<p>Callbacks inform the application when:</p>
-
-<ul>
-<li>&hellip;new Zones have been received from <b>Canvas</b></li>
-<li>&hellip;the user has triggered a <b>Custom Notification</b> action</li>
-</ul>
-
-                        <a href="Protocols/BDPLocationDelegate.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
                         <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">BDPLocationDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(pl)BDPMKShape"></a>
-                    <a name="//apple_ref/objc/Protocol/BDPMKShape" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)BDPMKShape">BDPMKShape</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>@brief Any object which can return a <a href="https://developer.apple.com/library/prerelease/ios/documentation/MapKit/Reference/MKShape_class/index.html">MapKit shape</a> representing its inherent geometry.</p>
-
-<p><p>This is implemented by the @ref BDBoundingBox &ldquo;box&rdquo;, @ref BDCircle &ldquo;circle&rdquo;, @ref BDPolygon &ldquo;polygon&rdquo; and
-  @ref BDLineString &ldquo;line-string&rdquo; geometries, to assist with their rendering in
-  <a href="https://developer.apple.com/library/ios/documentation/mapkit/reference/mkmapview_class/MKMapView/MKMapView.html">MapKit map views</a>.</p>
-
-                        <a href="Protocols/BDPMKShape.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">BDPMKShape</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">BDPJSONDeserializable</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
 
                         </div>
                       </div>
@@ -569,8 +484,7 @@ shared <code><a href="Classes/BDLocationManager.html">BDLocationManager</a></cod
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>@brief Any object having a human-readable name and description, typically for display in a User Interface.
-@copyright Bluedot Innovation</p>
+                        <p>Any object having a human-readable name and description, typically for display in a User Interface.</p>
 
                         <a href="Protocols/BDPNamedDescribed.html" class="slightly-smaller">See more</a>
                       </div>
@@ -581,86 +495,9 @@ shared <code><a href="Classes/BDLocationManager.html">BDLocationManager</a></cod
                           <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">BDPNamedDescribed</span></code></pre>
 
                         </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(pl)BDPRestartAlertDelegate"></a>
-                    <a name="//apple_ref/objc/Protocol/BDPRestartAlertDelegate" class="dashAnchor"></a>
-                    <a class="token discouraged" href="#/c:objc(pl)BDPRestartAlertDelegate">BDPRestartAlertDelegate</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="aside aside-deprecated">
-                        <p class="aside-title">Deprecated</p>
-                        <p>First deprecated in 15.4.0 - Features migrated to <code><a href="Classes/BDLocationManager.html">BDLocationManager.</a></code></p>
-
-                      </div>
-                      <div class="abstract">
-                        <p>@brief Implement this protocol in your UIApplicationDelegate to enable restart prompts to the user, after the App terminates.</p>
-
-<p><p>
- Implement this protocol in your UIApplicationDelegate to allow an app to be restarted should it be no longer
- running on the device; the user is given the option to restart the application through a local notification
- with an action to restart.</p>
-
-<p>The title of the banner or alert (depending on user settings on the device) must be provided by the app
- implementing this protocol.
- The text on the action button can be set by the application implementing this protocol.
- </p></p>
-
-                        <a href="Protocols/BDPRestartAlertDelegate.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
                         <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">BDPRestartAlertDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(pl)BDPSessionDelegate"></a>
-                    <a name="//apple_ref/objc/Protocol/BDPSessionDelegate" class="dashAnchor"></a>
-                    <a class="token discouraged" href="#/c:objc(pl)BDPSessionDelegate">BDPSessionDelegate</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="aside aside-deprecated">
-                        <p class="aside-title">Deprecated</p>
-                        <p>First deprecated in 15.4.0 - initialization related delagate callbacks are now returned in completion callbacks. Please refer to <code><a href="Classes/BDLocationManager.html">BDLocationManager.</a></code></p>
-
-                      </div>
-                      <div class="abstract">
-                        <p>Defines a delegate for handling <b>Point SDK</b>&lsquo;s session related callbacks</p>
-
-<p><b>Point SDK</b> needs to authenticate with <b>Canvas</b> to function.
-Applications must observe the correct authentication lifecycle when using <b>Point SDK</b> features, as documented.</p>
-
-<p>For richer information about the authentication lifecycle, applications may optionally assign an implementation of this
-protocol to the sessionDelegate property of the shared `BDLocationManager instance.</p>
-
-                        <a href="Protocols/BDPSessionDelegate.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">BDPSessionDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">BDPNamedDescribed</span></code></pre>
 
                         </div>
                       </div>
@@ -680,7 +517,7 @@ protocol to the sessionDelegate property of the shared `BDLocationManager instan
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>@brief Objects having an inherent @ref BDGeometry &ldquo;geometry&rdquo;.</p>
+                        <p>Objects having an inherent <code><a href="Classes.html#/c:objc(cs)BDGeometry">BDGeometry</a></code> &ldquo;geometry&rdquo;.</p>
 
                         <a href="Protocols/BDPSpatialObject.html" class="slightly-smaller">See more</a>
                       </div>
@@ -689,6 +526,11 @@ protocol to the sessionDelegate property of the shared `BDLocationManager instan
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">BDPSpatialObject</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">BDPSpatialObject</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
 
                         </div>
                       </div>
@@ -708,7 +550,7 @@ protocol to the sessionDelegate property of the shared `BDLocationManager instan
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Objects having an inherent <code><a href="Classes.html#/c:objc(cs)BDGeometry">BDGeometry</a></code> &ldquo;geometry&rdquo;.</p>
 
                         <a href="Protocols/BDPSpatialObjectInfo.html" class="slightly-smaller">See more</a>
                       </div>
@@ -716,21 +558,12 @@ protocol to the sessionDelegate property of the shared `BDLocationManager instan
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">BDPSpatialObjectInfo</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/BDPSpatialObject.html">BDPSpatialObject</a></span><span class="o">&gt;</span>
+                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">BDPSpatialObjectInfo</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/BDPSpatialObject.html">BDPSpatialObject</a></span><span class="o">&gt;</span></code></pre>
 
-<span class="c1">/// The name of this object that was entered into Canvas
-</span><span class="k">@property</span> <span class="p">(</span><span class="n">copy</span><span class="p">,</span><span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span>  <span class="o">*</span><span class="n">name</span><span class="p">;</span>
-
-<span class="c1">/// The description of this object that was entered into Canvas
-</span><span class="k">@property</span> <span class="p">(</span><span class="n">copy</span><span class="p">,</span><span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">description</span><span class="p">;</span>
-
-<span class="c1">/// The description of this ID of the object
-</span><span class="k">@property</span> <span class="p">(</span><span class="n">copy</span><span class="p">,</span><span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">ID</span><span class="p">;</span>
-
-<span class="c1">/// The geometry of this object that was defined in Canvas
-</span><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="Classes.html#/c:objc(cs)BDGeometry">BDGeometry</a></span> <span class="o">*</span><span class="n">geometry</span><span class="p">;</span>
-
-<span class="k">@end</span></code></pre>
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">BDPSpatialObjectInfo</span> <span class="p">:</span> <span class="kt"><a href="Protocols/BDPSpatialObject.html">BDPSpatialObject</a></span></code></pre>
 
                         </div>
                       </div>
@@ -764,6 +597,11 @@ shared <code><a href="Classes/BDLocationManager.html">BDLocationManager</a></cod
                           <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">BDPTempoTrackingDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">BDPTempoTrackingDelegate</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -781,10 +619,9 @@ shared <code><a href="Classes/BDLocationManager.html">BDLocationManager</a></cod
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>@brief Any object whose state can be validated for correctness.</p>
+                        <p>Any object whose state can be validated for correctness.</p>
 
-<p>Typically this will be implemented only by data-model classes.
-@copyright Bluedot Innovation</p>
+<p>Typically this will be implemented only by data-model classes.</p>
 
                         <a href="Protocols/BDPValidatable.html" class="slightly-smaller">See more</a>
                       </div>
@@ -795,6 +632,11 @@ shared <code><a href="Classes/BDLocationManager.html">BDLocationManager</a></cod
                           <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">BDPValidatable</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">BDPValidatable</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -802,34 +644,84 @@ shared <code><a href="Classes/BDLocationManager.html">BDLocationManager</a></cod
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(pl)BDPointDelegate"></a>
-                    <a name="//apple_ref/objc/Protocol/BDPointDelegate" class="dashAnchor"></a>
-                    <a class="token discouraged" href="#/c:objc(pl)BDPointDelegate">BDPointDelegate</a>
+                    <a name="/c:@M@BDPointSDK@objc(pl)JsonString"></a>
+                    <a name="//apple_ref/objc/Protocol/JsonString" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@BDPointSDK@objc(pl)JsonString">JsonString</a>
                     </code>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
-                      <div class="aside aside-deprecated">
-                        <p class="aside-title">Deprecated</p>
-                        <p>First deprecated in 15.4.0 - Features migrated to <code><a href="Protocols/BDPBluedotServiceDelegate.html">BDPBluedotServiceDelegate</a></code> or <code><a href="Protocols/BDPGeoTriggeringEventDelegate.html">BDPGeoTriggeringEventDelegate</a></code></p>
-
-                      </div>
                       <div class="abstract">
-                        <p>@brief Convenience Protocol aggregating @ref BDPSessionDelegate and @ref BDPLocationDelegate.</p>
-<div class="aside aside-see">
-    <p class="aside-title">See</p>
-    <a href="https://github.com/Bluedot-Innovation/PointSDK-SampleApp-iOS/blob/1.3/BDPoint/EXAppDelegate.m">EXAppDelegate.m</a> from the <a href="https://github.com/Bluedot-Innovation/PointSDK-SampleApp-iOS">PointSDK-SampleApp-iOS</a> sample project, for an example of @ref BDPointDelegate implementation.
+                        <p>Protocol to convert an object to a Json string</p>
 
-</div>
-
+                        <a href="Protocols/JsonString.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">BDPointDelegate</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/BDPSessionDelegate.html">BDPSessionDelegate</a></span><span class="p">,</span> <span class="n"><a href="Protocols/BDPLocationDelegate.html">BDPLocationDelegate</a></span><span class="o">&gt;</span></code></pre>
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">JsonString</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@BDPointSDK@objc(pl)Event"></a>
+                    <a name="//apple_ref/objc/Protocol/Event" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@BDPointSDK@objc(pl)Event">Event</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An event in Bluedot SDK. Could be a GeoTriggerEvent (e.g. <code><a href="Classes/FenceEntered.html">FenceEntered</a></code>, <code><a href="Classes/FenceExited.html">FenceExited</a></code>), a TempoEvent or a LifecycleEvent</p>
+
+                        <a href="Protocols/Event.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">Event</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@BDPointSDK@objc(pl)TriggerEvent"></a>
+                    <a name="//apple_ref/objc/Protocol/TriggerEvent" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@BDPointSDK@objc(pl)TriggerEvent">TriggerEvent</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A GeoTrigger event, e.g. <code><a href="Classes/FenceEntered.html">FenceEntered</a></code>or <code><a href="Classes/FenceExited.html">FenceExited</a></code>.</p>
+
+                        <a href="Protocols/TriggerEvent.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">TriggerEvent</span> <span class="p">:</span> <span class="kt"><a href="Protocols/Event.html">Event</a></span><span class="p">,</span> <span class="kt">NSCopying</span></code></pre>
 
                         </div>
                       </div>
@@ -841,8 +733,8 @@ shared <code><a href="Classes/BDLocationManager.html">BDLocationManager</a></cod
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2023 <a class="link" href="https://bluedot.io" target="_blank" rel="external noopener">Bluedot</a>. All rights reserved. (Last updated: 2023-08-11)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+          <p>&copy; 2023 <a class="link" href="https://bluedot.io" target="_blank" rel="external noopener">Bluedot</a>. All rights reserved. (Last updated: 2023-09-25)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
     </div>

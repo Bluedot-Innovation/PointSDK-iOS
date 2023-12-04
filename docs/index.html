@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>PointSDK  Reference</title>
+    <title>BDPointSDK  Reference</title>
     <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="css/highlight.css" />
     <meta charset='utf-8'>
@@ -14,12 +14,12 @@
     <script src="js/jazzy.search.js" defer></script>
   </head>
   <body>
-    <a title="PointSDK  Reference"></a>
+    <a title="BDPointSDK  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">PointSDK v15.6.8 Docs</a></p>
+        <p><a href="index.html">BDPointSDK v16.0.0 Docs</a></p>
         <p class="header-right"><a href="https://github.com/Bluedot-Innovation/PointSDK-iOS"><img src="img/gh.png" alt="GitHub"/>View on GitHub</a></p>
-        <p class="header-right"><a href="dash-feed://https%3A%2F%2Fios-docs.bluedot.io%2Fdocsets%2FPointSDK.xml"><img src="img/dash.png" alt="Dash"/>Install in Dash</a></p>
+        <p class="header-right"><a href="dash-feed://https%3A%2F%2Fios-docs.bluedot.io%2Fdocsets%2FBDPointSDK.xml"><img src="img/dash.png" alt="Dash"/>Install in Dash</a></p>
         <div class="header-right">
           <form role="search" action="search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -29,27 +29,22 @@
     </header>
     <div class="content-wrapper">
       <p id="breadcrumbs">
-        <a href="index.html">PointSDK Reference</a>
+        <a href="index.html">BDPointSDK Reference</a>
         <img id="carat" src="img/carat.png" alt=""/>
-        PointSDK  Reference
+        BDPointSDK  Reference
       </p>
     </div>
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
           <li class="nav-group-name">
-            <a href="Categories.html">Categories</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="Categories/MKMapView%28BDPointSDK%29.html">MKMapView(BDPointSDK)</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-group-name">
             <a href="Classes.html">Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Classes/BDBeaconInfo.html">BDBeaconInfo</a>
+                <a href="Classes/AppInfo.html">AppInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/AppState.html">AppState</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/BDBoundingBox.html">BDBoundingBox</a>
@@ -79,9 +74,6 @@
                 <a href="Classes/BDPoint.html">BDPoint</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/BDPointOverlayRendererFactory.html">BDPointOverlayRendererFactory</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="Classes/BDPointSessionException.html">BDPointSessionException</a>
               </li>
               <li class="nav-group-task">
@@ -91,13 +83,34 @@
                 <a href="Classes/BDPolygonal.html">BDPolygonal</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/BDZoneEntryEvent.html">BDZoneEntryEvent</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/BDZoneExitEvent.html">BDZoneExitEvent</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="Classes/BDZoneInfo.html">BDZoneInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/CrossedFence.html">CrossedFence</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Destination.html">Destination</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/DeviceInfo.html">DeviceInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/FenceEntered.html">FenceEntered</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/FenceExited.html">FenceExited</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/GeoTriggerEvent.html">GeoTriggerEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/OperatingSystemInfo.html">OperatingSystemInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/TempoTrackingUpdate.html">TempoTrackingUpdate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/ZoneInfo.html">ZoneInfo</a>
               </li>
             </ul>
           </li>
@@ -123,12 +136,6 @@
                 <a href="Constants.html#/c:@BDGeometryTypePolygon">BDGeometryTypePolygon</a>
               </li>
               <li class="nav-group-task">
-                <a href="Constants.html#/c:@BDPointSDKVersionNumber">BDPointSDKVersionNumber</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Constants.html#/c:@BDPointSDKVersionString">BDPointSDKVersionString</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="Constants.html#/c:BDLocationManager+BDPointSDK.h@BDServiceErrorDomain">BDServiceErrorDomain</a>
               </li>
               <li class="nav-group-task">
@@ -140,12 +147,6 @@
             <a href="Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Enums/BDAuthenticationState.html">BDAuthenticationState</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Enums/BDAuthorizationLevel.html">BDAuthorizationLevel</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="Enums/BDGeoTriggeringError.html">BDGeoTriggeringError</a>
               </li>
               <li class="nav-group-task">
@@ -154,14 +155,23 @@
               <li class="nav-group-task">
                 <a href="Enums/BDTempoError.html">BDTempoError</a>
               </li>
+              <li class="nav-group-task">
+                <a href="Enums/EventType.html">EventType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/NotificationType.html">NotificationType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/TempoUpdateETADirection.html">TempoUpdateETADirection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/TriggerEngine.html">TriggerEngine</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
             <a href="Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="Protocols/BDPAuthenticationStateProvider.html">BDPAuthenticationStateProvider</a>
-              </li>
               <li class="nav-group-task">
                 <a href="Protocols/BDPBluedotServiceDelegate.html">BDPBluedotServiceDelegate</a>
               </li>
@@ -181,19 +191,7 @@
                 <a href="Protocols/BDPJSONSerializable.html">BDPJSONSerializable</a>
               </li>
               <li class="nav-group-task">
-                <a href="Protocols/BDPLocationDelegate.html">BDPLocationDelegate</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Protocols/BDPMKShape.html">BDPMKShape</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="Protocols/BDPNamedDescribed.html">BDPNamedDescribed</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Protocols/BDPRestartAlertDelegate.html">BDPRestartAlertDelegate</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Protocols/BDPSessionDelegate.html">BDPSessionDelegate</a>
               </li>
               <li class="nav-group-task">
                 <a href="Protocols/BDPSpatialObject.html">BDPSpatialObject</a>
@@ -208,7 +206,13 @@
                 <a href="Protocols/BDPValidatable.html">BDPValidatable</a>
               </li>
               <li class="nav-group-task">
-                <a href="Protocols.html#/c:objc(pl)BDPointDelegate">BDPointDelegate</a>
+                <a href="Protocols/Event.html">Event</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/JsonString.html">JsonString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/TriggerEvent.html">TriggerEvent</a>
               </li>
             </ul>
           </li>
@@ -238,14 +242,6 @@
               </li>
             </ul>
           </li>
-          <li class="nav-group-name">
-            <a href="Functions.html">Functions</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="Functions.html#/c:@F@BDStringFromAuthenticationState">BDStringFromAuthenticationState</a>
-              </li>
-            </ul>
-          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -256,7 +252,7 @@
 <h1 id='about-this-reference' class='heading'>About this reference</h1>
 
 <p>This API reference documentation covers the <strong>iOS framework</strong> for <strong>Point SDK</strong>.
-For more general documentation, including a walk-through of Xcode project set-up, usage of the Point Access web-interface and Android library API, see the <a href="http://docs.bluedot.io/">Bluedot Point developer pages</a>.</p>
+For more general documentation, including a walk-through of Xcode project set-up, usage of the Canvas Web Portal and Android SDK, see the <a href="https://docs.bluedot.io/">Bluedot Developer Documentation</a>.</p>
 <h1 id='guide' class='heading'>Guide</h1>
 
 <p>Check our <a href="https://github.com/Bluedot-Innovation/PointSDK-MinimalIntegrationExample-iOS">Minimal Integration Example app</a> for a demonstration on how to integrate the Bluedot Point SDK into an iOS app.</p>
@@ -266,8 +262,8 @@ For more general documentation, including a walk-through of Xcode project set-up
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2023 <a class="link" href="https://bluedot.io" target="_blank" rel="external noopener">Bluedot</a>. All rights reserved. (Last updated: 2023-08-11)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+          <p>&copy; 2023 <a class="link" href="https://bluedot.io" target="_blank" rel="external noopener">Bluedot</a>. All rights reserved. (Last updated: 2023-09-25)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
     </div>

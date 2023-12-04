@@ -8,8 +8,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /**
- @brief Any object can be Json-serialized to a Dictionary of Foundation objects
- @copyright Bluedot Innovation
+ * Any object can be Json-serialized to a Dictionary of Foundation objects
  */
 @protocol BDPJSONSerializable <NSObject>
 
@@ -22,8 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 /**
- @brief Any object can be Json-deserialized and instantiated from a Json Dictionary
- @copyright Bluedot Innovation
+ * Any object can be Json-deserialized and instantiated from a Json Dictionary
  */
 @protocol BDPJSONDeserializable <NSObject>
 

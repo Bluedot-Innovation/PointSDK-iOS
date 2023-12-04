@@ -18,9 +18,9 @@
     <a title="Classes  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">PointSDK v15.6.8 Docs</a></p>
+        <p><a href="index.html">BDPointSDK v16.0.0 Docs</a></p>
         <p class="header-right"><a href="https://github.com/Bluedot-Innovation/PointSDK-iOS"><img src="img/gh.png" alt="GitHub"/>View on GitHub</a></p>
-        <p class="header-right"><a href="dash-feed://https%3A%2F%2Fios-docs.bluedot.io%2Fdocsets%2FPointSDK.xml"><img src="img/dash.png" alt="Dash"/>Install in Dash</a></p>
+        <p class="header-right"><a href="dash-feed://https%3A%2F%2Fios-docs.bluedot.io%2Fdocsets%2FBDPointSDK.xml"><img src="img/dash.png" alt="Dash"/>Install in Dash</a></p>
         <div class="header-right">
           <form role="search" action="search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -30,7 +30,7 @@
     </header>
     <div class="content-wrapper">
       <p id="breadcrumbs">
-        <a href="index.html">PointSDK Reference</a>
+        <a href="index.html">BDPointSDK Reference</a>
         <img id="carat" src="img/carat.png" alt=""/>
         Classes  Reference
       </p>
@@ -39,18 +39,13 @@
       <nav class="sidebar">
         <ul class="nav-groups">
           <li class="nav-group-name">
-            <a href="Categories.html">Categories</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="Categories/MKMapView%28BDPointSDK%29.html">MKMapView(BDPointSDK)</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-group-name">
             <a href="Classes.html">Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Classes/BDBeaconInfo.html">BDBeaconInfo</a>
+                <a href="Classes/AppInfo.html">AppInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/AppState.html">AppState</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/BDBoundingBox.html">BDBoundingBox</a>
@@ -80,9 +75,6 @@
                 <a href="Classes/BDPoint.html">BDPoint</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/BDPointOverlayRendererFactory.html">BDPointOverlayRendererFactory</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="Classes/BDPointSessionException.html">BDPointSessionException</a>
               </li>
               <li class="nav-group-task">
@@ -92,13 +84,34 @@
                 <a href="Classes/BDPolygonal.html">BDPolygonal</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/BDZoneEntryEvent.html">BDZoneEntryEvent</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/BDZoneExitEvent.html">BDZoneExitEvent</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="Classes/BDZoneInfo.html">BDZoneInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/CrossedFence.html">CrossedFence</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Destination.html">Destination</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/DeviceInfo.html">DeviceInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/FenceEntered.html">FenceEntered</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/FenceExited.html">FenceExited</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/GeoTriggerEvent.html">GeoTriggerEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/OperatingSystemInfo.html">OperatingSystemInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/TempoTrackingUpdate.html">TempoTrackingUpdate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/ZoneInfo.html">ZoneInfo</a>
               </li>
             </ul>
           </li>
@@ -124,12 +137,6 @@
                 <a href="Constants.html#/c:@BDGeometryTypePolygon">BDGeometryTypePolygon</a>
               </li>
               <li class="nav-group-task">
-                <a href="Constants.html#/c:@BDPointSDKVersionNumber">BDPointSDKVersionNumber</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Constants.html#/c:@BDPointSDKVersionString">BDPointSDKVersionString</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="Constants.html#/c:BDLocationManager+BDPointSDK.h@BDServiceErrorDomain">BDServiceErrorDomain</a>
               </li>
               <li class="nav-group-task">
@@ -141,12 +148,6 @@
             <a href="Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Enums/BDAuthenticationState.html">BDAuthenticationState</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Enums/BDAuthorizationLevel.html">BDAuthorizationLevel</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="Enums/BDGeoTriggeringError.html">BDGeoTriggeringError</a>
               </li>
               <li class="nav-group-task">
@@ -155,14 +156,23 @@
               <li class="nav-group-task">
                 <a href="Enums/BDTempoError.html">BDTempoError</a>
               </li>
+              <li class="nav-group-task">
+                <a href="Enums/EventType.html">EventType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/NotificationType.html">NotificationType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/TempoUpdateETADirection.html">TempoUpdateETADirection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/TriggerEngine.html">TriggerEngine</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
             <a href="Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="Protocols/BDPAuthenticationStateProvider.html">BDPAuthenticationStateProvider</a>
-              </li>
               <li class="nav-group-task">
                 <a href="Protocols/BDPBluedotServiceDelegate.html">BDPBluedotServiceDelegate</a>
               </li>
@@ -182,19 +192,7 @@
                 <a href="Protocols/BDPJSONSerializable.html">BDPJSONSerializable</a>
               </li>
               <li class="nav-group-task">
-                <a href="Protocols/BDPLocationDelegate.html">BDPLocationDelegate</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Protocols/BDPMKShape.html">BDPMKShape</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="Protocols/BDPNamedDescribed.html">BDPNamedDescribed</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Protocols/BDPRestartAlertDelegate.html">BDPRestartAlertDelegate</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Protocols/BDPSessionDelegate.html">BDPSessionDelegate</a>
               </li>
               <li class="nav-group-task">
                 <a href="Protocols/BDPSpatialObject.html">BDPSpatialObject</a>
@@ -209,7 +207,13 @@
                 <a href="Protocols/BDPValidatable.html">BDPValidatable</a>
               </li>
               <li class="nav-group-task">
-                <a href="Protocols.html#/c:objc(pl)BDPointDelegate">BDPointDelegate</a>
+                <a href="Protocols/Event.html">Event</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/JsonString.html">JsonString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/TriggerEvent.html">TriggerEvent</a>
               </li>
             </ul>
           </li>
@@ -239,14 +243,6 @@
               </li>
             </ul>
           </li>
-          <li class="nav-group-name">
-            <a href="Functions.html">Functions</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="Functions.html#/c:@F@BDStringFromAuthenticationState">BDStringFromAuthenticationState</a>
-              </li>
-            </ul>
-          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -262,31 +258,60 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)BDBeaconInfo"></a>
-                    <a name="//apple_ref/objc/Class/BDBeaconInfo" class="dashAnchor"></a>
-                    <a class="token discouraged" href="#/c:objc(cs)BDBeaconInfo">BDBeaconInfo</a>
+                    <a name="/c:objc(cs)BDLocationManager"></a>
+                    <a name="//apple_ref/objc/Class/BDLocationManager" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BDLocationManager">BDLocationManager</a>
                     </code>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
-                      <div class="aside aside-deprecated">
-                        <p class="aside-title">Deprecated</p>
-                        <p>First deprecated in 15.4.0 - It will be removed in a future version</p>
-
-                      </div>
                       <div class="abstract">
-                        <p>Information about a BLE Beacon, as defined in Canvas.</p>
+                        <p>Entry-point for your Application&rsquo;s interaction with <b>Point SDK</b>.</p>
 
-                        <a href="Classes/BDBeaconInfo.html" class="slightly-smaller">See more</a>
+<p><b>Point SDK</b> carries out location specific, conditional actions that you define in the <b>Canvas</b> web-interface.
+To start these behaviours with your Application, it is necessary only to call the initialize method
+on the <code>BDLocationManager.instance</code> &ldquo;shared singleton instance&rdquo; of <code>BDLocationManager</code>.<p/></p>
+
+<p>Calling the initialization method will start a session with <b>Canvas</b>..</p>
+
+<p><p>In general, the <code>BDLocationManager.instance</code> &ldquo;shared, singleton instance&rdquo; of <code>BDLocationManager</code> should be used wherever the standard Core Location
+<a hef="https://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CLLocationManager_Class/">CLLocationManager</a>
+class would have been used.</p>
+
+<p><code>BDLocationManager</code> is a subclass of <a hef="https://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CLLocationManager_Class/">CLLocationManager</a>
+and is intended as a drop-in replacement while providing additional features.</p>
+
+<p><code>BDLocationManager</code> exposes <b>a few new delegate properties</b>, in addition to the usual <a href="https://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CLLocationManager_Class/#//apple_ref/occ/instp/CLLocationManager/delegate"><b>delegate</b></a> property
+inherited from <a href="https://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CLLocationManager_Class/">CLLocationManager</a>:</p>
+
+<ul>
+<li><code><a href="Classes/BDLocationManager.html#/c:objc(cs)BDLocationManager(py)geoTriggeringEventDelegate">BDLocationManager.geoTriggeringEventDelegate</a></code> - to which you should assign your own implementation of the <code><a href="Protocols/BDPGeoTriggeringEventDelegate.html">BDPGeoTriggeringEventDelegate</a></code> protocol. The property provides callbacks to notify your application when Zone information is received and any zone enter/ zone exit events as they occur, in real-time.</li>
+<li><code><a href="Classes/BDLocationManager.html#/c:objc(cs)BDLocationManager(py)tempoTrackingDelegate">BDLocationManager.tempoTrackingDelegate</a></code> - to which you should assign your own implementation of the <code><a href="Protocols/BDPTempoTrackingDelegate.html">BDPTempoTrackingDelegate</a></code> protocol. This  property provides callbacks to notify your application
+of Tempo related events.</li>
+<li><code><a href="Classes/BDLocationManager.html#/c:objc(cs)BDLocationManager(py)bluedotServiceDelegate">BDLocationManager.bluedotServiceDelegate</a></code> - to which you should assign your own implementation of the <code><a href="Protocols/BDPBluedotServiceDelegate.html">BDPBluedotServiceDelegate</a></code> protocol to receive Bluedot service related callbacks (for e.g. location permission changed, accuracy authorization changed, etc.).</li>
+</ul>
+
+<p>By default, <code>BDLocationManager</code> enables background location updates for While Using location permission, which will display the visual blue bar in the StatusBar area at the top of the screen.
+ If you prefer to disable that behavior and don&rsquo;t want the Point SDK to process location updates when app is in the background and permission is While Using, set <code><a href="Classes/BDLocationManager.html#/c:objc(cs)BDLocationManager(py)backgroundLocationAccessForWhileUsing">BDLocationManager.backgroundLocationAccessForWhileUsing</a></code> to <code>false</code>.</p>
+
+<p><p>In addition, some methods of <b>Point SDK</b> classes may only be called while initialized
+and will otherwise cause an exception to be thrown. Individual restrictions are documented clearly in this API
+reference. It is only necessary to initialize once during the runtime of the application.</p>
+
+                        <a href="Classes/BDLocationManager.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code>
-<span class="k">@interface</span> <span class="nc">BDBeaconInfo</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/BDPSpatialObjectInfo.html">BDPSpatialObjectInfo</a></span><span class="p">,</span> <span class="n">NSCoding</span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BDLocationManager</span> <span class="p">:</span> <span class="nc">CLLocationManager</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">BDLocationManager</span> <span class="p">:</span> <span class="kt">CLLocationManager</span></code></pre>
 
                         </div>
                       </div>
@@ -306,11 +331,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>@brief A rectangular coordinate region on the Earth&rsquo;s surface, defined by two latitude / longitude corner @ref BDPoint &ldquo;points&rdquo;.</p>
-
-<p>\image html boundingBox.gif</p>
-
-<p>@copyright Bluedot Innovation</p>
+                        <p>A rectangular coordinate region on the Earth&rsquo;s surface, defined by two latitude / longitude corner <code><a href="Classes/BDPoint.html">BDPoint</a></code> &ldquo;points&rdquo;.</p>
 
                         <a href="Classes/BDBoundingBox.html" class="slightly-smaller">See more</a>
                       </div>
@@ -318,7 +339,13 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BDBoundingBox</span> <span class="p">:</span> <span class="nc"><a href="Classes.html#/c:objc(cs)BDGeometry">BDGeometry</a></span> <span class="o">&lt;</span><span class="n">NSCopying</span><span class="p">,</span> <span class="n"><a href="Protocols/BDPValidatable.html">BDPValidatable</a></span><span class="p">,</span> <span class="n">NSCoding</span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BDBoundingBox</span>
+    <span class="p">:</span> <span class="nc"><a href="Classes.html#/c:objc(cs)BDGeometry">BDGeometry</a></span> <span class="o">&lt;</span><span class="n">NSCopying</span><span class="p">,</span> <span class="n"><a href="Protocols/BDPValidatable.html">BDPValidatable</a></span><span class="p">,</span> <span class="n">NSSecureCoding</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">BDBoundingBox</span> <span class="p">:</span> <span class="kt"><a href="Classes.html#/c:objc(cs)BDGeometry">BDGeometry</a></span><span class="p">,</span> <span class="kt">NSCopying</span><span class="p">,</span> <span class="kt"><a href="Protocols/BDPValidatable.html">BDPValidatable</a></span><span class="p">,</span> <span class="kt">NSSecureCoding</span></code></pre>
 
                         </div>
                       </div>
@@ -338,11 +365,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>@brief A circular region on the Earth&rsquo;s surface, defined by a center @ref BDPoint &ldquo;point&rdquo; and a radius, in meters.</p>
-
-<p>\image html circle.gif</p>
-
-<p>@copyright Bluedot Innovation</p>
+                        <p>A circular region on the Earth&rsquo;s surface, defined by a center <code><a href="Classes/BDPoint.html">BDPoint</a></code> &ldquo;point&rdquo; and a radius, in meters.</p>
 
                         <a href="Classes/BDCircle.html" class="slightly-smaller">See more</a>
                       </div>
@@ -350,7 +373,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BDCircle</span> <span class="p">:</span> <span class="nc"><a href="Classes.html#/c:objc(cs)BDGeometry">BDGeometry</a></span> <span class="o">&lt;</span><span class="n">NSCoding</span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BDCircle</span> <span class="p">:</span> <span class="nc"><a href="Classes.html#/c:objc(cs)BDGeometry">BDGeometry</a></span> <span class="o">&lt;</span><span class="n">NSSecureCoding</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">BDCircle</span> <span class="p">:</span> <span class="kt"><a href="Classes.html#/c:objc(cs)BDGeometry">BDGeometry</a></span><span class="p">,</span> <span class="kt">NSSecureCoding</span></code></pre>
 
                         </div>
                       </div>
@@ -378,7 +406,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BDFenceInfo</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/BDPSpatialObjectInfo.html">BDPSpatialObjectInfo</a></span><span class="p">,</span> <span class="n">NSCoding</span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BDFenceInfo</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/BDPSpatialObjectInfo.html">BDPSpatialObjectInfo</a></span><span class="p">,</span> <span class="n">NSSecureCoding</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">BDFenceInfo</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt"><a href="Protocols/BDPSpatialObjectInfo.html">BDPSpatialObjectInfo</a></span><span class="p">,</span> <span class="kt">NSSecureCoding</span></code></pre>
 
                         </div>
                       </div>
@@ -398,13 +431,10 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>@brief Base class for all geometries.</p>
+                        <p>Base class for all geometries.</p>
 
-<p>Concrete geometries include @ref BDPoint &ldquo;points&rdquo;, @ref BDBoundingBox &ldquo;boxes&rdquo;, @ref BDCircle &ldquo;circles&rdquo;, @ref BDLineString &ldquo;line-strings&rdquo; and @ref BDPolygon &ldquo;polygons&rdquo;.</p>
-
-<p>A @ref BDGeometry &ldquo;geometry&rdquo;, in this context, represents an area on the surface of the Earth, expressed in latitude and longitude coordinates.</p>
-
-<p>@copyright Bluedot Innovation</p>
+<p>Concrete geometries include <code><a href="Classes/BDPoint.html">BDPoint</a></code> &ldquo;points&rdquo;, <code><a href="Classes/BDBoundingBox.html">BDBoundingBox</a></code> &ldquo;boxes&rdquo;, <code><a href="Classes/BDCircle.html">BDCircle</a></code> &ldquo;circles&rdquo;, <code><a href="Classes/BDLineString.html">BDLineString</a></code> &ldquo;line-strings&rdquo; and <code><a href="Classes/BDPolygon.html">BDPolygon</a></code> &ldquo;polygons&rdquo;.
+ A BDGeometry &ldquo;geometry&rdquo;, in this context, represents an area on the surface of the Earth, expressed in latitude and longitude coordinates.</p>
 
                       </div>
                       <div class="declaration">
@@ -413,6 +443,11 @@
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BDGeometry</span>
     <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/BDPGeometry.html">BDPGeometry</a></span><span class="p">,</span> <span class="n"><a href="Protocols/BDPJSONSerializable.html">BDPJSONSerializable</a></span><span class="p">,</span> <span class="n"><a href="Protocols/BDPJSONDeserializable.html">BDPJSONDeserializable</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">BDGeometry</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt"><a href="Protocols/BDPGeometry.html">BDPGeometry</a></span><span class="p">,</span> <span class="kt"><a href="Protocols/BDPJSONSerializable.html">BDPJSONSerializable</a></span><span class="p">,</span> <span class="kt"><a href="Protocols/BDPJSONDeserializable.html">BDPJSONDeserializable</a></span></code></pre>
 
                         </div>
                       </div>
@@ -432,14 +467,11 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>@brief Open-ended geometry consisting of two or more @ref BDPoint &ldquo;points&rdquo; connected by straight-line segments.</p>
+                        <p>Open-ended geometry consisting of two or more <code><a href="Classes/BDPoint.html">BDPoint</a></code> &ldquo;points&rdquo; connected by straight-line segments.</p>
 
-<p>Unlike a @ref BDPolygon &ldquo;polygon&rdquo; this geometry is open-ended and has no area.</p>
-
-<p>When used as a @ref BDFence &ldquo;fence&rdquo; geometry, @ref BDLineString is typically used to represent a geographic boundary or
-check-point along a road or other travel path.</p>
-
-<p>@copyright Bluedot Innovation</p>
+<p>Unlike a <code><a href="Classes/BDPolygon.html">BDPolygon</a></code> &ldquo;polygon&rdquo; this geometry is open-ended and has no area.
+ When used as a <code>BDFence</code> &ldquo;fence&rdquo; geometry, <code>BDLineString</code> is typically used to represent a geographic boundary or
+ check-point along a road or other travel path.</p>
 
                         <a href="Classes/BDLineString.html" class="slightly-smaller">See more</a>
                       </div>
@@ -447,7 +479,12 @@ check-point along a road or other travel path.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BDLineString</span> <span class="p">:</span> <span class="nc"><a href="Classes/BDPolygonal.html">BDPolygonal</a></span> <span class="o">&lt;</span><span class="n">NSCoding</span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BDLineString</span> <span class="p">:</span> <span class="nc"><a href="Classes/BDPolygonal.html">BDPolygonal</a></span> <span class="o">&lt;</span><span class="n">NSSecureCoding</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">BDLineString</span> <span class="p">:</span> <span class="kt"><a href="Classes/BDPolygonal.html">BDPolygonal</a></span><span class="p">,</span> <span class="kt">NSSecureCoding</span></code></pre>
 
                         </div>
                       </div>
@@ -467,7 +504,7 @@ check-point along a road or other travel path.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Represents a recorded, geographic location; combining a geographic @ref BDPointSDK &ldquo;point&rdquo; with an altitude, as well as a known
+                        <p>Represents a recorded, geographic location; combining a geographic <code>BDPointSDK</code> &ldquo;point&rdquo; with an altitude, as well as a known
 accuracy in metres.</p>
 
                         <a href="Classes/BDLocation.html" class="slightly-smaller">See more</a>
@@ -477,6 +514,11 @@ accuracy in metres.</p>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BDLocation</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/BDPDeepCopy.html">BDPDeepCopy</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">BDLocation</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt"><a href="Protocols/BDPDeepCopy.html">BDPDeepCopy</a></span></code></pre>
 
                         </div>
                       </div>
@@ -496,9 +538,7 @@ accuracy in metres.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>@brief Information about a location update.</p>
-
-<p>@copyright Bluedot Innovation</p>
+                        <p>Information about a location update.</p>
 
                         <a href="Classes/BDLocationInfo.html" class="slightly-smaller">See more</a>
                       </div>
@@ -509,64 +549,9 @@ accuracy in metres.</p>
                           <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BDLocationInfo</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
 
                         </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(cs)BDLocationManager"></a>
-                    <a name="//apple_ref/objc/Class/BDLocationManager" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)BDLocationManager">BDLocationManager</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>@brief Entry-point for your Application&rsquo;s interaction with <b>Point SDK</b>.</p>
-
-<p><b>Point SDK</b> carries out location specific, conditional actions that you define in the <b>Canvas</b> web-interface.
-To start these behaviours with your Application, it is necessary only to call the authentication method
-on the @ref BDLocationManager#instance &ldquo;shared singleton instance&rdquo; of @ref BDLocationManager.<p/></p>
-
-<p>Calling the authentication method will start a session with <b>Canvas</b>.
-Upon success, <code><a href="Classes/BDZoneInfo.html">BDZoneInfo</a></code> &ldquo;Zones&rdquo; will be downloaded and associated actions will be executed by the library,
-without any further intervention.</p>
-
-<p>In general, the @ref BDLocationManager#instance &ldquo;shared, singleton instance&rdquo; of @ref BDLocationManager should be used wherever the standard Core Location
-<a hef="https://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CLLocationManager_Class/">CLLocationManager</a>
-class would have been used.
-
-@ref BDLocationManager is a subclass of <a hef="https://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CLLocationManager_Class/">CLLocationManager</a>
-and is intended as a drop-in replacement while providing additional features.
-
-@ref BDLocationManager exposes <b>two new delegate properties</b>, in addition to the usual <a href="https://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CLLocationManager_Class/#//apple_ref/occ/instp/CLLocationManager/delegate"><b>delegate</b></a> property
-inherited from <a href="https://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CLLocationManager_Class/">CLLocationManager</a>:
-
-- `BDLocationManager.sessionDelegate` - to which you should assign your own implementation of the `BDPSessionDelegate` protocol. The  property provides callbacks that inform the application of <b>Point SDK</b>&lsquo;s authentication state with it&rsquo;s supporting web-service. The rules defined in <b>Canvas</b> will only be observed while authenticated.
-- `BDLocationManager.locationDelegate` - to which you should assign your own implementation of the `BDPLocationDelegate` protocol. The property provides callbacks to notify your application when Zone information is received. This typically occurs immediately after the authentication process completes. Any <b>Custom Action</b>s defined in the <b>Canvas</b> are also triggered, in real-time.
-- `BDLocationManager.etaTrackingDelegate` - to which you should assign your own implementation of the `BDPEtaTrackingDelegate` protocol. This  property provides callbacks to notify your application
-of Eta (Estimated time of arrival) related events.
-
-<h3>Session Delegate</h3>
-<p>The @ref BDPSessionDelegate protocol provides callbacks that inform the application
-of <b>Point SDK</b>&rsquo;s authentication state with it&rsquo;s supporting web-service. The rules defined in <b>Point Access</b> will only be
-observed while authenticated.</p>
-
-<p><p>In addition, some methods of <b>Point SDK</b> classes may only be called while authenticated
-and will otherwise cause an exception to be thrown. Individual restrictions are documented clearly in this API
-reference. It is only necessary to authenticate once during the runtime of the application.</p>
-
-                        <a href="Classes/BDLocationManager.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
                         <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BDLocationManager</span> <span class="p">:</span> <span class="nc">CLLocationManager</span></code></pre>
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">BDLocationInfo</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
                         </div>
                       </div>
@@ -586,7 +571,7 @@ reference. It is only necessary to authenticate once during the runtime of the a
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>@brief A geographic point expressed in latitude and longitude coordinates.</p>
+                        <p>A geographic point expressed in latitude and longitude coordinates.</p>
 
                         <a href="Classes/BDPoint.html" class="slightly-smaller">See more</a>
                       </div>
@@ -594,42 +579,12 @@ reference. It is only necessary to authenticate once during the runtime of the a
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BDPoint</span> <span class="p">:</span> <span class="nc"><a href="Classes.html#/c:objc(cs)BDGeometry">BDGeometry</a></span> <span class="o">&lt;</span><span class="n">NSCopying</span><span class="p">,</span> <span class="n">NSCoding</span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BDPoint</span> <span class="p">:</span> <span class="nc"><a href="Classes.html#/c:objc(cs)BDGeometry">BDGeometry</a></span> <span class="o">&lt;</span><span class="n">NSCopying</span><span class="p">,</span> <span class="n">NSSecureCoding</span><span class="o">&gt;</span></code></pre>
 
                         </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(cs)BDPointOverlayRendererFactory"></a>
-                    <a name="//apple_ref/objc/Class/BDPointOverlayRendererFactory" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)BDPointOverlayRendererFactory">BDPointOverlayRendererFactory</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>@brief Produces MapKit overlay renderers for @ref BDFenceInfo and @ref BDBeaconInfo overlays.</p>
-
-<p><p>General workflow for using this class is shown in the
- <a href="https://github.com/Bluedot-Innovation/PointSDK-SampleApp-iOS-ObjC/blob/1.4/BDPoint/EXZoneMapViewController.m#L238-L257">
- BDPoint example application source-code
- </a>
- on GitHub.
- </p></p>
-
-                        <a href="Classes/BDPointOverlayRendererFactory.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
                         <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BDPointOverlayRendererFactory</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">BDPoint</span> <span class="p">:</span> <span class="kt"><a href="Classes.html#/c:objc(cs)BDGeometry">BDGeometry</a></span><span class="p">,</span> <span class="kt">NSCopying</span><span class="p">,</span> <span class="kt">NSSecureCoding</span></code></pre>
 
                         </div>
                       </div>
@@ -649,8 +604,7 @@ reference. It is only necessary to authenticate once during the runtime of the a
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>@brief Thrown when the <b>Point SDK</b> session life-cycle or authentication state has been violated.
-@copyright Bluedot Innovation</p>
+                        <p>Thrown when the <b>Point SDK</b> session life-cycle or initialization state has been violated.</p>
 
                         <a href="Classes/BDPointSessionException.html" class="slightly-smaller">See more</a>
                       </div>
@@ -659,6 +613,11 @@ reference. It is only necessary to authenticate once during the runtime of the a
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BDPointSessionException</span> <span class="p">:</span> <span class="nc">NSException</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">BDPointSessionException</span> <span class="p">:</span> <span class="kt">NSException</span></code></pre>
 
                         </div>
                       </div>
@@ -678,13 +637,9 @@ reference. It is only necessary to authenticate once during the runtime of the a
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>@brief Arbitrary region on the Earth&rsquo;s surface, comprised of two or more @ref BDPoint &ldquo;points&rdquo; connected by straight-line segments.</p>
+                        <p>Arbitrary region on the Earth&rsquo;s surface, comprised of two or more <code><a href="Classes/BDPoint.html">BDPoint</a></code> &ldquo;points&rdquo; connected by straight-line segments.</p>
 
-<p>@image html polygon.gif</p>
-
-<p>Unlike a @ref BDLineString &ldquo;line-string&rdquo; this geometry forms an enclosed area.</p>
-
-<p>@copyright Bluedot Innovation</p>
+<p><p>Unlike a <code><a href="Classes/BDLineString.html">BDLineString</a></code> &ldquo;line-string&rdquo; this geometry forms an enclosed area.</p></p>
 
                         <a href="Classes/BDPolygon.html" class="slightly-smaller">See more</a>
                       </div>
@@ -692,7 +647,12 @@ reference. It is only necessary to authenticate once during the runtime of the a
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BDPolygon</span> <span class="p">:</span> <span class="nc"><a href="Classes/BDPolygonal.html">BDPolygonal</a></span> <span class="o">&lt;</span><span class="n">NSCoding</span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BDPolygon</span> <span class="p">:</span> <span class="nc"><a href="Classes/BDPolygonal.html">BDPolygonal</a></span> <span class="o">&lt;</span><span class="n">NSSecureCoding</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">BDPolygon</span> <span class="p">:</span> <span class="kt"><a href="Classes/BDPolygonal.html">BDPolygonal</a></span><span class="p">,</span> <span class="kt">NSSecureCoding</span></code></pre>
 
                         </div>
                       </div>
@@ -712,18 +672,17 @@ reference. It is only necessary to authenticate once during the runtime of the a
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>@brief Base-class for @ref BDGeometry &ldquo;geometries&rdquo; defined by an ordered series of @ref BDPoint &ldquo;points&rdquo;.</p>
+                        <p>Base-class for <code><a href="Classes.html#/c:objc(cs)BDGeometry">BDGeometry</a></code> &ldquo;geometries&rdquo; defined by an ordered series of <code><a href="Classes/BDPoint.html">BDPoint</a></code> &ldquo;points&rdquo;.</p>
 
-<p>@ref BDPolygonal is an abstract type and cannot be instantiated directly.</p>
-
-<p>Instead, instantiate one of its concrete sub-classes.</p>
+<p><p><code>BDPolygonal</code> is an abstract type and cannot be instantiated directly.</p>
+ <p>Instead, instantiate one of its concrete sub-classes.</p></p>
 <div class="aside aside-see">
     <p class="aside-title">See</p>
-    details in @ref BDPolygon
+    details in <code><a href="Classes/BDPolygon.html">BDPolygon</a></code>
 
 </div><div class="aside aside-see">
     <p class="aside-title">See</p>
-    details in @ref BDLineString
+    details in <code><a href="Classes/BDLineString.html">BDLineString</a></code>
 
 </div>
 
@@ -736,64 +695,9 @@ reference. It is only necessary to authenticate once during the runtime of the a
                           <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BDPolygonal</span> <span class="p">:</span> <span class="nc"><a href="Classes.html#/c:objc(cs)BDGeometry">BDGeometry</a></span></code></pre>
 
                         </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(cs)BDZoneEntryEvent"></a>
-                    <a name="//apple_ref/objc/Class/BDZoneEntryEvent" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)BDZoneEntryEvent">BDZoneEntryEvent</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Contains information about a Zone Entry Event</p>
-
-<p>A <b>BDZoneEntryEvent</b> objects will be delivered to your application&rsquo;s <code><a href="Protocols/BDPGeoTriggeringEventDelegate.html">BDPGeoTriggeringEventDelegate</a></code> when Geotriggering event occurs (for e.g. fence entry and exit events).</p>
-
-                        <a href="Classes/BDZoneEntryEvent.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
                         <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BDZoneEntryEvent</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(cs)BDZoneExitEvent"></a>
-                    <a name="//apple_ref/objc/Class/BDZoneExitEvent" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)BDZoneExitEvent">BDZoneExitEvent</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Contains information about a Zone Exit Event</p>
-
-<p>A <b>BDZoneExitEvent</b> objects will be delivered to your application&rsquo;s <code><a href="Protocols/BDPGeoTriggeringEventDelegate.html">BDPGeoTriggeringEventDelegate</a></code> when Geotriggering event occurs (for e.g. fence entry and exit events).</p>
-
-                        <a href="Classes/BDZoneExitEvent.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BDZoneExitEvent</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">BDPolygonal</span> <span class="p">:</span> <span class="kt"><a href="Classes.html#/c:objc(cs)BDGeometry">BDGeometry</a></span></code></pre>
 
                         </div>
                       </div>
@@ -815,10 +719,8 @@ reference. It is only necessary to authenticate once during the runtime of the a
                       <div class="abstract">
                         <p>Contains information about a Zone, including the set of <code><a href="Classes/BDFenceInfo.html">BDFenceInfo</a></code> &ldquo;fences&rdquo; that comprise it.</p>
 
-<p>A set of <code>BDZoneInfo</code> objects will be delivered to your application&rsquo;s <code><a href="Protocols/BDPLocationDelegate.html">BDPLocationDelegate</a></code> at
+<p>A set of <code>BDZoneInfo</code> objects will be delivered to your application&rsquo;s <code>BDPLocationDelegate</code> at
 the time of their download from the Bluedot Point web-service.</p>
-
-<p>This usually occurs immediately after the authentication process is complete.</p>
 
                         <a href="Classes/BDZoneInfo.html" class="slightly-smaller">See more</a>
                       </div>
@@ -827,6 +729,345 @@ the time of their download from the Bluedot Point web-service.</p>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BDZoneInfo</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">BDZoneInfo</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@BDPointSDK@objc(cs)GeoTriggerEvent"></a>
+                    <a name="//apple_ref/objc/Class/GeoTriggerEvent" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@BDPointSDK@objc(cs)GeoTriggerEvent">GeoTriggerEvent</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An event triggered by GeoTriggering service when a trigger (zone entry or exit) happens.</p>
+
+<p>This event is being sent to application via <code>BDPGeoTriggeringEventDelegate.didEnterZone(_:)</code>
+and <code>BDPGeoTriggeringEventDelegate.didExitZone(_:)</code>.</p>
+
+                        <a href="Classes/GeoTriggerEvent.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="kt">GeoTriggerEvent</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">GeoTriggerEvent</span><span class="p">:</span> <span class="kt"><a href="Protocols/JsonString.html">JsonString</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@BDPointSDK@objc(cs)CrossedFence"></a>
+                    <a name="//apple_ref/objc/Class/CrossedFence" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@BDPointSDK@objc(cs)CrossedFence">CrossedFence</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A CrossedFence records details when a Fence is crossed.
+Useful to determine and inspect the list of crossed fences when a Travel Path condition is used.</p>
+
+                        <a href="Classes/CrossedFence.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objcMembers</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="kt">CrossedFence</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">CrossedFence</span><span class="p">:</span> <span class="kt"><a href="Protocols/JsonString.html">JsonString</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@BDPointSDK@objc(cs)FenceEntered"></a>
+                    <a name="//apple_ref/objc/Class/FenceEntered" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@BDPointSDK@objc(cs)FenceEntered">FenceEntered</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A FenceEntered event is triggered when Zone entry conditions are met and an Entry trigger is to be registered in Canvas</p>
+
+                        <a href="Classes/FenceEntered.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objcMembers</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="kt">FenceEntered</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">FenceEntered</span><span class="p">:</span> <span class="kt"><a href="Protocols/JsonString.html">JsonString</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@BDPointSDK@objc(cs)FenceExited"></a>
+                    <a name="//apple_ref/objc/Class/FenceExited" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@BDPointSDK@objc(cs)FenceExited">FenceExited</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A FenceExited event is triggered when the device leaves a zone and an Exit trigger is to be registered in Canvas</p>
+
+                        <a href="Classes/FenceExited.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objcMembers</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="kt">FenceExited</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">FenceExited</span><span class="p">:</span> <span class="kt"><a href="Protocols/JsonString.html">JsonString</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@BDPointSDK@objc(cs)TempoTrackingUpdate"></a>
+                    <a name="//apple_ref/objc/Class/TempoTrackingUpdate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@BDPointSDK@objc(cs)TempoTrackingUpdate">TempoTrackingUpdate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Detail of the <code>TempoUpdate</code> event being reported to main application via callback <code>BDPTempoTrackingDelegate/tempoTrackingDidUpdate(_:)</code>
+Includes details of the destination and ETA information</p>
+
+                        <a href="Classes/TempoTrackingUpdate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="kt">TempoTrackingUpdate</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">Decodable</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">TempoTrackingUpdate</span><span class="p">:</span> <span class="kt"><a href="Protocols/JsonString.html">JsonString</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@BDPointSDK@objc(cs)Destination"></a>
+                    <a name="//apple_ref/objc/Class/Destination" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@BDPointSDK@objc(cs)Destination">Destination</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A Destination is a physical location your customers arrive at to collect their mobile order – this is usually your store or restaurant. Also known as Stores within Canvas</p>
+
+                        <a href="Classes/Destination.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="kt">Destination</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">Decodable</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">Destination</span><span class="p">:</span> <span class="kt"><a href="Protocols/JsonString.html">JsonString</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@BDPointSDK@objc(cs)AppInfo"></a>
+                    <a name="//apple_ref/objc/Class/AppInfo" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@BDPointSDK@objc(cs)AppInfo">AppInfo</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Details of the current application</p>
+
+                        <a href="Classes/AppInfo.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objcMembers</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="kt">AppInfo</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">AppInfo</span><span class="p">:</span> <span class="kt"><a href="Protocols/JsonString.html">JsonString</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@BDPointSDK@objc(cs)AppState"></a>
+                    <a name="//apple_ref/objc/Class/AppState" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@BDPointSDK@objc(cs)AppState">AppState</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Details about current state of the application</p>
+
+                        <a href="Classes/AppState.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objcMembers</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="kt">AppState</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">AppState</span><span class="p">:</span> <span class="kt"><a href="Protocols/JsonString.html">JsonString</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@BDPointSDK@objc(cs)DeviceInfo"></a>
+                    <a name="//apple_ref/objc/Class/DeviceInfo" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@BDPointSDK@objc(cs)DeviceInfo">DeviceInfo</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Details about the current device</p>
+
+                        <a href="Classes/DeviceInfo.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objcMembers</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="kt">DeviceInfo</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">DeviceInfo</span><span class="p">:</span> <span class="kt"><a href="Protocols/JsonString.html">JsonString</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@BDPointSDK@objc(cs)OperatingSystemInfo"></a>
+                    <a name="//apple_ref/objc/Class/OperatingSystemInfo" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@BDPointSDK@objc(cs)OperatingSystemInfo">OperatingSystemInfo</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>OS related details</p>
+
+                        <a href="Classes/OperatingSystemInfo.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objcMembers</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="kt">OperatingSystemInfo</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@BDPointSDK@objc(cs)ZoneInfo"></a>
+                    <a name="//apple_ref/objc/Class/ZoneInfo" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@BDPointSDK@objc(cs)ZoneInfo">ZoneInfo</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Details of a Zone. See its usage in <code><a href="Classes/GeoTriggerEvent.html">GeoTriggerEvent</a></code>.</p>
+
+                        <a href="Classes/ZoneInfo.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objcMembers</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="kt">ZoneInfo</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">ZoneInfo</span><span class="p">:</span> <span class="kt"><a href="Protocols/JsonString.html">JsonString</a></span></code></pre>
 
                         </div>
                       </div>
@@ -838,8 +1079,8 @@ the time of their download from the Bluedot Point web-service.</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2023 <a class="link" href="https://bluedot.io" target="_blank" rel="external noopener">Bluedot</a>. All rights reserved. (Last updated: 2023-08-11)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+          <p>&copy; 2023 <a class="link" href="https://bluedot.io" target="_blank" rel="external noopener">Bluedot</a>. All rights reserved. (Last updated: 2023-09-25)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
     </div>

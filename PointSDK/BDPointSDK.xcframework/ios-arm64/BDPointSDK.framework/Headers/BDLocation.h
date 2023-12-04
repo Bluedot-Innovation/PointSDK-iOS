@@ -12,7 +12,7 @@
 @class CLLocation;
 
 /**
-*  Represents a recorded, geographic location; combining a geographic @ref BDPointSDK "point" with an altitude, as well as a known
+*  Represents a recorded, geographic location; combining a geographic ``BDPointSDK`` "point" with an altitude, as well as a known
 *  accuracy in metres.
 */
 @interface BDLocation : NSObject <BDPDeepCopy>
@@ -22,6 +22,9 @@
  */
 - (instancetype)initWithCLLocation: (CLLocation*)coreLocation;
 
+/**
+ *  Initialisation methods for to creation a location.
+ */
 - (instancetype)initWithLatitude: (BDLocationDegrees)latitude
                        longitude: (BDLocationDegrees)longitude
                         altitude: (BDLocationDistance)altitude
@@ -73,9 +76,7 @@
 /**
  * Publicly available methods for evaluating locations.
  */
-- (BOOL)isEqual: (id)other;
 - (BOOL)isEqualToLocation: (BDLocation *)location;
-- (NSUInteger)hash;
 
 @end
 
