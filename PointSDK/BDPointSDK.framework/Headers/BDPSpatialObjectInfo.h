@@ -9,10 +9,13 @@
 
 @class BDGeometry;
 
+///
+/// Objects having an inherent ``BDGeometry`` "geometry".
+///
 @protocol BDPSpatialObjectInfo <BDPSpatialObject>
 
 /// The name of this object that was entered into Canvas
-@property (copy,readonly) NSString  *name;
+@property (copy,readonly) NSString *name;
 
 /// The description of this object that was entered into Canvas
 @property (copy,readonly) NSString *description;

@@ -1,6 +1,11 @@
 framework module BDPointSDK {
-    umbrella header "BDPointSDK.h"
-    
-    export *
-    module * { export * }
+  umbrella header "BDPointSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module BDPointSDK.Swift {
+  header "BDPointSDK-Swift.h"
+  requires objc
 }

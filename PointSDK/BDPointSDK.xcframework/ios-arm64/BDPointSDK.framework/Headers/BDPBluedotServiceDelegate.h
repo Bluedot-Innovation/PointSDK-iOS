@@ -1,9 +1,6 @@
 //
-//  BDPBluedotServiceDelegate.h
-//  BDPointSDK
-//
-//  Created by Duncan Lau on 31/7/20.
-//  Copyright © 2020 BlueDot. All rights reserved.
+//  Created by Bluedot Innovation
+//  Copyright © 2020 Bluedot Innovation. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

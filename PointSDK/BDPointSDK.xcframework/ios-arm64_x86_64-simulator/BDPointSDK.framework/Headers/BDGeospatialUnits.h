@@ -6,16 +6,22 @@
 #import <CoreLocation/CoreLocation.h>
 #import <MapKit/MapKit.h>
 
-
+/// Alias for ``CLLocationDegrees``
 typedef CLLocationDegrees      BDLocationDegrees;
+
+/// Alias for ``CLLocationDistance``
 typedef CLLocationDistance     BDLocationDistance;
+
+/// Alias for ``CLLocationAccuracy``
 typedef CLLocationAccuracy     BDLocationAccuracy;
+
+/// Alias for ``CLLocationSpeed``
 typedef CLLocationSpeed        BDLocationSpeed;
+
+/// Alias for ``CLLocationDirection``
 typedef CLLocationDirection    BDLocationDirection;
 
-/**
-@brief Alias of CLLocationCoordinate2D
-*/
+/// Alias for ``CLLocationCoordinate2D``
 typedef CLLocationCoordinate2D BDLocationCoordinate2D;
 
 #define BDLocationCoordinate2DMake CLLocationCoordinate2DMake

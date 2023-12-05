@@ -6,19 +6,22 @@
 #import "BDPGeometry.h"
 #import "BDPJSONSerializable.h"
 
+/// GeometryType: BoundingBox. See ``BDBoundingBox``.
 extern const BDGeometryType BDGeometryTypeBoundingBox;
+/// GeometryType: Circle. See ``BDCircle``.
 extern const BDGeometryType BDGeometryTypeCircle;
+/// GeometryType: LineString. See ``BDLineString``.
 extern const BDGeometryType BDGeometryTypeLineString;
+/// GeometryType: Point. See ``BDPoint``.
 extern const BDGeometryType BDGeometryTypePoint;
+/// GeometryType: Polygon. See ``BDPolygon``.
 extern const BDGeometryType BDGeometryTypePolygon;
 
 /**
-  @brief Base class for all geometries.
-
-  <p>Concrete geometries include @ref BDPoint "points", @ref BDBoundingBox "boxes", @ref BDCircle "circles", @ref BDLineString "line-strings" and @ref BDPolygon "polygons".</p>
-  <p>A @ref BDGeometry "geometry", in this context, represents an area on the surface of the Earth, expressed in latitude and longitude coordinates.</p>
-
-  @copyright Bluedot Innovation
+ * Base class for all geometries.
+ *
+ * Concrete geometries include ``BDPoint`` "points", ``BDBoundingBox`` "boxes", ``BDCircle`` "circles", ``BDLineString`` "line-strings" and ``BDPolygon`` "polygons".
+ * A BDGeometry "geometry", in this context, represents an area on the surface of the Earth, expressed in latitude and longitude coordinates.
 */
 @interface BDGeometry : NSObject <BDPGeometry, BDPJSONSerializable, BDPJSONDeserializable>
 

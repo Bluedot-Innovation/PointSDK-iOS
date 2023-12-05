@@ -11,7 +11,7 @@
 @class BDGeometry;
 
 /// Information about a geofence, as defined in Canvas.
-@interface BDFenceInfo : NSObject <BDPSpatialObjectInfo, NSCoding>
+@interface BDFenceInfo : NSObject <BDPSpatialObjectInfo, NSSecureCoding>
 
 /// The name of this Fence that was entered into Canvas
 @property (copy,readonly) NSString  *name;
@@ -23,7 +23,7 @@
 @property (copy,readonly) NSString *ID;
 
 /// The geometry of this Fence that was defined in Canvas
-/// This property conforms the spatial aspect of `BDBeaconInfo` and `BDFenceInfo` to a common interface  `BDPSpatialObjectInfo`.
+/// This property conforms the spatial aspect of `BDFenceInfo` to a common interface  `BDPSpatialObjectInfo`.
 @property (readonly) BDGeometry *geometry;
 
 @end

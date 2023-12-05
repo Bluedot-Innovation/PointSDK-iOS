@@ -6,10 +6,10 @@
 #import <Foundation/Foundation.h>
 
 /**
-  @brief An object which may be <a href="http://en.wikipedia.org/wiki/Object_copy#Deep_copy">deep copied</a>.
+  An object which may be <a href="http://en.wikipedia.org/wiki/Object_copy#Deep_copy">deep copied</a>.
 
   <p>Whereas the <a href="https://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Protocols/NSCopying_Protocol/Reference/Reference.html">NSCopying</a>
-  Protocol is typically used to define shallow copying; @ref BDPDeepCopy specifies a copying method that must return a
+  Protocol is typically used to define shallow copying; ``BDPDeepCopy`` specifies a copying method that must return a
   deep-copy.  That is, an entirely new object graph which is identical to the receiver and its referenced objects.</p>
 
   <p>There may be application specific exceptions to this definition, for example where those referenced objects are

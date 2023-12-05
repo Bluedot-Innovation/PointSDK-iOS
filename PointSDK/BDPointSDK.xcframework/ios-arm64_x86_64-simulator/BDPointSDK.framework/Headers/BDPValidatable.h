@@ -6,10 +6,9 @@
 #import <Foundation/Foundation.h>
 
 /**
-  @brief Any object whose state can be validated for correctness.
-
-  Typically this will be implemented only by data-model classes.
-  @copyright Bluedot Innovation
+ * Any object whose state can be validated for correctness.
+ *
+ * Typically this will be implemented only by data-model classes.
 */
 @protocol BDPValidatable <NSObject>
 

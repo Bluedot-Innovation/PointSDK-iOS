@@ -7,20 +7,15 @@
 #import <CoreGraphics/CoreGraphics.h>
 
 #import <MapKit/MapKit.h>
-#import "BDPMKShape.h"
 #import "BDGeometry.h"
 #import "BDPValidatable.h"
 
 @class BDPoint;
 
 /**
-  @brief A rectangular coordinate region on the Earth's surface, defined by two latitude / longitude corner @ref BDPoint "points".
-
-\image html boundingBox.gif
-
-@copyright Bluedot Innovation
+ * A rectangular coordinate region on the Earth's surface, defined by two latitude / longitude corner ``BDPoint`` "points".
 */
-@interface BDBoundingBox : BDGeometry <NSCopying, BDPValidatable, NSCoding>
+@interface BDBoundingBox : BDGeometry <NSCopying, BDPValidatable, NSSecureCoding>
 
 /**
  * Initializes a BDBoundingBox with individual values for the four bounding edges, in degrees.
@@ -31,7 +26,7 @@
                          east: (BDLocationDegrees)east;
 
 /**
- * Initializes a BDBoundingBox with @ref BDPoint values for two of the bounding corners.
+ * Initializes a BDBoundingBox with ``BDPoint`` values for two of the bounding corners.
  */
 - (instancetype)initWithNorthEast: (BDPoint *)northEast
                         southWest: (BDPoint*)southWest;
@@ -107,7 +102,7 @@
 @property (nonatomic) BDPoint  *southWest;
 
 /**
-* @returns An array of the corner @ref BDPoint "points" of this @ref BDBoundingBox, ordered: North, East, South, West.
+* @returns An array of the corner ``BDPoint`` "points" of this ``BDBoundingBox``, ordered: North, East, South, West.
 */
 - (NSArray *)vertices;
 
