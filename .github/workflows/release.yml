@@ -70,11 +70,11 @@ jobs:
       uses: softprops/action-gh-release@v1
       with:
         body_path: PointSDK/ReleaseNotes.md
-#        name: ${{ steps.notes.outputs.name }}
-#        tag_name: ${{ steps.semver.outputs.semver }}
-          name: 16.0.0-rc8
-          tag_name: 16.0.0-rc8
-          prerelease: true
+        # name: ${{ steps.notes.outputs.name }}
+        # tag_name: ${{ steps.semver.outputs.semver }}
+        name: 16.0.0-rc8
+        tag_name: 16.0.0-rc8
+        prerelease: true
         files: |
           PointSDK/BDPointSDK.xcframework.zip
           PointSDK/BDPointSDK.framework.zip
