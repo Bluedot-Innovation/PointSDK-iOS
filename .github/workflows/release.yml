@@ -6,7 +6,7 @@ name: release PointSDK
 # events but only for the master branch
 on:
   push:
-    branches: [ master, dev/16.0.0 ]
+    branches: [ master ]
     tags-ignore: 
       - '**'
 
@@ -70,30 +70,27 @@ jobs:
       uses: softprops/action-gh-release@v1
       with:
         body_path: PointSDK/ReleaseNotes.md
-        # name: ${{ steps.notes.outputs.name }}
-        # tag_name: ${{ steps.semver.outputs.semver }}
-        name: 16.0.0-rc8
-        tag_name: 16.0.0-rc8
-        prerelease: true
+        name: ${{ steps.notes.outputs.name }}
+        tag_name: ${{ steps.semver.outputs.semver }}
         files: |
           PointSDK/BDPointSDK.xcframework.zip
           PointSDK/BDPointSDK.framework.zip
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
-#  pod:
-#    name: update pod
-#    runs-on: [macos-latest]
-#    timeout-minutes: 10
-#    needs: [release]
+    pod:
+        name: update pod
+        runs-on: [macos-latest]
+        timeout-minutes: 10
+        needs: [release]
     
-#    steps:
-#      # checkout current repository
-#      - uses: actions/checkout@v2
+    steps:
+        # checkout current repository
+        - uses: actions/checkout@v2
       
-#     # update pod
-#      - name: upload pod to cocoapods
-#        env: 
-#          COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
-#        run: |
-#          pod trunk push --allow-warnings BluedotPointSDK.podspec
+        # update pod
+        - name: upload pod to cocoapods
+        env: 
+            COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
+        run: |
+            pod trunk push --allow-warnings BluedotPointSDK.podspec
