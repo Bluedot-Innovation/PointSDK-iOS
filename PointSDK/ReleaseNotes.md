@@ -27,9 +27,3 @@ We are excited to announce the release of Point SDK v16.0.0. This major update p
 - **Deprecated Classes and Functions Removed:** Several deprecated classes and functions have been removed, providing a cleaner API.
 
 Please refer to the detailed release notes and our updated documentation for more information. We appreciate your feedback and are here to assist you with any questions.
-
-# Test App
-
-- **XCode15 support**
-- **Remove IDFA**
-
