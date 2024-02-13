@@ -1,4 +1,4 @@
-PointSDK v16.0.0 (196)
+PointSDK v16.0.0 (197)
 # SDK Version 16.0.0
 
 We are excited to announce the release of Point SDK v16.0.0. This major update provides better architecture support with our migration to `XCFramework` for CocoaPods and Carthage and significantly enhances the data available in the `BDPGeoTriggeringEventDelegate` callbacks and new Tempo `tempoTrackingDidUpdate` callback. Here are the key highlights:
@@ -27,9 +27,4 @@ We are excited to announce the release of Point SDK v16.0.0. This major update p
 - **Deprecated Classes and Functions Removed:** Several deprecated classes and functions have been removed, providing a cleaner API.
 
 Please refer to the detailed release notes and our updated documentation for more information. We appreciate your feedback and are here to assist you with any questions.
-
-# Test App
-
-- **XCode15 support**
-- **Remove IDFA**
 

@@ -42,7 +42,7 @@
 		</data>
 		<key>BDDataModel.momd/BDDataModel_16.0.0.omo</key>
 		<data>
-		zgLSMttmHNmkRGX9n/qoZzCI9x8=
+		o11G4/Symh29nZtLcH9fK+RPRbg=
 		</data>
 		<key>BDDataModel.momd/VersionInfo.plist</key>
 		<data>
@@ -158,15 +158,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		JEWECUzw32TIWE+ab4Y+4rCFYrY=
+		sY3uuUCF/1J3lrKg3F1QBDWeV8A=
 		</data>
 		<key>Modules/BDPointSDK.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		PaPddnFWnjs2TAHs8X1wSJPPIOY=
+		pcroeCpbxlQANrD6V7I1eurD55o=
 		</data>
 		<key>Modules/BDPointSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		F1O+bFDn0ianfGjO/gyD1omPxss=
+		gpgr5bjOP4DeH1/UVdUvJ8+YKRc=
 		</data>
 		<key>Modules/BDPointSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -290,7 +290,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Or0yHtuZ9GiD10eKqPbHi+HYpE2mVcMeIOcAG6LMtrA=
+			1/S0zb2IccZp+E/Cj312aqX4d/XU/vnTaBNifplDpE4=
 			</data>
 		</dict>
 		<key>BDDataModel.momd/VersionInfo.plist</key>
@@ -493,14 +493,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			exRXC5BofsEkjeLzcq5L2hqrjX8cyaptwiCjyCxENmk=
+			O2D48k0UotUI6cSL6vnEkjpGBRmnYSBOXxtwt5BcROI=
 			</data>
 		</dict>
 		<key>Modules/BDPointSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PVASzXPDPExQZ4dXOTl9uk70PM0HXkhefJG+64mENZo=
+			AUf2A3qTQKRKBJc7AJtCYL5PRTZW1sy91XH1dOj1klA=
 			</data>
 		</dict>
 		<key>Modules/BDPointSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
