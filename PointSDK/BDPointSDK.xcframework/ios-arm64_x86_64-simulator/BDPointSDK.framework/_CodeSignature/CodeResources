@@ -6,47 +6,47 @@
 	<dict>
 		<key>BDDataModel.momd/BDDataModel_1.13.1.mom</key>
 		<data>
-		HceC9vwlxYryj7RD5ZUs6qA7T7Y=
+		GNVGi4psLpKO2GWnWPNX5mKVmj0=
 		</data>
 		<key>BDDataModel.momd/BDDataModel_1.13.2.mom</key>
 		<data>
-		bnJG3AwyUk/PPOZSckMaVsjnoXU=
+		WiYeFgedaw1F8JE73W0qq9vMTx8=
 		</data>
 		<key>BDDataModel.momd/BDDataModel_1.13.mom</key>
 		<data>
-		LkWNrrwnnwI06Pq83TYHdY8STMk=
+		FGRu7wctj5lyPZQp2KeHNkUgkFU=
 		</data>
 		<key>BDDataModel.momd/BDDataModel_1.8.1.mom</key>
 		<data>
-		OO5gWO/APw4iR+9uHESRNu5hLBc=
+		7XoZ3pAOPxIN4HDsQGXaRYHX8o8=
 		</data>
 		<key>BDDataModel.momd/BDDataModel_1.9.mom</key>
 		<data>
-		8S5tRobX425dnmBoMqO5WtF4Fcc=
+		A/VMK3f6VQJXWIhPfAViMWtfJYo=
 		</data>
 		<key>BDDataModel.momd/BDDataModel_15.2.mom</key>
 		<data>
-		43WYxt5vy1Q+wYx8mjPjdQKPiUI=
+		0Gef/PnX0MZE2MK+zFLYbp9yjsM=
 		</data>
 		<key>BDDataModel.momd/BDDataModel_15.3.2.mom</key>
 		<data>
-		MxKyCBjFG6CFAUD6B+DgM4ifvb8=
+		VqbLebPKnnC68a4WzBU+vopFYbI=
 		</data>
 		<key>BDDataModel.momd/BDDataModel_15.6.0.mom</key>
 		<data>
-		LIId54lbBfyWFgn5j+iGCdXa9oM=
+		DY32bn/l5upf8+WKldD4MWl8T4s=
 		</data>
 		<key>BDDataModel.momd/BDDataModel_16.0.0.mom</key>
 		<data>
-		4YeDEv2+5cG5G3jNE+ObxdF4kUs=
+		aK7sRtSCG2uu1U86T+fWi0t06xM=
 		</data>
 		<key>BDDataModel.momd/BDDataModel_16.0.0.omo</key>
 		<data>
-		o11G4/Symh29nZtLcH9fK+RPRbg=
+		6cmZxKI+wMc+9TljBXYYchtjlnc=
 		</data>
 		<key>BDDataModel.momd/VersionInfo.plist</key>
 		<data>
-		YpgukYIuTLRrJM0ukdddNmVcWBQ=
+		CUrRZHlg8NdcB44g1X/lfQqiH0o=
 		</data>
 		<key>Headers/BDBoundingBox.h</key>
 		<data>
@@ -134,7 +134,7 @@
 		</data>
 		<key>Headers/BDPointSDK-Swift.h</key>
 		<data>
-		+kVIiGpc0K1sr+TjaLhh4NtlvNc=
+		LPMrPghicb9nWIS/LDjWUrO7WMM=
 		</data>
 		<key>Headers/BDPointSDK.h</key>
 		<data>
@@ -158,59 +158,59 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		sY3uuUCF/1J3lrKg3F1QBDWeV8A=
+		txkp4CiaFfTVZsoakl0cgrOjP8U=
 		</data>
 		<key>Modules/BDPointSDK.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		pcroeCpbxlQANrD6V7I1eurD55o=
+		ika0Cci3Qe7qU5LRu1tfkasmDXA=
 		</data>
 		<key>Modules/BDPointSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		gpgr5bjOP4DeH1/UVdUvJ8+YKRc=
+		uBkfeH47jJWbOxKb1CTtgDHvYiY=
 		</data>
 		<key>Modules/BDPointSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		DK7Yny38aJoEb2srB9s1mccfnKU=
+		/5BJgTDl2AZStZemWH6nzZfG+SQ=
 		</data>
 		<key>Modules/BDPointSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		jX6fYU1Js6e7XNU8XA5xHHYcbnA=
+		yPuVKBQo/FB7ENGe1aBH1w2r0ZE=
 		</data>
 		<key>Modules/BDPointSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		RcUQogorNKW3ouOlncsxCfB25Us=
+		I5X+Q1fpIRORJ9C9DAZQTtgzu/k=
 		</data>
 		<key>Modules/BDPointSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		BI3+nikE1hSd1qkRPDrYHaOszSM=
+		i1t+KPKEAtNPEncsdvH2YeoCo8g=
 		</data>
 		<key>Modules/BDPointSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		hlU2yItYLFLBW+LdAyEHcSiL3uY=
+		mHGAzi2U4dfK0TkrOX4TC50jM10=
 		</data>
 		<key>Modules/BDPointSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		DK7Yny38aJoEb2srB9s1mccfnKU=
+		/5BJgTDl2AZStZemWH6nzZfG+SQ=
 		</data>
 		<key>Modules/BDPointSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		N6EFkP69sGPMz7t64HBmgKmdqS4=
+		jpKwRs7XEekTEtEM0T0Ozi2DgK4=
 		</data>
 		<key>Modules/BDPointSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		o/2Ap5NKnLnhx4ta2vhSVjiAIQQ=
+		9bssm4+6CYW2r9uvIG/O6h37Ql4=
 		</data>
 		<key>Modules/BDPointSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		nePNqMR6LsHBZwNicBkrcn1cDps=
+		g8JhLHampkIFO9lvHe5Rdx6wRFA=
 		</data>
 		<key>Modules/BDPointSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		s5fziHfuaQ6fA9xqy0X5M2ge0Zg=
+		bGlhysSIApu8j05bMGRyDJZ2Llc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		6aMARnHbv0bMMt8Mb8lpcWRAxkE=
+		PippFB62GtfGCJ+73T4FJcfdjqw=
 		</data>
 		<key>Readme.txt</key>
 		<data>
@@ -227,77 +227,77 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8tbuWvm3vS06Fvo+l1wN4W2CsbkgCLyZV2YGpAuCZxM=
+			A0cmDWCJ//EtSJmXLWeXL5MPbqWtz7eiRxVThddnmX8=
 			</data>
 		</dict>
 		<key>BDDataModel.momd/BDDataModel_1.13.2.mom</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			i5eSvDFhFQK77SOWHIlcAwzqSeyNG8CSC7yPprJDm6U=
+			eulywDktKOO1Idxy/QEosNe5LFBQtSDqEB3Ecf64O9U=
 			</data>
 		</dict>
 		<key>BDDataModel.momd/BDDataModel_1.13.mom</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XLL9L8Wl6vHFtrJ5CKKUHafXo0sRY2H6k5jlgvxWakU=
+			fzWG85wDvsU2LznS2mDXSVTTzj3QeUJ8cbCmiY/u5I4=
 			</data>
 		</dict>
 		<key>BDDataModel.momd/BDDataModel_1.8.1.mom</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Cf0R56kNJmqSAVTUDf/twkzLCKBCOZ9+HwmFTk/bNvk=
+			IYqXkQ41dGSJGHZhE9xnAL8ET/L4xm3gJIdhodZdNuA=
 			</data>
 		</dict>
 		<key>BDDataModel.momd/BDDataModel_1.9.mom</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ViG+jNI7AooCDZMvaXt4wM+TEn5lORCGJKyD5UYWz3Q=
+			p4QBuWDmjcqtOHKunEXcU4p/1q1ofZEvfLpdueZs7rw=
 			</data>
 		</dict>
 		<key>BDDataModel.momd/BDDataModel_15.2.mom</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sNsJXQZiuD6zEkeUm24o1JL2xRuvtHL+BDpMeyIFilw=
+			LNYtk4C40s8whsNazKh68Z+kMXsZWZaInSHJ0s0PIMM=
 			</data>
 		</dict>
 		<key>BDDataModel.momd/BDDataModel_15.3.2.mom</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/XmHywYQvdBVu530j59hCSxoejghFW2uSfO+nfCcd+M=
+			cU93Q/L5BpQZU6FlSrJRn9RbJ9Mb2OXgd4EQVQCOlKE=
 			</data>
 		</dict>
 		<key>BDDataModel.momd/BDDataModel_15.6.0.mom</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1QYP9zG9k+8Gn/iONOifoetwwy0Jl6iy+U68nHFCQNM=
+			aKXOrPyuW3uNXQUr9RIArtUvsl4Al7/Rxc9Lb5mUKhs=
 			</data>
 		</dict>
 		<key>BDDataModel.momd/BDDataModel_16.0.0.mom</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nVwlnKLoRaAuLTc6kYSdKDwi9Vv1JEc0TJYDD5W40L8=
+			KzghBwDI2bV55GNExH56wQYrDuSFj8x7v6HyJX0k01A=
 			</data>
 		</dict>
 		<key>BDDataModel.momd/BDDataModel_16.0.0.omo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1/S0zb2IccZp+E/Cj312aqX4d/XU/vnTaBNifplDpE4=
+			04WDw2ANCRsyjHvCygiCzCpWgsyUYS2fgm7NSJmwgD4=
 			</data>
 		</dict>
 		<key>BDDataModel.momd/VersionInfo.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7Zb1IpwizhrsCYiESnnpFdH+6hwEqObjSPXH90zYfHo=
+			yz+dyJetCd4GB82wjvcFzZLeGdMl0piY6Cpe8kPLqX4=
 			</data>
 		</dict>
 		<key>Headers/BDBoundingBox.h</key>
@@ -451,7 +451,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oUR9hN4q4qiz42goReWmtmaQOYDNGiWXxh+/2EZMnHc=
+			A4F02Hl9xcj53W3tO3CJw0u6t+3qGgQlmxjIcTWQoX0=
 			</data>
 		</dict>
 		<key>Headers/BDPointSDK.h</key>
@@ -493,91 +493,91 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			O2D48k0UotUI6cSL6vnEkjpGBRmnYSBOXxtwt5BcROI=
+			aZkpAV7sQYsqDoSRruDv2qGzei7msURc3Yi2snvLSz8=
 			</data>
 		</dict>
 		<key>Modules/BDPointSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AUf2A3qTQKRKBJc7AJtCYL5PRTZW1sy91XH1dOj1klA=
+			axWApTWZbIMEnKRug4NTIZzqp7y6h6FRxWIjsMgQINc=
 			</data>
 		</dict>
 		<key>Modules/BDPointSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			684cN8MS9+8nhlyYffl/vN/uWYmyXFOjjvoN/LbeMpY=
+			o+4zTo23SJWIc3fttw9J6MBK/5vxKQfvcu3C6YIxudw=
 			</data>
 		</dict>
 		<key>Modules/BDPointSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Aq7lS8odfyNA6/GkoMvIxTB/EeXQBJ4hZB4qJe5A+rQ=
+			NcGnOHy86XI2nHGL6qYiwwQYrYSxk+dBYZiSVObUBlM=
 			</data>
 		</dict>
 		<key>Modules/BDPointSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QV+SznM0pd52ayYwwLTLc03ULUqaV/IaeXMdi7tLMRQ=
+			KH0dS47g6OJnlSz6Fyi+M6wmHGitaf8SqfolF5zDxgo=
 			</data>
 		</dict>
 		<key>Modules/BDPointSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RsYIYoIvCmXVrDjJb1ZBqQxeb/i7ZRJzsA8yzrXzArQ=
+			woyOD8lrG0LM4dkGztnOGFkDCObxtNnCsMdEITgUeLo=
 			</data>
 		</dict>
 		<key>Modules/BDPointSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LFZ5LTIcdiRVEtUC3hFCAWkheiBsskGulXcUSlbi2Ow=
+			rGRGwVQaoDCeifkQE37sO+UoC96xW6LEBFftIGcf/R4=
 			</data>
 		</dict>
 		<key>Modules/BDPointSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			684cN8MS9+8nhlyYffl/vN/uWYmyXFOjjvoN/LbeMpY=
+			o+4zTo23SJWIc3fttw9J6MBK/5vxKQfvcu3C6YIxudw=
 			</data>
 		</dict>
 		<key>Modules/BDPointSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			X9hBlOI3u6dLZuI19kpKj4QUYBIe1fXDIgODX2FIx/Q=
+			GsdBm2XyE4dGdShSWk3SMv/DJmT8FIdi0rMCMGY7aMg=
 			</data>
 		</dict>
 		<key>Modules/BDPointSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RV4Y8Mi97x4+9pGVcBnDp8qub4rZNgNrfJ+cXs2vSlg=
+			aE8lsyu7Nh1bssCPe7JqBDuSjJSW/AOU7k//lMZJpBg=
 			</data>
 		</dict>
 		<key>Modules/BDPointSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			urqt+UxGxJwY6PRjgEUh4AA7tLPUPIMRMnz34sAu8Fk=
+			5V6lQGvHq6J0A1tbtsJZV+e8dkSm0Yw0nGOAh0oKlXY=
 			</data>
 		</dict>
 		<key>Modules/BDPointSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tynbvAZWHudJGclJZavf7DTwrNiYN/NY8yKejm34ilQ=
+			2Fh6roqslChV6nXHqgnNqwQYOwQGoeBoz4netymoJ8U=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZymBTse7gVP+CUPFtqD3wFUDZV0wqYEkfLr+/evs5jY=
+			LRLDthVToFArmLSur50H7pzrrypWPdaCtnXbYR1N9wU=
 			</data>
 		</dict>
 		<key>Readme.txt</key>

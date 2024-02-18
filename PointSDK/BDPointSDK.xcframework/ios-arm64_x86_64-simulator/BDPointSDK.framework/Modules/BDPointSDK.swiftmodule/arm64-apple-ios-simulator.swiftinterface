@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
 // swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name BDPointSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 @_exported import BDPointSDK
@@ -16,6 +16,7 @@ import UIKit
 import UserNotifications
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 extension BDPointSDK.TempoUpdateETADirection : Swift.CustomStringConvertible {
   public var description: Swift.String {
     get
@@ -23,7 +24,7 @@ extension BDPointSDK.TempoUpdateETADirection : Swift.CustomStringConvertible {
   public init(description: Swift.String)
 }
 extension BDPointSDK.TempoTrackingUpdate : Swift.Encodable {
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 extension BDPointSDK.TempoTrackingUpdate {
   @objc override dynamic public var description: Swift.String {
@@ -37,7 +38,7 @@ extension BDPointSDK.TempoTrackingUpdate {
   @objc final public let crossTime: Foundation.Date
   @objc final public let location: CoreLocation.CLLocation
   @objc public init(fenceId: Swift.String, fenceName: Swift.String, location: CoreLocation.CLLocation, crossTime: Foundation.Date = Date())
-  required public init(from decoder: Swift.Decoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
 }
 extension BDPointSDK.CrossedFence : BDPointSDK.JsonString {
@@ -56,7 +57,7 @@ extension Swift.Double {
   @objc final public let notificationType: BDPointSDK.NotificationType
   @objc final public let zoneInfo: BDPointSDK.ZoneInfo
   @objc final public let appInfo: BDPointSDK.AppInfo
-  @objc final public let triggerEvents: [BDPointSDK.TriggerEvent]
+  @objc final public let triggerEvents: [any BDPointSDK.TriggerEvent]
   @objc public var entryEvent: BDPointSDK.FenceEntered? {
     @objc get
   }
@@ -129,7 +130,7 @@ extension BDPointSDK.NotificationType : Swift.CustomStringConvertible {
   public init(description: Swift.String)
 }
 extension BDPointSDK.ZoneInfo : Swift.Encodable {
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 extension BDPointSDK.ZoneInfo {
   @objc override dynamic open func isEqual(_ object: Any?) -> Swift.Bool
@@ -141,7 +142,7 @@ extension Foundation.NSNotification.Name {
   public static let bdReachabilityChanged: Foundation.Notification.Name
 }
 extension BDPointSDK.AppState : Swift.Encodable {
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 extension BDPointSDK.AppState : Foundation.NSCopying {
   @objc dynamic public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
@@ -202,7 +203,7 @@ extension BDPointSDK.SDKApplicationState : Swift.CustomStringConvertible {
   }
 }
 extension BDPointSDK.DeviceInfo : Swift.Encodable {
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 extension BDPointSDK.DeviceInfo {
   @objc override dynamic open func isEqual(_ object: Any?) -> Swift.Bool
@@ -234,7 +235,7 @@ extension BDPointSDK.GeoTriggerEvent {
   public static func == (lhs: BDPointSDK.GeoTriggerEvent, rhs: BDPointSDK.GeoTriggerEvent) -> Swift.Bool
 }
 extension BDPointSDK.GeoTriggerEvent : Swift.Encodable {
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 @objc public enum TempoUpdateETADirection : Swift.Int, Swift.Codable {
   case lessThan = 0
@@ -252,7 +253,7 @@ extension BDPointSDK.GeoTriggerEvent : Swift.Encodable {
   @objc final public let etaDirection: BDPointSDK.TempoUpdateETADirection
   @objc final public let destination: BDPointSDK.Destination?
   public init(triggerChainId: Swift.String, eta: Swift.Int, etaDirection: BDPointSDK.TempoUpdateETADirection, destination: BDPointSDK.Destination? = nil)
-  required public init(from decoder: Swift.Decoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
 }
 extension BDPointSDK.TempoTrackingUpdate : BDPointSDK.JsonString {
@@ -277,7 +278,7 @@ extension BDPointSDK.ZoneInfo : BDPointSDK.JsonString {
   @objc public init(destinationId: Swift.String, name: Swift.String? = nil, address: Swift.String? = nil, location: BDPointSDK.BDPoint)
   @objc convenience public init(destination: BDPointSDK.Destination)
   @objc convenience public init(dictionary: [Swift.AnyHashable : Any]) throws
-  required public init(from decoder: Swift.Decoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
 }
 extension BDPointSDK.Destination : BDPointSDK.JsonString {
@@ -307,10 +308,10 @@ extension BDPointSDK.FenceEntered : Foundation.NSCopying {
   @objc dynamic public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
 }
 extension BDPointSDK.FenceEntered : Swift.Encodable {
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 extension CoreLocation.CLLocation : Swift.Encodable {
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 extension CoreLocation.CLLocation {
   @objc convenience dynamic public init(location: BDPointSDK.BDLocation)
@@ -353,7 +354,7 @@ extension BDPointSDK.CrossedFence : Foundation.NSCopying {
   @objc dynamic public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
 }
 extension BDPointSDK.CrossedFence {
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
   @objc override dynamic public var description: Swift.String {
     @objc get
   }
@@ -394,7 +395,7 @@ extension BDPointSDK.FenceExited : Foundation.NSCopying {
   @objc dynamic public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
 }
 extension BDPointSDK.FenceExited : Swift.Encodable {
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers public class AppInfo : ObjectiveC.NSObject {
   @objc final public let appBuildVersion: Swift.String
@@ -412,20 +413,20 @@ extension BDPointSDK.AppInfo : BDPointSDK.JsonString {
   @objc final public let name: Swift.String
   @objc final public let version: Swift.String
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 extension BDPointSDK.OperatingSystemInfo {
   @objc override dynamic open func isEqual(_ object: Any?) -> Swift.Bool
 }
 extension BDPointSDK.AppInfo : Swift.Encodable {
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 extension BDPointSDK.AppInfo {
   @objc override dynamic open func isEqual(_ object: Any?) -> Swift.Bool
 }
 extension BDPointSDK.Destination : Swift.Encodable {
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 extension BDPointSDK.Destination : BDPointSDK.BDPJSONSerializable {
   @objc dynamic public func dictionaryRepresentation() -> [Swift.AnyHashable : Any]?
@@ -716,7 +717,7 @@ extension BDPointSDK.MOLifecycleEventNotification {
 }
 extension BDPointSDK.MOPendingEvent {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<BDPointSDK.MOPendingEvent>
-  @objc @NSManaged dynamic public var spatialObject: BDPointSDK.BDPSpatialObjectInfo? {
+  @objc @NSManaged dynamic public var spatialObject: (any BDPointSDK.BDPSpatialObjectInfo)? {
     @objc get
     @objc set
   }

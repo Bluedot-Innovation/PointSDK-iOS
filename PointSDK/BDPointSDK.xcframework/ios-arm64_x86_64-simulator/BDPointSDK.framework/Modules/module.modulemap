@@ -1,7 +1,7 @@
 framework module BDPointSDK {
   umbrella header "BDPointSDK.h"
-
   export *
+
   module * { export * }
 }
 
