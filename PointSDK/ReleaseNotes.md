@@ -1,4 +1,4 @@
-PointSDK v16.0.0 (197)
+PointSDK v16.0.0 (198)
 # SDK Version 16.0.0
 
 We are excited to announce the release of Point SDK v16.0.0. This major update provides better architecture support with our migration to `XCFramework` for CocoaPods and Carthage and significantly enhances the data available in the `BDPGeoTriggeringEventDelegate` callbacks and new Tempo `tempoTrackingDidUpdate` callback. Here are the key highlights:
@@ -9,6 +9,7 @@ We are excited to announce the release of Point SDK v16.0.0. This major update p
 - **Enhanced Geo-Triggering Data:** The `BDPGeoTriggeringEventDelegate` callbacks have been updated with more useful information to enhance your use cases.
 - **New Tempo Tracking Callback:** Added a new callback `tempoTrackingDidUpdate` to `BDPTempoTrackingDelegate` with customer’s ETA data.
 - **New Destination Information:** Each `BDZoneInfo` now contains destination information accessible via `BDLocationManager.instance().zoneInfos`.
+- **Support iOS 17 SDK:** Xcode 15 and iOS 17 SDK 
 
 ## Changes
 
