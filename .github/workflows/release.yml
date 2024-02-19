@@ -70,7 +70,6 @@ jobs:
         prerelease: true
         files: |
           PointSDK/BDPointSDK.xcframework.zip
-          PointSDK/BDPointSDK.framework.zip
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
