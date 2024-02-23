@@ -57432,21 +57432,21 @@
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Support\/Extensions\/UNUserNotificationExtensions.swift",
       "kind": "StringLiteral",
-      "offset": 2889,
+      "offset": 2758,
       "length": 11,
       "value": "\"ephemeral\""
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Support\/Extensions\/UNUserNotificationExtensions.swift",
       "kind": "StringLiteral",
-      "offset": 3084,
+      "offset": 2953,
       "length": 16,
       "value": "\"not_determined\""
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Support\/Extensions\/UNUserNotificationExtensions.swift",
       "kind": "StringLiteral",
-      "offset": 3157,
+      "offset": 3026,
       "length": 8,
       "value": "\"denied\""
     },
@@ -61324,49 +61324,49 @@
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Support\/Keychain\/Keychain.swift",
       "kind": "StringLiteral",
-      "offset": 2558,
+      "offset": 2568,
       "length": 83,
       "value": "\"SDK_Keychain, Set \""
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Support\/Keychain\/Keychain.swift",
       "kind": "StringLiteral",
-      "offset": 2585,
+      "offset": 2595,
       "length": 6,
       "value": "\" forKey \""
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Support\/Keychain\/Keychain.swift",
       "kind": "StringLiteral",
-      "offset": 2611,
+      "offset": 2621,
       "length": 2,
       "value": "\" is \""
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Support\/Keychain\/Keychain.swift",
       "kind": "StringLiteral",
-      "offset": 2640,
+      "offset": 2650,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Support\/Keychain\/Keychain.swift",
       "kind": "StringLiteral",
-      "offset": 3028,
+      "offset": 3038,
       "length": 77,
       "value": "\"SDK_Keychain, Delete forKey \""
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Support\/Keychain\/Keychain.swift",
       "kind": "StringLiteral",
-      "offset": 3075,
+      "offset": 3085,
       "length": 2,
       "value": "\" is \""
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Support\/Keychain\/Keychain.swift",
       "kind": "StringLiteral",
-      "offset": 3104,
+      "offset": 3114,
       "length": 2,
       "value": "\"\""
     },

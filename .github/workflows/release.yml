@@ -65,8 +65,8 @@ jobs:
         body_path: PointSDK/ReleaseNotes.md
         # name: ${{ steps.notes.outputs.name }}
         # tag_name: ${{ steps.semver.outputs.semver }}
-        name: 16.0.0-rc11
-        tag_name: 16.0.0-rc11
+        name: 16.0.0-rc12
+        tag_name: 16.0.0-rc12
         prerelease: true
         files: |
           PointSDK/BDPointSDK.xcframework.zip
