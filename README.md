@@ -37,8 +37,8 @@ You can find [documentation](https://docs.bluedot.io/ios-sdk/) for the SDK and [
 
 ## Copyright and license
 
-Created by Bluedot Innovation in 2023.
-Copyright © 2023 Bluedot Innovation. All rights reserved.
+Created by Bluedot Innovation in 2024.
+Copyright © 2024 Bluedot Innovation. All rights reserved.
 
 By dowloading or using the Bluedot Point SDK for iOS, You agree to the Bluedot [Terms and Conditions](https://bluedot.io/agreements/#terms)
 and [Privacy Policy](https://bluedot.io/agreements/#privacy)
