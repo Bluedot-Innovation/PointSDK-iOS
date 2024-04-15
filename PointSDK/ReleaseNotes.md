@@ -1,4 +1,4 @@
-PointSDK v16.0.0 (199)
+PointSDK v16.0.0 (204)
 # SDK Version 16.0.0
 
 We are excited to announce the release of Point SDK v16.0.0. This major update provides better architecture support with our migration to `XCFramework` for CocoaPods and Carthage and significantly enhances the data available in the `BDPGeoTriggeringEventDelegate` callbacks and new Tempo `tempoTrackingDidUpdate` callback. Here are the key highlights:

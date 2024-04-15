@@ -11,8 +11,8 @@ Pod::Spec.new do |s|
 
     Point SDK
 
-    Created by Bluedot Innovation in 2023.
-    Copyright © 2023 Bluedot Innovation. All rights reserved.
+    Created by Bluedot Innovation in 2024.
+    Copyright © 2024 Bluedot Innovation. All rights reserved.
 
     By downloading or using the Bluedot Point SDK for iOS, You agree to the Bluedot Terms and Conditions
     https://bluedot.io/agreements/#terms and Privacy Policy https://bluedot.io/agreements/#privacy
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.author = { "Bluedot Innovation" => "https://bluedot.io" }
   s.source = { :git => 'https://github.com/Bluedot-Innovation/PointSDK-iOS.git', :tag => s.version.to_s }
   s.platform = :ios
-  s.ios.deployment_target = '11.0'
+  s.ios.deployment_target = '12.0'
   s.swift_version = '5.0'
   s.requires_arc = true
   s.documentation_url = 'http://docs.bluedot.io'
