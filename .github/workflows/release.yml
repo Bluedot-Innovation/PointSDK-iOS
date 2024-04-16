@@ -6,7 +6,7 @@ name: release PointSDK
 # events but only for the master branch
 on:
   push:
-    branches: [ master ]
+    branches: [ master, dev/15.6.9 ]
     tags-ignore: 
       - '**'
 
@@ -56,12 +56,6 @@ jobs:
       working-directory: PointSDK
       # remove bitcode symbol files *.bcsymbolmap as Apple Xcode drops support for bitcode in Xcode 14
       run: |
-        # prepare universal framework
-        mkdir -p ./Carthage/Build/iOS
-        cp -R  *.dSYM *.framework Carthage/Build/iOS
-        rm -f *.bcsymbolmap 
-        zip -r BDPointSDK.framework.zip Carthage
-
         # prepare xcframework
         zip -r BDPointSDK.xcframework.zip BDPointSDK.xcframework
     
@@ -70,27 +64,28 @@ jobs:
       uses: softprops/action-gh-release@v1
       with:
         body_path: PointSDK/ReleaseNotes.md
-        name: ${{ steps.notes.outputs.name }}
-        tag_name: ${{ steps.semver.outputs.semver }}
+        #name: ${{ steps.notes.outputs.name }}
+        #tag_name: ${{ steps.semver.outputs.semver }}
+        name: 15.6.9-rc1
+        tag_name: 15.6.9-rc1
         files: |
           PointSDK/BDPointSDK.xcframework.zip
-          PointSDK/BDPointSDK.framework.zip
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
-  pod:
-    name: update pod
-    runs-on: [macos-latest]
-    timeout-minutes: 10
-    needs: [release]
+#  pod:
+#    name: update pod
+#    runs-on: [macos-latest]
+#    timeout-minutes: 10
+#    needs: [release]
     
-    steps:
-      # checkout current repository
-      - uses: actions/checkout@v2
+#    steps:
+#      # checkout current repository
+#      - uses: actions/checkout@v2
       
-      # update pod
-      - name: upload pod to cocoapods
-        env: 
-          COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
-        run: |
-          pod trunk push --allow-warnings BluedotPointSDK.podspec
+#      # update pod
+#      - name: upload pod to cocoapods
+#        env: 
+#          COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
+#        run: |
+#          pod trunk push --allow-warnings BluedotPointSDK.podspec
