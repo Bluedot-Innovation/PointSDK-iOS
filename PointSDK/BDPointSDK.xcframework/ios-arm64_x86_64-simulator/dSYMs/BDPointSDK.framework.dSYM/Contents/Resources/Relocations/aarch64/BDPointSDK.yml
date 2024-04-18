@@ -1251,10 +1251,10 @@ relocations:
   - { offsetInCU: 0x7C, offset: 0xE12C4, size: 0x8, addend: 0x0, symName: _BDRemoteAPI_ValueKey, symObjAddr: 0x1D40, symBinAddr: 0x2C5B18, symSize: 0x0 }
   - { offsetInCU: 0x92, offset: 0xE12DA, size: 0x8, addend: 0x0, symName: _BDRemoteAPI_AccuracyKey, symObjAddr: 0x1D48, symBinAddr: 0x2C5B20, symSize: 0x0 }
   - { offsetInCU: 0xA8, offset: 0xE12F0, size: 0x8, addend: 0x0, symName: _BDRemoteAPI_EnableKey, symObjAddr: 0x1D58, symBinAddr: 0x2C5B28, symSize: 0x0 }
-  - { offsetInCU: 0xBE, offset: 0xE1306, size: 0x8, addend: 0x0, symName: _commandLookup, symObjAddr: 0x1A1A0, symBinAddr: 0x2CC168, symSize: 0x0 }
-  - { offsetInCU: 0xD9, offset: 0xE1321, size: 0x8, addend: 0x0, symName: __enabled, symObjAddr: 0x1A1A8, symBinAddr: 0x2DC738, symSize: 0x0 }
-  - { offsetInCU: 0x104, offset: 0xE134C, size: 0x8, addend: 0x0, symName: _setGeofencesMessage, symObjAddr: 0x1A1B0, symBinAddr: 0x2DC740, symSize: 0x0 }
-  - { offsetInCU: 0x11A, offset: 0xE1362, size: 0x8, addend: 0x0, symName: _fenceDictionary, symObjAddr: 0x1A1B8, symBinAddr: 0x2DC748, symSize: 0x0 }
+  - { offsetInCU: 0xBE, offset: 0xE1306, size: 0x8, addend: 0x0, symName: _commandLookup, symObjAddr: 0x1A1B0, symBinAddr: 0x2CC168, symSize: 0x0 }
+  - { offsetInCU: 0xD9, offset: 0xE1321, size: 0x8, addend: 0x0, symName: __enabled, symObjAddr: 0x1A1B8, symBinAddr: 0x2DC738, symSize: 0x0 }
+  - { offsetInCU: 0x104, offset: 0xE134C, size: 0x8, addend: 0x0, symName: _setGeofencesMessage, symObjAddr: 0x1A1C0, symBinAddr: 0x2DC740, symSize: 0x0 }
+  - { offsetInCU: 0x11A, offset: 0xE1362, size: 0x8, addend: 0x0, symName: _fenceDictionary, symObjAddr: 0x1A1C8, symBinAddr: 0x2DC748, symSize: 0x0 }
   - { offsetInCU: 0x3A2, offset: 0xE15EA, size: 0x8, addend: 0x0, symName: '+[BDRemoteSensorDataService initialize]', symObjAddr: 0x0, symBinAddr: 0x3F4D8, symSize: 0xFC }
   - { offsetInCU: 0x404, offset: 0xE164C, size: 0x8, addend: 0x0, symName: _BDStringFromRemoteAPI_Command, symObjAddr: 0xFC, symBinAddr: 0x3F5D4, symSize: 0xCC }
   - { offsetInCU: 0x440, offset: 0xE1688, size: 0x8, addend: 0x0, symName: '-[BDRemoteSensorDataService init]', symObjAddr: 0x1D8, symBinAddr: 0x3F6B0, symSize: 0x3C }
