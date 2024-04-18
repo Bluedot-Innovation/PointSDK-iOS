@@ -402,8 +402,8 @@ relocations:
   - { offsetInCU: 0x87B, offset: 0xCA09B, size: 0x8, addend: 0x0, symName: '-[BDPeriodicScheduler .cxx_destruct]', symObjAddr: 0xBA0, symBinAddr: 0x168A0, symSize: 0x91 }
   - { offsetInCU: 0x27, offset: 0xCA1D3, size: 0x8, addend: 0x0, symName: _BDPointSchedule, symObjAddr: 0x0, symBinAddr: 0x16940, symSize: 0xA0 }
   - { offsetInCU: 0x35, offset: 0xCA1E1, size: 0x8, addend: 0x0, symName: _BDPointSchedule, symObjAddr: 0x0, symBinAddr: 0x16940, symSize: 0xA0 }
-  - { offsetInCU: 0x5B, offset: 0xCA207, size: 0x8, addend: 0x0, symName: _BDPointSchedule.once, symObjAddr: 0x5E98, symBinAddr: 0x2CBDD8, symSize: 0x0 }
-  - { offsetInCU: 0x71, offset: 0xCA21D, size: 0x8, addend: 0x0, symName: _BDPointSchedule.sharedSchedule, symObjAddr: 0x5EA0, symBinAddr: 0x2CBDE0, symSize: 0x0 }
+  - { offsetInCU: 0x5B, offset: 0xCA207, size: 0x8, addend: 0x0, symName: _BDPointSchedule.once, symObjAddr: 0x5EA8, symBinAddr: 0x2CBDD8, symSize: 0x0 }
+  - { offsetInCU: 0x71, offset: 0xCA21D, size: 0x8, addend: 0x0, symName: _BDPointSchedule.sharedSchedule, symObjAddr: 0x5EB0, symBinAddr: 0x2CBDE0, symSize: 0x0 }
   - { offsetInCU: 0x157, offset: 0xCA303, size: 0x8, addend: 0x0, symName: ___BDPointSchedule_block_invoke, symObjAddr: 0xA0, symBinAddr: 0x169E0, symSize: 0x70 }
   - { offsetInCU: 0x181, offset: 0xCA32D, size: 0x8, addend: 0x0, symName: _BDRefreshPointScheduleEnabled, symObjAddr: 0x110, symBinAddr: 0x16A50, symSize: 0xB4 }
   - { offsetInCU: 0x27, offset: 0xCA44A, size: 0x8, addend: 0x0, symName: '-[BDCircle(BDPGeometryEnclosure) isEnclosedByPoint:]', symObjAddr: 0x0, symBinAddr: 0x16B10, symSize: 0xC0 }
@@ -6060,7 +6060,7 @@ relocations:
   - { offsetInCU: 0x549, offset: 0x1434B7, size: 0x8, addend: 0x0, symName: '_$s10BDPointSDK14SpeedConditionV10CodingKeys33_00DF385E7B601C043F000B960044C46BLLOs28CustomDebugStringConvertibleAAsAGP16debugDescriptionSSvgTW', symObjAddr: 0xF00, symBinAddr: 0x12BED0, symSize: 0x30 }
   - { offsetInCU: 0x565, offset: 0x1434D3, size: 0x8, addend: 0x0, symName: '_$s10BDPointSDK14SpeedConditionV10CodingKeys33_00DF385E7B601C043F000B960044C46BLLOs23CustomStringConvertibleAAsAGP11descriptionSSvgTW', symObjAddr: 0xF30, symBinAddr: 0x12BF00, symSize: 0x30 }
   - { offsetInCU: 0x2B, offset: 0x1436D6, size: 0x8, addend: 0x0, symName: '_$s10BDPointSDK15PointSDKContextC6sharedACvau', symObjAddr: 0x0, symBinAddr: 0x12C490, symSize: 0x40 }
-  - { offsetInCU: 0x4F, offset: 0x1436FA, size: 0x8, addend: 0x0, symName: '_$s10BDPointSDK15PointSDKContextC6sharedACvpZ', symObjAddr: 0x60C88, symBinAddr: 0x2DC588, symSize: 0x0 }
+  - { offsetInCU: 0x4F, offset: 0x1436FA, size: 0x8, addend: 0x0, symName: '_$s10BDPointSDK15PointSDKContextC6sharedACvpZ', symObjAddr: 0x60C98, symBinAddr: 0x2DC588, symSize: 0x0 }
   - { offsetInCU: 0x69, offset: 0x143714, size: 0x8, addend: 0x0, symName: '_$s10BDPointSDK15PointSDKContextCACycfC', symObjAddr: 0x4D70, symBinAddr: 0x131200, symSize: 0x20 }
   - { offsetInCU: 0x87, offset: 0x143732, size: 0x8, addend: 0x0, symName: '_$s10BDPointSDK15PointSDKContextC6sharedACvgZ', symObjAddr: 0x4D90, symBinAddr: 0x131220, symSize: 0x60 }
   - { offsetInCU: 0xB5, offset: 0x143760, size: 0x8, addend: 0x0, symName: '_$s10BDPointSDK15PointSDKContextC6sharedACvgZTo', symObjAddr: 0x4DF0, symBinAddr: 0x131280, symSize: 0x30 }
@@ -7014,10 +7014,10 @@ relocations:
   - { offsetInCU: 0xCE8, offset: 0x14DAB9, size: 0x8, addend: 0x0, symName: '_$s10BDPointSDK15EventCodingKeysOs28CustomDebugStringConvertibleAAsADP16debugDescriptionSSvgTW', symObjAddr: 0x2D40, symBinAddr: 0x1554B0, symSize: 0x30 }
   - { offsetInCU: 0xD04, offset: 0x14DAD5, size: 0x8, addend: 0x0, symName: '_$s10BDPointSDK15EventCodingKeysOs23CustomStringConvertibleAAsADP11descriptionSSvgTW', symObjAddr: 0x2D70, symBinAddr: 0x1554E0, symSize: 0x30 }
   - { offsetInCU: 0x27, offset: 0x14DD81, size: 0x8, addend: 0x0, symName: '_$s10BDPointSDK8PointAPIV7encoder_WZ', symObjAddr: 0x0, symBinAddr: 0x1562F0, symSize: 0x20 }
-  - { offsetInCU: 0x4B, offset: 0x14DDA5, size: 0x8, addend: 0x0, symName: '_$s10BDPointSDK8PointAPIV7encoder10Foundation11JSONEncoderCvpZ', symObjAddr: 0x1E3B8, symBinAddr: 0x2DC5B0, symSize: 0x0 }
-  - { offsetInCU: 0x65, offset: 0x14DDBF, size: 0x8, addend: 0x0, symName: '_$s10BDPointSDK8PointAPIV7decoder10Foundation11JSONDecoderCvpZ', symObjAddr: 0x1E3C0, symBinAddr: 0x2DC5B8, symSize: 0x0 }
-  - { offsetInCU: 0x7F, offset: 0x14DDD9, size: 0x8, addend: 0x0, symName: '_$s10BDPointSDK8PointAPIV10httpClientAA04HttpF0_pvpZ', symObjAddr: 0x1E3C8, symBinAddr: 0x2DC5C0, symSize: 0x0 }
-  - { offsetInCU: 0xA5, offset: 0x14DDFF, size: 0x8, addend: 0x0, symName: '_$s10BDPointSDK8PointAPIV17jsonFileExtensionSSvpZ', symObjAddr: 0x1E3F0, symBinAddr: 0x2DC5E8, symSize: 0x0 }
+  - { offsetInCU: 0x4B, offset: 0x14DDA5, size: 0x8, addend: 0x0, symName: '_$s10BDPointSDK8PointAPIV7encoder10Foundation11JSONEncoderCvpZ', symObjAddr: 0x1E3C8, symBinAddr: 0x2DC5B0, symSize: 0x0 }
+  - { offsetInCU: 0x65, offset: 0x14DDBF, size: 0x8, addend: 0x0, symName: '_$s10BDPointSDK8PointAPIV7decoder10Foundation11JSONDecoderCvpZ', symObjAddr: 0x1E3D0, symBinAddr: 0x2DC5B8, symSize: 0x0 }
+  - { offsetInCU: 0x7F, offset: 0x14DDD9, size: 0x8, addend: 0x0, symName: '_$s10BDPointSDK8PointAPIV10httpClientAA04HttpF0_pvpZ', symObjAddr: 0x1E3D8, symBinAddr: 0x2DC5C0, symSize: 0x0 }
+  - { offsetInCU: 0xA5, offset: 0x14DDFF, size: 0x8, addend: 0x0, symName: '_$s10BDPointSDK8PointAPIV17jsonFileExtensionSSvpZ', symObjAddr: 0x1E400, symBinAddr: 0x2DC5E8, symSize: 0x0 }
   - { offsetInCU: 0xB3, offset: 0x14DE0D, size: 0x8, addend: 0x0, symName: '_$s10BDPointSDK8PointAPIV7encoder_WZ', symObjAddr: 0x0, symBinAddr: 0x1562F0, symSize: 0x20 }
   - { offsetInCU: 0xD4, offset: 0x14DE2E, size: 0x8, addend: 0x0, symName: '_$s10BDPointSDK8PointAPIV7encoder10Foundation11JSONEncoderCvpZfiAGyXEfU_', symObjAddr: 0x20, symBinAddr: 0x156310, symSize: 0xB0 }
   - { offsetInCU: 0x105, offset: 0x14DE5F, size: 0x8, addend: 0x0, symName: '_$s10BDPointSDK8PointAPIV7decoder10Foundation11JSONDecoderCvpZfiAGyXEfU_', symObjAddr: 0x130, symBinAddr: 0x156420, symSize: 0xB0 }
