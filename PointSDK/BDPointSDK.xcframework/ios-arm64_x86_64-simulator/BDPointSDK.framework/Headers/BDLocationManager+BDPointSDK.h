@@ -219,7 +219,7 @@ typedef NS_ENUM(NSInteger, BDGeoTriggeringError) {
  *
  * Set to <b>false</b> to disable the SDK to function (receiving location updates) when app is in the background and Location permission is While Using.
  *
- * Default value is <b>true</b> .
+ * Default value is <b>false</b> .
  *
  * @note This value doesn't have effect if Location permission is Always.
  *
