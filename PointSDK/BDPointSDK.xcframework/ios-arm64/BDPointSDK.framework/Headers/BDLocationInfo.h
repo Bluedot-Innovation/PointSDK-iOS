@@ -7,9 +7,7 @@
 #import "BDGeospatialUnits.h"
 
 /**
- @brief Information about a location update.
- 
- @copyright Bluedot Innovation
+ * Information about a location update.
  */
 @interface BDLocationInfo : NSObject
 

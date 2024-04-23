@@ -8,18 +8,18 @@
 #import "BDGeometry.h"
 
 /**
-  @brief Base-class for @ref BDGeometry "geometries" defined by an ordered series of @ref BDPoint "points".
-
-  <p>@ref BDPolygonal is an abstract type and cannot be instantiated directly.</p>
-  <p>Instead, instantiate one of its concrete sub-classes.</p>
-
-  @see details in @ref BDPolygon
-  @see details in @ref BDLineString
+ * Base-class for ``BDGeometry`` "geometries" defined by an ordered series of ``BDPoint`` "points".
+ *
+ * <p>``BDPolygonal`` is an abstract type and cannot be instantiated directly.</p>
+ * <p>Instead, instantiate one of its concrete sub-classes.</p>
+ *
+ * @see details in ``BDPolygon``
+ * @see details in ``BDLineString``
 */
 @interface BDPolygonal : BDGeometry
 
 /**
-  @returns The number of vertices (@ref BDPoint "point"s) that define this polygonal geometry.
+  @returns The number of vertices (``BDPoint`` "point"s) that define this polygonal geometry.
 */
 - (NSUInteger)vertexCount;
 
@@ -29,7 +29,7 @@
 - (void)addVertex: (BDPoint *)vertex;
 
 /**
-  An ordered series of @ref BDPoint "point" vertices which, when joined by straight-line segments, describe this polygonal geometry.
+  An ordered series of ``BDPoint`` "point" vertices which, when joined by straight-line segments, describe this polygonal geometry.
 */
 @property (nonatomic) NSMutableArray  *vertices;
 

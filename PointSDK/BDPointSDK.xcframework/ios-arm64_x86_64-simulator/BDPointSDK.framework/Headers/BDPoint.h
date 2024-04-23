@@ -10,12 +10,12 @@
 #define BDPointCoordinateFormat @"%f°"
 
 /**
-  @brief A geographic point expressed in latitude and longitude coordinates.
+  A geographic point expressed in latitude and longitude coordinates.
 */
-@interface BDPoint : BDGeometry <NSCopying, NSCoding>
+@interface BDPoint : BDGeometry <NSCopying, NSSecureCoding>
 
 /**
-  Convenience constructor to create a @ref BDPoint "point" with a longitude and latitude, in degrees.
+  Convenience constructor to create a  ``BDPoint`` "point" with a longitude and latitude, in degrees.
   @param longitude The longitude in degrees.  Values should be in the range <b>-180 < 0 <= 180</b>.
   @param latitude The latitude in degrees.  Values should be in the range <b>-90 < 0 <= 90</b>.
 */
@@ -57,18 +57,19 @@
 @property (nonatomic) BDLocationDegrees  latitude;
 
 /**
-  This points location, expressed as a <a href="https://developer.apple.com/library/prerelease/ios/documentation/CoreLocation/Reference/CoreLocationDataTypesRef/index.html#//apple_ref/c/tdef/BDLocationCoordinate2D">BDLocationCoordinate2D</a> structure.
+  This points location, expressed as a <a href="https://developer.apple.com/documentation/corelocation/cllocationcoordinate2d">BDLocationCoordinate2D</a> structure.
  */
 @property (nonatomic,readonly) BDLocationCoordinate2D  coordinate;
 
 /**
-  @returns A <a href="https://developer.apple.com/library/prerelease/ios/documentation/GraphicsImaging/Reference/CGGeometry/index.html#//apple_ref/c/tdef/CGPoint">CGPoint</a> with longitude/latitude in degrees for the x/y coordinates.
+  @return A <a href="https://developer.apple.com/documentation/corefoundation/cgpoint/">CGPoint</a> with longitude/latitude in degrees for the x/y coordinates.
  */
 -(CGPoint)cgPoint;
 
-- (BOOL)isEqual: (id)other;
-- (BOOL)isEqualToPoint: (BDPoint *)point;
-- (NSUInteger)hash;
+/**
+ * @return YES if current point and the passing point have the same latitude and longitude.
+ */
+- (BOOL)isEqualToPoint:(BDPoint *)point;
 
 /**
 * @returns YES if the point is at 0 degrees latitude and longitude.  NO otherwise.

@@ -54,14 +54,7 @@ jobs:
     # prepare release assets
     - name: prepare release assets
       working-directory: PointSDK
-      # remove bitcode symbol files *.bcsymbolmap as Apple Xcode drops support for bitcode in Xcode 14
       run: |
-        # prepare universal framework
-        mkdir -p ./Carthage/Build/iOS
-        cp -R  *.dSYM *.framework Carthage/Build/iOS
-        rm -f *.bcsymbolmap 
-        zip -r BDPointSDK.framework.zip Carthage
-
         # prepare xcframework
         zip -r BDPointSDK.xcframework.zip BDPointSDK.xcframework
     
@@ -74,7 +67,6 @@ jobs:
         tag_name: ${{ steps.semver.outputs.semver }}
         files: |
           PointSDK/BDPointSDK.xcframework.zip
-          PointSDK/BDPointSDK.framework.zip
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
@@ -88,7 +80,7 @@ jobs:
       # checkout current repository
       - uses: actions/checkout@v2
       
-      # update pod
+     # update pod
       - name: upload pod to cocoapods
         env: 
           COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
