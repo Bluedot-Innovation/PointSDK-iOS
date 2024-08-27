@@ -6,39 +6,39 @@
 	<dict>
 		<key>ios-arm64/BDPointSDK.framework/BDDataModel.momd/BDDataModel_1.13.1.mom</key>
 		<data>
-		GNVGi4psLpKO2GWnWPNX5mKVmj0=
+		lT/KcS92Nm/Bd3U2b/Cjnq0eQ3k=
 		</data>
 		<key>ios-arm64/BDPointSDK.framework/BDDataModel.momd/BDDataModel_1.13.2.mom</key>
 		<data>
-		WiYeFgedaw1F8JE73W0qq9vMTx8=
+		wSC2FlWo9g1+uUgEbt2E26q70rQ=
 		</data>
 		<key>ios-arm64/BDPointSDK.framework/BDDataModel.momd/BDDataModel_1.13.mom</key>
 		<data>
-		FGRu7wctj5lyPZQp2KeHNkUgkFU=
+		9Q+d8SievrHww8ENRJmhAyeqOSQ=
 		</data>
 		<key>ios-arm64/BDPointSDK.framework/BDDataModel.momd/BDDataModel_1.8.1.mom</key>
 		<data>
-		7XoZ3pAOPxIN4HDsQGXaRYHX8o8=
+		jum/+pDB+JqVkYqWKAkhVG808ik=
 		</data>
 		<key>ios-arm64/BDPointSDK.framework/BDDataModel.momd/BDDataModel_1.9.mom</key>
 		<data>
-		A/VMK3f6VQJXWIhPfAViMWtfJYo=
+		Q9k+U4U9+JwPgoMq/IvFEU0T9Jo=
 		</data>
 		<key>ios-arm64/BDPointSDK.framework/BDDataModel.momd/BDDataModel_15.2.mom</key>
 		<data>
-		0Gef/PnX0MZE2MK+zFLYbp9yjsM=
+		Vw75WJIpqXXuq7JWHcVd2yxguP8=
 		</data>
 		<key>ios-arm64/BDPointSDK.framework/BDDataModel.momd/BDDataModel_15.3.2.mom</key>
 		<data>
-		VqbLebPKnnC68a4WzBU+vopFYbI=
+		ezxzNs9D2Vv3lBQN7k/GPMAJ1qM=
 		</data>
 		<key>ios-arm64/BDPointSDK.framework/BDDataModel.momd/BDDataModel_15.6.0.mom</key>
 		<data>
-		DY32bn/l5upf8+WKldD4MWl8T4s=
+		+smXLJ9Il2Vv7em6YaChJiMcBZE=
 		</data>
 		<key>ios-arm64/BDPointSDK.framework/BDDataModel.momd/BDDataModel_15.6.0.omo</key>
 		<data>
-		XvyfmXeB7KUOdk/qvFt+BjunH84=
+		R3uH/EUl8dRt2IF83w41s2a9JvU=
 		</data>
 		<key>ios-arm64/BDPointSDK.framework/BDDataModel.momd/VersionInfo.plist</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>ios-arm64/BDPointSDK.framework/BDPointSDK</key>
 		<data>
-		4PNxWIoxx1tRLwZCne7GBbn6Nic=
+		nukOPkx9QyNNWYPuVELKwOKELe0=
 		</data>
 		<key>ios-arm64/BDPointSDK.framework/Headers/BDAuthenticationState.h</key>
 		<data>
@@ -206,7 +206,7 @@
 		</data>
 		<key>ios-arm64/BDPointSDK.framework/Info.plist</key>
 		<data>
-		RPszCbcRB1VTddM0uNDeZxz8fW8=
+		9lARrQrsjSMRqfwY4WtboHu7Dh4=
 		</data>
 		<key>ios-arm64/BDPointSDK.framework/Modules/module.modulemap</key>
 		<data>
@@ -226,51 +226,51 @@
 		</data>
 		<key>ios-arm64/dSYMs/BDPointSDK.framework.dSYM/Contents/Info.plist</key>
 		<data>
-		b5MgsPTyd1w5uUPNgpOdaOgs1Lk=
+		x8IKWocOf2/w1wk7XLaIPAJy1Ss=
 		</data>
 		<key>ios-arm64/dSYMs/BDPointSDK.framework.dSYM/Contents/Resources/DWARF/BDPointSDK</key>
 		<data>
-		+PthR/OT5B0pUv/Dsjg+s13Jcrw=
+		0Jn0Bn6V4g7iVp4mFk7ecAchuws=
 		</data>
 		<key>ios-arm64/dSYMs/BDPointSDK.framework.dSYM/Contents/Resources/Relocations/aarch64/BDPointSDK.yml</key>
 		<data>
-		Zby2K51wmKx1108W/130DocQ0OE=
+		Gau5hLfRTUY8uy55gxH+PJAgSHg=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BDPointSDK.framework/BDDataModel.momd/BDDataModel_1.13.1.mom</key>
 		<data>
-		GNVGi4psLpKO2GWnWPNX5mKVmj0=
+		lT/KcS92Nm/Bd3U2b/Cjnq0eQ3k=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BDPointSDK.framework/BDDataModel.momd/BDDataModel_1.13.2.mom</key>
 		<data>
-		WiYeFgedaw1F8JE73W0qq9vMTx8=
+		wSC2FlWo9g1+uUgEbt2E26q70rQ=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BDPointSDK.framework/BDDataModel.momd/BDDataModel_1.13.mom</key>
 		<data>
-		FGRu7wctj5lyPZQp2KeHNkUgkFU=
+		9Q+d8SievrHww8ENRJmhAyeqOSQ=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BDPointSDK.framework/BDDataModel.momd/BDDataModel_1.8.1.mom</key>
 		<data>
-		7XoZ3pAOPxIN4HDsQGXaRYHX8o8=
+		jum/+pDB+JqVkYqWKAkhVG808ik=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BDPointSDK.framework/BDDataModel.momd/BDDataModel_1.9.mom</key>
 		<data>
-		A/VMK3f6VQJXWIhPfAViMWtfJYo=
+		Q9k+U4U9+JwPgoMq/IvFEU0T9Jo=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BDPointSDK.framework/BDDataModel.momd/BDDataModel_15.2.mom</key>
 		<data>
-		0Gef/PnX0MZE2MK+zFLYbp9yjsM=
+		Vw75WJIpqXXuq7JWHcVd2yxguP8=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BDPointSDK.framework/BDDataModel.momd/BDDataModel_15.3.2.mom</key>
 		<data>
-		VqbLebPKnnC68a4WzBU+vopFYbI=
+		ezxzNs9D2Vv3lBQN7k/GPMAJ1qM=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BDPointSDK.framework/BDDataModel.momd/BDDataModel_15.6.0.mom</key>
 		<data>
-		DY32bn/l5upf8+WKldD4MWl8T4s=
+		+smXLJ9Il2Vv7em6YaChJiMcBZE=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BDPointSDK.framework/BDDataModel.momd/BDDataModel_15.6.0.omo</key>
 		<data>
-		eXCIivLNEI1snYUn5X+IWhjwfZQ=
+		RyDtR8CttZCSZz27Fa1OTjnhJww=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BDPointSDK.framework/BDDataModel.momd/VersionInfo.plist</key>
 		<data>
@@ -282,7 +282,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/BDPointSDK.framework/BDPointSDK</key>
 		<data>
-		dTZY9rALGS90It6jUJnZ9M4v5ro=
+		FWAbzDh7pP3PZmjIn8bw1+l3xGg=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BDPointSDK.framework/Headers/BDAuthenticationState.h</key>
 		<data>
@@ -438,7 +438,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/BDPointSDK.framework/Info.plist</key>
 		<data>
-		D24XJq8iqNUeLHDUikI9sJnvMEY=
+		JW+S5NBmoHpHVMFuLiBziNRs6Jk=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BDPointSDK.framework/Modules/module.modulemap</key>
 		<data>
@@ -458,23 +458,23 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/BDPointSDK.framework/_CodeSignature/CodeResources</key>
 		<data>
-		HfYm5LM/SAG9vhKXyO4GZ3w+3BA=
+		G6LkTYtCePLRqgXPCMNKU/rSlR8=
 		</data>
 		<key>ios-arm64_x86_64-simulator/dSYMs/BDPointSDK.framework.dSYM/Contents/Info.plist</key>
 		<data>
-		b5MgsPTyd1w5uUPNgpOdaOgs1Lk=
+		x8IKWocOf2/w1wk7XLaIPAJy1Ss=
 		</data>
 		<key>ios-arm64_x86_64-simulator/dSYMs/BDPointSDK.framework.dSYM/Contents/Resources/DWARF/BDPointSDK</key>
 		<data>
-		6eucMg7OgK9iuSdXiprzd/HvRUE=
+		8HZ3sNgoZnroprimg/vbzcLGkPY=
 		</data>
 		<key>ios-arm64_x86_64-simulator/dSYMs/BDPointSDK.framework.dSYM/Contents/Resources/Relocations/aarch64/BDPointSDK.yml</key>
 		<data>
-		+EgYDA0s21Nzd3uVaT20GeEvMMk=
+		a4FdLpim4GlaM1CaGMzCUjH5wJU=
 		</data>
 		<key>ios-arm64_x86_64-simulator/dSYMs/BDPointSDK.framework.dSYM/Contents/Resources/Relocations/x86_64/BDPointSDK.yml</key>
 		<data>
-		/eTuFoFlC62Xirp8Oc6f+fWLVCU=
+		GI/BJJel0ryrBodunRN48jLN8hw=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -483,99 +483,99 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GNVGi4psLpKO2GWnWPNX5mKVmj0=
+			lT/KcS92Nm/Bd3U2b/Cjnq0eQ3k=
 			</data>
 			<key>hash2</key>
 			<data>
-			A0cmDWCJ//EtSJmXLWeXL5MPbqWtz7eiRxVThddnmX8=
+			yEWl4G9GF8R127n95Qbs2V4f6rKUX4N/Im4OU/riBIQ=
 			</data>
 		</dict>
 		<key>ios-arm64/BDPointSDK.framework/BDDataModel.momd/BDDataModel_1.13.2.mom</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WiYeFgedaw1F8JE73W0qq9vMTx8=
+			wSC2FlWo9g1+uUgEbt2E26q70rQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			eulywDktKOO1Idxy/QEosNe5LFBQtSDqEB3Ecf64O9U=
+			vlPSZdYRJTsTOSpzNT3YAjVR7Qj5oRbIxekc1y/8lEs=
 			</data>
 		</dict>
 		<key>ios-arm64/BDPointSDK.framework/BDDataModel.momd/BDDataModel_1.13.mom</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FGRu7wctj5lyPZQp2KeHNkUgkFU=
+			9Q+d8SievrHww8ENRJmhAyeqOSQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			fzWG85wDvsU2LznS2mDXSVTTzj3QeUJ8cbCmiY/u5I4=
+			UbACz3u3Lzq5LQAhDCHq1ATdkpjRwDbN1yaJjU9MxcQ=
 			</data>
 		</dict>
 		<key>ios-arm64/BDPointSDK.framework/BDDataModel.momd/BDDataModel_1.8.1.mom</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7XoZ3pAOPxIN4HDsQGXaRYHX8o8=
+			jum/+pDB+JqVkYqWKAkhVG808ik=
 			</data>
 			<key>hash2</key>
 			<data>
-			IYqXkQ41dGSJGHZhE9xnAL8ET/L4xm3gJIdhodZdNuA=
+			5HXGwD4+an2qhwepzVNym9odpuyspShyuWppoBzziAQ=
 			</data>
 		</dict>
 		<key>ios-arm64/BDPointSDK.framework/BDDataModel.momd/BDDataModel_1.9.mom</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			A/VMK3f6VQJXWIhPfAViMWtfJYo=
+			Q9k+U4U9+JwPgoMq/IvFEU0T9Jo=
 			</data>
 			<key>hash2</key>
 			<data>
-			p4QBuWDmjcqtOHKunEXcU4p/1q1ofZEvfLpdueZs7rw=
+			A6VpyELU8bOTyhf8AJhYrj0ET8nyOpRyWGUXvP84ig0=
 			</data>
 		</dict>
 		<key>ios-arm64/BDPointSDK.framework/BDDataModel.momd/BDDataModel_15.2.mom</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0Gef/PnX0MZE2MK+zFLYbp9yjsM=
+			Vw75WJIpqXXuq7JWHcVd2yxguP8=
 			</data>
 			<key>hash2</key>
 			<data>
-			LNYtk4C40s8whsNazKh68Z+kMXsZWZaInSHJ0s0PIMM=
+			cssgYc2CIYQycLSdJleqkZwC+JT0ldz9rqj1ugvgWo4=
 			</data>
 		</dict>
 		<key>ios-arm64/BDPointSDK.framework/BDDataModel.momd/BDDataModel_15.3.2.mom</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VqbLebPKnnC68a4WzBU+vopFYbI=
+			ezxzNs9D2Vv3lBQN7k/GPMAJ1qM=
 			</data>
 			<key>hash2</key>
 			<data>
-			cU93Q/L5BpQZU6FlSrJRn9RbJ9Mb2OXgd4EQVQCOlKE=
+			NyJBZPr8BLHaFq9Z3SnyE0g2G5j6PjXGLRYMMr9zSbg=
 			</data>
 		</dict>
 		<key>ios-arm64/BDPointSDK.framework/BDDataModel.momd/BDDataModel_15.6.0.mom</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DY32bn/l5upf8+WKldD4MWl8T4s=
+			+smXLJ9Il2Vv7em6YaChJiMcBZE=
 			</data>
 			<key>hash2</key>
 			<data>
-			aKXOrPyuW3uNXQUr9RIArtUvsl4Al7/Rxc9Lb5mUKhs=
+			FS8PiCAwkevRAYARxlzjL/a9MYmcRM0cIMT2gocfmMo=
 			</data>
 		</dict>
 		<key>ios-arm64/BDPointSDK.framework/BDDataModel.momd/BDDataModel_15.6.0.omo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XvyfmXeB7KUOdk/qvFt+BjunH84=
+			R3uH/EUl8dRt2IF83w41s2a9JvU=
 			</data>
 			<key>hash2</key>
 			<data>
-			R1LcGNaK9mPxmqqlIv6N/Yzp3t+3hX2TleM5MQx3rRE=
+			z32HPl5oAXQKvS1bNx8JwKN3Ynijiw9fEdAIzN7GT10=
 			</data>
 		</dict>
 		<key>ios-arm64/BDPointSDK.framework/BDDataModel.momd/VersionInfo.plist</key>
@@ -604,11 +604,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4PNxWIoxx1tRLwZCne7GBbn6Nic=
+			nukOPkx9QyNNWYPuVELKwOKELe0=
 			</data>
 			<key>hash2</key>
 			<data>
-			E6g34Y/10H81wxk5YzKJFNBkqI/zi9IbAzAuAxQFcPA=
+			RZjt89uKWRfkCupQyTpdj/emSycMnQAUtfpUgy44/KI=
 			</data>
 		</dict>
 		<key>ios-arm64/BDPointSDK.framework/Headers/BDAuthenticationState.h</key>
@@ -1033,11 +1033,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RPszCbcRB1VTddM0uNDeZxz8fW8=
+			9lARrQrsjSMRqfwY4WtboHu7Dh4=
 			</data>
 			<key>hash2</key>
 			<data>
-			aArG9U5PjxiAHcN0BiZ3TN6GFYLJ/TKlfrlNhK3v0gg=
+			cm9lQZ0pIVihZKWt7hk7bFkcRXabV0I7k4bmq8vxnTQ=
 			</data>
 		</dict>
 		<key>ios-arm64/BDPointSDK.framework/Modules/module.modulemap</key>
@@ -1088,132 +1088,132 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			b5MgsPTyd1w5uUPNgpOdaOgs1Lk=
+			x8IKWocOf2/w1wk7XLaIPAJy1Ss=
 			</data>
 			<key>hash2</key>
 			<data>
-			NXR3wqA+yGdrkNUmy3sJIf7lgBbOwP6sqWXb4pC0bW0=
+			g8lTCtC4V9NgnkbrJRAB2PoECAr0s9cH4U8wpR2e/Cw=
 			</data>
 		</dict>
 		<key>ios-arm64/dSYMs/BDPointSDK.framework.dSYM/Contents/Resources/DWARF/BDPointSDK</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+PthR/OT5B0pUv/Dsjg+s13Jcrw=
+			0Jn0Bn6V4g7iVp4mFk7ecAchuws=
 			</data>
 			<key>hash2</key>
 			<data>
-			FxOHk8EBB103TZLTyEp3Jq5LnT29Ke4Aq2YISW1k0IA=
+			XH1dBbPzQsLkwgjkcolTIKMBV0TfwHgP4EGN+XnuxjY=
 			</data>
 		</dict>
 		<key>ios-arm64/dSYMs/BDPointSDK.framework.dSYM/Contents/Resources/Relocations/aarch64/BDPointSDK.yml</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Zby2K51wmKx1108W/130DocQ0OE=
+			Gau5hLfRTUY8uy55gxH+PJAgSHg=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZwQNN28KDbBr2pcl6xwCNlWVthU/Py8REyvWDX+iLB8=
+			X3VUqS0VtJvzRQ7HqTYTkXaCM9Y7YQprNzSFiPJvTPs=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BDPointSDK.framework/BDDataModel.momd/BDDataModel_1.13.1.mom</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GNVGi4psLpKO2GWnWPNX5mKVmj0=
+			lT/KcS92Nm/Bd3U2b/Cjnq0eQ3k=
 			</data>
 			<key>hash2</key>
 			<data>
-			A0cmDWCJ//EtSJmXLWeXL5MPbqWtz7eiRxVThddnmX8=
+			yEWl4G9GF8R127n95Qbs2V4f6rKUX4N/Im4OU/riBIQ=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BDPointSDK.framework/BDDataModel.momd/BDDataModel_1.13.2.mom</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WiYeFgedaw1F8JE73W0qq9vMTx8=
+			wSC2FlWo9g1+uUgEbt2E26q70rQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			eulywDktKOO1Idxy/QEosNe5LFBQtSDqEB3Ecf64O9U=
+			vlPSZdYRJTsTOSpzNT3YAjVR7Qj5oRbIxekc1y/8lEs=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BDPointSDK.framework/BDDataModel.momd/BDDataModel_1.13.mom</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FGRu7wctj5lyPZQp2KeHNkUgkFU=
+			9Q+d8SievrHww8ENRJmhAyeqOSQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			fzWG85wDvsU2LznS2mDXSVTTzj3QeUJ8cbCmiY/u5I4=
+			UbACz3u3Lzq5LQAhDCHq1ATdkpjRwDbN1yaJjU9MxcQ=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BDPointSDK.framework/BDDataModel.momd/BDDataModel_1.8.1.mom</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7XoZ3pAOPxIN4HDsQGXaRYHX8o8=
+			jum/+pDB+JqVkYqWKAkhVG808ik=
 			</data>
 			<key>hash2</key>
 			<data>
-			IYqXkQ41dGSJGHZhE9xnAL8ET/L4xm3gJIdhodZdNuA=
+			5HXGwD4+an2qhwepzVNym9odpuyspShyuWppoBzziAQ=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BDPointSDK.framework/BDDataModel.momd/BDDataModel_1.9.mom</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			A/VMK3f6VQJXWIhPfAViMWtfJYo=
+			Q9k+U4U9+JwPgoMq/IvFEU0T9Jo=
 			</data>
 			<key>hash2</key>
 			<data>
-			p4QBuWDmjcqtOHKunEXcU4p/1q1ofZEvfLpdueZs7rw=
+			A6VpyELU8bOTyhf8AJhYrj0ET8nyOpRyWGUXvP84ig0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BDPointSDK.framework/BDDataModel.momd/BDDataModel_15.2.mom</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0Gef/PnX0MZE2MK+zFLYbp9yjsM=
+			Vw75WJIpqXXuq7JWHcVd2yxguP8=
 			</data>
 			<key>hash2</key>
 			<data>
-			LNYtk4C40s8whsNazKh68Z+kMXsZWZaInSHJ0s0PIMM=
+			cssgYc2CIYQycLSdJleqkZwC+JT0ldz9rqj1ugvgWo4=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BDPointSDK.framework/BDDataModel.momd/BDDataModel_15.3.2.mom</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VqbLebPKnnC68a4WzBU+vopFYbI=
+			ezxzNs9D2Vv3lBQN7k/GPMAJ1qM=
 			</data>
 			<key>hash2</key>
 			<data>
-			cU93Q/L5BpQZU6FlSrJRn9RbJ9Mb2OXgd4EQVQCOlKE=
+			NyJBZPr8BLHaFq9Z3SnyE0g2G5j6PjXGLRYMMr9zSbg=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BDPointSDK.framework/BDDataModel.momd/BDDataModel_15.6.0.mom</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DY32bn/l5upf8+WKldD4MWl8T4s=
+			+smXLJ9Il2Vv7em6YaChJiMcBZE=
 			</data>
 			<key>hash2</key>
 			<data>
-			aKXOrPyuW3uNXQUr9RIArtUvsl4Al7/Rxc9Lb5mUKhs=
+			FS8PiCAwkevRAYARxlzjL/a9MYmcRM0cIMT2gocfmMo=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BDPointSDK.framework/BDDataModel.momd/BDDataModel_15.6.0.omo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			eXCIivLNEI1snYUn5X+IWhjwfZQ=
+			RyDtR8CttZCSZz27Fa1OTjnhJww=
 			</data>
 			<key>hash2</key>
 			<data>
-			OMAaUiUBF5y+KhxgfGJyNKwoM87eFi15P3lIcQcEAyk=
+			m3mcod9YbEqGh9mdYqFu/Nd7OaEjneCdUMaYnVM7Leg=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BDPointSDK.framework/BDDataModel.momd/VersionInfo.plist</key>
@@ -1242,11 +1242,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dTZY9rALGS90It6jUJnZ9M4v5ro=
+			FWAbzDh7pP3PZmjIn8bw1+l3xGg=
 			</data>
 			<key>hash2</key>
 			<data>
-			L8kpoxWfKxlaKLEADI1u5K3g13o481IbRHkgVoom2ng=
+			N/2E0kXnyCcDZtJk1bwoauO4usGh3/opwB1wBgypa+o=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BDPointSDK.framework/Headers/BDAuthenticationState.h</key>
@@ -1671,11 +1671,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			D24XJq8iqNUeLHDUikI9sJnvMEY=
+			JW+S5NBmoHpHVMFuLiBziNRs6Jk=
 			</data>
 			<key>hash2</key>
 			<data>
-			Jhi0ppmPxeZXfZGFY4Nge7L2mK9HCSF8yYtTJjCxMRc=
+			QVgzjyeNcY9YuekL5lPLVre6An4MLtve5GAjGevcgHc=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BDPointSDK.framework/Modules/module.modulemap</key>
@@ -1726,55 +1726,55 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HfYm5LM/SAG9vhKXyO4GZ3w+3BA=
+			G6LkTYtCePLRqgXPCMNKU/rSlR8=
 			</data>
 			<key>hash2</key>
 			<data>
-			/GVGcu/C8E+roF/XmLJSiTeRDzpj91Vk5w6lSqcJBnc=
+			RDSjMO018W4auNn3Djk2KnuanuNxAUmyhhJPMg267W0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/dSYMs/BDPointSDK.framework.dSYM/Contents/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			b5MgsPTyd1w5uUPNgpOdaOgs1Lk=
+			x8IKWocOf2/w1wk7XLaIPAJy1Ss=
 			</data>
 			<key>hash2</key>
 			<data>
-			NXR3wqA+yGdrkNUmy3sJIf7lgBbOwP6sqWXb4pC0bW0=
+			g8lTCtC4V9NgnkbrJRAB2PoECAr0s9cH4U8wpR2e/Cw=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/dSYMs/BDPointSDK.framework.dSYM/Contents/Resources/DWARF/BDPointSDK</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6eucMg7OgK9iuSdXiprzd/HvRUE=
+			8HZ3sNgoZnroprimg/vbzcLGkPY=
 			</data>
 			<key>hash2</key>
 			<data>
-			WHdZWJfbciol8xwR4ulYDKFOZTNiLkzaB4fcqzCYQc4=
+			vYrkCOz297jQcsn44S2Xde5jE6aUpfXjSwxQhBoQc3k=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/dSYMs/BDPointSDK.framework.dSYM/Contents/Resources/Relocations/aarch64/BDPointSDK.yml</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+EgYDA0s21Nzd3uVaT20GeEvMMk=
+			a4FdLpim4GlaM1CaGMzCUjH5wJU=
 			</data>
 			<key>hash2</key>
 			<data>
-			DERAPHi2ZHkfIZscvdxLDkRW1zWNonbgkqe8/09BMvI=
+			agOmu48A3t2Lz+671z/MeoEkfa0MONp46JQKm2qRWnQ=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/dSYMs/BDPointSDK.framework.dSYM/Contents/Resources/Relocations/x86_64/BDPointSDK.yml</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/eTuFoFlC62Xirp8Oc6f+fWLVCU=
+			GI/BJJel0ryrBodunRN48jLN8hw=
 			</data>
 			<key>hash2</key>
 			<data>
-			8E4Hj61ESJrKZNEtkzjki+JeDJXiO9mAja4K5EnaocI=
+			xfgdt/+FaAqDrlpXEwV8gxfPqdZp9khoAYy7RXIT3aU=
 			</data>
 		</dict>
 	</dict>
