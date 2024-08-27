@@ -1,5 +1,4 @@
-PointSDK v15.6.9 (207)
-# SDK Version 15.6.9
+PointSDK v15.6.10 (248)
+# SDK Version 15.6.10
 
-- Added Privacy Manifest and SDK code signing
-- Drop iOS 11 support. The minimum supported iOS version is iOS 12
+- Minor improvements with location authorization
