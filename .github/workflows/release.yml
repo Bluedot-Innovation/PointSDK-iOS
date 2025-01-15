@@ -6,7 +6,7 @@ name: release PointSDK
 # events but only for the master branch
 on:
   push:
-    branches: [ master, release/15.6.11 ]
+    branches: [ master, release/15.6.12 ]
     tags-ignore: 
       - '**'
 
@@ -64,8 +64,8 @@ jobs:
       uses: softprops/action-gh-release@v1
       with:
         body_path: PointSDK/ReleaseNotes.md
-        name: 15.6.11
-        tag_name: 15.6.11
+        name: 15.6.12
+        tag_name: 15.6.12
         files: |
           PointSDK/BDPointSDK.xcframework.zip
       env:
