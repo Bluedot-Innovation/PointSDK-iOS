@@ -1,9 +1,7 @@
-PointSDK v16.0.1 (259)
-# SDK Version 16.0.1
+PointSDK v16.0.2 (284)
+# SDK Version 16.0.2
 
 ## Changes
 
-- Minor improvements with location authorization
-- XCode 15.4 support
-
-Please refer to the detailed release notes and our updated documentation for more information. We appreciate your feedback and are here to assist you with any questions.
+In this update, we've focused on enhancing the reliability of the Point SDK for iOS:
+• Improved stability

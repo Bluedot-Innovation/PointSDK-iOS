@@ -18,7 +18,7 @@
     <a title="BDLocationManager Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">BDPointSDK v16.0.1 Docs</a></p>
+        <p><a href="../index.html">BDPointSDK v16.0.2 Docs</a></p>
         <p class="header-right"><a href="https://github.com/Bluedot-Innovation/PointSDK-iOS"><img src="../img/gh.png" alt="GitHub"/>View on GitHub</a></p>
         <p class="header-right"><a href="dash-feed://https%3A%2F%2Fios-docs.bluedot.io%2Fdocsets%2FBDPointSDK.xml"><img src="../img/dash.png" alt="Dash"/>Install in Dash</a></p>
         <div class="header-right">
@@ -30,7 +30,9 @@
     </header>
     <div class="content-wrapper">
       <p id="breadcrumbs">
-        <a href="../index.html">BDPointSDK Reference</a>
+        <a href="../index.html">BDPointSDK</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        <a href="../Classes.html">Classes</a>
         <img id="carat" src="../img/carat.png" alt=""/>
         BDLocationManager Class Reference
       </p>
@@ -417,7 +419,7 @@ For example, when customer places an order within the mobile app, at this point 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">initialize</span><span class="p">(</span><span class="n">withProjectId</span> <span class="nv">projectId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="n">async</span> <span class="k">throws</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">initialize</span><span class="p">(</span><span class="n">withProjectId</span> <span class="nv">projectId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">async</span> <span class="k">throws</span></code></pre>
 
                         </div>
                       </div>
@@ -518,7 +520,7 @@ For example, when customer places an order within the mobile app, at this point 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">reset</span><span class="p">()</span> <span class="n">async</span> <span class="k">throws</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">reset</span><span class="p">()</span> <span class="k">async</span> <span class="k">throws</span></code></pre>
 
                         </div>
                       </div>
@@ -782,7 +784,7 @@ their respective <i>zoneId</i>&lsquo;s for use in this method, is delivered to <
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">applicationContainsDisabledZone</span><span class="p">(</span><span class="n">_</span> <span class="nv">zoneId</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">)</span> <span class="n">async</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">applicationContainsDisabledZone</span><span class="p">(</span><span class="n">_</span> <span class="nv">zoneId</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">)</span> <span class="k">async</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>
@@ -989,7 +991,7 @@ Only String Type is allowed. Throws <code>BDCustomEventMetadataDataFormatExcepti
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">startGeoTriggering</span><span class="p">()</span> <span class="n">async</span> <span class="k">throws</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">startGeoTriggering</span><span class="p">()</span> <span class="k">async</span> <span class="k">throws</span></code></pre>
 
                         </div>
                       </div>
@@ -1060,7 +1062,7 @@ Only String Type is allowed. Throws <code>BDCustomEventMetadataDataFormatExcepti
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">startGeoTriggering</span><span class="p">(</span><span class="n">withAppRestartNotificationTitle</span> <span class="nv">notificationTitle</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">notificationButtonText</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="n">async</span> <span class="k">throws</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">startGeoTriggering</span><span class="p">(</span><span class="n">withAppRestartNotificationTitle</span> <span class="nv">notificationTitle</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">notificationButtonText</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">async</span> <span class="k">throws</span></code></pre>
 
                         </div>
                       </div>
@@ -1177,7 +1179,7 @@ Only String Type is allowed. Throws <code>BDCustomEventMetadataDataFormatExcepti
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">stopGeoTriggering</span><span class="p">()</span> <span class="n">async</span> <span class="k">throws</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">stopGeoTriggering</span><span class="p">()</span> <span class="k">async</span> <span class="k">throws</span></code></pre>
 
                         </div>
                       </div>
@@ -1235,7 +1237,7 @@ Only String Type is allowed. Throws <code>BDCustomEventMetadataDataFormatExcepti
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">startTempoTracking</span><span class="p">(</span><span class="n">withDestinationId</span> <span class="nv">destinationId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="n">async</span> <span class="k">throws</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">startTempoTracking</span><span class="p">(</span><span class="n">withDestinationId</span> <span class="nv">destinationId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">async</span> <span class="k">throws</span></code></pre>
 
                         </div>
                       </div>
@@ -1299,7 +1301,7 @@ Only String Type is allowed. Throws <code>BDCustomEventMetadataDataFormatExcepti
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">stopTempoTracking</span><span class="p">()</span> <span class="n">async</span> <span class="k">throws</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">stopTempoTracking</span><span class="p">()</span> <span class="k">async</span> <span class="k">throws</span></code></pre>
 
                         </div>
                       </div>
@@ -1366,8 +1368,8 @@ Only String Type is allowed. Throws <code>BDCustomEventMetadataDataFormatExcepti
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2024 <a class="link" href="https://bluedot.io" target="_blank" rel="external noopener">Bluedot</a>. All rights reserved. (Last updated: 2024-09-05)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+          <p>&copy; 2025 <a class="link" href="https://bluedot.io" target="_blank" rel="external noopener">Bluedot</a>. All rights reserved. (Last updated: 2025-01-06)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
     </div>

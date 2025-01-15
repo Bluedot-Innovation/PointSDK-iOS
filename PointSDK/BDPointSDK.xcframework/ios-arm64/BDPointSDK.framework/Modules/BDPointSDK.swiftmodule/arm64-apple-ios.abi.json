@@ -56310,6 +56310,20 @@
       "value": "true"
     },
     {
+      "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Signal Processing\/ReduceNode.swift",
+      "kind": "StringLiteral",
+      "offset": 478,
+      "length": 31,
+      "value": "\"io.bluedot.pointsdk.dataQueue\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Signal Processing\/ReduceNode.swift",
+      "kind": "StringLiteral",
+      "offset": 587,
+      "length": 33,
+      "value": "\"io.bluedot.pointsdk.signalQueue\""
+    },
+    {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Signal Processing\/LegacySignalGraph.swift",
       "kind": "StringLiteral",
       "offset": 304,
