@@ -47,7 +47,7 @@
 - (void)bluedotServiceDidReceiveError:(NSError *)error;
 
 /**
- * Available from iOS 14. This method can be implemented to keep track of changes in Location Manager's CLAccuracyAuthorization .
+ * This method can be implemented to keep track of changes in Location Manager's CLAccuracyAuthorization .
  *
  * This method is called whenever accuracy authorization status changes.
  *

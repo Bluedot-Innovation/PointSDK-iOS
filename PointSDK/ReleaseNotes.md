@@ -1,7 +1,7 @@
-PointSDK v16.0.2 (284)
-# SDK Version 16.0.2
-
+PointSDK v17.0.0 (298)
+# SDK Version 17.0.0
 ## Changes
 
-In this update, we've focused on enhancing the reliability of the Point SDK for iOS:
-• Improved stability
+- Chat AI API support
+ 
+Please refer to the detailed release notes and our updated documentation for more information. We appreciate your feedback and are here to assist you with any questions.

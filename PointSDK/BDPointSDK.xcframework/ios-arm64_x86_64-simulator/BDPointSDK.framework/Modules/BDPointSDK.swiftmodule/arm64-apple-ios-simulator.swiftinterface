@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
-// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-bare-slash-regex -module-name BDPointSDK
+// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
+// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-bare-slash-regex -module-name BDPointSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 @_exported import BDPointSDK
 
 import CommonCrypto
@@ -67,6 +68,18 @@ extension Swift.Double {
 }
 extension BDPointSDK.GeoTriggerEvent : BDPointSDK.JsonString {
   @objc(toJson:) dynamic public func toJson() throws -> Swift.String
+}
+@_hasMissingDesignatedInitializers @objc public class Chat : ObjectiveC.NSObject {
+  @objc public var userID: Swift.String
+  @objc public var language: Swift.String
+  @objc public var sessionID: Swift.String {
+    @objc get
+  }
+  public func sendMessage(_ message: Swift.String) -> _Concurrency.AsyncThrowingStream<BDPointSDK.StreamingResponseDto, any Swift.Error>
+  @objc public func sendMessage(_ message: Swift.String, onUpdate: @escaping (BDPointSDK.StreamingResponseDto) -> Swift.Void, onCompletion: @escaping () -> Swift.Void, onError: @escaping (Foundation.NSError) -> Swift.Void)
+  public func submitFeedback(responseID: Swift.String, reaction: BDPointSDK.Chat.Reaction) async throws
+  @objc public func submitFeedback(responseID: Swift.String, reaction: BDPointSDK.Chat.Reaction, completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
+  @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers public class AppState : ObjectiveC.NSObject {
   @objc final public let batteryLevel: Foundation.Decimal
@@ -139,6 +152,17 @@ extension BDPointSDK.ZoneInfo : Foundation.NSCopying {
 }
 extension Foundation.NSNotification.Name {
   public static let bdReachabilityChanged: Foundation.Notification.Name
+}
+extension BDPointSDK.Chat {
+  @objc public enum Reaction : Swift.Int {
+    case liked
+    case disliked
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
 }
 extension BDPointSDK.AppState : Swift.Encodable {
   public func encode(to encoder: any Swift.Encoder) throws
@@ -226,6 +250,27 @@ extension BDPointSDK.DeviceInfo {
 extension BDPointSDK.FenceExited : BDPointSDK.JsonString {
   @objc(toJson:) dynamic public func toJson() throws -> Swift.String
 }
+@objc public class ChatContext : ObjectiveC.NSObject, Swift.Decodable {
+  @objc final public let title: Swift.String?
+  @objc final public let imageLinks: [Foundation.URL]?
+  @objc final public let price: Foundation.NSNumber?
+  @objc final public let contextDescription: Swift.String?
+  @objc final public let merchantID: Foundation.NSNumber?
+  @objc final public let categoryID: Foundation.NSNumber?
+  @objc final public let productID: Foundation.NSNumber?
+  public init(title: Swift.String? = nil, imageLinks: [Foundation.URL]? = nil, price: Foundation.NSNumber? = nil, contextDescription: Swift.String? = nil, merchantID: Foundation.NSNumber? = nil, categoryID: Foundation.NSNumber? = nil, productID: Foundation.NSNumber? = nil)
+  required public init(from decoder: any Swift.Decoder) throws
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class BrainAI : ObjectiveC.NSObject {
+  public func createNewChat() -> Swift.Result<BDPointSDK.Chat, BDPointSDK.Chat.ChatError>
+  @available(swift, obsoleted: 1.0)
+  @objc(createNewChat) public func createNewChat() -> BDPointSDK.Chat?
+  @objc public func getChat(sessionID: Swift.String) -> BDPointSDK.Chat?
+  @objc public func closeChat(sessionID: Swift.String)
+  @objc override dynamic public init()
+  @objc deinit
+}
 extension BDPointSDK.GeoTriggerEvent {
   @objc override dynamic public var description: Swift.String {
     @objc get
@@ -291,6 +336,15 @@ extension BDPointSDK.TriggerEvent where Self : Swift.Encodable {
   public var description: Swift.String {
     get
   }
+}
+@objc public class StreamingResponseDto : ObjectiveC.NSObject, Swift.Decodable {
+  @objc final public let response: Swift.String?
+  @objc final public let responseID: Swift.String?
+  @objc final public let streamType: Swift.Int
+  @objc public var contexts: [BDPointSDK.ChatContext]
+  public init(response: Swift.String?, responseID: Swift.String?, streamType: Swift.Int, contexts: [BDPointSDK.ChatContext] = [])
+  required public init(from decoder: any Swift.Decoder) throws
+  @objc deinit
 }
 @objc public protocol JsonString : ObjectiveC.NSObjectProtocol {
   @objc(toJson:) func toJson() throws -> Swift.String
@@ -361,6 +415,23 @@ extension BDPointSDK.CrossedFence {
   public static func == (lhs: BDPointSDK.CrossedFence, rhs: BDPointSDK.CrossedFence) -> Swift.Bool
   @objc override dynamic public var hash: Swift.Int {
     @objc get
+  }
+}
+extension BDPointSDK.Chat {
+  public enum ChatError : Swift.Error {
+    case invalidApiUrl
+    case invalidApiKey
+    case invalidLanguage
+    case serverError(statusCode: Swift.Int, details: Foundation.Data)
+    case networkError
+    case decodingError
+    case unknownError
+    public var errorDescription: Swift.String {
+      get
+    }
+    public var errorCode: Swift.Int {
+      get
+    }
   }
 }
 @objc public protocol TriggerEvent : BDPointSDK.Event, Foundation.NSCopying {
@@ -475,6 +546,9 @@ extension BDPointSDK.MOAppInfo {
     @objc set
   }
 }
+extension BDPointSDK.MOAppInfo : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
 @objc @_inheritsConvenienceInitializers public class MOAppState : CoreData.NSManagedObject {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
@@ -522,6 +596,9 @@ extension BDPointSDK.MOAppState {
     @objc set
   }
 }
+extension BDPointSDK.MOAppState : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
 @objc @_inheritsConvenienceInitializers public class MOCrossedFence : CoreData.NSManagedObject {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
@@ -549,6 +626,9 @@ extension BDPointSDK.MOCrossedFence {
     @objc set
   }
 }
+extension BDPointSDK.MOCrossedFence : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
 @objc @_inheritsConvenienceInitializers public class MODeviceInfo : CoreData.NSManagedObject {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
@@ -575,6 +655,9 @@ extension BDPointSDK.MODeviceInfo {
     @objc get
     @objc set
   }
+}
+extension BDPointSDK.MODeviceInfo : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
 }
 @objc @_inheritsConvenienceInitializers public class MOFenceEntered : BDPointSDK.MOTriggerEventAbstract {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
@@ -663,6 +746,9 @@ extension BDPointSDK.MOLifecycleEventAbstract {
     @objc set
   }
 }
+extension BDPointSDK.MOLifecycleEventAbstract : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
 @_inheritsConvenienceInitializers @objc(MOLifecycleEventNotification) public class MOLifecycleEventNotification : CoreData.NSManagedObject {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
@@ -710,6 +796,9 @@ extension BDPointSDK.MOLifecycleEventNotification {
   @objc(addLifecycleEvents:) @NSManaged dynamic public func addToLifecycleEvents(_ values: Foundation.NSOrderedSet)
   @objc(removeLifecycleEvents:) @NSManaged dynamic public func removeFromLifecycleEvents(_ values: Foundation.NSOrderedSet)
 }
+extension BDPointSDK.MOLifecycleEventNotification : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
 @_inheritsConvenienceInitializers @objc(MOPendingEvent) public class MOPendingEvent : CoreData.NSManagedObject {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
@@ -744,6 +833,9 @@ extension BDPointSDK.MOPendingEvent {
   @objc(removeTriggerEventsObject:) @NSManaged dynamic public func removeFromTriggerEvents(_ value: BDPointSDK.MOTriggerEventAbstract)
   @objc(addTriggerEvents:) @NSManaged dynamic public func addToTriggerEvents(_ values: Foundation.NSOrderedSet)
   @objc(removeTriggerEvents:) @NSManaged dynamic public func removeFromTriggerEvents(_ values: Foundation.NSOrderedSet)
+}
+extension BDPointSDK.MOPendingEvent : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
 }
 @objc @_inheritsConvenienceInitializers public class MOSdkInit : BDPointSDK.MOLifecycleEventAbstract {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
@@ -806,6 +898,9 @@ extension BDPointSDK.MOTriggerEventAbstract {
     @objc set
   }
 }
+extension BDPointSDK.MOTriggerEventAbstract : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
 @objc @_inheritsConvenienceInitializers public class MOTriggerEventNotification : CoreData.NSManagedObject {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
@@ -861,6 +956,9 @@ extension BDPointSDK.MOTriggerEventNotification {
   @objc(addTriggerEvents:) @NSManaged dynamic public func addToTriggerEvents(_ values: Foundation.NSOrderedSet)
   @objc(removeTriggerEvents:) @NSManaged dynamic public func removeFromTriggerEvents(_ values: Foundation.NSOrderedSet)
 }
+extension BDPointSDK.MOTriggerEventNotification : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
 @objc @_inheritsConvenienceInitializers public class MOZoneInfo : CoreData.NSManagedObject {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
@@ -892,12 +990,18 @@ extension BDPointSDK.MOZoneInfo {
     @objc set
   }
 }
+extension BDPointSDK.MOZoneInfo : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
 extension BDPointSDK.TempoUpdateETADirection : Swift.Equatable {}
 extension BDPointSDK.TempoUpdateETADirection : Swift.Hashable {}
 extension BDPointSDK.TempoUpdateETADirection : Swift.RawRepresentable {}
 extension BDPointSDK.NotificationType : Swift.Equatable {}
 extension BDPointSDK.NotificationType : Swift.Hashable {}
 extension BDPointSDK.NotificationType : Swift.RawRepresentable {}
+extension BDPointSDK.Chat.Reaction : Swift.Equatable {}
+extension BDPointSDK.Chat.Reaction : Swift.Hashable {}
+extension BDPointSDK.Chat.Reaction : Swift.RawRepresentable {}
 extension BDPointSDK.EventType : Swift.Equatable {}
 extension BDPointSDK.EventType : Swift.Hashable {}
 extension BDPointSDK.EventType : Swift.RawRepresentable {}
