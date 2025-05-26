@@ -295,6 +295,20 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/Signal Processing/Sensors/LocationSensor.swift",
+      "line": 458,
+      "symbol": "LocationSensor.startLocationUpdates()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/Signal Processing/Sensors/LocationSensor.swift",
+      "line": 495,
+      "symbol": "LocationSensor.stopLocationUpdates()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "./BDPointSDK/PublicHeaders/BDLocationManager+BDPointSDK.h",
       "line": 232,
       "symbol": "BDLocationManager.brainAI",

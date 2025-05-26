@@ -4332,6 +4332,62 @@
           },
           {
             "kind": "Var",
+            "name": "liveUpdateEnabled",
+            "printedName": "liveUpdateEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BDPointSDK@objc(cs)RemoteConfiguration(py)liveUpdateEnabled",
+            "mangledName": "$s10BDPointSDK19RemoteConfigurationC17liveUpdateEnabledSbvp",
+            "moduleName": "BDPointSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "spi_group_names": [
+              "BDPointSDKPrivate"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BDPointSDK@objc(cs)RemoteConfiguration(im)liveUpdateEnabled",
+                "mangledName": "$s10BDPointSDK19RemoteConfigurationC17liveUpdateEnabledSbvg",
+                "moduleName": "BDPointSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "spi_group_names": [
+                  "BDPointSDKPrivate"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "accuracySuppressionConfiguration",
             "printedName": "accuracySuppressionConfiguration",
             "children": [
@@ -7831,6 +7887,163 @@
         ],
         "superclassUsr": "c:objc(cs)NSObject",
         "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BDPointSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AppConfig",
+        "printedName": "AppConfig",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "isLiveUpdateEnabled",
+            "printedName": "isLiveUpdateEnabled()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BDPointSDK@objc(cs)AppConfig(cm)isLiveUpdateEnabled",
+            "mangledName": "$s10BDPointSDK9AppConfigC19isLiveUpdateEnabledSbyFZ",
+            "moduleName": "BDPointSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "spi_group_names": [
+              "BDPointSDKPrivate"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AppConfig",
+                "printedName": "BDPointSDK.AppConfig",
+                "usr": "c:@M@BDPointSDK@objc(cs)AppConfig"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BDPointSDK@objc(cs)AppConfig(im)init",
+            "mangledName": "$s10BDPointSDK9AppConfigCACycfc",
+            "moduleName": "BDPointSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "spi_group_names": [
+              "BDPointSDKPrivate"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BDPointSDK@objc(cs)AppConfig",
+        "mangledName": "$s10BDPointSDK9AppConfigC",
+        "moduleName": "BDPointSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "SPIAccessControl",
+          "ObjC"
+        ],
+        "spi_group_names": [
+          "BDPointSDKPrivate"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "ObjectiveC.NSObject"
         ],
@@ -22063,6 +22276,66 @@
                 "declKind": "Accessor",
                 "usr": "c:@M@BDPointSDK@objc(cs)PointSDKConstants(cm)defaultUseCaseType",
                 "mangledName": "$s10BDPointSDK17PointSDKConstantsC18defaultUseCaseTypeAA0fgH0OvgZ",
+                "moduleName": "BDPointSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "spi_group_names": [
+                  "BDPointSDKPrivate"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "defaultLiveUpdateEnabled",
+            "printedName": "defaultLiveUpdateEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BDPointSDK@objc(cs)PointSDKConstants(cpy)defaultLiveUpdateEnabled",
+            "mangledName": "$s10BDPointSDK17PointSDKConstantsC24defaultLiveUpdateEnabledSbvpZ",
+            "moduleName": "BDPointSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "BDPointSDKPrivate"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BDPointSDK@objc(cs)PointSDKConstants(cm)defaultLiveUpdateEnabled",
+                "mangledName": "$s10BDPointSDK17PointSDKConstantsC24defaultLiveUpdateEnabledSbvgZ",
                 "moduleName": "BDPointSDK",
                 "static": true,
                 "implicit": true,
@@ -43993,6 +44266,64 @@
         "children": [
           {
             "kind": "Function",
+            "name": "setBackgroundActivity",
+            "printedName": "setBackgroundActivity(value:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BDPointSDK@objc(cs)LocationSensor(im)setBackgroundActivityWithValue:",
+            "mangledName": "$s10BDPointSDK14LocationSensorC21setBackgroundActivity5valueySb_tF",
+            "moduleName": "BDPointSDK",
+            "intro_iOS": "17.0",
+            "objc_name": "setBackgroundActivityWithValue:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "Available"
+            ],
+            "spi_group_names": [
+              "BDPointSDKPrivate"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isUpdatesStarted",
+            "printedName": "isUpdatesStarted()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BDPointSDK@objc(cs)LocationSensor(im)isUpdatesStarted",
+            "mangledName": "$s10BDPointSDK14LocationSensorC16isUpdatesStartedSbyF",
+            "moduleName": "BDPointSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "spi_group_names": [
+              "BDPointSDKPrivate"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "onLocationUpdates",
             "printedName": "onLocationUpdates(_:)",
             "children": [
@@ -44066,6 +44397,60 @@
               "BDPointSDKPrivate"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "startLocationUpdates",
+            "printedName": "startLocationUpdates()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BDPointSDK@objc(cs)LocationSensor(im)startLocationUpdates",
+            "mangledName": "$s10BDPointSDK14LocationSensorC05startC7UpdatesyyF",
+            "moduleName": "BDPointSDK",
+            "intro_iOS": "17.0",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "spi_group_names": [
+              "BDPointSDKPrivate"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopLocationUpdates",
+            "printedName": "stopLocationUpdates()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BDPointSDK@objc(cs)LocationSensor(im)stopLocationUpdates",
+            "mangledName": "$s10BDPointSDK14LocationSensorC04stopC7UpdatesyyF",
+            "moduleName": "BDPointSDK",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "spi_group_names": [
+              "BDPointSDKPrivate"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -61200,175 +61585,182 @@
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 3450,
+      "offset": 3462,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3555,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3527,
+      "offset": 3632,
       "length": 3,
       "value": "256"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 3859,
+      "offset": 3964,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 3933,
+      "offset": 4038,
       "length": 5,
       "value": "180.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 4007,
+      "offset": 4112,
       "length": 3,
       "value": "5.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 4091,
+      "offset": 4196,
       "length": 4,
       "value": "30.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 4164,
+      "offset": 4269,
       "length": 6,
       "value": "3000.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 4251,
+      "offset": 4356,
       "length": 4,
       "value": "60.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 4347,
+      "offset": 4452,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 4428,
+      "offset": 4533,
       "length": 6,
       "value": "0.0225"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 4523,
+      "offset": 4628,
       "length": 4,
       "value": "30.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 4630,
+      "offset": 4735,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 4721,
+      "offset": 4826,
       "length": 4,
       "value": "60.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 4782,
+      "offset": 4887,
       "length": 6,
       "value": "1800.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 4888,
+      "offset": 4993,
       "length": 7,
       "value": "21600.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 5010,
+      "offset": 5115,
       "length": 7,
       "value": "86400.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 5090,
+      "offset": 5195,
       "length": 4,
       "value": "30.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 5170,
+      "offset": 5275,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 5364,
+      "offset": 5469,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 5368,
+      "offset": 5473,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 5373,
+      "offset": 5478,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 5378,
+      "offset": 5483,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 5466,
+      "offset": 5571,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 5660,
+      "offset": 5765,
       "length": 3,
       "value": "2.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 5742,
+      "offset": 5847,
       "length": 3,
       "value": "5.0"
     },
@@ -61732,7 +62124,7 @@
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/TriggerEngine.swift",
       "kind": "IntegerLiteral",
-      "offset": 571,
+      "offset": 660,
       "length": 6,
       "value": "1"
     },
@@ -62354,85 +62746,113 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Signal Processing\/Sensors\/LocationSensor.swift",
+      "kind": "StringLiteral",
+      "offset": 3736,
+      "length": 23,
+      "value": "\"BDPLiveUpdatesStarted\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Signal Processing\/Sensors\/LocationSensor.swift",
+      "kind": "StringLiteral",
+      "offset": 3642,
+      "length": 23,
+      "value": "\"BDPLiveUpdatesStarted\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Signal Processing\/Sensors\/LocationSensor.swift",
+      "kind": "StringLiteral",
+      "offset": 4689,
+      "length": 29,
+      "value": "\"BDPBGActivitySessionStarted\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Signal Processing\/Sensors\/LocationSensor.swift",
+      "kind": "StringLiteral",
+      "offset": 4272,
+      "length": 29,
+      "value": "\"BDPBGActivitySessionStarted\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Signal Processing\/Sensors\/LocationSensor.swift",
       "kind": "IntegerLiteral",
-      "offset": 3814,
+      "offset": 5805,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Signal Processing\/Sensors\/LocationSensor.swift",
       "kind": "BooleanLiteral",
-      "offset": 3870,
+      "offset": 5861,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Signal Processing\/Sensors\/LocationSensor.swift",
       "kind": "IntegerLiteral",
-      "offset": 3943,
+      "offset": 5934,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Signal Processing\/Sensors\/LocationSensor.swift",
       "kind": "IntegerLiteral",
-      "offset": 4004,
+      "offset": 5995,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Signal Processing\/Sensors\/LocationSensor.swift",
       "kind": "IntegerLiteral",
-      "offset": 4061,
+      "offset": 6052,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Signal Processing\/Sensors\/LocationSensor.swift",
       "kind": "IntegerLiteral",
-      "offset": 4140,
+      "offset": 6131,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Signal Processing\/Sensors\/LocationSensor.swift",
       "kind": "IntegerLiteral",
-      "offset": 4214,
+      "offset": 6205,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Signal Processing\/Sensors\/LocationSensor.swift",
       "kind": "IntegerLiteral",
-      "offset": 4290,
+      "offset": 6281,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Signal Processing\/Sensors\/LocationSensor.swift",
       "kind": "IntegerLiteral",
-      "offset": 4367,
+      "offset": 6358,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Signal Processing\/Sensors\/LocationSensor.swift",
       "kind": "IntegerLiteral",
-      "offset": 4442,
+      "offset": 6433,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Signal Processing\/Sensors\/LocationSensor.swift",
       "kind": "IntegerLiteral",
-      "offset": 4517,
+      "offset": 6508,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Signal Processing\/Sensors\/LocationSensor.swift",
       "kind": "StringLiteral",
-      "offset": 4978,
+      "offset": 6969,
       "length": 16,
       "value": "\"LocationSensor\""
     },
