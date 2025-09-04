@@ -508,6 +508,7 @@ SWIFT_CLASS("_TtC10BDPointSDK4Chat")
 @end
 
 
+
 @interface Chat (SWIFT_EXTENSION(BDPointSDK))
 @end
 
@@ -515,7 +516,6 @@ typedef SWIFT_ENUM(NSInteger, Reaction, open) {
   ReactionLiked = 0,
   ReactionDisliked = 1,
 };
-
 
 @class NSURL;
 @class NSNumber;
@@ -572,15 +572,15 @@ SWIFT_CLASS("_TtC10BDPointSDK12CrossedFence")
 @end
 
 
+@interface CrossedFence (SWIFT_EXTENSION(BDPointSDK)) <NSCopying>
+- (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
 @interface CrossedFence (SWIFT_EXTENSION(BDPointSDK)) <JsonString>
 /// Convert to JSON string
 /// This function throws an error if JSON encoding process fails
 - (NSString * _Nullable)toJson:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
-@end
-
-
-@interface CrossedFence (SWIFT_EXTENSION(BDPointSDK)) <NSCopying>
-- (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -844,6 +844,7 @@ SWIFT_PROTOCOL("_TtP10BDPointSDK12TriggerEvent_")
 @end
 
 
+
 @interface FenceEntered (SWIFT_EXTENSION(BDPointSDK)) <NSCopying>
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
 @end
@@ -854,7 +855,6 @@ SWIFT_PROTOCOL("_TtP10BDPointSDK12TriggerEvent_")
 /// This function throws an error if JSON encoding process fails
 - (NSString * _Nullable)toJson:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 @end
-
 
 
 @interface FenceEntered (SWIFT_EXTENSION(BDPointSDK))
@@ -917,6 +917,10 @@ SWIFT_CLASS("_TtC10BDPointSDK11FenceExited")
 @end
 
 
+@interface FenceExited (SWIFT_EXTENSION(BDPointSDK)) <NSCopying>
+- (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
+@end
+
 
 @interface FenceExited (SWIFT_EXTENSION(BDPointSDK)) <JsonString>
 /// Convert to JSON string
@@ -924,10 +928,6 @@ SWIFT_CLASS("_TtC10BDPointSDK11FenceExited")
 - (NSString * _Nullable)toJson:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 @end
 
-
-@interface FenceExited (SWIFT_EXTENSION(BDPointSDK)) <NSCopying>
-- (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
-@end
 
 
 @interface FenceExited (SWIFT_EXTENSION(BDPointSDK))
@@ -1176,7 +1176,7 @@ SWIFT_CLASS("_TtC10BDPointSDK9MOAppInfo")
 @interface MOAppInfo (SWIFT_EXTENSION(BDPointSDK))
 @property (nonatomic, copy) NSString * _Nullable appBuildVersion;
 @property (nonatomic, copy) NSString * _Nullable customerApplicationId;
-@property (nonatomic, copy) NSDictionary<NSString *, NSString *> * _Nullable customEventMetaData;
+@property (nonatomic, strong) NSDictionary * _Nullable customEventMetaData;
 @property (nonatomic, copy) NSString * _Nullable minimumOSVersion;
 @property (nonatomic, copy) NSString * _Nullable sdkVersion;
 @property (nonatomic, copy) NSString * _Nullable uniqueIdString;
@@ -1201,7 +1201,7 @@ SWIFT_CLASS("_TtC10BDPointSDK10MOAppState")
 @property (nonatomic, copy) NSDate * _Nullable lastRuleDownload;
 @property (nonatomic, copy) NSString * _Nullable locationPermission;
 @property (nonatomic, copy) NSString * _Nullable notificationPermission;
-@property (nonatomic, copy) NSArray<NSString *> * _Nullable osRestrictions;
+@property (nonatomic, strong) NSArray * _Nullable osRestrictions;
 @property (nonatomic, copy) NSString * _Nullable uniqueIdString;
 @property (nonatomic, copy) NSString * _Nullable viewState;
 @property (nonatomic, strong) MOLifecycleEventAbstract * _Nullable lifecycleEvent;
@@ -1404,7 +1404,7 @@ SWIFT_CLASS("_TtC10BDPointSDK10MOSdkReset")
 @property (nonatomic, copy) NSDate * _Nullable eventTime;
 @property (nonatomic, copy) NSString * _Nullable fenceIdString;
 @property (nonatomic, copy) NSString * _Nullable fenceName;
-@property (nonatomic, copy) NSArray<CLLocation *> * _Nullable locations;
+@property (nonatomic, strong) NSArray * _Nullable locations;
 @property (nonatomic, copy) NSString * _Nullable timeZoneIdentifier;
 @property (nonatomic, copy) NSString * _Nullable triggerEngine;
 @property (nonatomic, copy) NSString * _Nullable uniqueIdString;
@@ -1456,7 +1456,7 @@ SWIFT_CLASS("_TtC10BDPointSDK10MOZoneInfo")
 
 
 @interface MOZoneInfo (SWIFT_EXTENSION(BDPointSDK))
-@property (nonatomic, copy) NSDictionary<NSString *, NSString *> * _Nullable customData;
+@property (nonatomic, strong) NSDictionary * _Nullable customData;
 @property (nonatomic, copy) NSString * _Nullable name;
 @property (nonatomic, copy) NSString * _Nullable uniqueIdString;
 @property (nonatomic, copy) NSString * _Nullable zoneInfoIdString;
@@ -1560,7 +1560,11 @@ SWIFT_CLASS("_TtC10BDPointSDK23PersistantStoreMigrator")
 /// PointAPI is completed ported to Swift.
 SWIFT_CLASS("_TtC10BDPointSDK9PointAPIs")
 @interface PointAPIs : NSObject
-+ (void)refreshGlobalConfigWithProjectId:(NSString * _Nonnull)projectId completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+/// Fetch Global Config from cache if available. Update the global config from API if the cache is expired
+/// Return onFirstData completion handler when any data either cached or API is available which is the first. Also return boolean to show if the data was cached
+/// Return onUpdatedData completion handler when the data is updated from API
+/// Unfortunately, optional closures are not supported in Objective-C. We can make them optional when move to Swift completely
++ (void)refreshGlobalConfigWithProjectId:(NSString * _Nonnull)projectId onFirstData:(void (^ _Nonnull)(BOOL, NSError * _Nullable))onFirstData onUpdatedData:(void (^ _Nonnull)(NSError * _Nullable))onUpdatedData;
 /// Get Remote Config with no retry
 + (void)getRemoteConfigWithProjectId:(NSString * _Nonnull)projectId completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 + (void)fetchRuleSetWithRulesRequest:(BDRulesRequest * _Nonnull)rulesRequest completion:(void (^ _Nonnull)(BDRuleSet * _Nullable, NSError * _Nullable))completion;
@@ -1636,6 +1640,18 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) double defaultNative
 + (double)defaultNativeFenceTrackerCheckoutDistance SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) double defaultNativeFenceTrackerMinLocationUpdateInterval;)
 + (double)defaultNativeFenceTrackerMinLocationUpdateInterval SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger defaultExitScoreThreshold;)
++ (NSInteger)defaultExitScoreThreshold SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger defaultExitScoreCenterInAccuracyIn;)
++ (NSInteger)defaultExitScoreCenterInAccuracyIn SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger defaultExitScoreCenterInAccuracyOut;)
++ (NSInteger)defaultExitScoreCenterInAccuracyOut SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger defaultExitScoreCenterOutAccuracyOutButIntersects;)
++ (NSInteger)defaultExitScoreCenterOutAccuracyOutButIntersects SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger defaultExitScoreVerifiedOut;)
++ (NSInteger)defaultExitScoreVerifiedOut SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger defaultExitScoreBounce;)
++ (NSInteger)defaultExitScoreBounce SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL defaultLocationInputFilteringEnabled;)
 + (BOOL)defaultLocationInputFilteringEnabled SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull defaultEndpointUrl;)
@@ -1749,6 +1765,12 @@ SWIFT_CLASS("_TtC10BDPointSDK19RemoteConfiguration")
 @property (nonatomic, readonly) CLLocationDistance fenceTrackerNativeCheckoutDistance;
 @property (nonatomic, readonly) double fenceTrackerNativeMinLocationUpdateInterval;
 @property (nonatomic, readonly) int32_t maxMonitoringRegions;
+@property (nonatomic, readonly) NSInteger exitScoreThreshold;
+@property (nonatomic, readonly) NSInteger exitScoreCenterInAccuracyIn;
+@property (nonatomic, readonly) NSInteger exitScoreCenterInAccuracyOut;
+@property (nonatomic, readonly) NSInteger exitScoreCenterOutAccuracyOutButIntersects;
+@property (nonatomic, readonly) NSInteger exitScoreVerifiedOut;
+@property (nonatomic, readonly) NSInteger exitScoreBounce;
 @property (nonatomic, readonly) double accuracyModifierFocalDistanceCoefficient;
 @property (nonatomic, readonly) BOOL periodicPollingEnabled;
 @property (nonatomic, readonly) CLLocationDistance periodicPollingLocationBasicTriggerThreshold;
@@ -1776,6 +1798,16 @@ typedef SWIFT_ENUM(NSInteger, SDKApplicationState, open) {
   SDKApplicationStateActive = 0,
   SDKApplicationStateBackground = 1,
 };
+
+
+SWIFT_CLASS("_TtC10BDPointSDK23ScoreBasedExitEvaluator")
+@interface ScoreBasedExitEvaluator : NSObject
+- (nonnull instancetype)initWithLogger:(id <Logger> _Nonnull)logger OBJC_DESIGNATED_INITIALIZER;
+- (BOOL)shouldTriggerExitFor:(PendingEvent * _Nonnull)event location:(BDLocation * _Nonnull)location timestamp:(NSDate * _Nullable)timestamp SWIFT_WARN_UNUSED_RESULT;
+- (void)clearScoreFor:(PendingEvent * _Nonnull)event;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 
 SWIFT_CLASS("_TtC10BDPointSDK7SdkInit")
@@ -1961,12 +1993,12 @@ SWIFT_CLASS("_TtC10BDPointSDK19TempoTrackingUpdate")
 @end
 
 
-
 @interface TempoTrackingUpdate (SWIFT_EXTENSION(BDPointSDK)) <JsonString>
 /// Convert to JSON string
 /// This function throws an error if JSON encoding process fails
 - (NSString * _Nullable)toJson:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 @end
+
 
 
 @interface TempoTrackingUpdate (SWIFT_EXTENSION(BDPointSDK))
@@ -2614,6 +2646,7 @@ SWIFT_CLASS("_TtC10BDPointSDK4Chat")
 @end
 
 
+
 @interface Chat (SWIFT_EXTENSION(BDPointSDK))
 @end
 
@@ -2621,7 +2654,6 @@ typedef SWIFT_ENUM(NSInteger, Reaction, open) {
   ReactionLiked = 0,
   ReactionDisliked = 1,
 };
-
 
 @class NSURL;
 @class NSNumber;
@@ -2678,15 +2710,15 @@ SWIFT_CLASS("_TtC10BDPointSDK12CrossedFence")
 @end
 
 
+@interface CrossedFence (SWIFT_EXTENSION(BDPointSDK)) <NSCopying>
+- (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
 @interface CrossedFence (SWIFT_EXTENSION(BDPointSDK)) <JsonString>
 /// Convert to JSON string
 /// This function throws an error if JSON encoding process fails
 - (NSString * _Nullable)toJson:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
-@end
-
-
-@interface CrossedFence (SWIFT_EXTENSION(BDPointSDK)) <NSCopying>
-- (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -2950,6 +2982,7 @@ SWIFT_PROTOCOL("_TtP10BDPointSDK12TriggerEvent_")
 @end
 
 
+
 @interface FenceEntered (SWIFT_EXTENSION(BDPointSDK)) <NSCopying>
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
 @end
@@ -2960,7 +2993,6 @@ SWIFT_PROTOCOL("_TtP10BDPointSDK12TriggerEvent_")
 /// This function throws an error if JSON encoding process fails
 - (NSString * _Nullable)toJson:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 @end
-
 
 
 @interface FenceEntered (SWIFT_EXTENSION(BDPointSDK))
@@ -3023,6 +3055,10 @@ SWIFT_CLASS("_TtC10BDPointSDK11FenceExited")
 @end
 
 
+@interface FenceExited (SWIFT_EXTENSION(BDPointSDK)) <NSCopying>
+- (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
+@end
+
 
 @interface FenceExited (SWIFT_EXTENSION(BDPointSDK)) <JsonString>
 /// Convert to JSON string
@@ -3030,10 +3066,6 @@ SWIFT_CLASS("_TtC10BDPointSDK11FenceExited")
 - (NSString * _Nullable)toJson:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 @end
 
-
-@interface FenceExited (SWIFT_EXTENSION(BDPointSDK)) <NSCopying>
-- (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
-@end
 
 
 @interface FenceExited (SWIFT_EXTENSION(BDPointSDK))
@@ -3282,7 +3314,7 @@ SWIFT_CLASS("_TtC10BDPointSDK9MOAppInfo")
 @interface MOAppInfo (SWIFT_EXTENSION(BDPointSDK))
 @property (nonatomic, copy) NSString * _Nullable appBuildVersion;
 @property (nonatomic, copy) NSString * _Nullable customerApplicationId;
-@property (nonatomic, copy) NSDictionary<NSString *, NSString *> * _Nullable customEventMetaData;
+@property (nonatomic, strong) NSDictionary * _Nullable customEventMetaData;
 @property (nonatomic, copy) NSString * _Nullable minimumOSVersion;
 @property (nonatomic, copy) NSString * _Nullable sdkVersion;
 @property (nonatomic, copy) NSString * _Nullable uniqueIdString;
@@ -3307,7 +3339,7 @@ SWIFT_CLASS("_TtC10BDPointSDK10MOAppState")
 @property (nonatomic, copy) NSDate * _Nullable lastRuleDownload;
 @property (nonatomic, copy) NSString * _Nullable locationPermission;
 @property (nonatomic, copy) NSString * _Nullable notificationPermission;
-@property (nonatomic, copy) NSArray<NSString *> * _Nullable osRestrictions;
+@property (nonatomic, strong) NSArray * _Nullable osRestrictions;
 @property (nonatomic, copy) NSString * _Nullable uniqueIdString;
 @property (nonatomic, copy) NSString * _Nullable viewState;
 @property (nonatomic, strong) MOLifecycleEventAbstract * _Nullable lifecycleEvent;
@@ -3510,7 +3542,7 @@ SWIFT_CLASS("_TtC10BDPointSDK10MOSdkReset")
 @property (nonatomic, copy) NSDate * _Nullable eventTime;
 @property (nonatomic, copy) NSString * _Nullable fenceIdString;
 @property (nonatomic, copy) NSString * _Nullable fenceName;
-@property (nonatomic, copy) NSArray<CLLocation *> * _Nullable locations;
+@property (nonatomic, strong) NSArray * _Nullable locations;
 @property (nonatomic, copy) NSString * _Nullable timeZoneIdentifier;
 @property (nonatomic, copy) NSString * _Nullable triggerEngine;
 @property (nonatomic, copy) NSString * _Nullable uniqueIdString;
@@ -3562,7 +3594,7 @@ SWIFT_CLASS("_TtC10BDPointSDK10MOZoneInfo")
 
 
 @interface MOZoneInfo (SWIFT_EXTENSION(BDPointSDK))
-@property (nonatomic, copy) NSDictionary<NSString *, NSString *> * _Nullable customData;
+@property (nonatomic, strong) NSDictionary * _Nullable customData;
 @property (nonatomic, copy) NSString * _Nullable name;
 @property (nonatomic, copy) NSString * _Nullable uniqueIdString;
 @property (nonatomic, copy) NSString * _Nullable zoneInfoIdString;
@@ -3666,7 +3698,11 @@ SWIFT_CLASS("_TtC10BDPointSDK23PersistantStoreMigrator")
 /// PointAPI is completed ported to Swift.
 SWIFT_CLASS("_TtC10BDPointSDK9PointAPIs")
 @interface PointAPIs : NSObject
-+ (void)refreshGlobalConfigWithProjectId:(NSString * _Nonnull)projectId completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+/// Fetch Global Config from cache if available. Update the global config from API if the cache is expired
+/// Return onFirstData completion handler when any data either cached or API is available which is the first. Also return boolean to show if the data was cached
+/// Return onUpdatedData completion handler when the data is updated from API
+/// Unfortunately, optional closures are not supported in Objective-C. We can make them optional when move to Swift completely
++ (void)refreshGlobalConfigWithProjectId:(NSString * _Nonnull)projectId onFirstData:(void (^ _Nonnull)(BOOL, NSError * _Nullable))onFirstData onUpdatedData:(void (^ _Nonnull)(NSError * _Nullable))onUpdatedData;
 /// Get Remote Config with no retry
 + (void)getRemoteConfigWithProjectId:(NSString * _Nonnull)projectId completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 + (void)fetchRuleSetWithRulesRequest:(BDRulesRequest * _Nonnull)rulesRequest completion:(void (^ _Nonnull)(BDRuleSet * _Nullable, NSError * _Nullable))completion;
@@ -3742,6 +3778,18 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) double defaultNative
 + (double)defaultNativeFenceTrackerCheckoutDistance SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) double defaultNativeFenceTrackerMinLocationUpdateInterval;)
 + (double)defaultNativeFenceTrackerMinLocationUpdateInterval SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger defaultExitScoreThreshold;)
++ (NSInteger)defaultExitScoreThreshold SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger defaultExitScoreCenterInAccuracyIn;)
++ (NSInteger)defaultExitScoreCenterInAccuracyIn SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger defaultExitScoreCenterInAccuracyOut;)
++ (NSInteger)defaultExitScoreCenterInAccuracyOut SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger defaultExitScoreCenterOutAccuracyOutButIntersects;)
++ (NSInteger)defaultExitScoreCenterOutAccuracyOutButIntersects SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger defaultExitScoreVerifiedOut;)
++ (NSInteger)defaultExitScoreVerifiedOut SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger defaultExitScoreBounce;)
++ (NSInteger)defaultExitScoreBounce SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL defaultLocationInputFilteringEnabled;)
 + (BOOL)defaultLocationInputFilteringEnabled SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull defaultEndpointUrl;)
@@ -3855,6 +3903,12 @@ SWIFT_CLASS("_TtC10BDPointSDK19RemoteConfiguration")
 @property (nonatomic, readonly) CLLocationDistance fenceTrackerNativeCheckoutDistance;
 @property (nonatomic, readonly) double fenceTrackerNativeMinLocationUpdateInterval;
 @property (nonatomic, readonly) int32_t maxMonitoringRegions;
+@property (nonatomic, readonly) NSInteger exitScoreThreshold;
+@property (nonatomic, readonly) NSInteger exitScoreCenterInAccuracyIn;
+@property (nonatomic, readonly) NSInteger exitScoreCenterInAccuracyOut;
+@property (nonatomic, readonly) NSInteger exitScoreCenterOutAccuracyOutButIntersects;
+@property (nonatomic, readonly) NSInteger exitScoreVerifiedOut;
+@property (nonatomic, readonly) NSInteger exitScoreBounce;
 @property (nonatomic, readonly) double accuracyModifierFocalDistanceCoefficient;
 @property (nonatomic, readonly) BOOL periodicPollingEnabled;
 @property (nonatomic, readonly) CLLocationDistance periodicPollingLocationBasicTriggerThreshold;
@@ -3882,6 +3936,16 @@ typedef SWIFT_ENUM(NSInteger, SDKApplicationState, open) {
   SDKApplicationStateActive = 0,
   SDKApplicationStateBackground = 1,
 };
+
+
+SWIFT_CLASS("_TtC10BDPointSDK23ScoreBasedExitEvaluator")
+@interface ScoreBasedExitEvaluator : NSObject
+- (nonnull instancetype)initWithLogger:(id <Logger> _Nonnull)logger OBJC_DESIGNATED_INITIALIZER;
+- (BOOL)shouldTriggerExitFor:(PendingEvent * _Nonnull)event location:(BDLocation * _Nonnull)location timestamp:(NSDate * _Nullable)timestamp SWIFT_WARN_UNUSED_RESULT;
+- (void)clearScoreFor:(PendingEvent * _Nonnull)event;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 
 SWIFT_CLASS("_TtC10BDPointSDK7SdkInit")
@@ -4067,12 +4131,12 @@ SWIFT_CLASS("_TtC10BDPointSDK19TempoTrackingUpdate")
 @end
 
 
-
 @interface TempoTrackingUpdate (SWIFT_EXTENSION(BDPointSDK)) <JsonString>
 /// Convert to JSON string
 /// This function throws an error if JSON encoding process fails
 - (NSString * _Nullable)toJson:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 @end
+
 
 
 @interface TempoTrackingUpdate (SWIFT_EXTENSION(BDPointSDK))

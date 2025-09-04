@@ -521,7 +521,7 @@ extension BDPointSDK.MOAppInfo {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var customEventMetaData: Swift.Dictionary<Swift.String, Swift.String>? {
+  @objc @NSManaged dynamic public var customEventMetaData: Foundation.NSDictionary? {
     @objc get
     @objc set
   }
@@ -575,7 +575,7 @@ extension BDPointSDK.MOAppState {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var osRestrictions: Swift.Array<Swift.String>? {
+  @objc @NSManaged dynamic public var osRestrictions: Foundation.NSArray? {
     @objc get
     @objc set
   }
@@ -869,7 +869,7 @@ extension BDPointSDK.MOTriggerEventAbstract {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var locations: Swift.Array<CoreLocation.CLLocation>? {
+  @objc @NSManaged dynamic public var locations: Foundation.NSArray? {
     @objc get
     @objc set
   }
@@ -965,7 +965,7 @@ extension BDPointSDK.MOTriggerEventNotification : Swift.Identifiable {
 }
 extension BDPointSDK.MOZoneInfo {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<BDPointSDK.MOZoneInfo>
-  @objc @NSManaged dynamic public var customData: Swift.Dictionary<Swift.String, Swift.String>? {
+  @objc @NSManaged dynamic public var customData: Foundation.NSDictionary? {
     @objc get
     @objc set
   }

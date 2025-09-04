@@ -32,7 +32,7 @@
           {
             "kind": "Function",
             "name": "refreshGlobalConfig",
-            "printedName": "refreshGlobalConfig(projectId:completion:)",
+            "printedName": "refreshGlobalConfig(projectId:onFirstData:onUpdatedData:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -83,14 +83,40 @@
                     ]
                   }
                 ]
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "((any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any Swift.Error)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BDPointSDK@objc(cs)PointAPIs(cm)refreshGlobalConfigWithProjectId:completion:",
-            "mangledName": "$s10BDPointSDK9PointAPIsC19refreshGlobalConfig9projectId10completionySS_ySb_s5Error_pSgtctFZ",
+            "usr": "c:@M@BDPointSDK@objc(cs)PointAPIs(cm)refreshGlobalConfigWithProjectId:onFirstData:onUpdatedData:",
+            "mangledName": "$s10BDPointSDK9PointAPIsC19refreshGlobalConfig9projectId11onFirstData0j7UpdatedL0ySS_ySb_s5Error_pSgtcyAIctFZ",
             "moduleName": "BDPointSDK",
             "static": true,
-            "objc_name": "refreshGlobalConfigWithProjectId:completion:",
+            "objc_name": "refreshGlobalConfigWithProjectId:onFirstData:onUpdatedData:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -2410,6 +2436,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BDPointSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "CrossedFence",
         "printedName": "CrossedFence",
@@ -3981,6 +4017,343 @@
                 "declKind": "Accessor",
                 "usr": "c:@M@BDPointSDK@objc(cs)RemoteConfiguration(im)maxMonitoringRegions",
                 "mangledName": "$s10BDPointSDK19RemoteConfigurationC20maxMonitoringRegionss5Int32Vvg",
+                "moduleName": "BDPointSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "spi_group_names": [
+                  "BDPointSDKPrivate"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "exitScoreThreshold",
+            "printedName": "exitScoreThreshold",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BDPointSDK@objc(cs)RemoteConfiguration(py)exitScoreThreshold",
+            "mangledName": "$s10BDPointSDK19RemoteConfigurationC18exitScoreThresholdSivp",
+            "moduleName": "BDPointSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "spi_group_names": [
+              "BDPointSDKPrivate"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BDPointSDK@objc(cs)RemoteConfiguration(im)exitScoreThreshold",
+                "mangledName": "$s10BDPointSDK19RemoteConfigurationC18exitScoreThresholdSivg",
+                "moduleName": "BDPointSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "spi_group_names": [
+                  "BDPointSDKPrivate"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "exitScoreCenterInAccuracyIn",
+            "printedName": "exitScoreCenterInAccuracyIn",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BDPointSDK@objc(cs)RemoteConfiguration(py)exitScoreCenterInAccuracyIn",
+            "mangledName": "$s10BDPointSDK19RemoteConfigurationC025exitScoreCenterInAccuracyH0Sivp",
+            "moduleName": "BDPointSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "spi_group_names": [
+              "BDPointSDKPrivate"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BDPointSDK@objc(cs)RemoteConfiguration(im)exitScoreCenterInAccuracyIn",
+                "mangledName": "$s10BDPointSDK19RemoteConfigurationC025exitScoreCenterInAccuracyH0Sivg",
+                "moduleName": "BDPointSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "spi_group_names": [
+                  "BDPointSDKPrivate"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "exitScoreCenterInAccuracyOut",
+            "printedName": "exitScoreCenterInAccuracyOut",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BDPointSDK@objc(cs)RemoteConfiguration(py)exitScoreCenterInAccuracyOut",
+            "mangledName": "$s10BDPointSDK19RemoteConfigurationC28exitScoreCenterInAccuracyOutSivp",
+            "moduleName": "BDPointSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "spi_group_names": [
+              "BDPointSDKPrivate"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BDPointSDK@objc(cs)RemoteConfiguration(im)exitScoreCenterInAccuracyOut",
+                "mangledName": "$s10BDPointSDK19RemoteConfigurationC28exitScoreCenterInAccuracyOutSivg",
+                "moduleName": "BDPointSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "spi_group_names": [
+                  "BDPointSDKPrivate"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "exitScoreCenterOutAccuracyOutButIntersects",
+            "printedName": "exitScoreCenterOutAccuracyOutButIntersects",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BDPointSDK@objc(cs)RemoteConfiguration(py)exitScoreCenterOutAccuracyOutButIntersects",
+            "mangledName": "$s10BDPointSDK19RemoteConfigurationC026exitScoreCenterOutAccuracyH13ButIntersectsSivp",
+            "moduleName": "BDPointSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "spi_group_names": [
+              "BDPointSDKPrivate"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BDPointSDK@objc(cs)RemoteConfiguration(im)exitScoreCenterOutAccuracyOutButIntersects",
+                "mangledName": "$s10BDPointSDK19RemoteConfigurationC026exitScoreCenterOutAccuracyH13ButIntersectsSivg",
+                "moduleName": "BDPointSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "spi_group_names": [
+                  "BDPointSDKPrivate"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "exitScoreVerifiedOut",
+            "printedName": "exitScoreVerifiedOut",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BDPointSDK@objc(cs)RemoteConfiguration(py)exitScoreVerifiedOut",
+            "mangledName": "$s10BDPointSDK19RemoteConfigurationC20exitScoreVerifiedOutSivp",
+            "moduleName": "BDPointSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "spi_group_names": [
+              "BDPointSDKPrivate"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BDPointSDK@objc(cs)RemoteConfiguration(im)exitScoreVerifiedOut",
+                "mangledName": "$s10BDPointSDK19RemoteConfigurationC20exitScoreVerifiedOutSivg",
+                "moduleName": "BDPointSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "spi_group_names": [
+                  "BDPointSDKPrivate"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "exitScoreBounce",
+            "printedName": "exitScoreBounce",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BDPointSDK@objc(cs)RemoteConfiguration(py)exitScoreBounce",
+            "mangledName": "$s10BDPointSDK19RemoteConfigurationC15exitScoreBounceSivp",
+            "moduleName": "BDPointSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "spi_group_names": [
+              "BDPointSDKPrivate"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BDPointSDK@objc(cs)RemoteConfiguration(im)exitScoreBounce",
+                "mangledName": "$s10BDPointSDK19RemoteConfigurationC15exitScoreBounceSivg",
                 "moduleName": "BDPointSDK",
                 "implicit": true,
                 "declAttributes": [
@@ -21816,6 +22189,361 @@
           },
           {
             "kind": "Var",
+            "name": "defaultExitScoreThreshold",
+            "printedName": "defaultExitScoreThreshold",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BDPointSDK@objc(cs)PointSDKConstants(cpy)defaultExitScoreThreshold",
+            "mangledName": "$s10BDPointSDK17PointSDKConstantsC25defaultExitScoreThresholdSivpZ",
+            "moduleName": "BDPointSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "BDPointSDKPrivate"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BDPointSDK@objc(cs)PointSDKConstants(cm)defaultExitScoreThreshold",
+                "mangledName": "$s10BDPointSDK17PointSDKConstantsC25defaultExitScoreThresholdSivgZ",
+                "moduleName": "BDPointSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "spi_group_names": [
+                  "BDPointSDKPrivate"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "defaultExitScoreCenterInAccuracyIn",
+            "printedName": "defaultExitScoreCenterInAccuracyIn",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BDPointSDK@objc(cs)PointSDKConstants(cpy)defaultExitScoreCenterInAccuracyIn",
+            "mangledName": "$s10BDPointSDK17PointSDKConstantsC032defaultExitScoreCenterInAccuracyI0SivpZ",
+            "moduleName": "BDPointSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "spi_group_names": [
+              "BDPointSDKPrivate"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BDPointSDK@objc(cs)PointSDKConstants(cm)defaultExitScoreCenterInAccuracyIn",
+                "mangledName": "$s10BDPointSDK17PointSDKConstantsC032defaultExitScoreCenterInAccuracyI0SivgZ",
+                "moduleName": "BDPointSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "spi_group_names": [
+                  "BDPointSDKPrivate"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "defaultExitScoreCenterInAccuracyOut",
+            "printedName": "defaultExitScoreCenterInAccuracyOut",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BDPointSDK@objc(cs)PointSDKConstants(cpy)defaultExitScoreCenterInAccuracyOut",
+            "mangledName": "$s10BDPointSDK17PointSDKConstantsC35defaultExitScoreCenterInAccuracyOutSivpZ",
+            "moduleName": "BDPointSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "spi_group_names": [
+              "BDPointSDKPrivate"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BDPointSDK@objc(cs)PointSDKConstants(cm)defaultExitScoreCenterInAccuracyOut",
+                "mangledName": "$s10BDPointSDK17PointSDKConstantsC35defaultExitScoreCenterInAccuracyOutSivgZ",
+                "moduleName": "BDPointSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "spi_group_names": [
+                  "BDPointSDKPrivate"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "defaultExitScoreCenterOutAccuracyOutButIntersects",
+            "printedName": "defaultExitScoreCenterOutAccuracyOutButIntersects",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BDPointSDK@objc(cs)PointSDKConstants(cpy)defaultExitScoreCenterOutAccuracyOutButIntersects",
+            "mangledName": "$s10BDPointSDK17PointSDKConstantsC033defaultExitScoreCenterOutAccuracyI13ButIntersectsSivpZ",
+            "moduleName": "BDPointSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "spi_group_names": [
+              "BDPointSDKPrivate"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BDPointSDK@objc(cs)PointSDKConstants(cm)defaultExitScoreCenterOutAccuracyOutButIntersects",
+                "mangledName": "$s10BDPointSDK17PointSDKConstantsC033defaultExitScoreCenterOutAccuracyI13ButIntersectsSivgZ",
+                "moduleName": "BDPointSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "spi_group_names": [
+                  "BDPointSDKPrivate"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "defaultExitScoreVerifiedOut",
+            "printedName": "defaultExitScoreVerifiedOut",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BDPointSDK@objc(cs)PointSDKConstants(cpy)defaultExitScoreVerifiedOut",
+            "mangledName": "$s10BDPointSDK17PointSDKConstantsC27defaultExitScoreVerifiedOutSivpZ",
+            "moduleName": "BDPointSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "spi_group_names": [
+              "BDPointSDKPrivate"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BDPointSDK@objc(cs)PointSDKConstants(cm)defaultExitScoreVerifiedOut",
+                "mangledName": "$s10BDPointSDK17PointSDKConstantsC27defaultExitScoreVerifiedOutSivgZ",
+                "moduleName": "BDPointSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "spi_group_names": [
+                  "BDPointSDKPrivate"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "defaultExitScoreBounce",
+            "printedName": "defaultExitScoreBounce",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BDPointSDK@objc(cs)PointSDKConstants(cpy)defaultExitScoreBounce",
+            "mangledName": "$s10BDPointSDK17PointSDKConstantsC22defaultExitScoreBounceSivpZ",
+            "moduleName": "BDPointSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "spi_group_names": [
+              "BDPointSDKPrivate"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BDPointSDK@objc(cs)PointSDKConstants(cm)defaultExitScoreBounce",
+                "mangledName": "$s10BDPointSDK17PointSDKConstantsC22defaultExitScoreBounceSivgZ",
+                "moduleName": "BDPointSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "spi_group_names": [
+                  "BDPointSDKPrivate"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "defaultLocationInputFilteringEnabled",
             "printedName": "defaultLocationInputFilteringEnabled",
             "children": [
@@ -32325,6 +33053,250 @@
         "moduleName": "BDPointSDK",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BDPointSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ScoreBasedExitEvaluator",
+        "printedName": "ScoreBasedExitEvaluator",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(logger:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ScoreBasedExitEvaluator",
+                "printedName": "BDPointSDK.ScoreBasedExitEvaluator",
+                "usr": "c:@M@BDPointSDK@objc(cs)ScoreBasedExitEvaluator"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Logger",
+                "printedName": "any BDPointSDK.Logger",
+                "usr": "c:@M@BDPointSDK@objc(pl)Logger"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BDPointSDK@objc(cs)ScoreBasedExitEvaluator(im)initWithLogger:",
+            "mangledName": "$s10BDPointSDK23ScoreBasedExitEvaluatorC6loggerAcA6Logger_p_tcfc",
+            "moduleName": "BDPointSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "spi_group_names": [
+              "BDPointSDKPrivate"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "shouldTriggerExit",
+            "printedName": "shouldTriggerExit(for:location:timestamp:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PendingEvent",
+                "printedName": "BDPointSDK.PendingEvent",
+                "usr": "c:@M@BDPointSDK@objc(cs)PendingEvent"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BDLocation",
+                "printedName": "BDPointSDK.BDLocation",
+                "usr": "c:objc(cs)BDLocation"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BDPointSDK@objc(cs)ScoreBasedExitEvaluator(im)shouldTriggerExitFor:location:timestamp:",
+            "mangledName": "$s10BDPointSDK23ScoreBasedExitEvaluatorC013shouldTriggerE03for8location9timestampSbAA12PendingEventC_So10BDLocationC10Foundation4DateVSgtF",
+            "moduleName": "BDPointSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "spi_group_names": [
+              "BDPointSDKPrivate"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clearScore",
+            "printedName": "clearScore(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PendingEvent",
+                "printedName": "BDPointSDK.PendingEvent",
+                "usr": "c:@M@BDPointSDK@objc(cs)PendingEvent"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BDPointSDK@objc(cs)ScoreBasedExitEvaluator(im)clearScoreFor:",
+            "mangledName": "$s10BDPointSDK23ScoreBasedExitEvaluatorC05clearC03foryAA12PendingEventC_tF",
+            "moduleName": "BDPointSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "spi_group_names": [
+              "BDPointSDKPrivate"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ScoreBasedExitEvaluator",
+                "printedName": "BDPointSDK.ScoreBasedExitEvaluator",
+                "usr": "c:@M@BDPointSDK@objc(cs)ScoreBasedExitEvaluator"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BDPointSDK@objc(cs)ScoreBasedExitEvaluator(im)init",
+            "mangledName": "$s10BDPointSDK23ScoreBasedExitEvaluatorCACycfc",
+            "moduleName": "BDPointSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "spi_group_names": [
+              "BDPointSDKPrivate"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BDPointSDK@objc(cs)ScoreBasedExitEvaluator",
+        "mangledName": "$s10BDPointSDK23ScoreBasedExitEvaluatorC",
+        "moduleName": "BDPointSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjCMembers",
+          "SPIAccessControl",
+          "ObjC"
+        ],
+        "spi_group_names": [
+          "BDPointSDKPrivate"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
         ]
       },
       {
@@ -45012,27 +45984,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "[Swift.String : Swift.String]?",
+                "printedName": "Foundation.NSDictionary?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.String : Swift.String]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:SD"
+                    "name": "NSDictionary",
+                    "printedName": "Foundation.NSDictionary",
+                    "usr": "c:objc(cs)NSDictionary"
                   }
                 ],
                 "usr": "s:Sq"
@@ -45040,7 +45998,7 @@
             ],
             "declKind": "Var",
             "usr": "c:@CM@BDPointSDK@objc(cs)MOAppInfo(py)customEventMetaData",
-            "mangledName": "$s10BDPointSDK9MOAppInfoC19customEventMetaDataSDyS2SGSgvp",
+            "mangledName": "$s10BDPointSDK9MOAppInfoC19customEventMetaDataSo12NSDictionaryCSgvp",
             "moduleName": "BDPointSDK",
             "declAttributes": [
               "Dynamic",
@@ -45058,27 +46016,13 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "[Swift.String : Swift.String]?",
+                    "printedName": "Foundation.NSDictionary?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Dictionary",
-                        "printedName": "[Swift.String : Swift.String]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ],
-                        "usr": "s:SD"
+                        "name": "NSDictionary",
+                        "printedName": "Foundation.NSDictionary",
+                        "usr": "c:objc(cs)NSDictionary"
                       }
                     ],
                     "usr": "s:Sq"
@@ -45086,7 +46030,7 @@
                 ],
                 "declKind": "Accessor",
                 "usr": "c:@CM@BDPointSDK@objc(cs)MOAppInfo(im)customEventMetaData",
-                "mangledName": "$s10BDPointSDK9MOAppInfoC19customEventMetaDataSDyS2SGSgvg",
+                "mangledName": "$s10BDPointSDK9MOAppInfoC19customEventMetaDataSo12NSDictionaryCSgvg",
                 "moduleName": "BDPointSDK",
                 "implicit": true,
                 "declAttributes": [
@@ -45109,27 +46053,13 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "[Swift.String : Swift.String]?",
+                    "printedName": "Foundation.NSDictionary?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Dictionary",
-                        "printedName": "[Swift.String : Swift.String]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ],
-                        "usr": "s:SD"
+                        "name": "NSDictionary",
+                        "printedName": "Foundation.NSDictionary",
+                        "usr": "c:objc(cs)NSDictionary"
                       }
                     ],
                     "usr": "s:Sq"
@@ -45137,7 +46067,7 @@
                 ],
                 "declKind": "Accessor",
                 "usr": "c:@CM@BDPointSDK@objc(cs)MOAppInfo(im)setCustomEventMetaData:",
-                "mangledName": "$s10BDPointSDK9MOAppInfoC19customEventMetaDataSDyS2SGSgvs",
+                "mangledName": "$s10BDPointSDK9MOAppInfoC19customEventMetaDataSo12NSDictionaryCSgvs",
                 "moduleName": "BDPointSDK",
                 "implicit": true,
                 "declAttributes": [
@@ -46405,21 +47335,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "[Swift.String]?",
+                "printedName": "Foundation.NSArray?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[Swift.String]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sa"
+                    "name": "NSArray",
+                    "printedName": "Foundation.NSArray",
+                    "usr": "c:objc(cs)NSArray"
                   }
                 ],
                 "usr": "s:Sq"
@@ -46427,7 +47349,7 @@
             ],
             "declKind": "Var",
             "usr": "c:@CM@BDPointSDK@objc(cs)MOAppState(py)osRestrictions",
-            "mangledName": "$s10BDPointSDK10MOAppStateC14osRestrictionsSaySSGSgvp",
+            "mangledName": "$s10BDPointSDK10MOAppStateC14osRestrictionsSo7NSArrayCSgvp",
             "moduleName": "BDPointSDK",
             "declAttributes": [
               "Dynamic",
@@ -46445,21 +47367,13 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "[Swift.String]?",
+                    "printedName": "Foundation.NSArray?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[Swift.String]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ],
-                        "usr": "s:Sa"
+                        "name": "NSArray",
+                        "printedName": "Foundation.NSArray",
+                        "usr": "c:objc(cs)NSArray"
                       }
                     ],
                     "usr": "s:Sq"
@@ -46467,7 +47381,7 @@
                 ],
                 "declKind": "Accessor",
                 "usr": "c:@CM@BDPointSDK@objc(cs)MOAppState(im)osRestrictions",
-                "mangledName": "$s10BDPointSDK10MOAppStateC14osRestrictionsSaySSGSgvg",
+                "mangledName": "$s10BDPointSDK10MOAppStateC14osRestrictionsSo7NSArrayCSgvg",
                 "moduleName": "BDPointSDK",
                 "implicit": true,
                 "declAttributes": [
@@ -46490,21 +47404,13 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "[Swift.String]?",
+                    "printedName": "Foundation.NSArray?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[Swift.String]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ],
-                        "usr": "s:Sa"
+                        "name": "NSArray",
+                        "printedName": "Foundation.NSArray",
+                        "usr": "c:objc(cs)NSArray"
                       }
                     ],
                     "usr": "s:Sq"
@@ -46512,7 +47418,7 @@
                 ],
                 "declKind": "Accessor",
                 "usr": "c:@CM@BDPointSDK@objc(cs)MOAppState(im)setOsRestrictions:",
-                "mangledName": "$s10BDPointSDK10MOAppStateC14osRestrictionsSaySSGSgvs",
+                "mangledName": "$s10BDPointSDK10MOAppStateC14osRestrictionsSo7NSArrayCSgvs",
                 "moduleName": "BDPointSDK",
                 "implicit": true,
                 "declAttributes": [
@@ -54313,21 +55219,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "[CoreLocation.CLLocation]?",
+                "printedName": "Foundation.NSArray?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[CoreLocation.CLLocation]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CLLocation",
-                        "printedName": "CoreLocation.CLLocation",
-                        "usr": "c:objc(cs)CLLocation"
-                      }
-                    ],
-                    "usr": "s:Sa"
+                    "name": "NSArray",
+                    "printedName": "Foundation.NSArray",
+                    "usr": "c:objc(cs)NSArray"
                   }
                 ],
                 "usr": "s:Sq"
@@ -54335,7 +55233,7 @@
             ],
             "declKind": "Var",
             "usr": "c:@CM@BDPointSDK@objc(cs)MOTriggerEventAbstract(py)locations",
-            "mangledName": "$s10BDPointSDK22MOTriggerEventAbstractC9locationsSaySo10CLLocationCGSgvp",
+            "mangledName": "$s10BDPointSDK22MOTriggerEventAbstractC9locationsSo7NSArrayCSgvp",
             "moduleName": "BDPointSDK",
             "declAttributes": [
               "Dynamic",
@@ -54353,21 +55251,13 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "[CoreLocation.CLLocation]?",
+                    "printedName": "Foundation.NSArray?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[CoreLocation.CLLocation]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "CLLocation",
-                            "printedName": "CoreLocation.CLLocation",
-                            "usr": "c:objc(cs)CLLocation"
-                          }
-                        ],
-                        "usr": "s:Sa"
+                        "name": "NSArray",
+                        "printedName": "Foundation.NSArray",
+                        "usr": "c:objc(cs)NSArray"
                       }
                     ],
                     "usr": "s:Sq"
@@ -54375,7 +55265,7 @@
                 ],
                 "declKind": "Accessor",
                 "usr": "c:@CM@BDPointSDK@objc(cs)MOTriggerEventAbstract(im)locations",
-                "mangledName": "$s10BDPointSDK22MOTriggerEventAbstractC9locationsSaySo10CLLocationCGSgvg",
+                "mangledName": "$s10BDPointSDK22MOTriggerEventAbstractC9locationsSo7NSArrayCSgvg",
                 "moduleName": "BDPointSDK",
                 "implicit": true,
                 "declAttributes": [
@@ -54398,21 +55288,13 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "[CoreLocation.CLLocation]?",
+                    "printedName": "Foundation.NSArray?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[CoreLocation.CLLocation]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "CLLocation",
-                            "printedName": "CoreLocation.CLLocation",
-                            "usr": "c:objc(cs)CLLocation"
-                          }
-                        ],
-                        "usr": "s:Sa"
+                        "name": "NSArray",
+                        "printedName": "Foundation.NSArray",
+                        "usr": "c:objc(cs)NSArray"
                       }
                     ],
                     "usr": "s:Sq"
@@ -54420,7 +55302,7 @@
                 ],
                 "declKind": "Accessor",
                 "usr": "c:@CM@BDPointSDK@objc(cs)MOTriggerEventAbstract(im)setLocations:",
-                "mangledName": "$s10BDPointSDK22MOTriggerEventAbstractC9locationsSaySo10CLLocationCGSgvs",
+                "mangledName": "$s10BDPointSDK22MOTriggerEventAbstractC9locationsSo7NSArrayCSgvs",
                 "moduleName": "BDPointSDK",
                 "implicit": true,
                 "declAttributes": [
@@ -56795,27 +57677,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "[Swift.String : Swift.String]?",
+                "printedName": "Foundation.NSDictionary?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.String : Swift.String]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:SD"
+                    "name": "NSDictionary",
+                    "printedName": "Foundation.NSDictionary",
+                    "usr": "c:objc(cs)NSDictionary"
                   }
                 ],
                 "usr": "s:Sq"
@@ -56823,7 +57691,7 @@
             ],
             "declKind": "Var",
             "usr": "c:@CM@BDPointSDK@objc(cs)MOZoneInfo(py)customData",
-            "mangledName": "$s10BDPointSDK10MOZoneInfoC10customDataSDyS2SGSgvp",
+            "mangledName": "$s10BDPointSDK10MOZoneInfoC10customDataSo12NSDictionaryCSgvp",
             "moduleName": "BDPointSDK",
             "declAttributes": [
               "Dynamic",
@@ -56841,27 +57709,13 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "[Swift.String : Swift.String]?",
+                    "printedName": "Foundation.NSDictionary?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Dictionary",
-                        "printedName": "[Swift.String : Swift.String]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ],
-                        "usr": "s:SD"
+                        "name": "NSDictionary",
+                        "printedName": "Foundation.NSDictionary",
+                        "usr": "c:objc(cs)NSDictionary"
                       }
                     ],
                     "usr": "s:Sq"
@@ -56869,7 +57723,7 @@
                 ],
                 "declKind": "Accessor",
                 "usr": "c:@CM@BDPointSDK@objc(cs)MOZoneInfo(im)customData",
-                "mangledName": "$s10BDPointSDK10MOZoneInfoC10customDataSDyS2SGSgvg",
+                "mangledName": "$s10BDPointSDK10MOZoneInfoC10customDataSo12NSDictionaryCSgvg",
                 "moduleName": "BDPointSDK",
                 "implicit": true,
                 "declAttributes": [
@@ -56892,27 +57746,13 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "[Swift.String : Swift.String]?",
+                    "printedName": "Foundation.NSDictionary?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Dictionary",
-                        "printedName": "[Swift.String : Swift.String]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ],
-                        "usr": "s:SD"
+                        "name": "NSDictionary",
+                        "printedName": "Foundation.NSDictionary",
+                        "usr": "c:objc(cs)NSDictionary"
                       }
                     ],
                     "usr": "s:Sq"
@@ -56920,7 +57760,7 @@
                 ],
                 "declKind": "Accessor",
                 "usr": "c:@CM@BDPointSDK@objc(cs)MOZoneInfo(im)setCustomData:",
-                "mangledName": "$s10BDPointSDK10MOZoneInfoC10customDataSDyS2SGSgvs",
+                "mangledName": "$s10BDPointSDK10MOZoneInfoC10customDataSo12NSDictionaryCSgvs",
                 "moduleName": "BDPointSDK",
                 "implicit": true,
                 "declAttributes": [
@@ -60463,6 +61303,20 @@
       "value": "100.0"
     },
     {
+      "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Support\/Extensions\/Double+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 234,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Support\/Extensions\/Double+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 251,
+      "length": 3,
+      "value": "100"
+    },
+    {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Support\/Timers\/DefaultScheduler.swift",
       "kind": "StringLiteral",
       "offset": 2347,
@@ -61535,232 +62389,267 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2679,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2842,
+      "length": 3,
+      "value": "-15"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2926,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2986,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3043,
+      "length": 4,
+      "value": "-100"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 2691,
+      "offset": 3152,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2767,
+      "offset": 3228,
       "length": 49,
       "value": "\"https:\/\/www.pointapi.bluedot.com.au\/pointapi-v1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2874,
+      "offset": 3335,
       "length": 40,
       "value": "\"https:\/\/api.bluedot.io\/zonesAtGeometry\""
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 3002,
+      "offset": 3463,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 3089,
+      "offset": 3550,
       "length": 6,
       "value": "1000.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 3180,
+      "offset": 3641,
       "length": 6,
       "value": "3000.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 3272,
+      "offset": 3733,
       "length": 6,
       "value": "5000.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 3462,
+      "offset": 3923,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 3555,
+      "offset": 4016,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3632,
+      "offset": 4093,
       "length": 3,
       "value": "256"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 3964,
+      "offset": 4425,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 4038,
+      "offset": 4499,
       "length": 5,
       "value": "180.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 4112,
+      "offset": 4573,
       "length": 3,
       "value": "5.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 4196,
+      "offset": 4657,
       "length": 4,
       "value": "30.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 4269,
+      "offset": 4730,
       "length": 6,
       "value": "3000.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 4356,
+      "offset": 4817,
       "length": 4,
       "value": "60.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 4452,
+      "offset": 4913,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 4533,
+      "offset": 4994,
       "length": 6,
       "value": "0.0225"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 4628,
+      "offset": 5089,
       "length": 4,
       "value": "30.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 4735,
+      "offset": 5196,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 4826,
+      "offset": 5287,
       "length": 4,
       "value": "60.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 4887,
+      "offset": 5348,
       "length": 6,
       "value": "1800.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 4993,
+      "offset": 5454,
       "length": 7,
       "value": "21600.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 5115,
+      "offset": 5576,
       "length": 7,
       "value": "86400.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 5195,
+      "offset": 5656,
       "length": 4,
       "value": "30.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 5275,
+      "offset": 5736,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 5469,
+      "offset": 5930,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 5473,
+      "offset": 5934,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 5478,
+      "offset": 5939,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 5483,
+      "offset": 5944,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 5571,
+      "offset": 6032,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 5765,
+      "offset": 6226,
       "length": 3,
       "value": "2.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointSDKConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 5847,
+      "offset": 6308,
       "length": 3,
       "value": "5.0"
     },
@@ -62036,6 +62925,34 @@
       "offset": 349,
       "length": 2,
       "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/GeoTriggerEvent\/ExitEventScoreEvaluator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 237,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/GeoTriggerEvent\/ExitEventScoreEvaluator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 328,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/GeoTriggerEvent\/ExitEventScoreEvaluator.swift",
+      "kind": "Dictionary",
+      "offset": 483,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/GeoTriggerEvent\/ExitEventScoreEvaluator.swift",
+      "kind": "StringLiteral",
+      "offset": 564,
+      "length": 46,
+      "value": "\"com.bluedot.au.ScoreBasedExitEvaluator.queue\""
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Support\/Keychain\/Keychain.swift",
