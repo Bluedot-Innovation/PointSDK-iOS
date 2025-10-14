@@ -679,8 +679,11 @@ SWIFT_CLASS("_TtC10BDPointSDK11Destination")
 @property (nonatomic, readonly, copy) NSString * _Nullable address;
 /// A <code>BDPoint</code> that stores spatial geographic information (i.e longitude, latitude) of the destination
 @property (nonatomic, readonly, strong) BDPoint * _Nonnull location;
+/// Custom data for the destination, represented as string key–value pairs.
+/// Also referred to as Store Custom Data in Canvas.
+@property (nonatomic, readonly, strong) NSDictionary * _Nullable customData;
 /// :nodoc:
-- (nonnull instancetype)initWithDestinationId:(NSString * _Nonnull)destinationId name:(NSString * _Nullable)name address:(NSString * _Nullable)address location:(BDPoint * _Nonnull)location OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithDestinationId:(NSString * _Nonnull)destinationId name:(NSString * _Nullable)name address:(NSString * _Nullable)address location:(BDPoint * _Nonnull)location customData:(NSDictionary * _Nullable)customData OBJC_DESIGNATED_INITIALIZER;
 /// :nodoc:
 - (nonnull instancetype)initWithDestination:(Destination * _Nonnull)destination;
 /// :nodoc:
@@ -2015,7 +2018,7 @@ SWIFT_CLASS("_TtC10BDPointSDK11TempoUpdate")
 @property (nonatomic) enum TriggerEngine triggerEngine;
 @property (nonatomic, strong) AppState * _Nonnull appState;
 @property (nonatomic, copy) NSString * _Nonnull destinationId;
-- (nonnull instancetype)initWithLocations:(NSArray<CLLocation *> * _Nonnull)locations destinationId:(NSString * _Nonnull)destinationId appState:(AppState * _Nonnull)appState;
+- (nonnull instancetype)initWithLocations:(NSArray<CLLocation *> * _Nonnull)locations destinationId:(NSString * _Nonnull)destinationId appState:(AppState * _Nonnull)appState slimUpdate:(BOOL)slimUpdate;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

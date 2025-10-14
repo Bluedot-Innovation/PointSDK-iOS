@@ -295,7 +295,9 @@ extension BDPointSDK.GeoTriggerEvent : Swift.Encodable {
   @objc final public let triggerChainId: Swift.String
   @objc final public let eta: Swift.Int
   @objc final public let etaDirection: BDPointSDK.TempoUpdateETADirection
-  @objc final public let destination: BDPointSDK.Destination?
+  @objc public var destination: BDPointSDK.Destination? {
+    get
+  }
   public init(triggerChainId: Swift.String, eta: Swift.Int, etaDirection: BDPointSDK.TempoUpdateETADirection, destination: BDPointSDK.Destination? = nil)
   required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
@@ -319,7 +321,9 @@ extension BDPointSDK.ZoneInfo : BDPointSDK.JsonString {
   @objc final public let name: Swift.String?
   @objc final public let address: Swift.String?
   @objc final public let location: BDPointSDK.BDPoint
-  @objc public init(destinationId: Swift.String, name: Swift.String? = nil, address: Swift.String? = nil, location: BDPointSDK.BDPoint)
+  @objc final public let customData: Foundation.NSDictionary?
+  convenience public init(destinationId: Swift.String, name: Swift.String? = nil, address: Swift.String? = nil, location: BDPointSDK.BDPoint, customData: [Swift.String : Swift.String]?)
+  @objc public init(destinationId: Swift.String, name: Swift.String? = nil, address: Swift.String? = nil, location: BDPointSDK.BDPoint, customData: Foundation.NSDictionary? = nil)
   @objc convenience public init(destination: BDPointSDK.Destination)
   @objc convenience public init(dictionary: [Swift.AnyHashable : Any]) throws
   required public init(from decoder: any Swift.Decoder) throws
