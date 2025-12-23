@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>BDLocationInfo Class Reference</title>
+    <title>FenceDwell Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -14,8 +14,8 @@
     <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
-    <a name="//apple_ref/objc/Class/BDLocationInfo" class="dashAnchor"></a>
-    <a title="BDLocationInfo Class Reference"></a>
+    <a name="//apple_ref/objc/Class/FenceDwell" class="dashAnchor"></a>
+    <a title="FenceDwell Class Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">BDPointSDK v17.2.0 Docs</a></p>
@@ -34,7 +34,7 @@
         <img id="carat" src="../img/carat.png" alt=""/>
         <a href="../Classes.html">Classes</a>
         <img id="carat" src="../img/carat.png" alt=""/>
-        BDLocationInfo Class Reference
+        FenceDwell Class Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -271,20 +271,17 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>BDLocationInfo</h1>
+            <h1>FenceDwell</h1>
               <div class="declaration">
                 <div class="language">
-                  <p class="aside-title">Objective-C</p>
-                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BDLocationInfo</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
-
-                </div>
-                <div class="language">
-                  <p class="aside-title">Swift</p>
-                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">BDLocationInfo</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+                  
+                  <pre class="highlight swift"><code><span class="kd">@objcMembers</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="kt">FenceDwell</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">FenceDwell</span><span class="p">:</span> <span class="kt"><a href="../Protocols/JsonString.html">JsonString</a></span></code></pre>
 
                 </div>
               </div>
-            <p>Information about a location update.</p>
+            <p>A FenceDwell event is triggered when Zone dwell conditions are met and a Dwell trigger is enabled in Canvas for the zone</p>
 
           </section>
           <section class="section task-group-section">
@@ -293,9 +290,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)BDLocationInfo(py)timestamp"></a>
-                    <a name="//apple_ref/objc/Property/timestamp" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)BDLocationInfo(py)timestamp">timestamp</a>
+                    <a name="/c:@M@BDPointSDK@objc(cs)FenceDwell(py)eventType"></a>
+                    <a name="//apple_ref/objc/Property/eventType" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@BDPointSDK@objc(cs)FenceDwell(py)eventType">eventType</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -303,19 +300,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The time at which this location was determined.</p>
+                        <p>Type of this event. fenceDwell</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">copy</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSDate</span> <span class="o">*</span><span class="n">timestamp</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">timestamp</span><span class="p">:</span> <span class="kt">Date</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">eventType</span><span class="p">:</span> <span class="kt"><a href="../Enums/EventType.html">EventType</a></span></code></pre>
 
                         </div>
                       </div>
@@ -325,9 +317,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)BDLocationInfo(py)latitude"></a>
-                    <a name="//apple_ref/objc/Property/latitude" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)BDLocationInfo(py)latitude">latitude</a>
+                    <a name="/c:@M@BDPointSDK@objc(cs)FenceDwell(py)eventTime"></a>
+                    <a name="//apple_ref/objc/Property/eventTime" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@BDPointSDK@objc(cs)FenceDwell(py)eventTime">eventTime</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -335,19 +327,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The latitude at which this location was determined.</p>
+                        <p>Time when the dwell event was triggered</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDegrees">BDLocationDegrees</a></span> <span class="n">latitude</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">latitude</span><span class="p">:</span> <span class="kt"><a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDegrees">BDLocationDegrees</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">eventTime</span><span class="p">:</span> <span class="kt">Date</span></code></pre>
 
                         </div>
                       </div>
@@ -357,9 +344,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)BDLocationInfo(py)longitude"></a>
-                    <a name="//apple_ref/objc/Property/longitude" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)BDLocationInfo(py)longitude">longitude</a>
+                    <a name="/c:@M@BDPointSDK@objc(cs)FenceDwell(py)fenceName"></a>
+                    <a name="//apple_ref/objc/Property/fenceName" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@BDPointSDK@objc(cs)FenceDwell(py)fenceName">fenceName</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -367,19 +354,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The longitude at which this location was determined.</p>
+                        <p>Name of the fence</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDegrees">BDLocationDegrees</a></span> <span class="n">longitude</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">longitude</span><span class="p">:</span> <span class="kt"><a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDegrees">BDLocationDegrees</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">fenceName</span><span class="p">:</span> <span class="kt">String</span></code></pre>
 
                         </div>
                       </div>
@@ -389,9 +371,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)BDLocationInfo(py)bearing"></a>
-                    <a name="//apple_ref/objc/Property/bearing" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)BDLocationInfo(py)bearing">bearing</a>
+                    <a name="/c:@M@BDPointSDK@objc(cs)FenceDwell(py)fenceId"></a>
+                    <a name="//apple_ref/objc/Property/fenceId" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@BDPointSDK@objc(cs)FenceDwell(py)fenceId">fenceId</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -399,19 +381,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The bearing of the device at the latitude and longitude of the location.</p>
+                        <p>Unique identifier of the last crossed fence leading up to the trigger event</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDirection">BDLocationDirection</a></span> <span class="n">bearing</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">bearing</span><span class="p">:</span> <span class="kt"><a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationDirection">BDLocationDirection</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">fenceId</span><span class="p">:</span> <span class="kt">UUID</span></code></pre>
 
                         </div>
                       </div>
@@ -421,9 +398,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)BDLocationInfo(py)speed"></a>
-                    <a name="//apple_ref/objc/Property/speed" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)BDLocationInfo(py)speed">speed</a>
+                    <a name="/c:@M@BDPointSDK@objc(cs)FenceDwell(py)locations"></a>
+                    <a name="//apple_ref/objc/Property/locations" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@BDPointSDK@objc(cs)FenceDwell(py)locations">locations</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -431,19 +408,215 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The speed of the device at the latitude and longitude of the location.</p>
+                        <p>The Location Update associated with the dwell event</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationSpeed">BDLocationSpeed</a></span> <span class="n">speed</span><span class="p">;</span></code></pre>
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">locations</span><span class="p">:</span> <span class="p">[</span><span class="kt">CLLocation</span><span class="p">]</span></code></pre>
 
                         </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@BDPointSDK@objc(cs)FenceDwell(py)appState"></a>
+                    <a name="//apple_ref/objc/Property/appState" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@BDPointSDK@objc(cs)FenceDwell(py)appState">appState</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Application-related detail</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">speed</span><span class="p">:</span> <span class="kt"><a href="../Type%20Definitions.html#/c:BDGeospatialUnits.h@T@BDLocationSpeed">BDLocationSpeed</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">appState</span><span class="p">:</span> <span class="kt"><a href="../Classes/AppState.html">AppState</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@BDPointSDK@objc(cs)FenceDwell(py)triggerEngine"></a>
+                    <a name="//apple_ref/objc/Property/triggerEngine" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@BDPointSDK@objc(cs)FenceDwell(py)triggerEngine">triggerEngine</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Trigger Engine of the PointSDK when this trigger happens.</p>
+
+<p>Available values: [bd, native].</p>
+
+<ul>
+<li><code>bd</code> engine is the default engine running when app is running on background.</li>
+<li><code>native</code> engine utilizes the iOS native Geo Fencing when the app is not running.</li>
+</ul>
+
+<p>See <a href="https://docs.bluedot.io/ios-sdk/ios-features/ios-features-enhanced-sdk-restart/">our documentation</a> for more details:</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">triggerEngine</span><span class="p">:</span> <span class="kt"><a href="../Enums/TriggerEngine.html">TriggerEngine</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@BDPointSDK@objc(cs)FenceDwell(py)timeZoneIdentifier"></a>
+                    <a name="//apple_ref/objc/Property/timeZoneIdentifier" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@BDPointSDK@objc(cs)FenceDwell(py)timeZoneIdentifier">timeZoneIdentifier</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Time zone identifier of the device when the event occurred</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">timeZoneIdentifier</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@BDPointSDK@objc(cs)FenceDwell(py)uniqueId"></a>
+                    <a name="//apple_ref/objc/Property/uniqueId" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@BDPointSDK@objc(cs)FenceDwell(py)uniqueId">uniqueId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Unique identifier for this dwell event</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">uniqueId</span><span class="p">:</span> <span class="kt">UUID</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@BDPointSDK@objc(cs)FenceDwell(py)calculatedDwellTime"></a>
+                    <a name="//apple_ref/objc/Property/calculatedDwellTime" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@BDPointSDK@objc(cs)FenceDwell(py)calculatedDwellTime">calculatedDwellTime</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Dwell time from entry to dwell time trigger, in milliseconds</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">calculatedDwellTime</span><span class="p">:</span> <span class="kt">TimeInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@BDPointSDK@objc(cs)FenceDwell(py)dwellThreshold"></a>
+                    <a name="//apple_ref/objc/Property/dwellThreshold" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@BDPointSDK@objc(cs)FenceDwell(py)dwellThreshold">dwellThreshold</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Dwell time threshold configured in backend, in milliseconds</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">dwellThreshold</span><span class="p">:</span> <span class="kt">TimeInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@BDPointSDK@objc(cs)FenceDwell(im)toJson:"></a>
+                    <a name="//apple_ref/objc/Method/toJson()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@BDPointSDK@objc(cs)FenceDwell(im)toJson:">toJson()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Convert to JSON string</p>
+
+<p>This function throws an error if JSON encoding process fails</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span><span class="p">(</span><span class="nv">toJson</span><span class="p">:)</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">toJson</span><span class="p">()</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
 
                         </div>
                       </div>

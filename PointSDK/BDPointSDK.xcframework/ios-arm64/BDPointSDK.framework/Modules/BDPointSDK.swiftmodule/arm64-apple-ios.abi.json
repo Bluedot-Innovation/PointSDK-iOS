@@ -5534,6 +5534,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BDPointSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "StarvationDetectorRemoteConfiguration",
         "printedName": "StarvationDetectorRemoteConfiguration",
@@ -6759,6 +6769,67 @@
                 "declKind": "Accessor",
                 "usr": "c:@M@BDPointSDK@objc(cs)GeoTriggerEvent(im)exitEvent",
                 "mangledName": "$s10BDPointSDK15GeoTriggerEventC04exitE0AA11FenceExitedCSgvg",
+                "moduleName": "BDPointSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "dwellEvent",
+            "printedName": "dwellEvent",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "BDPointSDK.FenceDwell?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FenceDwell",
+                    "printedName": "BDPointSDK.FenceDwell",
+                    "usr": "c:@M@BDPointSDK@objc(cs)FenceDwell"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BDPointSDK@objc(cs)GeoTriggerEvent(py)dwellEvent",
+            "mangledName": "$s10BDPointSDK15GeoTriggerEventC05dwellE0AA10FenceDwellCSgvp",
+            "moduleName": "BDPointSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "BDPointSDK.FenceDwell?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FenceDwell",
+                        "printedName": "BDPointSDK.FenceDwell",
+                        "usr": "c:@M@BDPointSDK@objc(cs)FenceDwell"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BDPointSDK@objc(cs)GeoTriggerEvent(im)dwellEvent",
+                "mangledName": "$s10BDPointSDK15GeoTriggerEventC05dwellE0AA10FenceDwellCSgvg",
                 "moduleName": "BDPointSDK",
                 "declAttributes": [
                   "ObjC"
@@ -9473,6 +9544,48 @@
           },
           {
             "kind": "Var",
+            "name": "dwell",
+            "printedName": "dwell",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BDPointSDK.NotificationType.Type) -> BDPointSDK.NotificationType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NotificationType",
+                    "printedName": "BDPointSDK.NotificationType",
+                    "usr": "c:@M@BDPointSDK@E@NotificationType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BDPointSDK.NotificationType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NotificationType",
+                        "printedName": "BDPointSDK.NotificationType",
+                        "usr": "c:@M@BDPointSDK@E@NotificationType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@BDPointSDK@E@NotificationType@NotificationTypeDwell",
+            "mangledName": "$s10BDPointSDK16NotificationTypeO5dwellyA2CmF",
+            "moduleName": "BDPointSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
             "name": "tempo",
             "printedName": "tempo",
             "children": [
@@ -9511,7 +9624,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 2
+            "fixedbinaryorder": 3
           },
           {
             "kind": "Var",
@@ -9553,7 +9666,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 3
+            "fixedbinaryorder": 4
           },
           {
             "kind": "Var",
@@ -9595,7 +9708,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 4
+            "fixedbinaryorder": 5
           },
           {
             "kind": "Constructor",
@@ -10151,6 +10264,163 @@
         "moduleName": "BDPointSDK",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PendingDwell",
+        "printedName": "PendingDwell",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(event:threshold:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PendingDwell",
+                "printedName": "BDPointSDK.PendingDwell",
+                "usr": "c:@M@BDPointSDK@objc(cs)PendingDwell"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PendingEvent",
+                "printedName": "BDPointSDK.PendingEvent",
+                "usr": "c:@M@BDPointSDK@objc(cs)PendingEvent"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BDPointSDK@objc(cs)PendingDwell(im)initWithEvent:threshold:",
+            "mangledName": "$s10BDPointSDK12PendingDwellC5event9thresholdAcA0C5EventC_Sdtcfc",
+            "moduleName": "BDPointSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "spi_group_names": [
+              "BDPointSDKPrivate"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PendingDwell",
+                "printedName": "BDPointSDK.PendingDwell",
+                "usr": "c:@M@BDPointSDK@objc(cs)PendingDwell"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BDPointSDK@objc(cs)PendingDwell(im)init",
+            "mangledName": "$s10BDPointSDK12PendingDwellCACycfc",
+            "moduleName": "BDPointSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "spi_group_names": [
+              "BDPointSDKPrivate"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BDPointSDK@objc(cs)PendingDwell",
+        "mangledName": "$s10BDPointSDK12PendingDwellC",
+        "moduleName": "BDPointSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "SPIAccessControl",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "spi_group_names": [
+          "BDPointSDKPrivate"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
         ]
       },
       {
@@ -15858,6 +16128,48 @@
           },
           {
             "kind": "Var",
+            "name": "fenceDwell",
+            "printedName": "fenceDwell",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BDPointSDK.EventType.Type) -> BDPointSDK.EventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EventType",
+                    "printedName": "BDPointSDK.EventType",
+                    "usr": "c:@M@BDPointSDK@E@EventType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BDPointSDK.EventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EventType",
+                        "printedName": "BDPointSDK.EventType",
+                        "usr": "c:@M@BDPointSDK@E@EventType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@BDPointSDK@E@EventType@EventTypeFenceDwell",
+            "mangledName": "$s10BDPointSDK9EventTypeO10fenceDwellyA2CmF",
+            "moduleName": "BDPointSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
             "name": "tempoUpdate",
             "printedName": "tempoUpdate",
             "children": [
@@ -15896,7 +16208,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 2
+            "fixedbinaryorder": 3
           },
           {
             "kind": "Var",
@@ -15938,7 +16250,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 3
+            "fixedbinaryorder": 4
           },
           {
             "kind": "Var",
@@ -15980,7 +16292,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 4
+            "fixedbinaryorder": 5
           },
           {
             "kind": "Var",
@@ -16022,7 +16334,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 5
+            "fixedbinaryorder": 6
           },
           {
             "kind": "Var",
@@ -16064,7 +16376,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 6
+            "fixedbinaryorder": 7
           },
           {
             "kind": "Var",
@@ -16106,7 +16418,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 7
+            "fixedbinaryorder": 8
           },
           {
             "kind": "Constructor",
@@ -18592,6 +18904,37 @@
             "mangledName": "$s10BDPointSDK11SignalGraphC11enteredZone24triggerEventNotificationyAA07TriggerhI0C_tF",
             "moduleName": "BDPointSDK",
             "objc_name": "enteredZoneWithTriggerEventNotification:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "spi_group_names": [
+              "BDPointSDKPrivate"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "dwelledInZone",
+            "printedName": "dwelledInZone(triggerEventNotification:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TriggerEventNotification",
+                "printedName": "BDPointSDK.TriggerEventNotification",
+                "usr": "c:@M@BDPointSDK@objc(cs)TriggerEventNotification"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BDPointSDK@objc(cs)SignalGraph(im)dwelledInZoneWithTriggerEventNotification:",
+            "mangledName": "$s10BDPointSDK11SignalGraphC13dwelledInZone24triggerEventNotificationyAA07TriggeriJ0C_tF",
+            "moduleName": "BDPointSDK",
+            "objc_name": "dwelledInZoneWithTriggerEventNotification:",
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -29161,13 +29504,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:10BDPointSDK24TriggerEventNotificationC10installRef10Foundation4UUIDVvp",
+            "usr": "c:@M@BDPointSDK@objc(cs)TriggerEventNotification(py)installRef",
             "mangledName": "$s10BDPointSDK24TriggerEventNotificationC10installRef10Foundation4UUIDVvp",
             "moduleName": "BDPointSDK",
             "declAttributes": [
               "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "spi_group_names": [
               "BDPointSDKPrivate"
@@ -29188,12 +29532,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10BDPointSDK24TriggerEventNotificationC10installRef10Foundation4UUIDVvg",
+                "usr": "c:@M@BDPointSDK@objc(cs)TriggerEventNotification(im)installRef",
                 "mangledName": "$s10BDPointSDK24TriggerEventNotificationC10installRef10Foundation4UUIDVvg",
                 "moduleName": "BDPointSDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "spi_group_names": [
                   "BDPointSDKPrivate"
@@ -29215,13 +29560,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:10BDPointSDK24TriggerEventNotificationC9projectIdSSvp",
+            "usr": "c:@M@BDPointSDK@objc(cs)TriggerEventNotification(py)projectId",
             "mangledName": "$s10BDPointSDK24TriggerEventNotificationC9projectIdSSvp",
             "moduleName": "BDPointSDK",
             "declAttributes": [
               "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "spi_group_names": [
               "BDPointSDKPrivate"
@@ -29242,12 +29588,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10BDPointSDK24TriggerEventNotificationC9projectIdSSvg",
+                "usr": "c:@M@BDPointSDK@objc(cs)TriggerEventNotification(im)projectId",
                 "mangledName": "$s10BDPointSDK24TriggerEventNotificationC9projectIdSSvg",
                 "moduleName": "BDPointSDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "spi_group_names": [
                   "BDPointSDKPrivate"
@@ -29269,14 +29616,15 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:10BDPointSDK24TriggerEventNotificationC10deviceInfoAA06DeviceG0Cvp",
+            "usr": "c:@M@BDPointSDK@objc(cs)TriggerEventNotification(py)deviceInfo",
             "mangledName": "$s10BDPointSDK24TriggerEventNotificationC10deviceInfoAA06DeviceG0Cvp",
             "moduleName": "BDPointSDK",
             "declAttributes": [
               "HasInitialValue",
               "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "spi_group_names": [
               "BDPointSDKPrivate"
@@ -29297,12 +29645,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10BDPointSDK24TriggerEventNotificationC10deviceInfoAA06DeviceG0Cvg",
+                "usr": "c:@M@BDPointSDK@objc(cs)TriggerEventNotification(im)deviceInfo",
                 "mangledName": "$s10BDPointSDK24TriggerEventNotificationC10deviceInfoAA06DeviceG0Cvg",
                 "moduleName": "BDPointSDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "spi_group_names": [
                   "BDPointSDKPrivate"
@@ -29324,14 +29673,15 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:10BDPointSDK24TriggerEventNotificationC14submissionTime10Foundation4DateVvp",
+            "usr": "c:@M@BDPointSDK@objc(cs)TriggerEventNotification(py)submissionTime",
             "mangledName": "$s10BDPointSDK24TriggerEventNotificationC14submissionTime10Foundation4DateVvp",
             "moduleName": "BDPointSDK",
             "declAttributes": [
               "HasInitialValue",
               "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "spi_group_names": [
               "BDPointSDKPrivate"
@@ -29351,12 +29701,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10BDPointSDK24TriggerEventNotificationC14submissionTime10Foundation4DateVvg",
+                "usr": "c:@M@BDPointSDK@objc(cs)TriggerEventNotification(im)submissionTime",
                 "mangledName": "$s10BDPointSDK24TriggerEventNotificationC14submissionTime10Foundation4DateVvg",
                 "moduleName": "BDPointSDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "spi_group_names": [
                   "BDPointSDKPrivate"
@@ -29381,12 +29732,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10BDPointSDK24TriggerEventNotificationC14submissionTime10Foundation4DateVvs",
+                "usr": "c:@M@BDPointSDK@objc(cs)TriggerEventNotification(im)setSubmissionTime:",
                 "mangledName": "$s10BDPointSDK24TriggerEventNotificationC14submissionTime10Foundation4DateVvs",
                 "moduleName": "BDPointSDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "spi_group_names": [
                   "BDPointSDKPrivate"
@@ -29432,13 +29784,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:10BDPointSDK24TriggerEventNotificationC14triggerChainId10Foundation4UUIDVvp",
+            "usr": "c:@M@BDPointSDK@objc(cs)TriggerEventNotification(py)triggerChainId",
             "mangledName": "$s10BDPointSDK24TriggerEventNotificationC14triggerChainId10Foundation4UUIDVvp",
             "moduleName": "BDPointSDK",
             "declAttributes": [
               "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "spi_group_names": [
               "BDPointSDKPrivate"
@@ -29458,12 +29811,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10BDPointSDK24TriggerEventNotificationC14triggerChainId10Foundation4UUIDVvg",
+                "usr": "c:@M@BDPointSDK@objc(cs)TriggerEventNotification(im)triggerChainId",
                 "mangledName": "$s10BDPointSDK24TriggerEventNotificationC14triggerChainId10Foundation4UUIDVvg",
                 "moduleName": "BDPointSDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "spi_group_names": [
                   "BDPointSDKPrivate"
@@ -29488,12 +29842,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10BDPointSDK24TriggerEventNotificationC14triggerChainId10Foundation4UUIDVvs",
+                "usr": "c:@M@BDPointSDK@objc(cs)TriggerEventNotification(im)setTriggerChainId:",
                 "mangledName": "$s10BDPointSDK24TriggerEventNotificationC14triggerChainId10Foundation4UUIDVvs",
                 "moduleName": "BDPointSDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "spi_group_names": [
                   "BDPointSDKPrivate"
@@ -29539,13 +29894,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:10BDPointSDK24TriggerEventNotificationC16notificationTypeAA0eG0Ovp",
+            "usr": "c:@M@BDPointSDK@objc(cs)TriggerEventNotification(py)notificationType",
             "mangledName": "$s10BDPointSDK24TriggerEventNotificationC16notificationTypeAA0eG0Ovp",
             "moduleName": "BDPointSDK",
             "declAttributes": [
               "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "spi_group_names": [
               "BDPointSDKPrivate"
@@ -29565,12 +29921,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10BDPointSDK24TriggerEventNotificationC16notificationTypeAA0eG0Ovg",
+                "usr": "c:@M@BDPointSDK@objc(cs)TriggerEventNotification(im)notificationType",
                 "mangledName": "$s10BDPointSDK24TriggerEventNotificationC16notificationTypeAA0eG0Ovg",
                 "moduleName": "BDPointSDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "spi_group_names": [
                   "BDPointSDKPrivate"
@@ -29595,12 +29952,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10BDPointSDK24TriggerEventNotificationC16notificationTypeAA0eG0Ovs",
+                "usr": "c:@M@BDPointSDK@objc(cs)TriggerEventNotification(im)setNotificationType:",
                 "mangledName": "$s10BDPointSDK24TriggerEventNotificationC16notificationTypeAA0eG0Ovs",
                 "moduleName": "BDPointSDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "spi_group_names": [
                   "BDPointSDKPrivate"
@@ -29646,13 +30004,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:10BDPointSDK24TriggerEventNotificationC8zoneInfoAA04ZoneG0Cvp",
+            "usr": "c:@M@BDPointSDK@objc(cs)TriggerEventNotification(py)zoneInfo",
             "mangledName": "$s10BDPointSDK24TriggerEventNotificationC8zoneInfoAA04ZoneG0Cvp",
             "moduleName": "BDPointSDK",
             "declAttributes": [
               "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "spi_group_names": [
               "BDPointSDKPrivate"
@@ -29672,12 +30031,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10BDPointSDK24TriggerEventNotificationC8zoneInfoAA04ZoneG0Cvg",
+                "usr": "c:@M@BDPointSDK@objc(cs)TriggerEventNotification(im)zoneInfo",
                 "mangledName": "$s10BDPointSDK24TriggerEventNotificationC8zoneInfoAA04ZoneG0Cvg",
                 "moduleName": "BDPointSDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "spi_group_names": [
                   "BDPointSDKPrivate"
@@ -29702,12 +30062,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10BDPointSDK24TriggerEventNotificationC8zoneInfoAA04ZoneG0Cvs",
+                "usr": "c:@M@BDPointSDK@objc(cs)TriggerEventNotification(im)setZoneInfo:",
                 "mangledName": "$s10BDPointSDK24TriggerEventNotificationC8zoneInfoAA04ZoneG0Cvs",
                 "moduleName": "BDPointSDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "spi_group_names": [
                   "BDPointSDKPrivate"
@@ -29753,13 +30114,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:10BDPointSDK24TriggerEventNotificationC7appInfoAA03AppG0Cvp",
+            "usr": "c:@M@BDPointSDK@objc(cs)TriggerEventNotification(py)appInfo",
             "mangledName": "$s10BDPointSDK24TriggerEventNotificationC7appInfoAA03AppG0Cvp",
             "moduleName": "BDPointSDK",
             "declAttributes": [
               "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "spi_group_names": [
               "BDPointSDKPrivate"
@@ -29779,12 +30141,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10BDPointSDK24TriggerEventNotificationC7appInfoAA03AppG0Cvg",
+                "usr": "c:@M@BDPointSDK@objc(cs)TriggerEventNotification(im)appInfo",
                 "mangledName": "$s10BDPointSDK24TriggerEventNotificationC7appInfoAA03AppG0Cvg",
                 "moduleName": "BDPointSDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "spi_group_names": [
                   "BDPointSDKPrivate"
@@ -29809,12 +30172,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10BDPointSDK24TriggerEventNotificationC7appInfoAA03AppG0Cvs",
+                "usr": "c:@M@BDPointSDK@objc(cs)TriggerEventNotification(im)setAppInfo:",
                 "mangledName": "$s10BDPointSDK24TriggerEventNotificationC7appInfoAA03AppG0Cvs",
                 "moduleName": "BDPointSDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "spi_group_names": [
                   "BDPointSDKPrivate"
@@ -29868,13 +30232,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:10BDPointSDK24TriggerEventNotificationC13triggerEventsSayAA0cD0_pGvp",
+            "usr": "c:@M@BDPointSDK@objc(cs)TriggerEventNotification(py)triggerEvents",
             "mangledName": "$s10BDPointSDK24TriggerEventNotificationC13triggerEventsSayAA0cD0_pGvp",
             "moduleName": "BDPointSDK",
             "declAttributes": [
               "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "spi_group_names": [
               "BDPointSDKPrivate"
@@ -29902,12 +30267,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10BDPointSDK24TriggerEventNotificationC13triggerEventsSayAA0cD0_pGvg",
+                "usr": "c:@M@BDPointSDK@objc(cs)TriggerEventNotification(im)triggerEvents",
                 "mangledName": "$s10BDPointSDK24TriggerEventNotificationC13triggerEventsSayAA0cD0_pGvg",
                 "moduleName": "BDPointSDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "spi_group_names": [
                   "BDPointSDKPrivate"
@@ -29940,12 +30306,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10BDPointSDK24TriggerEventNotificationC13triggerEventsSayAA0cD0_pGvs",
+                "usr": "c:@M@BDPointSDK@objc(cs)TriggerEventNotification(im)setTriggerEvents:",
                 "mangledName": "$s10BDPointSDK24TriggerEventNotificationC13triggerEventsSayAA0cD0_pGvs",
                 "moduleName": "BDPointSDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "spi_group_names": [
                   "BDPointSDKPrivate"
@@ -29991,13 +30358,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:10BDPointSDK24TriggerEventNotificationC10retryCounts5Int16Vvp",
+            "usr": "c:@M@BDPointSDK@objc(cs)TriggerEventNotification(py)retryCount",
             "mangledName": "$s10BDPointSDK24TriggerEventNotificationC10retryCounts5Int16Vvp",
             "moduleName": "BDPointSDK",
             "declAttributes": [
               "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "spi_group_names": [
               "BDPointSDKPrivate"
@@ -30017,12 +30385,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10BDPointSDK24TriggerEventNotificationC10retryCounts5Int16Vvg",
+                "usr": "c:@M@BDPointSDK@objc(cs)TriggerEventNotification(im)retryCount",
                 "mangledName": "$s10BDPointSDK24TriggerEventNotificationC10retryCounts5Int16Vvg",
                 "moduleName": "BDPointSDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "spi_group_names": [
                   "BDPointSDKPrivate"
@@ -30047,12 +30416,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10BDPointSDK24TriggerEventNotificationC10retryCounts5Int16Vvs",
+                "usr": "c:@M@BDPointSDK@objc(cs)TriggerEventNotification(im)setRetryCount:",
                 "mangledName": "$s10BDPointSDK24TriggerEventNotificationC10retryCounts5Int16Vvs",
                 "moduleName": "BDPointSDK",
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "spi_group_names": [
                   "BDPointSDKPrivate"
@@ -30183,12 +30553,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:10BDPointSDK24TriggerEventNotificationC7requesty10Foundation10URLRequestVAE3URLVKF",
+            "usr": "c:@M@BDPointSDK@objc(cs)TriggerEventNotification(im)request:error:",
             "mangledName": "$s10BDPointSDK24TriggerEventNotificationC7requesty10Foundation10URLRequestVAE3URLVKF",
             "moduleName": "BDPointSDK",
             "declAttributes": [
               "Final",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "spi_group_names": [
               "BDPointSDKPrivate"
@@ -30548,8 +30919,9 @@
         "declAttributes": [
           "AccessControl",
           "Final",
-          "ObjC",
-          "SPIAccessControl"
+          "ObjCMembers",
+          "SPIAccessControl",
+          "ObjC"
         ],
         "spi_group_names": [
           "BDPointSDKPrivate"
@@ -39030,6 +39402,525 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "DwellConfiguration",
+        "printedName": "DwellConfiguration",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "enabled",
+            "printedName": "enabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BDPointSDK@objc(cs)DwellConfiguration(py)enabled",
+            "mangledName": "$s10BDPointSDK18DwellConfigurationC7enabledSbvp",
+            "moduleName": "BDPointSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "spi_group_names": [
+              "BDPointSDKPrivate"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BDPointSDK@objc(cs)DwellConfiguration(im)enabled",
+                "mangledName": "$s10BDPointSDK18DwellConfigurationC7enabledSbvg",
+                "moduleName": "BDPointSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "spi_group_names": [
+                  "BDPointSDKPrivate"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "threshold",
+            "printedName": "threshold",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BDPointSDK@objc(cs)DwellConfiguration(py)threshold",
+            "mangledName": "$s10BDPointSDK18DwellConfigurationC9thresholdSivp",
+            "moduleName": "BDPointSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "spi_group_names": [
+              "BDPointSDKPrivate"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BDPointSDK@objc(cs)DwellConfiguration(im)threshold",
+                "mangledName": "$s10BDPointSDK18DwellConfigurationC9thresholdSivg",
+                "moduleName": "BDPointSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "spi_group_names": [
+                  "BDPointSDKPrivate"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(enabled:threshold:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DwellConfiguration",
+                "printedName": "BDPointSDK.DwellConfiguration",
+                "usr": "c:@M@BDPointSDK@objc(cs)DwellConfiguration"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BDPointSDK@objc(cs)DwellConfiguration(im)initWithEnabled:threshold:",
+            "mangledName": "$s10BDPointSDK18DwellConfigurationC7enabled9thresholdACSb_Sitcfc",
+            "moduleName": "BDPointSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "spi_group_names": [
+              "BDPointSDKPrivate"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DwellConfiguration",
+                "printedName": "BDPointSDK.DwellConfiguration",
+                "usr": "c:@M@BDPointSDK@objc(cs)DwellConfiguration"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10BDPointSDK18DwellConfigurationC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s10BDPointSDK18DwellConfigurationC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "BDPointSDK",
+            "declAttributes": [
+              "Convenience",
+              "Required",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "BDPointSDKPrivate"
+            ],
+            "throwing": true,
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BDPointSDK@objc(cs)DwellConfiguration(py)description",
+            "mangledName": "$s10BDPointSDK18DwellConfigurationC11descriptionSSvp",
+            "moduleName": "BDPointSDK",
+            "overriding": true,
+            "objc_name": "description",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "BDPointSDKPrivate"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BDPointSDK@objc(cs)DwellConfiguration(im)description",
+                "mangledName": "$s10BDPointSDK18DwellConfigurationC11descriptionSSvg",
+                "moduleName": "BDPointSDK",
+                "overriding": true,
+                "objc_name": "description",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "spi_group_names": [
+                  "BDPointSDKPrivate"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DwellConfiguration",
+                "printedName": "BDPointSDK.DwellConfiguration",
+                "usr": "c:@M@BDPointSDK@objc(cs)DwellConfiguration"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BDPointSDK@objc(cs)DwellConfiguration(im)init",
+            "mangledName": "$s10BDPointSDK18DwellConfigurationCACycfc",
+            "moduleName": "BDPointSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "spi_group_names": [
+              "BDPointSDKPrivate"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DwellConfiguration",
+                "printedName": "BDPointSDK.DwellConfiguration",
+                "usr": "c:@M@BDPointSDK@objc(cs)DwellConfiguration"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DwellConfiguration",
+                "printedName": "BDPointSDK.DwellConfiguration",
+                "usr": "c:@M@BDPointSDK@objc(cs)DwellConfiguration"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10BDPointSDK18DwellConfigurationC2eeoiySbAC_ACtFZ",
+            "mangledName": "$s10BDPointSDK18DwellConfigurationC2eeoiySbAC_ACtFZ",
+            "moduleName": "BDPointSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "spi_group_names": [
+              "BDPointSDKPrivate"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isEqual",
+            "printedName": "isEqual(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BDPointSDK@objc(cs)DwellConfiguration(im)isEqual:",
+            "mangledName": "$s10BDPointSDK18DwellConfigurationC7isEqualySbypSgF",
+            "moduleName": "BDPointSDK",
+            "overriding": true,
+            "objc_name": "isEqual:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "spi_group_names": [
+              "BDPointSDKPrivate"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hash",
+            "printedName": "hash",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@BDPointSDK@objc(cs)DwellConfiguration(py)hash",
+            "mangledName": "$s10BDPointSDK18DwellConfigurationC4hashSivp",
+            "moduleName": "BDPointSDK",
+            "overriding": true,
+            "objc_name": "hash",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "spi_group_names": [
+              "BDPointSDKPrivate"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@BDPointSDK@objc(cs)DwellConfiguration(im)hash",
+                "mangledName": "$s10BDPointSDK18DwellConfigurationC4hashSivg",
+                "moduleName": "BDPointSDK",
+                "overriding": true,
+                "objc_name": "hash",
+                "declAttributes": [
+                  "ObjC",
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "spi_group_names": [
+                  "BDPointSDKPrivate"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BDPointSDK@objc(cs)DwellConfiguration",
+        "mangledName": "$s10BDPointSDK18DwellConfigurationC",
+        "moduleName": "BDPointSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjCMembers",
+          "SPIAccessControl",
+          "ObjC"
+        ],
+        "spi_group_names": [
+          "BDPointSDKPrivate"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BDPointSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -40054,6 +40945,963 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BDPointSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FenceDwell",
+        "printedName": "FenceDwell",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "eventType",
+            "printedName": "eventType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EventType",
+                "printedName": "BDPointSDK.EventType",
+                "usr": "c:@M@BDPointSDK@E@EventType"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BDPointSDK@objc(cs)FenceDwell(py)eventType",
+            "mangledName": "$s10BDPointSDK10FenceDwellC9eventTypeAA05EventF0Ovp",
+            "moduleName": "BDPointSDK",
+            "objc_name": "eventType",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "ObjC",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EventType",
+                    "printedName": "BDPointSDK.EventType",
+                    "usr": "c:@M@BDPointSDK@E@EventType"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BDPointSDK@objc(cs)FenceDwell(im)eventType",
+                "mangledName": "$s10BDPointSDK10FenceDwellC9eventTypeAA05EventF0Ovg",
+                "moduleName": "BDPointSDK",
+                "implicit": true,
+                "objc_name": "eventType",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "eventTime",
+            "printedName": "eventTime",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BDPointSDK@objc(cs)FenceDwell(py)eventTime",
+            "mangledName": "$s10BDPointSDK10FenceDwellC9eventTime10Foundation4DateVvp",
+            "moduleName": "BDPointSDK",
+            "objc_name": "eventTime",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BDPointSDK@objc(cs)FenceDwell(im)eventTime",
+                "mangledName": "$s10BDPointSDK10FenceDwellC9eventTime10Foundation4DateVvg",
+                "moduleName": "BDPointSDK",
+                "implicit": true,
+                "objc_name": "eventTime",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "fenceName",
+            "printedName": "fenceName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BDPointSDK@objc(cs)FenceDwell(py)fenceName",
+            "mangledName": "$s10BDPointSDK10FenceDwellC9fenceNameSSvp",
+            "moduleName": "BDPointSDK",
+            "objc_name": "fenceName",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BDPointSDK@objc(cs)FenceDwell(im)fenceName",
+                "mangledName": "$s10BDPointSDK10FenceDwellC9fenceNameSSvg",
+                "moduleName": "BDPointSDK",
+                "implicit": true,
+                "objc_name": "fenceName",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "fenceId",
+            "printedName": "fenceId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UUID",
+                "printedName": "Foundation.UUID",
+                "usr": "s:10Foundation4UUIDV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BDPointSDK@objc(cs)FenceDwell(py)fenceId",
+            "mangledName": "$s10BDPointSDK10FenceDwellC7fenceId10Foundation4UUIDVvp",
+            "moduleName": "BDPointSDK",
+            "objc_name": "fenceId",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UUID",
+                    "printedName": "Foundation.UUID",
+                    "usr": "s:10Foundation4UUIDV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BDPointSDK@objc(cs)FenceDwell(im)fenceId",
+                "mangledName": "$s10BDPointSDK10FenceDwellC7fenceId10Foundation4UUIDVvg",
+                "moduleName": "BDPointSDK",
+                "implicit": true,
+                "objc_name": "fenceId",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "locations",
+            "printedName": "locations",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[CoreLocation.CLLocation]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLLocation",
+                    "printedName": "CoreLocation.CLLocation",
+                    "usr": "c:objc(cs)CLLocation"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BDPointSDK@objc(cs)FenceDwell(py)locations",
+            "mangledName": "$s10BDPointSDK10FenceDwellC9locationsSaySo10CLLocationCGvp",
+            "moduleName": "BDPointSDK",
+            "objc_name": "locations",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[CoreLocation.CLLocation]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLLocation",
+                        "printedName": "CoreLocation.CLLocation",
+                        "usr": "c:objc(cs)CLLocation"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BDPointSDK@objc(cs)FenceDwell(im)locations",
+                "mangledName": "$s10BDPointSDK10FenceDwellC9locationsSaySo10CLLocationCGvg",
+                "moduleName": "BDPointSDK",
+                "implicit": true,
+                "objc_name": "locations",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "appState",
+            "printedName": "appState",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AppState",
+                "printedName": "BDPointSDK.AppState",
+                "usr": "c:@M@BDPointSDK@objc(cs)AppState"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BDPointSDK@objc(cs)FenceDwell(py)appState",
+            "mangledName": "$s10BDPointSDK10FenceDwellC8appStateAA03AppF0Cvp",
+            "moduleName": "BDPointSDK",
+            "objc_name": "appState",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AppState",
+                    "printedName": "BDPointSDK.AppState",
+                    "usr": "c:@M@BDPointSDK@objc(cs)AppState"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BDPointSDK@objc(cs)FenceDwell(im)appState",
+                "mangledName": "$s10BDPointSDK10FenceDwellC8appStateAA03AppF0Cvg",
+                "moduleName": "BDPointSDK",
+                "implicit": true,
+                "objc_name": "appState",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "triggerEngine",
+            "printedName": "triggerEngine",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TriggerEngine",
+                "printedName": "BDPointSDK.TriggerEngine",
+                "usr": "c:@M@BDPointSDK@E@TriggerEngine"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BDPointSDK@objc(cs)FenceDwell(py)triggerEngine",
+            "mangledName": "$s10BDPointSDK10FenceDwellC13triggerEngineAA07TriggerF0Ovp",
+            "moduleName": "BDPointSDK",
+            "objc_name": "triggerEngine",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TriggerEngine",
+                    "printedName": "BDPointSDK.TriggerEngine",
+                    "usr": "c:@M@BDPointSDK@E@TriggerEngine"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BDPointSDK@objc(cs)FenceDwell(im)triggerEngine",
+                "mangledName": "$s10BDPointSDK10FenceDwellC13triggerEngineAA07TriggerF0Ovg",
+                "moduleName": "BDPointSDK",
+                "implicit": true,
+                "objc_name": "triggerEngine",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "timeZoneIdentifier",
+            "printedName": "timeZoneIdentifier",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BDPointSDK@objc(cs)FenceDwell(py)timeZoneIdentifier",
+            "mangledName": "$s10BDPointSDK10FenceDwellC18timeZoneIdentifierSSvp",
+            "moduleName": "BDPointSDK",
+            "objc_name": "timeZoneIdentifier",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BDPointSDK@objc(cs)FenceDwell(im)timeZoneIdentifier",
+                "mangledName": "$s10BDPointSDK10FenceDwellC18timeZoneIdentifierSSvg",
+                "moduleName": "BDPointSDK",
+                "implicit": true,
+                "objc_name": "timeZoneIdentifier",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "uniqueId",
+            "printedName": "uniqueId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UUID",
+                "printedName": "Foundation.UUID",
+                "usr": "s:10Foundation4UUIDV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BDPointSDK@objc(cs)FenceDwell(py)uniqueId",
+            "mangledName": "$s10BDPointSDK10FenceDwellC8uniqueId10Foundation4UUIDVvp",
+            "moduleName": "BDPointSDK",
+            "objc_name": "uniqueId",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UUID",
+                    "printedName": "Foundation.UUID",
+                    "usr": "s:10Foundation4UUIDV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BDPointSDK@objc(cs)FenceDwell(im)uniqueId",
+                "mangledName": "$s10BDPointSDK10FenceDwellC8uniqueId10Foundation4UUIDVvg",
+                "moduleName": "BDPointSDK",
+                "implicit": true,
+                "objc_name": "uniqueId",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "calculatedDwellTime",
+            "printedName": "calculatedDwellTime",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BDPointSDK@objc(cs)FenceDwell(py)calculatedDwellTime",
+            "mangledName": "$s10BDPointSDK10FenceDwellC010calculatedD4TimeSdvp",
+            "moduleName": "BDPointSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BDPointSDK@objc(cs)FenceDwell(im)calculatedDwellTime",
+                "mangledName": "$s10BDPointSDK10FenceDwellC010calculatedD4TimeSdvg",
+                "moduleName": "BDPointSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "dwellThreshold",
+            "printedName": "dwellThreshold",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BDPointSDK@objc(cs)FenceDwell(py)dwellThreshold",
+            "mangledName": "$s10BDPointSDK10FenceDwellC14dwellThresholdSdvp",
+            "moduleName": "BDPointSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BDPointSDK@objc(cs)FenceDwell(im)dwellThreshold",
+                "mangledName": "$s10BDPointSDK10FenceDwellC14dwellThresholdSdvg",
+                "moduleName": "BDPointSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(fenceId:fenceName:eventTime:locations:calculatedDwellTime:dwellThreshold:appState:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FenceDwell",
+                "printedName": "BDPointSDK.FenceDwell",
+                "usr": "c:@M@BDPointSDK@objc(cs)FenceDwell"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UUID",
+                "printedName": "Foundation.UUID",
+                "usr": "s:10Foundation4UUIDV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "hasDefaultArg": true,
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[CoreLocation.CLLocation]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLLocation",
+                    "printedName": "CoreLocation.CLLocation",
+                    "usr": "c:objc(cs)CLLocation"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AppState",
+                "printedName": "BDPointSDK.AppState",
+                "usr": "c:@M@BDPointSDK@objc(cs)AppState"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BDPointSDK@objc(cs)FenceDwell(im)initWithFenceId:fenceName:eventTime:locations:calculatedDwellTime:dwellThreshold:appState:",
+            "mangledName": "$s10BDPointSDK10FenceDwellC7fenceId0E4Name9eventTime9locations010calculateddI014dwellThreshold8appStateAC10Foundation4UUIDV_SSAK4DateVSaySo10CLLocationCGS2dAA03AppO0Ctcfc",
+            "moduleName": "BDPointSDK",
+            "objc_name": "initWithFenceId:fenceName:eventTime:locations:calculatedDwellTime:dwellThreshold:appState:",
+            "declAttributes": [
+              "Convenience",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FenceDwell",
+                "printedName": "BDPointSDK.FenceDwell",
+                "usr": "c:@M@BDPointSDK@objc(cs)FenceDwell"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BDPointSDK@objc(cs)FenceDwell(im)init",
+            "mangledName": "$s10BDPointSDK10FenceDwellCACycfc",
+            "moduleName": "BDPointSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "isEqual",
+            "printedName": "isEqual(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BDPointSDK@objc(cs)FenceDwell(im)isEqual:",
+            "mangledName": "$s10BDPointSDK10FenceDwellC7isEqualySbypSgF",
+            "moduleName": "BDPointSDK",
+            "overriding": true,
+            "objc_name": "isEqual:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "Override"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "copy",
+            "printedName": "copy(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ObjectiveC.NSZone?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSZone",
+                    "printedName": "ObjectiveC.NSZone",
+                    "usr": "s:10ObjectiveC6NSZoneV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BDPointSDK@objc(cs)FenceDwell(im)copyWithZone:",
+            "mangledName": "$s10BDPointSDK10FenceDwellC4copy4withyp10ObjectiveC6NSZoneVSg_tF",
+            "moduleName": "BDPointSDK",
+            "objc_name": "copyWithZone:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10BDPointSDK10FenceDwellC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s10BDPointSDK10FenceDwellC6encode2toys7Encoder_p_tKF",
+            "moduleName": "BDPointSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "toJson",
+            "printedName": "toJson()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BDPointSDK@objc(cs)FenceDwell(im)toJson:",
+            "mangledName": "$s10BDPointSDK10FenceDwellC6toJsonSSyKF",
+            "moduleName": "BDPointSDK",
+            "objc_name": "toJson:",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BDPointSDK@objc(cs)FenceDwell",
+        "mangledName": "$s10BDPointSDK10FenceDwellC",
+        "moduleName": "BDPointSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "TriggerEvent",
+            "printedName": "TriggerEvent",
+            "usr": "c:@M@BDPointSDK@objc(pl)TriggerEvent",
+            "mangledName": "$s10BDPointSDK12TriggerEventP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Event",
+            "printedName": "Event",
+            "usr": "c:@M@BDPointSDK@objc(pl)Event",
+            "mangledName": "$s10BDPointSDK5EventP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "JsonString",
+            "printedName": "JsonString",
+            "usr": "c:@M@BDPointSDK@objc(pl)JsonString",
+            "mangledName": "$s10BDPointSDK10JsonStringP"
           }
         ]
       },
@@ -45971,6 +47819,328 @@
         "printedName": "CoreLocation",
         "declKind": "Import",
         "moduleName": "BDPointSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BDPointSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "BDPointSDKPrivate",
+        "printedName": "BDPointSDKPrivate",
+        "declKind": "Import",
+        "moduleName": "BDPointSDK",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DwellEventScheduler",
+        "printedName": "DwellEventScheduler",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "logger",
+            "printedName": "logger",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any BDPointSDK.Logger)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Logger",
+                    "printedName": "any BDPointSDK.Logger",
+                    "usr": "c:@M@BDPointSDK@objc(pl)Logger"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BDPointSDK@objc(cs)DwellEventScheduler(py)logger",
+            "mangledName": "$s10BDPointSDK19DwellEventSchedulerC6loggerAA6Logger_pSgvp",
+            "moduleName": "BDPointSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "spi_group_names": [
+              "BDPointSDKPrivate"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any BDPointSDK.Logger)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Logger",
+                        "printedName": "any BDPointSDK.Logger",
+                        "usr": "c:@M@BDPointSDK@objc(pl)Logger"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BDPointSDK@objc(cs)DwellEventScheduler(im)logger",
+                "mangledName": "$s10BDPointSDK19DwellEventSchedulerC6loggerAA6Logger_pSgvg",
+                "moduleName": "BDPointSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "spi_group_names": [
+                  "BDPointSDKPrivate"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(logger:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DwellEventScheduler",
+                "printedName": "BDPointSDK.DwellEventScheduler",
+                "usr": "c:@M@BDPointSDK@objc(cs)DwellEventScheduler"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Logger",
+                "printedName": "any BDPointSDK.Logger",
+                "usr": "c:@M@BDPointSDK@objc(pl)Logger"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BDPointSDK@objc(cs)DwellEventScheduler(im)initWithLogger:",
+            "mangledName": "$s10BDPointSDK19DwellEventSchedulerC6loggerAcA6Logger_p_tcfc",
+            "moduleName": "BDPointSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "spi_group_names": [
+              "BDPointSDKPrivate"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "scheduleDwellTimer",
+            "printedName": "scheduleDwellTimer(for:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PendingDwell",
+                "printedName": "BDPointSDK.PendingDwell",
+                "usr": "c:@M@BDPointSDK@objc(cs)PendingDwell"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BDPointSDK.TriggerEventNotification) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TriggerEventNotification",
+                    "printedName": "BDPointSDK.TriggerEventNotification",
+                    "usr": "c:@M@BDPointSDK@objc(cs)TriggerEventNotification"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BDPointSDK@objc(cs)DwellEventScheduler(im)scheduleDwellTimerFor:completion:",
+            "mangledName": "$s10BDPointSDK19DwellEventSchedulerC08scheduleC5Timer3for10completionyAA07PendingC0C_yAA07TriggerD12NotificationCctF",
+            "moduleName": "BDPointSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "spi_group_names": [
+              "BDPointSDKPrivate"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopMonitoringDwellEvent",
+            "printedName": "stopMonitoringDwellEvent(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BDPointSDK@objc(cs)DwellEventScheduler(im)stopMonitoringDwellEventFor:",
+            "mangledName": "$s10BDPointSDK19DwellEventSchedulerC014stopMonitoringcD03forySS_tF",
+            "moduleName": "BDPointSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "spi_group_names": [
+              "BDPointSDKPrivate"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DwellEventScheduler",
+                "printedName": "BDPointSDK.DwellEventScheduler",
+                "usr": "c:@M@BDPointSDK@objc(cs)DwellEventScheduler"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BDPointSDK@objc(cs)DwellEventScheduler(im)init",
+            "mangledName": "$s10BDPointSDK19DwellEventSchedulerCACycfc",
+            "moduleName": "BDPointSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "spi_group_names": [
+              "BDPointSDKPrivate"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BDPointSDK@objc(cs)DwellEventScheduler",
+        "mangledName": "$s10BDPointSDK19DwellEventSchedulerC",
+        "moduleName": "BDPointSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjCMembers",
+          "SPIAccessControl",
+          "ObjC"
+        ],
+        "spi_group_names": [
+          "BDPointSDKPrivate"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -60560,6 +62730,20 @@
             ],
             "usr": "s:7Combine9SchedulerP",
             "mangledName": "$s7Combine9SchedulerP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "TaskExecutor",
+            "printedName": "TaskExecutor",
+            "usr": "s:Sch",
+            "mangledName": "$sSch"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Executor",
+            "printedName": "Executor",
+            "usr": "s:ScF",
+            "mangledName": "$sScF"
           }
         ]
       },
@@ -61659,7 +63843,7 @@
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/GeoTriggerEvent\/GeoTriggerEvent.swift",
       "kind": "StringLiteral",
-      "offset": 2622,
+      "offset": 3102,
       "length": 2,
       "value": "\"\""
     },
@@ -61792,23 +63976,30 @@
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/RainbowNotifications\/EventNotifications\/EventNotification.swift",
       "kind": "IntegerLiteral",
-      "offset": 408,
+      "offset": 442,
       "length": 5,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/RainbowNotifications\/EventNotifications\/EventNotification.swift",
       "kind": "IntegerLiteral",
-      "offset": 451,
-      "length": 9,
+      "offset": 477,
+      "length": 5,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/RainbowNotifications\/EventNotifications\/EventNotification.swift",
       "kind": "IntegerLiteral",
-      "offset": 498,
-      "length": 7,
+      "offset": 520,
+      "length": 9,
       "value": "4"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/RainbowNotifications\/EventNotifications\/EventNotification.swift",
+      "kind": "IntegerLiteral",
+      "offset": 567,
+      "length": 7,
+      "value": "5"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Support\/RainbowAPIClientData\/ZoneInfoExtensions.swift",
@@ -62142,44 +64333,51 @@
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/RainbowNotifications\/Events\/Event.swift",
       "kind": "IntegerLiteral",
-      "offset": 369,
-      "length": 11,
+      "offset": 378,
+      "length": 10,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/RainbowNotifications\/Events\/Event.swift",
       "kind": "IntegerLiteral",
-      "offset": 433,
-      "length": 9,
+      "offset": 443,
+      "length": 11,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/RainbowNotifications\/Events\/Event.swift",
       "kind": "IntegerLiteral",
-      "offset": 494,
-      "length": 7,
+      "offset": 507,
+      "length": 9,
       "value": "4"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/RainbowNotifications\/Events\/Event.swift",
       "kind": "IntegerLiteral",
-      "offset": 548,
-      "length": 8,
+      "offset": 568,
+      "length": 7,
       "value": "5"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/RainbowNotifications\/Events\/Event.swift",
       "kind": "IntegerLiteral",
-      "offset": 621,
-      "length": 15,
+      "offset": 622,
+      "length": 8,
       "value": "6"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/RainbowNotifications\/Events\/Event.swift",
       "kind": "IntegerLiteral",
-      "offset": 700,
-      "length": 14,
+      "offset": 695,
+      "length": 15,
       "value": "7"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/RainbowNotifications\/Events\/Event.swift",
+      "kind": "IntegerLiteral",
+      "offset": 774,
+      "length": 14,
+      "value": "8"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/PointAPI.swift",
@@ -63080,42 +65278,42 @@
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/RainbowNotifications\/EventNotifications\/TriggerEventNotification.swift",
       "kind": "StringLiteral",
-      "offset": 714,
+      "offset": 721,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/RainbowNotifications\/EventNotifications\/TriggerEventNotification.swift",
       "kind": "IntegerLiteral",
-      "offset": 912,
+      "offset": 919,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/RainbowNotifications\/EventNotifications\/TriggerEventNotification.swift",
       "kind": "StringLiteral",
-      "offset": 2814,
+      "offset": 2821,
       "length": 26,
       "value": "\"TriggerEventNotification\""
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/RainbowNotifications\/EventNotifications\/TriggerEventNotification.swift",
       "kind": "StringLiteral",
-      "offset": 2927,
+      "offset": 2934,
       "length": 28,
       "value": "\"triggerChainIdString == %@\""
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/RainbowNotifications\/EventNotifications\/TriggerEventNotification.swift",
       "kind": "StringLiteral",
-      "offset": 7017,
+      "offset": 7024,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/RainbowNotifications\/EventNotifications\/TriggerEventNotification.swift",
       "kind": "StringLiteral",
-      "offset": 7234,
+      "offset": 7241,
       "length": 2,
       "value": "\"\""
     },
@@ -63556,14 +65754,14 @@
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Signal Processing\/Rainbow Notification Manager\/RainbowNotificationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 4127,
+      "offset": 4263,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Signal Processing\/Rainbow Notification Manager\/RainbowNotificationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 11508,
+      "offset": 11644,
       "length": 4,
       "value": "true"
     },
@@ -63613,6 +65811,27 @@
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/Modules\/BDRuleEngine\/Model\/Filter\/CrossedFilterDetail.swift",
       "kind": "StringLiteral",
       "offset": 1966,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/DwellConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 1296,
+      "length": 48,
+      "value": "\"enabled = \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/DwellConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 1317,
+      "length": 1,
+      "value": "\", threshold = \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Configuration\/DwellConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 1343,
       "length": 1,
       "value": "\"\""
     },
@@ -64154,6 +66373,13 @@
       "offset": 755,
       "length": 22,
       "value": "\"GeoTriggeringManager\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/GeoTriggerEvent\/DwellEventScheduler.swift",
+      "kind": "StringLiteral",
+      "offset": 419,
+      "length": 55,
+      "value": "\"com.bluedot.au.DwellEventScheduler.pendingDwellsQueue\""
     },
     {
       "filePath": "\/Users\/runner\/work\/point_sdk_ios\/point_sdk_ios\/BDPointSDK\/Swift\/Signal Processing\/Accuracy Modifier\/AccuracyModifier.swift",

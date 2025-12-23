@@ -295,6 +295,27 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/Configuration/DwellConfiguration.swift",
+      "line": 50,
+      "symbol": "DwellConfiguration.==(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/Configuration/DwellConfiguration.swift",
+      "line": 55,
+      "symbol": "DwellConfiguration.isEqual(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/Configuration/DwellConfiguration.swift",
+      "line": 61,
+      "symbol": "DwellConfiguration.hash",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/Signal Processing/Sensors/LocationSensor.swift",
       "line": 458,
       "symbol": "LocationSensor.startLocationUpdates()",

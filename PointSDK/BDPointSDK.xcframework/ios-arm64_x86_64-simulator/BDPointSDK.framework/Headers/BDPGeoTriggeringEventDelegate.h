@@ -41,4 +41,11 @@
  */
 - (void)didExitZone:(nonnull GeoTriggerEvent *)exitEvent;
 
+/**
+ * Implement this method to provide your own implementation when device dwells in a Zone.
+ *
+ * @param dwellEvent Contains zone dwell event information. See ``GeoTriggerEvent`` for more information.
+ */
+- (void)didDwellInZone:(nonnull GeoTriggerEvent *)dwellEvent;
+
 @end

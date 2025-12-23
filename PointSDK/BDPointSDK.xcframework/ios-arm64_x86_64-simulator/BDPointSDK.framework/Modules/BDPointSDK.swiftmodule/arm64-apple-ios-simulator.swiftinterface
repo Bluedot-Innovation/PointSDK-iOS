@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-bare-slash-regex -module-name BDPointSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name BDPointSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 @_exported import BDPointSDK
 
 import CommonCrypto
@@ -49,6 +49,15 @@ extension Swift.Double {
     get
   }
 }
+extension BDPointSDK.FenceDwell {
+  @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
+}
+extension BDPointSDK.FenceDwell : Foundation.NSCopying {
+  @objc dynamic public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+}
+extension BDPointSDK.FenceDwell : Swift.Encodable {
+  public func encode(to encoder: any Swift.Encoder) throws
+}
 @_hasMissingDesignatedInitializers @objc public class GeoTriggerEvent : ObjectiveC.NSObject {
   @objc final public let installRef: Foundation.UUID
   @objc final public let projectId: Swift.String
@@ -62,6 +71,9 @@ extension Swift.Double {
     @objc get
   }
   @objc public var exitEvent: BDPointSDK.FenceExited? {
+    @objc get
+  }
+  @objc public var dwellEvent: BDPointSDK.FenceDwell? {
     @objc get
   }
   @objc deinit
@@ -124,6 +136,7 @@ extension UserNotifications.UNAuthorizationStatus : Swift.CustomStringConvertibl
 @objc public enum NotificationType : Swift.Int {
   case entry
   case exit
+  case dwell
   case tempo
   case lifecycle
   case unknown
@@ -187,6 +200,7 @@ extension BDPointSDK.DeviceInfo : BDPointSDK.JsonString {
 @objc public enum EventType : Swift.Int {
   case fenceEntered
   case fenceExited
+  case fenceDwell
   case tempoUpdate
   case tempoStop
   case sdkInit
@@ -437,6 +451,24 @@ extension BDPointSDK.Chat {
       get
     }
   }
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class FenceDwell : ObjectiveC.NSObject {
+  @objc final public let eventType: BDPointSDK.EventType
+  @objc final public let eventTime: Foundation.Date
+  @objc final public let fenceName: Swift.String
+  @objc final public let fenceId: Foundation.UUID
+  @objc final public let locations: [CoreLocation.CLLocation]
+  @objc final public let appState: BDPointSDK.AppState
+  @objc final public let triggerEngine: BDPointSDK.TriggerEngine
+  @objc final public let timeZoneIdentifier: Swift.String
+  @objc final public let uniqueId: Foundation.UUID
+  @objc final public let calculatedDwellTime: Foundation.TimeInterval
+  @objc final public let dwellThreshold: Foundation.TimeInterval
+  @objc convenience public init(fenceId: Foundation.UUID, fenceName: Swift.String, eventTime: Foundation.Date = Date(), locations: [CoreLocation.CLLocation], calculatedDwellTime: Foundation.TimeInterval, dwellThreshold: Foundation.TimeInterval, appState: BDPointSDK.AppState)
+  @objc deinit
+}
+extension BDPointSDK.FenceDwell : BDPointSDK.JsonString {
+  @objc(toJson:) dynamic public func toJson() throws -> Swift.String
 }
 @objc public protocol TriggerEvent : BDPointSDK.Event, Foundation.NSCopying {
   @objc var fenceName: Swift.String { get }
