@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>BDPBluedotServiceDelegate Protocol Reference</title>
+    <title>PushPayload Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -14,8 +14,8 @@
     <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
-    <a name="//apple_ref/objc/Protocol/BDPBluedotServiceDelegate" class="dashAnchor"></a>
-    <a title="BDPBluedotServiceDelegate Protocol Reference"></a>
+    <a name="//apple_ref/objc/Class/PushPayload" class="dashAnchor"></a>
+    <a title="PushPayload Class Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">BDPointSDK v18.0.0 Docs</a></p>
@@ -32,9 +32,9 @@
       <p id="breadcrumbs">
         <a href="../index.html">BDPointSDK</a>
         <img id="carat" src="../img/carat.png" alt=""/>
-        <a href="../Protocols.html">Protocols</a>
+        <a href="../Classes.html">Classes</a>
         <img id="carat" src="../img/carat.png" alt=""/>
-        BDPBluedotServiceDelegate Protocol Reference
+        PushPayload Class Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -259,23 +259,16 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>BDPBluedotServiceDelegate</h1>
+            <h1>PushPayload</h1>
               <div class="declaration">
                 <div class="language">
-                  <p class="aside-title">Objective-C</p>
-                  <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">BDPBluedotServiceDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
-
-                </div>
-                <div class="language">
-                  <p class="aside-title">Swift</p>
-                  <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">BDPBluedotServiceDelegate</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
+                  
+                  <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">final</span> <span class="kd">public</span> <span class="kd">class</span> <span class="kt">PushPayload</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
                 </div>
               </div>
-            <p>Defines the call-backs which Point SDK makes to inform the Application of Bluedot service level events.</p>
-
-<p>Assign your own implementation of this protocol to the <code><a href="../Classes/BDLocationManager.html#/c:objc(cs)BDLocationManager(py)bluedotServiceDelegate">BDLocationManager.bluedotServiceDelegate</a></code>  property of the
-shared <code><a href="../Classes/BDLocationManager.html">BDLocationManager</a></code> instance, to handle Bluedot service level related callbacks.</p>
+            <p>Undocumented</p>
 
           </section>
           <section class="section task-group-section">
@@ -284,9 +277,9 @@ shared <code><a href="../Classes/BDLocationManager.html">BDLocationManager</a></
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(pl)BDPBluedotServiceDelegate(im)locationAuthorizationDidChangeFromPreviousStatus:toNewStatus:"></a>
-                    <a name="//apple_ref/objc/Method/-locationAuthorizationDidChangeFromPreviousStatus:toNewStatus:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)BDPBluedotServiceDelegate(im)locationAuthorizationDidChangeFromPreviousStatus:toNewStatus:">-locationAuthorizationDidChangeFromPreviousStatus:<wbr>toNewStatus:<wbr></a>
+                    <a name="/s:10BDPointSDK11PushPayloadC6zoneIdSSvp"></a>
+                    <a name="//apple_ref/objc/Property/zoneId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10BDPointSDK11PushPayloadC6zoneIdSSvp">zoneId</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -294,60 +287,16 @@ shared <code><a href="../Classes/BDLocationManager.html">BDLocationManager</a></
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This method can be implemented to keep track of changes in Location Manager&rsquo;s CLAuthorizationStatus.</p>
-
-<p>This method is called whenever location authorization status changes.</p>
-
-<p>You may wish to communicate to your user when location authorization status changes. For example, you may wish to ask for &ldquo;Always&rdquo; or &ldquo;When in Use&rdquo; authorization from within your app.</p>
+                        <p>Undocumented</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">locationAuthorizationDidChangeFromPreviousStatus</span><span class="p">:</span>
-            <span class="p">(</span><span class="n">CLAuthorizationStatus</span><span class="p">)</span><span class="nv">previousAuthorizationStatus</span>
-                                             <span class="nf">toNewStatus</span><span class="p">:</span>
-                                                 <span class="p">(</span><span class="n">CLAuthorizationStatus</span><span class="p">)</span>
-                                                     <span class="n">newAuthorizationStatus</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">locationAuthorizationDidChange</span><span class="p">(</span><span class="n">fromPreviousStatus</span> <span class="nv">previousAuthorizationStatus</span><span class="p">:</span> <span class="kt">CLAuthorizationStatus</span><span class="p">,</span> <span class="n">toNewStatus</span> <span class="nv">newAuthorizationStatus</span><span class="p">:</span> <span class="kt">CLAuthorizationStatus</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">zoneId</span><span class="p">:</span> <span class="kt">String</span></code></pre>
 
                         </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>previousAuthorizationStatus</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>Previous authorization status</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>newAuthorizationStatus</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>Current authorization status</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
                       </div>
                     </section>
                   </div>
@@ -355,9 +304,9 @@ shared <code><a href="../Classes/BDLocationManager.html">BDLocationManager</a></
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(pl)BDPBluedotServiceDelegate(im)lowPowerModeDidChange:"></a>
-                    <a name="//apple_ref/objc/Method/-lowPowerModeDidChange:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)BDPBluedotServiceDelegate(im)lowPowerModeDidChange:">-lowPowerModeDidChange:<wbr></a>
+                    <a name="/s:10BDPointSDK11PushPayloadC14notificationIdSSvp"></a>
+                    <a name="//apple_ref/objc/Property/notificationId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10BDPointSDK11PushPayloadC14notificationIdSSvp">notificationId</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -365,44 +314,16 @@ shared <code><a href="../Classes/BDLocationManager.html">BDLocationManager</a></
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This method can be implemented to monitor whether the iOS &lsquo;Low Power Mode&rsquo; has been enabled or disabled.</p>
-
-<p>This method is called whenever low power mode status changes in the device.</p>
-
-<p>The callback is required because Low Power mode negatively impacts the timeliness and precision of Point SDK, which your Application may need to communicate to the user.</p>
+                        <p>Undocumented</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">lowPowerModeDidChange</span><span class="p">:(</span><span class="kt">_Bool</span><span class="p">)</span><span class="nv">isLowPowerMode</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">lowPowerModeDidChange</span><span class="p">(</span><span class="n">_</span> <span class="nv">isLowPowerMode</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">notificationId</span><span class="p">:</span> <span class="kt">String</span></code></pre>
 
                         </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>isLowPowerMode</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>Indicates whether the device is in Low power mode</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
                       </div>
                     </section>
                   </div>
@@ -410,9 +331,9 @@ shared <code><a href="../Classes/BDLocationManager.html">BDLocationManager</a></
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(pl)BDPBluedotServiceDelegate(im)bluedotServiceDidReceiveError:"></a>
-                    <a name="//apple_ref/objc/Method/-bluedotServiceDidReceiveError:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)BDPBluedotServiceDelegate(im)bluedotServiceDidReceiveError:">-bluedotServiceDidReceiveError:<wbr></a>
+                    <a name="/s:10BDPointSDK11PushPayloadC10campaignIdSSvp"></a>
+                    <a name="//apple_ref/objc/Property/campaignId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10BDPointSDK11PushPayloadC10campaignIdSSvp">campaignId</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -420,40 +341,16 @@ shared <code><a href="../Classes/BDLocationManager.html">BDLocationManager</a></
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This method is called if Bluedot Error encouters an error.</p>
+                        <p>Undocumented</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">bluedotServiceDidReceiveError</span><span class="p">:(</span><span class="n">NSError</span> <span class="o">*</span><span class="p">)</span><span class="nv">error</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">bluedotServiceDidReceiveError</span><span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="p">(</span><span class="n">any</span> <span class="kt">Error</span><span class="p">)</span><span class="o">!</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">campaignId</span><span class="p">:</span> <span class="kt">String</span></code></pre>
 
                         </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>error</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>Details from NSError objects delivered here are intended for development logging purposes and are not intended to be seen by your application&rsquo;s users.</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
                       </div>
                     </section>
                   </div>
@@ -461,9 +358,9 @@ shared <code><a href="../Classes/BDLocationManager.html">BDLocationManager</a></
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(pl)BDPBluedotServiceDelegate(im)accuracyAuthorizationDidChangeFromPreviousAuthorization:toNewAuthorization:"></a>
-                    <a name="//apple_ref/objc/Method/-accuracyAuthorizationDidChangeFromPreviousAuthorization:toNewAuthorization:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)BDPBluedotServiceDelegate(im)accuracyAuthorizationDidChangeFromPreviousAuthorization:toNewAuthorization:">-accuracyAuthorizationDidChangeFromPreviousAuthorization:<wbr>toNewAuthorization:<wbr></a>
+                    <a name="/s:10BDPointSDK11PushPayloadC5titleSSvp"></a>
+                    <a name="//apple_ref/objc/Property/title" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10BDPointSDK11PushPayloadC5titleSSvp">title</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -471,60 +368,16 @@ shared <code><a href="../Classes/BDLocationManager.html">BDLocationManager</a></
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This method can be implemented to keep track of changes in Location Manager&rsquo;s CLAccuracyAuthorization .</p>
-
-<p>This method is called whenever accuracy authorization status changes.</p>
-
-<p>You may wish to communicate to your user when accuracy authorization changes. For example, you may wish to ask for Full Accuracy authorization from within your app.</p>
+                        <p>Undocumented</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">accuracyAuthorizationDidChangeFromPreviousAuthorization</span><span class="p">:</span>
-            <span class="p">(</span><span class="n">CLAccuracyAuthorization</span><span class="p">)</span><span class="nv">previousAccuracyAuthorization</span>
-                                             <span class="nf">toNewAuthorization</span><span class="p">:</span>
-                                                 <span class="p">(</span><span class="n">CLAccuracyAuthorization</span><span class="p">)</span>
-                                                     <span class="n">newAccuracyAuthorization</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">accuracyAuthorizationDidChange</span><span class="p">(</span><span class="n">fromPreviousAuthorization</span> <span class="nv">previousAccuracyAuthorization</span><span class="p">:</span> <span class="kt">CLAccuracyAuthorization</span><span class="p">,</span> <span class="n">toNewAuthorization</span> <span class="nv">newAccuracyAuthorization</span><span class="p">:</span> <span class="kt">CLAccuracyAuthorization</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">title</span><span class="p">:</span> <span class="kt">String</span></code></pre>
 
                         </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>previousAccuracyAuthorization</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>Previous accuracy authorization</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>newAccuracyAuthorization</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>Current accuracy authorization</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
                       </div>
                     </section>
                   </div>

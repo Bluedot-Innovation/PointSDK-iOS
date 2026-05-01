@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "BluedotPointSDK"
-  s.version = "17.2.0"
+  s.version = "18.0.0"
   s.summary = "The Bluedot Point SDK is powering the most innovative location-based apps for iOS and Android."
   s.description = "Bluedot Innovation's cutting edge location services solution - the Bluedot Point SDK - is powering the most innovative location-based apps for iOS and Android.
   Deliver creative content and collect valuable analytics using Bluedot Innovation's powerful, precise and easy-to-use location services technology."
@@ -11,8 +11,8 @@ Pod::Spec.new do |s|
 
     Point SDK
 
-    Created by Bluedot Innovation in 2025.
-    Copyright © 2025 Bluedot Innovation. All rights reserved.
+    Created by Bluedot Innovation in 2026.
+    Copyright © 2026 Bluedot Innovation. All rights reserved.
 
     By downloading or using the Bluedot Point SDK for iOS, You agree to the Bluedot Terms and Conditions
     https://bluedot.io/agreements/#terms and Privacy Policy https://bluedot.io/agreements/#privacy

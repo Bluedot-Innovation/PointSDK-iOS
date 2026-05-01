@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
 // swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name BDPointSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
 @_exported import BDPointSDK
 
 import CommonCrypto
@@ -30,14 +30,16 @@ extension BDPointSDK.TempoTrackingUpdate {
   @objc override dynamic public var description: Swift.String {
     @objc get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
+  #endif
 }
 @objc @objcMembers public class CrossedFence : ObjectiveC.NSObject, Swift.Codable {
   @objc final public let fenceId: Swift.String
   @objc final public let fenceName: Swift.String
   @objc final public let crossTime: Foundation.Date
-  @objc final public let location: CoreLocation.CLLocation
-  @objc public init(fenceId: Swift.String, fenceName: Swift.String, location: CoreLocation.CLLocation, crossTime: Foundation.Date = Date())
+  @objc final public let location: _LocationEssentials.CLLocation
+  @objc public init(fenceId: Swift.String, fenceName: Swift.String, location: _LocationEssentials.CLLocation, crossTime: Foundation.Date = Date())
   required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
 }
@@ -50,10 +52,14 @@ extension Swift.Double {
   }
 }
 extension BDPointSDK.FenceDwell {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
+  #endif
 }
 extension BDPointSDK.FenceDwell : Foundation.NSCopying {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  #endif
 }
 extension BDPointSDK.FenceDwell : Swift.Encodable {
   public func encode(to encoder: any Swift.Encoder) throws
@@ -67,31 +73,25 @@ extension BDPointSDK.FenceDwell : Swift.Encodable {
   @objc final public let zoneInfo: BDPointSDK.ZoneInfo
   @objc final public let appInfo: BDPointSDK.AppInfo
   @objc final public let triggerEvents: [any BDPointSDK.TriggerEvent]
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public var entryEvent: BDPointSDK.FenceEntered? {
     @objc get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public var exitEvent: BDPointSDK.FenceExited? {
     @objc get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public var dwellEvent: BDPointSDK.FenceDwell? {
     @objc get
   }
+  #endif
   @objc deinit
 }
 extension BDPointSDK.GeoTriggerEvent : BDPointSDK.JsonString {
   @objc(toJson:) dynamic public func toJson() throws -> Swift.String
-}
-@_hasMissingDesignatedInitializers @objc public class Chat : ObjectiveC.NSObject {
-  @objc public var userID: Swift.String
-  @objc public var language: Swift.String
-  @objc public var sessionID: Swift.String {
-    @objc get
-  }
-  public func sendMessage(_ message: Swift.String) -> _Concurrency.AsyncThrowingStream<BDPointSDK.StreamingResponseDto, any Swift.Error>
-  @objc public func sendMessage(_ message: Swift.String, onUpdate: @escaping (BDPointSDK.StreamingResponseDto) -> Swift.Void, onCompletion: @escaping () -> Swift.Void, onError: @escaping (Foundation.NSError) -> Swift.Void)
-  public func submitFeedback(responseID: Swift.String, reaction: BDPointSDK.Chat.Reaction) async throws
-  @objc public func submitFeedback(responseID: Swift.String, reaction: BDPointSDK.Chat.Reaction, completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
-  @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers public class AppState : ObjectiveC.NSObject {
   @objc final public let batteryLevel: Foundation.Decimal
@@ -100,7 +100,9 @@ extension BDPointSDK.GeoTriggerEvent : BDPointSDK.JsonString {
   @objc final public let locationPermission: Swift.String
   @objc final public let notificationPermission: Swift.String
   @objc final public let viewState: Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc convenience public init(lastRuleDownload: Foundation.Date? = nil, osRestrictions: [Swift.String] = [])
+  #endif
   @objc deinit
 }
 extension BDPointSDK.AppState : BDPointSDK.JsonString {
@@ -121,11 +123,17 @@ extension UIKit.UIDeviceOrientation : Swift.CustomStringConvertible {
     @objc get
   }
   @objc dynamic public func canSendNotification() -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func scheduleNotification(notificationId: Swift.String, title: Swift.String?, message: Swift.String)
+  #endif
 }
 @objc extension UserNotifications.UNMutableNotificationContent {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func content(title: Swift.String?, message: Swift.String) -> UserNotifications.UNMutableNotificationContent
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func content(title: Swift.String?, message: Swift.String, userInfo: [Swift.String : Any]?) -> UserNotifications.UNMutableNotificationContent
+  #endif
 }
 extension UserNotifications.UNAuthorizationStatus : Swift.CustomStringConvertible {
   public var description: Swift.String {
@@ -140,7 +148,9 @@ extension UserNotifications.UNAuthorizationStatus : Swift.CustomStringConvertibl
   case tempo
   case lifecycle
   case unknown
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -158,33 +168,30 @@ extension BDPointSDK.ZoneInfo : Swift.Encodable {
   public func encode(to encoder: any Swift.Encoder) throws
 }
 extension BDPointSDK.ZoneInfo {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override dynamic open func isEqual(_ object: Any?) -> Swift.Bool
+  #endif
 }
 extension BDPointSDK.ZoneInfo : Foundation.NSCopying {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  #endif
 }
 extension Foundation.NSNotification.Name {
   public static let bdReachabilityChanged: Foundation.Notification.Name
-}
-extension BDPointSDK.Chat {
-  @objc public enum Reaction : Swift.Int {
-    case liked
-    case disliked
-    public init?(rawValue: Swift.Int)
-    public typealias RawValue = Swift.Int
-    public var rawValue: Swift.Int {
-      get
-    }
-  }
 }
 extension BDPointSDK.AppState : Swift.Encodable {
   public func encode(to encoder: any Swift.Encoder) throws
 }
 extension BDPointSDK.AppState : Foundation.NSCopying {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  #endif
 }
 extension BDPointSDK.AppState {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override dynamic open func isEqual(_ object: Any?) -> Swift.Bool
+  #endif
 }
 extension Dispatch.DispatchQueue {
   public func execute(_ work: @escaping () -> Swift.Void)
@@ -207,7 +214,9 @@ extension BDPointSDK.DeviceInfo : BDPointSDK.JsonString {
   case sdkReset
   case geoTriggerStart
   case geoTriggerStop
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -228,7 +237,9 @@ extension BDPointSDK.EventType : Swift.CustomStringConvertible {
 @objc public enum SDKApplicationState : Swift.Int {
   case active
   case background
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -243,14 +254,16 @@ extension BDPointSDK.DeviceInfo : Swift.Encodable {
   public func encode(to encoder: any Swift.Encoder) throws
 }
 extension BDPointSDK.DeviceInfo {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override dynamic open func isEqual(_ object: Any?) -> Swift.Bool
+  #endif
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers public class FenceExited : ObjectiveC.NSObject {
   @objc final public let eventType: BDPointSDK.EventType
   @objc final public let eventTime: Foundation.Date
   @objc final public let fenceName: Swift.String
   @objc final public let fenceId: Foundation.UUID
-  @objc final public let locations: [CoreLocation.CLLocation]
+  @objc final public let locations: [_LocationEssentials.CLLocation]
   @objc final public let appState: BDPointSDK.AppState
   @objc final public let triggerEngine: BDPointSDK.TriggerEngine
   @objc final public let distance: Swift.Float
@@ -258,38 +271,19 @@ extension BDPointSDK.DeviceInfo {
   @objc final public let dwellTime: Foundation.TimeInterval
   @objc final public let timeZoneIdentifier: Swift.String
   @objc final public let uniqueId: Foundation.UUID
-  @objc convenience public init(fenceId: Foundation.UUID, fenceName: Swift.String, eventTime: Foundation.Date = Date(), locations: [CoreLocation.CLLocation], dwellTime: Foundation.TimeInterval, distance: Swift.Float, distanceRequired: Swift.Float, appState: BDPointSDK.AppState)
+  @objc convenience public init(fenceId: Foundation.UUID, fenceName: Swift.String, eventTime: Foundation.Date = Date(), locations: [_LocationEssentials.CLLocation], dwellTime: Foundation.TimeInterval, distance: Swift.Float, distanceRequired: Swift.Float, appState: BDPointSDK.AppState)
   @objc deinit
 }
 extension BDPointSDK.FenceExited : BDPointSDK.JsonString {
   @objc(toJson:) dynamic public func toJson() throws -> Swift.String
 }
-@objc public class ChatContext : ObjectiveC.NSObject, Swift.Decodable {
-  @objc final public let title: Swift.String?
-  @objc final public let imageLinks: [Foundation.URL]?
-  @objc final public let price: Foundation.NSNumber?
-  @objc final public let contextDescription: Swift.String?
-  @objc final public let merchantID: Foundation.NSNumber?
-  @objc final public let categoryID: Foundation.NSNumber?
-  @objc final public let productID: Foundation.NSNumber?
-  public init(title: Swift.String? = nil, imageLinks: [Foundation.URL]? = nil, price: Foundation.NSNumber? = nil, contextDescription: Swift.String? = nil, merchantID: Foundation.NSNumber? = nil, categoryID: Foundation.NSNumber? = nil, productID: Foundation.NSNumber? = nil)
-  required public init(from decoder: any Swift.Decoder) throws
-  @objc deinit
-}
-@objc @_inheritsConvenienceInitializers @objcMembers public class BrainAI : ObjectiveC.NSObject {
-  public func createNewChat() -> Swift.Result<BDPointSDK.Chat, BDPointSDK.Chat.ChatError>
-  @available(swift, obsoleted: 1.0)
-  @objc(createNewChat) public func createNewChat() -> BDPointSDK.Chat?
-  @objc public func getChat(sessionID: Swift.String) -> BDPointSDK.Chat?
-  @objc public func closeChat(sessionID: Swift.String)
-  @objc override dynamic public init()
-  @objc deinit
-}
 extension BDPointSDK.GeoTriggerEvent {
   @objc override dynamic public var description: Swift.String {
     @objc get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
+  #endif
   public static func == (lhs: BDPointSDK.GeoTriggerEvent, rhs: BDPointSDK.GeoTriggerEvent) -> Swift.Bool
 }
 extension BDPointSDK.GeoTriggerEvent : Swift.Encodable {
@@ -299,7 +293,9 @@ extension BDPointSDK.GeoTriggerEvent : Swift.Encodable {
   case lessThan = 0
   case greaterThan = 1
   case unknown = -1
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -312,7 +308,9 @@ extension BDPointSDK.GeoTriggerEvent : Swift.Encodable {
   @objc public var destination: BDPointSDK.Destination? {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(triggerChainId: Swift.String, eta: Swift.Int, etaDirection: BDPointSDK.TempoUpdateETADirection, destination: BDPointSDK.Destination? = nil)
+  #endif
   required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
 }
@@ -336,8 +334,12 @@ extension BDPointSDK.ZoneInfo : BDPointSDK.JsonString {
   @objc final public let address: Swift.String?
   @objc final public let location: BDPointSDK.BDPoint
   @objc final public let customData: Foundation.NSDictionary?
+  #if compiler(>=5.3) && $NonescapableTypes
   convenience public init(destinationId: Swift.String, name: Swift.String? = nil, address: Swift.String? = nil, location: BDPointSDK.BDPoint, customData: [Swift.String : Swift.String]?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(destinationId: Swift.String, name: Swift.String? = nil, address: Swift.String? = nil, location: BDPointSDK.BDPoint, customData: Foundation.NSDictionary? = nil)
+  #endif
   @objc convenience public init(destination: BDPointSDK.Destination)
   @objc convenience public init(dictionary: [Swift.AnyHashable : Any]) throws
   required public init(from decoder: any Swift.Decoder) throws
@@ -347,7 +349,9 @@ extension BDPointSDK.Destination : BDPointSDK.JsonString {
   @objc(toJson:) dynamic public func toJson() throws -> Swift.String
 }
 extension BDPointSDK.TriggerEvent {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func isEqual(_ object: Any?) -> Swift.Bool
+  #endif
   public static func == (lhs: Self, rhs: Self) -> Swift.Bool
 }
 extension BDPointSDK.TriggerEvent where Self : Swift.Encodable {
@@ -355,17 +359,24 @@ extension BDPointSDK.TriggerEvent where Self : Swift.Encodable {
     get
   }
 }
-@objc public class StreamingResponseDto : ObjectiveC.NSObject, Swift.Decodable {
-  @objc final public let response: Swift.String?
-  @objc final public let responseID: Swift.String?
-  @objc final public let streamType: Swift.Int
-  @objc public var contexts: [BDPointSDK.ChatContext]
-  public init(response: Swift.String?, responseID: Swift.String?, streamType: Swift.Int, contexts: [BDPointSDK.ChatContext] = [])
-  required public init(from decoder: any Swift.Decoder) throws
-  @objc deinit
-}
 @objc public protocol JsonString : ObjectiveC.NSObjectProtocol {
   @objc(toJson:) func toJson() throws -> Swift.String
+}
+@_hasMissingDesignatedInitializers @objc final public class PushPayload : ObjectiveC.NSObject {
+  final public let zoneId: Swift.String
+  final public let notificationId: Swift.String
+  final public let campaignId: Swift.String
+  final public let title: Swift.String
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers final public class PushNotifications : ObjectiveC.NSObject {
+  @objc final public var onNotificationReceived: ((BDPointSDK.PushPayload) -> Swift.Void)?
+  @objc final public var onNotificationClicked: ((BDPointSDK.PushPayload) -> Swift.Void)?
+  @objc final public func register(_ deviceToken: Foundation.Data)
+  @objc final public func handleForeground(_ notification: UserNotifications.UNNotification) -> Swift.Bool
+  @objc final public func handleResponse(_ notificationResponse: UserNotifications.UNNotificationResponse)
+  @objc override dynamic public init()
+  @objc deinit
 }
 public protocol Scheduled {
   func invalidate()
@@ -373,24 +384,30 @@ public protocol Scheduled {
 extension BDPointSDK.FenceEntered : BDPointSDK.TriggerEvent {
 }
 extension BDPointSDK.FenceEntered {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
+  #endif
 }
 extension BDPointSDK.FenceEntered : Foundation.NSCopying {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  #endif
 }
 extension BDPointSDK.FenceEntered : Swift.Encodable {
   public func encode(to encoder: any Swift.Encoder) throws
 }
-extension CoreLocation.CLLocation : Swift.Encodable {
+extension _LocationEssentials.CLLocation : Swift.Encodable {
   public func encode(to encoder: any Swift.Encoder) throws
 }
-extension CoreLocation.CLLocation {
+extension _LocationEssentials.CLLocation {
   @objc convenience dynamic public init(location: BDPointSDK.BDLocation)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override dynamic open func isEqual(_ object: Any?) -> Swift.Bool
-  public static func == (lhs: CoreLocation.CLLocation, rhs: CoreLocation.CLLocation) -> Swift.Bool
+  #endif
+  public static func == (lhs: _LocationEssentials.CLLocation, rhs: _LocationEssentials.CLLocation) -> Swift.Bool
 }
-extension CoreLocation.CLLocationCoordinate2D : Swift.Equatable {
-  public static func == (lhs: CoreLocation.CLLocationCoordinate2D, rhs: CoreLocation.CLLocationCoordinate2D) -> Swift.Bool
+extension _LocationEssentials.CLLocationCoordinate2D : Swift.Equatable {
+  public static func == (lhs: _LocationEssentials.CLLocationCoordinate2D, rhs: _LocationEssentials.CLLocationCoordinate2D) -> Swift.Bool
 }
 extension CoreLocation.CLCircularRegion {
   @objc dynamic public func isEqualToCircularRegion(_ circularRegion: CoreLocation.CLCircularRegion) -> Swift.Bool
@@ -410,7 +427,9 @@ extension CoreLocation.CLProximity : Swift.CustomStringConvertible {
 @objc public enum TriggerEngine : Swift.Int {
   case bd
   case native
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -422,34 +441,21 @@ extension BDPointSDK.TriggerEngine : Swift.CustomStringConvertible {
   }
 }
 extension BDPointSDK.CrossedFence : Foundation.NSCopying {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  #endif
 }
 extension BDPointSDK.CrossedFence {
   public func encode(to encoder: any Swift.Encoder) throws
   @objc override dynamic public var description: Swift.String {
     @objc get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
+  #endif
   public static func == (lhs: BDPointSDK.CrossedFence, rhs: BDPointSDK.CrossedFence) -> Swift.Bool
   @objc override dynamic public var hash: Swift.Int {
     @objc get
-  }
-}
-extension BDPointSDK.Chat {
-  public enum ChatError : Swift.Error {
-    case invalidApiUrl
-    case invalidApiKey
-    case invalidLanguage
-    case serverError(statusCode: Swift.Int, details: Foundation.Data)
-    case networkError
-    case decodingError
-    case unknownError
-    public var errorDescription: Swift.String {
-      get
-    }
-    public var errorCode: Swift.Int {
-      get
-    }
   }
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers public class FenceDwell : ObjectiveC.NSObject {
@@ -457,14 +463,14 @@ extension BDPointSDK.Chat {
   @objc final public let eventTime: Foundation.Date
   @objc final public let fenceName: Swift.String
   @objc final public let fenceId: Foundation.UUID
-  @objc final public let locations: [CoreLocation.CLLocation]
+  @objc final public let locations: [_LocationEssentials.CLLocation]
   @objc final public let appState: BDPointSDK.AppState
   @objc final public let triggerEngine: BDPointSDK.TriggerEngine
   @objc final public let timeZoneIdentifier: Swift.String
   @objc final public let uniqueId: Foundation.UUID
   @objc final public let calculatedDwellTime: Foundation.TimeInterval
   @objc final public let dwellThreshold: Foundation.TimeInterval
-  @objc convenience public init(fenceId: Foundation.UUID, fenceName: Swift.String, eventTime: Foundation.Date = Date(), locations: [CoreLocation.CLLocation], calculatedDwellTime: Foundation.TimeInterval, dwellThreshold: Foundation.TimeInterval, appState: BDPointSDK.AppState)
+  @objc convenience public init(fenceId: Foundation.UUID, fenceName: Swift.String, eventTime: Foundation.Date = Date(), locations: [_LocationEssentials.CLLocation], calculatedDwellTime: Foundation.TimeInterval, dwellThreshold: Foundation.TimeInterval, appState: BDPointSDK.AppState)
   @objc deinit
 }
 extension BDPointSDK.FenceDwell : BDPointSDK.JsonString {
@@ -473,7 +479,7 @@ extension BDPointSDK.FenceDwell : BDPointSDK.JsonString {
 @objc public protocol TriggerEvent : BDPointSDK.Event, Foundation.NSCopying {
   @objc var fenceName: Swift.String { get }
   @objc var fenceId: Foundation.UUID { get }
-  @objc var locations: [CoreLocation.CLLocation] { get }
+  @objc var locations: [_LocationEssentials.CLLocation] { get }
   @objc var uniqueId: Foundation.UUID { get }
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers public class FenceEntered : ObjectiveC.NSObject {
@@ -481,13 +487,15 @@ extension BDPointSDK.FenceDwell : BDPointSDK.JsonString {
   @objc final public let eventTime: Foundation.Date
   @objc final public let fenceName: Swift.String
   @objc final public let fenceId: Foundation.UUID
-  @objc final public let locations: [CoreLocation.CLLocation]
+  @objc final public let locations: [_LocationEssentials.CLLocation]
   @objc final public let appState: BDPointSDK.AppState
   @objc final public let crossedFences: [BDPointSDK.CrossedFence]?
   @objc final public let triggerEngine: BDPointSDK.TriggerEngine
   @objc final public let timeZoneIdentifier: Swift.String
   @objc final public let uniqueId: Foundation.UUID
-  @objc convenience public init(fenceId: Foundation.UUID, fenceName: Swift.String, eventTime: Foundation.Date = Date(), locations: [CoreLocation.CLLocation], appState: BDPointSDK.AppState, crossedFences: [BDPointSDK.CrossedFence]? = nil)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc convenience public init(fenceId: Foundation.UUID, fenceName: Swift.String, eventTime: Foundation.Date = Date(), locations: [_LocationEssentials.CLLocation], appState: BDPointSDK.AppState, crossedFences: [BDPointSDK.CrossedFence]? = nil)
+  #endif
   @objc deinit
 }
 extension BDPointSDK.FenceEntered : BDPointSDK.JsonString {
@@ -495,10 +503,14 @@ extension BDPointSDK.FenceEntered : BDPointSDK.JsonString {
 }
 infix operator => : AssignmentPrecedence
 extension BDPointSDK.FenceExited {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
+  #endif
 }
 extension BDPointSDK.FenceExited : Foundation.NSCopying {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  #endif
 }
 extension BDPointSDK.FenceExited : Swift.Encodable {
   public func encode(to encoder: any Swift.Encoder) throws
@@ -523,521 +535,728 @@ extension BDPointSDK.AppInfo : BDPointSDK.JsonString {
   required public init(from decoder: any Swift.Decoder) throws
 }
 extension BDPointSDK.OperatingSystemInfo {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override dynamic open func isEqual(_ object: Any?) -> Swift.Bool
+  #endif
 }
 extension BDPointSDK.AppInfo : Swift.Encodable {
   public func encode(to encoder: any Swift.Encoder) throws
 }
 extension BDPointSDK.AppInfo {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override dynamic open func isEqual(_ object: Any?) -> Swift.Bool
+  #endif
 }
 extension BDPointSDK.Destination : Swift.Encodable {
   public func encode(to encoder: any Swift.Encoder) throws
 }
 extension BDPointSDK.Destination : BDPointSDK.BDPJSONSerializable {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func dictionaryRepresentation() -> [Swift.AnyHashable : Any]?
+  #endif
 }
 extension BDPointSDK.Destination {
   @objc override dynamic public var description: Swift.String {
     @objc get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
+  #endif
 }
-@objc @_inheritsConvenienceInitializers public class MOAppInfo : CoreData.NSManagedObject {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+public typealias MOAppInfoCoreDataClassSet = Foundation.NSSet
+@objc @_inheritsConvenienceInitializers nonisolated public class MOAppInfo : CoreData.NSManagedObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  #endif
   @objc deinit
 }
+public typealias MOAppInfoCoreDataPropertiesSet = Foundation.NSSet
 extension BDPointSDK.MOAppInfo {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<BDPointSDK.MOAppInfo>
-  @objc @NSManaged dynamic public var appBuildVersion: Swift.String? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var appBuildVersion: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var customerApplicationId: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var customerApplicationId: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var customEventMetaData: Foundation.NSDictionary? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var customEventMetaData: Foundation.NSDictionary? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var minimumOSVersion: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var minimumOSVersion: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var sdkVersion: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var sdkVersion: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var uniqueIdString: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var uniqueIdString: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var lifecycleEventNotification: BDPointSDK.MOLifecycleEventNotification? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var lifecycleEventNotification: BDPointSDK.MOLifecycleEventNotification? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var triggerEventNotification: BDPointSDK.MOTriggerEventNotification? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var triggerEventNotification: BDPointSDK.MOTriggerEventNotification? {
     @objc get
     @objc set
   }
+  #endif
 }
 extension BDPointSDK.MOAppInfo : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
-@objc @_inheritsConvenienceInitializers public class MOAppState : CoreData.NSManagedObject {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+public typealias MOAppStateCoreDataClassSet = Foundation.NSSet
+@objc @_inheritsConvenienceInitializers nonisolated public class MOAppState : CoreData.NSManagedObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  #endif
   @objc deinit
 }
+public typealias MOAppStateCoreDataPropertiesSet = Foundation.NSSet
 extension BDPointSDK.MOAppState {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<BDPointSDK.MOAppState>
-  @objc @NSManaged dynamic public var batteryLevel: Foundation.NSDecimalNumber? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var batteryLevel: Foundation.NSDecimalNumber? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var blueBarEnabled: Swift.Bool {
+  #endif
+  @objc @NSManaged nonisolated dynamic public var blueBarEnabled: Swift.Bool {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var lastRuleDownload: Foundation.Date? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var lastRuleDownload: Foundation.Date? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var locationPermission: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var locationPermission: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var notificationPermission: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var notificationPermission: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var osRestrictions: Foundation.NSArray? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var osRestrictions: Foundation.NSArray? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var uniqueIdString: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var uniqueIdString: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var viewState: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var viewState: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var lifecycleEvent: BDPointSDK.MOLifecycleEventAbstract? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var lifecycleEvent: BDPointSDK.MOLifecycleEventAbstract? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var triggerEventAbstract: BDPointSDK.MOTriggerEventAbstract? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var triggerEventAbstract: BDPointSDK.MOTriggerEventAbstract? {
     @objc get
     @objc set
   }
+  #endif
 }
 extension BDPointSDK.MOAppState : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
-@objc @_inheritsConvenienceInitializers public class MOCrossedFence : CoreData.NSManagedObject {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+public typealias MOCrossedFenceCoreDataClassSet = Foundation.NSSet
+@objc @_inheritsConvenienceInitializers nonisolated public class MOCrossedFence : CoreData.NSManagedObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  #endif
   @objc deinit
 }
+public typealias MOCrossedFenceCoreDataPropertiesSet = Foundation.NSSet
 extension BDPointSDK.MOCrossedFence {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<BDPointSDK.MOCrossedFence>
-  @objc @NSManaged dynamic public var crossTime: Foundation.Date? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var crossTime: Foundation.Date? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var fenceId: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var fenceId: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var fenceName: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var fenceName: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var location: CoreLocation.CLLocation? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var location: _LocationEssentials.CLLocation? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var crossedFences: BDPointSDK.MOFenceEntered? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var crossedFences: BDPointSDK.MOFenceEntered? {
     @objc get
     @objc set
   }
+  #endif
 }
 extension BDPointSDK.MOCrossedFence : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
-@objc @_inheritsConvenienceInitializers public class MODeviceInfo : CoreData.NSManagedObject {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+public typealias MODeviceInfoCoreDataClassSet = Foundation.NSSet
+@objc @_inheritsConvenienceInitializers nonisolated public class MODeviceInfo : CoreData.NSManagedObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  #endif
   @objc deinit
 }
+public typealias MODeviceInfoCoreDataPropertiesSet = Foundation.NSSet
 extension BDPointSDK.MODeviceInfo {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<BDPointSDK.MODeviceInfo>
-  @objc @NSManaged dynamic public var os: Swift.String? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var os: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var osVersion: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var osVersion: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var uniqueIdString: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var uniqueIdString: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var lifecycleEventNotification: BDPointSDK.MOLifecycleEventNotification? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var lifecycleEventNotification: BDPointSDK.MOLifecycleEventNotification? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var notification: BDPointSDK.MOTriggerEventNotification? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var notification: BDPointSDK.MOTriggerEventNotification? {
     @objc get
     @objc set
   }
+  #endif
 }
 extension BDPointSDK.MODeviceInfo : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
-@objc @_inheritsConvenienceInitializers public class MOFenceEntered : BDPointSDK.MOTriggerEventAbstract {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+public typealias MOFenceEnteredCoreDataClassSet = Foundation.NSSet
+@objc @_inheritsConvenienceInitializers nonisolated public class MOFenceEntered : BDPointSDK.MOTriggerEventAbstract {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  #endif
   @objc deinit
 }
+public typealias MOFenceEnteredCoreDataPropertiesSet = Foundation.NSSet
 extension BDPointSDK.MOFenceEntered {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<BDPointSDK.MOFenceEntered>
-  @objc @NSManaged dynamic public var crossedFences: Foundation.NSOrderedSet? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var crossedFences: Foundation.NSOrderedSet? {
     @objc get
     @objc set
   }
+  #endif
 }
 extension BDPointSDK.MOFenceEntered {
-  @objc(insertObject:inCrossedFencesAtIndex:) @NSManaged dynamic public func insertIntoCrossedFences(_ value: BDPointSDK.MOCrossedFence, at idx: Swift.Int)
-  @objc(removeObjectFromCrossedFencesAtIndex:) @NSManaged dynamic public func removeFromCrossedFences(at idx: Swift.Int)
-  @objc(insertCrossedFences:atIndexes:) @NSManaged dynamic public func insertIntoCrossedFences(_ values: [BDPointSDK.MOCrossedFence], at indexes: Foundation.NSIndexSet)
-  @objc(removeCrossedFencesAtIndexes:) @NSManaged dynamic public func removeFromCrossedFences(at indexes: Foundation.NSIndexSet)
-  @objc(replaceObjectInCrossedFencesAtIndex:withObject:) @NSManaged dynamic public func replaceCrossedFences(at idx: Swift.Int, with value: BDPointSDK.MOCrossedFence)
-  @objc(replaceCrossedFencesAtIndexes:withCrossedFences:) @NSManaged dynamic public func replaceCrossedFences(at indexes: Foundation.NSIndexSet, with values: [BDPointSDK.MOCrossedFence])
-  @objc(addCrossedFencesObject:) @NSManaged dynamic public func addToCrossedFences(_ value: BDPointSDK.MOCrossedFence)
-  @objc(removeCrossedFencesObject:) @NSManaged dynamic public func removeFromCrossedFences(_ value: BDPointSDK.MOCrossedFence)
-  @objc(addCrossedFences:) @NSManaged dynamic public func addToCrossedFences(_ values: Foundation.NSOrderedSet)
-  @objc(removeCrossedFences:) @NSManaged dynamic public func removeFromCrossedFences(_ values: Foundation.NSOrderedSet)
+  @objc(insertObject:inCrossedFencesAtIndex:) @NSManaged nonisolated dynamic public func insertIntoCrossedFences(_ value: BDPointSDK.MOCrossedFence, at idx: Swift.Int)
+  @objc(removeObjectFromCrossedFencesAtIndex:) @NSManaged nonisolated dynamic public func removeFromCrossedFences(at idx: Swift.Int)
+  @objc(insertCrossedFences:atIndexes:) @NSManaged nonisolated dynamic public func insertIntoCrossedFences(_ values: [BDPointSDK.MOCrossedFence], at indexes: Foundation.NSIndexSet)
+  @objc(removeCrossedFencesAtIndexes:) @NSManaged nonisolated dynamic public func removeFromCrossedFences(at indexes: Foundation.NSIndexSet)
+  @objc(replaceObjectInCrossedFencesAtIndex:withObject:) @NSManaged nonisolated dynamic public func replaceCrossedFences(at idx: Swift.Int, with value: BDPointSDK.MOCrossedFence)
+  @objc(replaceCrossedFencesAtIndexes:withCrossedFences:) @NSManaged nonisolated dynamic public func replaceCrossedFences(at indexes: Foundation.NSIndexSet, with values: [BDPointSDK.MOCrossedFence])
+  @objc(addCrossedFencesObject:) @NSManaged nonisolated dynamic public func addToCrossedFences(_ value: BDPointSDK.MOCrossedFence)
+  @objc(removeCrossedFencesObject:) @NSManaged nonisolated dynamic public func removeFromCrossedFences(_ value: BDPointSDK.MOCrossedFence)
+  @objc(addCrossedFences:) @NSManaged nonisolated dynamic public func addToCrossedFences(_ values: Foundation.NSOrderedSet)
+  @objc(removeCrossedFences:) @NSManaged nonisolated dynamic public func removeFromCrossedFences(_ values: Foundation.NSOrderedSet)
 }
-@objc @_inheritsConvenienceInitializers public class MOFenceExited : BDPointSDK.MOTriggerEventAbstract {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+public typealias MOFenceExitedCoreDataClassSet = Foundation.NSSet
+@objc @_inheritsConvenienceInitializers nonisolated public class MOFenceExited : BDPointSDK.MOTriggerEventAbstract {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  #endif
   @objc deinit
 }
+public typealias MOFenceExitedCoreDataPropertiesSet = Foundation.NSSet
 extension BDPointSDK.MOFenceExited {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<BDPointSDK.MOFenceExited>
-  @objc @NSManaged dynamic public var distance: Swift.Float {
+  @objc @NSManaged nonisolated dynamic public var distance: Swift.Float {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var distanceRequired: Swift.Float {
+  @objc @NSManaged nonisolated dynamic public var distanceRequired: Swift.Float {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var dwellTime: Swift.Double {
+  @objc @NSManaged nonisolated dynamic public var dwellTime: Swift.Double {
     @objc get
     @objc set
   }
 }
-@objc @_inheritsConvenienceInitializers public class MOGeoTriggerStart : BDPointSDK.MOLifecycleEventAbstract {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+public typealias MOGeoTriggerStartCoreDataClassSet = Foundation.NSSet
+@objc @_inheritsConvenienceInitializers nonisolated public class MOGeoTriggerStart : BDPointSDK.MOLifecycleEventAbstract {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  #endif
   @objc deinit
 }
+public typealias MOGeoTriggerStartCoreDataPropertiesSet = Foundation.NSSet
 extension BDPointSDK.MOGeoTriggerStart {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<BDPointSDK.MOGeoTriggerStart>
 }
-@objc @_inheritsConvenienceInitializers public class MOGeoTriggerStop : BDPointSDK.MOLifecycleEventAbstract {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+public typealias MOGeoTriggerStopCoreDataClassSet = Foundation.NSSet
+@objc @_inheritsConvenienceInitializers nonisolated public class MOGeoTriggerStop : BDPointSDK.MOLifecycleEventAbstract {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  #endif
   @objc deinit
 }
+public typealias MOGeoTriggerStopCoreDataPropertiesSet = Foundation.NSSet
 extension BDPointSDK.MOGeoTriggerStop {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<BDPointSDK.MOGeoTriggerStop>
 }
-@_inheritsConvenienceInitializers @objc(MOLifecycleEventAbstract) public class MOLifecycleEventAbstract : CoreData.NSManagedObject {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+public typealias MOLifecycleEventAbstractCoreDataClassSet = Foundation.NSSet
+@_inheritsConvenienceInitializers @objc(MOLifecycleEventAbstract) nonisolated public class MOLifecycleEventAbstract : CoreData.NSManagedObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  #endif
   @objc deinit
 }
+public typealias MOLifecycleEventAbstractCoreDataPropertiesSet = Foundation.NSSet
 extension BDPointSDK.MOLifecycleEventAbstract {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<BDPointSDK.MOLifecycleEventAbstract>
-  @objc @NSManaged dynamic public var eventTime: Foundation.Date? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var eventTime: Foundation.Date? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var timeZoneIdentifier: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var timeZoneIdentifier: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var triggerEngine: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var triggerEngine: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var uniqueIdString: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var uniqueIdString: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var appState: BDPointSDK.MOAppState? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var appState: BDPointSDK.MOAppState? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var lifecycleEventNotification: BDPointSDK.MOLifecycleEventNotification? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var lifecycleEventNotification: BDPointSDK.MOLifecycleEventNotification? {
     @objc get
     @objc set
   }
+  #endif
 }
 extension BDPointSDK.MOLifecycleEventAbstract : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
-@_inheritsConvenienceInitializers @objc(MOLifecycleEventNotification) public class MOLifecycleEventNotification : CoreData.NSManagedObject {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+public typealias MOLifecycleEventNotificationCoreDataClassSet = Foundation.NSSet
+@_inheritsConvenienceInitializers @objc(MOLifecycleEventNotification) nonisolated public class MOLifecycleEventNotification : CoreData.NSManagedObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  #endif
   @objc deinit
 }
+public typealias MOLifecycleEventNotificationCoreDataPropertiesSet = Foundation.NSSet
 extension BDPointSDK.MOLifecycleEventNotification {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<BDPointSDK.MOLifecycleEventNotification>
-  @objc @NSManaged dynamic public var installRefString: Swift.String? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var installRefString: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var projectId: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var projectId: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var retryCount: Swift.Int16 {
+  #endif
+  @objc @NSManaged nonisolated dynamic public var retryCount: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var uniqueIdString: Swift.String? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var uniqueIdString: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var appInfo: BDPointSDK.MOAppInfo? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var appInfo: BDPointSDK.MOAppInfo? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var deviceInfo: BDPointSDK.MODeviceInfo? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var deviceInfo: BDPointSDK.MODeviceInfo? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var lifecycleEvents: Foundation.NSOrderedSet? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var lifecycleEvents: Foundation.NSOrderedSet? {
     @objc get
     @objc set
   }
+  #endif
 }
 extension BDPointSDK.MOLifecycleEventNotification {
-  @objc(insertObject:inLifecycleEventsAtIndex:) @NSManaged dynamic public func insertIntoLifecycleEvents(_ value: BDPointSDK.MOLifecycleEventAbstract, at idx: Swift.Int)
-  @objc(removeObjectFromLifecycleEventsAtIndex:) @NSManaged dynamic public func removeFromLifecycleEvents(at idx: Swift.Int)
-  @objc(insertLifecycleEvents:atIndexes:) @NSManaged dynamic public func insertIntoLifecycleEvents(_ values: [BDPointSDK.MOLifecycleEventAbstract], at indexes: Foundation.NSIndexSet)
-  @objc(removeLifecycleEventsAtIndexes:) @NSManaged dynamic public func removeFromLifecycleEvents(at indexes: Foundation.NSIndexSet)
-  @objc(replaceObjectInLifecycleEventsAtIndex:withObject:) @NSManaged dynamic public func replaceLifecycleEvents(at idx: Swift.Int, with value: BDPointSDK.MOLifecycleEventAbstract)
-  @objc(replaceLifecycleEventsAtIndexes:withLifecycleEvents:) @NSManaged dynamic public func replaceLifecycleEvents(at indexes: Foundation.NSIndexSet, with values: [BDPointSDK.MOLifecycleEventAbstract])
-  @objc(addLifecycleEventsObject:) @NSManaged dynamic public func addToLifecycleEvents(_ value: BDPointSDK.MOLifecycleEventAbstract)
-  @objc(removeLifecycleEventsObject:) @NSManaged dynamic public func removeFromLifecycleEvents(_ value: BDPointSDK.MOLifecycleEventAbstract)
-  @objc(addLifecycleEvents:) @NSManaged dynamic public func addToLifecycleEvents(_ values: Foundation.NSOrderedSet)
-  @objc(removeLifecycleEvents:) @NSManaged dynamic public func removeFromLifecycleEvents(_ values: Foundation.NSOrderedSet)
+  @objc(insertObject:inLifecycleEventsAtIndex:) @NSManaged nonisolated dynamic public func insertIntoLifecycleEvents(_ value: BDPointSDK.MOLifecycleEventAbstract, at idx: Swift.Int)
+  @objc(removeObjectFromLifecycleEventsAtIndex:) @NSManaged nonisolated dynamic public func removeFromLifecycleEvents(at idx: Swift.Int)
+  @objc(insertLifecycleEvents:atIndexes:) @NSManaged nonisolated dynamic public func insertIntoLifecycleEvents(_ values: [BDPointSDK.MOLifecycleEventAbstract], at indexes: Foundation.NSIndexSet)
+  @objc(removeLifecycleEventsAtIndexes:) @NSManaged nonisolated dynamic public func removeFromLifecycleEvents(at indexes: Foundation.NSIndexSet)
+  @objc(replaceObjectInLifecycleEventsAtIndex:withObject:) @NSManaged nonisolated dynamic public func replaceLifecycleEvents(at idx: Swift.Int, with value: BDPointSDK.MOLifecycleEventAbstract)
+  @objc(replaceLifecycleEventsAtIndexes:withLifecycleEvents:) @NSManaged nonisolated dynamic public func replaceLifecycleEvents(at indexes: Foundation.NSIndexSet, with values: [BDPointSDK.MOLifecycleEventAbstract])
+  @objc(addLifecycleEventsObject:) @NSManaged nonisolated dynamic public func addToLifecycleEvents(_ value: BDPointSDK.MOLifecycleEventAbstract)
+  @objc(removeLifecycleEventsObject:) @NSManaged nonisolated dynamic public func removeFromLifecycleEvents(_ value: BDPointSDK.MOLifecycleEventAbstract)
+  @objc(addLifecycleEvents:) @NSManaged nonisolated dynamic public func addToLifecycleEvents(_ values: Foundation.NSOrderedSet)
+  @objc(removeLifecycleEvents:) @NSManaged nonisolated dynamic public func removeFromLifecycleEvents(_ values: Foundation.NSOrderedSet)
 }
 extension BDPointSDK.MOLifecycleEventNotification : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
-@_inheritsConvenienceInitializers @objc(MOPendingEvent) public class MOPendingEvent : CoreData.NSManagedObject {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+public typealias MOPendingEventCoreDataClassSet = Foundation.NSSet
+@_inheritsConvenienceInitializers @objc(MOPendingEvent) nonisolated public class MOPendingEvent : CoreData.NSManagedObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  #endif
   @objc deinit
 }
+public typealias MOPendingEventCoreDataPropertiesSet = Foundation.NSSet
 extension BDPointSDK.MOPendingEvent {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<BDPointSDK.MOPendingEvent>
-  @objc @NSManaged dynamic public var spatialObject: (any BDPointSDK.BDPSpatialObjectInfo)? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var spatialObject: (any BDPointSDK.BDPSpatialObjectInfo)? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var triggerChainIdString: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var triggerChainIdString: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var triggerEvents: Foundation.NSOrderedSet? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var triggerEvents: Foundation.NSOrderedSet? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var zoneInfo: BDPointSDK.MOZoneInfo? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var zoneInfo: BDPointSDK.MOZoneInfo? {
     @objc get
     @objc set
   }
+  #endif
 }
 extension BDPointSDK.MOPendingEvent {
-  @objc(insertObject:inTriggerEventsAtIndex:) @NSManaged dynamic public func insertIntoTriggerEvents(_ value: BDPointSDK.MOTriggerEventAbstract, at idx: Swift.Int)
-  @objc(removeObjectFromTriggerEventsAtIndex:) @NSManaged dynamic public func removeFromTriggerEvents(at idx: Swift.Int)
-  @objc(insertTriggerEvents:atIndexes:) @NSManaged dynamic public func insertIntoTriggerEvents(_ values: [BDPointSDK.MOTriggerEventAbstract], at indexes: Foundation.NSIndexSet)
-  @objc(removeTriggerEventsAtIndexes:) @NSManaged dynamic public func removeFromTriggerEvents(at indexes: Foundation.NSIndexSet)
-  @objc(replaceObjectInTriggerEventsAtIndex:withObject:) @NSManaged dynamic public func replaceTriggerEvents(at idx: Swift.Int, with value: BDPointSDK.MOTriggerEventAbstract)
-  @objc(replaceTriggerEventsAtIndexes:withTriggerEvents:) @NSManaged dynamic public func replaceTriggerEvents(at indexes: Foundation.NSIndexSet, with values: [BDPointSDK.MOTriggerEventAbstract])
-  @objc(addTriggerEventsObject:) @NSManaged dynamic public func addToTriggerEvents(_ value: BDPointSDK.MOTriggerEventAbstract)
-  @objc(removeTriggerEventsObject:) @NSManaged dynamic public func removeFromTriggerEvents(_ value: BDPointSDK.MOTriggerEventAbstract)
-  @objc(addTriggerEvents:) @NSManaged dynamic public func addToTriggerEvents(_ values: Foundation.NSOrderedSet)
-  @objc(removeTriggerEvents:) @NSManaged dynamic public func removeFromTriggerEvents(_ values: Foundation.NSOrderedSet)
+  @objc(insertObject:inTriggerEventsAtIndex:) @NSManaged nonisolated dynamic public func insertIntoTriggerEvents(_ value: BDPointSDK.MOTriggerEventAbstract, at idx: Swift.Int)
+  @objc(removeObjectFromTriggerEventsAtIndex:) @NSManaged nonisolated dynamic public func removeFromTriggerEvents(at idx: Swift.Int)
+  @objc(insertTriggerEvents:atIndexes:) @NSManaged nonisolated dynamic public func insertIntoTriggerEvents(_ values: [BDPointSDK.MOTriggerEventAbstract], at indexes: Foundation.NSIndexSet)
+  @objc(removeTriggerEventsAtIndexes:) @NSManaged nonisolated dynamic public func removeFromTriggerEvents(at indexes: Foundation.NSIndexSet)
+  @objc(replaceObjectInTriggerEventsAtIndex:withObject:) @NSManaged nonisolated dynamic public func replaceTriggerEvents(at idx: Swift.Int, with value: BDPointSDK.MOTriggerEventAbstract)
+  @objc(replaceTriggerEventsAtIndexes:withTriggerEvents:) @NSManaged nonisolated dynamic public func replaceTriggerEvents(at indexes: Foundation.NSIndexSet, with values: [BDPointSDK.MOTriggerEventAbstract])
+  @objc(addTriggerEventsObject:) @NSManaged nonisolated dynamic public func addToTriggerEvents(_ value: BDPointSDK.MOTriggerEventAbstract)
+  @objc(removeTriggerEventsObject:) @NSManaged nonisolated dynamic public func removeFromTriggerEvents(_ value: BDPointSDK.MOTriggerEventAbstract)
+  @objc(addTriggerEvents:) @NSManaged nonisolated dynamic public func addToTriggerEvents(_ values: Foundation.NSOrderedSet)
+  @objc(removeTriggerEvents:) @NSManaged nonisolated dynamic public func removeFromTriggerEvents(_ values: Foundation.NSOrderedSet)
 }
 extension BDPointSDK.MOPendingEvent : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
-@objc @_inheritsConvenienceInitializers public class MOSdkInit : BDPointSDK.MOLifecycleEventAbstract {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+public typealias MOSdkInitCoreDataClassSet = Foundation.NSSet
+@objc @_inheritsConvenienceInitializers nonisolated public class MOSdkInit : BDPointSDK.MOLifecycleEventAbstract {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  #endif
   @objc deinit
 }
+public typealias MOSdkInitCoreDataPropertiesSet = Foundation.NSSet
 extension BDPointSDK.MOSdkInit {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<BDPointSDK.MOSdkInit>
 }
-@objc @_inheritsConvenienceInitializers public class MOSdkReset : BDPointSDK.MOLifecycleEventAbstract {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+public typealias MOSdkResetCoreDataClassSet = Foundation.NSSet
+@objc @_inheritsConvenienceInitializers nonisolated public class MOSdkReset : BDPointSDK.MOLifecycleEventAbstract {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  #endif
   @objc deinit
 }
+public typealias MOSdkResetCoreDataPropertiesSet = Foundation.NSSet
 extension BDPointSDK.MOSdkReset {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<BDPointSDK.MOSdkReset>
 }
-@objc @_inheritsConvenienceInitializers public class MOTriggerEventAbstract : CoreData.NSManagedObject {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+public typealias MOTriggerEventAbstractCoreDataClassSet = Foundation.NSSet
+@objc @_inheritsConvenienceInitializers nonisolated public class MOTriggerEventAbstract : CoreData.NSManagedObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  #endif
   @objc deinit
 }
+public typealias MOTriggerEventAbstractCoreDataPropertiesSet = Foundation.NSSet
 extension BDPointSDK.MOTriggerEventAbstract {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<BDPointSDK.MOTriggerEventAbstract>
-  @objc @NSManaged dynamic public var eventTime: Foundation.Date? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var eventTime: Foundation.Date? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var fenceIdString: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var fenceIdString: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var fenceName: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var fenceName: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var locations: Foundation.NSArray? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var locations: Foundation.NSArray? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var timeZoneIdentifier: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var timeZoneIdentifier: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var triggerEngine: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var triggerEngine: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var uniqueIdString: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var uniqueIdString: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var appState: BDPointSDK.MOAppState? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var appState: BDPointSDK.MOAppState? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var pendingEvent: BDPointSDK.MOPendingEvent? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var pendingEvent: BDPointSDK.MOPendingEvent? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var triggerEventNotification: BDPointSDK.MOTriggerEventNotification? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var triggerEventNotification: BDPointSDK.MOTriggerEventNotification? {
     @objc get
     @objc set
   }
+  #endif
 }
 extension BDPointSDK.MOTriggerEventAbstract : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
-@objc @_inheritsConvenienceInitializers public class MOTriggerEventNotification : CoreData.NSManagedObject {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+public typealias MOTriggerEventNotificationCoreDataClassSet = Foundation.NSSet
+@objc @_inheritsConvenienceInitializers nonisolated public class MOTriggerEventNotification : CoreData.NSManagedObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  #endif
   @objc deinit
 }
+public typealias MOTriggerEventNotificationCoreDataPropertiesSet = Foundation.NSSet
 extension BDPointSDK.MOTriggerEventNotification {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<BDPointSDK.MOTriggerEventNotification>
-  @objc @NSManaged dynamic public var installRefString: Swift.String? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var installRefString: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var notificationTypeString: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var notificationTypeString: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var projectId: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var projectId: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var retryCount: Swift.Int16 {
+  #endif
+  @objc @NSManaged nonisolated dynamic public var retryCount: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var triggerChainIdString: Swift.String? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var triggerChainIdString: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var appInfo: BDPointSDK.MOAppInfo? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var appInfo: BDPointSDK.MOAppInfo? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var deviceInfo: BDPointSDK.MODeviceInfo? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var deviceInfo: BDPointSDK.MODeviceInfo? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var triggerEvents: Foundation.NSOrderedSet? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var triggerEvents: Foundation.NSOrderedSet? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var zoneInfo: BDPointSDK.MOZoneInfo? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var zoneInfo: BDPointSDK.MOZoneInfo? {
     @objc get
     @objc set
   }
+  #endif
 }
 extension BDPointSDK.MOTriggerEventNotification {
-  @objc(insertObject:inTriggerEventsAtIndex:) @NSManaged dynamic public func insertIntoTriggerEvents(_ value: BDPointSDK.MOTriggerEventAbstract, at idx: Swift.Int)
-  @objc(removeObjectFromTriggerEventsAtIndex:) @NSManaged dynamic public func removeFromTriggerEvents(at idx: Swift.Int)
-  @objc(insertTriggerEvents:atIndexes:) @NSManaged dynamic public func insertIntoTriggerEvents(_ values: [BDPointSDK.MOTriggerEventAbstract], at indexes: Foundation.NSIndexSet)
-  @objc(removeTriggerEventsAtIndexes:) @NSManaged dynamic public func removeFromTriggerEvents(at indexes: Foundation.NSIndexSet)
-  @objc(replaceObjectInTriggerEventsAtIndex:withObject:) @NSManaged dynamic public func replaceTriggerEvents(at idx: Swift.Int, with value: BDPointSDK.MOTriggerEventAbstract)
-  @objc(replaceTriggerEventsAtIndexes:withTriggerEvents:) @NSManaged dynamic public func replaceTriggerEvents(at indexes: Foundation.NSIndexSet, with values: [BDPointSDK.MOTriggerEventAbstract])
-  @objc(addTriggerEventsObject:) @NSManaged dynamic public func addToTriggerEvents(_ value: BDPointSDK.MOTriggerEventAbstract)
-  @objc(removeTriggerEventsObject:) @NSManaged dynamic public func removeFromTriggerEvents(_ value: BDPointSDK.MOTriggerEventAbstract)
-  @objc(addTriggerEvents:) @NSManaged dynamic public func addToTriggerEvents(_ values: Foundation.NSOrderedSet)
-  @objc(removeTriggerEvents:) @NSManaged dynamic public func removeFromTriggerEvents(_ values: Foundation.NSOrderedSet)
+  @objc(insertObject:inTriggerEventsAtIndex:) @NSManaged nonisolated dynamic public func insertIntoTriggerEvents(_ value: BDPointSDK.MOTriggerEventAbstract, at idx: Swift.Int)
+  @objc(removeObjectFromTriggerEventsAtIndex:) @NSManaged nonisolated dynamic public func removeFromTriggerEvents(at idx: Swift.Int)
+  @objc(insertTriggerEvents:atIndexes:) @NSManaged nonisolated dynamic public func insertIntoTriggerEvents(_ values: [BDPointSDK.MOTriggerEventAbstract], at indexes: Foundation.NSIndexSet)
+  @objc(removeTriggerEventsAtIndexes:) @NSManaged nonisolated dynamic public func removeFromTriggerEvents(at indexes: Foundation.NSIndexSet)
+  @objc(replaceObjectInTriggerEventsAtIndex:withObject:) @NSManaged nonisolated dynamic public func replaceTriggerEvents(at idx: Swift.Int, with value: BDPointSDK.MOTriggerEventAbstract)
+  @objc(replaceTriggerEventsAtIndexes:withTriggerEvents:) @NSManaged nonisolated dynamic public func replaceTriggerEvents(at indexes: Foundation.NSIndexSet, with values: [BDPointSDK.MOTriggerEventAbstract])
+  @objc(addTriggerEventsObject:) @NSManaged nonisolated dynamic public func addToTriggerEvents(_ value: BDPointSDK.MOTriggerEventAbstract)
+  @objc(removeTriggerEventsObject:) @NSManaged nonisolated dynamic public func removeFromTriggerEvents(_ value: BDPointSDK.MOTriggerEventAbstract)
+  @objc(addTriggerEvents:) @NSManaged nonisolated dynamic public func addToTriggerEvents(_ values: Foundation.NSOrderedSet)
+  @objc(removeTriggerEvents:) @NSManaged nonisolated dynamic public func removeFromTriggerEvents(_ values: Foundation.NSOrderedSet)
 }
 extension BDPointSDK.MOTriggerEventNotification : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
-@objc @_inheritsConvenienceInitializers public class MOZoneInfo : CoreData.NSManagedObject {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+public typealias MOZoneInfoCoreDataClassSet = Foundation.NSSet
+@objc @_inheritsConvenienceInitializers nonisolated public class MOZoneInfo : CoreData.NSManagedObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  #endif
   @objc deinit
 }
+public typealias MOZoneInfoCoreDataPropertiesSet = Foundation.NSSet
 extension BDPointSDK.MOZoneInfo {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<BDPointSDK.MOZoneInfo>
-  @objc @NSManaged dynamic public var customData: Foundation.NSDictionary? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var customData: Foundation.NSDictionary? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var name: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var name: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var uniqueIdString: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var uniqueIdString: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var zoneInfoIdString: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var zoneInfoIdString: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var pendingEvent: BDPointSDK.MOPendingEvent? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var pendingEvent: BDPointSDK.MOPendingEvent? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var triggerEventNotification: BDPointSDK.MOTriggerEventNotification? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var triggerEventNotification: BDPointSDK.MOTriggerEventNotification? {
     @objc get
     @objc set
   }
+  #endif
 }
 extension BDPointSDK.MOZoneInfo : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
+public typealias BDDataModelFoundationFrameworkSet = Foundation.NSSet
+public typealias BDDataModelCoreDataFrameworkManagedObject = CoreData.NSManagedObject
 extension BDPointSDK.TempoUpdateETADirection : Swift.Equatable {}
 extension BDPointSDK.TempoUpdateETADirection : Swift.Hashable {}
 extension BDPointSDK.TempoUpdateETADirection : Swift.RawRepresentable {}
 extension BDPointSDK.NotificationType : Swift.Equatable {}
 extension BDPointSDK.NotificationType : Swift.Hashable {}
 extension BDPointSDK.NotificationType : Swift.RawRepresentable {}
-extension BDPointSDK.Chat.Reaction : Swift.Equatable {}
-extension BDPointSDK.Chat.Reaction : Swift.Hashable {}
-extension BDPointSDK.Chat.Reaction : Swift.RawRepresentable {}
 extension BDPointSDK.EventType : Swift.Equatable {}
 extension BDPointSDK.EventType : Swift.Hashable {}
 extension BDPointSDK.EventType : Swift.RawRepresentable {}
