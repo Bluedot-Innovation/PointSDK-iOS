@@ -14,7 +14,7 @@
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wnullability-completeness"
 
-@class PushNotifications;
+@class BrainAI;
 
 /// Error Domain name for Bluedot Service Error
 static NSString * const _Nonnull BDServiceErrorDomain = @"com.bluedot.service";
@@ -228,7 +228,8 @@ typedef NS_ENUM(NSInteger, BDGeoTriggeringError) {
  */
 @property (nonatomic) BOOL backgroundLocationAccessForWhileUsing;
 
-@property (nonatomic, readonly) PushNotifications *pushNotifications;
+
+@property (nonatomic, readonly) BrainAI *brainAI;
 
 /**
   Disabled or re-enable a specific `BDZoneInfo` "zone".  Information about valid `BDZoneInfo` "zones", including

@@ -1,8 +1,7 @@
-PointSDK v18.0.0 (371)
-# SDK Version 18.0.0
+PointSDK v17.2.1 (379)
+# SDK Version 17.2.1
 ## Changes
 
-- Implement push notifications on Entry events
-- Support SDK iOS 26 by updating to XCode 26.2
+- Persist custom event metadata across app termination so it is included in the first event after the app is relaunched
  
 Please refer to the detailed release notes and our updated documentation for more information. We appreciate your feedback and are here to assist you with any questions.
