@@ -1,303 +1,51 @@
 {
   "warnings": [
     {
-      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/ChatAI/BrainAI.swift",
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/RemotePushNotifications/PushNotifications.swift",
+      "line": 15,
+      "symbol": "PushNotifications",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/RemotePushNotifications/PushPayload.swift",
       "line": 12,
-      "symbol": "BrainAI",
+      "symbol": "PushPayload",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/ChatAI/BrainAI.swift",
-      "line": 21,
-      "symbol": "BrainAI.createNewChat()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/ChatAI/BrainAI.swift",
-      "line": 57,
-      "symbol": "BrainAI.getChat(sessionID:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/ChatAI/BrainAI.swift",
-      "line": 67,
-      "symbol": "BrainAI.closeChat(sessionID:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/ChatAI/Chat.swift",
-      "line": 11,
-      "symbol": "Chat",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/ChatAI/Chat.swift",
-      "line": 11,
-      "symbol": "Chat",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/ChatAI/Chat.swift",
-      "line": 12,
-      "symbol": "Chat",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/ChatAI/Chat.swift",
-      "line": 13,
-      "symbol": "Chat.userID",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/ChatAI/Chat.swift",
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/RemotePushNotifications/PushPayload.swift",
       "line": 14,
-      "symbol": "Chat.language",
+      "symbol": "PushPayload.zoneId",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/ChatAI/Chat.swift",
-      "line": 16,
-      "symbol": "Chat.sessionID",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/ChatAI/Chat.swift",
-      "line": 39,
-      "symbol": "Chat.sendMessage(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/ChatAI/Chat.swift",
-      "line": 83,
-      "symbol": "Chat.sendMessage(_:onUpdate:onCompletion:onError:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/ChatAI/Chat.swift",
-      "line": 118,
-      "symbol": "Chat.submitFeedback(responseID:reaction:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/ChatAI/Chat.swift",
-      "line": 138,
-      "symbol": "Chat.submitFeedback(responseID:reaction:completion:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/ChatAI/ChatContext.swift",
-      "line": 11,
-      "symbol": "ChatContext",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/ChatAI/ChatContext.swift",
-      "line": 13,
-      "symbol": "ChatContext.title",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/ChatAI/ChatContext.swift",
-      "line": 14,
-      "symbol": "ChatContext.imageLinks",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/ChatAI/ChatContext.swift",
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/RemotePushNotifications/PushPayload.swift",
       "line": 15,
-      "symbol": "ChatContext.price",
+      "symbol": "PushPayload.notificationId",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/ChatAI/ChatContext.swift",
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/RemotePushNotifications/PushPayload.swift",
       "line": 16,
-      "symbol": "ChatContext.contextDescription",
+      "symbol": "PushPayload.campaignId",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/ChatAI/ChatContext.swift",
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/RemotePushNotifications/PushPayload.swift",
       "line": 17,
-      "symbol": "ChatContext.merchantID",
+      "symbol": "PushPayload.title",
       "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/ChatAI/ChatContext.swift",
-      "line": 18,
-      "symbol": "ChatContext.categoryID",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/ChatAI/ChatContext.swift",
-      "line": 19,
-      "symbol": "ChatContext.productID",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/ChatAI/ChatContext.swift",
-      "line": 21,
-      "symbol": "ChatContext.init(title:imageLinks:price:contextDescription:merchantID:categoryID:productID:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/ChatAI/ChatError.swift",
-      "line": 13,
-      "symbol": "Chat.ChatError",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/ChatAI/ChatError.swift",
-      "line": 14,
-      "symbol": "Chat.ChatError.invalidApiUrl",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/ChatAI/ChatError.swift",
-      "line": 15,
-      "symbol": "Chat.ChatError.invalidApiKey",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/ChatAI/ChatError.swift",
-      "line": 16,
-      "symbol": "Chat.ChatError.invalidLanguage",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/ChatAI/ChatError.swift",
-      "line": 17,
-      "symbol": "Chat.ChatError.serverError(statusCode:details:)",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/ChatAI/ChatError.swift",
-      "line": 18,
-      "symbol": "Chat.ChatError.networkError",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/ChatAI/ChatError.swift",
-      "line": 19,
-      "symbol": "Chat.ChatError.decodingError",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/ChatAI/ChatError.swift",
-      "line": 20,
-      "symbol": "Chat.ChatError.unknownError",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/ChatAI/ChatError.swift",
-      "line": 22,
-      "symbol": "Chat.ChatError.errorDescription",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/ChatAI/ChatError.swift",
-      "line": 45,
-      "symbol": "Chat.ChatError.errorCode",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/ChatAI/ChatReaction.swift",
-      "line": 14,
-      "symbol": "Chat.Reaction",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/ChatAI/ChatReaction.swift",
-      "line": 15,
-      "symbol": "Chat.Reaction.liked",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/ChatAI/ChatReaction.swift",
-      "line": 16,
-      "symbol": "Chat.Reaction.disliked",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/ChatAI/StreamingResponseDto.swift",
-      "line": 11,
-      "symbol": "StreamingResponseDto",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/ChatAI/StreamingResponseDto.swift",
-      "line": 12,
-      "symbol": "StreamingResponseDto.response",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/ChatAI/StreamingResponseDto.swift",
-      "line": 13,
-      "symbol": "StreamingResponseDto.responseID",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/ChatAI/StreamingResponseDto.swift",
-      "line": 14,
-      "symbol": "StreamingResponseDto.streamType",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/ChatAI/StreamingResponseDto.swift",
-      "line": 15,
-      "symbol": "StreamingResponseDto.contexts",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/ChatAI/StreamingResponseDto.swift",
-      "line": 17,
-      "symbol": "StreamingResponseDto.init(response:responseID:streamType:contexts:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "./BDPointSDK/PublicHeaders/BDLocationManager+BDPointSDK.h",
-      "line": 232,
-      "symbol": "BDLocationManager.brainAI",
+      "line": 231,
+      "symbol": "BDLocationManager.pushNotifications",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     }

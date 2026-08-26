@@ -93,20 +93,6 @@ extension BDPointSDK.FenceDwell : Swift.Encodable {
 extension BDPointSDK.GeoTriggerEvent : BDPointSDK.JsonString {
   @objc(toJson:) dynamic public func toJson() throws -> Swift.String
 }
-@_hasMissingDesignatedInitializers @objc public class Chat : ObjectiveC.NSObject {
-  @objc public var userID: Swift.String
-  @objc public var language: Swift.String
-  @objc public var sessionID: Swift.String {
-    @objc get
-  }
-  public func sendMessage(_ message: Swift.String) -> _Concurrency.AsyncThrowingStream<BDPointSDK.StreamingResponseDto, any Swift.Error>
-  @objc public func sendMessage(_ message: Swift.String, onUpdate: @escaping (BDPointSDK.StreamingResponseDto) -> Swift.Void, onCompletion: @escaping () -> Swift.Void, onError: @escaping (Foundation.NSError) -> Swift.Void)
-  public func submitFeedback(responseID: Swift.String, reaction: BDPointSDK.Chat.Reaction) async throws
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc public func submitFeedback(responseID: Swift.String, reaction: BDPointSDK.Chat.Reaction, completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
-  #endif
-  @objc deinit
-}
 @objc @_hasMissingDesignatedInitializers @objcMembers public class AppState : ObjectiveC.NSObject {
   @objc final public let batteryLevel: Foundation.Decimal
   @objc final public let blueBarEnabled: Swift.Bool
@@ -193,19 +179,6 @@ extension BDPointSDK.ZoneInfo : Foundation.NSCopying {
 }
 extension Foundation.NSNotification.Name {
   public static let bdReachabilityChanged: Foundation.Notification.Name
-}
-extension BDPointSDK.Chat {
-  @objc public enum Reaction : Swift.Int {
-    case liked
-    case disliked
-    #if compiler(>=5.3) && $NonescapableTypes
-    public init?(rawValue: Swift.Int)
-    #endif
-    public typealias RawValue = Swift.Int
-    public var rawValue: Swift.Int {
-      get
-    }
-  }
 }
 extension BDPointSDK.AppState : Swift.Encodable {
   public func encode(to encoder: any Swift.Encoder) throws
@@ -304,35 +277,6 @@ extension BDPointSDK.DeviceInfo {
 extension BDPointSDK.FenceExited : BDPointSDK.JsonString {
   @objc(toJson:) dynamic public func toJson() throws -> Swift.String
 }
-@objc public class ChatContext : ObjectiveC.NSObject, Swift.Decodable {
-  @objc final public let title: Swift.String?
-  @objc final public let imageLinks: [Foundation.URL]?
-  @objc final public let price: Foundation.NSNumber?
-  @objc final public let contextDescription: Swift.String?
-  @objc final public let merchantID: Foundation.NSNumber?
-  @objc final public let categoryID: Foundation.NSNumber?
-  @objc final public let productID: Foundation.NSNumber?
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init(title: Swift.String? = nil, imageLinks: [Foundation.URL]? = nil, price: Foundation.NSNumber? = nil, contextDescription: Swift.String? = nil, merchantID: Foundation.NSNumber? = nil, categoryID: Foundation.NSNumber? = nil, productID: Foundation.NSNumber? = nil)
-  #endif
-  required public init(from decoder: any Swift.Decoder) throws
-  @objc deinit
-}
-@objc @_inheritsConvenienceInitializers @objcMembers public class BrainAI : ObjectiveC.NSObject {
-  #if compiler(>=5.3) && $NonescapableTypes
-  public func createNewChat() -> Swift.Result<BDPointSDK.Chat, BDPointSDK.Chat.ChatError>
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @available(swift, obsoleted: 1.0)
-  @objc(createNewChat) public func createNewChat() -> BDPointSDK.Chat?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc public func getChat(sessionID: Swift.String) -> BDPointSDK.Chat?
-  #endif
-  @objc public func closeChat(sessionID: Swift.String)
-  @objc override dynamic public init()
-  @objc deinit
-}
 extension BDPointSDK.GeoTriggerEvent {
   @objc override dynamic public var description: Swift.String {
     @objc get
@@ -415,19 +359,24 @@ extension BDPointSDK.TriggerEvent where Self : Swift.Encodable {
     get
   }
 }
-@objc public class StreamingResponseDto : ObjectiveC.NSObject, Swift.Decodable {
-  @objc final public let response: Swift.String?
-  @objc final public let responseID: Swift.String?
-  @objc final public let streamType: Swift.Int
-  @objc public var contexts: [BDPointSDK.ChatContext]
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init(response: Swift.String?, responseID: Swift.String?, streamType: Swift.Int, contexts: [BDPointSDK.ChatContext] = [])
-  #endif
-  required public init(from decoder: any Swift.Decoder) throws
-  @objc deinit
-}
 @objc public protocol JsonString : ObjectiveC.NSObjectProtocol {
   @objc(toJson:) func toJson() throws -> Swift.String
+}
+@_hasMissingDesignatedInitializers @objc final public class PushPayload : ObjectiveC.NSObject {
+  final public let zoneId: Swift.String
+  final public let notificationId: Swift.String
+  final public let campaignId: Swift.String
+  final public let title: Swift.String
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers final public class PushNotifications : ObjectiveC.NSObject {
+  @objc final public var onNotificationReceived: ((BDPointSDK.PushPayload) -> Swift.Void)?
+  @objc final public var onNotificationClicked: ((BDPointSDK.PushPayload) -> Swift.Void)?
+  @objc final public func register(_ deviceToken: Foundation.Data)
+  @objc final public func handleForeground(_ notification: UserNotifications.UNNotification) -> Swift.Bool
+  @objc final public func handleResponse(_ notificationResponse: UserNotifications.UNNotificationResponse)
+  @objc override dynamic public init()
+  @objc deinit
 }
 public protocol Scheduled {
   func invalidate()
@@ -507,23 +456,6 @@ extension BDPointSDK.CrossedFence {
   public static func == (lhs: BDPointSDK.CrossedFence, rhs: BDPointSDK.CrossedFence) -> Swift.Bool
   @objc override dynamic public var hash: Swift.Int {
     @objc get
-  }
-}
-extension BDPointSDK.Chat {
-  public enum ChatError : Swift.Error {
-    case invalidApiUrl
-    case invalidApiKey
-    case invalidLanguage
-    case serverError(statusCode: Swift.Int, details: Foundation.Data)
-    case networkError
-    case decodingError
-    case unknownError
-    public var errorDescription: Swift.String {
-      get
-    }
-    public var errorCode: Swift.Int {
-      get
-    }
   }
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers public class FenceDwell : ObjectiveC.NSObject {
@@ -1325,9 +1257,6 @@ extension BDPointSDK.TempoUpdateETADirection : Swift.RawRepresentable {}
 extension BDPointSDK.NotificationType : Swift.Equatable {}
 extension BDPointSDK.NotificationType : Swift.Hashable {}
 extension BDPointSDK.NotificationType : Swift.RawRepresentable {}
-extension BDPointSDK.Chat.Reaction : Swift.Equatable {}
-extension BDPointSDK.Chat.Reaction : Swift.Hashable {}
-extension BDPointSDK.Chat.Reaction : Swift.RawRepresentable {}
 extension BDPointSDK.EventType : Swift.Equatable {}
 extension BDPointSDK.EventType : Swift.Hashable {}
 extension BDPointSDK.EventType : Swift.RawRepresentable {}
