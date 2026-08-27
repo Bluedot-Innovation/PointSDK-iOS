@@ -449,15 +449,6 @@ SWIFT_CLASS("_TtC10BDPointSDK8AppState")
 - (void)authorizationChangedWithManager:(CLLocationManager * _Nonnull)manager status:(CLAuthorizationStatus)status;
 @end
 
-@class Chat;
-SWIFT_CLASS("_TtC10BDPointSDK7BrainAI")
-@interface BrainAI : NSObject
-- (Chat * _Nullable)createNewChat SWIFT_WARN_UNUSED_RESULT;
-- (Chat * _Nullable)getChatWithSessionID:(NSString * _Nonnull)sessionID SWIFT_WARN_UNUSED_RESULT;
-- (void)closeChatWithSessionID:(NSString * _Nonnull)sessionID;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
 @interface CLCircularRegion (SWIFT_EXTENSION(BDPointSDK))
 - (BOOL)isEqualToCircularRegion:(CLCircularRegion * _Nonnull)circularRegion SWIFT_WARN_UNUSED_RESULT;
 @end
@@ -466,43 +457,6 @@ SWIFT_CLASS("_TtC10BDPointSDK7BrainAI")
 @interface CLLocation (SWIFT_EXTENSION(BDPointSDK))
 - (nonnull instancetype)initWithLocation:(BDLocation * _Nonnull)location;
 - (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
-@end
-
-@class StreamingResponseDto;
-@class NSError;
-enum Reaction : NSInteger;
-SWIFT_CLASS("_TtC10BDPointSDK4Chat")
-@interface Chat : NSObject
-@property (nonatomic, copy) NSString * _Nonnull userID;
-@property (nonatomic, copy) NSString * _Nonnull language;
-@property (nonatomic, readonly, copy) NSString * _Nonnull sessionID;
-- (void)sendMessage:(NSString * _Nonnull)message onUpdate:(void (^ _Nonnull)(StreamingResponseDto * _Nonnull))onUpdate onCompletion:(void (^ _Nonnull)(void))onCompletion onError:(void (^ _Nonnull)(NSError * _Nonnull))onError;
-- (void)submitFeedbackWithResponseID:(NSString * _Nonnull)responseID reaction:(enum Reaction)reaction completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-@interface Chat (SWIFT_EXTENSION(BDPointSDK))
-@end
-
-typedef SWIFT_ENUM(NSInteger, Reaction, open) {
-  ReactionLiked = 0,
-  ReactionDisliked = 1,
-};
-
-@class NSURL;
-@class NSNumber;
-SWIFT_CLASS("_TtC10BDPointSDK11ChatContext")
-@interface ChatContext : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nullable title;
-@property (nonatomic, readonly, copy) NSArray<NSURL *> * _Nullable imageLinks;
-@property (nonatomic, readonly, strong) NSNumber * _Nullable price;
-@property (nonatomic, readonly, copy) NSString * _Nullable contextDescription;
-@property (nonatomic, readonly, strong) NSNumber * _Nullable merchantID;
-@property (nonatomic, readonly, strong) NSNumber * _Nullable categoryID;
-@property (nonatomic, readonly, strong) NSNumber * _Nullable productID;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 SWIFT_PROTOCOL("_TtP10BDPointSDK8Checkout_")
@@ -577,18 +531,6 @@ SWIFT_CLASS("_TtC10BDPointSDK19CrossedFilterDetail")
 - (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
 - (id _Nonnull)copy SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
-@end
-
-/// Persists the custom event metadata set via <code>setCustomEventMetaData:</code> so it survives app termination
-/// and is available for the first event after the OS relaunches the app
-/// Cleared only when the metadata is explicitly cleared or the SDK is reset.
-SWIFT_CLASS("_TtC10BDPointSDK24CustomEventMetaDataStore")
-@interface CustomEventMetaDataStore : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (void)saveWithMetaData:(NSDictionary<NSString *, NSString *> * _Nonnull)metaData;
-- (NSDictionary<NSString *, NSString *> * _Nullable)loadMetaData SWIFT_WARN_UNUSED_RESULT;
-- (void)clear;
 @end
 
 @class NSPersistentContainer;
@@ -1100,6 +1042,8 @@ SWIFT_CLASS("_TtC10BDPointSDK8Keychain")
 - (NSString * _Nullable)getForKey:(enum KeychainKeys)key SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)setWithValue:(NSString * _Nonnull)value forKey:(enum KeychainKeys)key SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)deleteForKey:(enum KeychainKeys)key SWIFT_WARN_UNUSED_RESULT;
+/// Checks if a value exists for the given key in the keychain.
+- (BOOL)existsForKey:(enum KeychainKeys)key SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1108,6 +1052,8 @@ typedef SWIFT_ENUM(NSInteger, KeychainKeys, open) {
   KeychainKeysUrl = 1,
   KeychainKeysPointApiUrl = 2,
   KeychainKeysInstallRef = 3,
+  KeychainKeysPushDeviceToken = 4,
+  KeychainKeysInstallationSecret = 5,
 };
 
 SWIFT_CLASS("_TtC10BDPointSDK26LifecycleEventNotification")
@@ -1162,6 +1108,7 @@ typedef SWIFT_ENUM(NSInteger, LogLevel, open) {
   LogLevelCritical = 5,
 };
 
+@class NSNumber;
 SWIFT_PROTOCOL("_TtP10BDPointSDK6Logger_")
 @protocol Logger
 - (void)debug:(NSString * _Nonnull)message;
@@ -1445,6 +1392,7 @@ typedef SWIFT_ENUM(NSInteger, NotificationType, open) {
   NotificationTypeUnknown = 5,
 };
 
+@class NSURL;
 SWIFT_CLASS("_TtC10BDPointSDK22ObjcRainbowAPITriggers")
 @interface ObjcRainbowAPITriggers : NSObject
 - (nonnull instancetype)initWithEndpoint:(NSURL * _Nonnull)endpoint OBJC_DESIGNATED_INITIALIZER;
@@ -1681,7 +1629,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) PointSDKContext * _Non
 @property (nonatomic, copy) NSURL * _Nullable notificationUrl;
 @property (nonatomic, copy) NSURL * _Nullable tempoNotificationUrl;
 @property (nonatomic, strong) AppRestartNotificationConfiguration * _Nonnull appRestartNotificationConfiguration;
-@property (nonatomic, strong) CustomEventMetaDataStore * _Nonnull customEventMetaDataStore;
 @property (nonatomic) enum SDKApplicationState applicationState;
 @property (nonatomic, strong) RemoteConfiguration * _Nonnull configuration;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -1706,6 +1653,47 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) ProjectPersi
 - (void)invalidateRuleSet;
 - (void)invalidateAll;
 - (void)clearAll;
+@end
+
+@class PushPayload;
+@class NSData;
+@class UNNotification;
+@class UNNotificationResponse;
+SWIFT_CLASS("_TtC10BDPointSDK17PushNotifications")
+@interface PushNotifications : NSObject
+/// Fired for a valid Rezolve AI push notification received in the foreground
+@property (nonatomic, copy) void (^ _Nullable onNotificationReceived)(PushPayload * _Nonnull);
+/// Fired when the user taps a valid Rezolve AI push notification from the background
+@property (nonatomic, copy) void (^ _Nullable onNotificationClicked)(PushPayload * _Nonnull);
+/// Registers the device token for push notifications.
+/// This method should be called from the AppDelegate’s didRegisterForRemoteNotificationsWithDeviceToken method
+/// \param deviceToken The device token received from APNs.
+/// If the project ID is already set, it will register the token with BDPointEngine immediately. Otherwise, it will save the token and set pendingRegistration to true, so that it can be registered later when the project ID becomes available.
+///
+- (void)register:(NSData * _Nonnull)deviceToken;
+/// Notification arrives while app is in foreground
+/// Should be called from the AppDelegate’s userNotificationCenter:willPresent:withCompletionHandler: method when a notification is received while the app is in the foreground.
+/// It allows the SDK to handle the notification and determine whether it should be presented to the user or not
+- (BOOL)handleForeground:(UNNotification * _Nonnull)notification SWIFT_WARN_UNUSED_RESULT;
+/// The callback is called when a user clicked the push notification that arrived while the app was on background
+/// Should be called from the AppDelegate’s userNotificationCenter:didReceive:withCompletionHandler: method when a notification is received when a user clicked on the push notification
+/// It allows the SDK to handle the notification and determine whether it should be presented to the user or not
+- (void)handleResponse:(UNNotificationResponse * _Nonnull)notificationResponse;
+@property (nonatomic) BOOL pendingRegistration;
+- (void)registerWithExistingToken;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+SWIFT_CLASS("_TtC10BDPointSDK11PushPayload")
+@interface PushPayload : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+SWIFT_CLASS("_TtC10BDPointSDK28PushRegistrationNotification")
+@interface PushRegistrationNotification : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 @class StarvationDetectorRemoteConfiguration;
@@ -1836,6 +1824,7 @@ SWIFT_CLASS("_TtC10BDPointSDK11SignalGraph")
 - (void)dwelledInZoneWithTriggerEventNotification:(TriggerEventNotification * _Nonnull)triggerEventNotification;
 - (void)sendLifecycleEventsOnResetSdk;
 - (nonnull instancetype)initWithObjcFenceTracker:(BDFenceTracker * _Nonnull)objcFenceTracker objcFenceCheckOutManager:(BDFenceCheckOutManager * _Nonnull)objcFenceCheckOutManager objcLocationSensor:(id <BDPLocationSensor, BDPVariableAccuracySensor> _Nonnull)objcLocationSensor objcRuleSetProvider:(BDPointAPIRuleSetProvider * _Nonnull)objcRuleSetProvider OBJC_DESIGNATED_INITIALIZER;
+- (void)registerPushNotifications:(NSData * _Nonnull)deviceToken;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1853,16 +1842,6 @@ SWIFT_CLASS("_TtC10BDPointSDK37StarvationDetectorRemoteConfiguration")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 - (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
-@end
-
-SWIFT_CLASS("_TtC10BDPointSDK20StreamingResponseDto")
-@interface StreamingResponseDto : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nullable response;
-@property (nonatomic, readonly, copy) NSString * _Nullable responseID;
-@property (nonatomic, readonly) NSInteger streamType;
-@property (nonatomic, copy) NSArray<ChatContext *> * _Nonnull contexts;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 SWIFT_PROTOCOL("_TtP10BDPointSDK10TempoEvent_")
@@ -2516,15 +2495,6 @@ SWIFT_CLASS("_TtC10BDPointSDK8AppState")
 - (void)authorizationChangedWithManager:(CLLocationManager * _Nonnull)manager status:(CLAuthorizationStatus)status;
 @end
 
-@class Chat;
-SWIFT_CLASS("_TtC10BDPointSDK7BrainAI")
-@interface BrainAI : NSObject
-- (Chat * _Nullable)createNewChat SWIFT_WARN_UNUSED_RESULT;
-- (Chat * _Nullable)getChatWithSessionID:(NSString * _Nonnull)sessionID SWIFT_WARN_UNUSED_RESULT;
-- (void)closeChatWithSessionID:(NSString * _Nonnull)sessionID;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
 @interface CLCircularRegion (SWIFT_EXTENSION(BDPointSDK))
 - (BOOL)isEqualToCircularRegion:(CLCircularRegion * _Nonnull)circularRegion SWIFT_WARN_UNUSED_RESULT;
 @end
@@ -2533,43 +2503,6 @@ SWIFT_CLASS("_TtC10BDPointSDK7BrainAI")
 @interface CLLocation (SWIFT_EXTENSION(BDPointSDK))
 - (nonnull instancetype)initWithLocation:(BDLocation * _Nonnull)location;
 - (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
-@end
-
-@class StreamingResponseDto;
-@class NSError;
-enum Reaction : NSInteger;
-SWIFT_CLASS("_TtC10BDPointSDK4Chat")
-@interface Chat : NSObject
-@property (nonatomic, copy) NSString * _Nonnull userID;
-@property (nonatomic, copy) NSString * _Nonnull language;
-@property (nonatomic, readonly, copy) NSString * _Nonnull sessionID;
-- (void)sendMessage:(NSString * _Nonnull)message onUpdate:(void (^ _Nonnull)(StreamingResponseDto * _Nonnull))onUpdate onCompletion:(void (^ _Nonnull)(void))onCompletion onError:(void (^ _Nonnull)(NSError * _Nonnull))onError;
-- (void)submitFeedbackWithResponseID:(NSString * _Nonnull)responseID reaction:(enum Reaction)reaction completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-@interface Chat (SWIFT_EXTENSION(BDPointSDK))
-@end
-
-typedef SWIFT_ENUM(NSInteger, Reaction, open) {
-  ReactionLiked = 0,
-  ReactionDisliked = 1,
-};
-
-@class NSURL;
-@class NSNumber;
-SWIFT_CLASS("_TtC10BDPointSDK11ChatContext")
-@interface ChatContext : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nullable title;
-@property (nonatomic, readonly, copy) NSArray<NSURL *> * _Nullable imageLinks;
-@property (nonatomic, readonly, strong) NSNumber * _Nullable price;
-@property (nonatomic, readonly, copy) NSString * _Nullable contextDescription;
-@property (nonatomic, readonly, strong) NSNumber * _Nullable merchantID;
-@property (nonatomic, readonly, strong) NSNumber * _Nullable categoryID;
-@property (nonatomic, readonly, strong) NSNumber * _Nullable productID;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 SWIFT_PROTOCOL("_TtP10BDPointSDK8Checkout_")
@@ -2644,18 +2577,6 @@ SWIFT_CLASS("_TtC10BDPointSDK19CrossedFilterDetail")
 - (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
 - (id _Nonnull)copy SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
-@end
-
-/// Persists the custom event metadata set via <code>setCustomEventMetaData:</code> so it survives app termination
-/// and is available for the first event after the OS relaunches the app
-/// Cleared only when the metadata is explicitly cleared or the SDK is reset.
-SWIFT_CLASS("_TtC10BDPointSDK24CustomEventMetaDataStore")
-@interface CustomEventMetaDataStore : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (void)saveWithMetaData:(NSDictionary<NSString *, NSString *> * _Nonnull)metaData;
-- (NSDictionary<NSString *, NSString *> * _Nullable)loadMetaData SWIFT_WARN_UNUSED_RESULT;
-- (void)clear;
 @end
 
 @class NSPersistentContainer;
@@ -3167,6 +3088,8 @@ SWIFT_CLASS("_TtC10BDPointSDK8Keychain")
 - (NSString * _Nullable)getForKey:(enum KeychainKeys)key SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)setWithValue:(NSString * _Nonnull)value forKey:(enum KeychainKeys)key SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)deleteForKey:(enum KeychainKeys)key SWIFT_WARN_UNUSED_RESULT;
+/// Checks if a value exists for the given key in the keychain.
+- (BOOL)existsForKey:(enum KeychainKeys)key SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -3175,6 +3098,8 @@ typedef SWIFT_ENUM(NSInteger, KeychainKeys, open) {
   KeychainKeysUrl = 1,
   KeychainKeysPointApiUrl = 2,
   KeychainKeysInstallRef = 3,
+  KeychainKeysPushDeviceToken = 4,
+  KeychainKeysInstallationSecret = 5,
 };
 
 SWIFT_CLASS("_TtC10BDPointSDK26LifecycleEventNotification")
@@ -3229,6 +3154,7 @@ typedef SWIFT_ENUM(NSInteger, LogLevel, open) {
   LogLevelCritical = 5,
 };
 
+@class NSNumber;
 SWIFT_PROTOCOL("_TtP10BDPointSDK6Logger_")
 @protocol Logger
 - (void)debug:(NSString * _Nonnull)message;
@@ -3512,6 +3438,7 @@ typedef SWIFT_ENUM(NSInteger, NotificationType, open) {
   NotificationTypeUnknown = 5,
 };
 
+@class NSURL;
 SWIFT_CLASS("_TtC10BDPointSDK22ObjcRainbowAPITriggers")
 @interface ObjcRainbowAPITriggers : NSObject
 - (nonnull instancetype)initWithEndpoint:(NSURL * _Nonnull)endpoint OBJC_DESIGNATED_INITIALIZER;
@@ -3748,7 +3675,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) PointSDKContext * _Non
 @property (nonatomic, copy) NSURL * _Nullable notificationUrl;
 @property (nonatomic, copy) NSURL * _Nullable tempoNotificationUrl;
 @property (nonatomic, strong) AppRestartNotificationConfiguration * _Nonnull appRestartNotificationConfiguration;
-@property (nonatomic, strong) CustomEventMetaDataStore * _Nonnull customEventMetaDataStore;
 @property (nonatomic) enum SDKApplicationState applicationState;
 @property (nonatomic, strong) RemoteConfiguration * _Nonnull configuration;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -3773,6 +3699,47 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) ProjectPersi
 - (void)invalidateRuleSet;
 - (void)invalidateAll;
 - (void)clearAll;
+@end
+
+@class PushPayload;
+@class NSData;
+@class UNNotification;
+@class UNNotificationResponse;
+SWIFT_CLASS("_TtC10BDPointSDK17PushNotifications")
+@interface PushNotifications : NSObject
+/// Fired for a valid Rezolve AI push notification received in the foreground
+@property (nonatomic, copy) void (^ _Nullable onNotificationReceived)(PushPayload * _Nonnull);
+/// Fired when the user taps a valid Rezolve AI push notification from the background
+@property (nonatomic, copy) void (^ _Nullable onNotificationClicked)(PushPayload * _Nonnull);
+/// Registers the device token for push notifications.
+/// This method should be called from the AppDelegate’s didRegisterForRemoteNotificationsWithDeviceToken method
+/// \param deviceToken The device token received from APNs.
+/// If the project ID is already set, it will register the token with BDPointEngine immediately. Otherwise, it will save the token and set pendingRegistration to true, so that it can be registered later when the project ID becomes available.
+///
+- (void)register:(NSData * _Nonnull)deviceToken;
+/// Notification arrives while app is in foreground
+/// Should be called from the AppDelegate’s userNotificationCenter:willPresent:withCompletionHandler: method when a notification is received while the app is in the foreground.
+/// It allows the SDK to handle the notification and determine whether it should be presented to the user or not
+- (BOOL)handleForeground:(UNNotification * _Nonnull)notification SWIFT_WARN_UNUSED_RESULT;
+/// The callback is called when a user clicked the push notification that arrived while the app was on background
+/// Should be called from the AppDelegate’s userNotificationCenter:didReceive:withCompletionHandler: method when a notification is received when a user clicked on the push notification
+/// It allows the SDK to handle the notification and determine whether it should be presented to the user or not
+- (void)handleResponse:(UNNotificationResponse * _Nonnull)notificationResponse;
+@property (nonatomic) BOOL pendingRegistration;
+- (void)registerWithExistingToken;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+SWIFT_CLASS("_TtC10BDPointSDK11PushPayload")
+@interface PushPayload : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+SWIFT_CLASS("_TtC10BDPointSDK28PushRegistrationNotification")
+@interface PushRegistrationNotification : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 @class StarvationDetectorRemoteConfiguration;
@@ -3903,6 +3870,7 @@ SWIFT_CLASS("_TtC10BDPointSDK11SignalGraph")
 - (void)dwelledInZoneWithTriggerEventNotification:(TriggerEventNotification * _Nonnull)triggerEventNotification;
 - (void)sendLifecycleEventsOnResetSdk;
 - (nonnull instancetype)initWithObjcFenceTracker:(BDFenceTracker * _Nonnull)objcFenceTracker objcFenceCheckOutManager:(BDFenceCheckOutManager * _Nonnull)objcFenceCheckOutManager objcLocationSensor:(id <BDPLocationSensor, BDPVariableAccuracySensor> _Nonnull)objcLocationSensor objcRuleSetProvider:(BDPointAPIRuleSetProvider * _Nonnull)objcRuleSetProvider OBJC_DESIGNATED_INITIALIZER;
+- (void)registerPushNotifications:(NSData * _Nonnull)deviceToken;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -3920,16 +3888,6 @@ SWIFT_CLASS("_TtC10BDPointSDK37StarvationDetectorRemoteConfiguration")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 - (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
-@end
-
-SWIFT_CLASS("_TtC10BDPointSDK20StreamingResponseDto")
-@interface StreamingResponseDto : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nullable response;
-@property (nonatomic, readonly, copy) NSString * _Nullable responseID;
-@property (nonatomic, readonly) NSInteger streamType;
-@property (nonatomic, copy) NSArray<ChatContext *> * _Nonnull contexts;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 SWIFT_PROTOCOL("_TtP10BDPointSDK10TempoEvent_")
