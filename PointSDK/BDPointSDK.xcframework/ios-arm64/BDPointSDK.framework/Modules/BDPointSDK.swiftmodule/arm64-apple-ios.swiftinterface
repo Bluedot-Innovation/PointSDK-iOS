@@ -362,21 +362,22 @@ extension BDPointSDK.TriggerEvent where Self : Swift.Encodable {
 @objc public protocol JsonString : ObjectiveC.NSObjectProtocol {
   @objc(toJson:) func toJson() throws -> Swift.String
 }
-@_hasMissingDesignatedInitializers @objc final public class PushPayload : ObjectiveC.NSObject {
-  final public let zoneId: Swift.String
-  final public let notificationId: Swift.String
-  final public let campaignId: Swift.String
-  final public let title: Swift.String
+@objc @_hasMissingDesignatedInitializers @objcMembers final public class PushPayload : ObjectiveC.NSObject {
+  @objc final public let zoneId: Swift.String
+  @objc final public let notificationId: Swift.String
+  @objc final public let campaignId: Swift.String
+  @objc final public let title: Swift.String
+  @objc final public let body: Swift.String
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers final public class PushNotifications : ObjectiveC.NSObject {
   @objc final public var onNotificationReceived: ((BDPointSDK.PushPayload) -> Swift.Void)?
   @objc final public var onNotificationClicked: ((BDPointSDK.PushPayload) -> Swift.Void)?
+  @objc override dynamic public init()
+  @objc deinit
   @objc final public func register(_ deviceToken: Foundation.Data)
   @objc final public func handleForeground(_ notification: UserNotifications.UNNotification) -> Swift.Bool
   @objc final public func handleResponse(_ notificationResponse: UserNotifications.UNNotificationResponse)
-  @objc override dynamic public init()
-  @objc deinit
 }
 public protocol Scheduled {
   func invalidate()

@@ -18,7 +18,7 @@
     <a title="PushPayload Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">BDPointSDK v18.0.0 Docs</a></p>
+        <p><a href="../index.html">BDPointSDK v18.1.0 Docs</a></p>
         <p class="header-right"><a href="https://github.com/Bluedot-Innovation/PointSDK-iOS"><img src="../img/gh.png" alt="GitHub"/>View on GitHub</a></p>
         <p class="header-right"><a href="dash-feed://https%3A%2F%2Fios-docs.bluedot.io%2Fdocsets%2FBDPointSDK.xml"><img src="../img/dash.png" alt="Dash"/>Install in Dash</a></p>
         <div class="header-right">
@@ -263,12 +263,12 @@
               <div class="declaration">
                 <div class="language">
                   
-                  <pre class="highlight swift"><code><span class="kd">@objc</span>
+                  <pre class="highlight swift"><code><span class="kd">@objcMembers</span>
 <span class="kd">final</span> <span class="kd">public</span> <span class="kd">class</span> <span class="kt">PushPayload</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
                 </div>
               </div>
-            <p>Undocumented</p>
+            <p>Represents the data extracted from a Rezolve AI push notification.</p>
 
           </section>
           <section class="section task-group-section">
@@ -277,9 +277,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:10BDPointSDK11PushPayloadC6zoneIdSSvp"></a>
+                    <a name="/c:@M@BDPointSDK@objc(cs)PushPayload(py)zoneId"></a>
                     <a name="//apple_ref/objc/Property/zoneId" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10BDPointSDK11PushPayloadC6zoneIdSSvp">zoneId</a>
+                    <a class="token" href="#/c:@M@BDPointSDK@objc(cs)PushPayload(py)zoneId">zoneId</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -287,7 +287,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Identifier of the zone that triggered the notification.</p>
 
                       </div>
                       <div class="declaration">
@@ -304,9 +304,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:10BDPointSDK11PushPayloadC14notificationIdSSvp"></a>
+                    <a name="/c:@M@BDPointSDK@objc(cs)PushPayload(py)notificationId"></a>
                     <a name="//apple_ref/objc/Property/notificationId" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10BDPointSDK11PushPayloadC14notificationIdSSvp">notificationId</a>
+                    <a class="token" href="#/c:@M@BDPointSDK@objc(cs)PushPayload(py)notificationId">notificationId</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -314,7 +314,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Unique identifier of the notification.</p>
 
                       </div>
                       <div class="declaration">
@@ -331,9 +331,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:10BDPointSDK11PushPayloadC10campaignIdSSvp"></a>
+                    <a name="/c:@M@BDPointSDK@objc(cs)PushPayload(py)campaignId"></a>
                     <a name="//apple_ref/objc/Property/campaignId" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10BDPointSDK11PushPayloadC10campaignIdSSvp">campaignId</a>
+                    <a class="token" href="#/c:@M@BDPointSDK@objc(cs)PushPayload(py)campaignId">campaignId</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -341,7 +341,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Identifier of the campaign the notification belongs to.</p>
 
                       </div>
                       <div class="declaration">
@@ -358,9 +358,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:10BDPointSDK11PushPayloadC5titleSSvp"></a>
+                    <a name="/c:@M@BDPointSDK@objc(cs)PushPayload(py)title"></a>
                     <a name="//apple_ref/objc/Property/title" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10BDPointSDK11PushPayloadC5titleSSvp">title</a>
+                    <a class="token" href="#/c:@M@BDPointSDK@objc(cs)PushPayload(py)title">title</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -368,7 +368,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Title text displayed in the notification.</p>
 
                       </div>
                       <div class="declaration">
@@ -382,12 +382,39 @@
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@BDPointSDK@objc(cs)PushPayload(py)body"></a>
+                    <a name="//apple_ref/objc/Property/body" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@BDPointSDK@objc(cs)PushPayload(py)body">body</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Body text displayed in the notification.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">body</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2026 <a class="link" href="https://bluedot.io" target="_blank" rel="external noopener">Bluedot</a>. All rights reserved. (Last updated: 2026-03-19)</p>
+          <p>&copy; 2026 <a class="link" href="https://bluedot.io" target="_blank" rel="external noopener">Bluedot</a>. All rights reserved. (Last updated: 2026-08-06)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>

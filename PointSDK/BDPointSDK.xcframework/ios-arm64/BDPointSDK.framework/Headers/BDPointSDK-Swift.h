@@ -1054,6 +1054,7 @@ typedef SWIFT_ENUM(NSInteger, KeychainKeys, open) {
   KeychainKeysInstallRef = 3,
   KeychainKeysPushDeviceToken = 4,
   KeychainKeysInstallationSecret = 5,
+  KeychainKeysInstallationSecretLastUpdateTime = 6,
 };
 
 SWIFT_CLASS("_TtC10BDPointSDK26LifecycleEventNotification")
@@ -1557,6 +1558,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger defaultExi
 + (NSInteger)defaultExitScoreVerifiedOut SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger defaultExitScoreBounce;)
 + (NSInteger)defaultExitScoreBounce SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSTimeInterval defaultExitDwellOutsideInterval;)
++ (NSTimeInterval)defaultExitDwellOutsideInterval SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL defaultLocationInputFilteringEnabled;)
 + (BOOL)defaultLocationInputFilteringEnabled SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull defaultEndpointUrl;)
@@ -1665,10 +1668,11 @@ SWIFT_CLASS("_TtC10BDPointSDK17PushNotifications")
 @property (nonatomic, copy) void (^ _Nullable onNotificationReceived)(PushPayload * _Nonnull);
 /// Fired when the user taps a valid Rezolve AI push notification from the background
 @property (nonatomic, copy) void (^ _Nullable onNotificationClicked)(PushPayload * _Nonnull);
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 /// Registers the device token for push notifications.
 /// This method should be called from the AppDelegate’s didRegisterForRemoteNotificationsWithDeviceToken method
 /// \param deviceToken The device token received from APNs.
-/// If the project ID is already set, it will register the token with BDPointEngine immediately. Otherwise, it will save the token and set pendingRegistration to true, so that it can be registered later when the project ID becomes available.
+/// The token is saved to the keychain. If a project ID is already set, the token is registered with the backend immediately; otherwise it is registered later when the SDK is initialized with a project ID.
 ///
 - (void)register:(NSData * _Nonnull)deviceToken;
 /// Notification arrives while app is in foreground
@@ -1679,13 +1683,23 @@ SWIFT_CLASS("_TtC10BDPointSDK17PushNotifications")
 /// Should be called from the AppDelegate’s userNotificationCenter:didReceive:withCompletionHandler: method when a notification is received when a user clicked on the push notification
 /// It allows the SDK to handle the notification and determine whether it should be presented to the user or not
 - (void)handleResponse:(UNNotificationResponse * _Nonnull)notificationResponse;
-@property (nonatomic) BOOL pendingRegistration;
 - (void)registerWithExistingToken;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (void)checkPermissionIfNeeded;
 @end
 
+/// Represents the data extracted from a Rezolve AI push notification.
 SWIFT_CLASS("_TtC10BDPointSDK11PushPayload")
 @interface PushPayload : NSObject
+/// Identifier of the zone that triggered the notification.
+@property (nonatomic, readonly, copy) NSString * _Nonnull zoneId;
+/// Unique identifier of the notification.
+@property (nonatomic, readonly, copy) NSString * _Nonnull notificationId;
+/// Identifier of the campaign the notification belongs to.
+@property (nonatomic, readonly, copy) NSString * _Nonnull campaignId;
+/// Title text displayed in the notification.
+@property (nonatomic, readonly, copy) NSString * _Nonnull title;
+/// Body text displayed in the notification.
+@property (nonatomic, readonly, copy) NSString * _Nonnull body;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

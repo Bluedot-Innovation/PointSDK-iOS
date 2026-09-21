@@ -2,44 +2,16 @@
   "warnings": [
     {
       "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/RemotePushNotifications/PushNotifications.swift",
-      "line": 15,
+      "line": 16,
       "symbol": "PushNotifications",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/RemotePushNotifications/PushPayload.swift",
-      "line": 12,
-      "symbol": "PushPayload",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/RemotePushNotifications/PushPayload.swift",
-      "line": 14,
-      "symbol": "PushPayload.zoneId",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/RemotePushNotifications/PushPayload.swift",
-      "line": 15,
-      "symbol": "PushPayload.notificationId",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/RemotePushNotifications/PushPayload.swift",
-      "line": 16,
-      "symbol": "PushPayload.campaignId",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/RemotePushNotifications/PushPayload.swift",
-      "line": 17,
-      "symbol": "PushPayload.title",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "file": "/Users/runner/work/point_sdk_ios/point_sdk_ios/BDPointSDK/Swift/RemotePushNotifications/PushNotifications.swift",
+      "line": 24,
+      "symbol": "PushNotifications.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
