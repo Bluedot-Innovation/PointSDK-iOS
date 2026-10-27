@@ -5,7 +5,7 @@ import PackageDescription
 let package = Package(
     name: "BDPointSDK",
     platforms: [
-        .iOS(.v12)
+        .iOS(.v15)
     ],
     products: [
         .library(
